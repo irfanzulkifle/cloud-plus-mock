@@ -551,6 +551,10 @@ window.addEventListener('DOMContentLoaded', () => {
   // theme toggle (persisted)
   $('#themeToggle').onclick = toggleTheme;
   $('#themeToggle2').onclick = toggleTheme;
+
+  // keyboard shortcuts help panel (on exam screen)
+  $('#btnHelp').onclick = () => $('#kbdHelp').hidden = !$('#kbdHelp').hidden;
+  $('#btnHelpClose').onclick = () => $('#kbdHelp').hidden = true;
   let saved = 'light';
   try { saved = localStorage.getItem('cloudplus-theme') || 'light'; } catch(e){}
   applyTheme(saved);

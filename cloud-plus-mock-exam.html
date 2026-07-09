@@ -119,10 +119,14 @@ body{
 .btn-block:hover span{transform:translateX(3px)}
 
 /* keyboard tutorial */
-.kbd-tutorial{margin-top:22px;background:var(--grey-l);border:1px solid var(--line);border-radius:14px;
-  padding:16px 18px;text-align:left;transition:background .2s,border-color .2s}
+.kbd-help{position:fixed;inset:0;z-index:900;display:flex;align-items:center;justify-content:center;
+  background:rgba(15,23,42,.55);padding:20px}
+.kbd-help[hidden]{display:none}
+.kbd-help-inner{width:100%;max-width:420px;background:var(--panel);border:1px solid var(--line);
+  border-radius:16px;padding:22px 24px;box-shadow:0 18px 50px rgba(20,40,70,.3);text-align:left;
+  transition:background .2s,border-color .2s}
 .kbd-title{font-size:12px;font-weight:800;text-transform:uppercase;letter-spacing:.6px;color:var(--muted);margin-bottom:12px}
-.kbd-grid{display:grid;grid-template-columns:1fr 1fr;gap:10px 20px}
+.kbd-grid{display:grid;grid-template-columns:1fr 1fr;gap:10px 20px;margin-bottom:16px}
 .kbd-row{display:flex;align-items:center;gap:6px;font-size:12.5px;color:var(--muted);flex-wrap:wrap}
 .kbd-row kbd{display:inline-flex;align-items:center;justify-content:center;min-width:22px;height:22px;padding:0 6px;
   font-family:inherit;font-size:12px;font-weight:700;background:var(--panel);border:1px solid var(--line);
@@ -429,17 +433,6 @@ body{
       </div>
     </div>
     <button id="btnBegin" class="btn btn-primary btn-block">Begin Exam <span aria-hidden="true">→</span></button>
-    <div class="kbd-tutorial">
-      <div class="kbd-title">⌨️ Keyboard shortcuts</div>
-      <div class="kbd-grid">
-        <span class="kbd-row"><kbd>A</kbd>–<kbd>F</kbd> <span class="kbd-desc">Select option</span></span>
-        <span class="kbd-row"><kbd>1</kbd>–<kbd>9</kbd> <span class="kbd-desc">Select by number</span></span>
-        <span class="kbd-row"><kbd>↑</kbd><kbd>↓</kbd> <span class="kbd-desc">Move between options</span></span>
-        <span class="kbd-row"><kbd>←</kbd><kbd>→</kbd> <span class="kbd-desc">Prev / Next question</span></span>
-        <span class="kbd-row"><kbd>Enter</kbd> <span class="kbd-desc">Choose focused option</span></span>
-        <span class="kbd-row"><kbd>F</kbd> <span class="kbd-desc">Flag for review</span></span>
-      </div>
-    </div>
     <p class="foot">Free study tool · not affiliated with CompTIA<br>
       MCQ practice only — no performance-based (PBQ) questions are included.</p>
   </div>
@@ -453,11 +446,27 @@ body{
       <span id="qCounter" class="qcounter">Question 1 of 310</span>
     </div>
     <div class="top-right">
+      <button id="btnHelp" class="theme-btn" type="button" aria-label="Keyboard shortcuts" title="Keyboard shortcuts">?</button>
       <button id="themeToggle2" class="theme-btn" type="button" aria-label="Toggle dark/light theme">🌙</button>
       <span id="timer" class="timer">90:00</span>
       <button id="btnEnd" class="btn-end">End Exam</button>
     </div>
   </header>
+
+  <div id="kbdHelp" class="kbd-help" hidden>
+    <div class="kbd-help-inner">
+      <div class="kbd-title">⌨️ Keyboard shortcuts</div>
+      <div class="kbd-grid">
+        <span class="kbd-row"><kbd>A</kbd>–<kbd>F</kbd> <span class="kbd-desc">Select option</span></span>
+        <span class="kbd-row"><kbd>1</kbd>–<kbd>9</kbd> <span class="kbd-desc">Select by number</span></span>
+        <span class="kbd-row"><kbd>↑</kbd><kbd>↓</kbd> <span class="kbd-desc">Move between options</span></span>
+        <span class="kbd-row"><kbd>←</kbd><kbd>→</kbd> <span class="kbd-desc">Prev / Next question</span></span>
+        <span class="kbd-row"><kbd>Enter</kbd> <span class="kbd-desc">Choose focused option</span></span>
+        <span class="kbd-row"><kbd>F</kbd> <span class="kbd-desc">Flag for review</span></span>
+      </div>
+      <button id="btnHelpClose" class="btn btn-nav">Close</button>
+    </div>
+  </div>
 
   <div class="body">
     <main class="qpanel">
@@ -7377,6 +7386,10 @@ window.addEventListener('DOMContentLoaded', () => {
   // theme toggle (persisted)
   $('#themeToggle').onclick = toggleTheme;
   $('#themeToggle2').onclick = toggleTheme;
+
+  // keyboard shortcuts help panel (on exam screen)
+  $('#btnHelp').onclick = () => $('#kbdHelp').hidden = !$('#kbdHelp').hidden;
+  $('#btnHelpClose').onclick = () => $('#kbdHelp').hidden = true;
   let saved = 'light';
   try { saved = localStorage.getItem('cloudplus-theme') || 'light'; } catch(e){}
   applyTheme(saved);

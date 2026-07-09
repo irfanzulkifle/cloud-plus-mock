@@ -58,17 +58,6 @@
       </div>
     </div>
     <button id="btnBegin" class="btn btn-primary btn-block">Begin Exam <span aria-hidden="true">→</span></button>
-    <div class="kbd-tutorial">
-      <div class="kbd-title">⌨️ Keyboard shortcuts</div>
-      <div class="kbd-grid">
-        <span class="kbd-row"><kbd>A</kbd>–<kbd>F</kbd> <span class="kbd-desc">Select option</span></span>
-        <span class="kbd-row"><kbd>1</kbd>–<kbd>9</kbd> <span class="kbd-desc">Select by number</span></span>
-        <span class="kbd-row"><kbd>↑</kbd><kbd>↓</kbd> <span class="kbd-desc">Move between options</span></span>
-        <span class="kbd-row"><kbd>←</kbd><kbd>→</kbd> <span class="kbd-desc">Prev / Next question</span></span>
-        <span class="kbd-row"><kbd>Enter</kbd> <span class="kbd-desc">Choose focused option</span></span>
-        <span class="kbd-row"><kbd>F</kbd> <span class="kbd-desc">Flag for review</span></span>
-      </div>
-    </div>
     <p class="foot">Free study tool · not affiliated with CompTIA<br>
       MCQ practice only — no performance-based (PBQ) questions are included.</p>
   </div>
@@ -82,11 +71,27 @@
       <span id="qCounter" class="qcounter">Question 1 of 310</span>
     </div>
     <div class="top-right">
+      <button id="btnHelp" class="theme-btn" type="button" aria-label="Keyboard shortcuts" title="Keyboard shortcuts">?</button>
       <button id="themeToggle2" class="theme-btn" type="button" aria-label="Toggle dark/light theme">🌙</button>
       <span id="timer" class="timer">90:00</span>
       <button id="btnEnd" class="btn-end">End Exam</button>
     </div>
   </header>
+
+  <div id="kbdHelp" class="kbd-help" hidden>
+    <div class="kbd-help-inner">
+      <div class="kbd-title">⌨️ Keyboard shortcuts</div>
+      <div class="kbd-grid">
+        <span class="kbd-row"><kbd>A</kbd>–<kbd>F</kbd> <span class="kbd-desc">Select option</span></span>
+        <span class="kbd-row"><kbd>1</kbd>–<kbd>9</kbd> <span class="kbd-desc">Select by number</span></span>
+        <span class="kbd-row"><kbd>↑</kbd><kbd>↓</kbd> <span class="kbd-desc">Move between options</span></span>
+        <span class="kbd-row"><kbd>←</kbd><kbd>→</kbd> <span class="kbd-desc">Prev / Next question</span></span>
+        <span class="kbd-row"><kbd>Enter</kbd> <span class="kbd-desc">Choose focused option</span></span>
+        <span class="kbd-row"><kbd>F</kbd> <span class="kbd-desc">Flag for review</span></span>
+      </div>
+      <button id="btnHelpClose" class="btn btn-nav">Close</button>
+    </div>
+  </div>
 
   <div class="body">
     <main class="qpanel">
