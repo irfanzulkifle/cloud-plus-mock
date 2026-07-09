@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>CompTIA Cloud+ CV0-004 — Mock Exam</title>
+<link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+<!-- ===== START SCREEN ===== -->
+<div id="startScreen" class="screen active">
+  <div class="start-card">
+    <h1>CompTIA Cloud+ <span class="badge">CV0-004</span></h1>
+    <p class="subtitle">Pearson VUE–style Mock Exam Simulator</p>
+    <div class="start-stats">
+      <div><span id="qTotal">0</span><label>Questions</label></div>
+      <div><span id="qMulti">0</span><label>Multi-select</label></div>
+      <div><span>90</span><label>Min (real exam)</label></div>
+    </div>
+    <div class="opt-row">
+      <label class="chk"><input type="checkbox" id="optTimed" checked /> Timed exam (90 min)</label>
+      <label class="chk"><input type="checkbox" id="optReview" checked /> End-of-exam review screen</label>
+    </div>
+    <div class="opt-row">
+      <label class="selectlbl">Mode:</label>
+      <select id="optMode">
+        <option value="full">Full exam (all 312)</option>
+        <option value="rand50">Random 50</option>
+        <option value="rand100">Random 100</option>
+        <option value="study">Study mode (no timer)</option>
+      </select>
+    </div>
+    <button id="btnBegin" class="btn-primary">Begin Exam</button>
+    <p class="foot">Questions extracted from your practice PDF · 2 PBQs (HOTSPOT/SIMULATION) excluded — no text answers.</p>
+  </div>
+</div>
+
+<!-- ===== EXAM SCREEN ===== -->
+<div id="examScreen" class="screen">
+  <header class="topbar">
+    <div class="top-left">
+      <span class="brand">Cloud+ CV0-004</span>
+      <span id="qCounter" class="qcounter">Question 1 of 312</span>
+    </div>
+    <div class="top-right">
+      <span id="timer" class="timer">90:00</span>
+      <button id="btnEnd" class="btn-end">End Exam</button>
+    </div>
+  </header>
+
+  <div class="body">
+    <main class="qpanel">
+      <div id="flagRow" class="flagrow">
+        <button id="btnFlag" class="btn-flag">☆ Flag for review</button>
+        <span id="multiHint" class="multihint" hidden>Select all that apply</span>
+      </div>
+      <div id="stem" class="stem"></div>
+      <div id="options" class="options"></div>
+
+      <div class="nav-btns">
+        <button id="btnPrev" class="btn-nav">‹ Previous</button>
+        <button id="btnNext" class="btn-nav">Next ›</button>
+      </div>
+    </main>
+
+    <aside class="navpanel">
+      <div class="navpanel-head">Question Navigator</div>
+      <div id="navGrid" class="navgrid"></div>
+      <div class="legend">
+        <span><i class="dot answered"></i> Answered</span>
+        <span><i class="dot current"></i> Current</span>
+        <span><i class="dot flagged"></i> Flagged</span>
+        <span><i class="dot blank"></i> Not answered</span>
+      </div>
+    </aside>
+  </div>
+</div>
+
+<!-- ===== REVIEW / CONFIRM SCREEN ===== -->
+<div id="reviewScreen" class="screen">
+  <div class="review-card">
+    <h2>End Exam — Review</h2>
+    <p id="reviewSummary" class="review-summary"></p>
+    <div id="reviewGrid" class="navgrid big"></div>
+    <div class="review-actions">
+      <button id="btnBack" class="btn-nav">‹ Back to exam</button>
+      <button id="btnSubmit" class="btn-primary">Submit &amp; View Score</button>
+    </div>
+  </div>
+</div>
+
+<!-- ===== RESULT SCREEN ===== -->
+<div id="resultScreen" class="screen">
+  <div class="result-card">
+    <div class="score-ring">
+      <div class="score-num"><span id="pct">0</span><small>%</small></div>
+      <div class="score-sub" id="scoreSub">Score</div>
+    </div>
+    <h2 id="passMsg"></h2>
+    <div class="result-stats">
+      <div><span id="rCorrect">0</span><label>Correct</label></div>
+      <div><span id="rTotal">0</span><label>Total</label></div>
+      <div><span id="rTime">0:00</span><label>Time used</label></div>
+    </div>
+    <div id="rBreakdown" class="breakdown"></div>
+    <div class="result-actions">
+      <button id="btnReviewWrong" class="btn-nav">Review incorrect</button>
+      <button id="btnRestart" class="btn-primary">New Exam</button>
+    </div>
+  </div>
+</div>
+
+<script src="data.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
