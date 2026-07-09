@@ -252,19 +252,36 @@ function finishExam(){
   show('resultScreen');
 }
 
-let rwWrong = []; // cached list for current review session: {i, q, sel}
+let rwWrong = []; // cached list for current review session: {i, q, sel, correct}
+let rwMode = 'wrong'; // 'wrong' = incorrect only, 'all' = every question
 let rwDomainFilter = 0; // 0 = all
 
 function reviewWrong(){
-  // build a read-only review of every incorrect / blank question, with correct answer shown
+  // build a read-only review of every incorrect / blank question, with correct answer + reason shown
+  rwMode = 'wrong';
   rwWrong = [];
   order.forEach((_, i) => {
     const q = DATA[order[i]];
     const sel = state.sel[i];
-    if (!isCorrect(q, sel)) rwWrong.push({ i, q, sel });
+    if (!isCorrect(q, sel)) rwWrong.push({ i, q, sel, correct: false });
   });
   if (!rwWrong.length){ alert('All correct — nice! 🎉'); return; }
+  openReview();
+}
 
+function reviewAll(){
+  // review EVERY question (incl. ones answered correctly) so students see the reasoning even when they guessed right
+  rwMode = 'all';
+  rwWrong = [];
+  order.forEach((_, i) => {
+    const q = DATA[order[i]];
+    const sel = state.sel[i];
+    rwWrong.push({ i, q, sel, correct: isCorrect(q, sel) });
+  });
+  openReview();
+}
+
+function openReview(){
   rwDomainFilter = 0;
   buildRwDomainFilter();
   renderRwList();
@@ -301,17 +318,18 @@ function renderRwList(){
   buildRwDomainFilter(); // refresh 'on' state
   const items = rwDomainFilter === 0 ? rwWrong : rwWrong.filter(w => w.q.domain === rwDomainFilter);
 
-  $('#rwCount').textContent = `(${items.length} of ${rwWrong.length})`;
+  const label = rwMode === 'all' ? 'all' : 'incorrect';
+  $('#rwCount').textContent = `(${items.length} of ${rwWrong.length} ${label})`;
 
   // jump nav
   const jump = $('#rwJumpNav');
   jump.innerHTML = '';
-  items.forEach(({ i, sel }) => {
+  items.forEach(({ i, sel, correct }) => {
     const btn = document.createElement('button');
     btn.type = 'button';
-    btn.className = 'rw-jbtn' + (sel.size === 0 ? ' blank' : '');
+    btn.className = 'rw-jbtn' + (sel.size === 0 ? ' blank' : (correct ? ' ok' : ''));
     btn.textContent = i + 1;
-    btn.title = sel.size === 0 ? 'Not answered' : 'Incorrect';
+    btn.title = sel.size === 0 ? 'Not answered' : (correct ? 'Correct' : 'Incorrect');
     btn.onclick = () => {
       const card = document.querySelector(`.rw-card[data-qi="${i}"]`);
       if (card){ card.classList.remove('collapsed'); card.scrollIntoView({ behavior: 'smooth', block: 'start' }); }
@@ -322,7 +340,7 @@ function renderRwList(){
   const list = $('#rwList');
   list.innerHTML = '';
 
-  items.forEach(({ i, q, sel }) => {
+  items.forEach(({ i, q, sel, correct }) => {
     const ans = answerOf(q);
     const correctSet = new Set(ans);
     const isBlank = sel.size === 0;
@@ -330,12 +348,13 @@ function renderRwList(){
     const card = document.createElement('div');
     card.className = 'rw-card collapsed';
     card.dataset.qi = i;
-
+    const tag = isBlank ? `<span class="rw-tag blank">Not answered</span>`
+      : (correct ? `<span class="rw-tag correct">Correct</span>` : `<span class="rw-tag wrong">Incorrect</span>`);
     const head = document.createElement('div');
     head.className = 'rw-qhead';
     head.innerHTML = `<span class="rw-num">Q${i + 1}</span>` +
       (q.domainName ? `<span class="rw-dom">${q.domain}.0 ${q.domainName}</span>` : '') +
-      (isBlank ? `<span class="rw-tag blank">Not answered</span>` : `<span class="rw-tag wrong">Incorrect</span>`) +
+      tag +
       `<span class="rw-chev">▾</span>`;
     head.onclick = () => card.classList.toggle('collapsed');
     card.appendChild(head);
@@ -430,6 +449,7 @@ window.addEventListener('DOMContentLoaded', () => {
   $('#btnSubmit').onclick = finishExam;
   $('#btnRestart').onclick = () => { show('startScreen'); stopTimer(); };
   $('#btnReviewWrong').onclick = reviewWrong;
+  $('#btnReviewAll').onclick = reviewAll;
   $('#btnRwBack').onclick = () => show('resultScreen');
   $('#btnRwNew').onclick = () => { show('startScreen'); stopTimer(); };
   $('#btnRwExpandAll').onclick = () => $$('.rw-card').forEach(c => c.classList.remove('collapsed'));

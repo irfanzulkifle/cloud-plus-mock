@@ -241,6 +241,7 @@ body{
 .rw-num{font-weight:800;color:var(--brand);font-size:15px}
 .rw-dom{font-size:12px;font-weight:700;color:var(--muted);background:var(--grey-l);padding:2px 9px;border-radius:var(--radius-pill)}
 .rw-tag{font-size:11px;font-weight:800;text-transform:uppercase;letter-spacing:.5px;padding:2px 9px;border-radius:var(--radius-pill);margin-left:auto}
+.rw-tag.correct{background:var(--green-l);color:var(--green)}
 .rw-tag.wrong{background:var(--red-l);color:var(--red)}
 .rw-tag.blank{background:var(--amber-l);color:var(--amber)}
 .rw-stem{font-size:15.5px;line-height:1.6;margin-bottom:14px;white-space:pre-wrap;word-wrap:break-word}
@@ -270,6 +271,7 @@ body{
 .rw-jbtn{width:30px;height:30px;border-radius:7px;border:1px solid var(--line);background:var(--panel);font-size:11px;
   font-weight:700;cursor:pointer;color:var(--red);display:flex;align-items:center;justify-content:center;transition:all .15s var(--ease)}
 .rw-jbtn.blank{color:var(--amber)}
+.rw-jbtn.ok{color:var(--green)}
 .rw-jbtn:hover{box-shadow:0 0 0 2px rgba(11,98,201,.25)}
 .rw-jbtn:focus-visible{outline:3px solid var(--brand);outline-offset:2px}
 
