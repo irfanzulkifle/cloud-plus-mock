@@ -246,39 +246,101 @@ function finishExam(){
   show('resultScreen');
 }
 
+let rwWrong = []; // cached list for current review session: {i, q, sel}
+let rwDomainFilter = 0; // 0 = all
+
 function reviewWrong(){
   // build a read-only review of every incorrect / blank question, with correct answer shown
-  const wrong = [];
+  rwWrong = [];
   order.forEach((_, i) => {
     const q = DATA[order[i]];
     const sel = state.sel[i];
-    if (!isCorrect(q, sel)) wrong.push({ i, q, sel });
+    if (!isCorrect(q, sel)) rwWrong.push({ i, q, sel });
   });
-  if (!wrong.length){ alert('All correct — nice! 🎉'); return; }
+  if (!rwWrong.length){ alert('All correct — nice! 🎉'); return; }
 
-  $('#rwCount').textContent = `(${wrong.length} question${wrong.length > 1 ? 's' : ''})`;
+  rwDomainFilter = 0;
+  buildRwDomainFilter();
+  renderRwList();
+  show('reviewWrongScreen');
+  window.scrollTo({ top: 0, behavior: 'smooth' });
+}
+
+function buildRwDomainFilter(){
+  const wrap = $('#rwDomainFilter');
+  wrap.innerHTML = '';
+  const present = [...new Set(rwWrong.map(w => w.q.domain).filter(Boolean))].sort();
+  if (!present.length){ wrap.hidden = true; return; }
+  wrap.hidden = false;
+
+  const allChip = document.createElement('button');
+  allChip.type = 'button';
+  allChip.className = 'rw-fchip' + (rwDomainFilter === 0 ? ' on' : '');
+  allChip.textContent = `All (${rwWrong.length})`;
+  allChip.onclick = () => { rwDomainFilter = 0; renderRwList(); };
+  wrap.appendChild(allChip);
+
+  present.forEach(d => {
+    const n = rwWrong.filter(w => w.q.domain === d).length;
+    const chip = document.createElement('button');
+    chip.type = 'button';
+    chip.className = 'rw-fchip' + (rwDomainFilter === d ? ' on' : '');
+    chip.textContent = `${d}.0 ${rwWrong.find(w => w.q.domain === d).q.domainName} (${n})`;
+    chip.onclick = () => { rwDomainFilter = d; renderRwList(); };
+    wrap.appendChild(chip);
+  });
+}
+
+function renderRwList(){
+  buildRwDomainFilter(); // refresh 'on' state
+  const items = rwDomainFilter === 0 ? rwWrong : rwWrong.filter(w => w.q.domain === rwDomainFilter);
+
+  $('#rwCount').textContent = `(${items.length} of ${rwWrong.length})`;
+
+  // jump nav
+  const jump = $('#rwJumpNav');
+  jump.innerHTML = '';
+  items.forEach(({ i, sel }) => {
+    const btn = document.createElement('button');
+    btn.type = 'button';
+    btn.className = 'rw-jbtn' + (sel.size === 0 ? ' blank' : '');
+    btn.textContent = i + 1;
+    btn.title = sel.size === 0 ? 'Not answered' : 'Incorrect';
+    btn.onclick = () => {
+      const card = document.querySelector(`.rw-card[data-qi="${i}"]`);
+      if (card){ card.classList.remove('collapsed'); card.scrollIntoView({ behavior: 'smooth', block: 'start' }); }
+    };
+    jump.appendChild(btn);
+  });
+
   const list = $('#rwList');
   list.innerHTML = '';
 
-  wrong.forEach(({ i, q, sel }) => {
+  items.forEach(({ i, q, sel }) => {
     const ans = answerOf(q);
     const correctSet = new Set(ans);
     const isBlank = sel.size === 0;
 
     const card = document.createElement('div');
-    card.className = 'rw-card';
+    card.className = 'rw-card collapsed';
+    card.dataset.qi = i;
 
     const head = document.createElement('div');
     head.className = 'rw-qhead';
     head.innerHTML = `<span class="rw-num">Q${i + 1}</span>` +
       (q.domainName ? `<span class="rw-dom">${q.domain}.0 ${q.domainName}</span>` : '') +
-      (isBlank ? `<span class="rw-tag blank">Not answered</span>` : `<span class="rw-tag wrong">Incorrect</span>`);
+      (isBlank ? `<span class="rw-tag blank">Not answered</span>` : `<span class="rw-tag wrong">Incorrect</span>`) +
+      `<span class="rw-chev">▾</span>`;
+    head.onclick = () => card.classList.toggle('collapsed');
     card.appendChild(head);
+
+    const bodyEl = document.createElement('div');
+    bodyEl.className = 'rw-body';
 
     const stem = document.createElement('div');
     stem.className = 'rw-stem';
     stem.textContent = q.stem;
-    card.appendChild(stem);
+    bodyEl.appendChild(stem);
 
     const opts = document.createElement('div');
     opts.className = 'rw-opts';
@@ -291,23 +353,25 @@ function reviewWrong(){
       else if (isYourOpt) cls += ' yours';
       row.className = cls;
       const mark = isCorrectOpt ? '✓' : (isYourOpt ? '✗' : '');
-      row.innerHTML = `<span class="rw-mark">${mark}</span><span class="rw-letter">${letter}.</span><span>${q.options[letter]}</span>`;
+      const expl = q.explanations && q.explanations[letter]
+        ? `<div class="rw-explain">${q.explanations[letter]}</div>` : '';
+      row.innerHTML = `<div style="display:flex;gap:10px;align-items:flex-start">` +
+        `<span class="rw-mark">${mark}</span><span class="rw-letter">${letter}.</span>` +
+        `<div style="flex:1"><span>${q.options[letter]}</span>${expl}</div></div>`;
       opts.appendChild(row);
     });
-    card.appendChild(opts);
+    bodyEl.appendChild(opts);
 
     const ansLine = document.createElement('div');
     ansLine.className = 'rw-answer';
     const yourTxt = isBlank ? '<em>not answered</em>' : [...sel].sort().join(', ');
     ansLine.innerHTML = `<b>Correct answer:</b> ${ans.join(', ')}` +
       (isBlank ? '' : ` &nbsp;·&nbsp; <b>Your answer:</b> <span class="rw-yours">${yourTxt}</span>`);
-    card.appendChild(ansLine);
+    bodyEl.appendChild(ansLine);
 
+    card.appendChild(bodyEl);
     list.appendChild(card);
   });
-
-  show('reviewWrongScreen');
-  window.scrollTo({ top: 0, behavior: 'smooth' });
 }
 
 /* ---------- screen switch ---------- */
@@ -349,6 +413,8 @@ window.addEventListener('DOMContentLoaded', () => {
   $('#btnReviewWrong').onclick = reviewWrong;
   $('#btnRwBack').onclick = () => show('resultScreen');
   $('#btnRwNew').onclick = () => { show('startScreen'); stopTimer(); };
+  $('#btnRwExpandAll').onclick = () => $$('.rw-card').forEach(c => c.classList.remove('collapsed'));
+  $('#btnRwCollapseAll').onclick = () => $$('.rw-card').forEach(c => c.classList.add('collapsed'));
 
   // show/hide domain picker based on mode
   const modeSel = $('#optMode');
