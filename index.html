@@ -25,10 +25,16 @@
       <label class="selectlbl">Mode:</label>
       <select id="optMode">
         <option value="full">Full exam (all 312)</option>
+        <option value="domain">By domain</option>
         <option value="rand50">Random 50</option>
         <option value="rand100">Random 100</option>
         <option value="study">Study mode (no timer)</option>
       </select>
+    </div>
+    <div id="domainPicker" class="domain-picker" hidden>
+      <label class="selectlbl">Domain:</label>
+      <div id="domainChips" class="domain-chips"></div>
+      <input type="hidden" id="optDomain" value="1" />
     </div>
     <button id="btnBegin" class="btn-primary">Begin Exam</button>
     <p class="foot">Questions extracted from your practice PDF · 2 PBQs (HOTSPOT/SIMULATION) excluded — no text answers.</p>

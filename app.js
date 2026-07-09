@@ -2,7 +2,14 @@
 /* CompTIA Cloud+ CV0-004 — Pearson VUE-style mock exam engine */
 
 const EXAM_DURATION = 90 * 60; // 90 min (real CV0-004)
-const PASS_PCT = 750 / 1000;   // CompTIA's published ~75% scaled pass
+const DOMAINS = {
+  1: { name: "Cloud Architecture", pct: 23 },
+  2: { name: "Deployment", pct: 19 },
+  3: { name: "Operations", pct: 17 },
+  4: { name: "Security", pct: 19 },
+  5: { name: "DevOps Fundamentals", pct: 10 },
+  6: { name: "Troubleshooting", pct: 12 },
+};
 
 const $ = (s) => document.querySelector(s);
 const $$ = (s) => Array.from(document.querySelectorAll(s));
@@ -50,7 +57,11 @@ function beginExam(){
   reviewMode = $('#optReview').checked;
 
   let idx = DATA.map((_, i) => i);
-  if (mode === 'rand50') idx = shuffle(idx).slice(0, 50);
+  if (mode === 'domain') {
+    const d = parseInt($('#optDomain').value, 10);
+    idx = idx.filter(i => DATA[i].domain === d);
+    if (!idx.length) { alert('No questions matched that domain.'); return; }
+  } else if (mode === 'rand50') idx = shuffle(idx).slice(0, 50);
   else if (mode === 'rand100') idx = shuffle(idx).slice(0, 100);
 
   order = idx;
@@ -93,6 +104,10 @@ function renderQuestion(){
   const multi = answerOf(q).length > 1;
 
   $('#qCounter').textContent = `Question ${pos + 1} of ${order.length}`;
+  if ($('#optMode').value === 'domain') {
+    const d = q.domain;
+    $('#qCounter').textContent += `  ·  ${d}.0 ${q.domainName}`;
+  }
   $('#stem').textContent = q.stem;
   $('#multiHint').hidden = !multi;
   if (multi) {
@@ -250,6 +265,26 @@ function show(id){
 }
 
 /* ---------- wire up ---------- */
+/* ---------- domain picker (By domain mode) ---------- */
+function buildDomainChips() {
+  const wrap = $('#domainChips');
+  wrap.innerHTML = '';
+  Object.keys(DOMAINS).forEach(k => {
+    const d = parseInt(k, 10);
+    const count = (window.EXAM_DATA || []).filter(q => q.domain === d).length;
+    const chip = document.createElement('button');
+    chip.type = 'button';
+    chip.className = 'chip' + (d === parseInt($('#optDomain').value, 10) ? ' on' : '');
+    chip.innerHTML = `<b>${d}.0</b> ${DOMAINS[d].name} <span class="chipcount">${count} Q</span>`;
+    chip.onclick = () => {
+      $('#optDomain').value = String(d);
+      $$('#domainChips .chip').forEach(c => c.classList.remove('on'));
+      chip.classList.add('on');
+    };
+    wrap.appendChild(chip);
+  });
+}
+
 window.addEventListener('DOMContentLoaded', () => {
   $('#btnBegin').onclick = beginExam;
   $('#btnEnd').onclick = requestEnd;
@@ -260,6 +295,14 @@ window.addEventListener('DOMContentLoaded', () => {
   $('#btnSubmit').onclick = finishExam;
   $('#btnRestart').onclick = () => { show('startScreen'); stopTimer(); };
   $('#btnReviewWrong').onclick = reviewWrong;
+
+  // show/hide domain picker based on mode
+  const modeSel = $('#optMode');
+  const toggleDomainPicker = () => {
+    $('#domainPicker').hidden = (modeSel.value !== 'domain');
+  };
+  modeSel.addEventListener('change', toggleDomainPicker);
+  buildDomainChips();
 
   // keyboard: 1-9/A-F select, arrows navigate, F flag
   document.addEventListener('keydown', (e) => {

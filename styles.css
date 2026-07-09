@@ -33,6 +33,17 @@ body{
 .foot{font-size:11px;color:var(--muted);margin-top:16px}
 #qTotal,#qMulti{color:var(--brand)}
 
+/* domain picker chips */
+.domain-picker{margin-top:12px}
+.domain-chips{display:flex;flex-wrap:wrap;gap:8px;margin-top:6px}
+.chip{font:inherit;font-size:13px;cursor:pointer;background:#fff;border:1.5px solid var(--line);
+  color:var(--ink);padding:7px 11px;border-radius:9px;transition:all .15s;display:flex;align-items:center;gap:6px}
+.chip b{color:var(--brand)}
+.chip .chipcount{font-size:11px;color:var(--muted);background:var(--grey-l);padding:1px 6px;border-radius:20px}
+.chip:hover{border-color:#9bb4d4}
+.chip.on{border-color:var(--brand);background:var(--blue-l);box-shadow:0 0 0 2px rgba(11,98,201,.12)}
+.chip.on .chipcount{background:#dbe9fb;color:var(--brand)}
+
 /* ---------- TOP BAR ---------- */
 .topbar{display:flex;justify-content:space-between;align-items:center;background:var(--panel);
   border-bottom:1px solid var(--line);padding:12px 22px;position:sticky;top:0;z-index:10}
