@@ -39,6 +39,40 @@ function shuffle(arr){
   }
   return a;
 }
+
+// Build an N-question exam whose domain mix mirrors the official CV0-004
+// weightings (Architecture 23, Deployment 19, Operations 17, Security 19,
+// DevOps 10, Troubleshooting 12). Caps each domain at its available pool.
+const OFFICIAL_WEIGHTS = { 1:23, 2:19, 3:17, 4:19, 5:10, 6:12 };
+function weightedSample(data, n){
+  const byDomain = { 1:[], 2:[], 3:[], 4:[], 5:[], 6:[] };
+  data.forEach((q, i) => { if (byDomain[q.domain]) byDomain[q.domain].push(i); });
+  const picks = [];
+  // proportional allocation, rounded, with leftover reassigned by largest remainder
+  let assigned = 0;
+  const quota = {};
+  let remainder = [];
+  Object.keys(OFFICIAL_WEIGHTS).forEach(d => {
+    const exact = n * OFFICIAL_WEIGHTS[d] / 100;
+    const base = Math.floor(exact);
+    quota[d] = Math.min(base, byDomain[d].length);
+    assigned += quota[d];
+    remainder.push({ d, frac: exact - base });
+  });
+  // distribute any shortfall (capped domains) to other domains by remainder
+  remainder.sort((a, b) => b.frac - a.frac);
+  let k = 0;
+  while (assigned < n && k < remainder.length){
+    const d = remainder[k].d;
+    if (quota[d] < byDomain[d].length){ quota[d]++; assigned++; }
+    k = (k + 1) % remainder.length;
+  }
+  Object.keys(quota).forEach(d => {
+    picks.push(...shuffle(byDomain[d]).slice(0, quota[d]));
+  });
+  return shuffle(picks);
+}
+
 function fmtTime(s){
   s = Math.max(0, Math.floor(s));
   const m = Math.floor(s / 60), ss = s % 60;
@@ -67,8 +101,9 @@ function beginExam(){
     const d = parseInt($('#optDomain').value, 10);
     idx = idx.filter(i => DATA[i].domain === d);
     if (!idx.length) { alert('No questions matched that domain.'); return; }
-  } else if (mode === 'rand50') idx = shuffle(idx).slice(0, 50);
-  else if (mode === 'rand100') idx = shuffle(idx).slice(0, 100);
+  } else if (mode === 'rand90') {
+    idx = weightedSample(DATA, 90);
+  }
 
   order = idx;
   state.sel = order.map(() => new Set());
