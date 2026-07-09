@@ -16,33 +16,41 @@
     <div class="start-top">
       <button id="themeToggle" class="theme-btn" type="button" aria-label="Toggle dark/light theme">🌙 Dark</button>
     </div>
-    <h1>CompTIA Cloud+ <span class="badge">CV0-004</span></h1>
-    <p class="subtitle">Pearson VUE–style Mock Exam Simulator</p>
+    <div class="start-hero">
+      <div class="logo" aria-hidden="true">☁️</div>
+      <h1>CompTIA Cloud+ <span class="badge">CV0-004</span></h1>
+      <p class="subtitle">Pearson VUE–style Mock Exam Simulator</p>
+    </div>
     <div class="start-stats">
       <div><span id="qTotal">0</span><label>Questions</label></div>
       <div><span id="qMulti">0</span><label>Multi-select</label></div>
       <div><span>90</span><label>Min (real exam)</label></div>
     </div>
-    <div class="opt-row">
-      <label class="chk"><input type="checkbox" id="optTimed" checked /> Timed exam (90 min)</label>
-      <label class="chk"><input type="checkbox" id="optReview" checked /> End-of-exam review screen</label>
+    <div class="start-options">
+      <div class="opt-group">
+        <span class="group-title">Exam options</span>
+        <label class="chk"><input type="checkbox" id="optTimed" checked /> <span>Timed exam (90 min)</span></label>
+        <label class="chk"><input type="checkbox" id="optReview" checked /> <span>End-of-exam review screen</span></label>
+      </div>
+      <div class="opt-group">
+        <span class="group-title">Mode</span>
+        <div class="select-wrap">
+          <select id="optMode">
+            <option value="full">Full exam (all 310)</option>
+            <option value="domain">By domain</option>
+            <option value="rand50">Random 50</option>
+            <option value="rand100">Random 100</option>
+            <option value="study">Study mode (no timer)</option>
+          </select>
+        </div>
+      </div>
+      <div id="domainPicker" class="domain-picker" hidden>
+        <label class="selectlbl">Domain:</label>
+        <div id="domainChips" class="domain-chips"></div>
+        <input type="hidden" id="optDomain" value="1" />
+      </div>
     </div>
-    <div class="opt-row">
-      <label class="selectlbl">Mode:</label>
-      <select id="optMode">
-        <option value="full">Full exam (all 310)</option>
-        <option value="domain">By domain</option>
-        <option value="rand50">Random 50</option>
-        <option value="rand100">Random 100</option>
-        <option value="study">Study mode (no timer)</option>
-      </select>
-    </div>
-    <div id="domainPicker" class="domain-picker" hidden>
-      <label class="selectlbl">Domain:</label>
-      <div id="domainChips" class="domain-chips"></div>
-      <input type="hidden" id="optDomain" value="1" />
-    </div>
-    <button id="btnBegin" class="btn btn-primary btn-block">Begin Exam</button>
+    <button id="btnBegin" class="btn btn-primary btn-block">Begin Exam <span aria-hidden="true">→</span></button>
     <div class="kbd-tutorial">
       <div class="kbd-title">⌨️ Keyboard shortcuts</div>
       <div class="kbd-grid">
