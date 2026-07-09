@@ -70,13 +70,13 @@ body{
   vertical-align:middle;font-weight:700;letter-spacing:.3px}
 .subtitle{color:var(--muted);margin:8px 0 0;font-size:14.5px}
 
-.start-stats{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin:0 0 24px}
+.start-stats{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin:0 0 24px}
 .start-stats div{background:var(--grey-l);border:1px solid var(--line);border-radius:12px;
-  padding:14px 8px;transition:background .2s,border-color .2s}
-.start-stats span{display:block;font-size:23px;font-weight:800;color:var(--brand);line-height:1}
-.start-stats label{display:block;margin-top:6px;font-size:10.5px;color:var(--muted);
-  text-transform:uppercase;letter-spacing:.6px}
-#qTotal,#qMulti{color:var(--brand)}
+  padding:14px 6px;transition:background .2s,border-color .2s}
+.start-stats span{display:block;font-size:22px;font-weight:800;color:var(--brand);line-height:1}
+.start-stats span .unit{font-size:12px;font-weight:700;color:var(--muted);margin-left:2px}
+.start-stats label{display:block;margin-top:6px;font-size:10px;color:var(--muted);
+  text-transform:uppercase;letter-spacing:.5px;line-height:1.2}
 
 .start-options{display:flex;flex-direction:column;gap:18px;text-align:left;margin-bottom:24px}
 .opt-group{display:flex;flex-direction:column;gap:10px}
@@ -329,6 +329,7 @@ body{
   .timer{font-size:16px;padding:4px 10px}
   /* start screen: single-column shortcuts + tighter stats for small phones */
   .kbd-grid{grid-template-columns:1fr}
+  .start-stats{grid-template-columns:repeat(2,1fr)}
   .start-stats label{font-size:9.5px}
   .start-card h1{font-size:25px}
 }

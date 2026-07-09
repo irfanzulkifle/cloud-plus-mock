@@ -77,9 +77,6 @@ function beginExam(){
   timeLeft = EXAM_DURATION;
   examStartedAt = Date.now();
 
-  $('#qTotal').textContent = DATA.length;
-  $('#qMulti').textContent = DATA.filter(q => answerOf(q).length > 1).length;
-
   $('#startScreen').classList.remove('active');
   $('#examScreen').classList.add('active');
 
