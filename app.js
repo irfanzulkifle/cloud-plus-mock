@@ -3,6 +3,11 @@
 
 const EXAM_DURATION = 90 * 60; // 90 min (real CV0-004)
 const PASS_PCT = 750 / 1000;   // CompTIA's published ~75% scaled pass
+// Access gate password (for the private batch). Stored as a djb2 hash so it is
+// not in cleartext in the source. NOTE: client-side only — blocks casual access,
+// not a determined user. Change the password by updating GATE_HASH.
+const GATE_HASH = 3784444874; // djb2 hash of 'cloudplus2026' — change via gateHash('newpassword')
+function gateHash(s){let h=5381;for(let i=0;i<s.length;i++){h=((h<<5)+h+s.charCodeAt(i))>>>0;}return h;}
 const DOMAINS = {
   1: { name: "Cloud Architecture", pct: 23 },
   2: { name: "Deployment", pct: 19 },
@@ -487,6 +492,29 @@ window.addEventListener('DOMContentLoaded', () => {
   $('#btnRwNew').onclick = () => { show('startScreen'); stopTimer(); };
   $('#btnRwExpandAll').onclick = () => $$('.rw-card').forEach(c => c.classList.remove('collapsed'));
   $('#btnRwCollapseAll').onclick = () => $$('.rw-card').forEach(c => c.classList.add('collapsed'));
+
+  // ---------- ACCESS GATE (private batch) ----------
+  const gate = $('#gate');
+  const gatePass = $('#gatePass');
+  const gateBtn = $('#gateBtn');
+  const gateErr = $('#gateErr');
+  const unlock = () => {
+    if (gateHash(gatePass.value) === GATE_HASH) {
+      try { sessionStorage.setItem('cloudplus-unlocked', '1'); } catch(e){}
+      gate.classList.add('hidden');
+    } else {
+      gateErr.hidden = false;
+      gatePass.value = '';
+      gatePass.focus();
+    }
+  };
+  // remember unlock for this tab session
+  let already = false;
+  try { already = sessionStorage.getItem('cloudplus-unlocked') === '1'; } catch(e){}
+  if (already) gate.classList.add('hidden');
+  gateBtn.onclick = unlock;
+  gatePass.addEventListener('keydown', (e) => { if (e.key === 'Enter') { unlock(); e.preventDefault(); } });
+  if (!already) gatePass.focus();
 
   // theme toggle (persisted)
   $('#themeToggle').onclick = toggleTheme;
