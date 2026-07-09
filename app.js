@@ -59,8 +59,8 @@ function beginExam(){
 
   const mode = $('#optMode').value;
   study = (mode === 'study');
-  timed = $('#optTimed').checked && !study;
-  reviewMode = $('#optReview').checked;
+  timed = !study;          // timed for every mode except Study mode
+  reviewMode = true;       // end-of-exam review screen always shown
 
   let idx = DATA.map((_, i) => i);
   if (mode === 'domain') {
