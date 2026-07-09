@@ -25,6 +25,7 @@ html{scroll-behavior:smooth}
 html,body{height:100%}
 body{
   font-family:"JetBrains Mono","Roboto Mono",ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;
+  font-size:15px;
   background:var(--bg); color:var(--ink); line-height:1.5;
   -webkit-font-smoothing:antialiased; text-rendering:optimizeLegibility;
   transition:background .25s var(--ease), color .25s var(--ease);
@@ -35,7 +36,7 @@ body{
 
 /* ---------- unified button system ---------- */
 .btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;
-  font:inherit;font-size:15px;font-weight:700;line-height:1.1;cursor:pointer;
+  font:inherit;font-size:14px;font-weight:700;line-height:1.1;cursor:pointer;
   padding:12px 22px;border-radius:var(--radius-sm);border:1.5px solid transparent;
   transition:background .18s var(--ease),border-color .18s var(--ease),color .18s var(--ease),box-shadow .18s var(--ease),transform .05s var(--ease);
   white-space:nowrap;user-select:none;text-align:center}
@@ -67,7 +68,7 @@ body{
 .logo{width:62px;height:62px;border-radius:18px;display:flex;align-items:center;justify-content:center;
   font-size:30px;margin-bottom:16px;background:linear-gradient(135deg,var(--brand),var(--brand-d));
   box-shadow:0 10px 22px rgba(11,98,201,.32)}
-.start-card h1{font-size:30px;font-weight:800;letter-spacing:-.4px;line-height:1.15}
+.start-card h1{font-size:26px;font-weight:800;letter-spacing:-.4px;line-height:1.15}
 .badge{background:var(--brand);color:#fff;font-size:13px;padding:3px 11px;border-radius:20px;
   vertical-align:middle;font-weight:700;letter-spacing:.3px}
 .subtitle{color:var(--muted);margin:8px 0 0;font-size:14.5px}
@@ -75,7 +76,7 @@ body{
 .start-stats{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin:0 0 24px}
 .start-stats div{background:var(--grey-l);border:1px solid var(--line);border-radius:12px;
   padding:14px 8px;transition:background .2s,border-color .2s}
-.start-stats span{display:block;font-size:26px;font-weight:800;color:var(--brand);line-height:1}
+.start-stats span{display:block;font-size:23px;font-weight:800;color:var(--brand);line-height:1}
 .start-stats label{display:block;margin-top:6px;font-size:10.5px;color:var(--muted);
   text-transform:uppercase;letter-spacing:.6px}
 #qTotal,#qMulti{color:var(--brand)}
@@ -159,7 +160,7 @@ body{
 .btn-flag.on{background:var(--amber-l);border-color:var(--amber);color:var(--amber)}
 .btn-flag:focus-visible{outline:3px solid var(--brand);outline-offset:2px}
 .multihint{background:var(--blue-l);color:var(--brand);font-size:12px;font-weight:700;padding:5px 12px;border-radius:var(--radius-pill)}
-.stem{font-size:17px;line-height:1.65;margin-bottom:26px;white-space:pre-wrap;word-wrap:break-word}
+.stem{font-size:16px;line-height:1.6;margin-bottom:24px;white-space:pre-wrap;word-wrap:break-word}
 .options{display:flex;flex-direction:column;gap:12px}
 .opt{display:flex;align-items:flex-start;gap:14px;border:1px solid var(--line);border-radius:var(--radius);
   padding:14px 16px;min-height:48px;cursor:pointer;transition:.15s var(--ease);background:var(--panel);outline:none}
@@ -169,7 +170,7 @@ body{
 .opt .obox{width:24px;height:24px;flex:0 0 24px;border:2px solid var(--line);border-radius:7px;display:flex;
   align-items:center;justify-content:center;font-weight:800;color:var(--brand);margin-top:1px;transition:all .15s var(--ease)}
 .opt.sel .obox{background:var(--brand);border-color:var(--brand);color:#fff}
-.opt .otext{font-size:15.5px}
+.opt .otext{font-size:14.5px}
 .opt .letter{font-weight:800;margin-right:8px;color:var(--muted)}
 
 .nav-btns{display:flex;justify-content:space-between;margin-top:32px;gap:12px;flex-wrap:wrap}
@@ -222,7 +223,7 @@ body{
 #passMsg{font-size:20px;font-weight:800;margin-bottom:22px}
 .result-stats{display:flex;gap:12px;justify-content:center;margin-bottom:22px}
 .result-stats div{flex:1;background:var(--grey-l);border-radius:var(--radius);padding:14px 6px;transition:background .25s var(--ease)}
-.result-stats span{display:block;font-size:26px;font-weight:800;color:var(--ink)}
+.result-stats span{display:block;font-size:23px;font-weight:800;color:var(--ink)}
 .result-stats label{font-size:11px;color:var(--muted);text-transform:uppercase;letter-spacing:.5px}
 .breakdown{text-align:left;background:var(--grey-l);border-radius:var(--radius);padding:14px 18px;font-size:13.5px;color:var(--muted);margin-bottom:22px;transition:background .25s var(--ease)}
 .breakdown b{color:var(--ink)}

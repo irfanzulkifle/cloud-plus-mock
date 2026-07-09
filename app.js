@@ -450,8 +450,8 @@ window.addEventListener('DOMContentLoaded', () => {
   modeSel.addEventListener('change', toggleDomainPicker);
   buildDomainChips();
 
-  // keyboard: A-F/1-9 select option (Shift picks for multi-select style), arrows + J/K navigate,
-  // F flag, Enter/Space selects focused option or advances when nothing focused
+  // keyboard: A-F/1-9 select option, ArrowUp/Down move focus, ArrowLeft/Right change question,
+  // F flag, Enter selects focused option
   document.addEventListener('keydown', (e) => {
     if (!$('#examScreen').classList.contains('active')) return;
     const q = DATA[order[pos]];
@@ -466,12 +466,12 @@ window.addEventListener('DOMContentLoaded', () => {
     if (/^[1-9]$/.test(e.key) && parseInt(e.key,10) <= letters.length) {
       toggle(letters[parseInt(e.key,10) - 1]); e.preventDefault(); return;
     }
-    if (e.key === 'ArrowDown' || e.key === 'j' || e.key === 'J') {
+    if (e.key === 'ArrowDown') {
       if (focusedIdx >= 0 && focusedIdx < opts.length - 1) opts[focusedIdx + 1].focus();
       else if (focusedIdx < 0 && opts.length) opts[0].focus();
       e.preventDefault(); return;
     }
-    if (e.key === 'ArrowUp' || e.key === 'k' || e.key === 'K') {
+    if (e.key === 'ArrowUp') {
       if (focusedIdx > 0) opts[focusedIdx - 1].focus();
       else if (focusedIdx < 0 && opts.length) opts[opts.length - 1].focus();
       e.preventDefault(); return;
@@ -479,7 +479,7 @@ window.addEventListener('DOMContentLoaded', () => {
     if (e.key === 'ArrowRight') { nextQ(); e.preventDefault(); return; }
     if (e.key === 'ArrowLeft') { prevQ(); e.preventDefault(); return; }
     if (key === 'F') { toggleFlag(); e.preventDefault(); return; }
-    if ((e.key === 'Enter' || e.key === ' ') && focusedIdx >= 0) {
+    if (e.key === 'Enter' && focusedIdx >= 0) {
       const letter = letters[focusedIdx];
       toggle(letter); e.preventDefault(); return;
     }
