@@ -132,6 +132,34 @@ body{
 .breakdown b{color:var(--ink)}
 .result-actions{display:flex;justify-content:space-between;gap:12px}
 
+/* ---------- REVIEW INCORRECT ---------- */
+.rw-wrap{max-width:820px;margin:5vh auto 60px;padding:0 18px}
+.rw-head{display:flex;justify-content:space-between;align-items:center;margin-bottom:18px;flex-wrap:wrap;gap:12px}
+.rw-head h2{font-size:22px;font-weight:800}
+.rw-count{color:var(--muted);font-weight:600;font-size:15px;margin-left:6px}
+.rw-actions{display:flex;gap:10px}
+.rw-list{display:flex;flex-direction:column;gap:16px}
+.rw-card{background:var(--panel);border:1px solid var(--line);border-radius:12px;padding:20px 22px;box-shadow:0 4px 16px rgba(20,40,70,.06)}
+.rw-qhead{display:flex;align-items:center;gap:10px;margin-bottom:10px;flex-wrap:wrap}
+.rw-num{font-weight:800;color:var(--brand);font-size:15px}
+.rw-dom{font-size:12px;font-weight:700;color:var(--muted);background:var(--grey-l);padding:2px 9px;border-radius:20px}
+.rw-tag{font-size:11px;font-weight:800;text-transform:uppercase;letter-spacing:.5px;padding:2px 9px;border-radius:20px;margin-left:auto}
+.rw-tag.wrong{background:var(--red-l);color:var(--red)}
+.rw-tag.blank{background:var(--amber-l);color:var(--amber)}
+.rw-stem{font-size:15.5px;line-height:1.6;margin-bottom:14px;white-space:pre-wrap}
+.rw-opts{display:flex;flex-direction:column;gap:8px;margin-bottom:12px}
+.rw-opt{display:flex;align-items:flex-start;gap:10px;border:1px solid var(--line);border-radius:8px;padding:9px 12px;font-size:14.5px;background:#fff}
+.rw-opt .rw-mark{width:16px;font-weight:900;flex:0 0 16px;text-align:center}
+.rw-opt .rw-letter{font-weight:800;color:var(--muted)}
+.rw-opt.correct{border-color:var(--green);background:var(--green-l)}
+.rw-opt.correct .rw-mark{color:var(--green)}
+.rw-opt.correct .rw-letter{color:var(--green)}
+.rw-opt.yours{border-color:var(--red);background:var(--red-l)}
+.rw-opt.yours .rw-mark{color:var(--red)}
+.rw-opt.yours .rw-letter{color:var(--red)}
+.rw-answer{font-size:14px;background:var(--grey-l);border-radius:8px;padding:10px 14px}
+.rw-answer .rw-yours{color:var(--red);font-weight:700}
+
 @media(max-width:820px){
   .body{flex-direction:column}
   .navpanel{width:100%;flex:none;margin:18px 0 0;position:static}

@@ -247,16 +247,67 @@ function finishExam(){
 }
 
 function reviewWrong(){
-  // jump to first incorrect/blank question from result screen
-  const firstBad = order.findIndex((_, i) => {
+  // build a read-only review of every incorrect / blank question, with correct answer shown
+  const wrong = [];
+  order.forEach((_, i) => {
     const q = DATA[order[i]];
-    return !isCorrect(q, state.sel[i]);
+    const sel = state.sel[i];
+    if (!isCorrect(q, sel)) wrong.push({ i, q, sel });
   });
-  if (firstBad === -1){ alert('All correct — nice!'); return; }
-  // rebuild a focused pass: show wrong ones one by one via navigator
-  pos = firstBad;
-  show('examScreen');
-  renderQuestion();
+  if (!wrong.length){ alert('All correct — nice! 🎉'); return; }
+
+  $('#rwCount').textContent = `(${wrong.length} question${wrong.length > 1 ? 's' : ''})`;
+  const list = $('#rwList');
+  list.innerHTML = '';
+
+  wrong.forEach(({ i, q, sel }) => {
+    const ans = answerOf(q);
+    const correctSet = new Set(ans);
+    const isBlank = sel.size === 0;
+
+    const card = document.createElement('div');
+    card.className = 'rw-card';
+
+    const head = document.createElement('div');
+    head.className = 'rw-qhead';
+    head.innerHTML = `<span class="rw-num">Q${i + 1}</span>` +
+      (q.domainName ? `<span class="rw-dom">${q.domain}.0 ${q.domainName}</span>` : '') +
+      (isBlank ? `<span class="rw-tag blank">Not answered</span>` : `<span class="rw-tag wrong">Incorrect</span>`);
+    card.appendChild(head);
+
+    const stem = document.createElement('div');
+    stem.className = 'rw-stem';
+    stem.textContent = q.stem;
+    card.appendChild(stem);
+
+    const opts = document.createElement('div');
+    opts.className = 'rw-opts';
+    Object.keys(q.options).forEach(letter => {
+      const row = document.createElement('div');
+      const isCorrectOpt = correctSet.has(letter);
+      const isYourOpt = sel.has(letter);
+      let cls = 'rw-opt';
+      if (isCorrectOpt) cls += ' correct';
+      else if (isYourOpt) cls += ' yours';
+      row.className = cls;
+      const mark = isCorrectOpt ? '✓' : (isYourOpt ? '✗' : '');
+      row.innerHTML = `<span class="rw-mark">${mark}</span><span class="rw-letter">${letter}.</span><span>${q.options[letter]}</span>`;
+      opts.appendChild(row);
+    });
+    card.appendChild(opts);
+
+    const ansLine = document.createElement('div');
+    ansLine.className = 'rw-answer';
+    const yourTxt = isBlank ? '<em>not answered</em>' : [...sel].sort().join(', ');
+    ansLine.innerHTML = `<b>Correct answer:</b> ${ans.join(', ')}` +
+      (isBlank ? '' : ` &nbsp;·&nbsp; <b>Your answer:</b> <span class="rw-yours">${yourTxt}</span>`);
+    card.appendChild(ansLine);
+
+    list.appendChild(card);
+  });
+
+  show('reviewWrongScreen');
+  window.scrollTo({ top: 0, behavior: 'smooth' });
 }
 
 /* ---------- screen switch ---------- */
@@ -296,6 +347,8 @@ window.addEventListener('DOMContentLoaded', () => {
   $('#btnSubmit').onclick = finishExam;
   $('#btnRestart').onclick = () => { show('startScreen'); stopTimer(); };
   $('#btnReviewWrong').onclick = reviewWrong;
+  $('#btnRwBack').onclick = () => show('resultScreen');
+  $('#btnRwNew').onclick = () => { show('startScreen'); stopTimer(); };
 
   // show/hide domain picker based on mode
   const modeSel = $('#optMode');
