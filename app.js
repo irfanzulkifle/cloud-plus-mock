@@ -121,7 +121,13 @@ function renderQuestion(){
   Object.keys(q.options).forEach(letter => {
     const div = document.createElement('div');
     div.className = 'opt' + (sel.has(letter) ? ' sel' : '');
+    div.tabIndex = 0;
+    div.setAttribute('role', 'option');
+    div.setAttribute('aria-selected', sel.has(letter) ? 'true' : 'false');
     div.onclick = () => toggle(letter);
+    div.onkeydown = (ev) => {
+      if (ev.key === 'Enter' || ev.key === ' ') { toggle(letter); ev.preventDefault(); }
+    };
     div.innerHTML =
       `<div class="obox">${sel.has(letter) ? (multi ? '✓' : letter) : ''}</div>` +
       `<div class="otext"><span class="letter">${letter}.</span>${q.options[letter]}</div>`;
@@ -374,12 +380,25 @@ function renderRwList(){
   });
 }
 
+/* ---------- theme ---------- */
+function applyTheme(theme){
+  document.documentElement.setAttribute('data-theme', theme);
+  const isDark = theme === 'dark';
+  const label = isDark ? '☀️ Light' : '🌙 Dark';
+  $('#themeToggle').textContent = label;
+  $('#themeToggle2').textContent = isDark ? '☀️' : '🌙';
+  try { localStorage.setItem('cloudplus-theme', theme); } catch(e){}
+}
+function toggleTheme(){
+  const cur = document.documentElement.getAttribute('data-theme') === 'dark' ? 'dark' : 'light';
+  applyTheme(cur === 'dark' ? 'light' : 'dark');
+}
+
 /* ---------- screen switch ---------- */
 function show(id){
   $$('.screen').forEach(s => s.classList.remove('active'));
   $('#' + id).classList.add('active');
 }
-
 /* ---------- wire up ---------- */
 /* ---------- domain picker (By domain mode) ---------- */
 function buildDomainChips() {
@@ -416,6 +435,13 @@ window.addEventListener('DOMContentLoaded', () => {
   $('#btnRwExpandAll').onclick = () => $$('.rw-card').forEach(c => c.classList.remove('collapsed'));
   $('#btnRwCollapseAll').onclick = () => $$('.rw-card').forEach(c => c.classList.add('collapsed'));
 
+  // theme toggle (persisted)
+  $('#themeToggle').onclick = toggleTheme;
+  $('#themeToggle2').onclick = toggleTheme;
+  let saved = 'light';
+  try { saved = localStorage.getItem('cloudplus-theme') || 'light'; } catch(e){}
+  applyTheme(saved);
+
   // show/hide domain picker based on mode
   const modeSel = $('#optMode');
   const toggleDomainPicker = () => {
@@ -424,15 +450,38 @@ window.addEventListener('DOMContentLoaded', () => {
   modeSel.addEventListener('change', toggleDomainPicker);
   buildDomainChips();
 
-  // keyboard: 1-9/A-F select, arrows navigate, F flag
+  // keyboard: A-F/1-9 select option (Shift picks for multi-select style), arrows + J/K navigate,
+  // F flag, Enter/Space selects focused option or advances when nothing focused
   document.addEventListener('keydown', (e) => {
     if (!$('#examScreen').classList.contains('active')) return;
     const q = DATA[order[pos]];
     const letters = Object.keys(q.options);
+    const opts = $$('#options .opt');
+    const focusedIdx = opts.findIndex(o => o === document.activeElement);
+
     const key = e.key.toUpperCase();
-    if (letters.includes(key)) { toggle(key); e.preventDefault(); }
-    else if (e.key === 'ArrowRight') { nextQ(); e.preventDefault(); }
-    else if (e.key === 'ArrowLeft') { prevQ(); e.preventDefault(); }
-    else if (key === 'F') { toggleFlag(); e.preventDefault(); }
+    if (/^[A-F]$/.test(key) && letters.includes(key)) {
+      toggle(key); e.preventDefault(); return;
+    }
+    if (/^[1-9]$/.test(e.key) && parseInt(e.key,10) <= letters.length) {
+      toggle(letters[parseInt(e.key,10) - 1]); e.preventDefault(); return;
+    }
+    if (e.key === 'ArrowDown' || e.key === 'j' || e.key === 'J') {
+      if (focusedIdx >= 0 && focusedIdx < opts.length - 1) opts[focusedIdx + 1].focus();
+      else if (focusedIdx < 0 && opts.length) opts[0].focus();
+      e.preventDefault(); return;
+    }
+    if (e.key === 'ArrowUp' || e.key === 'k' || e.key === 'K') {
+      if (focusedIdx > 0) opts[focusedIdx - 1].focus();
+      else if (focusedIdx < 0 && opts.length) opts[opts.length - 1].focus();
+      e.preventDefault(); return;
+    }
+    if (e.key === 'ArrowRight') { nextQ(); e.preventDefault(); return; }
+    if (e.key === 'ArrowLeft') { prevQ(); e.preventDefault(); return; }
+    if (key === 'F') { toggleFlag(); e.preventDefault(); return; }
+    if ((e.key === 'Enter' || e.key === ' ') && focusedIdx >= 0) {
+      const letter = letters[focusedIdx];
+      toggle(letter); e.preventDefault(); return;
+    }
   });
 });

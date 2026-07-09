@@ -10,6 +10,9 @@
 <!-- ===== START SCREEN ===== -->
 <div id="startScreen" class="screen active">
   <div class="start-card">
+    <div class="start-top">
+      <button id="themeToggle" class="theme-btn" type="button" aria-label="Toggle dark/light theme">🌙 Dark</button>
+    </div>
     <h1>CompTIA Cloud+ <span class="badge">CV0-004</span></h1>
     <p class="subtitle">Pearson VUE–style Mock Exam Simulator</p>
     <div class="start-stats">
@@ -36,7 +39,7 @@
       <div id="domainChips" class="domain-chips"></div>
       <input type="hidden" id="optDomain" value="1" />
     </div>
-    <button id="btnBegin" class="btn-primary">Begin Exam</button>
+    <button id="btnBegin" class="btn btn-primary">Begin Exam</button>
     <p class="foot">Questions extracted from your practice PDF · 2 PBQs (HOTSPOT/SIMULATION) excluded — no text answers.</p>
   </div>
 </div>
@@ -46,9 +49,10 @@
   <header class="topbar">
     <div class="top-left">
       <span class="brand">Cloud+ CV0-004</span>
-      <span id="qCounter" class="qcounter">Question 1 of 312</span>
+      <span id="qCounter" class="qcounter">Question 1 of 310</span>
     </div>
     <div class="top-right">
+      <button id="themeToggle2" class="theme-btn" type="button" aria-label="Toggle dark/light theme">🌙</button>
       <span id="timer" class="timer">90:00</span>
       <button id="btnEnd" class="btn-end">End Exam</button>
     </div>
@@ -61,7 +65,7 @@
         <span id="multiHint" class="multihint" hidden>Select all that apply</span>
       </div>
       <div id="stem" class="stem"></div>
-      <div id="options" class="options"></div>
+      <div id="options" class="options" role="listbox" aria-label="Answer options"></div>
 
       <div class="nav-btns">
         <button id="btnPrev" class="btn-nav">‹ Previous</button>
@@ -89,8 +93,8 @@
     <p id="reviewSummary" class="review-summary"></p>
     <div id="reviewGrid" class="navgrid big"></div>
     <div class="review-actions">
-      <button id="btnBack" class="btn-nav">‹ Back to exam</button>
-      <button id="btnSubmit" class="btn-primary">Submit &amp; View Score</button>
+      <button id="btnBack" class="btn btn-ghost">‹ Back to exam</button>
+      <button id="btnSubmit" class="btn btn-primary">Submit &amp; View Score</button>
     </div>
   </div>
 </div>
@@ -110,8 +114,8 @@
     </div>
     <div id="rBreakdown" class="breakdown"></div>
     <div class="result-actions">
-      <button id="btnReviewWrong" class="btn-nav">Review incorrect</button>
-      <button id="btnRestart" class="btn-primary">New Exam</button>
+      <button id="btnReviewWrong" class="btn btn-ghost">Review incorrect</button>
+      <button id="btnRestart" class="btn btn-primary">New Exam</button>
     </div>
   </div>
 </div>
@@ -122,8 +126,8 @@
     <header class="rw-head">
       <h2>Review Incorrect <span id="rwCount" class="rw-count"></span></h2>
       <div class="rw-actions">
-        <button id="btnRwBack" class="btn-nav">‹ Back to score</button>
-        <button id="btnRwNew" class="btn-primary">New Exam</button>
+        <button id="btnRwBack" class="btn btn-ghost">‹ Back to score</button>
+        <button id="btnRwNew" class="btn btn-primary">New Exam</button>
       </div>
     </header>
     <div class="rw-toolbar">
