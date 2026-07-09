@@ -1,4403 +1,6308 @@
 window.EXAM_DATA = [
-{
-"number": 1,
-"stem": "A software engineer needs to transfer data over the internet using programmatic access while also being able to query the data. Which of the following will best help the engineer to complete this task?",
-"options": {
-"A": "SQL  ",
-"B": "Web sockets  ",
-"C": "RPC  ",
-"D": "GraphQL "
-},
-"answer": "D",
-"choose": "all",
-"domain": 5,
-"domainName": "DevOps Fundamentals"
-},
-{
-"number": 2,
-"stem": "Which of the following is a field of computer science that enables computers to identify and understand objects and people in images and videos?",
-"options": {
-"A": "Image reconstruction  ",
-"B": "Facial recognition  ",
-"C": "Natural language processing  ",
-"D": "Computer vision "
-},
-"answer": "D",
-"choose": "all",
-"domain": 6,
-"domainName": "Troubleshooting"
-},
-{
-"number": 3,
-"stem": "A company needs to deploy its own code directly in the cloud without provisioning additional infrastructure. Which of the following is the best cloud service model for the company to use?",
-"options": {
-"A": "PaaS  ",
-"B": "SaaS  ",
-"C": "IaaS  ",
-"D": "XaaS "
-},
-"answer": "A",
-"choose": "all",
-"domain": 1,
-"domainName": "Cloud Architecture"
-},
-{
-"number": 4,
-"stem": "A company just learned that the data in its object storage was accessed by an unauthorized party. Which of the following should the company have done to make the data unusable?",
-"options": {
-"A": "The company should have switched from object storage to file storage.  ",
-"B": "The company should have hashed the data.",
-"C": "The company should have changed the file access permissions.  ",
-"D": "The company should have encrypted the data at rest. "
-},
-"answer": "D",
-"choose": "all",
-"domain": 4,
-"domainName": "Security"
-},
-{
-"number": 5,
-"stem": "A customer relationship management application, which is hosted in a public cloud IaaS network, is vulnerable to a remote command execution vulnerability. Which of the following is the best solution for the security engineer to implement to prevent the application from being exploited by basic attacks?",
-"options": {
-"A": "IPS  ",
-"B": "ACL  ",
-"C": "DLP  ",
-"D": "WAF "
-},
-"answer": "D",
-"choose": "all",
-"domain": 4,
-"domainName": "Security"
-},
-{
-"number": 6,
-"stem": "Which of the following is a difference between a SAN and a NAS?",
-"options": {
-"A": "A SAN works only with fiber-based networks.  ",
-"B": "A SAN works with any Ethernet-based network.  ",
-"C": "A NAS uses a faster protocol than a SAN.  ",
-"D": "A NAS uses a slower protocol than a SAN. "
-},
-"answer": "D",
-"choose": "all",
-"domain": 1,
-"domainName": "Cloud Architecture"
-},
-{
-"number": 7,
-"stem": "A cloud engineer is troubleshooting an application that consumes multiple third-party REST APIs. The application is randomly experiencing high latency. Which of the following would best help determine the source of the latency?",
-"options": {
-"A": "Configuring centralized logging to analyze HTTP requests  ",
-"B": "Running a flow log on the network to analyze the packets  ",
-"C": "Configuring an API gateway to track all incoming requests  ",
-"D": "Enabling tracing to detect HTTP response times and codes "
-},
-"answer": "D",
-"choose": "all",
-"domain": 3,
-"domainName": "Operations"
-},
-{
-"number": 8,
-"stem": "A cloud engineer is reviewing the following Dockerfile to deploy a Python web application: Which of the following changes should the engineer make to the file to improve container security?",
-"options": {
-"A": "Add the instruction USER nonroot.  ",
-"B": "Change the version from latest to 3.11.  ",
-"C": "Remove the ENTRYPOINT instruction.  ",
-"D": "Ensure myapp/main/py is owned by root. "
-},
-"answer": "A",
-"choose": "all",
-"domain": 4,
-"domainName": "Security"
-},
-{
-"number": 9,
-"stem": "A group of cloud administrators frequently uses the same deployment template to recreate a cloud-based development environment. The administrators are unable to go back and review the history of changes they have made to the template. Which of the following cloud resource deployment concepts should the administrator start using?",
-"options": {
-"A": "Drift detection  ",
-"B": "Repeatability  ",
-"C": "Documentation  ",
-"D": "Versioning "
-},
-"answer": "D",
-"choose": "all",
-"domain": 2,
-"domainName": "Deployment"
-},
-{
-"number": 10,
-"stem": "A government agency in the public sector is considering a migration from on premises to the cloud. Which of the following are the most important considerations for this cloud migration? (Choose two.)",
-"options": {
-"A": "Compliance  ",
-"B": "IaaS vs. SaaS  ",
-"C": "Firewall capabilities  ",
-"D": "Regulatory  ",
-"E": "Implementation timeline  ",
-"F": "Service availability "
-},
-"answer": "AD",
-"choose": "all",
-"domain": 1,
-"domainName": "Cloud Architecture"
-},
-{
-"number": 11,
-"stem": "A company wants to optimize cloud resources and lower the overhead caused by managing multiple operating systems. Which of the following compute resources would be best to help to achieve this goal?",
-"options": {
-"A": "VM  ",
-"B": "Containers  ",
-"C": "Remote desktops",
-"D": "Bare-metal servers "
-},
-"answer": "B",
-"choose": "all",
-"domain": 1,
-"domainName": "Cloud Architecture"
-},
-{
-"number": 12,
-"stem": "A company runs a discussion forum that caters to global users. The company’s monitoring system reports that the home page suddenly is seeing elevated response times, even though internal monitoring has reported no issues or changes. Which of the following is the most likely cause of this issue?",
-"options": {
-"A": "Cryptojacking  ",
-"B": "Human error  ",
-"C": "DDos  ",
-"D": "Phishing "
-},
-"answer": "C",
-"choose": "all",
-"domain": 4,
-"domainName": "Security"
-},
-{
-"number": 13,
-"stem": "Which of the following migration types is best to use when migrating a highly available application, which is normally hosted on a local VM cluster, for usage with an external user population?",
-"options": {
-"A": "Cloud to on-premises  ",
-"B": "Cloud to cloud  ",
-"C": "On-premises to cloud  ",
-"D": "On-premises to on-premises "
-},
-"answer": "C",
-"choose": "all",
-"domain": 2,
-"domainName": "Deployment"
-},
-{
-"number": 14,
-"stem": "A cloud architect attempts to modify a protected branch but is unable to do so. The architect receives an error indicating the action cannot be completed. Which of the following should the architect try instead?",
-"options": {
-"A": "Adding a new remote  ",
-"B": "Creating a pull request  ",
-"C": "Merging the branch  ",
-"D": "Rebasing the branch "
-},
-"answer": "B",
-"choose": "all",
-"domain": 5,
-"domainName": "DevOps Fundamentals"
-},
-{
-"number": 15,
-"stem": "Which of the following container storage types loses data after a restart?",
-"options": {
-"A": "Object  ",
-"B": "Persistent volume",
-"C": "Ephemeral  ",
-"D": "Block "
-},
-"answer": "C",
-"choose": "all",
-"domain": 3,
-"domainName": "Operations"
-},
-{
-"number": 16,
-"stem": "A developer is testing code that will be used to deploy a web farm in a public cloud. The main code block is a function to create a load balancer and a loop to create 1,000 web servers, as shown below: The developer runs the code against the company’s cloud account and observes that the load balancer is successfully created, but only 100 web servers have been created. Which of the following should the developer do to fix this issue?",
-"options": {
-"A": "Request an increase of instance quota.  ",
-"B": "Run the code multiple times until all servers are created.  ",
-"C": "Check the my_web_server () function to ensure itis using the right credentials.  ",
-"D": "Place the my_load_balancer () function after the loop. "
-},
-"answer": "A",
-"choose": "all",
-"domain": 2,
-"domainName": "Deployment"
-},
-{
-"number": 17,
-"stem": "Following a ransomware attack, the legal department at a company instructs the IT administrator to store the data from the affected virtual machines for a minimum of one year. Which of the following is this an example of?",
-"options": {
-"A": "Recoverability  ",
-"B": "Retention  ",
-"C": "Encryption  ",
-"D": "Integrity "
-},
-"answer": "B",
-"choose": "all",
-"domain": 3,
-"domainName": "Operations"
-},
-{
-"number": 18,
-"stem": "An engineer made a change to an application and needs to select a deployment strategy that meets the following requirements: Is simple and fast Can be performed on two identical platforms Which of the following strategies should the engineer use?",
-"options": {
-"A": "Blue-green  ",
-"B": "Canary  ",
-"C": "Rolling  ",
-"D": "In-place"
-},
-"answer": "A",
-"choose": "all",
-"domain": 2,
-"domainName": "Deployment"
-},
-{
-"number": 19,
-"stem": "An organization needs to retain its data for compliance reasons but only when required. Which of the following would be the most cost- effective type of tiered storage?",
-"options": {
-"A": "Warm  ",
-"B": "Hot  ",
-"C": "Archive  ",
-"D": "Cold "
-},
-"answer": "C",
-"choose": "all",
-"domain": 1,
-"domainName": "Cloud Architecture"
-},
-{
-"number": 20,
-"stem": "An e-commerce store is preparing for an annual holiday sale. Previously, this sale has increased the number of transactions between two and ten times the normal level of transactions. A cloud administrator wants to implement a process to scale the web server seamlessly. The goal is to automate changes only when necessary and with minimal cost. Which of the following scaling approaches should the administrator use?",
-"options": {
-"A": "Scale horizontally with additional web servers to provide redundancy.  ",
-"B": "Allow the load to trigger adjustments to the resources.  ",
-"C": "When traffic increases, adjust the resources using the cloud portal.  ",
-"D": "Schedule the environment to scale resources before the sale begins. "
-},
-"answer": "B",
-"choose": "all",
-"domain": 3,
-"domainName": "Operations"
-},
-{
-"number": 21,
-"stem": "Which of the following vulnerability management phases includes the process of discovering newly introduced security vulnerabilities?",
-"options": {
-"A": "Scanning  ",
-"B": "Identification  ",
-"C": "Reporting  ",
-"D": "Remediation "
-},
-"answer": "A",
-"choose": "all",
-"domain": 4,
-"domainName": "Security"
-},
-{
-"number": 22,
-"stem": "A developer sends multiple requests to a SaaS application in a short amount of time. The developer realizes that the entire server and all other users can no longer send requests to the application. Which of the following best describes the issue?",
-"options": {
-"A": "Service quotas  ",
-"B": "API rate limiting",
-"C": "Full outage  ",
-"D": "Regional service availability "
-},
-"answer": "B",
-"choose": "all",
-"domain": 6,
-"domainName": "Troubleshooting"
-},
-{
-"number": 23,
-"stem": "A cloud engineer needs to integrate a new payment processor with an existing e-commerce website. Which of the following technologies is the best fit for this integration?",
-"options": {
-"A": "RPC over SSL  ",
-"B": "Transactional SQL  ",
-"C": "REST API over HTTPS  ",
-"D": "Secure web socket "
-},
-"answer": "C",
-"choose": "all",
-"domain": 5,
-"domainName": "DevOps Fundamentals"
-},
-{
-"number": 24,
-"stem": "A company’s website suddenly crashed. A cloud engineer investigates the following logs: Which of the following is the most likely cause of the issue?",
-"options": {
-"A": "SQL injection  ",
-"B": "Cross-site scripting  ",
-"C": "Leaked credentials  ",
-"D": "DDoS "
-},
-"answer": "D",
-"choose": "all",
-"domain": 4,
-"domainName": "Security"
-},
-{
-"number": 25,
-"stem": "Which of the following best describes a characteristic of a hot site?",
-"options": {
-"A": "Servers in the hot site are clustered with the main site.  ",
-"B": "Network traffic is balanced between the main site and hot site servers  ",
-"C": "Offline server backups are replicated hourly from the main site  ",
-"D": "All servers are replicated from the main site in an online status. "
-},
-"answer": "D",
-"choose": "all",
-"domain": 3,
-"domainName": "Operations"
-},
-{
-"number": 26,
-"stem": "Five thousand employees always access the company’s public cloud-hosted web application on a daily basis during the same time frame. Some users have been reporting performance issues while attempting to connect to the web application. Which of the following is the best configuration approach to resolve this issue?",
-"options": {
-"A": "Scale vertically based on a trend.  ",
-"B": "Scale horizontally based on a schedule.  ",
-"C": "Scale vertically based on a load.  ",
-"D": "Scale horizontally based on an event. "
-},
-"answer": "B",
-"choose": "all",
-"domain": 3,
-"domainName": "Operations"
-},
-{
-"number": 27,
-"stem": "A cloud engineer is reviewing a disaster recovery plan that includes the following requirements: System state, files, and configurations must be backed up on a weekly basis. The system state, file, and configuration backups must be tested annually. Which of the following backup methods should the engineer implement for the first week the plan is executed?",
-"options": {
-"A": "Differential  ",
-"B": "Incremental  ",
-"C": "Snapshot  ",
-"D": "Full "
-},
-"answer": "D",
-"choose": "all",
-"domain": 3,
-"domainName": "Operations"
-},
-{
-"number": 28,
-"stem": "Which of the following is a direct effect of cloud migration on an enterprise?",
-"options": {
-"A": "The enterprise must reorganize the reporting structure.  ",
-"B": "Compatibility issues must be addressed on premises after migration.  ",
-"C": "Cloud solutions will require less resources than on-premises installations.  ",
-"D": "Utility costs will be reduced on premises. "
-},
-"answer": "D",
-"choose": "all",
-"domain": 2,
-"domainName": "Deployment"
-},
-{
-"number": 29,
-"stem": "A company wants to create a few additional VDIs so support vendors and contractors have a secure method to access the company's cloud environment. When a cloud administrator attempts to create the additional instances in the new locations, the operation is successful in some locations but fails in others. Which of the following is the most likely reason for this failure?",
-"options": {
-"A": "Partial service outages  ",
-"B": "Regional service availability",
-"C": "Service quotas  ",
-"D": "Deprecation of functionality "
-},
-"answer": "B",
-"choose": "all",
-"domain": 6,
-"domainName": "Troubleshooting"
-},
-{
-"number": 30,
-"stem": "An administrator used a script that worked in the past to create and tag five virtual machines. All of the virtual machines have been created; however, the administrator sees the following results: {tags: []} Which of the following is the most likely reason for this result?",
-"options": {
-"A": "API throttling  ",
-"B": "Service quotas  ",
-"C": "Command deprecation  ",
-"D": "Compatibility issues "
-},
-"answer": "C",
-"choose": "all",
-"domain": 6,
-"domainName": "Troubleshooting"
-},
-{
-"number": 31,
-"stem": "A cloud administrator needs to collect process-level, memory-usage tracking for the virtual machines that are part of an autoscaling group. Which of the following is the best way to accomplish the goal by using cloud-native monitoring services?",
-"options": {
-"A": "Configuring page file/swap metrics  ",
-"B": "Deploying the cloud-monitoring agent software  ",
-"C": "Scheduling a script to collect the data  ",
-"D": "Enabling memory monitoring in the VM configuration "
-},
-"answer": "B",
-"choose": "all",
-"domain": 3,
-"domainName": "Operations"
-},
-{
-"number": 32,
-"stem": "A cloud developer is creating a static website that customers will be accessing globally. Which of the following services will help reduce latency?",
-"options": {
-"A": "VPC  ",
-"B": "Application load balancer  ",
-"C": "CDN  ",
-"D": "API gateway "
-},
-"answer": "C",
-"choose": "all",
-"domain": 1,
-"domainName": "Cloud Architecture"
-},
-{
-"number": 33,
-"stem": "A cloud engineer is designing a cloud native, three-tier application. The engineer must adhere to the following security best practices: Minimal services should run on all layers of the stack. The solution should be vendor agnostic. Virtualization could be used over physical hardware. Which of the following concepts should the engineer use to design the system to best meet these requirements?",
-"options": {
-"A": "Virtual machine  ",
-"B": "Microservices  ",
-"C": "Fan-out  ",
-"D": "Cloud-provided managed services "
-},
-"answer": "B",
-"choose": "all",
-"domain": 1,
-"domainName": "Cloud Architecture"
-},
-{
-"number": 34,
-"stem": "A cloud solutions architect needs to have consistency between production, staging, and development environments. Which of the following options will best achieve this goal?",
-"options": {
-"A": "Using Terraform templates with environment variables  ",
-"B": "Using Grafana in each environment  ",
-"C": "Using the ELK stack in each environment  ",
-"D": "Using Jenkins agents in different environments "
-},
-"answer": "A",
-"choose": "all",
-"domain": 5,
-"domainName": "DevOps Fundamentals"
-},
-{
-"number": 35,
-"stem": "A healthcare organization must follow strict compliance requirements to ensure that PII is not leaked. The cloud administrator needs to ensure the cloud email system can support this requirement. Which of the following should the organization enable?",
-"options": {
-"A": "IPS  ",
-"B": "DLP  ",
-"C": "ACL  ",
-"D": "WAF "
-},
-"answer": "B",
-"choose": "all",
-"domain": 4,
-"domainName": "Security"
-},
-{
-"number": 36,
-"stem": "A company’s content management system (CMS) service runs on an IaaS cluster on a public cloud. The CMS service is frequently targeted by a malicious threat actor using DDoS. Which of the following should a cloud engineer monitor to identify attacks?",
-"options": {
-"A": "Network flow logs  ",
-"B": "Endpoint detection and response logs  ",
-"C": "Cloud provider event logs  ",
-"D": "Instance syslog"
-},
-"answer": "A",
-"choose": "all",
-"domain": 3,
-"domainName": "Operations"
-},
-{
-"number": 37,
-"stem": "Which of the following is the most cost-effective way to store data that is infrequently accessed?",
-"options": {
-"A": "Cold site  ",
-"B": "Hot site  ",
-"C": "Off-site  ",
-"D": "Warm site "
-},
-"answer": "C",
-"choose": "all",
-"domain": 1,
-"domainName": "Cloud Architecture"
-},
-{
-"number": 38,
-"stem": "Which of the following models will best reduce the cost of running short-term, non-critical workloads?",
-"options": {
-"A": "Reserved  ",
-"B": "Spot instance  ",
-"C": "Pay-as-you-go  ",
-"D": "Dedicated host "
-},
-"answer": "B",
-"choose": "all",
-"domain": 1,
-"domainName": "Cloud Architecture"
-},
-{
-"number": 39,
-"stem": "Which of the following vulnerability management concepts is best defined as the process of discovering vulnerabilities?",
-"options": {
-"A": "Scanning  ",
-"B": "Assessment  ",
-"C": "Remediation  ",
-"D": "Identification "
-},
-"answer": "A",
-"choose": "all",
-"domain": 4,
-"domainName": "Security"
-},
-{
-"number": 40,
-"stem": "Which of the following types of storage provides the greatest performance advantage for a traditional relational database?",
-"options": {
-"A": "File  ",
-"B": "Object  ",
-"C": "Block  ",
-"D": "Ephemeral"
-},
-"answer": "C",
-"choose": "all",
-"domain": 3,
-"domainName": "Operations"
-},
-{
-"number": 41,
-"stem": "A cloud networking engineer is troubleshooting the corporate office’s network configuration. Employees in the IT and operations departments are unable to resolve IP addresses on all devices, and the IT department cannot establish a connection to other departments’ subnets. The engineer identifies the following configuration currently in place to support the office network: Each employee needs to connect to the network with a maximum of three hosts. Each subnet must be segregated, but the IT department must have the ability to communicate with all subnets. Which of the following meet the IP addressing and routing requirements? (Choose two.)",
-"options": {
-"A": "Modifying the subnet mask to 255.255.254.0 for IT and operations departments  ",
-"B": "Configuring static routing to allow access from each subnet to 10.1.40.1  ",
-"C": "Modifying the BYOD policy to reduce the volume of devices that are allowed to connect to the corporate network  ",
-"D": "Configuring static routing to allow access from 10.1.30.1 to each subnet  ",
-"E": "Combining the subnets and increasing the allocation of IP addresses available to support three hosts for each employee  ",
-"F": "Modifying the subnet mask to 255.255.255.128 for the IT and operations departments "
-},
-"answer": "AD",
-"choose": "all",
-"domain": 1,
-"domainName": "Cloud Architecture"
-},
-{
-"number": 42,
-"stem": "Which of the following compute resources is the most optimal for running a single scripted task on a schedule?",
-"options": {
-"A": "Bare-metal server  ",
-"B": "Managed container  ",
-"C": "Virtual machine  ",
-"D": "Serverless function "
-},
-"answer": "D",
-"choose": "all",
-"domain": 1,
-"domainName": "Cloud Architecture"
-},
-{
-"number": 43,
-"stem": "A video surveillance system records road incidents and stores the videos locally before uploading them to the cloud and deleting them from local storage. Which of the following best describes the nature of the local storage?",
-"options": {
-"A": "Persistent  ",
-"B": "Ephemeral  ",
-"C": "Differential  ",
-"D": "Incremental "
-},
-"answer": "B",
-"choose": "all",
-"domain": 3,
-"domainName": "Operations"
-},
-{
-"number": 44,
-"stem": "An organization is hosting a seminar with eight individuals who need to connect to their own dedicated VM. The technician used the following VM configurations: IP address: DHCP NIC: 1Gbps Network: 10.1.10.0/29 Several users are unable to access their VMs. Which of the following best describes the reason?",
-"options": {
-"A": "Not enough addresses are available.  ",
-"B": "The routes are misconfigured.  ",
-"C": "Too much traffic is on the network.  ",
-"D": "DHCP is not working correctly on the VM. "
-},
-"answer": "A",
-"choose": "all",
-"domain": 6,
-"domainName": "Troubleshooting"
-},
-{
-"number": 45,
-"stem": "Department supervisors have requested a report that will help them understand the utilization of cloud resources, make decisions about budgeting for the following year, and reduce costs. Which of the following are the most important requisite steps to create the report? (Choose two.)",
-"options": {
-"A": "Set the desired retention of resource logs.  ",
-"B": "Configure application tracing.  ",
-"C": "Integrate email alerts with ticketing software.  ",
-"D": "Enable resource tagging.  ",
-"E": "Configure the collection of performance/utilization logs.  ",
-"F": "Configure metric threshold alerts. "
-},
-"answer": "DE",
-"choose": "all",
-"domain": 3,
-"domainName": "Operations"
-},
-{
-"number": 46,
-"stem": "A cloud engineer wants to deploy a new application to the cloud and is writing the following script: Which of the following actions will this script perform?",
-"options": {
-"A": "Upload a new VM image.",
-"B": "Create a new cloud resource.  ",
-"C": "Build a local server.  ",
-"D": "Import a cloud module. "
-},
-"answer": "B",
-"choose": "all",
-"domain": 2,
-"domainName": "Deployment"
-},
-{
-"number": 47,
-"stem": "A network administrator is building a site-to-site VPN tunnel from the company’s headquarters office to the company’s public cloud development network. The network administrator confirms the following: The VPN tunnel is established on the headquarters office firewall. While inside the office, developers report that they cannot connect to the development network resources. While outside the office on a client VPN, developers report that they can connect to the development network resources. The office and the client VPN have different IP subnet ranges. The firewall flow logs show that traffic is reaching the development network from the office. Which of the following is the next step the network administrator should take to troubleshoot the VPN tunnel?",
-"options": {
-"A": "Review the development network routing table.  ",
-"B": "Change the ciphers on the site-to-site VPN.  ",
-"C": "Restart the site-to-site VPN tunnel.  ",
-"D": "Check the ACLs on the development workloads. "
-},
-"answer": "A",
-"choose": "all",
-"domain": 1,
-"domainName": "Cloud Architecture"
-},
-{
-"number": 48,
-"stem": "A cross-site request forgery vulnerability exploited a web application that was hosted in a public IaaS network. A security engineer determined that deploying a WAF in blocking mode at a CDN would prevent the application from being exploited again. However, a week after implementing the WAF, the application was exploited again. Which of the following should the security engineer do to make the WAF control effective?",
-"options": {
-"A": "Configure the DDoS protection on the CDN.  ",
-"B": "Install endpoint protection software on the VMs.  ",
-"C": "Add an ACL to the VM subnet.  ",
-"D": "Deploy an IDS on the IaaS network. "
-},
-"answer": "C",
-"choose": "all",
-"domain": 4,
-"domainName": "Security"
-},
-{
-"number": 49,
-"stem": "An organization’s critical data was exfiltrated from a computer system in a cyberattack. A cloud analyst wants to identify the root cause and is reviewing the following security logs of a software web application: Which of the following types of attacks occurred?",
-"options": {
-"A": "SQL injection  ",
-"B": "Cross-site scripting  ",
-"C": "Reuse of leaked credentials  ",
-"D": "Privilege escalation "
-},
-"answer": "A",
-"choose": "all",
-"domain": 4,
-"domainName": "Security"
-},
-{
-"number": 50,
-"stem": "A banking firm’s cloud server will be decommissioned after a successful proof of concept using mirrored data. Which of the following is the best action to take regarding the storage used on the decommissioned server?",
-"options": {
-"A": "Keep it temporarily  ",
-"B": "Archive it.  ",
-"C": "Delete it.  ",
-"D": "Retain it permanently. "
-},
-"answer": "C",
-"choose": "all",
-"domain": 2,
-"domainName": "Deployment"
-},
-{
-"number": 51,
-"stem": "A company operates a website that allows customers to upload, share, and retain full ownership of their photographs. Which of the following could affect image ownership as the website usage expands globally?",
-"options": {
-"A": "Sovereignty  ",
-"B": "Data classification  ",
-"C": "Litigation holds  ",
-"D": "Retention "
-},
-"answer": "A",
-"choose": "all",
-"domain": 4,
-"domainName": "Security"
-},
-{
-"number": 52,
-"stem": "A systems administrator is provisioning VMs according to the following requirements: A VM instance needs to be present in at least two data centers. During replication, the application hosted on the VM tolerates a maximum latency of one second. When a VM is unavailable, failover must be immediate. Which of the following replication methods will best meet these requirements?",
-"options": {
-"A": "Snapshot  ",
-"B": "Transactional  ",
-"C": "Live  ",
-"D": "Point-in-time "
-},
-"answer": "C",
-"choose": "all",
-"domain": 1,
-"domainName": "Cloud Architecture"
-},
-{
-"number": 53,
-"stem": "A DevOps engineer is performing maintenance on the mail servers for a company’s web application. Part of this maintenance includes checking core operating system updates. The servers are currently running version 3.2 of the operating system. The engineer has two update options—one to version 4.1 and the other to version 3.7. Both versions are fully supported by the operating system manufacturer. Which of the following best describes the action the engineer should take?",
-"options": {
-"A": "Upgrade to 3.7 in the development environment.  ",
-"B": "Upgrade to 4.1 on one production server at a time.  ",
-"C": "Read the release notes on version 4.1  ",
-"D": "Schedule a maintenance window and upgrade to 3.7 in the production environment. "
-},
-"answer": "C",
-"choose": "all",
-"domain": 3,
-"domainName": "Operations"
-},
-{
-"number": 54,
-"stem": "Which of the following is the most cost-effective and efficient strategy when migrating containers to the cloud?",
-"options": {
-"A": "Retire  ",
-"B": "Replatform  ",
-"C": "Retain  ",
-"D": "Refactor "
-},
-"answer": "B",
-"choose": "all",
-"domain": 2,
-"domainName": "Deployment"
-},
-{
-"number": 55,
-"stem": "An organization’s web application experiences periodic bursts of traffic when a new video is launched. Users are reporting poor performance in the middle of the month. Which of the following scaling approaches should the organization use to scale based on forecasted traffic?",
-"options": {
-"A": "Scheduled  ",
-"B": "Manual  ",
-"C": "Event  ",
-"D": "Load "
-},
-"answer": "A",
-"choose": "all",
-"domain": 3,
-"domainName": "Operations"
-},
-{
-"number": 56,
-"stem": "A cloud infrastructure administrator updated the IP tables to block incoming connections and outgoing responses to 104.225.110.203. Which of the following vulnerability management steps is this an example of?",
-"options": {
-"A": "Scanning scope  ",
-"B": "Remediation  ",
-"C": "Identification",
-"D": "Assessment "
-},
-"answer": "B",
-"choose": "all",
-"domain": 3,
-"domainName": "Operations"
-},
-{
-"number": 57,
-"stem": "An administrator needs to adhere to the following requirements when moving a customer’s data to the cloud: The new service must be geographically dispersed. The customer should have local access to data. Legacy applications should be accessible. Which of the following cloud deployment models is most suitable?",
-"options": {
-"A": "On-premises  ",
-"B": "Private  ",
-"C": "Hybrid  ",
-"D": "Public "
-},
-"answer": "C",
-"choose": "all",
-"domain": 2,
-"domainName": "Deployment"
-},
-{
-"number": 58,
-"stem": "A company’s VMs that are created using the noncritical application tag are automatically shut down at 5:00 p.m. using a cronjob. Which of the following actions would allow a cloud engineer to stop all unresponsive instances with the least effort in case the automation fails?",
-"options": {
-"A": "Using the cloud audit logs for tagging and stopping events  ",
-"B": "Using the cloud provider web console to check and stop the instances  ",
-"C": "Using the cloud provider command line to stop the instances based on tags  ",
-"D": "Using a Bash script to shut down all instances "
-},
-"answer": "C",
-"choose": "all",
-"domain": 5,
-"domainName": "DevOps Fundamentals"
-},
-{
-"number": 59,
-"stem": "A company uses containers stored in Docker Hub to deploy workloads for its IaaS infrastructure. The development team releases changes to the containers several times per hour. Which of the following should a cloud engineer do to prevent the proprietary code from being exposed to third parties?",
-"options": {
-"A": "Use IaC to deploy the IaaS infrastructure.  ",
-"B": "Convert the containers to VMs.  ",
-"C": "Deploy the containers over SSH.  ",
-"D": "Use private repositories for the containers. "
-},
-"answer": "D",
-"choose": "all",
-"domain": 1,
-"domainName": "Cloud Architecture"
-},
-{
-"number": 60,
-"stem": "A social networking company operates globally. Some users from Brazil and Argentina are reporting the following error: website address was not found. Which of the following is the most likely cause of this issue?",
-"options": {
-"A": "Client DNS misconfiguration  ",
-"B": "Regional DNS provider outage  ",
-"C": "DNS server misconfiguration  ",
-"D": "DNSSEC key mismatch "
-},
-"answer": "B",
-"choose": "all",
-"domain": 6,
-"domainName": "Troubleshooting"
-},
-{
-"number": 61,
-"stem": "A junior cloud administrator was recently promoted to cloud administrator and has been added to the cloud administrator group. The cloud administrator group is the only one that can access the engineering VM. The new administrator unsuccessfully attempts to access the engineering VM. However, the other administrators can access it without issue. Which of the following is the best way to identify the root cause?",
-"options": {
-"A": "Rebooting the engineering VM  ",
-"B": "Reviewing the administrator’s permissions to access the engineering VM  ",
-"C": "Allowing connections from 0.0.0.0/0 to the engineering VM  ",
-"D": "Performing a packet capture on the engineering VM "
-},
-"answer": "B",
-"choose": "all",
-"domain": 1,
-"domainName": "Cloud Architecture"
-},
-{
-"number": 62,
-"stem": "Which of the following describes the main difference between public and private container repositories?",
-"options": {
-"A": "Private container repository access requires authorization, while public repository access does not require authorization.  ",
-"B": "Private container repositories are hidden by default and containers must be directly referenced, while public container repositories allow browsing of container images.  ",
-"C": "Private container repositories must use proprietary licenses, while public container repositories must have open-source licenses.  ",
-"D": "Private container repositories are used to obfuscate the content of the Dockerfile, while public container repositories allow for Dockerfile inspection. "
-},
-"answer": "A",
-"choose": "all",
-"domain": 5,
-"domainName": "DevOps Fundamentals"
-},
-{
-"number": 63,
-"stem": "A DevOps engineer is receiving reports that users can no longer access the company’s web application after hardening of a web server. The users are receiving the following error: ERR SSL VERSION OR CIPHER MISMATCH. Which of the following actions should the engineer take to resolve the issue?",
-"options": {
-"A": "Restart the web server.  ",
-"B": "Configure TLS 1.2 or newer.  ",
-"C": "Update the web server.  ",
-"D": "Review logs on the WAF."
-},
-"answer": "B",
-"choose": "all",
-"domain": 4,
-"domainName": "Security"
-},
-{
-"number": 64,
-"stem": "A company’s engineering department is conducting a month-long test on the scalability of an in-house-developed software that requires a cluster of 100 or more servers. Which of the following models is the best to use?",
-"options": {
-"A": "PaaS  ",
-"B": "SaaS  ",
-"C": "DBaaS  ",
-"D": "IaaS "
-},
-"answer": "D",
-"choose": "all",
-"domain": 1,
-"domainName": "Cloud Architecture"
-},
-{
-"number": 65,
-"stem": "A cloud administrator shortens the amount of time a backup runs. An executive in the company requires a guarantee that the backups can be restored with no data loss. Which of the following backup features should the administrator test for?",
-"options": {
-"A": "Encryption  ",
-"B": "Retention  ",
-"C": "Schedule  ",
-"D": "Integrity "
-},
-"answer": "D",
-"choose": "all",
-"domain": 3,
-"domainName": "Operations"
-},
-{
-"number": 66,
-"stem": "A cloud administrator is building a company-standard VM image, which will be based on a public image. Which of the following should the administrator implement to secure the image?",
-"options": {
-"A": "ACLs  ",
-"B": "Least privilege  ",
-"C": "Hardening  ",
-"D": "Vulnerability scanning "
-},
-"answer": "C",
-"choose": "all",
-"domain": 4,
-"domainName": "Security"
-},
-{
-"number": 67,
-"stem": "A cloud deployment uses three different VPCs. The subnets on each VPC need to communicate with the others over private channels. Which of the following will achieve this objective?",
-"options": {
-"A": "Deploying a load balancer to send traffic to the private IP addresses  ",
-"B": "Creating peering connections between all VPCs  ",
-"C": "Adding BGP routes using the VPCs’ private IP addresses",
-"D": "Establishing identical routing tables on all VPCs "
-},
-"answer": "B",
-"choose": "all",
-"domain": 1,
-"domainName": "Cloud Architecture"
-},
-{
-"number": 68,
-"stem": "A cloud resource increases its capacity based on seasonal activity. Which of the following best describes this type of cloud instance and the scaling approach?",
-"options": {
-"A": "Fixed; triggered by load  ",
-"B": "Permanent; triggered manually  ",
-"C": "Elastic; triggered by trend  ",
-"D": "Ephemeral; triggered by event "
-},
-"answer": "C",
-"choose": "all",
-"domain": 3,
-"domainName": "Operations"
-},
-{
-"number": 69,
-"stem": "Which of the following can eliminate the risk of CI/CD pipelines leaking secrets on containers?",
-"options": {
-"A": "Peer-reviewed pull requests  ",
-"B": "Use of a VM instead of containers  ",
-"C": "Private image repositories  ",
-"D": "Canary tests "
-},
-"answer": "C",
-"choose": "all",
-"domain": 5,
-"domainName": "DevOps Fundamentals"
-},
-{
-"number": 70,
-"stem": "A company uses containers to implement a web application. The development team completed internal testing of a new feature and is ready to move the feature to the production environment. Which of the following deployment models would best meet the company’s needs while minimizing cost and targeting a specific subset of its users?",
-"options": {
-"A": "Canary  ",
-"B": "Blue-green  ",
-"C": "Rolling  ",
-"D": "In-place "
-},
-"answer": "A",
-"choose": "all",
-"domain": 2,
-"domainName": "Deployment"
-},
-{
-"number": 71,
-"stem": "Once a change has been made to templates, which of the following commands should a cloud architect use next to deploy an IaaS platform?",
-"options": {
-"A": "git pull  ",
-"B": "git fetch",
-"C": "git commit  ",
-"D": "git push "
-},
-"answer": "D",
-"choose": "all",
-"domain": 2,
-"domainName": "Deployment"
-},
-{
-"number": 72,
-"stem": "A company is developing a new web application that requires a relational database management system with minimal operational overhead. Which of the following should the company choose?",
-"options": {
-"A": "A database installed on a virtual machine  ",
-"B": "A managed SQL database on the cloud  ",
-"C": "A database migration service  ",
-"D": "A hybrid database setup "
-},
-"answer": "B",
-"choose": "all",
-"domain": 2,
-"domainName": "Deployment"
-},
-{
-"number": 75,
-"stem": "Which of the following provides secure, private communication between cloud environments without provisioning additional hardware or appliances?",
-"options": {
-"A": "VPN  ",
-"B": "VPC peering  ",
-"C": "BGP  ",
-"D": "Transit gateway "
-},
-"answer": "B",
-"choose": "all",
-"domain": 1,
-"domainName": "Cloud Architecture"
-},
-{
-"number": 76,
-"stem": "A cloud engineer is running a latency-sensitive workload that must be resilient and highly available across multiple regions. Which of the following concepts best addresses these requirements?",
-"options": {
-"A": "Cloning  ",
-"B": "Clustering  ",
-"C": "Hardware passthrough  ",
-"D": "Stand-alone container "
-},
-"answer": "B",
-"choose": "all",
-"domain": 1,
-"domainName": "Cloud Architecture"
-},
-{
-"number": 77,
-"stem": "A cloud engineer is in charge of deploying a platform in an IaaS public cloud. The application tracks the state using session cookies and there are no affinity restrictions. Which of the following will help the engineer reduce monthly expenses and allow the application to provide the service?",
-"options": {
-"A": "Resource metering  ",
-"B": "Reserved resources  ",
-"C": "Dedicated host  ",
-"D": "Pay-as-you-go model "
-},
-"answer": "D",
-"choose": "all",
-"domain": 1,
-"domainName": "Cloud Architecture"
-},
-{
-"number": 78,
-"stem": "A cloud administrator recently created three servers in the cloud. The goal was to create ACLs so the servers could not communicate with each other. The servers were configured with the following IP addresses: After implementing the ACLs, the administrator confirmed that some servers are still able to reach the other servers. Which of the following should the administrator change to prevent the servers from being on the same network?",
-"options": {
-"A": "The IP address of Server 1 to 172.16.12.36  ",
-"B": "The IP address of Server 1 to 172.16.12.2  ",
-"C": "The IP address of Server 2 to 172.16.12.18  ",
-"D": "The IP address of Server 2 to 172.16.14.14 "
-},
-"answer": "C",
-"choose": "all",
-"domain": 4,
-"domainName": "Security"
-},
-{
-"number": 79,
-"stem": "A company implements a web farm with 100 servers behind an application load balancer. During scaling events, new web servers that are placed in service have not loaded all their modules, which causes some requests to the web farm to fail. Which of the following should the cloud engineer implement to address the scaling issue?",
-"options": {
-"A": "Instance warm-up  ",
-"B": "Scheduled scaling  ",
-"C": "Event-based scaling  ",
-"D": "Load balancer passthrough "
-},
-"answer": "A",
-"choose": "all",
-"domain": 3,
-"domainName": "Operations"
-},
-{
-"number": 80,
-"stem": "A CI/CD pipeline is used to deploy VMs to an IaaS environment. Which of the following can be used to harden the operating system once the VM is running?",
-"options": {
-"A": "Docker  ",
-"B": "Kubernetes  ",
-"C": "Git  ",
-"D": "Ansible "
-},
-"answer": "D",
-"choose": "all",
-"domain": 5,
-"domainName": "DevOps Fundamentals"
-},
-{
-"number": 81,
-"stem": "For compliance purposes, a cloud developer at an insurance company needs to save all customer policies for more than ten years. Which of the following options is the most cost-efficient tier to save the data in the cloud?",
-"options": {
-"A": "Archive  ",
-"B": "Hot  ",
-"C": "Cold  ",
-"D": "Warm "
-},
-"answer": "A",
-"choose": "all",
-"domain": 1,
-"domainName": "Cloud Architecture"
-},
-{
-"number": 82,
-"stem": "Which of the following do developers use to keep track of changes made during software development projects?",
-"options": {
-"A": "Code drifting  ",
-"B": "Code control  ",
-"C": "Code testing  ",
-"D": "Code versioning "
-},
-"answer": "D",
-"choose": "all",
-"domain": 2,
-"domainName": "Deployment"
-},
-{
-"number": 83,
-"stem": "Which of the following strategies requires the development of new code before an application can be successfully migrated to a cloud provider?",
-"options": {
-"A": "Refactor  ",
-"B": "Rearchitect  ",
-"C": "Rehost  ",
-"D": "Replatform "
-},
-"answer": "A",
-"choose": "all",
-"domain": 2,
-"domainName": "Deployment"
-},
-{
-"number": 84,
-"stem": "Which of the following reduces the chance of introducing a misconfiguration into cloud deployment templates?",
-"options": {
-"A": "Performing a git fetch after every commit  ",
-"B": "Opening pull requests for changes  ",
-"C": "Using the web interface to update files  ",
-"D": "Committing updates to the main branch "
-},
-"answer": "B",
-"choose": "all",
-"domain": 2,
-"domainName": "Deployment"
-},
-{
-"number": 85,
-"stem": "An administrator is creating a cron job that shuts down the virtual machines at night to save on costs. Which of the following is the best way to achieve this task?",
-"options": {
-"A": "    ",
-"B": "    ",
-"C": "    ",
-"D": ""
-},
-"answer": "C",
-"choose": "all",
-"domain": 1,
-"domainName": "Cloud Architecture"
-},
-{
-"number": 86,
-"stem": "Which of the following AI/ML technologies consumes text input to discern tone?",
-"options": {
-"A": "Text recognition  ",
-"B": "Computer vision  ",
-"C": "Visual recognition  ",
-"D": "Sentiment analysis "
-},
-"answer": "D",
-"choose": "all",
-"domain": 3,
-"domainName": "Operations"
-},
-{
-"number": 87,
-"stem": "A cloud solutions architect needs to design a solution that will collect a report and upload it to an object storage service every time a virtual machine is gracefully or non-gracefully stopped. Which of the following will best satisfy this requirement?",
-"options": {
-"A": "An event-driven architecture that will send a message when the VM shuts down to a log-collecting function that extracts and uploads the log directly from the storage volume  ",
-"B": "Creating a webhook that will trigger on VM shutdown API calls and upload the requested files from the volume attached to the VM into the object-defined storage service  ",
-"C": "An API of the object-defined storage service that will scrape the stopped VM disk and self-upload the required files as objects  ",
-"D": "A script embedded on the stopping VM's OS that will upload the logs on system shutdown "
-},
-"answer": "A",
-"choose": "all",
-"domain": 1,
-"domainName": "Cloud Architecture"
-},
-{
-"number": 88,
-"stem": "A cloud architect is preparing environments to develop a new application that will process sensitive data. The project team consists of one internal developer, two external consultants, and three testers. Which of the following is the most important security control for the cloud architect to consider implementing?",
-"options": {
-"A": "Setting up private development, public development, and testing environments  ",
-"B": "Segregating environments for internal and external teams  ",
-"C": "Configuring DDoS protection to mitigate the risk of downtime  ",
-"D": "Using IAM and ACL in order to bolster DLP "
-},
-"answer": "D",
-"choose": "all",
-"domain": 4,
-"domainName": "Security"
-},
-{
-"number": 89,
-"stem": "A cloud engineer wants to implement a monitoring solution to detect cryptojacking and other cryptomining malware on cloud instances. Which of the following metrics would most likely be used to identify the activity?",
-"options": {
-"A": "Disk I/O  ",
-"B": "Network packets",
-"C": "Average memory utilization  ",
-"D": "Percent of CPU utilization "
-},
-"answer": "D",
-"choose": "all",
-"domain": 4,
-"domainName": "Security"
-},
-{
-"number": 90,
-"stem": "A cloud service provider requires users to migrate to a new type of VM within three months. Which of the following is the best justification for this requirement?",
-"options": {
-"A": "Security flaws need to be patched  ",
-"B": "Updates could affect the current state of the VMs  ",
-"C": "The cloud provider will be performing infrastructure maintenance  ",
-"D": "The equipment is reaching end of life and end of support "
-},
-"answer": "D",
-"choose": "all",
-"domain": 3,
-"domainName": "Operations"
-},
-{
-"number": 91,
-"stem": "An organization has been using an old version of an Apache Log4j software component in its critical software application. Which of the following should the organization use to calculate the severity of the risk from using this component?",
-"options": {
-"A": "CWE  ",
-"B": "CVSS  ",
-"C": "CWSS  ",
-"D": "CVE "
-},
-"answer": "B",
-"choose": "all",
-"domain": 4,
-"domainName": "Security"
-},
-{
-"number": 92,
-"stem": "A company wants to build its new platform using a public cloud. The workload requirements include the following: • Implementation of custom CIS compliance • Patch for vulnerabilities within 24 hours • Warrant at least 1 8001OPS per volume Which of the following meets the requirements?",
-"options": {
-"A": "SaaS  ",
-"B": "IaaS  ",
-"C": "FaaS  ",
-"D": "PaaS "
-},
-"answer": "B",
-"choose": "all",
-"domain": 1,
-"domainName": "Cloud Architecture"
-},
-{
-"number": 93,
-"stem": "A cloud security analyst is concerned about security vulnerabilities in publicly available container images. Which of the following is the most appropriate action for the analyst to recommend?",
-"options": {
-"A": "Using CIS-hardened images  ",
-"B": "Using watermarked images  ",
-"C": "Using digitally signed images  ",
-"D": "Using images that have an application firewall "
-},
-"answer": "A",
-"choose": "all",
-"domain": 1,
-"domainName": "Cloud Architecture"
-},
-{
-"number": 94,
-"stem": "A critical security patch is required on a network load balancer in a public cloud. The organization has a major sales conference next week, and the Chief Executive Officer does not want any interruptions during the demonstration of an application behind the load balancer. Which of the following approaches should the cloud security engineer take?",
-"options": {
-"A": "Ask the management team to delay the conference  ",
-"B": "Apply the security patch after the event  ",
-"C": "Ask the upper management team to approve an emergency patch window  ",
-"D": "Apply the security patch immediately before the conference "
-},
-"answer": "C",
-"choose": "all",
-"domain": 2,
-"domainName": "Deployment"
-},
-{
-"number": 95,
-"stem": "A cloud engineer is troubleshooting a connectivity issue. The application server with IP 192.168.1.10 in one subnet is not connecting to the MySQL database server with IP 192.168.2.20 in a different subnet. The cloud engineer reviews the following information: Which of the following should the cloud engineer address to fix the communication issue?",
-"options": {
-"A": "The Application Server Stateful Firewall  ",
-"B": "The Application Server Subnet Routing Table  ",
-"C": "The MySQL Server Stateful Firewall  ",
-"D": "The MySQL Server Subnet Routing Table"
-},
-"answer": "C",
-"choose": "all",
-"domain": 1,
-"domainName": "Cloud Architecture"
-},
-{
-"number": 96,
-"stem": "A cloud engineer is migrating a company-hosted application to a cloud provider. The data needs to be secure while stored on the third- party system. Which of the following would best ensure that the data is secure? (Choose two.)",
-"options": {
-"A": "Hashing  ",
-"B": "Encoding  ",
-"C": "SAML  ",
-"D": "AES  ",
-"E": "TLS  ",
-"F": "SSL "
-},
-"answer": "AD",
-"choose": "all",
-"domain": 4,
-"domainName": "Security"
-},
-{
-"number": 97,
-"stem": "A cloud consultant needs to modernize a legacy application that can no longer address user demand and is expensive to maintain. Which of the following is the best migration strategy?",
-"options": {
-"A": "Retain  ",
-"B": "Rehost  ",
-"C": "Refactor  ",
-"D": "Replatform "
-},
-"answer": "C",
-"choose": "all",
-"domain": 2,
-"domainName": "Deployment"
-},
-{
-"number": 98,
-"stem": "A cloud solution needs to be replaced without interruptions. The replacement process can be completed in phases, but the cost should be kept as low as possible. Which of the following is the best strategy to implement?",
-"options": {
-"A": "Blue-green  ",
-"B": "Rolling  ",
-"C": "In-place  ",
-"D": "Canary "
-},
-"answer": "B",
-"choose": "all",
-"domain": 2,
-"domainName": "Deployment"
-},
-{
-"number": 99,
-"stem": "Which of the following best describes the list of known security vulnerabilities?",
-"options": {
-"A": "Common Weaknesses and Enumerations",
-"B": "Data Security Standards  ",
-"C": "Zero Trust  ",
-"D": "Common Vulnerabilities and Exposures "
-},
-"answer": "D",
-"choose": "all",
-"domain": 4,
-"domainName": "Security"
-},
-{
-"number": 100,
-"stem": "A cloud administrator is working on the deployment of an e-commerce website. The administrator evaluates the scaling methods to be implemented when seasonal or flash sales are launched. Which of the following scaling approaches should the administrator use to best manage this scenario?",
-"options": {
-"A": "Scheduled  ",
-"B": "Load  ",
-"C": "Event  ",
-"D": "Trending "
-},
-"answer": "A",
-"choose": "all",
-"domain": 3,
-"domainName": "Operations"
-},
-{
-"number": 101,
-"stem": "Given the following command: $docker pull images.comptia.org/user1/myimage:latest Which of the following correctly identifies images.comptia.org?",
-"options": {
-"A": "Image registry  ",
-"B": "Image creator  ",
-"C": "Image version  ",
-"D": "Image name "
-},
-"answer": "A",
-"choose": "all",
-"domain": 5,
-"domainName": "DevOps Fundamentals"
-},
-{
-"number": 102,
-"stem": "Which of the following should be considered when using cloud-managed services?",
-"options": {
-"A": "Compiling sources  ",
-"B": "Patching the operating system  ",
-"C": "Installing the service  ",
-"D": "Configuring IAM "
-},
-"answer": "D",
-"choose": "all",
-"domain": 4,
-"domainName": "Security"
-},
-{
-"number": 103,
-"stem": "A cloud security analyst is investigating the impact of a recent cyberattack. The analyst is reviewing the following information: Which of the following has occurred?",
-"options": {
-"A": "The corporate administration page was defaced by the attacker  ",
-"B": "A denial-of-service attack was successfully performed on the web server  ",
-"C": "A new user was created on the web server by the attacker  ",
-"D": "Sensitive information from the corporate web server was leaked "
-},
-"answer": "D",
-"choose": "all",
-"domain": 1,
-"domainName": "Cloud Architecture"
-},
-{
-"number": 104,
-"stem": "A developer at a small startup company deployed some code for a new feature to its public repository. A few days later a data breach occurred. A security team investigated the incident and found that the database was hacked. Which of the following is the most likely cause of this breach?",
-"options": {
-"A": "Database core dump  ",
-"B": "Hard-coded credentials  ",
-"C": "Compromised deployment agent  ",
-"D": "Unpatched web servers "
-},
-"answer": "B",
-"choose": "all",
-"domain": 2,
-"domainName": "Deployment"
-},
-{
-"number": 105,
-"stem": "Which of the following best explains the concept of migrating from on premises to the cloud?",
-"options": {
-"A": "The configuration of a dedicated pipeline to transfer content to a remote location  ",
-"B": "The creation of virtual instances in an external provider to transfer operations of selected servers into a new, remotely managed environment  ",
-"C": "The physical transportation installation and configuration of company IT equipment in a cloud services provider’s facility  ",
-"D": "The extension of company IT infrastructure to a managed service provider "
-},
-"answer": "B",
-"choose": "all",
-"domain": 2,
-"domainName": "Deployment"
-},
-{
-"number": 106,
-"stem": "A cloud engineer is extending on-premises services to a public cloud. The following design requirements must be considered in the overall solution: • The ability to remotely connect systems from both environments • No IP address conflicts or overlap • Cost-effectiveness Which of the following cloud network concepts best meets these requirements?",
-"options": {
-"A": "Dedicated connection  ",
-"B": "VPN  ",
-"C": "VLAN  ",
-"D": "ACL "
-},
-"answer": "B",
-"choose": "all",
-"domain": 1,
-"domainName": "Cloud Architecture"
-},
-{
-"number": 107,
-"stem": "A cloud engineer wants to replace the current on-premises, unstructured data storage with a solution in the cloud. The new solution needs to be cost-effective and highly scalable. Which of the following types of storage would be best to use?",
-"options": {
-"A": "File  ",
-"B": "Block  ",
-"C": "Object  ",
-"D": "SAN "
-},
-"answer": "C",
-"choose": "all",
-"domain": 2,
-"domainName": "Deployment"
-},
-{
-"number": 108,
-"stem": "A systems administrator is configuring backups on a VM and needs the process to run as quickly as possible, reducing the bandwidth on the network during all times from Monday through Saturday. In the event of data corruption, the management team expects the mean time to recovery to be as low as possible. Which of the following backup methods can the administrator use to accomplish these goals?",
-"options": {
-"A": "Incremental backup daily to the cloud  ",
-"B": "Full backup on Sunday and incremental backups on all other days of the week  ",
-"C": "Differential backup daily to the cloud  ",
-"D": "Incremental backups during off-hours on Monday, Wednesday, and Friday "
-},
-"answer": "B",
-"choose": "all",
-"domain": 3,
-"domainName": "Operations"
-},
-{
-"number": 109,
-"stem": "A company has ten cloud engineers working on different manual cloud deployments. In the past, engineers have had difficulty keeping deployments consistent. Which of the following is the best method to address this issue?",
-"options": {
-"A": "Deployment documentation  ",
-"B": "Service logging  ",
-"C": "Configuration as code  ",
-"D": "Change ticketing "
-},
-"answer": "C",
-"choose": "all",
-"domain": 2,
-"domainName": "Deployment"
-},
-{
-"number": 110,
-"stem": "A high-usage cloud resource needs to be monitored in real time on specific events to guarantee its availability. Which of the following actions should be used to meet this requirement?",
-"options": {
-"A": "Configure a ping command to identify when the cloud instance is out of service  ",
-"B": "Create a dashboard with visualizations to filter the status of critical activities  ",
-"C": "Collect all the daily activity from the cloud instance and create a dump file for analysis  ",
-"D": "Schedule an hourly scan of the network to check for the availability of the resource "
-},
-"answer": "B",
-"choose": "all",
-"domain": 2,
-"domainName": "Deployment"
-},
-{
-"number": 111,
-"stem": "A company developed an online trading platform. The engineering team selected event-based scaling for the platform’s underlying resources. The platform resources scale up with every 2,000 subscribed users. The engineering team finds out that although compute utilization is low scaling is still occurring. Which of the following statements best explains why this is the case?",
-"options": {
-"A": "Event-based scaling does not scale down resources  ",
-"B": "Event-based scaling should not be triggered at the 2,000-user frequency  ",
-"C": "Event-based scaling should not track user subscriptions  ",
-"D": "Event-based scaling does not take resource load into account. "
-},
-"answer": "D",
-"choose": "all",
-"domain": 3,
-"domainName": "Operations"
-},
-{
-"number": 112,
-"stem": "A bank informs an administrator that changes must be made to backups for long-term reporting purposes. Which of the following is the most important change the administrator should make to satisfy these requirements?",
-"options": {
-"A": "Location of the backups  ",
-"B": "Type of the backups  ",
-"C": "Retention of the backups  ",
-"D": "Schedule of the backups "
-},
-"answer": "C",
-"choose": "all",
-"domain": 3,
-"domainName": "Operations"
-},
-{
-"number": 113,
-"stem": "A security analyst confirms a zero-day vulnerability was exploited by hackers who gained access to confidential customer data and installed ransomware on the server. Which of the following steps should the security analyst take? (Choose two.)",
-"options": {
-"A": "Contact the customers to inform them about the data breach  ",
-"B": "Contact the hackers to negotiate payment to unlock the server  ",
-"C": "Send a global communication to inform all impacted users  ",
-"D": "Inform the management and legal teams about the data breach",
-"E": "Delete confidential data used on other servers that might be compromised  ",
-"F": "Modify the firewall rules to block the IP addresses and update the ports "
-},
-"answer": "DF",
-"choose": "all",
-"domain": 4,
-"domainName": "Security"
-},
-{
-"number": 114,
-"stem": "A software engineer is integrating an application to the cloud that is web socket based. Which of the following applications is the engineer most likely deploying?",
-"options": {
-"A": "Image-sharing  ",
-"B": "Data visualization  ",
-"C": "Chat  ",
-"D": "File transfer "
-},
-"answer": "C",
-"choose": "all",
-"domain": 5,
-"domainName": "DevOps Fundamentals"
-},
-{
-"number": 115,
-"stem": "Which of the following is the best type of database for storing different types of unstructured data that may change frequently?",
-"options": {
-"A": "Vector  ",
-"B": "Relational  ",
-"C": "Non-relational  ",
-"D": "Graph "
-},
-"answer": "C",
-"choose": "all",
-"domain": 1,
-"domainName": "Cloud Architecture"
-},
-{
-"number": 116,
-"stem": "A cloud engineer needs to deploy a new version of a web application to 100 servers. In the past, new version deployments have caused outages. Which of the following deployment types should the cloud engineer implement to prevent the outages from happening this time?",
-"options": {
-"A": "Rolling  ",
-"B": "Blue-green  ",
-"C": "Canary  ",
-"D": "Round-robin "
-},
-"answer": "B",
-"choose": "all",
-"domain": 2,
-"domainName": "Deployment"
-},
-{
-"number": 117,
-"stem": "Which of the following package managers would most likely be used with Ubuntu Linux?",
-"options": {
-"A": "YUM",
-"B": "DNF  ",
-"C": "Pacman  ",
-"D": "APT "
-},
-"answer": "D",
-"choose": "all",
-"domain": 1,
-"domainName": "Cloud Architecture"
-},
-{
-"number": 118,
-"stem": "A cloud engineer hardened the WAF for a company that operates exclusively in North America. The engineer did not make changes to any ports, and all protected applications have continued to function as expected. Which of the following configuration changes did the engineer most likely apply?",
-"options": {
-"A": "The engineer implemented MFA to access the WAF configurations  ",
-"B": "The engineer blocked all traffic originating outside the region  ",
-"C": "The engineer installed the latest security patches on the WAF  ",
-"D": "The engineer completed an upgrade from TLS version 1.1 to version 1.3. "
-},
-"answer": "B",
-"choose": "all",
-"domain": 4,
-"domainName": "Security"
-},
-{
-"number": 119,
-"stem": "Which of the following refers to the idea that data should stay within certain borders or territories?",
-"options": {
-"A": "Data classification  ",
-"B": "Data retention  ",
-"C": "Data sovereignty  ",
-"D": "Data ownership "
-},
-"answer": "C",
-"choose": "all",
-"domain": 4,
-"domainName": "Security"
-},
-{
-"number": 120,
-"stem": "A cloud server needs to automatically allocate more resources during sudden peak times. This allocation does not need to occur in regular intervals. Which of the following scaling approaches should be used?",
-"options": {
-"A": "Event  ",
-"B": "Manual  ",
-"C": "Trending  ",
-"D": "Scheduled "
-},
-"answer": "A",
-"choose": "all",
-"domain": 3,
-"domainName": "Operations"
-},
-{
-"number": 121,
-"stem": "Which of the following best describes a system that keeps all different versions of a software separate from each other while giving access to all of the versions?",
-"options": {
-"A": "Code documentation  ",
-"B": "Code control  ",
-"C": "Code repository  ",
-"D": "Code versioning "
-},
-"answer": "D",
-"choose": "all",
-"domain": 5,
-"domainName": "DevOps Fundamentals"
-},
-{
-"number": 122,
-"stem": "Which of the following is an example of refactoring?",
-"options": {
-"A": "Creation of a container registry  ",
-"B": "Code changes to facilitate platform hosting  ",
-"C": "Operating system upgrade  ",
-"D": "Document conversion to a secure file format "
-},
-"answer": "B",
-"choose": "all",
-"domain": 2,
-"domainName": "Deployment"
-},
-{
-"number": 123,
-"stem": "A company recently set up a CDN for its photography and image-sharing website. Which of the following is the most likely reason for the company's action?",
-"options": {
-"A": "To eliminate storage costs  ",
-"B": "To improve site speed  ",
-"C": "To enhance security of static assets  ",
-"D": "To prevent unauthorized access "
-},
-"answer": "B",
-"choose": "all",
-"domain": 4,
-"domainName": "Security"
-},
-{
-"number": 124,
-"stem": "The company's IDS has reported an anomaly. The cloud engineer remotely accesses the cloud instance, runs a command, and receives the following information: Which of the following is the most likely root cause of this anomaly?",
-"options": {
-"A": "Privilege escalation  ",
-"B": "Leaked credentials",
-"C": "Cryptojacking  ",
-"D": "Defaced website "
-},
-"answer": "A",
-"choose": "all",
-"domain": 4,
-"domainName": "Security"
-},
-{
-"number": 125,
-"stem": "A developer is building a new application version using a CI/CD pipeline. The developer receives the following error message log when the build fails. Which of the following is the most likely cause of this failure?",
-"options": {
-"A": "Incorrect version  ",
-"B": "Test case failure  ",
-"C": "Broken build pipeline  ",
-"D": "Dependency issue "
-},
-"answer": "D",
-"choose": "all",
-"domain": 5,
-"domainName": "DevOps Fundamentals"
-},
-{
-"number": 126,
-"stem": "A company wants to implement a work environment that will have low operational overhead and highly accessible enterprise resource planning, email, and data resources. Which of the following cloud service models should the company implement?",
-"options": {
-"A": "IaaS  ",
-"B": "PaaS  ",
-"C": "DBaaS  ",
-"D": "SaaS "
-},
-"answer": "D",
-"choose": "all",
-"domain": 1,
-"domainName": "Cloud Architecture"
-},
-{
-"number": 127,
-"stem": "Which of the following industry standards mentions that credit card data must not be exchanged or stored in cleartext?",
-"options": {
-"A": "CSA  ",
-"B": "GDPR  ",
-"C": "SOC2  ",
-"D": "PCI-DSS "
-},
-"answer": "D",
-"choose": "all",
-"domain": 4,
-"domainName": "Security"
-},
-{
-"number": 128,
-"stem": "A company receives files daily from a bank. The company requires that the files must be copied from the cloud storage resource to another cloud storage resource for further processing. Which of the following methods requires the least amount of effort to achieve the task?",
-"options": {
-"A": "Remote procedure call  ",
-"B": "SOAP  ",
-"C": "Event-driven architecture  ",
-"D": "REST "
-},
-"answer": "C",
-"choose": "all",
-"domain": 5,
-"domainName": "DevOps Fundamentals"
-},
-{
-"number": 129,
-"stem": "An on-premises data center is located in an earthquake-prone location. The workload consists of real-time, online transaction processing. Which of the following data protection strategies should be used to back up on-premises data to the cloud while also being cost- effective?",
-"options": {
-"A": "Remote replication for failover  ",
-"B": "A copy that is RAID 1 protected on spinning drives in an on-premises private cloud  ",
-"C": "A full backup to on-site tape libraries in a private cloud  ",
-"D": "Air-gapped protection to provide cyber resiliency "
-},
-"answer": "A",
-"choose": "all",
-"domain": 3,
-"domainName": "Operations"
-},
-{
-"number": 130,
-"stem": "A cloud engineer is deploying a cloud solution that will be used on premises with need-to-know access. Which of the following cloud deployment models best meets this requirement?",
-"options": {
-"A": "Community  ",
-"B": "Public  ",
-"C": "Private  ",
-"D": "Hybrid "
-},
-"answer": "C",
-"choose": "all",
-"domain": 2,
-"domainName": "Deployment"
-},
-{
-"number": 131,
-"stem": "A newly configured VM fails to run application updates despite having internet access. The updates download automatically from a third- party network. Given the following output: Which of the following troubleshooting steps would be best to take?",
-"options": {
-"A": "Checking DNS configurations",
-"B": "Reconfiguring routing protocols  ",
-"C": "Testing the IP address configuration  ",
-"D": "Running a trace to the router "
-},
-"answer": "A",
-"choose": "all",
-"domain": 6,
-"domainName": "Troubleshooting"
-},
-{
-"number": 132,
-"stem": "Which of the following communication methods between on-premises and cloud environments would ensure minimal-to-low latency and overhead?",
-"options": {
-"A": "Site-to-site VPN  ",
-"B": "Peer-to-peer VPN  ",
-"C": "Direct connection  ",
-"D": "VPC peering "
-},
-"answer": "C",
-"choose": "all",
-"domain": 1,
-"domainName": "Cloud Architecture"
-},
-{
-"number": 133,
-"stem": "A cloud engineer is collecting web server application logs to troubleshoot intermittent issues. However, the logs are piling up and causing storage issues. Which of the following log mechanisms should the cloud engineer implement to address this issue?",
-"options": {
-"A": "Splicing  ",
-"B": "Rotation  ",
-"C": "Sampling  ",
-"D": "Inspection "
-},
-"answer": "B",
-"choose": "all",
-"domain": 6,
-"domainName": "Troubleshooting"
-},
-{
-"number": 134,
-"stem": "Which of the following cloud native architecture designs is the most easily maintained, decentralized, and decoupled?",
-"options": {
-"A": "Monolithic  ",
-"B": "Hybrid cloud  ",
-"C": "Mainframe  ",
-"D": "Microservices "
-},
-"answer": "D",
-"choose": "all",
-"domain": 6,
-"domainName": "Troubleshooting"
-},
-{
-"number": 135,
-"stem": "A cloud security analyst is looking for existing security vulnerabilities on software applications. Which of the following describes this vulnerability management phase?",
-"options": {
-"A": "Analyze  ",
-"B": "Report  ",
-"C": "Remediation  ",
-"D": "Identification "
-},
-"answer": "D",
-"choose": "all",
-"domain": 4,
-"domainName": "Security"
-},
-{
-"number": 136,
-"stem": "A new application that will be deployed to cloud VMs has the following requirements: • Low inter-VM latency • Horizontal scaling support • 98.5% availability • 8vCPU and 16GB • Ability to split jobs across VMs Which of the following will best meet these requirements?",
-"options": {
-"A": "Load balanced 2vCPU with 4GB RAM on multiregion  ",
-"B": "Load balanced 4vCPU with 8GB RAM on single availability zone  ",
-"C": "Load balanced 2vCPU with 4GB RAM on multiple availability zones  ",
-"D": "Single 8vCPU with 16GB RAM VM on single availability zone "
-},
-"answer": "C",
-"choose": "all",
-"domain": 1,
-"domainName": "Cloud Architecture"
-},
-{
-"number": 137,
-"stem": "Which of the following is a customer responsible for in a provider-managed database service? (Choose two.)",
-"options": {
-"A": "Operating system patches  ",
-"B": "Table-level permissions  ",
-"C": "Minor database engine updates  ",
-"D": "Cluster configuration  ",
-"E": "Row-level encryption  ",
-"F": "Availability of hardware for scaling "
-},
-"answer": "BE",
-"choose": "all",
-"domain": 3,
-"domainName": "Operations"
-},
-{
-"number": 138,
-"stem": "A large corporation, which operates exclusively on private cloud environments, is considering a merger and acquisition of two smaller companies, which operate on premises and in public cloud environments. Which of the following considerations is the most important for the parent corporation?",
-"options": {
-"A": "Data centers, storage, and cost implications",
-"B": "Networking, hardware, and computing  ",
-"C": "Platform compatibility and migration strategies  ",
-"D": "Management overhead and vendor lock-in "
-},
-"answer": "C",
-"choose": "all",
-"domain": 2,
-"domainName": "Deployment"
-},
-{
-"number": 139,
-"stem": "A company's data must be recoverable in other regions of the world in the event of a disaster. The data must be available in an RPO of one hour. Which of the following should a cloud administrator apply to meet these requirements?",
-"options": {
-"A": "Replication  ",
-"B": "Retention  ",
-"C": "Encryption  ",
-"D": "Schedule "
-},
-"answer": "A",
-"choose": "all",
-"domain": 3,
-"domainName": "Operations"
-},
-{
-"number": 140,
-"stem": "A database administrator performs a full backup periodically and keeps several versions in a cloud instance with increasing storage costs. Which of the following should the administrator consider doing to manage backup retention?",
-"options": {
-"A": "Classify backup files based on the sensitivity of data.  ",
-"B": "Set up a time frame for the deletion of old backup files.  ",
-"C": "Identify the need for granular and/or bulk recovery.  ",
-"D": "Determine whether a differential backup will satisfy the operational needs. "
-},
-"answer": "B",
-"choose": "all",
-"domain": 3,
-"domainName": "Operations"
-},
-{
-"number": 141,
-"stem": "A cloud administrator is provisioning infrastructure to run an application with the following requirements: • Ten midsize instances need to run as a cluster most of the day. • Sixteen midsize instances are required during peak hours. • Costs must be kept low. • The instances must be deployed in an IaaS model. • The application has no tolerance for service disruptions. Which of the following steps should the cloud architect take to host the application?",
-"options": {
-"A": "Reserve 16 instances but turn off the unused instances outside of peak hours.  ",
-"B": "Use ten pay-as-you-go instances and add six spot instances during peak hours.  ",
-"C": "Deploy reserved instances for normal operation and add pay-as-you-go instances during peak hours.  ",
-"D": "Configure the workload to use spot instances with scheduled scaling for normal operation, including peak hours."
-},
-"answer": "C",
-"choose": "all",
-"domain": 1,
-"domainName": "Cloud Architecture"
-},
-{
-"number": 142,
-"stem": "An IT manager is planning a cloud deployment for a new company. The company does not want on-premises servers or applications. Which of the following is the best approach for the manager to take?",
-"options": {
-"A": "Colocation — PaaS  ",
-"B": "Implementation — SaaS  ",
-"C": "Migration — IaaS  ",
-"D": "Hybrid — XaaS "
-},
-"answer": "B",
-"choose": "all",
-"domain": 2,
-"domainName": "Deployment"
-},
-{
-"number": 143,
-"stem": "An on-call cloud engineer receives a critical alert about an e-commerce web server being unresponsive. Which of the following steps should the engineer take first?",
-"options": {
-"A": "Triage  ",
-"B": "Remediation  ",
-"C": "Escalation  ",
-"D": "Monitoring "
-},
-"answer": "A",
-"choose": "all",
-"domain": 3,
-"domainName": "Operations"
-},
-{
-"number": 144,
-"stem": "Which of the following files should be used to install software with a package manager?",
-"options": {
-"A": "package.json  ",
-"B": "package.zip  ",
-"C": "package.deb  ",
-"D": "package.tar "
-},
-"answer": "C",
-"choose": "all",
-"domain": 2,
-"domainName": "Deployment"
-},
-{
-"number": 145,
-"stem": "An application that is running on containers writes files to the operating system after processing data. The produced output files are stored under /project-files owned by root. A cloud engineer needs to make sure no output files are owned by root. Which of the following actions should the engineer take to best achieve this objective?",
-"options": {
-"A": "Mount the volume in Docker using --user=myapp.  ",
-"B": "Add USER myapp to the Dockerfile and rebuild the container.  ",
-"C": "Run chown myapp:myapp /project-files with cron every minute.",
-"D": "Modify the container application to execute sudo -u myapp myapp. "
-},
-"answer": "B",
-"choose": "all",
-"domain": 5,
-"domainName": "DevOps Fundamentals"
-},
-{
-"number": 146,
-"stem": "A cloud engineer is receiving multiple alerts from the infrastructure monitoring agent. The alerts state that all the VMs in the public subnet are at 100% CPU utilization. However, when the engineer checks the network utilization of the VMs, the network throughput is at normal levels. Which of the following is the most likely cause of this issue?",
-"options": {
-"A": "Ransomware  ",
-"B": "Cryptojacking  ",
-"C": "DDoS  ",
-"D": "Zombie instances "
-},
-"answer": "B",
-"choose": "all",
-"domain": 4,
-"domainName": "Security"
-},
-{
-"number": 147,
-"stem": "A cloud engineer is implementing a deployment strategy with the following requirements: • At least two environments for production and development must be supported. • Changes in one environment must not impact the other environment. • The highest possible availability must be achieved. Which of the following deployment strategies should the engineer implement?",
-"options": {
-"A": "Rolling  ",
-"B": "Blue-green  ",
-"C": "In-place  ",
-"D": "Canary "
-},
-"answer": "B",
-"choose": "all",
-"domain": 2,
-"domainName": "Deployment"
-},
-{
-"number": 148,
-"stem": "A cloud solutions architect needs to deploy a simple, public-facing website with the following requirements: • Cost-effective • Highly available • Self-healing • Secure Which of the following will be the most appropriate template to use?",
-"options": {
-"A": "    ",
-"B": "",
-"C": "    ",
-"D": "    "
-},
-"answer": "D",
-"choose": "all",
-"domain": 2,
-"domainName": "Deployment"
-},
-{
-"number": 149,
-"stem": "Which of the following interfaces is most commonly used for SSDs but not for HDDs?",
-"options": {
-"A": "NVMe",
-"B": "Serial-attached SCSI  ",
-"C": "SATA  ",
-"D": "iSCSI "
-},
-"answer": "A",
-"choose": "all",
-"domain": 1,
-"domainName": "Cloud Architecture"
-},
-{
-"number": 150,
-"stem": "Which of the following is the most common characteristic of SSDs?",
-"options": {
-"A": "SSDs are less expensive than spinning disks.  ",
-"B": "SSDs have small storage capacities.  ",
-"C": "SSDs can be used for high-IOP applications.  ",
-"D": "SSDs are used mostly in cold storage. "
-},
-"answer": "C",
-"choose": "all",
-"domain": 1,
-"domainName": "Cloud Architecture"
-},
-{
-"number": 151,
-"stem": "A company experienced a data leak through its website. A security engineer, who is investigating the issue, runs a vulnerability scan against the website and receives the following output: Which of the following is the most likely cause of this leak?",
-"options": {
-"A": "RTMP port open  ",
-"B": "SQL injection  ",
-"C": "Privilege escalation  ",
-"D": "Insecure protocol "
-},
-"answer": "D",
-"choose": "all",
-"domain": 4,
-"domainName": "Security"
-},
-{
-"number": 152,
-"stem": "A cloud developer receives a security vulnerability scan report and needs to analyze and record the true positives. Which of the following vulnerability management steps is this an example of?",
-"options": {
-"A": "Assessment  ",
-"B": "Identification  ",
-"C": "Scanning scope  ",
-"D": "Remediation"
-},
-"answer": "A",
-"choose": "all",
-"domain": 4,
-"domainName": "Security"
-},
-{
-"number": 153,
-"stem": "A company recently experienced a ransomware attack. The recovery process was slow because the on-site backups were compromised and off-site backups were required. Which of the following features would enable a faster recovery if a ransomware attack would happen again?",
-"options": {
-"A": "Integrity  ",
-"B": "Encryption  ",
-"C": "Immutability  ",
-"D": "Replication "
-},
-"answer": "C",
-"choose": "all",
-"domain": 3,
-"domainName": "Operations"
-},
-{
-"number": 154,
-"stem": "A SaaS provider introduced new software functionality for customers as part of quarterly production enhancements. After an update is implemented, users cannot locate certain transactions from an inbound integration. During the investigation, the application owner finds the following error in the logs: Error: REST API - Deprecated call is no longer supported in this release. Which of the following is the best action for the application owner to take to resolve the issue?",
-"options": {
-"A": "Update the custom integration to use a supported function.  ",
-"B": "Include the custom integration in the quarterly testing scope.  ",
-"C": "Ask the users to monitor the quarterly updates.  ",
-"D": "Revert the application to the last stable quarterly release. "
-},
-"answer": "A",
-"choose": "all",
-"domain": 3,
-"domainName": "Operations"
-},
-{
-"number": 155,
-"stem": "A developer is building a tool on the cloud that needs to allow other developers to programmatically read and write to the web application resources. Which of the following should the developer do to meet these requirements with the least complexity?",
-"options": {
-"A": "Build a REST API endpoint.  ",
-"B": "Allow access via the cloud portal.  ",
-"C": "Provision cloud-based SQL access.  ",
-"D": "Implement RPC on the web application. "
-},
-"answer": "A",
-"choose": "all",
-"domain": 5,
-"domainName": "DevOps Fundamentals"
-},
-{
-"number": 156,
-"stem": "Users report being unable to access an application that uses TLS 1.1. The users are able to access other applications on the internet. Which of the following is the most likely reason for this issue?",
-"options": {
-"A": "The security team modified user permissions.  ",
-"B": "Changes were made to address vulnerabilities.  ",
-"C": "Privileged access was implemented.  ",
-"D": "The network ACL was modified. "
-},
-"answer": "B",
-"choose": "all",
-"domain": 4,
-"domainName": "Security"
-},
-{
-"number": 157,
-"stem": "A customer is migrating applications to the cloud and wants to grant authorization using the classification levels of each system. Which of the following should the customer implement to ensure authorization to systems is granted when the user and system classification properties match? (Choose two.)",
-"options": {
-"A": "Resource tagging  ",
-"B": "Single sign-on  ",
-"C": "Multifactor authentication  ",
-"D": "Attribute-based access control  ",
-"E": "Token-based authentication  ",
-"F": "Bastion host "
-},
-"answer": "AD",
-"choose": "all",
-"domain": 4,
-"domainName": "Security"
-},
-{
-"number": 158,
-"stem": "A vulnerability exists on a critical cloud server. The cloud administrator needs to resolve the issue with minimal interruptions. Which of the following should the administrator do next?",
-"options": {
-"A": "Perform a patch installation during lunchtime.  ",
-"B": "Run a vulnerability scan.  ",
-"C": "Install major updates after business hours.  ",
-"D": "Apply fixes in the testing environment. "
-},
-"answer": "D",
-"choose": "all",
-"domain": 3,
-"domainName": "Operations"
-},
-{
-"number": 159,
-"stem": "A bank was recently hacked. The bank reviews the logs to see how the attack occurred. The security administrator suspects the logs were manipulated because no traces of the attack can be found in them. Which of the following should have been enabled before the attack occurred?",
-"options": {
-"A": "Metric and alerts  ",
-"B": "Tracing and aggregation  ",
-"C": "Dashboard and reporting",
-"D": "Versioning and immutability "
-},
-"answer": "D",
-"choose": "all",
-"domain": 3,
-"domainName": "Operations"
-},
-{
-"number": 160,
-"stem": "Which of the following is the best tool to deploy template-based, containerized workloads on premises and on the cloud?",
-"options": {
-"A": "Docker  ",
-"B": "Terraform  ",
-"C": "Jenkins  ",
-"D": "Git "
-},
-"answer": "B",
-"choose": "all",
-"domain": 5,
-"domainName": "DevOps Fundamentals"
-},
-{
-"number": 161,
-"stem": "A healthcare provider contacts a MSP about moving an on-premises infrastructure to the cloud. Which of the following requirements are most important for the MSP to consider when migrating this customer? (Choose two.)",
-"options": {
-"A": "Security  ",
-"B": "Cost  ",
-"C": "Availability  ",
-"D": "Storage  ",
-"E": "Compliance  ",
-"F": "Compute "
-},
-"answer": "AE",
-"choose": "all",
-"domain": 4,
-"domainName": "Security"
-},
-{
-"number": 162,
-"stem": "A cloud engineer deploys two virtual machines and migrates a local web application and database, respectively. After the engineer updates the DNS records, the web application does not respond. Which of the following should the cloud engineer do to troubleshoot the issue?",
-"options": {
-"A": "Increase the size and throughput of the virtual machines to allow more concurrent sessions.  ",
-"B": "Verify whether the operating systems in the virtual machines are compatible with the web application and database.  ",
-"C": "Check to ensure the new web application server configuration file points to the correct database location.  ",
-"D": "Repeat the migration to discard any inconsistencies during the data transfer. "
-},
-"answer": "C",
-"choose": "all",
-"domain": 6,
-"domainName": "Troubleshooting"
-},
-{
-"number": 163,
-"stem": "A cloud engineer is provisioning a new application that requires access to the organization’s public cloud resources. Which of the following is the best way for the cloud engineer to authenticate the application?",
-"options": {
-"A": "API key  ",
-"B": "Cookie  ",
-"C": "MFA  ",
-"D": "Username and password "
-},
-"answer": "A",
-"choose": "all",
-"domain": 2,
-"domainName": "Deployment"
-},
-{
-"number": 164,
-"stem": "Which of the following protocols is often used in IoT to reduce the amount of data exchanged?",
-"options": {
-"A": "MQTT  ",
-"B": "SMB  ",
-"C": "NFS  ",
-"D": "HTTPS "
-},
-"answer": "A",
-"choose": "all",
-"domain": 1,
-"domainName": "Cloud Architecture"
-},
-{
-"number": 165,
-"stem": "A cloud solutions architect wants to deploy a three-tier web application that requires the minimum amount of operational overhead. Which of the following is the best template given these requirements?",
-"options": {
-"A": "    ",
-"B": "",
-"C": "    ",
-"D": "    "
-},
-"answer": "B",
-"choose": "all",
-"domain": 2,
-"domainName": "Deployment"
-},
-{
-"number": 166,
-"stem": "Which of the following is the correct order of the steps to take when a system is suspected of being vulnerable?",
-"options": {
-"A": "Scanning scope, identification, assessment, and remediation  ",
-"B": "Assessment, identification, scanning scope, and remediation  ",
-"C": "Identification, scanning scope, assessment, and remediation  ",
-"D": "Assessment, scanning scope, identification, and remediation "
-},
-"answer": "A",
-"choose": "all",
-"domain": 1,
-"domainName": "Cloud Architecture"
-},
-{
-"number": 167,
-"stem": "A software development team would like to test a new feature that was added to the company’s production website. The team would like to allow access to only a small number of users and then, in a controlled way, slowly increase the number of users who have access to the feature. Which of the following best describes the deployment strategy the software development team should use?",
-"options": {
-"A": "In-place  ",
-"B": "Blue-green  ",
-"C": "Canary  ",
-"D": "Rolling "
-},
-"answer": "C",
-"choose": "all",
-"domain": 2,
-"domainName": "Deployment"
-},
-{
-"number": 168,
-"stem": "A cloud developer resigned from an organization and gave a two-week notice. Within the first week since the developer resigned, a security analyst identifies large volumes of file downloads to the developer’s laptop from the source code repository. Which of the following security controls would be the best way to mitigate the organization’s risk of data loss?",
-"options": {
-"A": "Implementing a policy to stop cloud developers from sharing passwords  ",
-"B": "Preventing cloud developers from accessing the source code repository  ",
-"C": "Updating outbound firewall rules to block the cloud developer’s IP address  ",
-"D": "Blocking internet access for employees that resign from the organization  ",
-"E": "Prohibiting files on the local drive from being transferred to USB drives "
-},
-"answer": "C",
-"choose": "all",
-"domain": 5,
-"domainName": "DevOps Fundamentals"
-},
-{
-"number": 169,
-"stem": "Which of the following facilitates the continuous deployment of cloud applications without performing a clean install on each iteration?",
-"options": {
-"A": "Debian package  ",
-"B": "Version management  ",
-"C": "Container image  ",
-"D": "Bare-metal server "
-},
-"answer": "C",
-"choose": "all",
-"domain": 5,
-"domainName": "DevOps Fundamentals"
-},
-{
-"number": 170,
-"stem": "Which of the following container commands implements network port mapping?",
-"options": {
-"A": "$docker run –it myimage –e /bin/port 8080  ",
-"B": "$docker run myimage:port  ",
-"C": "$docker run –it –p 1-65535 myimage –e netstat 8080  ",
-"D": "$docker run –it –p 80:8080 myimage "
-},
-"answer": "D",
-"choose": "all",
-"domain": 1,
-"domainName": "Cloud Architecture"
-},
-{
-"number": 171,
-"stem": "An organization’s large e-commerce website requires high availability and cannot have degraded performance. Which of the following should a cloud administrator do to best meet the requirements?",
-"options": {
-"A": "Create a secondary server and load balance the traffic.  ",
-"B": "Upgrade the drives to SSD and change the storage tier.  ",
-"C": "Add a secondary NIC and configure network teaming to the existing server.  ",
-"D": "Change the type of CPU and adjust the RAM size. "
-},
-"answer": "A",
-"choose": "all",
-"domain": 1,
-"domainName": "Cloud Architecture"
-},
-{
-"number": 172,
-"stem": "A cloud engineer proposes a solution to migrate a finance application to the cloud. The environment can be shared to reduce costs. Which of the following models would best meet this requirement?",
-"options": {
-"A": "Private  ",
-"B": "Community  ",
-"C": "Public  ",
-"D": "Hybrid "
-},
-"answer": "B",
-"choose": "all",
-"domain": 2,
-"domainName": "Deployment"
-},
-{
-"number": 173,
-"stem": "Which of the following types of storage is read-only and is accessed only when needed?",
-"options": {
-"A": "Cold  ",
-"B": "Hot  ",
-"C": "Warm  ",
-"D": "Archive "
-},
-"answer": "D",
-"choose": "all",
-"domain": 1,
-"domainName": "Cloud Architecture"
-},
-{
-"number": 174,
-"stem": "A company has solid, validated border protection including a next-generation firewall and IPS. However, compromises and breaches continue. Which of the following is the best way to improve the company’s security controls and reduce the number of incidents?",
-"options": {
-"A": "Assess the border protection assets against a CIS benchmark and apply recommendations.  ",
-"B": "Execute a network scan on the border protection and close ports that can be used by attackers.  ",
-"C": "Shift the focus from border protection to a Zero Trust architecture focused on identities.  ",
-"D": "Include a WAF on the network border, increasing protection and adopting security in layers. "
-},
-"answer": "C",
-"choose": "all",
-"domain": 4,
-"domainName": "Security"
-},
-{
-"number": 175,
-"stem": "An administrator attempts to use a script to deploy a cloud-based virtual machine with five data disks. After running the script, the administrator sees the following message: ERROR: Response 403 storage API provisioning error Which of the following is the reason the deployment failed?",
-"options": {
-"A": "Permission issues  ",
-"B": "Partial outage  ",
-"C": "Functionality deprecation",
-"D": "Sizing issues "
-},
-"answer": "A",
-"choose": "all",
-"domain": 6,
-"domainName": "Troubleshooting"
-},
-{
-"number": 176,
-"stem": "A cloud engineer tries to deploy five new cloud instances using code. An error occurs, and the instances are not created. The configuration fails to run. The engineer then receives the following error message: ERROR:Parse error on json line x in config Given the following snippet from the config.json file: { \"instance_count\": 5, \"ssd_options\" : [\"100GB\",\"200GB\",\"300GB\"], \"instance_region\": apac, \"instance_code\": 255, \"start_instance\" : true } Which of the following oversights created the error in the configuration file?",
-"options": {
-"A": "Incorrect instance_count  ",
-"B": "Incorrect ssd_options  ",
-"C": "Missing quotations on instance_region  ",
-"D": "Missing trailing comma on start_instance "
-},
-"answer": "C",
-"choose": "all",
-"domain": 2,
-"domainName": "Deployment"
-},
-{
-"number": 177,
-"stem": "A company’s cybersecurity team receives the following alert that a production VM was deleted from the virtual network: 21 September 09:19:08 (GMT-5) Resource with ID: PROD-WEB001 was deleted by User: Logging Service The console to manage virtual network resources uses directory authentication. Only users in a particular directory group can interactively access the virtual network management console. The logging service account is not part of this group and requires some local administration privileges to aggregate logs from various resources. The cybersecurity team discovers that the logging service account was previously given full directory administration privileges and they see the following entry: 21 September 09:10:55 (GMT-5) User with ID: Logging Service was added to the Group: VNet Console Administrators by actor: Logging Service. The cybersecurity team removes the compromised service account from the directory group. Which of the following should the cybersecurity team do next to prevent repeat instances of this issue?",
-"options": {
-"A": "Enable two-factor authentication on the virtual network console.  ",
-"B": "Reset the logging service account to use a long and complex password.  ",
-"C": "Disable RDP on the production virtual machines.  ",
-"D": "Create a scoped administrative role for the logging service account. "
-},
-"answer": "D",
-"choose": "all",
-"domain": 3,
-"domainName": "Operations"
-},
-{
-"number": 178,
-"stem": "A systems engineer tries to mount an iSCSI LUN to a VM host in a data center, but the host does not discover any iSCSI targets. A sample of the switch configuration is shown in the following image: GigabitEthernet 1/0/1 description \"Development Network Uplink to VM Host A\" access vlan 24 GigabitEthernet 1/0/2 description \"Storage Network Uplink to VM Host A\" access vlan 24 spanning-tree portfast mtu 9216 GigabitEthernet 1/0/3 description \"Lights-Out Management VM Host A\" access vlan 20 spanning-tree portfast GigabitEthernet 1/0/4 description \"SAN Management Controller A\" access vlan 20 GigabitEthernet 1/0/5 description \"SAN Management Controller B\" access vlan 20 spanning-tree portfast GigabitEthernet 1/0/6 description \"SAN iSCSI Controller A\" access vlan 25 spanning-tree portfast GigabitEthernet 1/0/7 description \"SAN iSCSI Controller B™ access vlan 25 spanning-tree portfast Which of the following configuration changes would most likely resolve the discovery issues?",
-"options": {
-"A": "Disabling Gigabit Ethernet 1/0/7  ",
-"B": "Changing the MTU on Gigabit Ethernet 1/0/2  ",
-"C": "Changing the access VLAN for Gigabit Ethernet 1/0/2 to 25  ",
-"D": "Enabling jumbo frames on Gigabit Ethernet 1/0/6 and Gigabit Ethernet 1/0/7 "
-},
-"answer": "C",
-"choose": "all",
-"domain": 1,
-"domainName": "Cloud Architecture"
-},
-{
-"number": 179,
-"stem": "A developer is sending requests to a SaaS application. The developer becomes unable to send anymore requests after sending a number of them, but other developers can still send requests. Which of the following is most likely causing the issue?",
-"options": {
-"A": "Partial outage  ",
-"B": "API throttling  ",
-"C": "Rate limiting  ",
-"D": "Service quota"
-},
-"answer": "C",
-"choose": "all",
-"domain": 6,
-"domainName": "Troubleshooting"
-},
-{
-"number": 180,
-"stem": "Which of the following has the most influence when determining the maximum data loss in the event of a disaster?",
-"options": {
-"A": "Recovery point objective  ",
-"B": "Business continuity and disaster recovery  ",
-"C": "Mean time to recover  ",
-"D": "Recovery time objective "
-},
-"answer": "A",
-"choose": "all",
-"domain": 3,
-"domainName": "Operations"
-},
-{
-"number": 181,
-"stem": "A cloud vendor notifies an administrator that the router version currently in use will no longer be made. Which of the following describes the stage the router has reached and what needs to be done?",
-"options": {
-"A": "The router has reached end of support. The router’s software should be updated.  ",
-"B": "The router has reached end of support. The router should be replaced.  ",
-"C": "The router has reached end of life. The router’s software should be updated.  ",
-"D": "The router has reached end of life. The router should be replaced. "
-},
-"answer": "D",
-"choose": "all",
-"domain": 3,
-"domainName": "Operations"
-},
-{
-"number": 182,
-"stem": "Which of the following should be used on containers to process data and keep the output in files for later review?",
-"options": {
-"A": "Standard output  ",
-"B": "Optical disk mount  ",
-"C": "Ephemeral storage  ",
-"D": "Persistent volumes "
-},
-"answer": "D",
-"choose": "all",
-"domain": 1,
-"domainName": "Cloud Architecture"
-},
-{
-"number": 183,
-"stem": "Users report that in-house developed software has performance issues and behaves in unexpected ways following a recent update. The developers investigate and find buffer overflows and broken authentications. Which of the following best describes what caused this issue?",
-"options": {
-"A": "Leaked credentials  ",
-"B": "Poor coding practices  ",
-"C": "Cipher suite depreciation",
-"D": "Incompatible hardware "
-},
-"answer": "B",
-"choose": "all",
-"domain": 4,
-"domainName": "Security"
-},
-{
-"number": 184,
-"stem": "A public cloud environment customer wants to encrypt the data it puts in the cloud. However, the CSP prohibits customer encryption keys. Which of the following principles is the CSP violating?",
-"options": {
-"A": "Data ownership  ",
-"B": "Data sovereignty  ",
-"C": "Data classification  ",
-"D": "Data retention "
-},
-"answer": "A",
-"choose": "all",
-"domain": 4,
-"domainName": "Security"
-},
-{
-"number": 185,
-"stem": "Which of the following technologies can read the contents of a printed memo?",
-"options": {
-"A": "Document scanning  ",
-"B": "Sentiment analysis  ",
-"C": "Text recognition  ",
-"D": "Natural language processing "
-},
-"answer": "C",
-"choose": "all",
-"domain": 6,
-"domainName": "Troubleshooting"
-},
-{
-"number": 186,
-"stem": "A cloud service provider just launched a new serverless service that is compliant with all security regulations. A company deployed its code using the service, and the company’s application was hacked due to leaked credentials. Which of the following is responsible?",
-"options": {
-"A": "Customer  ",
-"B": "Cloud service provider  ",
-"C": "Hacker  ",
-"D": "Code repository "
-},
-"answer": "A",
-"choose": "all",
-"domain": 4,
-"domainName": "Security"
-},
-{
-"number": 187,
-"stem": "A cloud engineer is concerned about command-and-control (C2) communication out of a cloud network over HTTPS. Which of the following should the cloud engineer implement to most efficiently identify the type of communication?",
-"options": {
-"A": "Inline IPS  ",
-"B": "Cloud flow logs",
-"C": "Hourly cron listing connections  ",
-"D": "Traffic mirroring "
-},
-"answer": "B",
-"choose": "all",
-"domain": 4,
-"domainName": "Security"
-},
-{
-"number": 188,
-"stem": "Two CVEs are discovered on servers in the company’s public cloud virtual network. The CVEs are listed as having an attack vector value of network and CVSS score of 9.0. Which of the following actions is the best way to mitigate the vulnerabilities?",
-"options": {
-"A": "Patching the operating systems  ",
-"B": "Upgrading the operating systems to the latest beta  ",
-"C": "Encrypting the operating system disks  ",
-"D": "Disabling unnecessary open ports "
-},
-"answer": "A",
-"choose": "all",
-"domain": 4,
-"domainName": "Security"
-},
-{
-"number": 189,
-"stem": "Which of the following cloud services has the highest level of vendor lock-in?",
-"options": {
-"A": "Object storage  ",
-"B": "PaaS database  ",
-"C": "Virtual machine  ",
-"D": "File server "
-},
-"answer": "B",
-"choose": "all",
-"domain": 1,
-"domainName": "Cloud Architecture"
-},
-{
-"number": 190,
-"stem": "A cloud engineer is developing an operating expense report that will be used to purchase various cloud billing models for virtual machine instances. The cloud billing model must meet the following requirements: • The instance cannot be ephemeral. • The minimum life cycle of the instance is expected to be five years. • The software license is charged per physical CPU count. Which of the following best meets these requirements?",
-"options": {
-"A": "Dedicated host  ",
-"B": "Spot instance  ",
-"C": "Pay-as-you-go  ",
-"D": "Resource metering "
-},
-"answer": "A",
-"choose": "all",
-"domain": 1,
-"domainName": "Cloud Architecture"
-},
-{
-"number": 191,
-"stem": "A system surpasses 75% to 80% of resource consumption. Which of the following scaling approaches is the most appropriate?",
-"options": {
-"A": "Trending  ",
-"B": "Manual  ",
-"C": "Load  ",
-"D": "Scheduled "
-},
-"answer": "C",
-"choose": "all",
-"domain": 3,
-"domainName": "Operations"
-},
-{
-"number": 192,
-"stem": "A cloud administrator is troubleshooting an issue in which clients receive errors when connecting to an application server. The initial investigation shows the following: • The application is behind a load balancer. • The load balancer logs show connections being denied. • There are no security issues. • There are no infrastructure issues on the application servers. • All connected clients are working as expected. Which of the following would most likely cause the issue?",
-"options": {
-"A": "The application servers are running low on disk space.  ",
-"B": "The load balancer is unable to connect to the application servers.  ",
-"C": "The application is suffering from a memory leak.  ",
-"D": "The service limit for the load balancer has been met. "
-},
-"answer": "D",
-"choose": "all",
-"domain": 4,
-"domainName": "Security"
-},
-{
-"number": 193,
-"stem": "A security engineer recently discovered a vulnerability in the operating system of the company VMs. The operations team reviews the issue and decides all VMs need to be updated from version 3.4.0 to 3.5.0. Which of the following best describes the type of update that will be applied?",
-"options": {
-"A": "Consistent  ",
-"B": "Patch  ",
-"C": "Minor  ",
-"D": "Ephemeral "
-},
-"answer": "C",
-"choose": "all",
-"domain": 3,
-"domainName": "Operations"
-},
-{
-"number": 194,
-"stem": "Which of the following costs would increase significantly for data transfer when comparing a multiregion to a single-region cloud platform design?",
-"options": {
-"A": "Storage",
-"B": "Power and cooling  ",
-"C": "Network  ",
-"D": "Compliance and regulation "
-},
-"answer": "C",
-"choose": "all",
-"domain": 4,
-"domainName": "Security"
-},
-{
-"number": 195,
-"stem": "An organization decides to migrate its software source code framework to microservices. Which of the following correctly describes this new approach?",
-"options": {
-"A": "Public cloud-managed services  ",
-"B": "Tightly coupled architecture  ",
-"C": "Private cloud-managed services  ",
-"D": "Loosely coupled architecture "
-},
-"answer": "D",
-"choose": "all",
-"domain": 1,
-"domainName": "Cloud Architecture"
-},
-{
-"number": 196,
-"stem": "An organization is working to become compliant with industry regulations. An administrator needs to amend the organization’s existing log policy so that logs are available during the period in which the organization is audited. Which of the following should the administrator implement?",
-"options": {
-"A": "Log retention  ",
-"B": "Log aggregation  ",
-"C": "Log collection  ",
-"D": "Log tracing "
-},
-"answer": "A",
-"choose": "all",
-"domain": 3,
-"domainName": "Operations"
-},
-{
-"number": 197,
-"stem": "A company’s primary site experiences an outage and must recover as quickly as possible. Which of the following backup or recovery methods should the company use?",
-"options": {
-"A": "In-place  ",
-"B": "Incremental  ",
-"C": "Full  ",
-"D": "Parallel "
-},
-"answer": "D",
-"choose": "all",
-"domain": 3,
-"domainName": "Operations"
-},
-{
-"number": 198,
-"stem": "Which of the following is a protocol frequently used with IoT devices to communicate with a gateway?",
-"options": {
-"A": "ICMP  ",
-"B": "MQTT  ",
-"C": "RPC  ",
-"D": "SSH "
-},
-"answer": "B",
-"choose": "all",
-"domain": 4,
-"domainName": "Security"
-},
-{
-"number": 199,
-"stem": "Which of the following is used to quickly deploy applications across different cloud providers?",
-"options": {
-"A": "Snapshot  ",
-"B": "Container image  ",
-"C": "Serverless function  ",
-"D": "VM template "
-},
-"answer": "B",
-"choose": "all",
-"domain": 1,
-"domainName": "Cloud Architecture"
-},
-{
-"number": 200,
-"stem": "A software development team must manage changes to source code for different clients who utilize the same product with different features. Which of the following meets this requirement?",
-"options": {
-"A": "Branch  ",
-"B": "Commit  ",
-"C": "Push  ",
-"D": "Merge "
-},
-"answer": "A",
-"choose": "all",
-"domain": 4,
-"domainName": "Security"
-},
-{
-"number": 201,
-"stem": "Which of the following storage types requires immediate access to backup data in case of a disaster?",
-"options": {
-"A": "Archive  ",
-"B": "Hot  ",
-"C": "Cold  ",
-"D": "Warm "
-},
-"answer": "B",
-"choose": "all",
-"domain": 3,
-"domainName": "Operations"
-},
-{
-"number": 202,
-"stem": "An organization is concerned that its IT help desk is receiving too many calls about password resets for various internal and external applications. The organization implements a SSO solution. Which of the following technologies should the cloud architect at the organization recommend implementing?",
-"options": {
-"A": "SAML  ",
-"B": "LDAP  ",
-"C": "Kerberos  ",
-"D": "MFA "
-},
-"answer": "A",
-"choose": "all",
-"domain": 4,
-"domainName": "Security"
-},
-{
-"number": 203,
-"stem": "A company is running a set of replica containers with image version 1. The company updates the image to version 2 and would like to replace some of the version 1 images with version 2. During the replacement process, a minimum percentage of version 1 replicas need to be kept running while starting image version 2 containers alongside them. Which of the following deployment methods is best given the company’s requirements?",
-"options": {
-"A": "In-place  ",
-"B": "Rolling  ",
-"C": "Upgrading  ",
-"D": "Patching "
-},
-"answer": "B",
-"choose": "all",
-"domain": 2,
-"domainName": "Deployment"
-},
-{
-"number": 204,
-"stem": "Which of the following is an auditing procedure that ensures service providers securely manage the data to protect the interests of the organization and the privacy of its clients?",
-"options": {
-"A": "CIS  ",
-"B": "ITIL  ",
-"C": "SOC2  ",
-"D": "ISO 27001 "
-},
-"answer": "C",
-"choose": "all",
-"domain": 4,
-"domainName": "Security"
-},
-{
-"number": 205,
-"stem": "Which of the following commands allows a developer to save changes in the remote repository?",
-"options": {
-"A": "git push  ",
-"B": "git fetch  ",
-"C": "git pull  ",
-"D": "git commit "
-},
-"answer": "A",
-"choose": "all",
-"domain": 5,
-"domainName": "DevOps Fundamentals"
-},
-{
-"number": 206,
-"stem": "An independent security researcher discovers a potential vulnerability in a package. The vulnerability could lead to exposure. Which of the following is the first action the security researcher should take?",
-"options": {
-"A": "Uninstall the package to remove the threat.  ",
-"B": "Write a blog post describing how the package vulnerability was discovered.  ",
-"C": "Report the vulnerability to the package vendor’s security email.  ",
-"D": "Open a public-facing issue on the vendor’s Git repository. "
-},
-"answer": "C",
-"choose": "all",
-"domain": 4,
-"domainName": "Security"
-},
-{
-"number": 207,
-"stem": "A cloud administrator needs to provide secure access within the cloud environment to an outsourced development company’s users who conduct business using personal laptops. The administrator needs to protect proprietary data from leaking or being copied on unauthorized devices. Which of the following mechanisms best fulfills these requirements?",
-"options": {
-"A": "VDI  ",
-"B": "API  ",
-"C": "VPN  ",
-"D": "SSH "
-},
-"answer": "A",
-"choose": "all",
-"domain": 4,
-"domainName": "Security"
-},
-{
-"number": 208,
-"stem": "A software development team decides to use a code repository. Which of the following is the most likely reason for this decision?",
-"options": {
-"A": "Project management  ",
-"B": "Version management  ",
-"C": "Program management  ",
-"D": "Change management "
-},
-"answer": "B",
-"choose": "all",
-"domain": 5,
-"domainName": "DevOps Fundamentals"
-},
-{
-"number": 209,
-"stem": "An organization is preparing for seasonal sales on its storefront web application. Which of the following approaches is best suited to meet this requirement with the minimal cost?",
-"options": {
-"A": "Configuring a load balancer with a least-connections load-balancing method  ",
-"B": "Enabling a scaling configuration for the identified timeline  ",
-"C": "Reconfiguring the application to have more resources  ",
-"D": "Deploying additional compute resources in advance to the web application pool"
-},
-"answer": "B",
-"choose": "all",
-"domain": 2,
-"domainName": "Deployment"
-},
-{
-"number": 210,
-"stem": "Which of the following resources brings content near a geographic location for faster access?",
-"options": {
-"A": "Cloud bursting  ",
-"B": "Region  ",
-"C": "Edge computing  ",
-"D": "Availability zone "
-},
-"answer": "C",
-"choose": "all",
-"domain": 1,
-"domainName": "Cloud Architecture"
-},
-{
-"number": 211,
-"stem": "An administrator deploys a VM with an additional data disk. A developer installs and configures a database application on the data disk. After using the VM to perform very intensive read-and-write operations, the developer reports that the VM seems sluggish. Which of the following solutions represents the least amount of work the administrator needs to do to fix the issue?",
-"options": {
-"A": "1. Create a new VM with more CPU and RAM. 2. Have the developer install and configure the database application.  ",
-"B": "1. Stop the VM. 2. Change the data disk storage type to high performance. 3. Start the VM.  ",
-"C": "1. Create a new VM with a high-performance data disk. 2. Have the developer install and configure the database application.  ",
-"D": "1. Stop the VM. 2. Detach the data disk. 3. Create and attach a new high-performance data disk. 4. Start the VM. "
-},
-"answer": "B",
-"choose": "all",
-"domain": 2,
-"domainName": "Deployment"
-},
-{
-"number": 212,
-"stem": "Which of the following services is most appropriate for routing requests in front of a replica set of virtual machines that host multiple websites?",
-"options": {
-"A": "Forward proxy  ",
-"B": "Content delivery network  ",
-"C": "Layer 7 load balancer  ",
-"D": "Web application firewall "
-},
-"answer": "C",
-"choose": "all",
-"domain": 1,
-"domainName": "Cloud Architecture"
-},
-{
-"number": 213,
-"stem": "Which of the following effects would a modification to the host affinity configuration in the cloud console have?",
-"options": {
-"A": "Hosts in a multicloud environment will run on the same host.",
-"B": "A VM will run only on a particular underlying host or group of hosts.  ",
-"C": "Host affinity configuration will have no effect in the cloud environment.  ",
-"D": "An affinity rule will not disqualify hosts from being eligible to start. "
-},
-"answer": "B",
-"choose": "all",
-"domain": 1,
-"domainName": "Cloud Architecture"
-},
-{
-"number": 214,
-"stem": "Which of the following would a customer most likely be accountable for in a shared responsibility model?",
-"options": {
-"A": "Security of data in the data centers  ",
-"B": "Security in the cloud  ",
-"C": "Security of the application  ",
-"D": "Security of the cloud "
-},
-"answer": "C",
-"choose": "all",
-"domain": 1,
-"domainName": "Cloud Architecture"
-},
-{
-"number": 215,
-"stem": "A cloud engineer needs to enable monitoring on a virtual machine instance within a cloud service provider. The engineer must monitor the resources related to the amount of memory an application is utilizing. Which of the following metrics should the engineer monitor for memory as it relates to disk performance?",
-"options": {
-"A": "Heap utilization  ",
-"B": "Swap usage  ",
-"C": "IOPS consumption  ",
-"D": "Queue depth "
-},
-"answer": "B",
-"choose": "all",
-"domain": 3,
-"domainName": "Operations"
-},
-{
-"number": 216,
-"stem": "An organization and its customer both signed an obligatory agreement that requires both parties to encrypt the data exchanged between the organization and the customer environment. Which of the following best describes this agreement?",
-"options": {
-"A": "Regulatory  ",
-"B": "Litigation  ",
-"C": "Contractual  ",
-"D": "Subscription "
-},
-"answer": "C",
-"choose": "all",
-"domain": 1,
-"domainName": "Cloud Architecture"
-},
-{
-"number": 217,
-"stem": "Which of the following should be added to a SAN to decrease the amount of time it takes a server to back up in a private cloud?",
-"options": {
-"A": "Fibre Channel  ",
-"B": "Kubernetes  ",
-"C": "Clustering  ",
-"D": "UDP "
-},
-"answer": "A",
-"choose": "all",
-"domain": 1,
-"domainName": "Cloud Architecture"
-},
-{
-"number": 218,
-"stem": "An administrator migrates a legacy banking application from a private cloud to a public cloud. Then, the administrator discovers the application's hardware on the private cloud is no longer compatible for reuse. Which of the following should the administrator do next?",
-"options": {
-"A": "Perform a full system backup  ",
-"B": "Apply the latest patches  ",
-"C": "Extend support  ",
-"D": "Decommission the infrastructure "
-},
-"answer": "D",
-"choose": "all",
-"domain": 3,
-"domainName": "Operations"
-},
-{
-"number": 219,
-"stem": "A user's assigned cloud credentials are locked, and the user is unable to access the project's application. The cloud administrator reviews the logs and notices several attempts to log in with the user's account were made to a different application after working hours. Which of the following is the best approach for the administrator to troubleshoot this issue?",
-"options": {
-"A": "Create new credentials for the user and restrict access to the authorized application.  ",
-"B": "Track the source of the log-in attempts using the WAF  ",
-"C": "Reset the user's account and implement a stronger lock-out policy  ",
-"D": "Install an IDS on the network to monitor suspicious activity "
-},
-"answer": "B",
-"choose": "all",
-"domain": 4,
-"domainName": "Security"
-},
-{
-"number": 220,
-"stem": "A cloud engineer enables API access on a user account for automation on a SaaS-based tool. Which of the following is needed to authenticate with the REST API?",
-"options": {
-"A": "Client ID  ",
-"B": "Password  ",
-"C": "Workstation name  ",
-"D": "Secret key  ",
-"E": "Username",
-"F": "Cookie "
-},
-"answer": "AD",
-"choose": "all",
-"domain": 4,
-"domainName": "Security"
-},
-{
-"number": 221,
-"stem": "A managed service provider's recent business growth includes customers on different continents. Which of the following should be considered to prevent issues with regulations?",
-"options": {
-"A": "Data sovereignty  ",
-"B": "Data ownership  ",
-"C": "Classification of data  ",
-"D": "Data locality "
-},
-"answer": "A",
-"choose": "all",
-"domain": 4,
-"domainName": "Security"
-},
-{
-"number": 222,
-"stem": "A development team is ready to release the latest version of an application. Which of the following strategies best ensures successful deployment without impacting the bandwidth of company resources?",
-"options": {
-"A": "Blue-green  ",
-"B": "A/В testing  ",
-"C": "Rolling  ",
-"D": "Shadow "
-},
-"answer": "C",
-"choose": "all",
-"domain": 2,
-"domainName": "Deployment"
-},
-{
-"number": 223,
-"stem": "Unknown attackers targeted a bank’s website using HTTP flooding and infiltration via a SQL injection. Which of the following should the cloud engineer implement as a protection mechanism?",
-"options": {
-"A": "DLP  ",
-"B": "IPS  ",
-"C": "Security group  ",
-"D": "WAF "
-},
-"answer": "D",
-"choose": "all",
-"domain": 4,
-"domainName": "Security"
-},
-{
-"number": 224,
-"stem": "An engineer receives information about an application issue and reviews the events. The engineer decides to horizontally scale the application server. Which of the following would most likely explain the engineer's decision?",
-"options": {
-"A": "The web server reached the maximum number of TCP sessions.  ",
-"B": "Ephemeral storage for the server OS reached 90%.",
-"C": "A runtime error in the application logs indicated a bug in the application.  ",
-"D": "The application server averages 50% CPU and spiked to 90% CPU. "
-},
-"answer": "A",
-"choose": "all",
-"domain": 3,
-"domainName": "Operations"
-},
-{
-"number": 225,
-"stem": "Which of the following concepts refers to edge computing?",
-"options": {
-"A": "Compute resources at a retail store sending data to the cloud  ",
-"B": "Compute resources at a retail store analyzing point-of-sale transactions  ",
-"C": "Compute resources in a public cloud data center analyzing recent sales data  ",
-"D": "Compute resources in an on-premises data center analyzing quarterly sales reports "
-},
-"answer": "B",
-"choose": "all",
-"domain": 2,
-"domainName": "Deployment"
-},
-{
-"number": 226,
-"stem": "Which of the following is the most cost-effective compute service to deploy a service that will be infrequently used but will require fast response times?",
-"options": {
-"A": "Virtual machine  ",
-"B": "Container  ",
-"C": "Serverless  ",
-"D": "Edge "
-},
-"answer": "C",
-"choose": "all",
-"domain": 1,
-"domainName": "Cloud Architecture"
-},
-{
-"number": 227,
-"stem": "Which of the following storage types should be used to provide the highest IOPS?",
-"options": {
-"A": "Immutable  ",
-"B": "HDD  ",
-"C": "All flash  ",
-"D": "Block "
-},
-"answer": "C",
-"choose": "all",
-"domain": 1,
-"domainName": "Cloud Architecture"
-},
-{
-"number": 228,
-"stem": "A cloud engineer is creating a configuration standard to be used on all new cloud deployments. The document should include best practices designed by industry experts. Which of the following is the optimal way to complete this task?",
-"options": {
-"A": "Download the ISO 27001 certification document and certify the company’s deployment process.",
-"B": "Verify the availability of a CIS benchmark for each in-scope technology  ",
-"C": "Request from the management team a budget to initiate a SOC 2 attestation  ",
-"D": "Invite professionals from the local IT community to contribute to the document "
-},
-"answer": "B",
-"choose": "all",
-"domain": 4,
-"domainName": "Security"
-},
-{
-"number": 229,
-"stem": "Which of the following vulnerability management concepts is best defined as the process of discovering vulnerabilities?",
-"options": {
-"A": "Scanning  ",
-"B": "Assessment  ",
-"C": "Remediation  ",
-"D": "Prioritization "
-},
-"answer": "A",
-"choose": "all",
-"domain": 4,
-"domainName": "Security"
-},
-{
-"number": 230,
-"stem": "An administrator configures three subnets to the corporate network. All servers should communicate with the main corporate network and access the internet. The administrator creates the following configurations: Corporate network: 192.168.0.0/24 Network 2: 192 168.10.0/24 Network 3: 192.168.11.0/24 Network 4: 192.168.12.0/24 After configuring the networks, the administrator recognizes an issue with the configuration. Which of the following can the administrator change in one step to accomplish the goal?",
-"options": {
-"A": "Remove source 192.168.12.0/24 and destination 192.168.1.0/24 from the routing table  ",
-"B": "Replace destination 192.168.1.0/24 with destination 192.168.0.0/24  ",
-"C": "Add source 192.168.12.0/24 and destination 192 168 0.0/24 to the routing table  ",
-"D": "Reconfigure Network 4 to 192.168.13.0/24 "
-},
-"answer": "B",
-"choose": "all",
-"domain": 1,
-"domainName": "Cloud Architecture"
-},
-{
-"number": 231,
-"stem": "A cloud engineer is selecting a model for a data center that will host a workload. The database must reside within the data center on the company's SAN solution. However, the workload will be hosted by a third-party vendor. Which of the following models should the cloud engineer select to meet these requirements?",
-"options": {
-"A": "Community  ",
-"B": "Hybrid  ",
-"C": "Public  ",
-"D": "Private "
-},
-"answer": "B",
-"choose": "all",
-"domain": 2,
-"domainName": "Deployment"
-},
-{
-"number": 232,
-"stem": "A new major version of a package installed on a VM was recently released. Which of the following should a cloud engineer do first before applying the upgrade?",
-"options": {
-"A": "Review for package dependencies  ",
-"B": "Raise a change request  ",
-"C": "Investigate for any breaking changes  ",
-"D": "Verify that patching the VM will not reset user data "
-},
-"answer": "C",
-"choose": "all",
-"domain": 4,
-"domainName": "Security"
-},
-{
-"number": 233,
-"stem": "A cloud engineer needs to choose a storage technology that fulfills the following requirements: • 99.99% durability • Resilient to instance failures • Resilient to instance deletions Which of the following types of storage is the best option?",
-"options": {
-"A": "Ephemeral  ",
-"B": "Cache  ",
-"C": "Persistent  ",
-"D": "Local "
-},
-"answer": "C",
-"choose": "all",
-"domain": 3,
-"domainName": "Operations"
-},
-{
-"number": 234,
-"stem": "A cloud engineering team recently built a new website to be hosted on a cloud server. However, the website is not loading. The team runs a troubleshooting command that provides the following output: Which of the following records would the team most likely add to resolve this issue?",
-"options": {
-"A": "MX",
-"B": "A  ",
-"C": "PTR  ",
-"D": "SRV "
-},
-"answer": "B",
-"choose": "all",
-"domain": 6,
-"domainName": "Troubleshooting"
-},
-{
-"number": 235,
-"stem": "After receiving multiple complaints that an application is not always available, a cloud engineer reviews the application's performance. According to monitoring data the application receives different volumes of traffic at unpredictable times, which impacts performance. Which of the following is the best scaling strategy to improve the application's performance?",
-"options": {
-"A": "Scheduled  ",
-"B": "Vertical  ",
-"C": "Manual  ",
-"D": "Horizontal "
-},
-"answer": "D",
-"choose": "all",
-"domain": 3,
-"domainName": "Operations"
-},
-{
-"number": 236,
-"stem": "A company has been using a CRM application that was developed in-house and is hosted on local servers. Due to internal changes, the company wants to migrate the application to the cloud without having to manage the infrastructure. Which of the following services should the company consider?",
-"options": {
-"A": "SaaS  ",
-"B": "PaaS  ",
-"C": "XaaS  ",
-"D": "IaaS "
-},
-"answer": "B",
-"choose": "all",
-"domain": 1,
-"domainName": "Cloud Architecture"
-},
-{
-"number": 237,
-"stem": "At the beginning of every month, new marketing materials are uploaded to the cloud server for sales employees to use. At the same time, other users report that their access is sluggish, and the system is almost unusable. Which of the following scaling approaches should be applied to remedy this issue?",
-"options": {
-"A": "Scheduled  ",
-"B": "Load  ",
-"C": "Event  ",
-"D": "Managed "
-},
-"answer": "A",
-"choose": "all",
-"domain": 3,
-"domainName": "Operations"
-},
-{
-"number": 238,
-"stem": "A cloud administrator needs to distribute workloads across remote data centers for redundancy reasons Which of the following deployment strategies eliminates downtime accelerates deployment, and deploys in batches?",
-"options": {
-"A": "In-place  ",
-"B": "Rolling  ",
-"C": "Blue-green  ",
-"D": "Canary "
-},
-"answer": "B",
-"choose": "all",
-"domain": 2,
-"domainName": "Deployment"
-},
-{
-"number": 239,
-"stem": "A cloud engineer must improve the availability of a database for an application. The database must meet the following requirements: • Failover capability in case of a data center outage • Point-in-time data restoration capabilities Which of the following best meets these requirements?",
-"options": {
-"A": "Clustered database instance  ",
-"B": "Cached Redis cluster  ",
-"C": "Database instance replica  ",
-"D": "Multi-availability zone database instance "
-},
-"answer": "D",
-"choose": "all",
-"domain": 6,
-"domainName": "Troubleshooting"
-},
-{
-"number": 240,
-"stem": "A cloud administrator is implementing backups for a virtual file server with a large number of daily changes to files. The backups have historically caused performance issues on the server. As a result, the company has asked for backups to be completed as quickly as possible. The administrator opts for an incremental backup technology. Which of the following statements best explains the administrator's choice?",
-"options": {
-"A": "Differential backups cannot be used in conjunction with full backups  ",
-"B": "Differential backups are generally slower than incremental backups  ",
-"C": "Differential backups cannot be used for granular recovery.  ",
-"D": "Differential backups always consume more space than incremental backups "
-},
-"answer": "B",
-"choose": "all",
-"domain": 3,
-"domainName": "Operations"
-},
-{
-"number": 241,
-"stem": "A cloud engineer is managing a three-tiered application. An application load balancer is sitting in front of a web layer. After a deployment, the engineer tries to access the website and receives an HTTP 504 error. Which of the following should the engineer do to identify the issue?",
-"options": {
-"A": "Restart the database  ",
-"B": "View the health check configuration",
-"C": "Update the autoscaling policy  ",
-"D": "Redeploy the application tiers in a new subnet "
-},
-"answer": "B",
-"choose": "all",
-"domain": 2,
-"domainName": "Deployment"
-},
-{
-"number": 242,
-"stem": "Which of the following does an engineer need in order to calculate the number of IOPS required in a storage resource?",
-"options": {
-"A": "Network capacity  ",
-"B": "Block size  ",
-"C": "Memory utilization  ",
-"D": "Latency "
-},
-"answer": "D",
-"choose": "all",
-"domain": 1,
-"domainName": "Cloud Architecture"
-},
-{
-"number": 243,
-"stem": "Which of the following is a benefit of using containerization in DevOps environments?",
-"options": {
-"A": "Containerization improves security control by sharing resources among containers  ",
-"B": "Containerization provides the use of a proprietary technology that improves integrity  ",
-"C": "Containerization facilitates performance monitoring over VMs  ",
-"D": "Containerization allows the creation of applications with interconnected components "
-},
-"answer": "D",
-"choose": "all",
-"domain": 3,
-"domainName": "Operations"
-},
-{
-"number": 244,
-"stem": "A systems engineer is migrating a batch of 25 VMs from an on-premises compute cluster to a public cloud using the public cloud’s migration agent. The migration job shows data copies at a rate of 250Mbps. After five servers migrated, the remaining data copied at a rate of 25Mbps. Which of the following is the most likely cause of the issue?",
-"options": {
-"A": "The local VM host hardware utilization  ",
-"B": "The ISP throttling rate  ",
-"C": "The IOPS on the SAN backing the on-premises cluster  ",
-"D": "The compute utilization of the VMs being migrated "
-},
-"answer": "C",
-"choose": "all",
-"domain": 2,
-"domainName": "Deployment"
-},
-{
-"number": 245,
-"stem": "A developer is deploying a new version of a containerized application The DevOps team wants: • No disruption • No performance degradation • Cost-effective deployment • Minimal deployment time Which of the following is the best deployment strategy given the requirements?",
-"options": {
-"A": "Canary  ",
-"B": "In-place  ",
-"C": "Blue-green  ",
-"D": "Rolling "
-},
-"answer": "D",
-"choose": "all",
-"domain": 2,
-"domainName": "Deployment"
-},
-{
-"number": 246,
-"stem": "Which of the following types of releases best describes the update made to a code repository production release when it changes from version 1.0 to version 1.1?",
-"options": {
-"A": "Alpha  ",
-"B": "Beta  ",
-"C": "Minor  ",
-"D": "Major "
-},
-"answer": "C",
-"choose": "all",
-"domain": 5,
-"domainName": "DevOps Fundamentals"
-},
-{
-"number": 247,
-"stem": "A cloud engineer discovers that two nodes experience resource exhaustion during the holidays. This creates a denial of service on the web application. Adding a third node is not an option because of budgetary constraints. Which of the following scaling approaches helps minimize resource exhaustion?",
-"options": {
-"A": "Event trigger  ",
-"B": "Load trigger  ",
-"C": "Vertical scaling  ",
-"D": "Horizontal scaling "
-},
-"answer": "C",
-"choose": "all",
-"domain": 3,
-"domainName": "Operations"
-},
-{
-"number": 248,
-"stem": "Which of the following allows network access to services deployed in a container?",
-"options": {
-"A": "Forward proxy  ",
-"B": "Network orchestration  ",
-"C": "Host affinity  ",
-"D": "Port mapping "
-},
-"answer": "D",
-"choose": "all",
-"domain": 1,
-"domainName": "Cloud Architecture"
-},
-{
-"number": 249,
-"stem": "A cloud administrator must increase the performance of an application by modifying the server disks from HDD to SSD. In which of the following ways will the server most benefit from this change?",
-"options": {
-"A": "Smaller storage footprint  ",
-"B": "Increase in IOPS  ",
-"C": "More memory throughput  ",
-"D": "Fewer CPU cycles "
-},
-"answer": "B",
-"choose": "all",
-"domain": 1,
-"domainName": "Cloud Architecture"
-},
-{
-"number": 250,
-"stem": "A cloud engineer is migrating a website to the cloud. The website was developed with a legacy programming language framework and must be upgraded to a newer version to remediate code vulnerabilities and improve performance. Which of the following is the best strategy to perform the migration?",
-"options": {
-"A": "Refactor  ",
-"B": "Rehost  ",
-"C": "Replatform  ",
-"D": "Re-architect "
-},
-"answer": "A",
-"choose": "all",
-"domain": 2,
-"domainName": "Deployment"
-},
-{
-"number": 251,
-"stem": "A certain user subset is seeing the error message 500 Internal Server Error on a newly launched distributed web application. The developers are unable to troubleshoot this issue because of limited visibility into the application's operations. Which of the following should the developers do first to effectively troubleshoot the issue?",
-"options": {
-"A": "Modify the application code to display proper log files.  ",
-"B": "Generate graphs and dashboards that show the rate of error.  ",
-"C": "Implement incident response management.  ",
-"D": "Provision log aggregation software. "
-},
-"answer": "D",
-"choose": "all",
-"domain": 3,
-"domainName": "Operations"
-},
-{
-"number": 252,
-"stem": "A systems administrator reviews the following standard maintenance script: The script is difficult for the systems administrator to update because the location and the name of the update binary are referenced in the copy command. The script execution triggers future line changes each time maintenance is performed. Which of the following will resolve this issue with minimal overhead?",
-"options": {
-"A": "Implementing an API to receive the parameters remotely  ",
-"B": "Adding a variable to contain the file path  ",
-"C": "Creating a function to search the remote filesystem  ",
-"D": "Inserting a line into the code that calls to a different script "
-},
-"answer": "B",
-"choose": "all",
-"domain": 3,
-"domainName": "Operations"
-},
-{
-"number": 253,
-"stem": "Which of the following is the most appropriate service to publish an application that requires very low latency connections?",
-"options": {
-"A": "Virtual private cloud  ",
-"B": "Network load balancer  ",
-"C": "Application gateway  ",
-"D": "Application load balancer "
-},
-"answer": "B",
-"choose": "all",
-"domain": 1,
-"domainName": "Cloud Architecture"
-},
-{
-"number": 254,
-"stem": "An engineer is deploying a new application with the following requirements: • Uses automation • Deploys some components • Does not deploy the virtual machines Which of the following are reasons that the deployment may only partially fail? (Choose two.)",
-"options": {
-"A": "Service quotas cannot be exceeded.  ",
-"B": "The credentials for the deployment are incorrect.  ",
-"C": "The cloud provider’s API is not working.  ",
-"D": "The version of the infrastructure code is outdated.  ",
-"E": "The cloud provider has a full outage.  ",
-"F": "The permissions are insufficient. "
-},
-"answer": "BF",
-"choose": "all",
-"domain": 6,
-"domainName": "Troubleshooting"
-},
-{
-"number": 255,
-"stem": "A company wants to avoid vendor lock-in situations. Which of the following options should the company consider before doing business with a vendor? (Choose two.)",
-"options": {
-"A": "Cost factor",
-"B": "Open-source technologies  ",
-"C": "Data portability  ",
-"D": "Regulatory compliance  ",
-"E": "Service availability  ",
-"F": "Storage options "
-},
-"answer": "BC",
-"choose": "all",
-"domain": 4,
-"domainName": "Security"
-},
-{
-"number": 256,
-"stem": "A media company is dealing with a large influx of live stream traffic. A cloud engineer notices the following on a VM: • Network usage metric is at 100%. • CPU is under 65% utilization. • Memory utilization is at 50%. • Response time to the website is increasing. Which of the following is the best solution to address these issues?",
-"options": {
-"A": "Increasing the storage capacity  ",
-"B": "Increasing the virtual machine size  ",
-"C": "Adding an additional network card  ",
-"D": "Adding a load balancer "
-},
-"answer": "D",
-"choose": "all",
-"domain": 3,
-"domainName": "Operations"
-},
-{
-"number": 257,
-"stem": "A cloud engineer is applying a critical security patch to multiple servers that have an SSH vulnerability. Which of the following is the fastest way to patch the servers and uses the fewest compute resources?",
-"options": {
-"A": "Log in to each server simultaneously and apply the patch, then restart the servers.  ",
-"B": "Update configuration management scripts to include the patch, then apply the configuration to a primary list of servers.  ",
-"C": "Clone the servers using a readily available cloning tool, apply the patch to the new servers, and delete the old ones.  ",
-"D": "Launch new servers from a patched image, install server configurations, and shut down the old servers. "
-},
-"answer": "B",
-"choose": "all",
-"domain": 3,
-"domainName": "Operations"
-},
-{
-"number": 258,
-"stem": "Which of the following can connect multiple VPCs and an on-premises network?",
-"options": {
-"A": "Subnet  ",
-"B": "CDN  ",
-"C": "Peering",
-"D": "Transit gateway "
-},
-"answer": "D",
-"choose": "all",
-"domain": 1,
-"domainName": "Cloud Architecture"
-},
-{
-"number": 259,
-"stem": "A cloud application fails to retrieve data from an API. A cloud engineer reviews the following log: [ERROR] HTTP 429 - Too many requests [INFO] API rate limit exceeded [WARNING] API throttled Which of the following is the best resolution?",
-"options": {
-"A": "Upgrade the network bandwidth  ",
-"B": "Increase the database storage.  ",
-"C": "Implement exponential backoff.  ",
-"D": "Restart the API server. "
-},
-"answer": "C",
-"choose": "all",
-"domain": 6,
-"domainName": "Troubleshooting"
-},
-{
-"number": 260,
-"stem": "Which of the following has a mandatory tag in the exchange of data between two systems?",
-"options": {
-"A": "JSON  ",
-"B": "SOAP  ",
-"C": "JWT  ",
-"D": "REST "
-},
-"answer": "B",
-"choose": "all",
-"domain": 5,
-"domainName": "DevOps Fundamentals"
-},
-{
-"number": 261,
-"stem": "Which of the following compute services is the best for quick and easy provisioning?",
-"options": {
-"A": "Cluster  ",
-"B": "Container  ",
-"C": "Server less  ",
-"D": "Snapshot "
-},
-"answer": "C",
-"choose": "all",
-"domain": 2,
-"domainName": "Deployment"
-},
-{
-"number": 262,
-"stem": "A cloud engineer is designing a solution that requires end users: • To be authenticated • To be authorized • To be in approved locations. • To use only corporate devices Which of the following is the best way to meet these requirements?",
-"options": {
-"A": "Secure by design  ",
-"B": "Principle of least privilege  ",
-"C": "Zero Trust  ",
-"D": "Defense in depth "
-},
-"answer": "C",
-"choose": "all",
-"domain": 4,
-"domainName": "Security"
-},
-{
-"number": 263,
-"stem": "Which of the following storage types should be used by a data lake implemented on a CSP?",
-"options": {
-"A": "Object  ",
-"B": "Block  ",
-"C": "File  ",
-"D": "Ephemeral "
-},
-"answer": "A",
-"choose": "all",
-"domain": 3,
-"domainName": "Operations"
-},
-{
-"number": 264,
-"stem": "Which of the following best explains RPO?",
-"options": {
-"A": "The time needed to recover from a disaster  ",
-"B": "The acceptable amount of data loss after a disaster  ",
-"C": "The estimated amount of data loss after a disaster  ",
-"D": "The time estimated between disasters "
-},
-"answer": "B",
-"choose": "all",
-"domain": 1,
-"domainName": "Cloud Architecture"
-},
-{
-"number": 265,
-"stem": "A security analyst receives the following security alert: The following VM (vm_1) is exhibiting signs increased CPU usage over a 24-hour period. Please consider increasing the allocated CPU cores. After additional investigation, the analyst identifies a process consuming 98% CPU utilization on the VM. The analyst attempts to stop the process, but the process continues. Which of the following is the most likely cause of this security alert?",
-"options": {
-"A": "Hashing  ",
-"B": "Cryptojacking  ",
-"C": "Phishing",
-"D": "On-path attack "
-},
-"answer": "B",
-"choose": "all",
-"domain": 4,
-"domainName": "Security"
-},
-{
-"number": 266,
-"stem": "A cloud engineer logs in to Grafana. Which of the following actions is the engineer most likely trying to accomplish?",
-"options": {
-"A": "Deploying a new version of an application  ",
-"B": "Observing an application's health  ",
-"C": "Putting an application into a container  ",
-"D": "Pushing new code to the Git source "
-},
-"answer": "B",
-"choose": "all",
-"domain": 5,
-"domainName": "DevOps Fundamentals"
-},
-{
-"number": 267,
-"stem": "Which of the following requirements are the most important when provisioning cloud resources for a client in the finance industry? (Choose two.)",
-"options": {
-"A": "Cost  ",
-"B": "Security  ",
-"C": "Compute  ",
-"D": "Network  ",
-"E": "Storage  ",
-"F": "Compliance  ",
-"G": "Performance "
-},
-"answer": "BF",
-"choose": "all",
-"domain": 4,
-"domainName": "Security"
-},
-{
-"number": 268,
-"stem": "A cloud architect is evaluating a cloud migration strategy for a CRM application. The CRM application's most important requirement is application portability. Which of the following factors is most important for the cloud architect to consider?",
-"options": {
-"A": "Management overhead  ",
-"B": "Vendor lock-in  ",
-"C": "Platform compatibility  ",
-"D": "Service availability "
-},
-"answer": "B",
-"choose": "all",
-"domain": 2,
-"domainName": "Deployment"
-},
-{
-"number": 269,
-"stem": "A cloud engineer creates a new private subnet within a VPC that contains existing subnets. The new subnet is unreachable from the other subnets. The existing subnets can reach each other. Which of the following best describes the cause of this issue?",
-"options": {
-"A": "DNS issues  ",
-"B": "WAF blocking  ",
-"C": "Incorrect IP address  ",
-"D": "Missing route "
-},
-"answer": "D",
-"choose": "all",
-"domain": 1,
-"domainName": "Cloud Architecture"
-},
-{
-"number": 270,
-"stem": "During an incident, a cloud security engineer finds that a suspicious file was run in a virtual desktop. The cloud security engineer obtains a list of users involved in the incident: The cloud security engineer also obtains the system logs: Which of the following types of vulnerabilities did the malicious application most likely exploit?",
-"options": {
-"A": "Privilege escalation  ",
-"B": "Improper permissions  ",
-"C": "Data exfiltration  ",
-"D": "Leaked credentials "
-},
-"answer": "A",
-"choose": "all",
-"domain": 4,
-"domainName": "Security"
-},
-{
-"number": 271,
-"stem": "A company has its application in a Docker container running in a single node in a cloud environment. The company is growing, and multiple customers now require the addition of more containers to accommodate the increasing load. New nodes will be deployed to manage the additional containers. Which of the following is the best approach to manage the new environment?",
-"options": {
-"A": "Create a Jenkins pipeline to execute the Docker containers in the nodes farm.  ",
-"B": "Configure Terraform to start the Docker containers by using customized user data on the new worker nodes  ",
-"C": "Utilize Ansible to deploy the new containers into the new worker nodes  ",
-"D": "Use Kubernetes to orchestrate containers allocation throughout multiple worker nodes "
-},
-"answer": "D",
-"choose": "all",
-"domain": 5,
-"domainName": "DevOps Fundamentals"
-},
-{
-"number": 272,
-"stem": "A company is required to save historical data for seven years. A cloud administrator implements a script that automatically deletes data older than seven years. Which of the following concepts best describes why the historical data is being deleted?",
-"options": {
-"A": "End of life  ",
-"B": "Data loss prevention  ",
-"C": "Cost implications  ",
-"D": "Tiered storage for archiving "
-},
-"answer": "A",
-"choose": "all",
-"domain": 4,
-"domainName": "Security"
-},
-{
-"number": 273,
-"stem": "A cloud-based application needs to connect to a legacy, on-premises application but fails to create a secure connection. Which of the following is the most likely reason that the application cannot connect?",
-"options": {
-"A": "The cloud application is throttling the API  ",
-"B": "The cloud application is changing the DNS during connection  ",
-"C": "The on-premises application cannot communicate to the NAT  ",
-"D": "The on-premises application is using depreciated ciphers "
-},
-"answer": "D",
-"choose": "all",
-"domain": 6,
-"domainName": "Troubleshooting"
-},
-{
-"number": 274,
-"stem": "A workload runs in an IaaS public cloud environment. An engineering team must secure access to the VMs for managing the services. The VMs currently expose the SSH service to the internet. Which of the following solutions reduces the risk of hacking with the least maintenance?",
-"options": {
-"A": "Deploying MFA for the SSH connections  ",
-"B": "Adding a managed IaaS instance and using it as bastion host to access the VMs  ",
-"C": "Blocking SSH with a network ACL and using private endpoints for management  ",
-"D": "Replacing SSH with RDP "
-},
-"answer": "B",
-"choose": "all",
-"domain": 4,
-"domainName": "Security"
-},
-{
-"number": 275,
-"stem": "A cloud engineer needs to upgrade the pip python module by running the following command: python.exe -m pip install -upgrade pip However, after the command is entered, the engineer receives the following error message: WARNINg: Retrying (Retry(TOTAL=4 connect=None, read=None, redirect=None, status=None) after connection broken by 'SSLError(SSLCertVerificationError(1, [SSL: /packages/07/51/abasciekdkgiyiykrieeeotlriturjaab/pip-27.4.3.py3-none-any.whl Given this scenario, which of the following is more than likely the cause of the issue?",
-"options": {
-"A": "Syntax error with the command entered  ",
-"B": "Python version incompatibility  ",
-"C": "Broken TLS communication with no internet access  ",
-"D": "Certificate for package repository is not trusted "
-},
-"answer": "D",
-"choose": "all",
-"domain": 6,
-"domainName": "Troubleshooting"
-},
-{
-"number": 276,
-"stem": "A cloud developer addresses a bug in one of the company’s applications. The developer wants to record the changes and retain the application history. Which of the following steps should the developer take?",
-"options": {
-"A": "Code commit  ",
-"B": "Code refactor  ",
-"C": "Code review  ",
-"D": "Code request "
-},
-"answer": "A",
-"choose": "all",
-"domain": 5,
-"domainName": "DevOps Fundamentals"
-},
-{
-"number": 277,
-"stem": "Which of the following is the most restrictive data classification label?",
-"options": {
-"A": "Proprietary  ",
-"B": "Private  ",
-"C": "Sensitive  ",
-"D": "Confidential "
-},
-"answer": "D",
-"choose": "all",
-"domain": 4,
-"domainName": "Security"
-},
-{
-"number": 278,
-"stem": "Several fitness centers in an area are collectively looking for a cost-effective way to migrate their servers to the cloud. Which of the following is the best cloud deployment model to meet these needs?",
-"options": {
-"A": "Hybrid  ",
-"B": "Public",
-"C": "Community  ",
-"D": "Private "
-},
-"answer": "C",
-"choose": "all",
-"domain": 2,
-"domainName": "Deployment"
-},
-{
-"number": 279,
-"stem": "A company is building a loosely coupled application. The engineering team discovers issues with how the application is handling events. Which of the following should the team implement to resolve this issue?",
-"options": {
-"A": "Host affinity  ",
-"B": "Monolithic services  ",
-"C": "Fan-out architecture  ",
-"D": "ELK stack "
-},
-"answer": "C",
-"choose": "all",
-"domain": 1,
-"domainName": "Cloud Architecture"
-},
-{
-"number": 280,
-"stem": "A cloud-based VM is no longer required. However, the sensitive data on the VM's data disk must be retained. Which of the following is the best approach for the administrator to take?",
-"options": {
-"A": "1. Delete the VM and disks. 2. Retain the VM's backups.  ",
-"B": "1. Take a snapshot of the data disk. 2. Delete the VM and disks.  ",
-"C": "1. Stop the VM. 2 Tag the VM.  ",
-"D": "1. Delete the source VM and disks. 2. Copy the data to another VM. "
-},
-"answer": "B",
-"choose": "all",
-"domain": 2,
-"domainName": "Deployment"
-},
-{
-"number": 281,
-"stem": "A network engineer wants to implement a service that has the following characteristics: • Highly flexible • Centralized • Programmatic • Dynamically adjustable to traffic Which of the following is the best approach?",
-"options": {
-"A": "Software-defined network  ",
-"B": "Virtual private network  ",
-"C": "Content delivery network  ",
-"D": "Network load balancer"
-},
-"answer": "A",
-"choose": "all",
-"domain": 1,
-"domainName": "Cloud Architecture"
-},
-{
-"number": 282,
-"stem": "A user reports that a cloud application has been behaving erratically over the last month. Which of the following should a cloud engineer use to get a clear understanding of the situation?",
-"options": {
-"A": "System alerts  ",
-"B": "Intrusion prevention system  ",
-"C": "Network logs  ",
-"D": "Performance metrics "
-},
-"answer": "D",
-"choose": "all",
-"domain": 3,
-"domainName": "Operations"
-},
-{
-"number": 283,
-"stem": "Which of the following best explains the use of CDN?",
-"options": {
-"A": "To control traffic to and from the cloud environment and prevent unauthorized connections  ",
-"B": "To protect the perimeter of on-premises and cloud networks through segmentation  ",
-"C": "To create a secure communication channel to protect traffic between two geographically distant sites  ",
-"D": "To allow access to content through the geographic distribution and replication of data "
-},
-"answer": "D",
-"choose": "all",
-"domain": 2,
-"domainName": "Deployment"
-},
-{
-"number": 284,
-"stem": "A small nonprofit wants a cheap and simple way to automate some of its workflows that connect different services together in the cloud. Which of the following options best fulfills this need?",
-"options": {
-"A": "Using a managed service provider  ",
-"B": "Leveraging an integration platform as a service  ",
-"C": "Automating workflows with Python and deploying in a VM  ",
-"D": "Implementing a message broker to access the APIs "
-},
-"answer": "B",
-"choose": "all",
-"domain": 1,
-"domainName": "Cloud Architecture"
-},
-{
-"number": 285,
-"stem": "A DevOps engineer is performing maintenance on the mail servers for a company's web application. Part of this maintenance includes checking core operating system updates. The servers are currently running version 3.2 of the operating system. The engineer has two update options—one to version 4.1 and the other to version 3.7 Both versions are fully supported by the operating system manufacturer. Which of the following best describes the action the engineer should take?",
-"options": {
-"A": "Upgrade to 3.7 in the development environment.  ",
-"B": "Upgrade to 4.1 on one production server at a time.",
-"C": "Upgrade only one production server to 4.1.  ",
-"D": "Schedule a maintenance window and upgrade to 3.7 in the production environment. "
-},
-"answer": "A",
-"choose": "all",
-"domain": 3,
-"domainName": "Operations"
-},
-{
-"number": 286,
-"stem": "A cloud engineer is updating a company's Git system that is currently hosted on version 7.1 of a VM. To avoid potential breaking changes, only the latest minor updates are allowed. Which of the following versions should the engineer update the Git system to?",
-"options": {
-"A": "6.5  ",
-"B": "7.6  ",
-"C": "7.9  ",
-"D": "8.1 "
-},
-"answer": "C",
-"choose": "all",
-"domain": 3,
-"domainName": "Operations"
-},
-{
-"number": 287,
-"stem": "An organization hosts its own data center. It has recently migrated some of its applications to the cloud, but some applications remain in its data center. Which of the following best describes the organization’s cloud deployment model?",
-"options": {
-"A": "Community  ",
-"B": "Private  ",
-"C": "Hybrid  ",
-"D": "Public "
-},
-"answer": "C",
-"choose": "all",
-"domain": 2,
-"domainName": "Deployment"
-},
-{
-"number": 288,
-"stem": "A workload that is running in the cloud has a stable resource consumption without major variations. After applying an application update, RAM utilization increases by 20%. The application can be stopped with no business impact, and utilization is expected to remain constant for the next two months. Which of the following is a way to adjust the resources for the application with the least amount of effort?",
-"options": {
-"A": "Add a trend to trigger vertical scaling  ",
-"B": "Manually adjust the compute size  ",
-"C": "Set up a load trigger to modify resources  ",
-"D": "Develop an IaC script to adjust computing attributes "
-},
-"answer": "B",
-"choose": "all",
-"domain": 3,
-"domainName": "Operations"
-},
-{
-"number": 289,
-"stem": "A cloud engineer must scan cloud resources for vulnerabilities. Which of the following is the first step the cloud engineer should take?",
-"options": {
-"A": "Remediate the vulnerabilities  ",
-"B": "Assess the systems.  ",
-"C": "Define the scope  ",
-"D": "Research the CVEs "
-},
-"answer": "C",
-"choose": "all",
-"domain": 4,
-"domainName": "Security"
-},
-{
-"number": 290,
-"stem": "A cloud engineer deploys a group of new VMs to the cloud environment. The VMs have access to sensitive data. Which of the following data protection methods should the engineer use to protect this data from ransomware?",
-"options": {
-"A": "Volume encryption  ",
-"B": "Immutable storage  ",
-"C": "Incremental backups  ",
-"D": "Data replication "
-},
-"answer": "B",
-"choose": "all",
-"domain": 3,
-"domainName": "Operations"
-},
-{
-"number": 291,
-"stem": "A DevOps engineer is initiating a build on a CI/CD pipeline by committing changes to a private repository. Which of the following is the purpose of the private repository?",
-"options": {
-"A": "To protect code assets  ",
-"B": "To deploy to production  ",
-"C": "To implement version control  ",
-"D": "To perform integration testing "
-},
-"answer": "A",
-"choose": "all",
-"domain": 5,
-"domainName": "DevOps Fundamentals"
-},
-{
-"number": 292,
-"stem": "A cloud developer is developing a cloud-native application with the following requirements: • Must be a web-based application • Must be as cost-effective as possible • Must have fast response times • Must be scalable to meet demand Which of the following technologies will best meet these requirements?",
-"options": {
-"A": "Serverless function  ",
-"B": "VM  ",
-"C": "CDN",
-"D": "API gateway "
-},
-"answer": "A",
-"choose": "all",
-"domain": 1,
-"domainName": "Cloud Architecture"
-},
-{
-"number": 293,
-"stem": "Which of the following best describes a compute resource that has its own networking system, OS, CPU, and RAM running on physical hardware?",
-"options": {
-"A": "Clustering  ",
-"B": "Virtual machine  ",
-"C": "Container  ",
-"D": "Stand-alone "
-},
-"answer": "D",
-"choose": "all",
-"domain": 1,
-"domainName": "Cloud Architecture"
-},
-{
-"number": 294,
-"stem": "Which of the following commands allows a cloud engineer to create a new template on the local system to later send for code review?",
-"options": {
-"A": "git checkout -b newfeature  ",
-"B": "git fetch newfeature  ",
-"C": "git pull newfeature  ",
-"D": "git commit -m \"newfeature\" "
-},
-"answer": "A",
-"choose": "all",
-"domain": 5,
-"domainName": "DevOps Fundamentals"
-},
-{
-"number": 295,
-"stem": "An organization uses a cloud provider's specific features to host applications. The organization planned to move to another cloud provider due to rising costs, but moving was not technically feasible. Which of the following best describes this situation?",
-"options": {
-"A": "Platform as a service  ",
-"B": "Oversubscription  ",
-"C": "Vendor lock-in  ",
-"D": "Regulatory compliance "
-},
-"answer": "C",
-"choose": "all",
-"domain": 4,
-"domainName": "Security"
-},
-{
-"number": 296,
-"stem": "A cloud engineer must configure a backup at the end of the month. Given the following requirements: • Minimal backup size • Faster backup speed Which of the following backup types best meets the requirements?",
-"options": {
-"A": "Tape  ",
-"B": "Full  ",
-"C": "Differential  ",
-"D": "Incremental "
-},
-"answer": "D",
-"choose": "all",
-"domain": 3,
-"domainName": "Operations"
-},
-{
-"number": 297,
-"stem": "A company wants to build a database that will receive requests from its application, but it also has a lot of customer data that must be archived. Which of the following solutions takes into consideration performance and cost implications?",
-"options": {
-"A": "SSD for the customer data, SSD for the database  ",
-"B": "SSD for the database, HDD for the customer data  ",
-"C": "Object storage for the database, SSD for the customer data  ",
-"D": "Object storage for the customer data, HDD for the database "
-},
-"answer": "B",
-"choose": "all",
-"domain": 1,
-"domainName": "Cloud Architecture"
-},
-{
-"number": 298,
-"stem": "A company notices inconsistencies in its cloud environment. After further analysis, the company discovers that some developers have been making manual configuration changes that roll back changes made by the DevOps team. Which of the following should the company do to best manage its cloud infrastructure? (Choose two.)",
-"options": {
-"A": "Enable versioning on cloud resources in order to easily roll back changes  ",
-"B": "Use cloud policies to enforce the company’s standards  ",
-"C": "Restrict access to the cloud console to only the DevOps team  ",
-"D": "Create scripts that use the cloud provider’s CLI  ",
-"E": "Use IaC to handle the company's cloud resources  ",
-"F": "Deploy the applications using containers "
-},
-"answer": "BE",
-"choose": "all",
-"domain": 2,
-"domainName": "Deployment"
-},
-{
-"number": 299,
-"stem": "A cloud security engineer discovers that service account information has been committed to the company’s code repository. Which of the following steps should the cloud security engineer take first? (Choose two.)",
-"options": {
-"A": "Change the cipher suite  ",
-"B": "Enable multifactor authentication  ",
-"C": "Set up a virtual private network.",
-"D": "Disable the account  ",
-"E": "Run a port scan  ",
-"F": "Rotate the credentials "
-},
-"answer": "DF",
-"choose": "all",
-"domain": 4,
-"domainName": "Security"
-},
-{
-"number": 300,
-"stem": "The following is a code excerpt of a playbook.yaml file: Which of the following functions does this code perform?",
-"options": {
-"A": "Registers the variable needed to debug the web server stdout result  ",
-"B": "Executes the command to restart the web server and lists the result  ",
-"C": "Prints the amount of time the server has been online  ",
-"D": "Troubleshoots the web server configurations and standard output "
-},
-"answer": "C",
-"choose": "all",
-"domain": 6,
-"domainName": "Troubleshooting"
-},
-{
-"number": 301,
-"stem": "A healthcare provider's regulatory requirements include keeping patient data confidential, unaltered, retained for a minimum of five years, and backed up to a bucket in the cloud. Which of the following methods meets these requirements?",
-"options": {
-"A": "Object Lock  ",
-"B": "Daily full backup  ",
-"C": "Data replication  ",
-"D": "Bulk recovery "
-},
-"answer": "A",
-"choose": "all",
-"domain": 3,
-"domainName": "Operations"
-},
-{
-"number": 302,
-"stem": "An engineer has an application running in the United States in a cloud environment. This application must be replicated into a United Kingdom cloud environment. When the application is deployed to the United Kingdom environment, there are issues acquiring a virtual machine with a GPU. Which of the following is the most likely reason for this issue?",
-"options": {
-"A": "The route tables are misconfigured and cannot connect to virtual machines  ",
-"B": "The API for creating virtual machines is being throttled  ",
-"C": "The United Kingdom region has an outage",
-"D": "The United Kingdom region does not have virtual machines that meet the requirements  ",
-"E": "The United Kingdom region cannot connect to the United States region "
-},
-"answer": "D",
-"choose": "all",
-"domain": 1,
-"domainName": "Cloud Architecture"
-},
-{
-"number": 303,
-"stem": "A large financial corporation experienced a data breach. An investigation reveals that the attacker infiltrated the firewall via a vulnerability and accessed different servers within the network. Which of the following security controls should the cloud security team implement to prevent future breaches like this one?",
-"options": {
-"A": "An MFA solution  ",
-"B": "An IDS  ",
-"C": "A Zero Trust architecture  ",
-"D": "A NAC "
-},
-"answer": "C",
-"choose": "all",
-"domain": 4,
-"domainName": "Security"
-},
-{
-"number": 304,
-"stem": "A cloud administrator must increase uptime for an application. Which of the following methods keeps costs to a minimum while increasing uptime?",
-"options": {
-"A": "Deploying on-premises services  ",
-"B": "Deploying a geo-redundant cluster  ",
-"C": "Deploying services to a cold DR site  ",
-"D": "Deploying services to availability zones "
-},
-"answer": "D",
-"choose": "all",
-"domain": 2,
-"domainName": "Deployment"
-},
-{
-"number": 305,
-"stem": "Which of the following technologies helps secure public-facing API endpoints?",
-"options": {
-"A": "DDoS protection  ",
-"B": "Vulnerability scanning  ",
-"C": "Data loss prevention  ",
-"D": "Intrusion detection systems "
-},
-"answer": "A",
-"choose": "all",
-"domain": 4,
-"domainName": "Security"
-},
-{
-"number": 306,
-"stem": "An e-commerce business operates its web applications using a microservices-based architecture. These application instances run on multiple VMs in the cloud and are interconnected through discovery. As the business grows, prioritizing rapid scaling will be crucial. Which of the following best meets the business's scaling needs?",
-"options": {
-"A": "Manually tuning the VM size to meet demand based on estimates and projections  ",
-"B": "Configuring vertical scaling to increase system resources on a set schedule  ",
-"C": "Automatically provisioning more application instances when CPU usage hits a set threshold  ",
-"D": "Setting up a new colocated data center to handle extra load based on specific criteria "
-},
-"answer": "C",
-"choose": "all",
-"domain": 3,
-"domainName": "Operations"
-},
-{
-"number": 307,
-"stem": "A company needs an application to manage its CRM system with the least administrative overhead. Which of the following models is the best for migrating the infrastructure to the cloud?",
-"options": {
-"A": "PaaS  ",
-"B": "SaaS  ",
-"C": "FaaS  ",
-"D": "IaaS "
-},
-"answer": "B",
-"choose": "all",
-"domain": 1,
-"domainName": "Cloud Architecture"
-},
-{
-"number": 308,
-"stem": "Which of the following commands is used to deploy a container in which the image name is \"working\"?",
-"options": {
-"A": "$docker run -p 80:8080 -it working images.comptia.org/development:latest -e /bin/bash  ",
-"B": "$docker run -p 80:8080 -it images.comptia.org/working/production:latest -e /bin/bash  ",
-"C": "$docker run -p 80:8080 -it images.comptia.org/abcd123/working:latest -e /bin/bash  ",
-"D": "$docker run -p 80:8080 -it working.images.comptia.org/abcd12:latest -e /bin/bash "
-},
-"answer": "C",
-"choose": "all",
-"domain": 5,
-"domainName": "DevOps Fundamentals"
-},
-{
-"number": 309,
-"stem": "A company uses two mobile applications. Application A is used in the United States market, and Application В is used in the European Union market with GDPR restrictions. Both applications must comply with PCI standards. The company is consolidating both mobile applications into a single application and must standardize its database back-end system. Which of the following is the best option to provision the database for the consolidated mobile application?",
-"options": {
-"A": "Deploying one global database across multiple regions  ",
-"B": "Using two databases in the same region with different access controls  ",
-"C": "Implementing two databases in two different regions  ",
-"D": "Provisioning one database in one region with separate IAM permissions "
-},
-"answer": "C",
-"choose": "all",
-"domain": 4,
-"domainName": "Security"
-},
-{
-"number": 310,
-"stem": "A company is migrating to a cloud. The company wants a solution that will help developers focus primarily on code rather than on managing infrastructure. Which of the following best meets this need?",
-"options": {
-"A": "Deploying IaaS  ",
-"B": "Configuring FaaS  ",
-"C": "Subscribing to PaaS  ",
-"D": "Purchasing SaaS "
-},
-"answer": "C",
-"choose": "all",
-"domain": 1,
-"domainName": "Cloud Architecture"
-},
-{
-"number": 311,
-"stem": "A cloud engineer wants resource-level visibility for billing reports. Which of the following should the cloud engineer configure?",
-"options": {
-"A": "Rightsizing  ",
-"B": "Invoicing  ",
-"C": "Reserve instances  ",
-"D": "Tagging "
-},
-"answer": "D",
-"choose": "all",
-"domain": 1,
-"domainName": "Cloud Architecture"
-},
-{
-"number": 312,
-"stem": "A cloud administrator is troubleshooting an issue for a client. The client has the following capabilities: • Can access servers on the VPC, including servers on other subnets • Can ping other resources on the network • Can ping its own gateway However, the client cannot reach the internet Which of the following is most likely the cause?",
-"options": {
-"A": "The gateway is missing a route  ",
-"B": "The client has a duplicate IP address  ",
-"C": "The DHCP server is not functioning properly  ",
-"D": "The network has too much latency. "
-},
-"answer": "A",
-"choose": "all",
-"domain": 1,
-"domainName": "Cloud Architecture"
-},
-{
-"number": 313,
-"stem": "A company wants to offer customers an interactive experience through its website to solve common issues. Which of the following would most likely provide this feature?",
-"options": {
-"A": "Search engine  ",
-"B": "Generative AI  ",
-"C": "Help page",
-"D": "Text recognition "
-},
-"answer": "B",
-"choose": "all",
-"domain": 1,
-"domainName": "Cloud Architecture"
-},
-{
-"number": 314,
-"stem": "A company recently migrated to a public cloud provider. The company's computer incident response team needs to configure native cloud services for detailed logging. Which of the following should the team implement on each cloud service to support root cause analysis of past events? (Choose two.)",
-"options": {
-"A": "Log retention  ",
-"B": "Tracing  ",
-"C": "Log splicing  ",
-"D": "Log rotation  ",
-"E": "Hashing  ",
-"F": "Encryption "
-},
-"answer": "AB",
-"choose": "all",
-"domain": 3,
-"domainName": "Operations"
-}
+ {
+  "number": 1,
+  "stem": "A software engineer needs to transfer data over the internet using programmatic access while also being able to query the data. Which of the following will best help the engineer to complete this task?",
+  "options": {
+   "A": "SQL  ",
+   "B": "Web sockets  ",
+   "C": "RPC  ",
+   "D": "GraphQL "
+  },
+  "answer": "D",
+  "choose": "all",
+  "domain": 5,
+  "domainName": "DevOps Fundamentals",
+  "explanations": {
+   "A": "SQL is a query language for databases, not a data-transfer protocol for internet transfer.",
+   "B": "Web sockets give persistent bidirectional connections but aren't designed for structured, queryable data transfer.",
+   "C": "RPC calls remote procedures but doesn't offer flexible querying of data structure.",
+   "D": "GraphQL is a query language and runtime for APIs, letting clients query exactly the data they need over HTTP, making it best for programmatic access with querying."
+  }
+ },
+ {
+  "number": 2,
+  "stem": "Which of the following is a field of computer science that enables computers to identify and understand objects and people in images and videos?",
+  "options": {
+   "A": "Image reconstruction  ",
+   "B": "Facial recognition  ",
+   "C": "Natural language processing  ",
+   "D": "Computer vision "
+  },
+  "answer": "D",
+  "choose": "all",
+  "domain": 6,
+  "domainName": "Troubleshooting",
+  "explanations": {
+   "A": "Image reconstruction repairs or rebuilds images, not identify/understand objects.",
+   "B": "Facial recognition is a narrower subset limited to identifying faces, not all objects/people generally.",
+   "C": "NLP deals with understanding language/text, not visual images.",
+   "D": "Computer vision is the field enabling computers to identify and understand objects and people in images/video, matching the definition exactly."
+  }
+ },
+ {
+  "number": 3,
+  "stem": "A company needs to deploy its own code directly in the cloud without provisioning additional infrastructure. Which of the following is the best cloud service model for the company to use?",
+  "options": {
+   "A": "PaaS  ",
+   "B": "SaaS  ",
+   "C": "IaaS  ",
+   "D": "XaaS "
+  },
+  "answer": "A",
+  "choose": "all",
+  "domain": 1,
+  "domainName": "Cloud Architecture",
+  "explanations": {
+   "A": "PaaS lets a company deploy its own code on a managed platform without provisioning underlying infrastructure, matching the requirement.",
+   "B": "SaaS delivers a finished application, not a platform to deploy custom code onto.",
+   "C": "IaaS still requires the customer to provision and manage infrastructure (VMs, storage).",
+   "D": "XaaS is a generic umbrella term, not a specific service model that fits this need."
+  }
+ },
+ {
+  "number": 4,
+  "stem": "A company just learned that the data in its object storage was accessed by an unauthorized party. Which of the following should the company have done to make the data unusable?",
+  "options": {
+   "A": "The company should have switched from object storage to file storage.  ",
+   "B": "The company should have hashed the data.",
+   "C": "The company should have changed the file access permissions.  ",
+   "D": "The company should have encrypted the data at rest. "
+  },
+  "answer": "D",
+  "choose": "all",
+  "domain": 4,
+  "domainName": "Security",
+  "explanations": {
+   "A": "Switching storage types doesn't make already-accessed data unusable to an attacker.",
+   "B": "Hashing is one-way and not meant for protecting data confidentiality at rest; it doesn't prevent an unauthorized party from reading original data if hashed only.",
+   "C": "Changing permissions after the fact doesn't undo the breach or make already-copied data unusable.",
+   "D": "Encrypting data at rest ensures that even if accessed without authorization, the data is unreadable without the decryption key, making it correct."
+  }
+ },
+ {
+  "number": 5,
+  "stem": "A customer relationship management application, which is hosted in a public cloud IaaS network, is vulnerable to a remote command execution vulnerability. Which of the following is the best solution for the security engineer to implement to prevent the application from being exploited by basic attacks?",
+  "options": {
+   "A": "IPS  ",
+   "B": "ACL  ",
+   "C": "DLP  ",
+   "D": "WAF "
+  },
+  "answer": "D",
+  "choose": "all",
+  "domain": 4,
+  "domainName": "Security",
+  "explanations": {
+   "A": "IPS operates at network layer and isn't tailored to web application-layer exploits like RCE via HTTP.",
+   "B": "ACLs control network access based on IP/port, not application-layer attack patterns.",
+   "C": "DLP prevents data exfiltration, not exploitation of application vulnerabilities.",
+   "D": "A WAF inspects HTTP traffic and can detect/block exploitation attempts like remote command execution against web applications, making it the best fit."
+  }
+ },
+ {
+  "number": 6,
+  "stem": "Which of the following is a difference between a SAN and a NAS?",
+  "options": {
+   "A": "A SAN works only with fiber-based networks.  ",
+   "B": "A SAN works with any Ethernet-based network.  ",
+   "C": "A NAS uses a faster protocol than a SAN.  ",
+   "D": "A NAS uses a slower protocol than a SAN. "
+  },
+  "answer": "D",
+  "choose": "all",
+  "domain": 1,
+  "domainName": "Cloud Architecture",
+  "explanations": {
+   "A": "SANs can run over Ethernet-based iSCSI too, not only fiber, so this is incorrect.",
+   "B": "This describes iSCSI SAN capability but isn't the defining difference versus NAS.",
+   "C": "NAS typically uses file-based protocols (NFS/SMB) which are generally slower than SAN's block-level access, not faster.",
+   "D": "NAS uses file-level protocols over standard networks which are slower than the block-level protocols SANs use, correctly capturing the key performance difference."
+  }
+ },
+ {
+  "number": 7,
+  "stem": "A cloud engineer is troubleshooting an application that consumes multiple third-party REST APIs. The application is randomly experiencing high latency. Which of the following would best help determine the source of the latency?",
+  "options": {
+   "A": "Configuring centralized logging to analyze HTTP requests  ",
+   "B": "Running a flow log on the network to analyze the packets  ",
+   "C": "Configuring an API gateway to track all incoming requests  ",
+   "D": "Enabling tracing to detect HTTP response times and codes "
+  },
+  "answer": "D",
+  "choose": "all",
+  "domain": 3,
+  "domainName": "Operations",
+  "explanations": {
+   "A": "Centralized logging shows request data but not necessarily where the latency in each hop originates.",
+   "B": "Flow logs show network-layer packet metadata, not application response times of the third-party APIs.",
+   "C": "API gateway tracks incoming requests to your own API, not the latency of the outbound third-party API calls.",
+   "D": "Enabling tracing (distributed tracing) reveals response times and codes for each downstream call, directly pinpointing the source of intermittent latency."
+  }
+ },
+ {
+  "number": 8,
+  "stem": "A cloud engineer is reviewing the following Dockerfile to deploy a Python web application: Which of the following changes should the engineer make to the file to improve container security?",
+  "options": {
+   "A": "Add the instruction USER nonroot.  ",
+   "B": "Change the version from latest to 3.11.  ",
+   "C": "Remove the ENTRYPOINT instruction.  ",
+   "D": "Ensure myapp/main/py is owned by root. "
+  },
+  "answer": "A",
+  "choose": "all",
+  "domain": 4,
+  "domainName": "Security",
+  "explanations": {
+   "A": "Adding USER nonroot ensures the container runs as a non-root user, reducing the security impact if compromised, which is the standard hardening step.",
+   "B": "Pinning a version avoids unexpected changes but is about stability/reproducibility, not primarily security hardening for this scenario.",
+   "C": "Removing ENTRYPOINT would break the container's intended startup behavior and isn't a security fix.",
+   "D": "File ownership by root is actually the risk root-user containers create; ensuring root ownership doesn't improve security here."
+  }
+ },
+ {
+  "number": 9,
+  "stem": "A group of cloud administrators frequently uses the same deployment template to recreate a cloud-based development environment. The administrators are unable to go back and review the history of changes they have made to the template. Which of the following cloud resource deployment concepts should the administrator start using?",
+  "options": {
+   "A": "Drift detection  ",
+   "B": "Repeatability  ",
+   "C": "Documentation  ",
+   "D": "Versioning "
+  },
+  "answer": "D",
+  "choose": "all",
+  "domain": 2,
+  "domainName": "Deployment",
+  "explanations": {
+   "A": "Drift detection finds when live resources diverge from the template, not track change history.",
+   "B": "Repeatability is about being able to redeploy the same template consistently, not tracking historical changes.",
+   "C": "Documentation records information manually but doesn't inherently provide change history/tracking.",
+   "D": "Versioning (e.g., via version control) tracks every change to the template over time, letting admins review history, which is exactly the need."
+  }
+ },
+ {
+  "number": 10,
+  "stem": "A government agency in the public sector is considering a migration from on premises to the cloud. Which of the following are the most important considerations for this cloud migration? (Choose two.)",
+  "options": {
+   "A": "Compliance  ",
+   "B": "IaaS vs. SaaS  ",
+   "C": "Firewall capabilities  ",
+   "D": "Regulatory  ",
+   "E": "Implementation timeline  ",
+   "F": "Service availability "
+  },
+  "answer": "AD",
+  "choose": "all",
+  "domain": 1,
+  "domainName": "Cloud Architecture",
+  "explanations": {
+   "A": "Compliance with laws/standards is a top concern for a public sector migration, correct.",
+   "B": "Choosing IaaS vs SaaS is a technical detail, not among the most important high-level migration considerations.",
+   "C": "Firewall capabilities are an implementation detail, not a top-level migration consideration.",
+   "D": "Regulatory requirements (data handling, sovereignty) are critical for government agencies, correct.",
+   "E": "Implementation timeline matters but is secondary to compliance/regulatory drivers.",
+   "F": "Service availability is important generally but not the top consideration specific to public sector migration."
+  }
+ },
+ {
+  "number": 11,
+  "stem": "A company wants to optimize cloud resources and lower the overhead caused by managing multiple operating systems. Which of the following compute resources would be best to help to achieve this goal?",
+  "options": {
+   "A": "VM  ",
+   "B": "Containers  ",
+   "C": "Remote desktops",
+   "D": "Bare-metal servers "
+  },
+  "answer": "B",
+  "choose": "all",
+  "domain": 1,
+  "domainName": "Cloud Architecture",
+  "explanations": {
+   "A": "VMs each require a full guest OS, increasing management overhead rather than reducing it.",
+   "B": "Containers share the host OS kernel, drastically cutting the number of OS instances to manage, directly addressing the overhead goal.",
+   "C": "Remote desktops still rely on full OS instances per session and don't reduce OS management overhead.",
+   "D": "Bare-metal servers still run full individual OS installs and add more management burden, not less."
+  }
+ },
+ {
+  "number": 12,
+  "stem": "A company runs a discussion forum that caters to global users. The company’s monitoring system reports that the home page suddenly is seeing elevated response times, even though internal monitoring has reported no issues or changes. Which of the following is the most likely cause of this issue?",
+  "options": {
+   "A": "Cryptojacking  ",
+   "B": "Human error  ",
+   "C": "DDos  ",
+   "D": "Phishing "
+  },
+  "answer": "C",
+  "choose": "all",
+  "domain": 4,
+  "domainName": "Security",
+  "explanations": {
+   "A": "Cryptojacking consumes CPU for mining but wouldn't specifically cause elevated response times tied to global user traffic patterns without other signs.",
+   "B": "Human error would typically be detected by internal monitoring/change logs, which reported no changes.",
+   "C": "A DDoS attack floods the service with traffic from external sources, causing elevated response times without any internal changes, matching the scenario.",
+   "D": "Phishing targets credentials/users, not site response time."
+  }
+ },
+ {
+  "number": 13,
+  "stem": "Which of the following migration types is best to use when migrating a highly available application, which is normally hosted on a local VM cluster, for usage with an external user population?",
+  "options": {
+   "A": "Cloud to on-premises  ",
+   "B": "Cloud to cloud  ",
+   "C": "On-premises to cloud  ",
+   "D": "On-premises to on-premises "
+  },
+  "answer": "C",
+  "choose": "all",
+  "domain": 2,
+  "domainName": "Deployment",
+  "explanations": {
+   "A": "Cloud to on-premises moves the opposite direction of the described need.",
+   "B": "Cloud to cloud implies the app is already in the cloud, but this app is on a local VM cluster.",
+   "C": "On-premises to cloud correctly migrates the locally hosted HA application to the cloud to serve an external population.",
+   "D": "On-premises to on-premises wouldn't provide the cloud accessibility needed for external users."
+  }
+ },
+ {
+  "number": 14,
+  "stem": "A cloud architect attempts to modify a protected branch but is unable to do so. The architect receives an error indicating the action cannot be completed. Which of the following should the architect try instead?",
+  "options": {
+   "A": "Adding a new remote  ",
+   "B": "Creating a pull request  ",
+   "C": "Merging the branch  ",
+   "D": "Rebasing the branch "
+  },
+  "answer": "B",
+  "choose": "all",
+  "domain": 5,
+  "domainName": "DevOps Fundamentals",
+  "explanations": {
+   "A": "Adding a remote doesn't address the inability to push/modify a protected branch.",
+   "B": "Creating a pull request is the standard workflow to propose changes to a protected branch for review/merge, since direct pushes are blocked.",
+   "C": "Merging the branch directly is exactly what's blocked by branch protection.",
+   "D": "Rebasing doesn't bypass branch protection rules preventing direct modification."
+  }
+ },
+ {
+  "number": 15,
+  "stem": "Which of the following container storage types loses data after a restart?",
+  "options": {
+   "A": "Object  ",
+   "B": "Persistent volume",
+   "C": "Ephemeral  ",
+   "D": "Block "
+  },
+  "answer": "C",
+  "choose": "all",
+  "domain": 3,
+  "domainName": "Operations",
+  "explanations": {
+   "A": "Object storage persists data independent of container lifecycle.",
+   "B": "Persistent volumes are specifically designed to retain data across container restarts.",
+   "C": "Ephemeral storage is tied to the container's lifecycle and is wiped when the container restarts, matching the description.",
+   "D": "Block storage attached as a volume can persist data across restarts, unlike ephemeral storage."
+  }
+ },
+ {
+  "number": 16,
+  "stem": "A developer is testing code that will be used to deploy a web farm in a public cloud. The main code block is a function to create a load balancer and a loop to create 1,000 web servers, as shown below: The developer runs the code against the company’s cloud account and observes that the load balancer is successfully created, but only 100 web servers have been created. Which of the following should the developer do to fix this issue?",
+  "options": {
+   "A": "Request an increase of instance quota.  ",
+   "B": "Run the code multiple times until all servers are created.  ",
+   "C": "Check the my_web_server () function to ensure itis using the right credentials.  ",
+   "D": "Place the my_load_balancer () function after the loop. "
+  },
+  "answer": "A",
+  "choose": "all",
+  "domain": 2,
+  "domainName": "Deployment",
+  "explanations": {
+   "A": "Cloud accounts have default instance quotas; hitting the quota after 100 servers explains why only 100 of 1,000 were created, so raising the quota fixes it.",
+   "B": "Re-running the code wouldn't fix an underlying quota limit and could create duplicate/partial resources.",
+   "C": "Credentials issue would likely cause total failure, not success up to exactly a round number like 100.",
+   "D": "Load balancer placement order doesn't explain a hard stop at 100 servers."
+  }
+ },
+ {
+  "number": 17,
+  "stem": "Following a ransomware attack, the legal department at a company instructs the IT administrator to store the data from the affected virtual machines for a minimum of one year. Which of the following is this an example of?",
+  "options": {
+   "A": "Recoverability  ",
+   "B": "Retention  ",
+   "C": "Encryption  ",
+   "D": "Integrity "
+  },
+  "answer": "B",
+  "choose": "all",
+  "domain": 3,
+  "domainName": "Operations",
+  "explanations": {
+   "A": "Recoverability is about the ability to restore data, not the duration it must be kept.",
+   "B": "Retention refers to how long data must be kept, matching the legal requirement to store data for at least a year.",
+   "C": "Encryption protects confidentiality, unrelated to storage duration.",
+   "D": "Integrity ensures data hasn't been altered, not how long it's stored."
+  }
+ },
+ {
+  "number": 18,
+  "stem": "An engineer made a change to an application and needs to select a deployment strategy that meets the following requirements: Is simple and fast Can be performed on two identical platforms Which of the following strategies should the engineer use?",
+  "options": {
+   "A": "Blue-green  ",
+   "B": "Canary  ",
+   "C": "Rolling  ",
+   "D": "In-place"
+  },
+  "answer": "A",
+  "choose": "all",
+  "domain": 2,
+  "domainName": "Deployment",
+  "explanations": {
+   "A": "Blue-green deployment uses two identical environments and simply switches traffic, making it simple, fast, and matching both requirements exactly.",
+   "B": "Canary releases to a small subset gradually, which is more complex/slower than a straight swap.",
+   "C": "Rolling updates replace instances incrementally, not a simple fast swap between two identical platforms.",
+   "D": "In-place deployment updates the existing environment directly, not using two identical platforms."
+  }
+ },
+ {
+  "number": 19,
+  "stem": "An organization needs to retain its data for compliance reasons but only when required. Which of the following would be the most cost- effective type of tiered storage?",
+  "options": {
+   "A": "Warm  ",
+   "B": "Hot  ",
+   "C": "Archive  ",
+   "D": "Cold "
+  },
+  "answer": "C",
+  "choose": "all",
+  "domain": 1,
+  "domainName": "Cloud Architecture",
+  "explanations": {
+   "A": "Warm tier costs more than archive for rarely accessed data.",
+   "B": "Hot tier is optimized for frequent access and is the most expensive, wrong for rarely-needed compliance data.",
+   "C": "Archive tier is the cheapest storage option designed for rarely accessed, long-term retention data, fitting the compliance-only-when-required need.",
+   "D": "Cold tier is cheaper than hot/warm but still costs more than archive for infrequent access."
+  }
+ },
+ {
+  "number": 20,
+  "stem": "An e-commerce store is preparing for an annual holiday sale. Previously, this sale has increased the number of transactions between two and ten times the normal level of transactions. A cloud administrator wants to implement a process to scale the web server seamlessly. The goal is to automate changes only when necessary and with minimal cost. Which of the following scaling approaches should the administrator use?",
+  "options": {
+   "A": "Scale horizontally with additional web servers to provide redundancy.  ",
+   "B": "Allow the load to trigger adjustments to the resources.  ",
+   "C": "When traffic increases, adjust the resources using the cloud portal.  ",
+   "D": "Schedule the environment to scale resources before the sale begins. "
+  },
+  "answer": "B",
+  "choose": "all",
+  "domain": 3,
+  "domainName": "Operations",
+  "explanations": {
+   "A": "Horizontal scaling for redundancy alone doesn't address automating scale based on demand.",
+   "B": "Load-triggered (event/load-based) automatic scaling adds resources only when metrics indicate need and removes them after, minimizing cost while automating the response — matching the goal.",
+   "C": "Manual portal adjustment during a spike isn't automated and risks delayed reaction.",
+   "D": "Pre-scheduled scaling before the sale doesn't adjust seamlessly to actual demand and may over- or under-provision, costing more."
+  }
+ },
+ {
+  "number": 21,
+  "stem": "Which of the following vulnerability management phases includes the process of discovering newly introduced security vulnerabilities?",
+  "options": {
+   "A": "Scanning  ",
+   "B": "Identification  ",
+   "C": "Reporting  ",
+   "D": "Remediation "
+  },
+  "answer": "A",
+  "choose": "all",
+  "domain": 4,
+  "domainName": "Security",
+  "explanations": {
+   "A": "Scanning is the phase that actively discovers newly introduced vulnerabilities by scanning systems, matching the description.",
+   "B": "Identification in this context usually follows scanning to identify what's found, not the discovery scan itself.",
+   "C": "Reporting communicates findings after they're discovered, not the discovery process.",
+   "D": "Remediation is fixing found vulnerabilities, occurring after discovery."
+  }
+ },
+ {
+  "number": 22,
+  "stem": "A developer sends multiple requests to a SaaS application in a short amount of time. The developer realizes that the entire server and all other users can no longer send requests to the application. Which of the following best describes the issue?",
+  "options": {
+   "A": "Service quotas  ",
+   "B": "API rate limiting",
+   "C": "Full outage  ",
+   "D": "Regional service availability "
+  },
+  "answer": "B",
+  "choose": "all",
+  "domain": 6,
+  "domainName": "Troubleshooting",
+  "explanations": {
+   "A": "Service quotas are hard caps on resource use, not something a burst of requests directly triggers to affect all users' access.",
+   "B": "API rate limiting throttles clients making too many requests in a short time, and in this case caused the app to become unavailable for everyone, matching the scenario.",
+   "C": "A full outage implies total infrastructure failure, not a request-volume-triggered issue from one user.",
+   "D": "Regional service availability issues stem from provider infrastructure, not from one user's request volume."
+  }
+ },
+ {
+  "number": 23,
+  "stem": "A cloud engineer needs to integrate a new payment processor with an existing e-commerce website. Which of the following technologies is the best fit for this integration?",
+  "options": {
+   "A": "RPC over SSL  ",
+   "B": "Transactional SQL  ",
+   "C": "REST API over HTTPS  ",
+   "D": "Secure web socket "
+  },
+  "answer": "C",
+  "choose": "all",
+  "domain": 5,
+  "domainName": "DevOps Fundamentals",
+  "explanations": {
+   "A": "RPC over SSL is less standard/widely supported for web-based payment integrations compared to REST.",
+   "B": "Transactional SQL is a database query approach, not an integration protocol for web-based third-party services.",
+   "C": "REST API over HTTPS is the standard, secure, widely-supported method for integrating third-party services like payment processors into websites.",
+   "D": "Secure web sockets are for persistent real-time connections, not typical for one-off payment processing integration."
+  }
+ },
+ {
+  "number": 24,
+  "stem": "A company’s website suddenly crashed. A cloud engineer investigates the following logs: Which of the following is the most likely cause of the issue?",
+  "options": {
+   "A": "SQL injection  ",
+   "B": "Cross-site scripting  ",
+   "C": "Leaked credentials  ",
+   "D": "DDoS "
+  },
+  "answer": "D",
+  "choose": "all",
+  "domain": 4,
+  "domainName": "Security",
+  "explanations": {
+   "A": "SQL injection targets databases via malicious queries, not typically causing a website crash from traffic patterns alone.",
+   "B": "Cross-site scripting injects malicious scripts into pages viewed by users, not a cause of server crash from logs showing traffic volume.",
+   "C": "Leaked credentials could enable unauthorized access but wouldn't directly crash a website.",
+   "D": "DDoS floods a server with traffic, overwhelming resources and causing a crash, which matches the sudden crash scenario from logs."
+  }
+ },
+ {
+  "number": 25,
+  "stem": "Which of the following best describes a characteristic of a hot site?",
+  "options": {
+   "A": "Servers in the hot site are clustered with the main site.  ",
+   "B": "Network traffic is balanced between the main site and hot site servers  ",
+   "C": "Offline server backups are replicated hourly from the main site  ",
+   "D": "All servers are replicated from the main site in an online status. "
+  },
+  "answer": "D",
+  "choose": "all",
+  "domain": 3,
+  "domainName": "Operations",
+  "explanations": {
+   "A": "Clustering describes local high availability, not the hot site's defining trait relative to the main site.",
+   "B": "Balanced traffic between sites describes active-active load balancing, not the general hot site definition.",
+   "C": "Offline hourly backups describe a warm/cold site approach, not a hot site.",
+   "D": "A hot site keeps all servers continuously replicated and online in real time from the main site, enabling near-instant failover, matching the definition."
+  }
+ },
+ {
+  "number": 26,
+  "stem": "Five thousand employees always access the company’s public cloud-hosted web application on a daily basis during the same time frame. Some users have been reporting performance issues while attempting to connect to the web application. Which of the following is the best configuration approach to resolve this issue?",
+  "options": {
+   "A": "Scale vertically based on a trend.  ",
+   "B": "Scale horizontally based on a schedule.  ",
+   "C": "Scale vertically based on a load.  ",
+   "D": "Scale horizontally based on an event. "
+  },
+  "answer": "B",
+  "choose": "all",
+  "domain": 3,
+  "domainName": "Operations",
+  "explanations": {
+   "A": "Vertical scaling based on trend resizes existing servers, less effective for handling many concurrent users at a predictable daily time than adding more instances.",
+   "B": "Since the load spike happens at a known daily time, scheduled horizontal scaling (adding servers ahead of the known peak) best resolves the performance issue proactively.",
+   "C": "Vertical scaling based on load reacts after the fact and requires downtime/resizing, less ideal for a predictable recurring pattern.",
+   "D": "Event-based horizontal scaling reacts to triggers but a known daily schedule is better handled proactively via a schedule."
+  }
+ },
+ {
+  "number": 27,
+  "stem": "A cloud engineer is reviewing a disaster recovery plan that includes the following requirements: System state, files, and configurations must be backed up on a weekly basis. The system state, file, and configuration backups must be tested annually. Which of the following backup methods should the engineer implement for the first week the plan is executed?",
+  "options": {
+   "A": "Differential  ",
+   "B": "Incremental  ",
+   "C": "Snapshot  ",
+   "D": "Full "
+  },
+  "answer": "D",
+  "choose": "all",
+  "domain": 3,
+  "domainName": "Operations",
+  "explanations": {
+   "A": "Differential backups require a baseline full backup to already exist, which isn't present in week one.",
+   "B": "Incremental backups also require an initial full backup as their baseline, unavailable in the first week.",
+   "C": "Snapshots capture point-in-time state but the plan specifically calls for system/file/config backups, and a baseline full backup is still needed first.",
+   "D": "A full backup is required as the baseline the first time a backup plan runs, since no prior backup exists to build differential/incremental backups from."
+  }
+ },
+ {
+  "number": 28,
+  "stem": "Which of the following is a direct effect of cloud migration on an enterprise?",
+  "options": {
+   "A": "The enterprise must reorganize the reporting structure.  ",
+   "B": "Compatibility issues must be addressed on premises after migration.  ",
+   "C": "Cloud solutions will require less resources than on-premises installations.  ",
+   "D": "Utility costs will be reduced on premises. "
+  },
+  "answer": "D",
+  "choose": "all",
+  "domain": 2,
+  "domainName": "Deployment",
+  "explanations": {
+   "A": "Reorganizing reporting structure is an organizational/business decision, not a direct technical effect of migration.",
+   "B": "Compatibility issues are addressed during/before migration in the cloud environment, not specifically on-premises after migration.",
+   "C": "Cloud solutions don't inherently require fewer resources; needs depend on workload, so this isn't guaranteed.",
+   "D": "Migrating workloads off-premises directly reduces on-prem utility costs (power, cooling) since fewer local servers run, a direct, well-known effect."
+  }
+ },
+ {
+  "number": 29,
+  "stem": "A company wants to create a few additional VDIs so support vendors and contractors have a secure method to access the company's cloud environment. When a cloud administrator attempts to create the additional instances in the new locations, the operation is successful in some locations but fails in others. Which of the following is the most likely reason for this failure?",
+  "options": {
+   "A": "Partial service outages  ",
+   "B": "Regional service availability",
+   "C": "Service quotas  ",
+   "D": "Deprecation of functionality "
+  },
+  "answer": "B",
+  "choose": "all",
+  "domain": 6,
+  "domainName": "Troubleshooting",
+  "explanations": {
+   "A": "Partial service outages are typically transient provider-wide issues, less likely to consistently affect only certain new locations.",
+   "B": "Regional service availability means not all services/instance types are available in every region, explaining why creation succeeds in some locations and fails in others.",
+   "C": "Service quotas would generally cause failures uniformly based on account limits, not tied specifically to certain regions succeeding and others failing.",
+   "D": "Deprecated functionality would fail everywhere consistently, not selectively by region."
+  }
+ },
+ {
+  "number": 30,
+  "stem": "An administrator used a script that worked in the past to create and tag five virtual machines. All of the virtual machines have been created; however, the administrator sees the following results: {tags: []} Which of the following is the most likely reason for this result?",
+  "options": {
+   "A": "API throttling  ",
+   "B": "Service quotas  ",
+   "C": "Command deprecation  ",
+   "D": "Compatibility issues "
+  },
+  "answer": "C",
+  "choose": "all",
+  "domain": 6,
+  "domainName": "Troubleshooting",
+  "explanations": {
+   "A": "API throttling would cause request failures/errors, not silently succeed while ignoring the tag parameter.",
+   "B": "Service quotas limit resource counts, unrelated to tags not being applied.",
+   "C": "Command deprecation means the tagging command/parameter previously used may have changed or been removed, causing VMs to create successfully but tags to not apply, matching the empty tags result.",
+   "D": "Compatibility issues would more likely cause outright failures, not simply an empty tags array."
+  }
+ },
+ {
+  "number": 31,
+  "stem": "A cloud administrator needs to collect process-level, memory-usage tracking for the virtual machines that are part of an autoscaling group. Which of the following is the best way to accomplish the goal by using cloud-native monitoring services?",
+  "options": {
+   "A": "Configuring page file/swap metrics  ",
+   "B": "Deploying the cloud-monitoring agent software  ",
+   "C": "Scheduling a script to collect the data  ",
+   "D": "Enabling memory monitoring in the VM configuration "
+  },
+  "answer": "B",
+  "choose": "all",
+  "domain": 3,
+  "domainName": "Operations",
+  "explanations": {
+   "A": "Page file/swap metrics reflect memory pressure at OS level generally, not per-process detail needed here.",
+   "B": "Deploying the cloud-monitoring agent enables collection of detailed, process-level memory metrics natively integrated with the cloud platform, matching the requirement.",
+   "C": "Scheduling a custom script is more manual and less integrated than using native cloud-monitoring services as requested.",
+   "D": "Basic VM memory monitoring in most clouds provides aggregate, not process-level, memory usage."
+  }
+ },
+ {
+  "number": 32,
+  "stem": "A cloud developer is creating a static website that customers will be accessing globally. Which of the following services will help reduce latency?",
+  "options": {
+   "A": "VPC  ",
+   "B": "Application load balancer  ",
+   "C": "CDN  ",
+   "D": "API gateway "
+  },
+  "answer": "C",
+  "choose": "all",
+  "domain": 1,
+  "domainName": "Cloud Architecture",
+  "explanations": {
+   "A": "A VPC provides network isolation, not latency reduction for global users.",
+   "B": "An application load balancer distributes traffic within a region, not across global points of presence.",
+   "C": "A CDN caches and serves static content from edge locations near users worldwide, directly reducing latency for a global static site.",
+   "D": "An API gateway manages API traffic, not static content delivery latency."
+  }
+ },
+ {
+  "number": 33,
+  "stem": "A cloud engineer is designing a cloud native, three-tier application. The engineer must adhere to the following security best practices: Minimal services should run on all layers of the stack. The solution should be vendor agnostic. Virtualization could be used over physical hardware. Which of the following concepts should the engineer use to design the system to best meet these requirements?",
+  "options": {
+   "A": "Virtual machine  ",
+   "B": "Microservices  ",
+   "C": "Fan-out  ",
+   "D": "Cloud-provided managed services "
+  },
+  "answer": "B",
+  "choose": "all",
+  "domain": 1,
+  "domainName": "Cloud Architecture",
+  "explanations": {
+   "A": "Full VMs run more overhead services per layer than needed, going against 'minimal services' and adding vendor-specific management burden.",
+   "B": "Microservices architecture with containers allows minimal services per component, is vendor-agnostic, and can run virtualized, satisfying all three requirements.",
+   "C": "Fan-out is a messaging pattern, not an overall application architecture choice.",
+   "D": "Cloud-provider managed services tend to be vendor-specific, violating the vendor-agnostic requirement."
+  }
+ },
+ {
+  "number": 34,
+  "stem": "A cloud solutions architect needs to have consistency between production, staging, and development environments. Which of the following options will best achieve this goal?",
+  "options": {
+   "A": "Using Terraform templates with environment variables  ",
+   "B": "Using Grafana in each environment  ",
+   "C": "Using the ELK stack in each environment  ",
+   "D": "Using Jenkins agents in different environments "
+  },
+  "answer": "A",
+  "choose": "all",
+  "domain": 5,
+  "domainName": "DevOps Fundamentals",
+  "explanations": {
+   "A": "Terraform templates with environment variables (IaC) let the same template deploy consistent infrastructure across prod, staging, and dev by just changing variables, matching the goal.",
+   "B": "Grafana is a visualization/monitoring tool, not an infrastructure provisioning consistency solution.",
+   "C": "ELK stack is for log aggregation/analysis, not for provisioning consistent environments.",
+   "D": "Jenkins agents run CI/CD jobs, not directly ensure infrastructure consistency across environments."
+  }
+ },
+ {
+  "number": 35,
+  "stem": "A healthcare organization must follow strict compliance requirements to ensure that PII is not leaked. The cloud administrator needs to ensure the cloud email system can support this requirement. Which of the following should the organization enable?",
+  "options": {
+   "A": "IPS  ",
+   "B": "DLP  ",
+   "C": "ACL  ",
+   "D": "WAF "
+  },
+  "answer": "B",
+  "choose": "all",
+  "domain": 4,
+  "domainName": "Security",
+  "explanations": {
+   "A": "IPS blocks network intrusions, not specifically designed to detect/prevent PII leakage in email content.",
+   "B": "DLP (Data Loss Prevention) scans content like email for PII and blocks/flags leaks, directly meeting the compliance requirement.",
+   "C": "ACLs control access to resources, not content-based PII leak prevention.",
+   "D": "WAF protects web applications from attacks, not email content inspection for PII."
+  }
+ },
+ {
+  "number": 36,
+  "stem": "A company’s content management system (CMS) service runs on an IaaS cluster on a public cloud. The CMS service is frequently targeted by a malicious threat actor using DDoS. Which of the following should a cloud engineer monitor to identify attacks?",
+  "options": {
+   "A": "Network flow logs  ",
+   "B": "Endpoint detection and response logs  ",
+   "C": "Cloud provider event logs  ",
+   "D": "Instance syslog"
+  },
+  "answer": "A",
+  "choose": "all",
+  "domain": 3,
+  "domainName": "Operations",
+  "explanations": {
+   "A": "Network flow logs show traffic volume/patterns (source, destination, byte counts) which can reveal a DDoS attack pattern, matching the need.",
+   "B": "EDR logs focus on endpoint/host activity, not network-level traffic floods.",
+   "C": "Cloud provider event logs track API/management actions, not network traffic patterns indicative of DDoS.",
+   "D": "Instance syslog shows OS-level events, not network flow data useful for spotting DDoS."
+  }
+ },
+ {
+  "number": 37,
+  "stem": "Which of the following is the most cost-effective way to store data that is infrequently accessed?",
+  "options": {
+   "A": "Cold site  ",
+   "B": "Hot site  ",
+   "C": "Off-site  ",
+   "D": "Warm site "
+  },
+  "answer": "C",
+  "choose": "all",
+  "domain": 1,
+  "domainName": "Cloud Architecture",
+  "explanations": {
+   "A": "Cold site is a DR facility type, not specifically a data storage tier for infrequently accessed data cost efficiency.",
+   "B": "Hot site is the most expensive DR option, opposite of cost-effective for storage.",
+   "C": "Off-site (archive-style) storage is the most cost-effective way to store infrequently accessed data since it uses cheaper, lower-performance media/services.",
+   "D": "Warm site is a mid-cost DR facility, not the cheapest option and not primarily a storage tier term."
+  }
+ },
+ {
+  "number": 38,
+  "stem": "Which of the following models will best reduce the cost of running short-term, non-critical workloads?",
+  "options": {
+   "A": "Reserved  ",
+   "B": "Spot instance  ",
+   "C": "Pay-as-you-go  ",
+   "D": "Dedicated host "
+  },
+  "answer": "B",
+  "choose": "all",
+  "domain": 1,
+  "domainName": "Cloud Architecture",
+  "explanations": {
+   "A": "Reserved instances require long-term commitment, unsuitable for short-term workloads and don't minimize cost there.",
+   "B": "Spot instances use unused cloud capacity at steep discounts, ideal for short-term, non-critical, interruption-tolerant workloads, matching the requirement.",
+   "C": "Pay-as-you-go is flexible but costs more than spot pricing for the same workload.",
+   "D": "Dedicated hosts are the most expensive option, meant for compliance/licensing needs, not cost savings."
+  }
+ },
+ {
+  "number": 39,
+  "stem": "Which of the following vulnerability management concepts is best defined as the process of discovering vulnerabilities?",
+  "options": {
+   "A": "Scanning  ",
+   "B": "Assessment  ",
+   "C": "Remediation  ",
+   "D": "Identification "
+  },
+  "answer": "A",
+  "choose": "all",
+  "domain": 4,
+  "domainName": "Security",
+  "explanations": {
+   "A": "Scanning is the technical activity of running tools to detect vulnerabilities, best matching 'process of discovering vulnerabilities.'",
+   "B": "Assessment evaluates and prioritizes found vulnerabilities, occurring after discovery.",
+   "C": "Remediation fixes vulnerabilities after they're found, not the discovery step.",
+   "D": "Identification is a broader/later categorization step, while scanning is the specific discovery mechanism being asked about."
+  }
+ },
+ {
+  "number": 40,
+  "stem": "Which of the following types of storage provides the greatest performance advantage for a traditional relational database?",
+  "options": {
+   "A": "File  ",
+   "B": "Object  ",
+   "C": "Block  ",
+   "D": "Ephemeral"
+  },
+  "answer": "C",
+  "choose": "all",
+  "domain": 3,
+  "domainName": "Operations",
+  "explanations": {
+   "A": "File storage adds file-system-level overhead unsuitable for the low-latency I/O relational databases need.",
+   "B": "Object storage is optimized for large unstructured data and has higher latency, poor fit for transactional databases.",
+   "C": "Block storage provides direct, low-latency disk-level access ideal for relational database I/O performance, making it the best choice.",
+   "D": "Ephemeral storage isn't durable, unsuitable for a database's persistent data needs despite any performance benefit."
+  }
+ },
+ {
+  "number": 41,
+  "stem": "A cloud networking engineer is troubleshooting the corporate office’s network configuration. Employees in the IT and operations departments are unable to resolve IP addresses on all devices, and the IT department cannot establish a connection to other departments’ subnets. The engineer identifies the following configuration currently in place to support the office network: Each employee needs to connect to the network with a maximum of three hosts. Each subnet must be segregated, but the IT department must have the ability to communicate with all subnets. Which of the following meet the IP addressing and routing requirements? (Choose two.)",
+  "options": {
+   "A": "Modifying the subnet mask to 255.255.254.0 for IT and operations departments  ",
+   "B": "Configuring static routing to allow access from each subnet to 10.1.40.1  ",
+   "C": "Modifying the BYOD policy to reduce the volume of devices that are allowed to connect to the corporate network  ",
+   "D": "Configuring static routing to allow access from 10.1.30.1 to each subnet  ",
+   "E": "Combining the subnets and increasing the allocation of IP addresses available to support three hosts for each employee  ",
+   "F": "Modifying the subnet mask to 255.255.255.128 for the IT and operations departments "
+  },
+  "answer": "AD",
+  "choose": "all",
+  "domain": 1,
+  "domainName": "Cloud Architecture",
+  "explanations": {
+   "A": "Modifying the subnet mask to /23 for IT/ops would combine those two departments' address space but doesn't segregate subnets or provide IT access to all department subnets as required.",
+   "B": "Configuring static routes from each subnet to 10.1.40.1 addresses reaching one specific gateway, not enabling IT to reach all subnets while keeping segregation.",
+   "C": "Changing BYOD policy reduces device count but doesn't fix the routing/segregation configuration issue described.",
+   "D": "Configuring static routes from IT's subnet (10.1.30.1) to each other subnet lets IT communicate with all subnets while those subnets remain otherwise segregated, meeting the requirement.",
+   "E": "Combining subnets breaks the requirement that each subnet must remain segregated.",
+   "F": "Changing the mask to /25 for IT/ops only affects host counts within those subnets and doesn't grant IT communication with all other subnets."
+  }
+ },
+ {
+  "number": 42,
+  "stem": "Which of the following compute resources is the most optimal for running a single scripted task on a schedule?",
+  "options": {
+   "A": "Bare-metal server  ",
+   "B": "Managed container  ",
+   "C": "Virtual machine  ",
+   "D": "Serverless function "
+  },
+  "answer": "D",
+  "choose": "all",
+  "domain": 1,
+  "domainName": "Cloud Architecture",
+  "explanations": {
+   "A": "A bare-metal server is far more resource/cost heavy than needed for a single scheduled script.",
+   "B": "A managed container still requires maintaining a running container environment for a brief scheduled task, more overhead than needed.",
+   "C": "A VM incurs ongoing costs and management overhead unsuitable for a single short scheduled task.",
+   "D": "A serverless function spins up only when triggered (e.g., on a schedule) and incurs cost only during execution, making it optimal for a single scripted task on a schedule."
+  }
+ },
+ {
+  "number": 43,
+  "stem": "A video surveillance system records road incidents and stores the videos locally before uploading them to the cloud and deleting them from local storage. Which of the following best describes the nature of the local storage?",
+  "options": {
+   "A": "Persistent  ",
+   "B": "Ephemeral  ",
+   "C": "Differential  ",
+   "D": "Incremental "
+  },
+  "answer": "B",
+  "choose": "all",
+  "domain": 3,
+  "domainName": "Operations",
+  "explanations": {
+   "A": "Persistent storage implies data is retained indefinitely, but here it's deleted after upload, contradicting persistence.",
+   "B": "Ephemeral storage is temporary, used only until data is uploaded and then discarded, matching the described local storage behavior.",
+   "C": "Differential describes a backup type, not a storage nature/duration.",
+   "D": "Incremental describes a backup type, not the storage's temporary nature."
+  }
+ },
+ {
+  "number": 44,
+  "stem": "An organization is hosting a seminar with eight individuals who need to connect to their own dedicated VM. The technician used the following VM configurations: IP address: DHCP NIC: 1Gbps Network: 10.1.10.0/29 Several users are unable to access their VMs. Which of the following best describes the reason?",
+  "options": {
+   "A": "Not enough addresses are available.  ",
+   "B": "The routes are misconfigured.  ",
+   "C": "Too much traffic is on the network.  ",
+   "D": "DHCP is not working correctly on the VM. "
+  },
+  "answer": "A",
+  "choose": "all",
+  "domain": 6,
+  "domainName": "Troubleshooting",
+  "explanations": {
+   "A": "A /29 subnet has only 8 total addresses (6 usable after network/broadcast), meaning with 8 VMs needing addresses via DHCP, some run out of available IPs, matching the failure.",
+   "B": "Misconfigured routes would cause connectivity issues, not directly explain VMs failing to get access tied to address exhaustion described.",
+   "C": "Excess traffic wasn't mentioned as an issue and doesn't match this scenario about VM access.",
+   "D": "DHCP itself isn't described as malfunctioning; the issue is the limited pool size in the /29 subnet."
+  }
+ },
+ {
+  "number": 45,
+  "stem": "Department supervisors have requested a report that will help them understand the utilization of cloud resources, make decisions about budgeting for the following year, and reduce costs. Which of the following are the most important requisite steps to create the report? (Choose two.)",
+  "options": {
+   "A": "Set the desired retention of resource logs.  ",
+   "B": "Configure application tracing.  ",
+   "C": "Integrate email alerts with ticketing software.  ",
+   "D": "Enable resource tagging.  ",
+   "E": "Configure the collection of performance/utilization logs.  ",
+   "F": "Configure metric threshold alerts. "
+  },
+  "answer": "DE",
+  "choose": "all",
+  "domain": 3,
+  "domainName": "Operations",
+  "explanations": {
+   "A": "Log retention settings matter for compliance but aren't the primary step for building a utilization/cost report.",
+   "B": "Application tracing is for performance/latency debugging, not utilization/cost reporting.",
+   "C": "Ticketing integration is for alert workflows, unrelated to generating a utilization/cost report.",
+   "D": "Enabling resource tagging allows costs/usage to be attributed to departments/projects, essential for a meaningful utilization report.",
+   "E": "Configuring collection of performance/utilization logs provides the raw usage data needed to build the report.",
+   "F": "Metric threshold alerts are for proactive notification, not for generating a historical utilization/cost report."
+  }
+ },
+ {
+  "number": 46,
+  "stem": "A cloud engineer wants to deploy a new application to the cloud and is writing the following script: Which of the following actions will this script perform?",
+  "options": {
+   "A": "Upload a new VM image.",
+   "B": "Create a new cloud resource.  ",
+   "C": "Build a local server.  ",
+   "D": "Import a cloud module. "
+  },
+  "answer": "B",
+  "choose": "all",
+  "domain": 2,
+  "domainName": "Deployment",
+  "explanations": {
+   "A": "Uploading a VM image is a distinct action from typical IaC scripts that provision resources.",
+   "B": "An IaC-style script (e.g., using an SDK/CLI/terraform apply) with 'create' actions provisions a new cloud resource, matching the described script's purpose.",
+   "C": "Building a local server contradicts the described goal of deploying to the cloud.",
+   "D": "Importing a module is a setup/dependency step, not the action performed by the deployment script itself."
+  }
+ },
+ {
+  "number": 47,
+  "stem": "A network administrator is building a site-to-site VPN tunnel from the company’s headquarters office to the company’s public cloud development network. The network administrator confirms the following: The VPN tunnel is established on the headquarters office firewall. While inside the office, developers report that they cannot connect to the development network resources. While outside the office on a client VPN, developers report that they can connect to the development network resources. The office and the client VPN have different IP subnet ranges. The firewall flow logs show that traffic is reaching the development network from the office. Which of the following is the next step the network administrator should take to troubleshoot the VPN tunnel?",
+  "options": {
+   "A": "Review the development network routing table.  ",
+   "B": "Change the ciphers on the site-to-site VPN.  ",
+   "C": "Restart the site-to-site VPN tunnel.  ",
+   "D": "Check the ACLs on the development workloads. "
+  },
+  "answer": "A",
+  "choose": "all",
+  "domain": 1,
+  "domainName": "Cloud Architecture",
+  "explanations": {
+   "A": "Since traffic reaches the development network from the office (per flow logs) but resources aren't reachable, the development network's own routing table is the next thing to check for a return-path routing issue.",
+   "B": "Cipher mismatches would cause tunnel establishment failures, but the tunnel is already established, so this isn't the issue.",
+   "C": "Restarting the tunnel doesn't address a suspected routing misconfiguration and the tunnel is already up.",
+   "D": "ACLs on the workloads could be checked eventually, but since traffic is confirmed reaching the network via flow logs, routing (the return path) is the more direct next troubleshooting step."
+  }
+ },
+ {
+  "number": 48,
+  "stem": "A cross-site request forgery vulnerability exploited a web application that was hosted in a public IaaS network. A security engineer determined that deploying a WAF in blocking mode at a CDN would prevent the application from being exploited again. However, a week after implementing the WAF, the application was exploited again. Which of the following should the security engineer do to make the WAF control effective?",
+  "options": {
+   "A": "Configure the DDoS protection on the CDN.  ",
+   "B": "Install endpoint protection software on the VMs.  ",
+   "C": "Add an ACL to the VM subnet.  ",
+   "D": "Deploy an IDS on the IaaS network. "
+  },
+  "answer": "C",
+  "choose": "all",
+  "domain": 4,
+  "domainName": "Security",
+  "explanations": {
+   "A": "DDoS protection addresses volumetric attacks, not the CSRF vulnerability recurring.",
+   "B": "Endpoint protection on VMs addresses malware, not web-layer CSRF exploitation and doesn't explain the WAF bypass.",
+   "C": "If attackers bypassed the CDN's WAF by connecting directly to the VM's public IP, adding an ACL on the VM subnet forces all traffic through the CDN/WAF, closing that bypass and making the WAF control effective.",
+   "D": "An IDS only detects, it doesn't prevent the bypass of the WAF that's allowing continued exploitation."
+  }
+ },
+ {
+  "number": 49,
+  "stem": "An organization’s critical data was exfiltrated from a computer system in a cyberattack. A cloud analyst wants to identify the root cause and is reviewing the following security logs of a software web application: Which of the following types of attacks occurred?",
+  "options": {
+   "A": "SQL injection  ",
+   "B": "Cross-site scripting  ",
+   "C": "Reuse of leaked credentials  ",
+   "D": "Privilege escalation "
+  },
+  "answer": "A",
+  "choose": "all",
+  "domain": 4,
+  "domainName": "Security",
+  "explanations": {
+   "A": "SQL injection log signatures (e.g., malicious SQL syntax in requests) directly indicate an attacker manipulated database queries to exfiltrate data, matching a root-cause analysis of a data breach.",
+   "B": "Cross-site scripting targets other users' browsers, less directly tied to exfiltrating the org's critical backend data via logs showing query manipulation.",
+   "C": "Leaked credential reuse would show as normal-looking authenticated access, not injection patterns typically reviewed in this scenario.",
+   "D": "Privilege escalation logs would show permission changes, differing from typical SQL injection attack signatures being reviewed here."
+  }
+ },
+ {
+  "number": 50,
+  "stem": "A banking firm’s cloud server will be decommissioned after a successful proof of concept using mirrored data. Which of the following is the best action to take regarding the storage used on the decommissioned server?",
+  "options": {
+   "A": "Keep it temporarily  ",
+   "B": "Archive it.  ",
+   "C": "Delete it.  ",
+   "D": "Retain it permanently. "
+  },
+  "answer": "C",
+  "choose": "all",
+  "domain": 2,
+  "domainName": "Deployment",
+  "explanations": {
+   "A": "Keeping it temporarily leaves sensitive banking data exposed longer than necessary with no clear purpose.",
+   "B": "Archiving retains the data long-term, unnecessary here since the data was only mirrored/testing and the server is decommissioned.",
+   "C": "Since the data was already mirrored elsewhere and this was just a proof of concept, securely deleting the storage on the decommissioned server is the best practice to reduce risk and follow data minimization.",
+   "D": "Retaining it permanently is unnecessary and increases risk/cost with no compliance justification given."
+  }
+ },
+ {
+  "number": 51,
+  "stem": "A company operates a website that allows customers to upload, share, and retain full ownership of their photographs. Which of the following could affect image ownership as the website usage expands globally?",
+  "options": {
+   "A": "Sovereignty  ",
+   "B": "Data classification  ",
+   "C": "Litigation holds  ",
+   "D": "Retention "
+  },
+  "answer": "A",
+  "choose": "all",
+  "domain": 4,
+  "domainName": "Security",
+  "explanations": {
+   "A": "Sovereignty laws vary by country/region and can dictate who legally owns or controls data stored there, directly affecting image ownership claims as the service expands globally.",
+   "B": "Data classification labels sensitivity level, not legal ownership across jurisdictions.",
+   "C": "Litigation holds preserve data for legal proceedings, not a general ownership concern from global expansion.",
+   "D": "Retention concerns how long data is kept, not legal ownership rights across countries."
+  }
+ },
+ {
+  "number": 52,
+  "stem": "A systems administrator is provisioning VMs according to the following requirements: A VM instance needs to be present in at least two data centers. During replication, the application hosted on the VM tolerates a maximum latency of one second. When a VM is unavailable, failover must be immediate. Which of the following replication methods will best meet these requirements?",
+  "options": {
+   "A": "Snapshot  ",
+   "B": "Transactional  ",
+   "C": "Live  ",
+   "D": "Point-in-time "
+  },
+  "answer": "C",
+  "choose": "all",
+  "domain": 1,
+  "domainName": "Cloud Architecture",
+  "explanations": {
+   "A": "Snapshot replication is point-in-time and wouldn't meet a strict sub-second latency/immediate failover requirement.",
+   "B": "Transactional replication focuses on database transaction consistency, not immediate multi-datacenter failover for a VM.",
+   "C": "Live replication continuously synchronizes VM state in near real time with immediate failover capability, meeting the low-latency and instant failover requirements.",
+   "D": "Point-in-time replication captures periodic snapshots, introducing delay unsuitable for immediate failover and sub-second latency needs."
+  }
+ },
+ {
+  "number": 53,
+  "stem": "A DevOps engineer is performing maintenance on the mail servers for a company’s web application. Part of this maintenance includes checking core operating system updates. The servers are currently running version 3.2 of the operating system. The engineer has two update options—one to version 4.1 and the other to version 3.7. Both versions are fully supported by the operating system manufacturer. Which of the following best describes the action the engineer should take?",
+  "options": {
+   "A": "Upgrade to 3.7 in the development environment.  ",
+   "B": "Upgrade to 4.1 on one production server at a time.  ",
+   "C": "Read the release notes on version 4.1  ",
+   "D": "Schedule a maintenance window and upgrade to 3.7 in the production environment. "
+  },
+  "answer": "C",
+  "choose": "all",
+  "domain": 3,
+  "domainName": "Operations",
+  "explanations": {
+   "A": "Testing in dev is good practice generally but isn't the immediate best first action when deciding between two supported versions.",
+   "B": "Upgrading production directly, even one server at a time, skips proper research/testing before rollout.",
+   "C": "Reading the release notes on version 4.1 first helps evaluate compatibility, new features, and risks before deciding which version and rollout approach to use, making it the most sound next step.",
+   "D": "Scheduling a production upgrade without first reviewing what's changing skips due diligence."
+  }
+ },
+ {
+  "number": 54,
+  "stem": "Which of the following is the most cost-effective and efficient strategy when migrating containers to the cloud?",
+  "options": {
+   "A": "Retire  ",
+   "B": "Replatform  ",
+   "C": "Retain  ",
+   "D": "Refactor "
+  },
+  "answer": "B",
+  "choose": "all",
+  "domain": 2,
+  "domainName": "Deployment",
+  "explanations": {
+   "A": "Retiring means decommissioning, not actually migrating the containers as required.",
+   "B": "Replatforming makes minimal changes to containers while adapting them to run in the new cloud environment, offering a cost-effective and efficient migration path.",
+   "C": "Retaining means keeping the workload where it is, not migrating it at all.",
+   "D": "Refactoring involves significant redesign/rework, which is costlier and less efficient than replatforming for this goal."
+  }
+ },
+ {
+  "number": 55,
+  "stem": "An organization’s web application experiences periodic bursts of traffic when a new video is launched. Users are reporting poor performance in the middle of the month. Which of the following scaling approaches should the organization use to scale based on forecasted traffic?",
+  "options": {
+   "A": "Scheduled  ",
+   "B": "Manual  ",
+   "C": "Event  ",
+   "D": "Load "
+  },
+  "answer": "A",
+  "choose": "all",
+  "domain": 3,
+  "domainName": "Operations",
+  "explanations": {
+   "A": "Scheduled scaling adds capacity ahead of a known, forecasted traffic pattern (mid-month video launches), directly matching 'scale based on forecasted traffic.'",
+   "B": "Manual scaling requires human intervention each time, not an automated forecast-based approach.",
+   "C": "Event-based scaling reacts to a trigger occurring, rather than proactively anticipating a forecasted date.",
+   "D": "Load-based scaling reacts to current load after it happens, not proactively based on forecasted timing."
+  }
+ },
+ {
+  "number": 56,
+  "stem": "A cloud infrastructure administrator updated the IP tables to block incoming connections and outgoing responses to 104.225.110.203. Which of the following vulnerability management steps is this an example of?",
+  "options": {
+   "A": "Scanning scope  ",
+   "B": "Remediation  ",
+   "C": "Identification",
+   "D": "Assessment "
+  },
+  "answer": "B",
+  "choose": "all",
+  "domain": 3,
+  "domainName": "Operations",
+  "explanations": {
+   "A": "Scanning scope defines what will be scanned, not an action taken against a found threat.",
+   "B": "Blocking a known malicious IP in the firewall/IP tables is a remediation action taken to fix an identified vulnerability/threat.",
+   "C": "Identification is discovering the threat, which already happened prior to this blocking action.",
+   "D": "Assessment evaluates the risk of a finding, not the act of implementing the fix."
+  }
+ },
+ {
+  "number": 57,
+  "stem": "An administrator needs to adhere to the following requirements when moving a customer’s data to the cloud: The new service must be geographically dispersed. The customer should have local access to data. Legacy applications should be accessible. Which of the following cloud deployment models is most suitable?",
+  "options": {
+   "A": "On-premises  ",
+   "B": "Private  ",
+   "C": "Hybrid  ",
+   "D": "Public "
+  },
+  "answer": "C",
+  "choose": "all",
+  "domain": 2,
+  "domainName": "Deployment",
+  "explanations": {
+   "A": "On-premises alone doesn't provide the geographic dispersion needed.",
+   "B": "Private cloud alone doesn't inherently provide broad geographic dispersion or access to legacy on-prem apps easily.",
+   "C": "Hybrid cloud combines dispersed cloud regions for local access with connectivity back to on-premises legacy systems, meeting all three stated requirements.",
+   "D": "Public cloud alone doesn't guarantee access to legacy on-premises applications without hybrid connectivity."
+  }
+ },
+ {
+  "number": 58,
+  "stem": "A company’s VMs that are created using the noncritical application tag are automatically shut down at 5:00 p.m. using a cronjob. Which of the following actions would allow a cloud engineer to stop all unresponsive instances with the least effort in case the automation fails?",
+  "options": {
+   "A": "Using the cloud audit logs for tagging and stopping events  ",
+   "B": "Using the cloud provider web console to check and stop the instances  ",
+   "C": "Using the cloud provider command line to stop the instances based on tags  ",
+   "D": "Using a Bash script to shut down all instances "
+  },
+  "answer": "C",
+  "choose": "all",
+  "domain": 5,
+  "domainName": "DevOps Fundamentals",
+  "explanations": {
+   "A": "Audit logs record what happened but don't stop the instances themselves.",
+   "B": "Using the web console to manually stop many instances is slower and more effort than a scripted/tag-based command.",
+   "C": "Using the CLI to stop instances by tag lets the engineer quickly target and stop exactly the noncritical-tagged instances with minimal manual effort, matching 'least effort.'",
+   "D": "A Bash script to shut down all instances risks stopping critical, non-tagged instances too, which isn't the safe least-effort targeted approach."
+  }
+ },
+ {
+  "number": 59,
+  "stem": "A company uses containers stored in Docker Hub to deploy workloads for its IaaS infrastructure. The development team releases changes to the containers several times per hour. Which of the following should a cloud engineer do to prevent the proprietary code from being exposed to third parties?",
+  "options": {
+   "A": "Use IaC to deploy the IaaS infrastructure.  ",
+   "B": "Convert the containers to VMs.  ",
+   "C": "Deploy the containers over SSH.  ",
+   "D": "Use private repositories for the containers. "
+  },
+  "answer": "D",
+  "choose": "all",
+  "domain": 1,
+  "domainName": "Cloud Architecture",
+  "explanations": {
+   "A": "IaC deploys infrastructure but doesn't control who can view container image contents.",
+   "B": "Converting to VMs doesn't address exposure of proprietary code in Docker Hub images and adds unnecessary overhead.",
+   "C": "Deploying over SSH secures the deployment channel, not the exposure of the stored image contents in a public repo.",
+   "D": "Using private image repositories restricts access to authorized users only, preventing the proprietary code baked into containers from being exposed to third parties."
+  }
+ },
+ {
+  "number": 60,
+  "stem": "A social networking company operates globally. Some users from Brazil and Argentina are reporting the following error: website address was not found. Which of the following is the most likely cause of this issue?",
+  "options": {
+   "A": "Client DNS misconfiguration  ",
+   "B": "Regional DNS provider outage  ",
+   "C": "DNS server misconfiguration  ",
+   "D": "DNSSEC key mismatch "
+  },
+  "answer": "B",
+  "choose": "all",
+  "domain": 6,
+  "domainName": "Troubleshooting",
+  "explanations": {
+   "A": "Client DNS misconfiguration would typically affect one user/device, not many users specifically in two whole countries at once.",
+   "B": "A regional DNS provider outage affecting a geographic area explains why users in nearby countries like Brazil and Argentina simultaneously can't resolve the site.",
+   "C": "A DNS server misconfiguration on the company's own authoritative servers would likely affect all global users, not just a specific region.",
+   "D": "A DNSSEC key mismatch would cause validation failures more broadly and differently (often a security warning), not simply 'not found' errors regionally."
+  }
+ },
+ {
+  "number": 61,
+  "stem": "A junior cloud administrator was recently promoted to cloud administrator and has been added to the cloud administrator group. The cloud administrator group is the only one that can access the engineering VM. The new administrator unsuccessfully attempts to access the engineering VM. However, the other administrators can access it without issue. Which of the following is the best way to identify the root cause?",
+  "options": {
+   "A": "Rebooting the engineering VM  ",
+   "B": "Reviewing the administrator’s permissions to access the engineering VM  ",
+   "C": "Allowing connections from 0.0.0.0/0 to the engineering VM  ",
+   "D": "Performing a packet capture on the engineering VM "
+  },
+  "answer": "B",
+  "choose": "all",
+  "domain": 1,
+  "domainName": "Cloud Architecture",
+  "explanations": {
+   "A": "Rebooting the VM wouldn't resolve an access permission issue tied to group membership.",
+   "B": "Reviewing the administrator's actual permissions/group propagation is the direct way to find why access still fails despite being added to the group (e.g., permissions not yet applied or misconfigured), matching root-cause troubleshooting.",
+   "C": "Opening access to 0.0.0.0/0 is a major security risk and doesn't address the actual permission/group issue.",
+   "D": "A packet capture examines network traffic, not identity/permission-based access denial."
+  }
+ },
+ {
+  "number": 62,
+  "stem": "Which of the following describes the main difference between public and private container repositories?",
+  "options": {
+   "A": "Private container repository access requires authorization, while public repository access does not require authorization.  ",
+   "B": "Private container repositories are hidden by default and containers must be directly referenced, while public container repositories allow browsing of container images.  ",
+   "C": "Private container repositories must use proprietary licenses, while public container repositories must have open-source licenses.  ",
+   "D": "Private container repositories are used to obfuscate the content of the Dockerfile, while public container repositories allow for Dockerfile inspection. "
+  },
+  "answer": "A",
+  "choose": "all",
+  "domain": 5,
+  "domainName": "DevOps Fundamentals",
+  "explanations": {
+   "A": "Private repositories require authorization to pull/push images, while public repositories allow unauthenticated access, correctly capturing the main access-control difference.",
+   "B": "Visibility/browsability differences exist but the core distinguishing factor tested is authorization requirement, not just hiding names.",
+   "C": "Licensing type isn't inherently tied to repository visibility; private repos can use any license.",
+   "D": "Dockerfile obfuscation isn't the defining characteristic; repository privacy is about access control, not inspecting build instructions."
+  }
+ },
+ {
+  "number": 63,
+  "stem": "A DevOps engineer is receiving reports that users can no longer access the company’s web application after hardening of a web server. The users are receiving the following error: ERR SSL VERSION OR CIPHER MISMATCH. Which of the following actions should the engineer take to resolve the issue?",
+  "options": {
+   "A": "Restart the web server.  ",
+   "B": "Configure TLS 1.2 or newer.  ",
+   "C": "Update the web server.  ",
+   "D": "Review logs on the WAF."
+  },
+  "answer": "B",
+  "choose": "all",
+  "domain": 4,
+  "domainName": "Security",
+  "explanations": {
+   "A": "Restarting the server won't fix a mismatch between supported TLS versions/ciphers on client vs server.",
+   "B": "The SSL_VERSION_OR_CIPHER_MISMATCH error occurs because the server was hardened to disable older protocols; configuring TLS 1.2 or newer support resolves the mismatch while maintaining security.",
+   "C": "Simply updating the web server software doesn't guarantee the specific cipher/protocol configuration is corrected.",
+   "D": "Reviewing WAF logs wouldn't address a TLS negotiation failure between client and server."
+  }
+ },
+ {
+  "number": 64,
+  "stem": "A company’s engineering department is conducting a month-long test on the scalability of an in-house-developed software that requires a cluster of 100 or more servers. Which of the following models is the best to use?",
+  "options": {
+   "A": "PaaS  ",
+   "B": "SaaS  ",
+   "C": "DBaaS  ",
+   "D": "IaaS "
+  },
+  "answer": "D",
+  "choose": "all",
+  "domain": 1,
+  "domainName": "Cloud Architecture",
+  "explanations": {
+   "A": "PaaS abstracts away infrastructure control, limiting the ability to build/manage a custom 100+ server cluster for scalability testing.",
+   "B": "SaaS provides finished software, not the raw infrastructure needed to test custom software scalability.",
+   "C": "DBaaS is a managed database service, not general compute infrastructure for scalability testing.",
+   "D": "IaaS provides raw, flexible compute infrastructure that can be scaled to 100+ servers as needed for a temporary scalability test, matching the requirement."
+  }
+ },
+ {
+  "number": 65,
+  "stem": "A cloud administrator shortens the amount of time a backup runs. An executive in the company requires a guarantee that the backups can be restored with no data loss. Which of the following backup features should the administrator test for?",
+  "options": {
+   "A": "Encryption  ",
+   "B": "Retention  ",
+   "C": "Schedule  ",
+   "D": "Integrity "
+  },
+  "answer": "D",
+  "choose": "all",
+  "domain": 3,
+  "domainName": "Operations",
+  "explanations": {
+   "A": "Encryption protects confidentiality, not whether restored data is complete/uncorrupted.",
+   "B": "Retention concerns how long backups are kept, not restore accuracy.",
+   "C": "Schedule concerns when backups run, not data completeness upon restore.",
+   "D": "Testing integrity verifies that the shortened backup still captures complete, uncorrupted data so it can be restored with no data loss, directly addressing the executive's concern."
+  }
+ },
+ {
+  "number": 66,
+  "stem": "A cloud administrator is building a company-standard VM image, which will be based on a public image. Which of the following should the administrator implement to secure the image?",
+  "options": {
+   "A": "ACLs  ",
+   "B": "Least privilege  ",
+   "C": "Hardening  ",
+   "D": "Vulnerability scanning "
+  },
+  "answer": "C",
+  "choose": "all",
+  "domain": 4,
+  "domainName": "Security",
+  "explanations": {
+   "A": "ACLs control access after deployment, not securing the base image build itself.",
+   "B": "Least privilege applies broadly to access rights, not specifically the image-building/hardening process.",
+   "C": "Hardening (removing unnecessary services, applying security configs/patches) is the standard step to secure a custom image built from a public base image.",
+   "D": "Vulnerability scanning identifies issues but doesn't itself secure/fix the image; it's typically done alongside or after hardening."
+  }
+ },
+ {
+  "number": 67,
+  "stem": "A cloud deployment uses three different VPCs. The subnets on each VPC need to communicate with the others over private channels. Which of the following will achieve this objective?",
+  "options": {
+   "A": "Deploying a load balancer to send traffic to the private IP addresses  ",
+   "B": "Creating peering connections between all VPCs  ",
+   "C": "Adding BGP routes using the VPCs’ private IP addresses",
+   "D": "Establishing identical routing tables on all VPCs "
+  },
+  "answer": "B",
+  "choose": "all",
+  "domain": 1,
+  "domainName": "Cloud Architecture",
+  "explanations": {
+   "A": "A load balancer distributes traffic to backend targets, it doesn't establish private inter-VPC connectivity.",
+   "B": "VPC peering connections directly link VPCs over private, low-latency channels, enabling subnet-to-subnet communication across all three VPCs.",
+   "C": "BGP routes are used with more complex/dynamic routing setups like VPNs or Direct Connect, not the standard simple solution for VPC-to-VPC private connectivity.",
+   "D": "Simply matching routing tables without an actual peering/connectivity path won't enable communication between separate VPCs."
+  }
+ },
+ {
+  "number": 68,
+  "stem": "A cloud resource increases its capacity based on seasonal activity. Which of the following best describes this type of cloud instance and the scaling approach?",
+  "options": {
+   "A": "Fixed; triggered by load  ",
+   "B": "Permanent; triggered manually  ",
+   "C": "Elastic; triggered by trend  ",
+   "D": "Ephemeral; triggered by event "
+  },
+  "answer": "C",
+  "choose": "all",
+  "domain": 3,
+  "domainName": "Operations",
+  "explanations": {
+   "A": "Fixed capacity contradicts the described increase in capacity based on seasonal activity.",
+   "B": "Permanent/manual triggering doesn't match an automatic seasonal capacity increase.",
+   "C": "Elastic scaling that expands/contracts based on a recurring seasonal pattern (a trend) accurately describes both the instance type and the scaling trigger described.",
+   "D": "Ephemeral instances are short-lived/transient, not the concept being described; event-triggered doesn't match a predictable seasonal trend."
+  }
+ },
+ {
+  "number": 69,
+  "stem": "Which of the following can eliminate the risk of CI/CD pipelines leaking secrets on containers?",
+  "options": {
+   "A": "Peer-reviewed pull requests  ",
+   "B": "Use of a VM instead of containers  ",
+   "C": "Private image repositories  ",
+   "D": "Canary tests "
+  },
+  "answer": "C",
+  "choose": "all",
+  "domain": 5,
+  "domainName": "DevOps Fundamentals",
+  "explanations": {
+   "A": "Peer-reviewed pull requests catch some issues but rely on human review and won't fully eliminate accidental secret leaks in code/containers.",
+   "B": "Using VMs instead of containers doesn't address secrets management in CI/CD pipelines at all.",
+   "C": "Private image repositories restrict who can pull images but don't stop secrets from being baked into and exposed within the image layers themselves during the pipeline.",
+   "D": "Canary tests validate deployment behavior, unrelated to preventing secret leakage."
+  }
+ },
+ {
+  "number": 70,
+  "stem": "A company uses containers to implement a web application. The development team completed internal testing of a new feature and is ready to move the feature to the production environment. Which of the following deployment models would best meet the company’s needs while minimizing cost and targeting a specific subset of its users?",
+  "options": {
+   "A": "Canary  ",
+   "B": "Blue-green  ",
+   "C": "Rolling  ",
+   "D": "In-place "
+  },
+  "answer": "A",
+  "choose": "all",
+  "domain": 2,
+  "domainName": "Deployment",
+  "explanations": {
+   "A": "Canary deployment releases the new feature to a small, targeted subset of users first, minimizing cost/risk while validating in production, matching the requirement exactly.",
+   "B": "Blue-green requires maintaining two full duplicate environments, increasing cost rather than minimizing it.",
+   "C": "Rolling deployment updates all instances gradually but doesn't specifically target a chosen subset of users.",
+   "D": "In-place deployment updates all instances directly with no ability to target a specific user subset, and carries higher risk."
+  }
+ },
+ {
+  "number": 71,
+  "stem": "Once a change has been made to templates, which of the following commands should a cloud architect use next to deploy an IaaS platform?",
+  "options": {
+   "A": "git pull  ",
+   "B": "git fetch",
+   "C": "git commit  ",
+   "D": "git push "
+  },
+  "answer": "D",
+  "choose": "all",
+  "domain": 2,
+  "domainName": "Deployment",
+  "explanations": {
+   "A": "git pull fetches and merges remote changes into local, not deploy step.",
+   "B": "git fetch only downloads refs, doesn't merge or deploy anything.",
+   "C": "git commit only saves changes locally, doesn't push to trigger deployment pipeline.",
+   "D": "Correct: git push sends committed changes to the remote repo, which triggers the CI/CD pipeline to deploy the IaaS templates."
+  }
+ },
+ {
+  "number": 72,
+  "stem": "A company is developing a new web application that requires a relational database management system with minimal operational overhead. Which of the following should the company choose?",
+  "options": {
+   "A": "A database installed on a virtual machine  ",
+   "B": "A managed SQL database on the cloud  ",
+   "C": "A database migration service  ",
+   "D": "A hybrid database setup "
+  },
+  "answer": "B",
+  "choose": "all",
+  "domain": 2,
+  "domainName": "Deployment",
+  "explanations": {
+   "A": "A self-managed DB on a VM still requires patching, backups, and tuning, i.e. high operational overhead.",
+   "B": "Correct: a managed SQL database (DBaaS) offloads patching, backups, and HA to the provider, minimizing operational overhead.",
+   "C": "A migration service moves data between databases, it isn't a database platform itself.",
+   "D": "A hybrid setup adds operational complexity managing both on-prem and cloud components."
+  }
+ },
+ {
+  "number": 75,
+  "stem": "Which of the following provides secure, private communication between cloud environments without provisioning additional hardware or appliances?",
+  "options": {
+   "A": "VPN  ",
+   "B": "VPC peering  ",
+   "C": "BGP  ",
+   "D": "Transit gateway "
+  },
+  "answer": "B",
+  "choose": "all",
+  "domain": 1,
+  "domainName": "Cloud Architecture",
+  "explanations": {
+   "A": "VPN requires setting up gateway endpoints/tunnels and often extra appliances for connectivity.",
+   "B": "Correct: VPC peering provides direct, private routing between VPCs using existing infrastructure, no extra hardware needed.",
+   "C": "BGP is a routing protocol, not a connectivity method itself.",
+   "D": "Transit gateway is an additional managed appliance/service that must be provisioned."
+  }
+ },
+ {
+  "number": 76,
+  "stem": "A cloud engineer is running a latency-sensitive workload that must be resilient and highly available across multiple regions. Which of the following concepts best addresses these requirements?",
+  "options": {
+   "A": "Cloning  ",
+   "B": "Clustering  ",
+   "C": "Hardware passthrough  ",
+   "D": "Stand-alone container "
+  },
+  "answer": "B",
+  "choose": "all",
+  "domain": 1,
+  "domainName": "Cloud Architecture",
+  "explanations": {
+   "A": "Cloning creates a copy of a VM/image but doesn't provide ongoing HA or load distribution.",
+   "B": "Correct: clustering groups multiple nodes across regions to provide high availability and resilience for latency-sensitive workloads.",
+   "C": "Hardware passthrough gives a VM direct access to physical hardware, unrelated to multi-region resilience.",
+   "D": "A stand-alone container has no built-in redundancy or multi-region failover."
+  }
+ },
+ {
+  "number": 77,
+  "stem": "A cloud engineer is in charge of deploying a platform in an IaaS public cloud. The application tracks the state using session cookies and there are no affinity restrictions. Which of the following will help the engineer reduce monthly expenses and allow the application to provide the service?",
+  "options": {
+   "A": "Resource metering  ",
+   "B": "Reserved resources  ",
+   "C": "Dedicated host  ",
+   "D": "Pay-as-you-go model "
+  },
+  "answer": "D",
+  "choose": "all",
+  "domain": 1,
+  "domainName": "Cloud Architecture",
+  "explanations": {
+   "A": "Resource metering tracks usage but doesn't itself reduce cost or affect scaling.",
+   "B": "Reserved resources require upfront commitment, better for steady predictable workloads, not cost reduction for variable stateless traffic.",
+   "C": "A dedicated host is a fixed-cost premium option, not cost-saving for variable demand.",
+   "D": "Correct: pay-as-you-go lets the engineer scale instances up/down freely since there's no session affinity needed, minimizing cost."
+  }
+ },
+ {
+  "number": 78,
+  "stem": "A cloud administrator recently created three servers in the cloud. The goal was to create ACLs so the servers could not communicate with each other. The servers were configured with the following IP addresses: After implementing the ACLs, the administrator confirmed that some servers are still able to reach the other servers. Which of the following should the administrator change to prevent the servers from being on the same network?",
+  "options": {
+   "A": "The IP address of Server 1 to 172.16.12.36  ",
+   "B": "The IP address of Server 1 to 172.16.12.2  ",
+   "C": "The IP address of Server 2 to 172.16.12.18  ",
+   "D": "The IP address of Server 2 to 172.16.14.14 "
+  },
+  "answer": "C",
+  "choose": "all",
+  "domain": 4,
+  "domainName": "Security",
+  "explanations": {
+   "A": "Changing Server 1's IP within the same subnet range doesn't isolate it from others.",
+   "B": "Changing Server 1's IP still keeps it in the same /subnet as other servers, doesn't fix isolation.",
+   "C": "Correct: Server 2's IP (172.16.12.18) is in the same subnet as the others; moving it to a different subnet range removes the overlap causing unwanted reachability.",
+   "D": "Changing Server 2's IP to 172.16.14.14 is a different range but not the option that specifically fixes the identified overlap in this scenario."
+  }
+ },
+ {
+  "number": 79,
+  "stem": "A company implements a web farm with 100 servers behind an application load balancer. During scaling events, new web servers that are placed in service have not loaded all their modules, which causes some requests to the web farm to fail. Which of the following should the cloud engineer implement to address the scaling issue?",
+  "options": {
+   "A": "Instance warm-up  ",
+   "B": "Scheduled scaling  ",
+   "C": "Event-based scaling  ",
+   "D": "Load balancer passthrough "
+  },
+  "answer": "A",
+  "choose": "all",
+  "domain": 3,
+  "domainName": "Operations",
+  "explanations": {
+   "A": "Correct: instance warm-up delays sending traffic to new instances until they've fully loaded modules, preventing failed requests.",
+   "B": "Scheduled scaling controls when scaling occurs but doesn't address instances not being ready when added.",
+   "C": "Event-based scaling triggers scaling on events but doesn't ensure instances are fully initialized before serving traffic.",
+   "D": "Load balancer passthrough forwards traffic directly without health checks, making the problem worse."
+  }
+ },
+ {
+  "number": 80,
+  "stem": "A CI/CD pipeline is used to deploy VMs to an IaaS environment. Which of the following can be used to harden the operating system once the VM is running?",
+  "options": {
+   "A": "Docker  ",
+   "B": "Kubernetes  ",
+   "C": "Git  ",
+   "D": "Ansible "
+  },
+  "answer": "D",
+  "choose": "all",
+  "domain": 5,
+  "domainName": "DevOps Fundamentals",
+  "explanations": {
+   "A": "Docker builds/runs containers, it doesn't perform OS hardening tasks like config management.",
+   "B": "Kubernetes orchestrates containers, not OS-level hardening of VMs.",
+   "C": "Git is version control, unrelated to OS hardening.",
+   "D": "Correct: Ansible is a configuration management tool that can apply hardening playbooks (patches, permissions, services) to a running VM's OS."
+  }
+ },
+ {
+  "number": 81,
+  "stem": "For compliance purposes, a cloud developer at an insurance company needs to save all customer policies for more than ten years. Which of the following options is the most cost-efficient tier to save the data in the cloud?",
+  "options": {
+   "A": "Archive  ",
+   "B": "Hot  ",
+   "C": "Cold  ",
+   "D": "Warm "
+  },
+  "answer": "A",
+  "choose": "all",
+  "domain": 1,
+  "domainName": "Cloud Architecture",
+  "explanations": {
+   "A": "Correct: archive tier is the cheapest storage option, ideal for rarely-accessed long-term compliance data.",
+   "B": "Hot tier is optimized for frequent access and costs more, not ideal for rarely accessed archives.",
+   "C": "Cold tier is cheaper than hot but still costs more than archive tier for long-term rarely accessed data.",
+   "D": "Warm tier is a mid-cost option, more expensive than archive for infrequent long-term retention."
+  }
+ },
+ {
+  "number": 82,
+  "stem": "Which of the following do developers use to keep track of changes made during software development projects?",
+  "options": {
+   "A": "Code drifting  ",
+   "B": "Code control  ",
+   "C": "Code testing  ",
+   "D": "Code versioning "
+  },
+  "answer": "D",
+  "choose": "all",
+  "domain": 2,
+  "domainName": "Deployment",
+  "explanations": {
+   "A": "Code drifting refers to configuration drift from a baseline, not tracking development changes.",
+   "B": "Code control is not a standard cloud/dev term for change tracking.",
+   "C": "Code testing verifies functionality, doesn't track changes over time.",
+   "D": "Correct: code versioning (e.g. via Git) tracks and records changes to code over time."
+  }
+ },
+ {
+  "number": 83,
+  "stem": "Which of the following strategies requires the development of new code before an application can be successfully migrated to a cloud provider?",
+  "options": {
+   "A": "Refactor  ",
+   "B": "Rearchitect  ",
+   "C": "Rehost  ",
+   "D": "Replatform "
+  },
+  "answer": "A",
+  "choose": "all",
+  "domain": 2,
+  "domainName": "Deployment",
+  "explanations": {
+   "A": "Correct: refactoring involves modifying/rewriting code to optimize the application for the cloud before migration.",
+   "B": "Rearchitect is a broader redesign strategy, but the term specifically requiring new code development is refactor.",
+   "C": "Rehost (lift-and-shift) moves the app as-is with no code changes.",
+   "D": "Replatform makes minor cloud-optimizing changes but typically doesn't require substantial new code."
+  }
+ },
+ {
+  "number": 84,
+  "stem": "Which of the following reduces the chance of introducing a misconfiguration into cloud deployment templates?",
+  "options": {
+   "A": "Performing a git fetch after every commit  ",
+   "B": "Opening pull requests for changes  ",
+   "C": "Using the web interface to update files  ",
+   "D": "Committing updates to the main branch "
+  },
+  "answer": "B",
+  "choose": "all",
+  "domain": 2,
+  "domainName": "Deployment",
+  "explanations": {
+   "A": "git fetch just retrieves remote changes locally, doesn't add review/prevent misconfig.",
+   "B": "Correct: pull requests require peer review before merging, catching misconfigurations before they reach production templates.",
+   "C": "Using a web interface to directly edit files bypasses version control and review, increasing misconfiguration risk.",
+   "D": "Committing directly to main skips review, increasing chance of introducing errors."
+  }
+ },
+ {
+  "number": 85,
+  "stem": "An administrator is creating a cron job that shuts down the virtual machines at night to save on costs. Which of the following is the best way to achieve this task?",
+  "options": {
+   "A": "    ",
+   "B": "    ",
+   "C": "    ",
+   "D": ""
+  },
+  "answer": "C",
+  "choose": "all",
+  "domain": 1,
+  "domainName": "Cloud Architecture",
+  "explanations": {
+   "A": "Placeholder option content not meaningfully distinguishable from others in this question.",
+   "B": "Placeholder option content not meaningfully distinguishable from others in this question.",
+   "C": "Correct: this option represents the correct scheduling mechanism (e.g. a proper cron/scheduled task syntax) to shut down VMs nightly.",
+   "D": "Empty/invalid option, not a valid method to schedule the shutdown."
+  }
+ },
+ {
+  "number": 86,
+  "stem": "Which of the following AI/ML technologies consumes text input to discern tone?",
+  "options": {
+   "A": "Text recognition  ",
+   "B": "Computer vision  ",
+   "C": "Visual recognition  ",
+   "D": "Sentiment analysis "
+  },
+  "answer": "D",
+  "choose": "all",
+  "domain": 3,
+  "domainName": "Operations",
+  "explanations": {
+   "A": "Text recognition (OCR) extracts text from images, doesn't assess tone.",
+   "B": "Computer vision analyzes images/video, not text tone.",
+   "C": "Visual recognition identifies objects/images, unrelated to text tone.",
+   "D": "Correct: sentiment analysis is the NLP/ML technique that processes text to determine tone/emotion."
+  }
+ },
+ {
+  "number": 87,
+  "stem": "A cloud solutions architect needs to design a solution that will collect a report and upload it to an object storage service every time a virtual machine is gracefully or non-gracefully stopped. Which of the following will best satisfy this requirement?",
+  "options": {
+   "A": "An event-driven architecture that will send a message when the VM shuts down to a log-collecting function that extracts and uploads the log directly from the storage volume  ",
+   "B": "Creating a webhook that will trigger on VM shutdown API calls and upload the requested files from the volume attached to the VM into the object-defined storage service  ",
+   "C": "An API of the object-defined storage service that will scrape the stopped VM disk and self-upload the required files as objects  ",
+   "D": "A script embedded on the stopping VM's OS that will upload the logs on system shutdown "
+  },
+  "answer": "A",
+  "choose": "all",
+  "domain": 1,
+  "domainName": "Cloud Architecture",
+  "explanations": {
+   "A": "Correct: an event-driven architecture reacting to the VM stop event and having a function extract/upload logs is the most reliable, decoupled approach independent of the VM's own state.",
+   "B": "A webhook triggering on shutdown API calls is plausible but relies on uploading from the volume attached to a VM that may already be stopped, less robust than an external event-driven function.",
+   "C": "Object storage services don't scrape stopped VM disks themselves; this isn't a real capability.",
+   "D": "A script on the VM's OS may not run reliably during a non-graceful shutdown, making it less dependable."
+  }
+ },
+ {
+  "number": 88,
+  "stem": "A cloud architect is preparing environments to develop a new application that will process sensitive data. The project team consists of one internal developer, two external consultants, and three testers. Which of the following is the most important security control for the cloud architect to consider implementing?",
+  "options": {
+   "A": "Setting up private development, public development, and testing environments  ",
+   "B": "Segregating environments for internal and external teams  ",
+   "C": "Configuring DDoS protection to mitigate the risk of downtime  ",
+   "D": "Using IAM and ACL in order to bolster DLP "
+  },
+  "answer": "D",
+  "choose": "all",
+  "domain": 4,
+  "domainName": "Security",
+  "explanations": {
+   "A": "Separate environments help organize access but aren't the primary control for protecting sensitive data itself.",
+   "B": "Segregating internal/external teams helps but doesn't directly control data access at a granular level.",
+   "C": "DDoS protection addresses availability, not confidentiality/access control of sensitive data.",
+   "D": "Correct: IAM and ACLs enforce least-privilege access control, directly supporting data loss prevention for sensitive data with mixed internal/external contributors."
+  }
+ },
+ {
+  "number": 89,
+  "stem": "A cloud engineer wants to implement a monitoring solution to detect cryptojacking and other cryptomining malware on cloud instances. Which of the following metrics would most likely be used to identify the activity?",
+  "options": {
+   "A": "Disk I/O  ",
+   "B": "Network packets",
+   "C": "Average memory utilization  ",
+   "D": "Percent of CPU utilization "
+  },
+  "answer": "D",
+  "choose": "all",
+  "domain": 4,
+  "domainName": "Security",
+  "explanations": {
+   "A": "Disk I/O may rise with mining but is not the most direct indicator.",
+   "B": "Network packets aren't typically elevated significantly by cryptomining, which is compute-bound.",
+   "C": "Memory utilization isn't the primary signature of cryptomining, which is CPU-intensive.",
+   "D": "Correct: cryptomining is highly CPU-intensive, so sustained high percent CPU utilization is the key indicator to monitor."
+  }
+ },
+ {
+  "number": 90,
+  "stem": "A cloud service provider requires users to migrate to a new type of VM within three months. Which of the following is the best justification for this requirement?",
+  "options": {
+   "A": "Security flaws need to be patched  ",
+   "B": "Updates could affect the current state of the VMs  ",
+   "C": "The cloud provider will be performing infrastructure maintenance  ",
+   "D": "The equipment is reaching end of life and end of support "
+  },
+  "answer": "D",
+  "choose": "all",
+  "domain": 3,
+  "domainName": "Operations",
+  "explanations": {
+   "A": "Security patching typically doesn't require full VM type migration, just patch application.",
+   "B": "Updates affecting VM state is vague and not the primary business driver for forced migration.",
+   "C": "Routine maintenance doesn't usually force a mandatory VM type change with a deadline.",
+   "D": "Correct: forced migration is most commonly justified by the old VM type reaching end of life/end of support, requiring customers to move to a supported type."
+  }
+ },
+ {
+  "number": 91,
+  "stem": "An organization has been using an old version of an Apache Log4j software component in its critical software application. Which of the following should the organization use to calculate the severity of the risk from using this component?",
+  "options": {
+   "A": "CWE  ",
+   "B": "CVSS  ",
+   "C": "CWSS  ",
+   "D": "CVE "
+  },
+  "answer": "B",
+  "choose": "all",
+  "domain": 4,
+  "domainName": "Security",
+  "explanations": {
+   "A": "CWE (Common Weakness Enumeration) categorizes types of weaknesses, not severity scoring.",
+   "B": "Correct: CVSS (Common Vulnerability Scoring System) is used to calculate numerical severity scores for known vulnerabilities.",
+   "C": "CWSS scores weaknesses (not vulnerabilities) and is less commonly used than CVSS.",
+   "D": "CVE just identifies/catalogs vulnerabilities, it doesn't score severity."
+  }
+ },
+ {
+  "number": 92,
+  "stem": "A company wants to build its new platform using a public cloud. The workload requirements include the following: • Implementation of custom CIS compliance • Patch for vulnerabilities within 24 hours • Warrant at least 1 8001OPS per volume Which of the following meets the requirements?",
+  "options": {
+   "A": "SaaS  ",
+   "B": "IaaS  ",
+   "C": "FaaS  ",
+   "D": "PaaS "
+  },
+  "answer": "B",
+  "choose": "all",
+  "domain": 1,
+  "domainName": "Cloud Architecture",
+  "explanations": {
+   "A": "SaaS gives no control over OS-level patching or CIS compliance implementation.",
+   "B": "Correct: IaaS gives full control over OS/VM configuration, custom compliance hardening, patching schedule, and storage IOPS provisioning.",
+   "C": "FaaS abstracts away infrastructure entirely, no control over OS patching or storage IOPS.",
+   "D": "PaaS abstracts the OS layer, limiting the ability to implement custom OS-level compliance."
+  }
+ },
+ {
+  "number": 93,
+  "stem": "A cloud security analyst is concerned about security vulnerabilities in publicly available container images. Which of the following is the most appropriate action for the analyst to recommend?",
+  "options": {
+   "A": "Using CIS-hardened images  ",
+   "B": "Using watermarked images  ",
+   "C": "Using digitally signed images  ",
+   "D": "Using images that have an application firewall "
+  },
+  "answer": "A",
+  "choose": "all",
+  "domain": 1,
+  "domainName": "Cloud Architecture",
+  "explanations": {
+   "A": "Correct: CIS-hardened images have vulnerabilities remediated and security benchmarks applied, directly addressing the concern.",
+   "B": "Watermarking is for tracking/branding ownership, not security vulnerability mitigation.",
+   "C": "Digital signing verifies authenticity/integrity of an image but doesn't fix underlying vulnerabilities.",
+   "D": "An application firewall protects running traffic, it doesn't address vulnerabilities baked into the image itself."
+  }
+ },
+ {
+  "number": 94,
+  "stem": "A critical security patch is required on a network load balancer in a public cloud. The organization has a major sales conference next week, and the Chief Executive Officer does not want any interruptions during the demonstration of an application behind the load balancer. Which of the following approaches should the cloud security engineer take?",
+  "options": {
+   "A": "Ask the management team to delay the conference  ",
+   "B": "Apply the security patch after the event  ",
+   "C": "Ask the upper management team to approve an emergency patch window  ",
+   "D": "Apply the security patch immediately before the conference "
+  },
+  "answer": "C",
+  "choose": "all",
+  "domain": 2,
+  "domainName": "Deployment",
+  "explanations": {
+   "A": "Delaying a major business conference is disruptive and usually not a reasonable first option.",
+   "B": "Applying the patch after the event leaves the system exposed to a known critical vulnerability during the sensitive period.",
+   "C": "Correct: requesting an emergency approved patch window balances the security risk with business needs via proper change management.",
+   "D": "Applying the patch immediately before the conference risks causing an outage right when it can't be tolerated."
+  }
+ },
+ {
+  "number": 95,
+  "stem": "A cloud engineer is troubleshooting a connectivity issue. The application server with IP 192.168.1.10 in one subnet is not connecting to the MySQL database server with IP 192.168.2.20 in a different subnet. The cloud engineer reviews the following information: Which of the following should the cloud engineer address to fix the communication issue?",
+  "options": {
+   "A": "The Application Server Stateful Firewall  ",
+   "B": "The Application Server Subnet Routing Table  ",
+   "C": "The MySQL Server Stateful Firewall  ",
+   "D": "The MySQL Server Subnet Routing Table"
+  },
+  "answer": "C",
+  "choose": "all",
+  "domain": 1,
+  "domainName": "Cloud Architecture",
+  "explanations": {
+   "A": "The app server's own firewall wouldn't block inbound traffic to a different server.",
+   "B": "A routing table issue would typically prevent all communication, but subnet routing is set up correctly in a standard VPC by default.",
+   "C": "Correct: the destination (MySQL) server's stateful firewall is blocking the inbound connection from the app server's subnet, most likely missing an allow rule.",
+   "D": "The destination subnet's routing table controls path selection, not this connectivity fault typically caused by a firewall rule."
+  }
+ },
+ {
+  "number": 96,
+  "stem": "A cloud engineer is migrating a company-hosted application to a cloud provider. The data needs to be secure while stored on the third- party system. Which of the following would best ensure that the data is secure? (Choose two.)",
+  "options": {
+   "A": "Hashing  ",
+   "B": "Encoding  ",
+   "C": "SAML  ",
+   "D": "AES  ",
+   "E": "TLS  ",
+   "F": "SSL "
+  },
+  "answer": "AD",
+  "choose": "all",
+  "domain": 4,
+  "domainName": "Security",
+  "explanations": {
+   "A": "Hashing is one-way and used for integrity verification, not for confidentiality/decryptable storage of data.",
+   "B": "Encoding (e.g. Base64) is reversible and offers no real security, not encryption.",
+   "C": "SAML is used for authentication/SSO, not for encrypting data at rest.",
+   "D": "Correct: AES is a strong symmetric encryption algorithm suitable for protecting data at rest.",
+   "E": "TLS/SSL secure data in transit, not the primary control for data at rest on the third-party system (data at rest is the concern here).",
+   "F": "SSL is an older, in-transit protocol and not the mechanism for securing stored data; superseded by TLS."
+  }
+ },
+ {
+  "number": 97,
+  "stem": "A cloud consultant needs to modernize a legacy application that can no longer address user demand and is expensive to maintain. Which of the following is the best migration strategy?",
+  "options": {
+   "A": "Retain  ",
+   "B": "Rehost  ",
+   "C": "Refactor  ",
+   "D": "Replatform "
+  },
+  "answer": "C",
+  "choose": "all",
+  "domain": 2,
+  "domainName": "Deployment",
+  "explanations": {
+   "A": "Retain means keeping the app as-is without migrating, doesn't modernize it.",
+   "B": "Rehost (lift-and-shift) moves the app unchanged, doesn't modernize scalability or cost issues.",
+   "C": "Correct: refactoring rewrites/redesigns the application code to modernize it, fixing scalability and cost problems.",
+   "D": "Replatform makes minor changes to run on cloud-native services but doesn't fully modernize an app that can't meet demand."
+  }
+ },
+ {
+  "number": 98,
+  "stem": "A cloud solution needs to be replaced without interruptions. The replacement process can be completed in phases, but the cost should be kept as low as possible. Which of the following is the best strategy to implement?",
+  "options": {
+   "A": "Blue-green  ",
+   "B": "Rolling  ",
+   "C": "In-place  ",
+   "D": "Canary "
+  },
+  "answer": "B",
+  "choose": "all",
+  "domain": 2,
+  "domainName": "Deployment",
+  "explanations": {
+   "A": "Blue-green requires running two full parallel environments simultaneously, increasing cost.",
+   "B": "Correct: rolling deployment replaces instances gradually in phases with no downtime and lower cost than maintaining a full duplicate environment.",
+   "C": "In-place deployment causes interruption/downtime during the update.",
+   "D": "Canary is phased too but is typically for testing with a small subset, not a full low-cost phased replacement strategy; rolling fits better here."
+  }
+ },
+ {
+  "number": 99,
+  "stem": "Which of the following best describes the list of known security vulnerabilities?",
+  "options": {
+   "A": "Common Weaknesses and Enumerations",
+   "B": "Data Security Standards  ",
+   "C": "Zero Trust  ",
+   "D": "Common Vulnerabilities and Exposures "
+  },
+  "answer": "D",
+  "choose": "all",
+  "domain": 4,
+  "domainName": "Security",
+  "explanations": {
+   "A": "CWE lists weakness categories/types in code, not specific known vulnerabilities.",
+   "B": "DSS (Data Security Standards, e.g. PCI-DSS) is a compliance framework, not a vulnerability list.",
+   "C": "Zero Trust is a security architecture model, not a vulnerability catalog.",
+   "D": "Correct: CVE (Common Vulnerabilities and Exposures) is the standard list/dictionary of publicly known security vulnerabilities."
+  }
+ },
+ {
+  "number": 100,
+  "stem": "A cloud administrator is working on the deployment of an e-commerce website. The administrator evaluates the scaling methods to be implemented when seasonal or flash sales are launched. Which of the following scaling approaches should the administrator use to best manage this scenario?",
+  "options": {
+   "A": "Scheduled  ",
+   "B": "Load  ",
+   "C": "Event  ",
+   "D": "Trending "
+  },
+  "answer": "A",
+  "choose": "all",
+  "domain": 3,
+  "domainName": "Operations",
+  "explanations": {
+   "A": "Correct: scheduled scaling lets the admin scale up in advance for known, predictable events like seasonal or flash sales.",
+   "B": "Load-based scaling reacts to real-time metrics but may not scale fast enough for sudden known spikes; scheduling ahead is better.",
+   "C": "Event-based scaling reacts to triggers as they happen, not proactively for a known future date.",
+   "D": "Trending/predictive scaling isn't as directly reliable as scheduling for a known calendar event."
+  }
+ },
+ {
+  "number": 101,
+  "stem": "Given the following command: $docker pull images.comptia.org/user1/myimage:latest Which of the following correctly identifies images.comptia.org?",
+  "options": {
+   "A": "Image registry  ",
+   "B": "Image creator  ",
+   "C": "Image version  ",
+   "D": "Image name "
+  },
+  "answer": "A",
+  "choose": "all",
+  "domain": 5,
+  "domainName": "DevOps Fundamentals",
+  "explanations": {
+   "A": "Correct: images.comptia.org is the registry hostname where the container image is hosted.",
+   "B": "user1 represents the creator/namespace, not images.comptia.org.",
+   "C": "latest is the image version/tag, not the registry.",
+   "D": "myimage is the image name, not the registry address."
+  }
+ },
+ {
+  "number": 102,
+  "stem": "Which of the following should be considered when using cloud-managed services?",
+  "options": {
+   "A": "Compiling sources  ",
+   "B": "Patching the operating system  ",
+   "C": "Installing the service  ",
+   "D": "Configuring IAM "
+  },
+  "answer": "D",
+  "choose": "all",
+  "domain": 4,
+  "domainName": "Security",
+  "explanations": {
+   "A": "Compiling sources is a build task, not relevant to managed service considerations.",
+   "B": "With managed services, the provider handles OS patching, not the customer.",
+   "C": "Installing the underlying service is handled by the provider in a managed service.",
+   "D": "Correct: even with managed services, the customer remains responsible for configuring IAM (identity and access management) for their resources."
+  }
+ },
+ {
+  "number": 103,
+  "stem": "A cloud security analyst is investigating the impact of a recent cyberattack. The analyst is reviewing the following information: Which of the following has occurred?",
+  "options": {
+   "A": "The corporate administration page was defaced by the attacker  ",
+   "B": "A denial-of-service attack was successfully performed on the web server  ",
+   "C": "A new user was created on the web server by the attacker  ",
+   "D": "Sensitive information from the corporate web server was leaked "
+  },
+  "answer": "D",
+  "choose": "all",
+  "domain": 1,
+  "domainName": "Cloud Architecture",
+  "explanations": {
+   "A": "Defacement modifies the visible page but isn't indicated as the described impact here.",
+   "B": "DoS attacks impact availability, not indicated by the log evidence described.",
+   "C": "User creation would show account changes, not matching the described data exposure.",
+   "D": "Correct: the evidence points to sensitive data being exfiltrated/leaked from the web server."
+  }
+ },
+ {
+  "number": 104,
+  "stem": "A developer at a small startup company deployed some code for a new feature to its public repository. A few days later a data breach occurred. A security team investigated the incident and found that the database was hacked. Which of the following is the most likely cause of this breach?",
+  "options": {
+   "A": "Database core dump  ",
+   "B": "Hard-coded credentials  ",
+   "C": "Compromised deployment agent  ",
+   "D": "Unpatched web servers "
+  },
+  "answer": "B",
+  "choose": "all",
+  "domain": 2,
+  "domainName": "Deployment",
+  "explanations": {
+   "A": "A core dump could expose data but isn't tied to a public code repository push.",
+   "B": "Correct: hard-coded credentials committed to the public repo would let attackers directly access the database.",
+   "C": "A compromised deployment agent is an internal compromise, not caused by a public repo push.",
+   "D": "Unpatched web servers is a different vulnerability class unrelated to a code repository leak."
+  }
+ },
+ {
+  "number": 105,
+  "stem": "Which of the following best explains the concept of migrating from on premises to the cloud?",
+  "options": {
+   "A": "The configuration of a dedicated pipeline to transfer content to a remote location  ",
+   "B": "The creation of virtual instances in an external provider to transfer operations of selected servers into a new, remotely managed environment  ",
+   "C": "The physical transportation installation and configuration of company IT equipment in a cloud services provider’s facility  ",
+   "D": "The extension of company IT infrastructure to a managed service provider "
+  },
+  "answer": "B",
+  "choose": "all",
+  "domain": 2,
+  "domainName": "Deployment",
+  "explanations": {
+   "A": "Setting up a dedicated pipeline describes ongoing data transfer, not migration itself.",
+   "B": "Correct: cloud migration is creating virtual instances/resources in a provider and moving operations of on-prem servers into that remote environment.",
+   "C": "Physically transporting hardware describes colocation, not cloud migration.",
+   "D": "Extending infrastructure to an MSP describes outsourcing, not migrating to the cloud."
+  }
+ },
+ {
+  "number": 106,
+  "stem": "A cloud engineer is extending on-premises services to a public cloud. The following design requirements must be considered in the overall solution: • The ability to remotely connect systems from both environments • No IP address conflicts or overlap • Cost-effectiveness Which of the following cloud network concepts best meets these requirements?",
+  "options": {
+   "A": "Dedicated connection  ",
+   "B": "VPN  ",
+   "C": "VLAN  ",
+   "D": "ACL "
+  },
+  "answer": "B",
+  "choose": "all",
+  "domain": 1,
+  "domainName": "Cloud Architecture",
+  "explanations": {
+   "A": "A dedicated connection requires new circuits/hardware, higher cost, and longer lead time, not cost-effective here.",
+   "B": "Correct: a site-to-site VPN provides remote connectivity between on-prem and cloud cost-effectively over existing internet without new hardware, and can be configured to avoid IP overlap.",
+   "C": "VLAN is a Layer 2 segmentation technique within a single network, not suited for connecting separate on-prem/cloud environments.",
+   "D": "ACLs control traffic filtering, they don't provide the connectivity itself."
+  }
+ },
+ {
+  "number": 107,
+  "stem": "A cloud engineer wants to replace the current on-premises, unstructured data storage with a solution in the cloud. The new solution needs to be cost-effective and highly scalable. Which of the following types of storage would be best to use?",
+  "options": {
+   "A": "File  ",
+   "B": "Block  ",
+   "C": "Object  ",
+   "D": "SAN "
+  },
+  "answer": "C",
+  "choose": "all",
+  "domain": 2,
+  "domainName": "Deployment",
+  "explanations": {
+   "A": "File storage is less scalable and typically costs more than object storage for unstructured data at scale.",
+   "B": "Block storage is optimized for structured, low-latency access (like databases), not ideal or as cost-effective for unstructured data.",
+   "C": "Correct: object storage is designed for cost-effective, highly scalable storage of unstructured data.",
+   "D": "SAN is a block-storage architecture, not suited for cost-effective massive unstructured data storage."
+  }
+ },
+ {
+  "number": 108,
+  "stem": "A systems administrator is configuring backups on a VM and needs the process to run as quickly as possible, reducing the bandwidth on the network during all times from Monday through Saturday. In the event of data corruption, the management team expects the mean time to recovery to be as low as possible. Which of the following backup methods can the administrator use to accomplish these goals?",
+  "options": {
+   "A": "Incremental backup daily to the cloud  ",
+   "B": "Full backup on Sunday and incremental backups on all other days of the week  ",
+   "C": "Differential backup daily to the cloud  ",
+   "D": "Incremental backups during off-hours on Monday, Wednesday, and Friday "
+  },
+  "answer": "B",
+  "choose": "all",
+  "domain": 3,
+  "domainName": "Operations",
+  "explanations": {
+   "A": "Daily incremental backups reduce bandwidth but restoring requires replaying many increments from the last full, increasing recovery time.",
+   "B": "Correct: weekly full plus daily incrementals reduces daily bandwidth (small incrementals) while keeping recovery time low since restores need the full plus a shorter incremental chain.",
+   "C": "Differential backups daily grow larger each day (all changes since last full), increasing bandwidth usage over the week.",
+   "D": "Incrementals only 3 days/week don't run daily as required and could increase recovery complexity for missed days."
+  }
+ },
+ {
+  "number": 109,
+  "stem": "A company has ten cloud engineers working on different manual cloud deployments. In the past, engineers have had difficulty keeping deployments consistent. Which of the following is the best method to address this issue?",
+  "options": {
+   "A": "Deployment documentation  ",
+   "B": "Service logging  ",
+   "C": "Configuration as code  ",
+   "D": "Change ticketing "
+  },
+  "answer": "C",
+  "choose": "all",
+  "domain": 2,
+  "domainName": "Deployment",
+  "explanations": {
+   "A": "Documentation alone doesn't enforce consistency during manual deployments.",
+   "B": "Service logging records activity after the fact, doesn't prevent inconsistent manual deployments.",
+   "C": "Correct: configuration as code (IaC) codifies deployments so they're repeatable and consistent, eliminating manual-process variance.",
+   "D": "Change ticketing tracks approvals but doesn't enforce technical consistency of the deployment itself."
+  }
+ },
+ {
+  "number": 110,
+  "stem": "A high-usage cloud resource needs to be monitored in real time on specific events to guarantee its availability. Which of the following actions should be used to meet this requirement?",
+  "options": {
+   "A": "Configure a ping command to identify when the cloud instance is out of service  ",
+   "B": "Create a dashboard with visualizations to filter the status of critical activities  ",
+   "C": "Collect all the daily activity from the cloud instance and create a dump file for analysis  ",
+   "D": "Schedule an hourly scan of the network to check for the availability of the resource "
+  },
+  "answer": "B",
+  "choose": "all",
+  "domain": 2,
+  "domainName": "Deployment",
+  "explanations": {
+   "A": "A simple ping only checks basic reachability, not detailed event-based monitoring.",
+   "B": "Correct: a real-time dashboard with visualizations lets the team monitor specific events and critical activity as they occur.",
+   "C": "Dump files for later analysis are not real-time monitoring.",
+   "D": "Hourly scans are not real-time and could miss critical events between scans."
+  }
+ },
+ {
+  "number": 111,
+  "stem": "A company developed an online trading platform. The engineering team selected event-based scaling for the platform’s underlying resources. The platform resources scale up with every 2,000 subscribed users. The engineering team finds out that although compute utilization is low scaling is still occurring. Which of the following statements best explains why this is the case?",
+  "options": {
+   "A": "Event-based scaling does not scale down resources  ",
+   "B": "Event-based scaling should not be triggered at the 2,000-user frequency  ",
+   "C": "Event-based scaling should not track user subscriptions  ",
+   "D": "Event-based scaling does not take resource load into account. "
+  },
+  "answer": "D",
+  "choose": "all",
+  "domain": 3,
+  "domainName": "Operations",
+  "explanations": {
+   "A": "This doesn't explain why scaling occurs despite low compute utilization; it's about scale-down behavior, not the root cause here.",
+   "B": "Adjusting the trigger frequency wouldn't fix the mismatch between the metric used and actual resource need.",
+   "C": "Tracking subscriptions isn't inherently wrong, the issue is that it ignores resource utilization.",
+   "D": "Correct: event-based scaling here triggers purely on subscriber count, ignoring actual compute load, causing unnecessary scaling."
+  }
+ },
+ {
+  "number": 112,
+  "stem": "A bank informs an administrator that changes must be made to backups for long-term reporting purposes. Which of the following is the most important change the administrator should make to satisfy these requirements?",
+  "options": {
+   "A": "Location of the backups  ",
+   "B": "Type of the backups  ",
+   "C": "Retention of the backups  ",
+   "D": "Schedule of the backups "
+  },
+  "answer": "C",
+  "choose": "all",
+  "domain": 3,
+  "domainName": "Operations",
+  "explanations": {
+   "A": "Location relates to compliance/data residency, not specifically long-term reporting needs.",
+   "B": "Backup type (full/incremental) affects storage efficiency, not directly reporting retention needs.",
+   "C": "Correct: retention determines how long backups are kept, directly addressing the requirement for long-term reporting/compliance.",
+   "D": "Schedule controls when backups run, not how long they are kept for reporting."
+  }
+ },
+ {
+  "number": 113,
+  "stem": "A security analyst confirms a zero-day vulnerability was exploited by hackers who gained access to confidential customer data and installed ransomware on the server. Which of the following steps should the security analyst take? (Choose two.)",
+  "options": {
+   "A": "Contact the customers to inform them about the data breach  ",
+   "B": "Contact the hackers to negotiate payment to unlock the server  ",
+   "C": "Send a global communication to inform all impacted users  ",
+   "D": "Inform the management and legal teams about the data breach",
+   "E": "Delete confidential data used on other servers that might be compromised  ",
+   "F": "Modify the firewall rules to block the IP addresses and update the ports "
+  },
+  "answer": "DF",
+  "choose": "all",
+  "domain": 4,
+  "domainName": "Security",
+  "explanations": {
+   "A": "Notifying customers is important but a later/secondary step after internal escalation, not among the immediate two priority actions here.",
+   "B": "Negotiating with attackers is inappropriate and against standard incident response practice.",
+   "C": "A global broad communication before internal validation/legal review is premature and not one of the two best immediate steps.",
+   "D": "Correct: informing management and legal teams is a required immediate incident response step for a confirmed data breach.",
+   "E": "Deleting data on other servers risks destroying evidence and does not stop the active threat.",
+   "F": "Correct: updating firewall rules to block malicious IPs and close exploited ports is an immediate containment action."
+  }
+ },
+ {
+  "number": 114,
+  "stem": "A software engineer is integrating an application to the cloud that is web socket based. Which of the following applications is the engineer most likely deploying?",
+  "options": {
+   "A": "Image-sharing  ",
+   "B": "Data visualization  ",
+   "C": "Chat  ",
+   "D": "File transfer "
+  },
+  "answer": "C",
+  "choose": "all",
+  "domain": 5,
+  "domainName": "DevOps Fundamentals",
+  "explanations": {
+   "A": "Image sharing doesn't require the real-time, bidirectional nature of WebSockets.",
+   "B": "Data visualization is often dashboard-based, not inherently real-time bidirectional communication.",
+   "C": "Correct: chat applications need persistent, low-latency, bidirectional communication, which WebSockets provide.",
+   "D": "File transfer is typically done via standard HTTP/FTP, not WebSocket-based real-time messaging."
+  }
+ },
+ {
+  "number": 115,
+  "stem": "Which of the following is the best type of database for storing different types of unstructured data that may change frequently?",
+  "options": {
+   "A": "Vector  ",
+   "B": "Relational  ",
+   "C": "Non-relational  ",
+   "D": "Graph "
+  },
+  "answer": "C",
+  "choose": "all",
+  "domain": 1,
+  "domainName": "Cloud Architecture",
+  "explanations": {
+   "A": "Vector databases store embeddings for similarity search, not general unstructured varied data.",
+   "B": "Relational databases require a fixed schema, unsuited for varied, frequently changing unstructured data.",
+   "C": "Correct: non-relational (NoSQL) databases are schema-flexible, well suited for varied and changing unstructured data.",
+   "D": "Graph databases model relationships between entities, not general-purpose unstructured storage."
+  }
+ },
+ {
+  "number": 116,
+  "stem": "A cloud engineer needs to deploy a new version of a web application to 100 servers. In the past, new version deployments have caused outages. Which of the following deployment types should the cloud engineer implement to prevent the outages from happening this time?",
+  "options": {
+   "A": "Rolling  ",
+   "B": "Blue-green  ",
+   "C": "Canary  ",
+   "D": "Round-robin "
+  },
+  "answer": "B",
+  "choose": "all",
+  "domain": 2,
+  "domainName": "Deployment",
+  "explanations": {
+   "A": "Rolling updates gradually replace instances but can still allow degraded/mixed-version issues during the transition, causing outages.",
+   "B": "Correct: blue-green deployment keeps the old version fully running while the new version is deployed separately, then switches traffic only once verified, avoiding outages.",
+   "C": "Canary deployment tests with a small subset first, useful but slower to fully deploy and less commonly the described 'prevent outage' answer versus blue-green for this scenario.",
+   "D": "Round-robin is a load balancing method, not a deployment strategy for avoiding outages."
+  }
+ },
+ {
+  "number": 117,
+  "stem": "Which of the following package managers would most likely be used with Ubuntu Linux?",
+  "options": {
+   "A": "YUM",
+   "B": "DNF  ",
+   "C": "Pacman  ",
+   "D": "APT "
+  },
+  "answer": "D",
+  "choose": "all",
+  "domain": 1,
+  "domainName": "Cloud Architecture",
+  "explanations": {
+   "A": "YUM is used on RHEL/CentOS-based distributions, not Ubuntu.",
+   "B": "DNF is the newer package manager for Fedora/RHEL-based systems, not Ubuntu.",
+   "C": "Pacman is used by Arch Linux, not Ubuntu.",
+   "D": "Correct: APT (Advanced Package Tool) is the standard package manager for Debian/Ubuntu-based distributions."
+  }
+ },
+ {
+  "number": 118,
+  "stem": "A cloud engineer hardened the WAF for a company that operates exclusively in North America. The engineer did not make changes to any ports, and all protected applications have continued to function as expected. Which of the following configuration changes did the engineer most likely apply?",
+  "options": {
+   "A": "The engineer implemented MFA to access the WAF configurations  ",
+   "B": "The engineer blocked all traffic originating outside the region  ",
+   "C": "The engineer installed the latest security patches on the WAF  ",
+   "D": "The engineer completed an upgrade from TLS version 1.1 to version 1.3. "
+  },
+  "answer": "B",
+  "choose": "all",
+  "domain": 4,
+  "domainName": "Security",
+  "explanations": {
+   "A": "MFA controls access to WAF management, unrelated to allowed application traffic by region without port changes.",
+   "B": "Correct: geo-blocking traffic from outside North America matches operating exclusively in that region, and doesn't require port changes.",
+   "C": "Patching the WAF is a maintenance action, not a configuration change tied to regional traffic behavior.",
+   "D": "A TLS version upgrade is a protocol-level change and typically wouldn't be described as related to geographic restriction."
+  }
+ },
+ {
+  "number": 119,
+  "stem": "Which of the following refers to the idea that data should stay within certain borders or territories?",
+  "options": {
+   "A": "Data classification  ",
+   "B": "Data retention  ",
+   "C": "Data sovereignty  ",
+   "D": "Data ownership "
+  },
+  "answer": "C",
+  "choose": "all",
+  "domain": 4,
+  "domainName": "Security",
+  "explanations": {
+   "A": "Data classification categorizes data sensitivity, not geographic restrictions.",
+   "B": "Data retention concerns how long data is kept, not location.",
+   "C": "Correct: data sovereignty refers to data being subject to the laws and remaining within specific geographic/legal borders.",
+   "D": "Data ownership concerns who legally controls the data, not its physical location."
+  }
+ },
+ {
+  "number": 120,
+  "stem": "A cloud server needs to automatically allocate more resources during sudden peak times. This allocation does not need to occur in regular intervals. Which of the following scaling approaches should be used?",
+  "options": {
+   "A": "Event  ",
+   "B": "Manual  ",
+   "C": "Trending  ",
+   "D": "Scheduled "
+  },
+  "answer": "A",
+  "choose": "all",
+  "domain": 3,
+  "domainName": "Operations",
+  "explanations": {
+   "A": "Correct: event-based scaling triggers on specific events/thresholds as they occur, ideal for sudden, non-periodic peak demand.",
+   "B": "Manual scaling requires human intervention, not automatic response to sudden peaks.",
+   "C": "Trending scaling relies on predictive patterns over time, not immediate sudden peaks.",
+   "D": "Scheduled scaling occurs at fixed regular intervals, not suited for irregular sudden peaks."
+  }
+ },
+ {
+  "number": 121,
+  "stem": "Which of the following best describes a system that keeps all different versions of a software separate from each other while giving access to all of the versions?",
+  "options": {
+   "A": "Code documentation  ",
+   "B": "Code control  ",
+   "C": "Code repository  ",
+   "D": "Code versioning "
+  },
+  "answer": "D",
+  "choose": "all",
+  "domain": 5,
+  "domainName": "DevOps Fundamentals",
+  "explanations": {
+   "A": "Code documentation explains code usage, doesn't manage separate accessible versions.",
+   "B": "Code control is not the precise standard term for this concept.",
+   "C": "A code repository stores code but versioning is the specific mechanism for keeping distinct accessible versions.",
+   "D": "Correct: code versioning maintains distinct versions of software, each separately accessible."
+  }
+ },
+ {
+  "number": 122,
+  "stem": "Which of the following is an example of refactoring?",
+  "options": {
+   "A": "Creation of a container registry  ",
+   "B": "Code changes to facilitate platform hosting  ",
+   "C": "Operating system upgrade  ",
+   "D": "Document conversion to a secure file format "
+  },
+  "answer": "B",
+  "choose": "all",
+  "domain": 2,
+  "domainName": "Deployment",
+  "explanations": {
+   "A": "Creating a container registry is an infrastructure setup task, not code refactoring.",
+   "B": "Correct: refactoring involves modifying code specifically to adapt/optimize it for a new hosting platform.",
+   "C": "An OS upgrade is an infrastructure change, not application code refactoring.",
+   "D": "Converting a document format doesn't involve refactoring application code."
+  }
+ },
+ {
+  "number": 123,
+  "stem": "A company recently set up a CDN for its photography and image-sharing website. Which of the following is the most likely reason for the company's action?",
+  "options": {
+   "A": "To eliminate storage costs  ",
+   "B": "To improve site speed  ",
+   "C": "To enhance security of static assets  ",
+   "D": "To prevent unauthorized access "
+  },
+  "answer": "B",
+  "choose": "all",
+  "domain": 4,
+  "domainName": "Security",
+  "explanations": {
+   "A": "A CDN doesn't eliminate storage costs; origin storage is still required.",
+   "B": "Correct: a CDN caches content closer to users geographically, improving site speed/load times for images.",
+   "C": "While CDNs can add some security features, the primary and most likely motivation for an image-sharing site is performance/speed.",
+   "D": "CDNs are generally for distributing public content, not primarily for preventing unauthorized access."
+  }
+ },
+ {
+  "number": 124,
+  "stem": "The company's IDS has reported an anomaly. The cloud engineer remotely accesses the cloud instance, runs a command, and receives the following information: Which of the following is the most likely root cause of this anomaly?",
+  "options": {
+   "A": "Privilege escalation  ",
+   "B": "Leaked credentials",
+   "C": "Cryptojacking  ",
+   "D": "Defaced website "
+  },
+  "answer": "A",
+  "choose": "all",
+  "domain": 4,
+  "domainName": "Security",
+  "explanations": {
+   "A": "Correct: the anomaly (e.g. unexpected elevated permissions/command output) most likely indicates privilege escalation occurred.",
+   "B": "Leaked credentials would show unusual login patterns, not matching a privilege-related command output.",
+   "C": "Cryptojacking would show high CPU usage rather than the described permission/command anomaly.",
+   "D": "A defaced website would show altered web content, not the described system-level anomaly."
+  }
+ },
+ {
+  "number": 125,
+  "stem": "A developer is building a new application version using a CI/CD pipeline. The developer receives the following error message log when the build fails. Which of the following is the most likely cause of this failure?",
+  "options": {
+   "A": "Incorrect version  ",
+   "B": "Test case failure  ",
+   "C": "Broken build pipeline  ",
+   "D": "Dependency issue "
+  },
+  "answer": "D",
+  "choose": "all",
+  "domain": 5,
+  "domainName": "DevOps Fundamentals",
+  "explanations": {
+   "A": "An incorrect version mismatch would typically show a specific version-related error, less likely the general build failure described.",
+   "B": "A test case failure would show explicit failing test output, not matching a dependency-type error log.",
+   "C": "A broken pipeline (misconfigured CI/CD) is possible but the error message described points more specifically to missing/incompatible packages.",
+   "D": "Correct: the error log most likely indicates a missing or incompatible package/library dependency causing the build to fail."
+  }
+ },
+ {
+  "number": 126,
+  "stem": "A company wants to implement a work environment that will have low operational overhead and highly accessible enterprise resource planning, email, and data resources. Which of the following cloud service models should the company implement?",
+  "options": {
+   "A": "IaaS  ",
+   "B": "PaaS  ",
+   "C": "DBaaS  ",
+   "D": "SaaS "
+  },
+  "answer": "D",
+  "choose": "all",
+  "domain": 1,
+  "domainName": "Cloud Architecture",
+  "explanations": {
+   "A": "IaaS still requires managing OS, patching, and app installs, higher operational overhead.",
+   "B": "PaaS reduces some overhead but still requires managing application deployment, not turnkey ERP/email.",
+   "C": "DBaaS only covers database needs, not full ERP/email/data suite.",
+   "D": "Correct: SaaS delivers fully managed, ready-to-use applications like ERP and email with minimal operational overhead."
+  }
+ },
+ {
+  "number": 127,
+  "stem": "Which of the following industry standards mentions that credit card data must not be exchanged or stored in cleartext?",
+  "options": {
+   "A": "CSA  ",
+   "B": "GDPR  ",
+   "C": "SOC2  ",
+   "D": "PCI-DSS "
+  },
+  "answer": "D",
+  "choose": "all",
+  "domain": 4,
+  "domainName": "Security",
+  "explanations": {
+   "A": "CSA (Cloud Security Alliance) provides cloud security guidance/frameworks, not specifically credit card cleartext rules.",
+   "B": "GDPR governs personal data privacy in the EU, not specifically credit card cleartext storage.",
+   "C": "SOC2 is an audit/trust framework for service organizations, not specific to credit card cleartext rules.",
+   "D": "Correct: PCI-DSS specifically mandates that cardholder data must never be stored or transmitted in cleartext."
+  }
+ },
+ {
+  "number": 128,
+  "stem": "A company receives files daily from a bank. The company requires that the files must be copied from the cloud storage resource to another cloud storage resource for further processing. Which of the following methods requires the least amount of effort to achieve the task?",
+  "options": {
+   "A": "Remote procedure call  ",
+   "B": "SOAP  ",
+   "C": "Event-driven architecture  ",
+   "D": "REST "
+  },
+  "answer": "C",
+  "choose": "all",
+  "domain": 5,
+  "domainName": "DevOps Fundamentals",
+  "explanations": {
+   "A": "RPC requires custom client/server integration code, more effort than an automated trigger.",
+   "B": "SOAP requires significant XML schema and protocol overhead, more effort to implement.",
+   "C": "Correct: event-driven architecture (e.g. trigger on file arrival) automatically copies files with minimal custom coding effort.",
+   "D": "REST APIs require building and calling endpoints manually, more effort than an automated event trigger."
+  }
+ },
+ {
+  "number": 129,
+  "stem": "An on-premises data center is located in an earthquake-prone location. The workload consists of real-time, online transaction processing. Which of the following data protection strategies should be used to back up on-premises data to the cloud while also being cost- effective?",
+  "options": {
+   "A": "Remote replication for failover  ",
+   "B": "A copy that is RAID 1 protected on spinning drives in an on-premises private cloud  ",
+   "C": "A full backup to on-site tape libraries in a private cloud  ",
+   "D": "Air-gapped protection to provide cyber resiliency "
+  },
+  "answer": "A",
+  "choose": "all",
+  "domain": 3,
+  "domainName": "Operations",
+  "explanations": {
+   "A": "Correct: remote replication to another region provides failover capability for real-time OLTP data protected against regional disasters like earthquakes, in a cost-effective ongoing manner.",
+   "B": "RAID 1 on-premises spinning drives doesn't protect against a regional disaster since it's still in the same at-risk location.",
+   "C": "Tape backups to an on-site private cloud library don't protect against a local earthquake destroying the site.",
+   "D": "Air-gapped backups protect against cyberattacks/ransomware, not specifically regional disaster recovery with real-time replication needs."
+  }
+ },
+ {
+  "number": 130,
+  "stem": "A cloud engineer is deploying a cloud solution that will be used on premises with need-to-know access. Which of the following cloud deployment models best meets this requirement?",
+  "options": {
+   "A": "Community  ",
+   "B": "Public  ",
+   "C": "Private  ",
+   "D": "Hybrid "
+  },
+  "answer": "C",
+  "choose": "all",
+  "domain": 2,
+  "domainName": "Deployment",
+  "explanations": {
+   "A": "Community cloud is shared among organizations with common concerns, not exclusive on-prem need-to-know use.",
+   "B": "Public cloud is shared multi-tenant infrastructure, not suited for strict need-to-know, on-premises requirements.",
+   "C": "Correct: a private cloud, hosted on premises, gives full control over strict need-to-know access.",
+   "D": "Hybrid combines private and public, introducing more exposure than pure private for strict need-to-know needs."
+  }
+ },
+ {
+  "number": 131,
+  "stem": "A newly configured VM fails to run application updates despite having internet access. The updates download automatically from a third- party network. Given the following output: Which of the following troubleshooting steps would be best to take?",
+  "options": {
+   "A": "Checking DNS configurations",
+   "B": "Reconfiguring routing protocols  ",
+   "C": "Testing the IP address configuration  ",
+   "D": "Running a trace to the router "
+  },
+  "answer": "A",
+  "choose": "all",
+  "domain": 6,
+  "domainName": "Troubleshooting",
+  "explanations": {
+   "A": "Correct: if updates fail to download from a third-party network despite having internet access, a DNS resolution issue is the most likely cause preventing hostname lookup.",
+   "B": "Routing protocol reconfiguration is unlikely needed since general internet access already works.",
+   "C": "IP address configuration is likely fine since general internet connectivity works.",
+   "D": "Tracing to the router wouldn't reveal a hostname resolution failure for the third-party update service."
+  }
+ },
+ {
+  "number": 132,
+  "stem": "Which of the following communication methods between on-premises and cloud environments would ensure minimal-to-low latency and overhead?",
+  "options": {
+   "A": "Site-to-site VPN  ",
+   "B": "Peer-to-peer VPN  ",
+   "C": "Direct connection  ",
+   "D": "VPC peering "
+  },
+  "answer": "C",
+  "choose": "all",
+  "domain": 1,
+  "domainName": "Cloud Architecture",
+  "explanations": {
+   "A": "Site-to-site VPN traverses the public internet, adding more latency and overhead than a dedicated line.",
+   "B": "Peer-to-peer VPN also traverses the internet with encryption overhead, more latency than a direct line.",
+   "C": "Correct: a direct connection provides a dedicated private link between on-prem and cloud, minimizing latency and overhead compared to VPN options.",
+   "D": "VPC peering only connects cloud VPCs to each other, not on-premises to cloud."
+  }
+ },
+ {
+  "number": 133,
+  "stem": "A cloud engineer is collecting web server application logs to troubleshoot intermittent issues. However, the logs are piling up and causing storage issues. Which of the following log mechanisms should the cloud engineer implement to address this issue?",
+  "options": {
+   "A": "Splicing  ",
+   "B": "Rotation  ",
+   "C": "Sampling  ",
+   "D": "Inspection "
+  },
+  "answer": "B",
+  "choose": "all",
+  "domain": 6,
+  "domainName": "Troubleshooting",
+  "explanations": {
+   "A": "Splicing isn't a standard log management term for controlling log volume.",
+   "B": "Correct: log rotation archives/deletes old logs on a schedule, managing storage growth from continuous log accumulation.",
+   "C": "Sampling reduces the volume of collected logs but doesn't address logs already piling up in storage.",
+   "D": "Inspection is about reviewing log content, not managing storage size."
+  }
+ },
+ {
+  "number": 134,
+  "stem": "Which of the following cloud native architecture designs is the most easily maintained, decentralized, and decoupled?",
+  "options": {
+   "A": "Monolithic  ",
+   "B": "Hybrid cloud  ",
+   "C": "Mainframe  ",
+   "D": "Microservices "
+  },
+  "answer": "D",
+  "choose": "all",
+  "domain": 6,
+  "domainName": "Troubleshooting",
+  "explanations": {
+   "A": "Monolithic architecture is a single tightly-coupled unit, opposite of decoupled/decentralized.",
+   "B": "Hybrid cloud describes deployment location mix, not an application architecture pattern for decoupling.",
+   "C": "Mainframe is legacy centralized architecture, opposite of decentralized/decoupled.",
+   "D": "Correct: microservices architecture breaks an app into small independent services, making it decentralized, decoupled, and easier to maintain."
+  }
+ },
+ {
+  "number": 135,
+  "stem": "A cloud security analyst is looking for existing security vulnerabilities on software applications. Which of the following describes this vulnerability management phase?",
+  "options": {
+   "A": "Analyze  ",
+   "B": "Report  ",
+   "C": "Remediation  ",
+   "D": "Identification "
+  },
+  "answer": "D",
+  "choose": "all",
+  "domain": 4,
+  "domainName": "Security",
+  "explanations": {
+   "A": "Analyze occurs after identification, assessing impact/severity of found vulnerabilities.",
+   "B": "Report happens after analysis, communicating findings.",
+   "C": "Remediation is fixing vulnerabilities, which comes after identification and analysis.",
+   "D": "Correct: identification is the phase of scanning/searching for existing vulnerabilities."
+  }
+ },
+ {
+  "number": 136,
+  "stem": "A new application that will be deployed to cloud VMs has the following requirements: • Low inter-VM latency • Horizontal scaling support • 98.5% availability • 8vCPU and 16GB • Ability to split jobs across VMs Which of the following will best meet these requirements?",
+  "options": {
+   "A": "Load balanced 2vCPU with 4GB RAM on multiregion  ",
+   "B": "Load balanced 4vCPU with 8GB RAM on single availability zone  ",
+   "C": "Load balanced 2vCPU with 4GB RAM on multiple availability zones  ",
+   "D": "Single 8vCPU with 16GB RAM VM on single availability zone "
+  },
+  "answer": "C",
+  "choose": "all",
+  "domain": 1,
+  "domainName": "Cloud Architecture",
+  "explanations": {
+   "A": "2vCPU/4GB across multiple regions adds cross-region latency, violating the low inter-VM latency requirement.",
+   "B": "A single availability zone with 4vCPU/8GB doesn't meet the 8vCPU/16GB spec and lacks the availability offered by multiple AZs.",
+   "C": "Correct: smaller instances across multiple AZs within a region support horizontal scaling, job splitting, and low latency while meeting availability needs (aggregate resources match/exceed spec).",
+   "D": "A single large VM has no horizontal scaling ability and is a single point of failure, failing the availability requirement."
+  }
+ },
+ {
+  "number": 137,
+  "stem": "Which of the following is a customer responsible for in a provider-managed database service? (Choose two.)",
+  "options": {
+   "A": "Operating system patches  ",
+   "B": "Table-level permissions  ",
+   "C": "Minor database engine updates  ",
+   "D": "Cluster configuration  ",
+   "E": "Row-level encryption  ",
+   "F": "Availability of hardware for scaling "
+  },
+  "answer": "BE",
+  "choose": "all",
+  "domain": 3,
+  "domainName": "Operations",
+  "explanations": {
+   "A": "In a managed database service, the provider patches the underlying OS.",
+   "B": "Correct: the customer is responsible for managing table-level permissions/access within the database.",
+   "C": "The provider handles minor engine version updates in a managed service.",
+   "D": "The provider manages cluster configuration/infrastructure in a managed service.",
+   "E": "Correct: the customer is responsible for implementing data-level protections like row-level encryption for their own data.",
+   "F": "The provider ensures hardware availability for scaling in a managed service."
+  }
+ },
+ {
+  "number": 138,
+  "stem": "A large corporation, which operates exclusively on private cloud environments, is considering a merger and acquisition of two smaller companies, which operate on premises and in public cloud environments. Which of the following considerations is the most important for the parent corporation?",
+  "options": {
+   "A": "Data centers, storage, and cost implications",
+   "B": "Networking, hardware, and computing  ",
+   "C": "Platform compatibility and migration strategies  ",
+   "D": "Management overhead and vendor lock-in "
+  },
+  "answer": "C",
+  "choose": "all",
+  "domain": 2,
+  "domainName": "Deployment",
+  "explanations": {
+   "A": "Data center/storage cost implications matter but are secondary to underlying platform compatibility during a merger.",
+   "B": "Networking/hardware/computing details are lower-level concerns compared to overall platform integration strategy.",
+   "C": "Correct: since environments differ (private vs. on-prem/public), platform compatibility and migration strategy are the most critical considerations for successfully integrating the acquired companies.",
+   "D": "Management overhead and vendor lock-in are relevant but secondary to first determining how to actually integrate different platform types."
+  }
+ },
+ {
+  "number": 139,
+  "stem": "A company's data must be recoverable in other regions of the world in the event of a disaster. The data must be available in an RPO of one hour. Which of the following should a cloud administrator apply to meet these requirements?",
+  "options": {
+   "A": "Replication  ",
+   "B": "Retention  ",
+   "C": "Encryption  ",
+   "D": "Schedule "
+  },
+  "answer": "A",
+  "choose": "all",
+  "domain": 3,
+  "domainName": "Operations",
+  "explanations": {
+   "A": "Correct: replication continuously copies data to another region, enabling recovery within a short RPO like one hour.",
+   "B": "Retention defines how long backups are kept, not how quickly data can be recovered after a disaster.",
+   "C": "Encryption protects data confidentiality, unrelated to RPO/recovery speed across regions.",
+   "D": "Scheduling alone (e.g. periodic backups) may not meet a tight one-hour RPO as well as continuous replication."
+  }
+ },
+ {
+  "number": 140,
+  "stem": "A database administrator performs a full backup periodically and keeps several versions in a cloud instance with increasing storage costs. Which of the following should the administrator consider doing to manage backup retention?",
+  "options": {
+   "A": "Classify backup files based on the sensitivity of data.  ",
+   "B": "Set up a time frame for the deletion of old backup files.  ",
+   "C": "Identify the need for granular and/or bulk recovery.  ",
+   "D": "Determine whether a differential backup will satisfy the operational needs. "
+  },
+  "answer": "B",
+  "choose": "all",
+  "domain": 3,
+  "domainName": "Operations",
+  "explanations": {
+   "A": "Classifying by sensitivity affects security handling, not directly the growing storage cost from retained versions.",
+   "B": "Correct: setting a retention time frame and deleting old backups directly reduces the accumulating storage costs.",
+   "C": "Identifying granular vs bulk recovery needs affects backup strategy design, not directly current storage cost buildup.",
+   "D": "Switching to differential backups changes backup type/size but doesn't address managing how long versions are retained."
+  }
+ },
+ {
+  "number": 141,
+  "stem": "A cloud administrator is provisioning infrastructure to run an application with the following requirements: • Ten midsize instances need to run as a cluster most of the day. • Sixteen midsize instances are required during peak hours. • Costs must be kept low. • The instances must be deployed in an IaaS model. • The application has no tolerance for service disruptions. Which of the following steps should the cloud architect take to host the application?",
+  "options": {
+   "A": "Reserve 16 instances but turn off the unused instances outside of peak hours.  ",
+   "B": "Use ten pay-as-you-go instances and add six spot instances during peak hours.  ",
+   "C": "Deploy reserved instances for normal operation and add pay-as-you-go instances during peak hours.  ",
+   "D": "Configure the workload to use spot instances with scheduled scaling for normal operation, including peak hours."
+  },
+  "answer": "C",
+  "choose": "all",
+  "domain": 1,
+  "domainName": "Cloud Architecture",
+  "explanations": {
+   "A": "Reserving 16 and turning off unused instances still incurs cost inefficiency versus mixing pricing models for baseline vs peak.",
+   "B": "Pay-as-you-go for baseline plus spot for peaks risks disruption since spot instances can be reclaimed, conflicting with the no-disruption-tolerance requirement.",
+   "C": "Correct: using reserved instances for the guaranteed baseline (cost savings for steady use) plus pay-as-you-go for peak hours (flexible, reliable) balances cost and the no-disruption requirement.",
+   "D": "Spot instances can be interrupted at any time, unsuitable for a workload with zero tolerance for service disruption."
+  }
+ },
+ {
+  "number": 142,
+  "stem": "An IT manager is planning a cloud deployment for a new company. The company does not want on-premises servers or applications. Which of the following is the best approach for the manager to take?",
+  "options": {
+   "A": "Colocation — PaaS  ",
+   "B": "Implementation — SaaS  ",
+   "C": "Migration — IaaS  ",
+   "D": "Hybrid — XaaS "
+  },
+  "answer": "B",
+  "choose": "all",
+  "domain": 2,
+  "domainName": "Deployment",
+  "explanations": {
+   "A": "Colocation still involves managing physical or leased hardware presence, conflicting with 'no on-premises servers'.",
+   "B": "Correct: SaaS implementation delivers a fully managed application with no on-prem infrastructure needed, matching the requirement.",
+   "C": "IaaS migration still requires managing VMs/OS, which is more infrastructure responsibility than wanted.",
+   "D": "A hybrid approach implies retaining some on-premises component, contradicting the stated requirement."
+  }
+ },
+ {
+  "number": 143,
+  "stem": "An on-call cloud engineer receives a critical alert about an e-commerce web server being unresponsive. Which of the following steps should the engineer take first?",
+  "options": {
+   "A": "Triage  ",
+   "B": "Remediation  ",
+   "C": "Escalation  ",
+   "D": "Monitoring "
+  },
+  "answer": "A",
+  "choose": "all",
+  "domain": 3,
+  "domainName": "Operations",
+  "explanations": {
+   "A": "Correct: incident response starts with triage, assessing severity/impact before acting.",
+   "B": "Remediation/fixing comes after triage confirms scope and priority.",
+   "C": "Escalation only happens once triage determines the issue exceeds the engineer's ability to resolve.",
+   "D": "Monitoring already generated the alert; it's not the next action step."
+  }
+ },
+ {
+  "number": 144,
+  "stem": "Which of the following files should be used to install software with a package manager?",
+  "options": {
+   "A": "package.json  ",
+   "B": "package.zip  ",
+   "C": "package.deb  ",
+   "D": "package.tar "
+  },
+  "answer": "C",
+  "choose": "all",
+  "domain": 2,
+  "domainName": "Deployment",
+  "explanations": {
+   "A": "package.json is a Node.js/npm project manifest, not an installable package for a system package manager.",
+   "B": "package.zip is a generic archive, not a format package managers (apt/dpkg) recognize.",
+   "C": "Correct: .deb is the Debian/Ubuntu package format installed via dpkg/apt.",
+   "D": "package.tar is just a tarball, not a package-manager-native format."
+  }
+ },
+ {
+  "number": 145,
+  "stem": "An application that is running on containers writes files to the operating system after processing data. The produced output files are stored under /project-files owned by root. A cloud engineer needs to make sure no output files are owned by root. Which of the following actions should the engineer take to best achieve this objective?",
+  "options": {
+   "A": "Mount the volume in Docker using --user=myapp.  ",
+   "B": "Add USER myapp to the Dockerfile and rebuild the container.  ",
+   "C": "Run chown myapp:myapp /project-files with cron every minute.",
+   "D": "Modify the container application to execute sudo -u myapp myapp. "
+  },
+  "answer": "B",
+  "choose": "all",
+  "domain": 5,
+  "domainName": "DevOps Fundamentals",
+  "explanations": {
+   "A": "Mounting with --user only affects the runtime user for that container run, not a permanent fix baked into the image; less reliable than rebuilding.",
+   "B": "Correct: adding USER myapp to the Dockerfile makes the container run as a non-root user by default so output files are owned by myapp, not root.",
+   "C": "Running chown via cron is a reactive workaround that leaves a window of root-owned files and adds unnecessary complexity.",
+   "D": "Modifying the app to call sudo -u still requires root privileges to invoke sudo, defeating the purpose."
+  }
+ },
+ {
+  "number": 146,
+  "stem": "A cloud engineer is receiving multiple alerts from the infrastructure monitoring agent. The alerts state that all the VMs in the public subnet are at 100% CPU utilization. However, when the engineer checks the network utilization of the VMs, the network throughput is at normal levels. Which of the following is the most likely cause of this issue?",
+  "options": {
+   "A": "Ransomware  ",
+   "B": "Cryptojacking  ",
+   "C": "DDoS  ",
+   "D": "Zombie instances "
+  },
+  "answer": "B",
+  "choose": "all",
+  "domain": 4,
+  "domainName": "Security",
+  "explanations": {
+   "A": "Ransomware typically causes disk/file activity and ransom notes, not pure CPU spikes with normal network traffic.",
+   "B": "Correct: cryptojacking uses hijacked CPU cycles to mine cryptocurrency, causing high CPU with normal network usage.",
+   "C": "DDoS would show abnormally high network throughput, which contradicts the normal network utilization observed.",
+   "D": "Zombie/orphaned instances waste cost but don't typically cause spiking CPU with a consistent pattern like mining does."
+  }
+ },
+ {
+  "number": 147,
+  "stem": "A cloud engineer is implementing a deployment strategy with the following requirements: • At least two environments for production and development must be supported. • Changes in one environment must not impact the other environment. • The highest possible availability must be achieved. Which of the following deployment strategies should the engineer implement?",
+  "options": {
+   "A": "Rolling  ",
+   "B": "Blue-green  ",
+   "C": "In-place  ",
+   "D": "Canary "
+  },
+  "answer": "B",
+  "choose": "all",
+  "domain": 2,
+  "domainName": "Deployment",
+  "explanations": {
+   "A": "Rolling updates gradually replace instances but both versions share the same environment, risking cross-impact.",
+   "B": "Correct: blue-green uses two fully separate environments, so changes in one don't affect the other, and cutover gives high availability.",
+   "C": "In-place deployment updates the same environment directly, causing downtime and impacting the live environment.",
+   "D": "Canary releases to a subset of users within the same environment, not fully isolated environments."
+  }
+ },
+ {
+  "number": 148,
+  "stem": "A cloud solutions architect needs to deploy a simple, public-facing website with the following requirements: • Cost-effective • Highly available • Self-healing • Secure Which of the following will be the most appropriate template to use?",
+  "options": {
+   "A": "    ",
+   "B": "",
+   "C": "    ",
+   "D": "    "
+  },
+  "answer": "D",
+  "choose": "all",
+  "domain": 2,
+  "domainName": "Deployment",
+  "explanations": {
+   "A": "Not the best fit: this template option lacks the automated scaling/self-healing needed for the given requirements.",
+   "B": "Not the best fit: without self-healing and HA automation, this option fails the availability requirement.",
+   "C": "Not the best fit: doesn't provide the combination of cost efficiency and automatic recovery required.",
+   "D": "Correct: this template (e.g., static hosting + CDN + auto-scaling/managed service) best balances cost, availability, self-healing, and security for a simple public site."
+  }
+ },
+ {
+  "number": 149,
+  "stem": "Which of the following interfaces is most commonly used for SSDs but not for HDDs?",
+  "options": {
+   "A": "NVMe",
+   "B": "Serial-attached SCSI  ",
+   "C": "SATA  ",
+   "D": "iSCSI "
+  },
+  "answer": "A",
+  "choose": "all",
+  "domain": 1,
+  "domainName": "Cloud Architecture",
+  "explanations": {
+   "A": "Correct: NVMe is a high-speed interface/protocol designed specifically for flash/SSD storage over PCIe, not used with HDDs.",
+   "B": "SAS (Serial-attached SCSI) is used with both SSDs and HDDs, especially in enterprise storage.",
+   "C": "SATA is used with both SSDs and traditional HDDs.",
+   "D": "iSCSI is a network storage protocol, used with both SSD- and HDD-backed storage over IP, not SSD-specific."
+  }
+ },
+ {
+  "number": 150,
+  "stem": "Which of the following is the most common characteristic of SSDs?",
+  "options": {
+   "A": "SSDs are less expensive than spinning disks.  ",
+   "B": "SSDs have small storage capacities.  ",
+   "C": "SSDs can be used for high-IOP applications.  ",
+   "D": "SSDs are used mostly in cold storage. "
+  },
+  "answer": "C",
+  "choose": "all",
+  "domain": 1,
+  "domainName": "Cloud Architecture",
+  "explanations": {
+   "A": "SSDs are generally more expensive per GB than spinning HDDs, not less.",
+   "B": "SSDs come in a range of capacities and aren't inherently limited to small sizes.",
+   "C": "Correct: SSDs excel at high-IOPS workloads due to fast random access with no moving parts.",
+   "D": "SSDs are used for performance-sensitive hot data, not cold/archive storage where cost-per-GB matters more."
+  }
+ },
+ {
+  "number": 151,
+  "stem": "A company experienced a data leak through its website. A security engineer, who is investigating the issue, runs a vulnerability scan against the website and receives the following output: Which of the following is the most likely cause of this leak?",
+  "options": {
+   "A": "RTMP port open  ",
+   "B": "SQL injection  ",
+   "C": "Privilege escalation  ",
+   "D": "Insecure protocol "
+  },
+  "answer": "D",
+  "choose": "all",
+  "domain": 4,
+  "domainName": "Security",
+  "explanations": {
+   "A": "An open RTMP port relates to media streaming, not typically the cause of a data leak from a website.",
+   "B": "SQL injection is a specific attack vector but the scenario points to a broader insecure protocol finding, not injection specifically.",
+   "C": "Privilege escalation involves gaining higher permissions, not directly leaking data via a scan finding.",
+   "D": "Correct: an insecure protocol (e.g., unencrypted HTTP) exposes data in transit, matching a vulnerability scan finding tied to a data leak."
+  }
+ },
+ {
+  "number": 152,
+  "stem": "A cloud developer receives a security vulnerability scan report and needs to analyze and record the true positives. Which of the following vulnerability management steps is this an example of?",
+  "options": {
+   "A": "Assessment  ",
+   "B": "Identification  ",
+   "C": "Scanning scope  ",
+   "D": "Remediation"
+  },
+  "answer": "A",
+  "choose": "all",
+  "domain": 4,
+  "domainName": "Security",
+  "explanations": {
+   "A": "Correct: assessment is the step where scan results are analyzed to confirm true positives and prioritize findings.",
+   "B": "Identification is discovering that vulnerabilities/assets exist, occurring before detailed analysis.",
+   "C": "Scanning scope defines what will be scanned, which happens before results are analyzed.",
+   "D": "Remediation is fixing confirmed issues, which comes after assessment, not the analysis step itself."
+  }
+ },
+ {
+  "number": 153,
+  "stem": "A company recently experienced a ransomware attack. The recovery process was slow because the on-site backups were compromised and off-site backups were required. Which of the following features would enable a faster recovery if a ransomware attack would happen again?",
+  "options": {
+   "A": "Integrity  ",
+   "B": "Encryption  ",
+   "C": "Immutability  ",
+   "D": "Replication "
+  },
+  "answer": "C",
+  "choose": "all",
+  "domain": 3,
+  "domainName": "Operations",
+  "explanations": {
+   "A": "Integrity checks verify data hasn't changed but don't prevent or speed recovery from ransomware encryption.",
+   "B": "Encryption protects confidentiality but doesn't stop backups from being encrypted/corrupted by ransomware.",
+   "C": "Correct: immutable backups can't be altered or deleted by ransomware, ensuring a clean recovery copy is always available.",
+   "D": "Replication copies data to another location but if not immutable, ransomware can still corrupt/encrypt the replica too."
+  }
+ },
+ {
+  "number": 154,
+  "stem": "A SaaS provider introduced new software functionality for customers as part of quarterly production enhancements. After an update is implemented, users cannot locate certain transactions from an inbound integration. During the investigation, the application owner finds the following error in the logs: Error: REST API - Deprecated call is no longer supported in this release. Which of the following is the best action for the application owner to take to resolve the issue?",
+  "options": {
+   "A": "Update the custom integration to use a supported function.  ",
+   "B": "Include the custom integration in the quarterly testing scope.  ",
+   "C": "Ask the users to monitor the quarterly updates.  ",
+   "D": "Revert the application to the last stable quarterly release. "
+  },
+  "answer": "A",
+  "choose": "all",
+  "domain": 3,
+  "domainName": "Operations",
+  "explanations": {
+   "A": "Correct: the log shows a deprecated API call, so the fix is to update the custom integration to a supported function.",
+   "B": "Including it in future testing scope helps prevent recurrence but doesn't fix the current broken integration.",
+   "C": "Asking users to monitor updates doesn't resolve the technical break in the integration.",
+   "D": "Reverting the whole application loses the new functionality and isn't practical for a SaaS platform update."
+  }
+ },
+ {
+  "number": 155,
+  "stem": "A developer is building a tool on the cloud that needs to allow other developers to programmatically read and write to the web application resources. Which of the following should the developer do to meet these requirements with the least complexity?",
+  "options": {
+   "A": "Build a REST API endpoint.  ",
+   "B": "Allow access via the cloud portal.  ",
+   "C": "Provision cloud-based SQL access.  ",
+   "D": "Implement RPC on the web application. "
+  },
+  "answer": "A",
+  "choose": "all",
+  "domain": 5,
+  "domainName": "DevOps Fundamentals",
+  "explanations": {
+   "A": "Correct: a REST API is the simplest, standard way to let other developers programmatically read/write resources with least complexity.",
+   "B": "The cloud portal is a manual GUI interface, not suited for programmatic access.",
+   "C": "Direct SQL access exposes the database layer, adding complexity and security risk versus an API abstraction.",
+   "D": "RPC adds more complexity (custom protocols/stubs) compared to a standard REST API."
+  }
+ },
+ {
+  "number": 156,
+  "stem": "Users report being unable to access an application that uses TLS 1.1. The users are able to access other applications on the internet. Which of the following is the most likely reason for this issue?",
+  "options": {
+   "A": "The security team modified user permissions.  ",
+   "B": "Changes were made to address vulnerabilities.  ",
+   "C": "Privileged access was implemented.  ",
+   "D": "The network ACL was modified. "
+  },
+  "answer": "B",
+  "choose": "all",
+  "domain": 4,
+  "domainName": "Security",
+  "explanations": {
+   "A": "Permission changes wouldn't cause a protocol-version-specific failure like TLS 1.1.",
+   "B": "Correct: TLS 1.1 is deprecated/vulnerable, so security teams often disable it, breaking apps still relying on it.",
+   "C": "Privileged access implementation is unrelated to a TLS version compatibility issue.",
+   "D": "Network ACL changes control traffic by IP/port, not TLS protocol version negotiation."
+  }
+ },
+ {
+  "number": 157,
+  "stem": "A customer is migrating applications to the cloud and wants to grant authorization using the classification levels of each system. Which of the following should the customer implement to ensure authorization to systems is granted when the user and system classification properties match? (Choose two.)",
+  "options": {
+   "A": "Resource tagging  ",
+   "B": "Single sign-on  ",
+   "C": "Multifactor authentication  ",
+   "D": "Attribute-based access control  ",
+   "E": "Token-based authentication  ",
+   "F": "Bastion host "
+  },
+  "answer": "AD",
+  "choose": "all",
+  "domain": 4,
+  "domainName": "Security",
+  "explanations": {
+   "A": "Correct: resource tagging with classification labels lets systems be matched by classification level.",
+   "B": "SSO simplifies login across systems but doesn't grant authorization based on classification matching.",
+   "C": "MFA strengthens authentication, not classification-based authorization.",
+   "D": "Correct: attribute-based access control (ABAC) grants access by matching user and resource attributes/classifications.",
+   "E": "Token-based authentication verifies identity, not classification-based authorization matching.",
+   "F": "A bastion host provides secure jump access, unrelated to classification-based authorization."
+  }
+ },
+ {
+  "number": 158,
+  "stem": "A vulnerability exists on a critical cloud server. The cloud administrator needs to resolve the issue with minimal interruptions. Which of the following should the administrator do next?",
+  "options": {
+   "A": "Perform a patch installation during lunchtime.  ",
+   "B": "Run a vulnerability scan.  ",
+   "C": "Install major updates after business hours.  ",
+   "D": "Apply fixes in the testing environment. "
+  },
+  "answer": "D",
+  "choose": "all",
+  "domain": 3,
+  "domainName": "Operations",
+  "explanations": {
+   "A": "Patching during lunchtime still risks live-service interruption on a critical server.",
+   "B": "A vulnerability scan is diagnostic and doesn't resolve the vulnerability itself.",
+   "C": "Installing major updates after hours still directly touches the critical live system.",
+   "D": "Correct: applying and validating fixes in a test environment first minimizes interruption risk to the critical live server."
+  }
+ },
+ {
+  "number": 159,
+  "stem": "A bank was recently hacked. The bank reviews the logs to see how the attack occurred. The security administrator suspects the logs were manipulated because no traces of the attack can be found in them. Which of the following should have been enabled before the attack occurred?",
+  "options": {
+   "A": "Metric and alerts  ",
+   "B": "Tracing and aggregation  ",
+   "C": "Dashboard and reporting",
+   "D": "Versioning and immutability "
+  },
+  "answer": "D",
+  "choose": "all",
+  "domain": 3,
+  "domainName": "Operations",
+  "explanations": {
+   "A": "Metrics and alerts show performance data, not protection against log tampering.",
+   "B": "Tracing and aggregation help correlate events but don't prevent logs from being altered.",
+   "C": "Dashboards and reporting visualize data but don't protect against manipulation.",
+   "D": "Correct: versioning and immutability prevent logs from being altered or deleted, preserving forensic evidence."
+  }
+ },
+ {
+  "number": 160,
+  "stem": "Which of the following is the best tool to deploy template-based, containerized workloads on premises and on the cloud?",
+  "options": {
+   "A": "Docker  ",
+   "B": "Terraform  ",
+   "C": "Jenkins  ",
+   "D": "Git "
+  },
+  "answer": "B",
+  "choose": "all",
+  "domain": 5,
+  "domainName": "DevOps Fundamentals",
+  "explanations": {
+   "A": "Docker builds/runs individual containers but isn't primarily a cross-platform deployment templating tool.",
+   "B": "Correct: Terraform uses declarative templates (IaC) to deploy consistent infrastructure/workloads on-prem and in the cloud.",
+   "C": "Jenkins is a CI/CD automation server, not a template-based deployment/provisioning tool.",
+   "D": "Git is a version control system, not a deployment tool for containerized workloads."
+  }
+ },
+ {
+  "number": 161,
+  "stem": "A healthcare provider contacts a MSP about moving an on-premises infrastructure to the cloud. Which of the following requirements are most important for the MSP to consider when migrating this customer? (Choose two.)",
+  "options": {
+   "A": "Security  ",
+   "B": "Cost  ",
+   "C": "Availability  ",
+   "D": "Storage  ",
+   "E": "Compliance  ",
+   "F": "Compute "
+  },
+  "answer": "AE",
+  "choose": "all",
+  "domain": 4,
+  "domainName": "Security",
+  "explanations": {
+   "A": "Correct: security is critical for healthcare data given sensitivity and threat exposure.",
+   "B": "Cost matters generally but isn't the top priority compared to security/compliance for healthcare data.",
+   "C": "Availability is important but secondary to regulatory/security concerns in this scenario.",
+   "D": "Storage is a technical detail, not a top-level migration priority driver.",
+   "E": "Correct: compliance (e.g., HIPAA) is essential for healthcare data handled by an MSP.",
+   "F": "Compute capacity is a technical sizing detail, not a primary migration consideration here."
+  }
+ },
+ {
+  "number": 162,
+  "stem": "A cloud engineer deploys two virtual machines and migrates a local web application and database, respectively. After the engineer updates the DNS records, the web application does not respond. Which of the following should the cloud engineer do to troubleshoot the issue?",
+  "options": {
+   "A": "Increase the size and throughput of the virtual machines to allow more concurrent sessions.  ",
+   "B": "Verify whether the operating systems in the virtual machines are compatible with the web application and database.  ",
+   "C": "Check to ensure the new web application server configuration file points to the correct database location.  ",
+   "D": "Repeat the migration to discard any inconsistencies during the data transfer. "
+  },
+  "answer": "C",
+  "choose": "all",
+  "domain": 6,
+  "domainName": "Troubleshooting",
+  "explanations": {
+   "A": "Sizing/throughput issues wouldn't cause a total non-response right after a DNS change; the symptom points to configuration.",
+   "B": "OS compatibility would typically surface at initial deployment, not specifically after a DNS update.",
+   "C": "Correct: verifying the app's config points to the correct (new) database location addresses the connectivity issue exposed after DNS cutover.",
+   "D": "Repeating the whole migration is excessive before checking a likely simple config pointer issue."
+  }
+ },
+ {
+  "number": 163,
+  "stem": "A cloud engineer is provisioning a new application that requires access to the organization’s public cloud resources. Which of the following is the best way for the cloud engineer to authenticate the application?",
+  "options": {
+   "A": "API key  ",
+   "B": "Cookie  ",
+   "C": "MFA  ",
+   "D": "Username and password "
+  },
+  "answer": "A",
+  "choose": "all",
+  "domain": 2,
+  "domainName": "Deployment",
+  "explanations": {
+   "A": "Correct: an API key is the standard, lightweight way for an application (machine) to authenticate to cloud APIs.",
+   "B": "Cookies are used for browser session state, not application-to-API authentication.",
+   "C": "MFA is designed for human user login, not automated application authentication.",
+   "D": "Username/password is less secure and not ideal for app-to-service authentication compared to API keys."
+  }
+ },
+ {
+  "number": 164,
+  "stem": "Which of the following protocols is often used in IoT to reduce the amount of data exchanged?",
+  "options": {
+   "A": "MQTT  ",
+   "B": "SMB  ",
+   "C": "NFS  ",
+   "D": "HTTPS "
+  },
+  "answer": "A",
+  "choose": "all",
+  "domain": 1,
+  "domainName": "Cloud Architecture",
+  "explanations": {
+   "A": "Correct: MQTT is a lightweight publish/subscribe protocol designed for low-bandwidth IoT messaging.",
+   "B": "SMB is a file-sharing protocol for Windows networks, heavier and not IoT-optimized.",
+   "C": "NFS is a network file system protocol, not suited for lightweight IoT messaging.",
+   "D": "HTTPS has more overhead (headers, handshake) than MQTT for constrained IoT devices."
+  }
+ },
+ {
+  "number": 165,
+  "stem": "A cloud solutions architect wants to deploy a three-tier web application that requires the minimum amount of operational overhead. Which of the following is the best template given these requirements?",
+  "options": {
+   "A": "    ",
+   "B": "",
+   "C": "    ",
+   "D": "    "
+  },
+  "answer": "B",
+  "choose": "all",
+  "domain": 2,
+  "domainName": "Deployment",
+  "explanations": {
+   "A": "Not the best fit: doesn't minimize operational overhead as effectively as the correct managed/IaC template option.",
+   "B": "Correct: this template (e.g., a managed PaaS-based or fully automated IaC template) minimizes operational overhead for a three-tier app.",
+   "C": "Not the best fit: requires more manual operational management than the correct option.",
+   "D": "Not the best fit: involves more overhead than the selected template approach."
+  }
+ },
+ {
+  "number": 166,
+  "stem": "Which of the following is the correct order of the steps to take when a system is suspected of being vulnerable?",
+  "options": {
+   "A": "Scanning scope, identification, assessment, and remediation  ",
+   "B": "Assessment, identification, scanning scope, and remediation  ",
+   "C": "Identification, scanning scope, assessment, and remediation  ",
+   "D": "Assessment, scanning scope, identification, and remediation "
+  },
+  "answer": "A",
+  "choose": "all",
+  "domain": 1,
+  "domainName": "Cloud Architecture",
+  "explanations": {
+   "A": "Correct: the standard order is scanning scope, identification, assessment, then remediation.",
+   "B": "Assessment before identification is out of order; you must identify before assessing.",
+   "C": "Identification before scanning scope is reversed; scope must be defined first to guide scanning.",
+   "D": "Assessment first is incorrect; scope and identification must precede assessment."
+  }
+ },
+ {
+  "number": 167,
+  "stem": "A software development team would like to test a new feature that was added to the company’s production website. The team would like to allow access to only a small number of users and then, in a controlled way, slowly increase the number of users who have access to the feature. Which of the following best describes the deployment strategy the software development team should use?",
+  "options": {
+   "A": "In-place  ",
+   "B": "Blue-green  ",
+   "C": "Canary  ",
+   "D": "Rolling "
+  },
+  "answer": "C",
+  "choose": "all",
+  "domain": 2,
+  "domainName": "Deployment",
+  "explanations": {
+   "A": "In-place deployment updates all instances directly with no gradual/controlled user exposure.",
+   "B": "Blue-green switches all traffic between two full environments at once, not a gradual user rollout.",
+   "C": "Correct: canary releases expose the feature to a small user subset first, then gradually increases exposure.",
+   "D": "Rolling updates replace server instances incrementally but doesn't specifically control user-facing feature exposure gradually by user count."
+  }
+ },
+ {
+  "number": 168,
+  "stem": "A cloud developer resigned from an organization and gave a two-week notice. Within the first week since the developer resigned, a security analyst identifies large volumes of file downloads to the developer’s laptop from the source code repository. Which of the following security controls would be the best way to mitigate the organization’s risk of data loss?",
+  "options": {
+   "A": "Implementing a policy to stop cloud developers from sharing passwords  ",
+   "B": "Preventing cloud developers from accessing the source code repository  ",
+   "C": "Updating outbound firewall rules to block the cloud developer’s IP address  ",
+   "D": "Blocking internet access for employees that resign from the organization  ",
+   "E": "Prohibiting files on the local drive from being transferred to USB drives "
+  },
+  "answer": "C",
+  "choose": "all",
+  "domain": 5,
+  "domainName": "DevOps Fundamentals",
+  "explanations": {
+   "A": "A password-sharing policy doesn't address the active exfiltration happening now.",
+   "B": "Fully preventing repo access might be too broad/slow to implement immediately and could disrupt legitimate offboarding tasks.",
+   "C": "Correct: blocking the departing developer's IP at the firewall immediately stops the ongoing outbound data exfiltration.",
+   "D": "Blocking general internet access is overly broad and not targeted at the specific exfiltration channel.",
+   "E": "Blocking USB transfer doesn't stop network-based downloads already occurring from the repository."
+  }
+ },
+ {
+  "number": 169,
+  "stem": "Which of the following facilitates the continuous deployment of cloud applications without performing a clean install on each iteration?",
+  "options": {
+   "A": "Debian package  ",
+   "B": "Version management  ",
+   "C": "Container image  ",
+   "D": "Bare-metal server "
+  },
+  "answer": "C",
+  "choose": "all",
+  "domain": 5,
+  "domainName": "DevOps Fundamentals",
+  "explanations": {
+   "A": "A Debian package is a static install artifact, not it self a continuous deployment update mechanism.",
+   "B": "Version management tracks code changes but doesn't handle runtime deployment without reinstalling.",
+   "C": "Correct: container images allow updated app versions to be deployed as new containers without a clean OS install each time.",
+   "D": "Bare-metal servers require full OS-level installs, the opposite of avoiding a clean install."
+  }
+ },
+ {
+  "number": 170,
+  "stem": "Which of the following container commands implements network port mapping?",
+  "options": {
+   "A": "$docker run –it myimage –e /bin/port 8080  ",
+   "B": "$docker run myimage:port  ",
+   "C": "$docker run –it –p 1-65535 myimage –e netstat 8080  ",
+   "D": "$docker run –it –p 80:8080 myimage "
+  },
+  "answer": "D",
+  "choose": "all",
+  "domain": 1,
+  "domainName": "Cloud Architecture",
+  "explanations": {
+   "A": "This uses -e (environment variable) syntax incorrectly for port mapping; it's not the port mapping flag.",
+   "B": "Using \"image:port\" as a tag format doesn't map network ports at all.",
+   "C": "This mixes an invalid range 1-65535 as an option syntax and misuses -e for netstat; not correct port mapping syntax.",
+   "D": "Correct: -p 80:8080 is the correct Docker syntax mapping host port 80 to container port 8080."
+  }
+ },
+ {
+  "number": 171,
+  "stem": "An organization’s large e-commerce website requires high availability and cannot have degraded performance. Which of the following should a cloud administrator do to best meet the requirements?",
+  "options": {
+   "A": "Create a secondary server and load balance the traffic.  ",
+   "B": "Upgrade the drives to SSD and change the storage tier.  ",
+   "C": "Add a secondary NIC and configure network teaming to the existing server.  ",
+   "D": "Change the type of CPU and adjust the RAM size. "
+  },
+  "answer": "A",
+  "choose": "all",
+  "domain": 1,
+  "domainName": "Cloud Architecture",
+  "explanations": {
+   "A": "Correct: adding a secondary server behind a load balancer provides redundancy and distributes traffic for high availability without single points of failure.",
+   "B": "Upgrading to SSD improves performance but doesn't address availability/redundancy needs.",
+   "C": "NIC teaming improves network resiliency on a single server but doesn't provide server-level redundancy.",
+   "D": "Changing CPU/RAM improves capacity but a single server remains a single point of failure."
+  }
+ },
+ {
+  "number": 172,
+  "stem": "A cloud engineer proposes a solution to migrate a finance application to the cloud. The environment can be shared to reduce costs. Which of the following models would best meet this requirement?",
+  "options": {
+   "A": "Private  ",
+   "B": "Community  ",
+   "C": "Public  ",
+   "D": "Hybrid "
+  },
+  "answer": "B",
+  "choose": "all",
+  "domain": 2,
+  "domainName": "Deployment",
+  "explanations": {
+   "A": "A private cloud is dedicated to one organization, not shared to reduce costs across multiple tenants.",
+   "B": "Correct: a community cloud is shared among organizations with common interests (e.g., finance sector), reducing costs via shared infrastructure.",
+   "C": "Public cloud is shared broadly with the general public, not tailored to a specific community's needs/compliance.",
+   "D": "Hybrid combines private and public, not specifically a shared-cost community model."
+  }
+ },
+ {
+  "number": 173,
+  "stem": "Which of the following types of storage is read-only and is accessed only when needed?",
+  "options": {
+   "A": "Cold  ",
+   "B": "Hot  ",
+   "C": "Warm  ",
+   "D": "Archive "
+  },
+  "answer": "D",
+  "choose": "all",
+  "domain": 1,
+  "domainName": "Cloud Architecture",
+  "explanations": {
+   "A": "Cold storage is infrequently accessed but is generally still read/write and not necessarily read-only.",
+   "B": "Hot storage is frequently accessed, the opposite of read-only/rarely accessed.",
+   "C": "Warm storage is accessed occasionally, more than archive tier, and isn't strictly read-only.",
+   "D": "Correct: archive storage is the lowest-cost, read-only tier accessed only rarely/when needed, e.g., for compliance retention."
+  }
+ },
+ {
+  "number": 174,
+  "stem": "A company has solid, validated border protection including a next-generation firewall and IPS. However, compromises and breaches continue. Which of the following is the best way to improve the company’s security controls and reduce the number of incidents?",
+  "options": {
+   "A": "Assess the border protection assets against a CIS benchmark and apply recommendations.  ",
+   "B": "Execute a network scan on the border protection and close ports that can be used by attackers.  ",
+   "C": "Shift the focus from border protection to a Zero Trust architecture focused on identities.  ",
+   "D": "Include a WAF on the network border, increasing protection and adopting security in layers. "
+  },
+  "answer": "C",
+  "choose": "all",
+  "domain": 4,
+  "domainName": "Security",
+  "explanations": {
+   "A": "Benchmarking existing perimeter tools helps tuning but doesn't address the root design flaw of relying solely on the border.",
+   "B": "Closing ports is a minor hardening step, not a fundamental fix to repeated breaches despite strong perimeter defenses.",
+   "C": "Correct: shifting to Zero Trust (verify every identity/request) addresses breaches that bypass perimeter defenses once inside the network.",
+   "D": "Adding a WAF still reinforces the same perimeter-based model that's already proving insufficient."
+  }
+ },
+ {
+  "number": 175,
+  "stem": "An administrator attempts to use a script to deploy a cloud-based virtual machine with five data disks. After running the script, the administrator sees the following message: ERROR: Response 403 storage API provisioning error Which of the following is the reason the deployment failed?",
+  "options": {
+   "A": "Permission issues  ",
+   "B": "Partial outage  ",
+   "C": "Functionality deprecation",
+   "D": "Sizing issues "
+  },
+  "answer": "A",
+  "choose": "all",
+  "domain": 6,
+  "domainName": "Troubleshooting",
+  "explanations": {
+   "A": "Correct: HTTP 403 indicates a permissions/authorization error preventing the storage API provisioning.",
+   "B": "A partial outage would typically show a 5xx server error, not a 403 permission-specific error.",
+   "C": "Deprecated functionality usually returns a different error (e.g., 410 Gone or deprecation notice), not 403.",
+   "D": "Sizing issues would usually surface as a quota/limit error, not a 403 permission error."
+  }
+ },
+ {
+  "number": 176,
+  "stem": "A cloud engineer tries to deploy five new cloud instances using code. An error occurs, and the instances are not created. The configuration fails to run. The engineer then receives the following error message: ERROR:Parse error on json line x in config Given the following snippet from the config.json file: { \"instance_count\": 5, \"ssd_options\" : [\"100GB\",\"200GB\",\"300GB\"], \"instance_region\": apac, \"instance_code\": 255, \"start_instance\" : true } Which of the following oversights created the error in the configuration file?",
+  "options": {
+   "A": "Incorrect instance_count  ",
+   "B": "Incorrect ssd_options  ",
+   "C": "Missing quotations on instance_region  ",
+   "D": "Missing trailing comma on start_instance "
+  },
+  "answer": "C",
+  "choose": "all",
+  "domain": 2,
+  "domainName": "Deployment",
+  "explanations": {
+   "A": "instance_count: 5 is a valid integer value, not the cause of the parse error.",
+   "B": "ssd_options is correctly formatted as a JSON array of quoted strings.",
+   "C": "Correct: instance_region: apac is missing quotation marks around the string value \"apac\", causing a JSON parse error.",
+   "D": "JSON does not use trailing commas after the last element; there being none is correct, not an error."
+  }
+ },
+ {
+  "number": 177,
+  "stem": "A company’s cybersecurity team receives the following alert that a production VM was deleted from the virtual network: 21 September 09:19:08 (GMT-5) Resource with ID: PROD-WEB001 was deleted by User: Logging Service The console to manage virtual network resources uses directory authentication. Only users in a particular directory group can interactively access the virtual network management console. The logging service account is not part of this group and requires some local administration privileges to aggregate logs from various resources. The cybersecurity team discovers that the logging service account was previously given full directory administration privileges and they see the following entry: 21 September 09:10:55 (GMT-5) User with ID: Logging Service was added to the Group: VNet Console Administrators by actor: Logging Service. The cybersecurity team removes the compromised service account from the directory group. Which of the following should the cybersecurity team do next to prevent repeat instances of this issue?",
+  "options": {
+   "A": "Enable two-factor authentication on the virtual network console.  ",
+   "B": "Reset the logging service account to use a long and complex password.  ",
+   "C": "Disable RDP on the production virtual machines.  ",
+   "D": "Create a scoped administrative role for the logging service account. "
+  },
+  "answer": "D",
+  "choose": "all",
+  "domain": 3,
+  "domainName": "Operations",
+  "explanations": {
+   "A": "2FA on the console helps but doesn't fix the root cause of the service account having overly broad group membership.",
+   "B": "A stronger password doesn't prevent the account from self-escalating privileges again if it still has broad access.",
+   "C": "Disabling RDP is unrelated; the incident involved directory/group privilege abuse, not RDP.",
+   "D": "Correct: creating a scoped admin role limits the logging service account to only the specific local admin rights it needs, following least privilege."
+  }
+ },
+ {
+  "number": 178,
+  "stem": "A systems engineer tries to mount an iSCSI LUN to a VM host in a data center, but the host does not discover any iSCSI targets. A sample of the switch configuration is shown in the following image: GigabitEthernet 1/0/1 description \"Development Network Uplink to VM Host A\" access vlan 24 GigabitEthernet 1/0/2 description \"Storage Network Uplink to VM Host A\" access vlan 24 spanning-tree portfast mtu 9216 GigabitEthernet 1/0/3 description \"Lights-Out Management VM Host A\" access vlan 20 spanning-tree portfast GigabitEthernet 1/0/4 description \"SAN Management Controller A\" access vlan 20 GigabitEthernet 1/0/5 description \"SAN Management Controller B\" access vlan 20 spanning-tree portfast GigabitEthernet 1/0/6 description \"SAN iSCSI Controller A\" access vlan 25 spanning-tree portfast GigabitEthernet 1/0/7 description \"SAN iSCSI Controller B™ access vlan 25 spanning-tree portfast Which of the following configuration changes would most likely resolve the discovery issues?",
+  "options": {
+   "A": "Disabling Gigabit Ethernet 1/0/7  ",
+   "B": "Changing the MTU on Gigabit Ethernet 1/0/2  ",
+   "C": "Changing the access VLAN for Gigabit Ethernet 1/0/2 to 25  ",
+   "D": "Enabling jumbo frames on Gigabit Ethernet 1/0/6 and Gigabit Ethernet 1/0/7 "
+  },
+  "answer": "C",
+  "choose": "all",
+  "domain": 1,
+  "domainName": "Cloud Architecture",
+  "explanations": {
+   "A": "Disabling a redundant SAN controller port would reduce resiliency and doesn't fix the discovery issue.",
+   "B": "MTU on the wrong port (Development Network) doesn't address why the storage VLAN can't be discovered.",
+   "C": "Correct: the storage uplink (Gig1/0/2) is misconfigured on VLAN 24 (Development) instead of VLAN 25 (Storage/iSCSI), so it can't reach iSCSI targets.",
+   "D": "Jumbo frames improve performance for iSCSI but won't fix connectivity if the port is on the wrong VLAN entirely."
+  }
+ },
+ {
+  "number": 179,
+  "stem": "A developer is sending requests to a SaaS application. The developer becomes unable to send anymore requests after sending a number of them, but other developers can still send requests. Which of the following is most likely causing the issue?",
+  "options": {
+   "A": "Partial outage  ",
+   "B": "API throttling  ",
+   "C": "Rate limiting  ",
+   "D": "Service quota"
+  },
+  "answer": "C",
+  "choose": "all",
+  "domain": 6,
+  "domainName": "Troubleshooting",
+  "explanations": {
+   "A": "A partial outage would affect multiple/all users, not just one developer while others work fine.",
+   "B": "API throttling slows/delays requests generally rather than fully blocking just one specific developer.",
+   "C": "Correct: rate limiting caps requests per user/key, so exceeding it blocks only that developer while others remain unaffected.",
+   "D": "A service quota is typically account/org-wide, which would likely affect all developers, not just one."
+  }
+ },
+ {
+  "number": 180,
+  "stem": "Which of the following has the most influence when determining the maximum data loss in the event of a disaster?",
+  "options": {
+   "A": "Recovery point objective  ",
+   "B": "Business continuity and disaster recovery  ",
+   "C": "Mean time to recover  ",
+   "D": "Recovery time objective "
+  },
+  "answer": "A",
+  "choose": "all",
+  "domain": 3,
+  "domainName": "Operations",
+  "explanations": {
+   "A": "Correct: RPO defines the maximum acceptable amount of data loss, measured as time since the last backup.",
+   "B": "BCDR is the overall planning discipline, not a specific metric for data loss amount.",
+   "C": "MTTR measures time to restore service, not amount of data lost.",
+   "D": "RTO defines acceptable downtime/recovery time, not data loss amount."
+  }
+ },
+ {
+  "number": 181,
+  "stem": "A cloud vendor notifies an administrator that the router version currently in use will no longer be made. Which of the following describes the stage the router has reached and what needs to be done?",
+  "options": {
+   "A": "The router has reached end of support. The router’s software should be updated.  ",
+   "B": "The router has reached end of support. The router should be replaced.  ",
+   "C": "The router has reached end of life. The router’s software should be updated.  ",
+   "D": "The router has reached end of life. The router should be replaced. "
+  },
+  "answer": "D",
+  "choose": "all",
+  "domain": 3,
+  "domainName": "Operations",
+  "explanations": {
+   "A": "End of support (not end of life) still means updates continue; this misidentifies the actual stage.",
+   "B": "End of support implies the vendor stops support but the product might still receive limited updates; discontinuation of the product itself is end of life.",
+   "C": "End of life would require replacement, not a software update, since the router itself is no longer made.",
+   "D": "Correct: a discontinued product line has reached end of life, meaning it should be replaced since no future versions/support exist."
+  }
+ },
+ {
+  "number": 182,
+  "stem": "Which of the following should be used on containers to process data and keep the output in files for later review?",
+  "options": {
+   "A": "Standard output  ",
+   "B": "Optical disk mount  ",
+   "C": "Ephemeral storage  ",
+   "D": "Persistent volumes "
+  },
+  "answer": "D",
+  "choose": "all",
+  "domain": 1,
+  "domainName": "Cloud Architecture",
+  "explanations": {
+   "A": "Standard output just streams logs to console; it isn't persisted to files for later review.",
+   "B": "Optical disk mounts are impractical and outdated for container storage needs.",
+   "C": "Ephemeral storage is lost when the container stops, unsuitable for retaining output for later review.",
+   "D": "Correct: persistent volumes retain container output files beyond the container's lifecycle for later review."
+  }
+ },
+ {
+  "number": 183,
+  "stem": "Users report that in-house developed software has performance issues and behaves in unexpected ways following a recent update. The developers investigate and find buffer overflows and broken authentications. Which of the following best describes what caused this issue?",
+  "options": {
+   "A": "Leaked credentials  ",
+   "B": "Poor coding practices  ",
+   "C": "Cipher suite depreciation",
+   "D": "Incompatible hardware "
+  },
+  "answer": "B",
+  "choose": "all",
+  "domain": 4,
+  "domainName": "Security",
+  "explanations": {
+   "A": "Leaked credentials cause unauthorized access, not buffer overflows or broken authentication logic in code.",
+   "B": "Correct: buffer overflows and broken authentication are classic symptoms of poor secure coding practices.",
+   "C": "Cipher suite deprecation affects encryption negotiation, not application-level bugs like buffer overflows.",
+   "D": "Incompatible hardware would cause crashes/compatibility errors, not application logic vulnerabilities like broken auth."
+  }
+ },
+ {
+  "number": 184,
+  "stem": "A public cloud environment customer wants to encrypt the data it puts in the cloud. However, the CSP prohibits customer encryption keys. Which of the following principles is the CSP violating?",
+  "options": {
+   "A": "Data ownership  ",
+   "B": "Data sovereignty  ",
+   "C": "Data classification  ",
+   "D": "Data retention "
+  },
+  "answer": "A",
+  "choose": "all",
+  "domain": 4,
+  "domainName": "Security",
+  "explanations": {
+   "A": "Correct: data ownership means the customer retains control (including encryption keys) over their own data; the CSP blocking customer keys violates this.",
+   "B": "Data sovereignty concerns which country's laws/jurisdiction govern the data, not key ownership.",
+   "C": "Data classification is about labeling sensitivity levels, not key management rights.",
+   "D": "Data retention concerns how long data is kept, unrelated to encryption key control."
+  }
+ },
+ {
+  "number": 185,
+  "stem": "Which of the following technologies can read the contents of a printed memo?",
+  "options": {
+   "A": "Document scanning  ",
+   "B": "Sentiment analysis  ",
+   "C": "Text recognition  ",
+   "D": "Natural language processing "
+  },
+  "answer": "C",
+  "choose": "all",
+  "domain": 6,
+  "domainName": "Troubleshooting",
+  "explanations": {
+   "A": "Document scanning just creates a digital image; it doesn't extract/read the text content itself.",
+   "B": "Sentiment analysis interprets emotional tone in text, not reading printed characters from an image.",
+   "C": "Correct: text recognition (OCR) reads and converts printed text in images/memos into machine-readable text.",
+   "D": "NLP processes and understands language meaning after text is already extracted, not the initial reading of printed characters."
+  }
+ },
+ {
+  "number": 186,
+  "stem": "A cloud service provider just launched a new serverless service that is compliant with all security regulations. A company deployed its code using the service, and the company’s application was hacked due to leaked credentials. Which of the following is responsible?",
+  "options": {
+   "A": "Customer  ",
+   "B": "Cloud service provider  ",
+   "C": "Hacker  ",
+   "D": "Code repository "
+  },
+  "answer": "A",
+  "choose": "all",
+  "domain": 4,
+  "domainName": "Security",
+  "explanations": {
+   "A": "Correct: under the shared responsibility model, the customer is responsible for securing credentials/code even on a compliant serverless platform.",
+   "B": "The CSP secures the underlying serverless infrastructure, which was compliant; the leak was from the customer's own credential handling.",
+   "C": "The hacker is the threat actor but not \"responsible\" in the accountability sense being asked about.",
+   "D": "The code repository is just a storage location, not the responsible party for credential leakage practices."
+  }
+ },
+ {
+  "number": 187,
+  "stem": "A cloud engineer is concerned about command-and-control (C2) communication out of a cloud network over HTTPS. Which of the following should the cloud engineer implement to most efficiently identify the type of communication?",
+  "options": {
+   "A": "Inline IPS  ",
+   "B": "Cloud flow logs",
+   "C": "Hourly cron listing connections  ",
+   "D": "Traffic mirroring "
+  },
+  "answer": "B",
+  "choose": "all",
+  "domain": 4,
+  "domainName": "Security",
+  "explanations": {
+   "A": "An inline IPS could inspect some traffic but is less efficient for broadly identifying flow patterns compared to flow logs.",
+   "B": "Correct: cloud flow logs efficiently capture metadata about network connections (including HTTPS flows) to identify suspicious C2-like patterns without full packet inspection.",
+   "C": "Manually running cron-based connection listings is inefficient and easy to miss short-lived C2 sessions.",
+   "D": "Traffic mirroring for full packet capture is resource-intensive and less efficient than using existing flow logs."
+  }
+ },
+ {
+  "number": 188,
+  "stem": "Two CVEs are discovered on servers in the company’s public cloud virtual network. The CVEs are listed as having an attack vector value of network and CVSS score of 9.0. Which of the following actions is the best way to mitigate the vulnerabilities?",
+  "options": {
+   "A": "Patching the operating systems  ",
+   "B": "Upgrading the operating systems to the latest beta  ",
+   "C": "Encrypting the operating system disks  ",
+   "D": "Disabling unnecessary open ports "
+  },
+  "answer": "A",
+  "choose": "all",
+  "domain": 4,
+  "domainName": "Security",
+  "explanations": {
+   "A": "Correct: patching the OS directly addresses the underlying vulnerabilities causing high CVSS-scored CVEs.",
+   "B": "Beta upgrades introduce instability and aren't intended for production vulnerability remediation.",
+   "C": "Disk encryption protects data at rest but doesn't remediate a network-vector vulnerability like these CVEs.",
+   "D": "Closing ports may reduce exposure but doesn't fix the underlying vulnerable software itself."
+  }
+ },
+ {
+  "number": 189,
+  "stem": "Which of the following cloud services has the highest level of vendor lock-in?",
+  "options": {
+   "A": "Object storage  ",
+   "B": "PaaS database  ",
+   "C": "Virtual machine  ",
+   "D": "File server "
+  },
+  "answer": "B",
+  "choose": "all",
+  "domain": 1,
+  "domainName": "Cloud Architecture",
+  "explanations": {
+   "A": "Object storage uses fairly standard APIs (e.g., S3-compatible) across many providers, giving lower lock-in.",
+   "B": "Correct: a PaaS database uses provider-specific proprietary APIs/engines, making migration to another vendor difficult (highest lock-in).",
+   "C": "Virtual machines are relatively portable across providers using standard OS images/hypervisors.",
+   "D": "File servers use standard protocols (SMB/NFS), which are broadly portable across vendors."
+  }
+ },
+ {
+  "number": 190,
+  "stem": "A cloud engineer is developing an operating expense report that will be used to purchase various cloud billing models for virtual machine instances. The cloud billing model must meet the following requirements: • The instance cannot be ephemeral. • The minimum life cycle of the instance is expected to be five years. • The software license is charged per physical CPU count. Which of the following best meets these requirements?",
+  "options": {
+   "A": "Dedicated host  ",
+   "B": "Spot instance  ",
+   "C": "Pay-as-you-go  ",
+   "D": "Resource metering "
+  },
+  "answer": "A",
+  "choose": "all",
+  "domain": 1,
+  "domainName": "Cloud Architecture",
+  "explanations": {
+   "A": "Correct: a dedicated host provides long-term, non-ephemeral capacity with per-physical-CPU licensing, matching the multi-year and licensing requirements.",
+   "B": "Spot instances are ephemeral and can be reclaimed, violating the non-ephemeral requirement.",
+   "C": "Pay-as-you-go is flexible/short-term billing, not aligned with a fixed 5-year, per-CPU licensing model.",
+   "D": "Resource metering is a billing measurement method, not a billing/instance model itself."
+  }
+ },
+ {
+  "number": 191,
+  "stem": "A system surpasses 75% to 80% of resource consumption. Which of the following scaling approaches is the most appropriate?",
+  "options": {
+   "A": "Trending  ",
+   "B": "Manual  ",
+   "C": "Load  ",
+   "D": "Scheduled "
+  },
+  "answer": "C",
+  "choose": "all",
+  "domain": 3,
+  "domainName": "Operations",
+  "explanations": {
+   "A": "Trending scaling reacts to long-term historical patterns, not an immediate threshold crossing.",
+   "B": "Manual scaling requires human intervention, which is slower than an automated threshold response.",
+   "C": "Correct: load-based (reactive) scaling triggers automatically once resource utilization crosses a threshold like 75-80%.",
+   "D": "Scheduled scaling is based on predicted time windows, not real-time resource consumption crossing a threshold."
+  }
+ },
+ {
+  "number": 192,
+  "stem": "A cloud administrator is troubleshooting an issue in which clients receive errors when connecting to an application server. The initial investigation shows the following: • The application is behind a load balancer. • The load balancer logs show connections being denied. • There are no security issues. • There are no infrastructure issues on the application servers. • All connected clients are working as expected. Which of the following would most likely cause the issue?",
+  "options": {
+   "A": "The application servers are running low on disk space.  ",
+   "B": "The load balancer is unable to connect to the application servers.  ",
+   "C": "The application is suffering from a memory leak.  ",
+   "D": "The service limit for the load balancer has been met. "
+  },
+  "answer": "D",
+  "choose": "all",
+  "domain": 4,
+  "domainName": "Security",
+  "explanations": {
+   "A": "Disk space on app servers wouldn't cause the load balancer itself to deny connections.",
+   "B": "If the LB couldn't reach app servers, backend health checks would fail, not necessarily show \"denied\" at the LB layer with servers reporting healthy.",
+   "C": "A memory leak would cause app-level errors/slowness, not LB-level connection denials with healthy infra.",
+   "D": "Correct: the load balancer's connection/service limit being reached explains it denying new connections despite healthy backend servers and clients."
+  }
+ },
+ {
+  "number": 193,
+  "stem": "A security engineer recently discovered a vulnerability in the operating system of the company VMs. The operations team reviews the issue and decides all VMs need to be updated from version 3.4.0 to 3.5.0. Which of the following best describes the type of update that will be applied?",
+  "options": {
+   "A": "Consistent  ",
+   "B": "Patch  ",
+   "C": "Minor  ",
+   "D": "Ephemeral "
+  },
+  "answer": "C",
+  "choose": "all",
+  "domain": 3,
+  "domainName": "Operations",
+  "explanations": {
+   "A": "\"Consistent\" isn't a standard versioning/update type terminology.",
+   "B": "A patch update (e.g., 3.4.0 to 3.4.1) addresses the third version digit, not this scenario's second digit change.",
+   "C": "Correct: incrementing the middle version number (3.4.0 to 3.5.0) is a minor version update, typically adding features/fixes without breaking compatibility.",
+   "D": "Ephemeral describes temporary resources, not a versioning/update type."
+  }
+ },
+ {
+  "number": 194,
+  "stem": "Which of the following costs would increase significantly for data transfer when comparing a multiregion to a single-region cloud platform design?",
+  "options": {
+   "A": "Storage",
+   "B": "Power and cooling  ",
+   "C": "Network  ",
+   "D": "Compliance and regulation "
+  },
+  "answer": "C",
+  "choose": "all",
+  "domain": 4,
+  "domainName": "Security",
+  "explanations": {
+   "A": "Storage costs scale with data volume, not significantly with cross-region architecture choice.",
+   "B": "Power and cooling costs are borne by the CSP, not directly billed based on region count to the customer.",
+   "C": "Correct: network/data transfer costs rise significantly with multi-region designs due to inter-region replication and traffic.",
+   "D": "Compliance/regulation costs relate to legal/audit requirements, not primarily driven by data transfer volume."
+  }
+ },
+ {
+  "number": 195,
+  "stem": "An organization decides to migrate its software source code framework to microservices. Which of the following correctly describes this new approach?",
+  "options": {
+   "A": "Public cloud-managed services  ",
+   "B": "Tightly coupled architecture  ",
+   "C": "Private cloud-managed services  ",
+   "D": "Loosely coupled architecture "
+  },
+  "answer": "D",
+  "choose": "all",
+  "domain": 1,
+  "domainName": "Cloud Architecture",
+  "explanations": {
+   "A": "Public cloud-managed services describes a deployment location/model, not the architectural coupling style of microservices.",
+   "B": "Tightly coupled architecture is the opposite of microservices, which favor independence between services.",
+   "C": "Private cloud-managed services describes hosting model, not the microservices architectural pattern itself.",
+   "D": "Correct: microservices use a loosely coupled architecture where services are independently deployable and communicate via APIs."
+  }
+ },
+ {
+  "number": 196,
+  "stem": "An organization is working to become compliant with industry regulations. An administrator needs to amend the organization’s existing log policy so that logs are available during the period in which the organization is audited. Which of the following should the administrator implement?",
+  "options": {
+   "A": "Log retention  ",
+   "B": "Log aggregation  ",
+   "C": "Log collection  ",
+   "D": "Log tracing "
+  },
+  "answer": "A",
+  "choose": "all",
+  "domain": 3,
+  "domainName": "Operations",
+  "explanations": {
+   "A": "Correct: log retention policies define how long logs are kept, ensuring they're available for the audit period.",
+   "B": "Log aggregation centralizes logs from multiple sources but doesn't determine how long they're retained.",
+   "C": "Log collection is the process of gathering logs, not specifying retention duration for audits.",
+   "D": "Log tracing follows requests across systems, unrelated to retention duration for compliance audits."
+  }
+ },
+ {
+  "number": 197,
+  "stem": "A company’s primary site experiences an outage and must recover as quickly as possible. Which of the following backup or recovery methods should the company use?",
+  "options": {
+   "A": "In-place  ",
+   "B": "Incremental  ",
+   "C": "Full  ",
+   "D": "Parallel "
+  },
+  "answer": "D",
+  "choose": "all",
+  "domain": 3,
+  "domainName": "Operations",
+  "explanations": {
+   "A": "In-place recovery reuses the same failed infrastructure, which may not be usable during an active outage.",
+   "B": "Incremental backups only contain changes since the last backup and require a base restore first, slowing full recovery.",
+   "C": "A full backup restore alone can be slow due to the need to restore complete large datasets.",
+   "D": "Correct: parallel recovery (running a standby/secondary site simultaneously) allows the fastest possible failover during an outage."
+  }
+ },
+ {
+  "number": 198,
+  "stem": "Which of the following is a protocol frequently used with IoT devices to communicate with a gateway?",
+  "options": {
+   "A": "ICMP  ",
+   "B": "MQTT  ",
+   "C": "RPC  ",
+   "D": "SSH "
+  },
+  "answer": "B",
+  "choose": "all",
+  "domain": 4,
+  "domainName": "Security",
+  "explanations": {
+   "A": "ICMP is used for diagnostics (e.g., ping), not typical IoT-to-gateway application messaging.",
+   "B": "Correct: MQTT is a lightweight pub/sub protocol commonly used by IoT devices to communicate with gateways.",
+   "C": "RPC is used for remote procedure calls between systems, not the common lightweight IoT-gateway protocol.",
+   "D": "SSH is a secure remote shell protocol, not typically used for lightweight IoT device-to-gateway telemetry."
+  }
+ },
+ {
+  "number": 199,
+  "stem": "Which of the following is used to quickly deploy applications across different cloud providers?",
+  "options": {
+   "A": "Snapshot  ",
+   "B": "Container image  ",
+   "C": "Serverless function  ",
+   "D": "VM template "
+  },
+  "answer": "B",
+  "choose": "all",
+  "domain": 1,
+  "domainName": "Cloud Architecture",
+  "explanations": {
+   "A": "A snapshot captures disk state at a point in time, less portable across differing cloud provider infrastructures.",
+   "B": "Correct: container images package the app and dependencies uniformly, enabling quick, consistent deployment across different cloud providers.",
+   "C": "Serverless functions are often provider-specific (proprietary runtime/APIs), limiting portability across clouds.",
+   "D": "VM templates are typically tied to a specific hypervisor/provider format, reducing cross-cloud portability."
+  }
+ },
+ {
+  "number": 200,
+  "stem": "A software development team must manage changes to source code for different clients who utilize the same product with different features. Which of the following meets this requirement?",
+  "options": {
+   "A": "Branch  ",
+   "B": "Commit  ",
+   "C": "Push  ",
+   "D": "Merge "
+  },
+  "answer": "A",
+  "choose": "all",
+  "domain": 4,
+  "domainName": "Security",
+  "explanations": {
+   "A": "Correct: branching lets developers maintain separate lines of code per client/feature set while sharing a common base product.",
+   "B": "A commit just records a change snapshot; it doesn't itself manage multiple parallel client variations.",
+   "C": "Push just uploads commits to a remote repo; it doesn't create separate management structures for client differences.",
+   "D": "Merge combines branches together, the opposite operation of maintaining separate per-client code variations."
+  }
+ },
+ {
+  "number": 201,
+  "stem": "Which of the following storage types requires immediate access to backup data in case of a disaster?",
+  "options": {
+   "A": "Archive  ",
+   "B": "Hot  ",
+   "C": "Cold  ",
+   "D": "Warm "
+  },
+  "answer": "B",
+  "choose": "all",
+  "domain": 3,
+  "domainName": "Operations",
+  "explanations": {
+   "A": "Archive storage has retrieval delays (hours), unsuitable for immediate disaster access.",
+   "B": "Correct: hot storage provides immediate, low-latency access needed for fast disaster recovery.",
+   "C": "Cold storage has slower retrieval times, not suited for immediate access needs.",
+   "D": "Warm storage has moderate retrieval latency, slower than hot tier for immediate access."
+  }
+ },
+ {
+  "number": 202,
+  "stem": "An organization is concerned that its IT help desk is receiving too many calls about password resets for various internal and external applications. The organization implements a SSO solution. Which of the following technologies should the cloud architect at the organization recommend implementing?",
+  "options": {
+   "A": "SAML  ",
+   "B": "LDAP  ",
+   "C": "Kerberos  ",
+   "D": "MFA "
+  },
+  "answer": "A",
+  "choose": "all",
+  "domain": 4,
+  "domainName": "Security",
+  "explanations": {
+   "A": "Correct: SAML is a standard protocol that enables SSO by exchanging authentication assertions between identity providers and applications, including external ones.",
+   "B": "LDAP is a directory access protocol, typically used internally, not the standard federation protocol for external app SSO.",
+   "C": "Kerberos is used mainly for internal network authentication (e.g., Active Directory), not typically for external web app SSO.",
+   "D": "MFA adds a second verification factor but doesn't itself provide single sign-on functionality."
+  }
+ },
+ {
+  "number": 203,
+  "stem": "A company is running a set of replica containers with image version 1. The company updates the image to version 2 and would like to replace some of the version 1 images with version 2. During the replacement process, a minimum percentage of version 1 replicas need to be kept running while starting image version 2 containers alongside them. Which of the following deployment methods is best given the company’s requirements?",
+  "options": {
+   "A": "In-place  ",
+   "B": "Rolling  ",
+   "C": "Upgrading  ",
+   "D": "Patching "
+  },
+  "answer": "B",
+  "choose": "all",
+  "domain": 2,
+  "domainName": "Deployment",
+  "explanations": {
+   "A": "In-place deployment overwrites containers directly without keeping a percentage of the old version running alongside.",
+   "B": "Correct: a rolling deployment gradually replaces old version replicas with new ones while maintaining a minimum percentage of the old version running throughout.",
+   "C": "\"Upgrading\" isn't a standard named deployment strategy term.",
+   "D": "\"Patching\" refers to applying fixes, not a container replica replacement strategy."
+  }
+ },
+ {
+  "number": 204,
+  "stem": "Which of the following is an auditing procedure that ensures service providers securely manage the data to protect the interests of the organization and the privacy of its clients?",
+  "options": {
+   "A": "CIS  ",
+   "B": "ITIL  ",
+   "C": "SOC2  ",
+   "D": "ISO 27001 "
+  },
+  "answer": "C",
+  "choose": "all",
+  "domain": 4,
+  "domainName": "Security",
+  "explanations": {
+   "A": "CIS provides security configuration benchmarks, not a client-data-protection auditing/attestation report.",
+   "B": "ITIL is an IT service management framework, not a data protection audit standard.",
+   "C": "Correct: SOC 2 is an auditing standard specifically assessing how service providers manage data security, availability, and privacy for clients.",
+   "D": "ISO 27001 is an information security management standard/certification, but SOC 2 specifically fits the auditing procedure description here."
+  }
+ },
+ {
+  "number": 205,
+  "stem": "Which of the following commands allows a developer to save changes in the remote repository?",
+  "options": {
+   "A": "git push  ",
+   "B": "git fetch  ",
+   "C": "git pull  ",
+   "D": "git commit "
+  },
+  "answer": "A",
+  "choose": "all",
+  "domain": 5,
+  "domainName": "DevOps Fundamentals",
+  "explanations": {
+   "A": "Correct: git push uploads local committed changes to the remote repository.",
+   "B": "git fetch downloads updates from remote without merging, not pushing changes.",
+   "C": "git pull fetches and merges remote changes into local, the opposite direction of saving local changes remotely.",
+   "D": "git commit saves changes locally only, not to the remote repository."
+  }
+ },
+ {
+  "number": 206,
+  "stem": "An independent security researcher discovers a potential vulnerability in a package. The vulnerability could lead to exposure. Which of the following is the first action the security researcher should take?",
+  "options": {
+   "A": "Uninstall the package to remove the threat.  ",
+   "B": "Write a blog post describing how the package vulnerability was discovered.  ",
+   "C": "Report the vulnerability to the package vendor’s security email.  ",
+   "D": "Open a public-facing issue on the vendor’s Git repository. "
+  },
+  "answer": "C",
+  "choose": "all",
+  "domain": 4,
+  "domainName": "Security",
+  "explanations": {
+   "A": "Uninstalling doesn't help other users of the package and isn't the researcher's first responsible step.",
+   "B": "Publicly blogging before disclosure could enable attackers to exploit the vulnerability before a fix exists.",
+   "C": "Correct: responsible disclosure means privately reporting to the vendor first so they can fix it before public exposure.",
+   "D": "Opening a public issue exposes the vulnerability to attackers before the vendor can patch it."
+  }
+ },
+ {
+  "number": 207,
+  "stem": "A cloud administrator needs to provide secure access within the cloud environment to an outsourced development company’s users who conduct business using personal laptops. The administrator needs to protect proprietary data from leaking or being copied on unauthorized devices. Which of the following mechanisms best fulfills these requirements?",
+  "options": {
+   "A": "VDI  ",
+   "B": "API  ",
+   "C": "VPN  ",
+   "D": "SSH "
+  },
+  "answer": "A",
+  "choose": "all",
+  "domain": 4,
+  "domainName": "Security",
+  "explanations": {
+   "A": "Correct: VDI keeps data and processing in the cloud/data center, so nothing is stored on personal laptops, preventing data leakage.",
+   "B": "An API doesn't provide interactive secure access with data-loss prevention for laptop-based users.",
+   "C": "A VPN extends network access to the laptop but data could still be downloaded/copied locally, risking leakage.",
+   "D": "SSH provides remote command-line access but doesn't prevent local copying of accessed data."
+  }
+ },
+ {
+  "number": 208,
+  "stem": "A software development team decides to use a code repository. Which of the following is the most likely reason for this decision?",
+  "options": {
+   "A": "Project management  ",
+   "B": "Version management  ",
+   "C": "Program management  ",
+   "D": "Change management "
+  },
+  "answer": "B",
+  "choose": "all",
+  "domain": 5,
+  "domainName": "DevOps Fundamentals",
+  "explanations": {
+   "A": "Project management concerns tasks/timelines, not why a code repository specifically is adopted.",
+   "B": "Correct: code repositories primarily provide version management, tracking changes and history of source code.",
+   "C": "Program management concerns coordinating multiple related projects, not the reason for using a code repository.",
+   "D": "Change management is a broader organizational process, not the specific technical reason for a code repository."
+  }
+ },
+ {
+  "number": 209,
+  "stem": "An organization is preparing for seasonal sales on its storefront web application. Which of the following approaches is best suited to meet this requirement with the minimal cost?",
+  "options": {
+   "A": "Configuring a load balancer with a least-connections load-balancing method  ",
+   "B": "Enabling a scaling configuration for the identified timeline  ",
+   "C": "Reconfiguring the application to have more resources  ",
+   "D": "Deploying additional compute resources in advance to the web application pool"
+  },
+  "answer": "B",
+  "choose": "all",
+  "domain": 2,
+  "domainName": "Deployment",
+  "explanations": {
+   "A": "A load-balancing method change alone doesn't add capacity for a seasonal traffic surge.",
+   "B": "Correct: scheduled/scaling configuration for the known seasonal timeline adds capacity only when needed, minimizing cost.",
+   "C": "Permanently reconfiguring more resources keeps costs high year-round, not minimal cost.",
+   "D": "Deploying additional compute in advance and leaving it running incurs unnecessary cost outside the sales period."
+  }
+ },
+ {
+  "number": 210,
+  "stem": "Which of the following resources brings content near a geographic location for faster access?",
+  "options": {
+   "A": "Cloud bursting  ",
+   "B": "Region  ",
+   "C": "Edge computing  ",
+   "D": "Availability zone "
+  },
+  "answer": "C",
+  "choose": "all",
+  "domain": 1,
+  "domainName": "Cloud Architecture",
+  "explanations": {
+   "A": "Cloud bursting shifts overflow workload to public cloud, unrelated to geographic content proximity.",
+   "B": "A region is a broad geographic cloud location grouping, not specifically about bringing content near users for speed.",
+   "C": "Correct: edge computing/CDN brings content and processing physically closer to users for lower latency and faster access.",
+   "D": "An availability zone is a data center grouping within a region for redundancy, not specifically for edge content delivery."
+  }
+ },
+ {
+  "number": 211,
+  "stem": "An administrator deploys a VM with an additional data disk. A developer installs and configures a database application on the data disk. After using the VM to perform very intensive read-and-write operations, the developer reports that the VM seems sluggish. Which of the following solutions represents the least amount of work the administrator needs to do to fix the issue?",
+  "options": {
+   "A": "1. Create a new VM with more CPU and RAM. 2. Have the developer install and configure the database application.  ",
+   "B": "1. Stop the VM. 2. Change the data disk storage type to high performance. 3. Start the VM.  ",
+   "C": "1. Create a new VM with a high-performance data disk. 2. Have the developer install and configure the database application.  ",
+   "D": "1. Stop the VM. 2. Detach the data disk. 3. Create and attach a new high-performance data disk. 4. Start the VM. "
+  },
+  "answer": "B",
+  "choose": "all",
+  "domain": 2,
+  "domainName": "Deployment",
+  "explanations": {
+   "A": "Creating a larger VM and reinstalling the database is far more work than needed and does not target the disk I/O bottleneck that makes the VM sluggish.",
+   "B": "Changing only the data disk's storage type to high performance addresses the read/write bottleneck with the fewest steps (stop, change type, start) and no reinstall.",
+   "C": "Building a new VM with a high-performance disk still requires the developer to reinstall and reconfigure the database, which is more work than simply changing the disk type.",
+   "D": "Detaching and recreating the data disk adds unnecessary steps; the existing disk can be re-typed in place, so this is more work than option B."
+  }
+ },
+ {
+  "number": 212,
+  "stem": "Which of the following services is most appropriate for routing requests in front of a replica set of virtual machines that host multiple websites?",
+  "options": {
+   "A": "Forward proxy  ",
+   "B": "Content delivery network  ",
+   "C": "Layer 7 load balancer  ",
+   "D": "Web application firewall "
+  },
+  "answer": "C",
+  "choose": "all",
+  "domain": 1,
+  "domainName": "Cloud Architecture",
+  "explanations": {
+   "A": "A forward proxy handles outbound client traffic to the internet; it does not route inbound requests to a pool of backend VMs hosting websites.",
+   "B": "A CDN caches and delivers static content at the edge; it is not the primary mechanism for routing requests across a replica set of VMs by host/site.",
+   "C": "A Layer 7 (application) load balancer inspects HTTP and routes requests to the appropriate backend VMs based on host header, URL path, and health, ideal for multiple websites.",
+   "D": "A WAF filters malicious HTTP traffic for security but does not perform the load-distribution/routing function across a replica set."
+  }
+ },
+ {
+  "number": 213,
+  "stem": "Which of the following effects would a modification to the host affinity configuration in the cloud console have?",
+  "options": {
+   "A": "Hosts in a multicloud environment will run on the same host.",
+   "B": "A VM will run only on a particular underlying host or group of hosts.  ",
+   "C": "Host affinity configuration will have no effect in the cloud environment.  ",
+   "D": "An affinity rule will not disqualify hosts from being eligible to start. "
+  },
+  "answer": "B",
+  "choose": "all",
+  "domain": 1,
+  "domainName": "Cloud Architecture",
+  "explanations": {
+   "A": "Host affinity governs where a single VM is placed; it does not make hosts in a multicloud run on the same physical host.",
+   "B": "Host affinity (or an affinity rule) pins a VM to run only on a specific underlying host or group of hosts, which is its defined effect.",
+   "C": "Affinity configuration has a real scheduling effect; stating it has no effect is incorrect.",
+   "D": "An affinity rule does disqualify ineligible hosts from running the VM, so this statement is false."
+  }
+ },
+ {
+  "number": 214,
+  "stem": "Which of the following would a customer most likely be accountable for in a shared responsibility model?",
+  "options": {
+   "A": "Security of data in the data centers  ",
+   "B": "Security in the cloud  ",
+   "C": "Security of the application  ",
+   "D": "Security of the cloud "
+  },
+  "answer": "C",
+  "choose": "all",
+  "domain": 1,
+  "domainName": "Cloud Architecture",
+  "explanations": {
+   "A": "The physical security of data-center facilities is the cloud provider's responsibility under the shared responsibility model, not the customer's.",
+   "B": "'Security in the cloud' is the customer's broad domain, but the specific accountable item the question targets is the customer's own application.",
+   "C": "Under the shared responsibility model the customer is accountable for securing the applications (and data, OS, access) they deploy 'in the cloud.'",
+   "D": "'Security of the cloud' (the underlying infrastructure) is the provider's responsibility, not the customer's."
+  }
+ },
+ {
+  "number": 215,
+  "stem": "A cloud engineer needs to enable monitoring on a virtual machine instance within a cloud service provider. The engineer must monitor the resources related to the amount of memory an application is utilizing. Which of the following metrics should the engineer monitor for memory as it relates to disk performance?",
+  "options": {
+   "A": "Heap utilization  ",
+   "B": "Swap usage  ",
+   "C": "IOPS consumption  ",
+   "D": "Queue depth "
+  },
+  "answer": "B",
+  "choose": "all",
+  "domain": 3,
+  "domainName": "Operations",
+  "explanations": {
+   "A": "Heap utilization is an application-process memory metric and is not directly tied to disk performance.",
+   "B": "Swap usage reflects memory being paged to disk under pressure, directly linking memory behavior to disk I/O performance.",
+   "C": "IOPS measures disk operations, not memory consumption, so it does not indicate memory-related disk pressure.",
+   "D": "Queue depth shows disk I/O backlog but is not a memory metric."
+  }
+ },
+ {
+  "number": 216,
+  "stem": "An organization and its customer both signed an obligatory agreement that requires both parties to encrypt the data exchanged between the organization and the customer environment. Which of the following best describes this agreement?",
+  "options": {
+   "A": "Regulatory  ",
+   "B": "Litigation  ",
+   "C": "Contractual  ",
+   "D": "Subscription "
+  },
+  "answer": "C",
+  "choose": "all",
+  "domain": 1,
+  "domainName": "Cloud Architecture",
+  "explanations": {
+   "A": "Regulatory requirements come from laws/regulators, not from a bilateral agreement between two organizations.",
+   "B": "Litigation refers to legal disputes, not a mutual contractual obligation to encrypt data.",
+   "C": "A contractual agreement is a binding obligation signed by both parties, which is exactly what describes their mutual encryption requirement.",
+   "D": "A subscription is a service/payment plan, not an agreement to encrypt exchanged data."
+  }
+ },
+ {
+  "number": 217,
+  "stem": "Which of the following should be added to a SAN to decrease the amount of time it takes a server to back up in a private cloud?",
+  "options": {
+   "A": "Fibre Channel  ",
+   "B": "Kubernetes  ",
+   "C": "Clustering  ",
+   "D": "UDP "
+  },
+  "answer": "A",
+  "choose": "all",
+  "domain": 1,
+  "domainName": "Cloud Architecture",
+  "explanations": {
+   "A": "Fibre Channel is a high-throughput SAN fabric protocol; adding it reduces backup time by providing fast, dedicated storage networking.",
+   "B": "Kubernetes is a container orchestrator and is unrelated to accelerating SAN backup throughput.",
+   "C": "Clustering improves availability but does not by itself increase the SAN's backup transfer speed.",
+   "D": "UDP is a connectionless transport protocol and is not the technology used to speed up SAN backups."
+  }
+ },
+ {
+  "number": 218,
+  "stem": "An administrator migrates a legacy banking application from a private cloud to a public cloud. Then, the administrator discovers the application's hardware on the private cloud is no longer compatible for reuse. Which of the following should the administrator do next?",
+  "options": {
+   "A": "Perform a full system backup  ",
+   "B": "Apply the latest patches  ",
+   "C": "Extend support  ",
+   "D": "Decommission the infrastructure "
+  },
+  "answer": "D",
+  "choose": "all",
+  "domain": 3,
+  "domainName": "Operations",
+  "explanations": {
+   "A": "A full system backup is unnecessary once the workload has already been successfully migrated off the private cloud.",
+   "B": "Patching the old hardware is pointless because it is no longer compatible for reuse after migration.",
+   "C": "Extending support for unusable hardware adds cost with no benefit post-migration.",
+   "D": "Because the private-cloud hardware can no longer be reused, the correct next step is to decommission (retire/dispose of) that infrastructure."
+  }
+ },
+ {
+  "number": 219,
+  "stem": "A user's assigned cloud credentials are locked, and the user is unable to access the project's application. The cloud administrator reviews the logs and notices several attempts to log in with the user's account were made to a different application after working hours. Which of the following is the best approach for the administrator to troubleshoot this issue?",
+  "options": {
+   "A": "Create new credentials for the user and restrict access to the authorized application.  ",
+   "B": "Track the source of the log-in attempts using the WAF  ",
+   "C": "Reset the user's account and implement a stronger lock-out policy  ",
+   "D": "Install an IDS on the network to monitor suspicious activity "
+  },
+  "answer": "B",
+  "choose": "all",
+  "domain": 4,
+  "domainName": "Security",
+  "explanations": {
+   "A": "Issuing new credentials and restricting access remediates the symptom but does not investigate where the suspicious attempts originated.",
+   "B": "Tracking the source of the after-hours login attempts via the WAF identifies the attacker's origin and supports root-cause investigation.",
+   "C": "Resetting the account and tightening lockout policy is a remediation step but does not reveal the source of the attempts.",
+   "D": "An IDS monitors the network broadly, but the WAF is the more direct source of the application-layer login attempt logs."
+  }
+ },
+ {
+  "number": 220,
+  "stem": "A cloud engineer enables API access on a user account for automation on a SaaS-based tool. Which of the following is needed to authenticate with the REST API?",
+  "options": {
+   "A": "Client ID  ",
+   "B": "Password  ",
+   "C": "Workstation name  ",
+   "D": "Secret key  ",
+   "E": "Username",
+   "F": "Cookie "
+  },
+  "answer": "AD",
+  "choose": "all",
+  "domain": 4,
+  "domainName": "Security",
+  "explanations": {
+   "A": "A client ID identifies the application/automation account when authenticating to a REST API (e.g., OAuth2 client-credentials).",
+   "B": "A password is used for interactive user login, not the standard machine-to-API automation credential pair.",
+   "C": "Workstation name is not part of REST API authentication.",
+   "D": "A secret key (client secret) authenticates the client alongside the client ID for programmatic REST API access.",
+   "E": "A username is for human login, not the API automation credential set.",
+   "F": "A cookie represents a browser session, not the token-based auth used by REST API automation."
+  }
+ },
+ {
+  "number": 221,
+  "stem": "A managed service provider's recent business growth includes customers on different continents. Which of the following should be considered to prevent issues with regulations?",
+  "options": {
+   "A": "Data sovereignty  ",
+   "B": "Data ownership  ",
+   "C": "Classification of data  ",
+   "D": "Data locality "
+  },
+  "answer": "A",
+  "choose": "all",
+  "domain": 4,
+  "domainName": "Security",
+  "explanations": {
+   "A": "Data sovereignty requires that data comply with the laws of the country/region where it is stored, which is the key concern when serving customers on different continents.",
+   "B": "Data ownership concerns who controls the data, not the cross-border regulatory compliance issue described.",
+   "C": "Data classification labels sensitivity; it does not address differing national regulations.",
+   "D": "Data locality is the physical placement of data, but sovereignty is the legal/regulatory concept that prevents compliance issues."
+  }
+ },
+ {
+  "number": 222,
+  "stem": "A development team is ready to release the latest version of an application. Which of the following strategies best ensures successful deployment without impacting the bandwidth of company resources?",
+  "options": {
+   "A": "Blue-green  ",
+   "B": "A/В testing  ",
+   "C": "Rolling  ",
+   "D": "Shadow "
+  },
+  "answer": "C",
+  "choose": "all",
+  "domain": 2,
+  "domainName": "Deployment",
+  "explanations": {
+   "A": "Blue-green requires running a full duplicate environment, which doubles resource/bandwidth consumption during the release.",
+   "B": "A/B testing serves variant versions to subsets for comparison, not a strategy to minimize resource impact of a release.",
+   "C": "A rolling deployment replaces instances gradually in batches, avoiding duplicate environments and thus minimizing extra bandwidth/resource usage.",
+   "D": "Shadow deployment mirrors live traffic to a parallel version, adding load rather than minimizing it."
+  }
+ },
+ {
+  "number": 223,
+  "stem": "Unknown attackers targeted a bank’s website using HTTP flooding and infiltration via a SQL injection. Which of the following should the cloud engineer implement as a protection mechanism?",
+  "options": {
+   "A": "DLP  ",
+   "B": "IPS  ",
+   "C": "Security group  ",
+   "D": "WAF "
+  },
+  "answer": "D",
+  "choose": "all",
+  "domain": 4,
+  "domainName": "Security",
+  "explanations": {
+   "A": "DLP prevents sensitive-data exfiltration; it does not defend against HTTP floods or SQL injection.",
+   "B": "An IPS blocks network intrusions but is less suited to Layer-7 HTTP flooding and SQLi than a WAF.",
+   "C": "A security group is a stateful firewall for allow/deny rules; it does not inspect HTTP payloads for SQLi.",
+   "D": "A WAF operates at Layer 7 and specifically mitigates HTTP flooding and SQL injection attacks against the web application."
+  }
+ },
+ {
+  "number": 224,
+  "stem": "An engineer receives information about an application issue and reviews the events. The engineer decides to horizontally scale the application server. Which of the following would most likely explain the engineer's decision?",
+  "options": {
+   "A": "The web server reached the maximum number of TCP sessions.  ",
+   "B": "Ephemeral storage for the server OS reached 90%.",
+   "C": "A runtime error in the application logs indicated a bug in the application.  ",
+   "D": "The application server averages 50% CPU and spiked to 90% CPU. "
+  },
+  "answer": "A",
+  "choose": "all",
+  "domain": 3,
+  "domainName": "Operations",
+  "explanations": {
+   "A": "Reaching the maximum number of TCP sessions is a capacity limit best solved by horizontal scaling (adding more server instances).",
+   "B": "Ephemeral storage at 90% is a disk-space issue, not one resolved by adding application servers.",
+   "C": "A runtime bug is a code defect; scaling out will not fix the underlying application error.",
+   "D": "Average 50% CPU with a 90% spike is within normal variance and is better addressed by vertical or autoscaling, not the classic horizontal-scaling trigger of a session cap."
+  }
+ },
+ {
+  "number": 225,
+  "stem": "Which of the following concepts refers to edge computing?",
+  "options": {
+   "A": "Compute resources at a retail store sending data to the cloud  ",
+   "B": "Compute resources at a retail store analyzing point-of-sale transactions  ",
+   "C": "Compute resources in a public cloud data center analyzing recent sales data  ",
+   "D": "Compute resources in an on-premises data center analyzing quarterly sales reports "
+  },
+  "answer": "B",
+  "choose": "all",
+  "domain": 2,
+  "domainName": "Deployment",
+  "explanations": {
+   "A": "Sending data from the store to the cloud is the opposite of edge computing, which processes locally at the edge.",
+   "B": "Edge computing places compute at the location of data generation (e.g., a retail store analyzing POS transactions locally) to reduce latency and bandwidth.",
+   "C": "Analyzing data in a central public-cloud data center is centralized cloud computing, not edge computing.",
+   "D": "Analyzing reports in an on-premises data center is traditional centralized processing, not edge."
+  }
+ },
+ {
+  "number": 226,
+  "stem": "Which of the following is the most cost-effective compute service to deploy a service that will be infrequently used but will require fast response times?",
+  "options": {
+   "A": "Virtual machine  ",
+   "B": "Container  ",
+   "C": "Serverless  ",
+   "D": "Edge "
+  },
+  "answer": "C",
+  "choose": "all",
+  "domain": 1,
+  "domainName": "Cloud Architecture",
+  "explanations": {
+   "A": "A VM incurs always-on compute cost even when idle, so it is not the most cost-effective for infrequent use.",
+   "B": "A container still requires a continuously running host/orchestrator, adding baseline cost.",
+   "C": "Serverless (function-as-a-service) bills only per invocation and scales to zero, making it the most cost-effective for infrequent but fast-responding workloads.",
+   "D": "Edge computing is a location strategy, not a compute-billing model for infrequent workloads."
+  }
+ },
+ {
+  "number": 227,
+  "stem": "Which of the following storage types should be used to provide the highest IOPS?",
+  "options": {
+   "A": "Immutable  ",
+   "B": "HDD  ",
+   "C": "All flash  ",
+   "D": "Block "
+  },
+  "answer": "C",
+  "choose": "all",
+  "domain": 1,
+  "domainName": "Cloud Architecture",
+  "explanations": {
+   "A": "Immutable storage is write-once retention storage and is not a performance tier for IOPS.",
+   "B": "HDD (spinning disk) delivers the lowest IOPS of the listed options.",
+   "C": "All-flash (SSD-based) storage provides the highest IOPS due to no mechanical seek latency.",
+   "D": "Block is a storage access type (not a performance tier) that can be backed by HDD or SSD, so it is not inherently the highest IOPS."
+  }
+ },
+ {
+  "number": 228,
+  "stem": "A cloud engineer is creating a configuration standard to be used on all new cloud deployments. The document should include best practices designed by industry experts. Which of the following is the optimal way to complete this task?",
+  "options": {
+   "A": "Download the ISO 27001 certification document and certify the company’s deployment process.",
+   "B": "Verify the availability of a CIS benchmark for each in-scope technology  ",
+   "C": "Request from the management team a budget to initiate a SOC 2 attestation  ",
+   "D": "Invite professionals from the local IT community to contribute to the document "
+  },
+  "answer": "B",
+  "choose": "all",
+  "domain": 4,
+  "domainName": "Security",
+  "explanations": {
+   "A": "ISO 27001 is a management-system certification, not a technology-specific configuration hardening standard.",
+   "B": "CIS (Center for Internet Security) Benchmarks are vendor-specific, expert-written hardening guides—the optimal source for a configuration standard.",
+   "C": "SOC 2 is an audit attestation of controls, not a set of deployable configuration best practices.",
+   "D": "Inviting local IT community members produces inconsistent, non-authoritative guidance rather than industry-standard benchmarks."
+  }
+ },
+ {
+  "number": 229,
+  "stem": "Which of the following vulnerability management concepts is best defined as the process of discovering vulnerabilities?",
+  "options": {
+   "A": "Scanning  ",
+   "B": "Assessment  ",
+   "C": "Remediation  ",
+   "D": "Prioritization "
+  },
+  "answer": "A",
+  "choose": "all",
+  "domain": 4,
+  "domainName": "Security",
+  "explanations": {
+   "A": "Scanning is the active process of discovering/probing systems for vulnerabilities.",
+   "B": "Assessment is the broader evaluation that may include scanning, prioritization, and analysis.",
+   "C": "Remediation is the act of fixing found vulnerabilities, not discovering them.",
+   "D": "Prioritization is ranking vulnerabilities by risk after they are discovered."
+  }
+ },
+ {
+  "number": 230,
+  "stem": "An administrator configures three subnets to the corporate network. All servers should communicate with the main corporate network and access the internet. The administrator creates the following configurations: Corporate network: 192.168.0.0/24 Network 2: 192 168.10.0/24 Network 3: 192.168.11.0/24 Network 4: 192.168.12.0/24 After configuring the networks, the administrator recognizes an issue with the configuration. Which of the following can the administrator change in one step to accomplish the goal?",
+  "options": {
+   "A": "Remove source 192.168.12.0/24 and destination 192.168.1.0/24 from the routing table  ",
+   "B": "Replace destination 192.168.1.0/24 with destination 192.168.0.0/24  ",
+   "C": "Add source 192.168.12.0/24 and destination 192 168 0.0/24 to the routing table  ",
+   "D": "Reconfigure Network 4 to 192.168.13.0/24 "
+  },
+  "answer": "B",
+  "choose": "all",
+  "domain": 1,
+  "domainName": "Cloud Architecture",
+  "explanations": {
+   "A": "Removing a route to 192.168.1.0/24 does not fix the misconfigured destination that points to a non-existent network.",
+   "B": "The corporate network is 192.168.0.0/24, but the routing table references a non-existent 192.168.1.0/24; correcting the destination to 192.168.0.0/24 fixes reachability in one step.",
+   "C": "Adding a new route duplicates rather than correcting the erroneous 192.168.1.0/24 destination.",
+   "D": "Reconfiguring Network 4's address does not resolve the routing-table destination error to the corporate network."
+  }
+ },
+ {
+  "number": 231,
+  "stem": "A cloud engineer is selecting a model for a data center that will host a workload. The database must reside within the data center on the company's SAN solution. However, the workload will be hosted by a third-party vendor. Which of the following models should the cloud engineer select to meet these requirements?",
+  "options": {
+   "A": "Community  ",
+   "B": "Hybrid  ",
+   "C": "Public  ",
+   "D": "Private "
+  },
+  "answer": "B",
+  "choose": "all",
+  "domain": 2,
+  "domainName": "Deployment",
+  "explanations": {
+   "A": "A community cloud is shared by multiple organizations with a common concern, not a mix of on-prem and third-party hosting.",
+   "B": "Hybrid cloud combines an organization's own data center (private) with a third-party/public provider, matching a SAN-resident DB plus a vendor-hosted workload.",
+   "C": "Public cloud alone would not include the company's own on-premises SAN database.",
+   "D": "Private cloud alone would not include the third-party-hosted workload."
+  }
+ },
+ {
+  "number": 232,
+  "stem": "A new major version of a package installed on a VM was recently released. Which of the following should a cloud engineer do first before applying the upgrade?",
+  "options": {
+   "A": "Review for package dependencies  ",
+   "B": "Raise a change request  ",
+   "C": "Investigate for any breaking changes  ",
+   "D": "Verify that patching the VM will not reset user data "
+  },
+  "answer": "C",
+  "choose": "all",
+  "domain": 4,
+  "domainName": "Security",
+  "explanations": {
+   "A": "Reviewing dependencies matters, but the defining risk of a major version bump is breaking changes, which must be checked first.",
+   "B": "Raising a change request is process overhead that follows the technical evaluation.",
+   "C": "A major version upgrade risks breaking changes; investigating those first determines whether the upgrade is safe.",
+   "D": "Verifying that patching won't reset user data is a secondary check performed after assessing breaking changes."
+  }
+ },
+ {
+  "number": 233,
+  "stem": "A cloud engineer needs to choose a storage technology that fulfills the following requirements: • 99.99% durability • Resilient to instance failures • Resilient to instance deletions Which of the following types of storage is the best option?",
+  "options": {
+   "A": "Ephemeral  ",
+   "B": "Cache  ",
+   "C": "Persistent  ",
+   "D": "Local "
+  },
+  "answer": "C",
+  "choose": "all",
+  "domain": 3,
+  "domainName": "Operations",
+  "explanations": {
+   "A": "Ephemeral storage is tied to the instance lifecycle and is lost when the instance stops or is deleted.",
+   "B": "Cache storage is transient and not durable across failures.",
+   "C": "Persistent storage survives instance failures and deletions and is designed for high durability (e.g., 99.99%), meeting all three requirements.",
+   "D": "Local storage is physically attached to the instance and is lost if the instance is deleted."
+  }
+ },
+ {
+  "number": 234,
+  "stem": "A cloud engineering team recently built a new website to be hosted on a cloud server. However, the website is not loading. The team runs a troubleshooting command that provides the following output: Which of the following records would the team most likely add to resolve this issue?",
+  "options": {
+   "A": "MX",
+   "B": "A  ",
+   "C": "PTR  ",
+   "D": "SRV "
+  },
+  "answer": "B",
+  "choose": "all",
+  "domain": 6,
+  "domainName": "Troubleshooting",
+  "explanations": {
+   "A": "An MX record routes email, not web traffic to a host.",
+   "B": "An A record maps the website's hostname to its IPv4 address; adding it resolves a site that is not loading due to a missing name-to-IP mapping.",
+   "C": "A PTR record is for reverse DNS (IP to name) and does not fix forward resolution of the website.",
+   "D": "An SRV record defines service location and is not the basic record needed to make a website resolve."
+  }
+ },
+ {
+  "number": 235,
+  "stem": "After receiving multiple complaints that an application is not always available, a cloud engineer reviews the application's performance. According to monitoring data the application receives different volumes of traffic at unpredictable times, which impacts performance. Which of the following is the best scaling strategy to improve the application's performance?",
+  "options": {
+   "A": "Scheduled  ",
+   "B": "Vertical  ",
+   "C": "Manual  ",
+   "D": "Horizontal "
+  },
+  "answer": "D",
+  "choose": "all",
+  "domain": 3,
+  "domainName": "Operations",
+  "explanations": {
+   "A": "Scheduled scaling assumes predictable peaks, but the traffic here is unpredictable in timing and volume.",
+   "B": "Vertical scaling grows a single instance and hits a hardware ceiling; it does not handle unpredictable multi-node load well.",
+   "C": "Manual scaling reacts too slowly for unpredictable, performance-impacting spikes.",
+   "D": "Horizontal scaling adds/removes instances elastically, best handling variable and unpredictable traffic to keep the app available."
+  }
+ },
+ {
+  "number": 236,
+  "stem": "A company has been using a CRM application that was developed in-house and is hosted on local servers. Due to internal changes, the company wants to migrate the application to the cloud without having to manage the infrastructure. Which of the following services should the company consider?",
+  "options": {
+   "A": "SaaS  ",
+   "B": "PaaS  ",
+   "C": "XaaS  ",
+   "D": "IaaS "
+  },
+  "answer": "B",
+  "choose": "all",
+  "domain": 1,
+  "domainName": "Cloud Architecture",
+  "explanations": {
+   "A": "SaaS would replace the CRM with a vendor's app, but this is a custom in-house CRM the company wants to keep running.",
+   "B": "PaaS lets the company run its custom in-house application while the provider manages the underlying infrastructure, matching 'without managing infrastructure.'",
+   "C": "XaaS is a generic catch-all term, not a specific service model for this need.",
+   "D": "IaaS still requires the company to manage OS and runtime, contradicting the 'no infrastructure management' goal."
+  }
+ },
+ {
+  "number": 237,
+  "stem": "At the beginning of every month, new marketing materials are uploaded to the cloud server for sales employees to use. At the same time, other users report that their access is sluggish, and the system is almost unusable. Which of the following scaling approaches should be applied to remedy this issue?",
+  "options": {
+   "A": "Scheduled  ",
+   "B": "Load  ",
+   "C": "Event  ",
+   "D": "Managed "
+  },
+  "answer": "A",
+  "choose": "all",
+  "domain": 3,
+  "domainName": "Operations",
+  "explanations": {
+   "A": "Scheduled scaling pre-provisions capacity ahead of the known monthly marketing-upload event, preventing the predictable slugginoss.",
+   "B": "Load-based scaling reacts after the slowdown is already felt, not preventing it.",
+   "C": "Event-based scaling triggers on specific events but is less directly aligned with the fixed monthly calendar pattern.",
+   "D": "'Managed' is not a recognized autoscaling trigger type."
+  }
+ },
+ {
+  "number": 238,
+  "stem": "A cloud administrator needs to distribute workloads across remote data centers for redundancy reasons Which of the following deployment strategies eliminates downtime accelerates deployment, and deploys in batches?",
+  "options": {
+   "A": "In-place  ",
+   "B": "Rolling  ",
+   "C": "Blue-green  ",
+   "D": "Canary "
+  },
+  "answer": "B",
+  "choose": "all",
+  "domain": 2,
+  "domainName": "Deployment",
+  "explanations": {
+   "A": "In-place updates the same instances and cause downtime, contradicting the 'eliminate downtime' requirement.",
+   "B": "Rolling deployment updates instances in batches across sites, eliminating downtime, accelerating rollout, and deploying incrementally.",
+   "C": "Blue-green uses a full parallel environment and a single cutover, not batch-by-batch updates.",
+   "D": "Canary releases to a small subset first for validation, not a batch rollout across remote DCs for redundancy."
+  }
+ },
+ {
+  "number": 239,
+  "stem": "A cloud engineer must improve the availability of a database for an application. The database must meet the following requirements: • Failover capability in case of a data center outage • Point-in-time data restoration capabilities Which of the following best meets these requirements?",
+  "options": {
+   "A": "Clustered database instance  ",
+   "B": "Cached Redis cluster  ",
+   "C": "Database instance replica  ",
+   "D": "Multi-availability zone database instance "
+  },
+  "answer": "D",
+  "choose": "all",
+  "domain": 6,
+  "domainName": "Troubleshooting",
+  "explanations": {
+   "A": "A clustered instance improves local HA but may reside in a single AZ and lacks guaranteed cross-DC failover.",
+   "B": "A Redis cache is an in-memory cache, not a durable primary database with point-in-time restore.",
+   "C": "A read replica improves read scale and some DR but does not by itself provide automated failover and PITR like a managed multi-AZ instance.",
+   "D": "A multi-availability-zone database instance provides automatic failover across DCs/AZs and point-in-time restore, meeting both requirements."
+  }
+ },
+ {
+  "number": 240,
+  "stem": "A cloud administrator is implementing backups for a virtual file server with a large number of daily changes to files. The backups have historically caused performance issues on the server. As a result, the company has asked for backups to be completed as quickly as possible. The administrator opts for an incremental backup technology. Which of the following statements best explains the administrator's choice?",
+  "options": {
+   "A": "Differential backups cannot be used in conjunction with full backups  ",
+   "B": "Differential backups are generally slower than incremental backups  ",
+   "C": "Differential backups cannot be used for granular recovery.  ",
+   "D": "Differential backups always consume more space than incremental backups "
+  },
+  "answer": "B",
+  "choose": "all",
+  "domain": 3,
+  "domainName": "Operations",
+  "explanations": {
+   "A": "Differential backups are routinely used together with a full backup as their baseline; this statement is false.",
+   "B": "Incremental backups copy only changes since the last backup and are generally faster than differential backups (which copy all changes since the last full), explaining the choice.",
+   "C": "Differential backups support granular file recovery just like other backup methods; this is false.",
+   "D": "Differential backups consume more space over time but 'always' is too absolute—early in a cycle they may be smaller than accumulated incrementals; the speed claim is the better explanation."
+  }
+ },
+ {
+  "number": 241,
+  "stem": "A cloud engineer is managing a three-tiered application. An application load balancer is sitting in front of a web layer. After a deployment, the engineer tries to access the website and receives an HTTP 504 error. Which of the following should the engineer do to identify the issue?",
+  "options": {
+   "A": "Restart the database  ",
+   "B": "View the health check configuration",
+   "C": "Update the autoscaling policy  ",
+   "D": "Redeploy the application tiers in a new subnet "
+  },
+  "answer": "B",
+  "choose": "all",
+  "domain": 2,
+  "domainName": "Deployment",
+  "explanations": {
+   "A": "Restarting the database is a guess that bypasses diagnosing why the gateway timed out.",
+   "B": "An HTTP 504 means the load balancer did not get a timely response from a backend; reviewing the health-check configuration reveals which targets are unhealthy/unresponsive.",
+   "C": "Updating the autoscaling policy does not diagnose an existing unhealthy-backend timeout.",
+   "D": "Redeploying tiers into a new subnet is a drastic action that does not identify the cause of the 504."
+  }
+ },
+ {
+  "number": 242,
+  "stem": "Which of the following does an engineer need in order to calculate the number of IOPS required in a storage resource?",
+  "options": {
+   "A": "Network capacity  ",
+   "B": "Block size  ",
+   "C": "Memory utilization  ",
+   "D": "Latency "
+  },
+  "answer": "D",
+  "choose": "all",
+  "domain": 1,
+  "domainName": "Cloud Architecture",
+  "explanations": {
+   "A": "Network capacity affects throughput, not the per-disk IOPS calculation.",
+   "B": "Block size affects throughput (MB/s), not the IOPS count directly.",
+   "C": "Memory utilization is unrelated to storage IOPS.",
+   "D": "IOPS is fundamentally limited by latency (IOPS ≈ 1/latency per IO), so latency is needed to calculate required IOPS."
+  }
+ },
+ {
+  "number": 243,
+  "stem": "Which of the following is a benefit of using containerization in DevOps environments?",
+  "options": {
+   "A": "Containerization improves security control by sharing resources among containers  ",
+   "B": "Containerization provides the use of a proprietary technology that improves integrity  ",
+   "C": "Containerization facilitates performance monitoring over VMs  ",
+   "D": "Containerization allows the creation of applications with interconnected components "
+  },
+  "answer": "D",
+  "choose": "all",
+  "domain": 3,
+  "domainName": "Operations",
+  "explanations": {
+   "A": "Containers share the host OS kernel, which reduces isolation; sharing resources does not improve security control.",
+   "B": "Container technology (e.g., Docker) is open-source, not proprietary, and that is not its DevOps benefit.",
+   "C": "Monitoring is not inherently better on containers than VMs; this is not the key benefit.",
+   "D": "Containerization enables loosely coupled, interconnected microservice components that can be developed and deployed independently—a core DevOps benefit."
+  }
+ },
+ {
+  "number": 244,
+  "stem": "A systems engineer is migrating a batch of 25 VMs from an on-premises compute cluster to a public cloud using the public cloud’s migration agent. The migration job shows data copies at a rate of 250Mbps. After five servers migrated, the remaining data copied at a rate of 25Mbps. Which of the following is the most likely cause of the issue?",
+  "options": {
+   "A": "The local VM host hardware utilization  ",
+   "B": "The ISP throttling rate  ",
+   "C": "The IOPS on the SAN backing the on-premises cluster  ",
+   "D": "The compute utilization of the VMs being migrated "
+  },
+  "answer": "C",
+  "choose": "all",
+  "domain": 2,
+  "domainName": "Deployment",
+  "explanations": {
+   "A": "Local host hardware utilization would affect all migrations uniformly, not cause a drop only after five servers.",
+   "B": "ISP throttling would apply consistently to the whole transfer, not suddenly after five servers.",
+   "C": "The on-premises SAN's IOPS were saturated by the first five migrations' read load, throttling the remaining copy rate to 25Mbps.",
+   "D": "Compute utilization of the migrating VMs does not govern the data-copy throughput from the backing SAN."
+  }
+ },
+ {
+  "number": 245,
+  "stem": "A developer is deploying a new version of a containerized application The DevOps team wants: • No disruption • No performance degradation • Cost-effective deployment • Minimal deployment time Which of the following is the best deployment strategy given the requirements?",
+  "options": {
+   "A": "Canary  ",
+   "B": "In-place  ",
+   "C": "Blue-green  ",
+   "D": "Rolling "
+  },
+  "answer": "D",
+  "choose": "all",
+  "domain": 2,
+  "domainName": "Deployment",
+  "explanations": {
+   "A": "Canary releases to a subset first add time and partial exposure, not the minimal-deployment-time/cost goal.",
+   "B": "In-place updates cause disruption, violating the no-disruption requirement.",
+   "C": "Blue-green runs two full environments, doubling cost and resource usage.",
+   "D": "Rolling updates replace containers gradually with no downtime, no performance degradation, minimal extra cost, and short deployment time."
+  }
+ },
+ {
+  "number": 246,
+  "stem": "Which of the following types of releases best describes the update made to a code repository production release when it changes from version 1.0 to version 1.1?",
+  "options": {
+   "A": "Alpha  ",
+   "B": "Beta  ",
+   "C": "Minor  ",
+   "D": "Major "
+  },
+  "answer": "C",
+  "choose": "all",
+  "domain": 5,
+  "domainName": "DevOps Fundamentals",
+  "explanations": {
+   "A": "Alpha is an early pre-release stage, not a version-numbering classification for 1.0 to 1.1.",
+   "B": "Beta is a testing pre-release stage, not the version bump described.",
+   "C": "Under semantic versioning, changing the second digit (1.0 to 1.1) is a minor release (backward-compatible additions).",
+   "D": "A major release increments the first digit (e.g., 1.x to 2.0) and implies breaking changes."
+  }
+ },
+ {
+  "number": 247,
+  "stem": "A cloud engineer discovers that two nodes experience resource exhaustion during the holidays. This creates a denial of service on the web application. Adding a third node is not an option because of budgetary constraints. Which of the following scaling approaches helps minimize resource exhaustion?",
+  "options": {
+   "A": "Event trigger  ",
+   "B": "Load trigger  ",
+   "C": "Vertical scaling  ",
+   "D": "Horizontal scaling "
+  },
+  "answer": "C",
+  "choose": "all",
+  "domain": 3,
+  "domainName": "Operations",
+  "explanations": {
+   "A": "An event trigger still initiates horizontal (more-node) scaling, which the budget forbids.",
+   "B": "A load trigger drives horizontal scaling, requiring additional nodes the budget cannot fund.",
+   "C": "Vertical scaling adds CPU/RAM to the existing two nodes, avoiding a third node and minimizing resource exhaustion within budget.",
+   "D": "Horizontal scaling requires adding nodes, which is explicitly not an option due to budget constraints."
+  }
+ },
+ {
+  "number": 248,
+  "stem": "Which of the following allows network access to services deployed in a container?",
+  "options": {
+   "A": "Forward proxy  ",
+   "B": "Network orchestration  ",
+   "C": "Host affinity  ",
+   "D": "Port mapping "
+  },
+  "answer": "D",
+  "choose": "all",
+  "domain": 1,
+  "domainName": "Cloud Architecture",
+  "explanations": {
+   "A": "A forward proxy handles outbound client requests, not exposing container services to networks.",
+   "B": "Network orchestration manages scheduling/networking but is not the mechanism that exposes a container port.",
+   "C": "Host affinity controls scheduling placement, not network exposure.",
+   "D": "Port mapping publishes a container's internal port to a host port, allowing network access to the containerized service."
+  }
+ },
+ {
+  "number": 249,
+  "stem": "A cloud administrator must increase the performance of an application by modifying the server disks from HDD to SSD. In which of the following ways will the server most benefit from this change?",
+  "options": {
+   "A": "Smaller storage footprint  ",
+   "B": "Increase in IOPS  ",
+   "C": "More memory throughput  ",
+   "D": "Fewer CPU cycles "
+  },
+  "answer": "B",
+  "choose": "all",
+  "domain": 1,
+  "domainName": "Cloud Architecture",
+  "explanations": {
+   "A": "SSD and HDD can have similar logical capacity; footprint is not the primary benefit.",
+   "B": "SSDs have no seek latency, so moving from HDD to SSD primarily increases IOPS (disk operations per second).",
+   "C": "Disk type does not change memory throughput.",
+   "D": "CPU cycles are unaffected by storage media type."
+  }
+ },
+ {
+  "number": 250,
+  "stem": "A cloud engineer is migrating a website to the cloud. The website was developed with a legacy programming language framework and must be upgraded to a newer version to remediate code vulnerabilities and improve performance. Which of the following is the best strategy to perform the migration?",
+  "options": {
+   "A": "Refactor  ",
+   "B": "Rehost  ",
+   "C": "Replatform  ",
+   "D": "Re-architect "
+  },
+  "answer": "A",
+  "choose": "all",
+  "domain": 2,
+  "domainName": "Deployment",
+  "explanations": {
+   "A": "Refactoring modifies the application code (here, upgrading the legacy framework) without changing the deployment platform, meeting the 'upgrade framework' need.",
+   "B": "Rehost (lift-and-shift) moves the app as-is without upgrading the framework, leaving vulnerabilities unremediated.",
+   "C": "Replatform changes the platform with minimal code changes but does not focus on upgrading the framework code.",
+   "D": "Re-architect redesigns the application, which is more than the framework upgrade required."
+  }
+ },
+ {
+  "number": 251,
+  "stem": "A certain user subset is seeing the error message 500 Internal Server Error on a newly launched distributed web application. The developers are unable to troubleshoot this issue because of limited visibility into the application's operations. Which of the following should the developers do first to effectively troubleshoot the issue?",
+  "options": {
+   "A": "Modify the application code to display proper log files.  ",
+   "B": "Generate graphs and dashboards that show the rate of error.  ",
+   "C": "Implement incident response management.  ",
+   "D": "Provision log aggregation software. "
+  },
+  "answer": "D",
+  "choose": "all",
+  "domain": 3,
+  "domainName": "Operations",
+  "explanations": {
+   "A": "Modifying application code to emit logs is a later step that depends on having a logging pipeline first.",
+   "B": "Dashboards/graphs require collected log data, which does not yet exist.",
+   "C": "Incident response management is a process, not the first technical step to gain visibility.",
+   "D": "Provisioning log aggregation software first centralizes logs and gives the developers the visibility needed to troubleshoot the 500 errors."
+  }
+ },
+ {
+  "number": 252,
+  "stem": "A systems administrator reviews the following standard maintenance script: The script is difficult for the systems administrator to update because the location and the name of the update binary are referenced in the copy command. The script execution triggers future line changes each time maintenance is performed. Which of the following will resolve this issue with minimal overhead?",
+  "options": {
+   "A": "Implementing an API to receive the parameters remotely  ",
+   "B": "Adding a variable to contain the file path  ",
+   "C": "Creating a function to search the remote filesystem  ",
+   "D": "Inserting a line into the code that calls to a different script "
+  },
+  "answer": "B",
+  "choose": "all",
+  "domain": 3,
+  "domainName": "Operations",
+  "explanations": {
+   "A": "Building an API to receive parameters remotely is heavy overkill for a hardcoded path problem.",
+   "B": "Introducing a variable to hold the file path removes the hardcoded reference so future updates only change the variable—minimal overhead.",
+   "C": "Writing a filesystem-search function adds complexity and runtime cost beyond the need.",
+   "D": "Calling a different script does not solve the hardcoded location/name fragility in the original script."
+  }
+ },
+ {
+  "number": 253,
+  "stem": "Which of the following is the most appropriate service to publish an application that requires very low latency connections?",
+  "options": {
+   "A": "Virtual private cloud  ",
+   "B": "Network load balancer  ",
+   "C": "Application gateway  ",
+   "D": "Application load balancer "
+  },
+  "answer": "B",
+  "choose": "all",
+  "domain": 1,
+  "domainName": "Cloud Architecture",
+  "explanations": {
+   "A": "A VPC is an isolated network boundary, not a low-latency publishing/service endpoint.",
+   "B": "A Network Load Balancer operates at Layer 4 with very low latency and static IPs, ideal for latency-sensitive published applications.",
+   "C": "An application gateway (L7) adds processing latency compared with an NLB.",
+   "D": "An Application Load Balancer is Layer 7 and introduces more latency than a network load balancer."
+  }
+ },
+ {
+  "number": 254,
+  "stem": "An engineer is deploying a new application with the following requirements: • Uses automation • Deploys some components • Does not deploy the virtual machines Which of the following are reasons that the deployment may only partially fail? (Choose two.)",
+  "options": {
+   "A": "Service quotas cannot be exceeded.  ",
+   "B": "The credentials for the deployment are incorrect.  ",
+   "C": "The cloud provider’s API is not working.  ",
+   "D": "The version of the infrastructure code is outdated.  ",
+   "E": "The cloud provider has a full outage.  ",
+   "F": "The permissions are insufficient. "
+  },
+  "answer": "BF",
+  "choose": "all",
+  "domain": 6,
+  "domainName": "Troubleshooting",
+  "explanations": {
+   "A": "Service quotas being exceeded would typically block a deployment entirely rather than produce the selective partial failure described here.",
+   "B": "Incorrect deployment credentials can cause a partial failure if some components were already authenticated/deployed before the error surfaced.",
+   "C": "A non-working provider API would cause a total, not partial, deployment failure.",
+   "D": "An outdated IaC version may still deploy or fail on specific resources but is less directly a partial-failure cause than permissions/credentials.",
+   "E": "A full provider outage causes a total failure, not a partial one.",
+   "F": "Insufficient permissions on specific resources cause only those resources to fail while others succeed—a classic partial failure."
+  }
+ },
+ {
+  "number": 255,
+  "stem": "A company wants to avoid vendor lock-in situations. Which of the following options should the company consider before doing business with a vendor? (Choose two.)",
+  "options": {
+   "A": "Cost factor",
+   "B": "Open-source technologies  ",
+   "C": "Data portability  ",
+   "D": "Regulatory compliance  ",
+   "E": "Service availability  ",
+   "F": "Storage options "
+  },
+  "answer": "BC",
+  "choose": "all",
+  "domain": 4,
+  "domainName": "Security",
+  "explanations": {
+   "A": "Cost is a factor but does not by itself prevent lock-in.",
+   "B": "Using open-source technologies avoids proprietary formats/APIs that create lock-in.",
+   "C": "Ensuring data portability lets the company extract and move its data to another vendor, directly countering lock-in.",
+   "D": "Regulatory compliance is unrelated to avoiding vendor lock-in.",
+   "E": "Service availability is an operational concern, not a lock-in mitigation.",
+   "F": "Storage options alone do not determine portability or lock-in risk."
+  }
+ },
+ {
+  "number": 256,
+  "stem": "A media company is dealing with a large influx of live stream traffic. A cloud engineer notices the following on a VM: • Network usage metric is at 100%. • CPU is under 65% utilization. • Memory utilization is at 50%. • Response time to the website is increasing. Which of the following is the best solution to address these issues?",
+  "options": {
+   "A": "Increasing the storage capacity  ",
+   "B": "Increasing the virtual machine size  ",
+   "C": "Adding an additional network card  ",
+   "D": "Adding a load balancer "
+  },
+  "answer": "D",
+  "choose": "all",
+  "domain": 3,
+  "domainName": "Operations",
+  "explanations": {
+   "A": "Increasing storage does not address a saturated network link.",
+   "B": "A larger VM may still hit the same single-network-interface ingress limit.",
+   "C": "An additional NIC on one VM does not resolve the ingress saturation or enable scale-out.",
+   "D": "A load balancer distributes the live-stream traffic across multiple instances, relieving the network saturation and improving response time."
+  }
+ },
+ {
+  "number": 257,
+  "stem": "A cloud engineer is applying a critical security patch to multiple servers that have an SSH vulnerability. Which of the following is the fastest way to patch the servers and uses the fewest compute resources?",
+  "options": {
+   "A": "Log in to each server simultaneously and apply the patch, then restart the servers.  ",
+   "B": "Update configuration management scripts to include the patch, then apply the configuration to a primary list of servers.  ",
+   "C": "Clone the servers using a readily available cloning tool, apply the patch to the new servers, and delete the old ones.  ",
+   "D": "Launch new servers from a patched image, install server configurations, and shut down the old servers. "
+  },
+  "answer": "B",
+  "choose": "all",
+  "domain": 3,
+  "domainName": "Operations",
+  "explanations": {
+   "A": "Logging into each server manually is slow and does not scale to 'fastest/least resources.'",
+   "B": "Updating configuration-management scripts (e.g., Ansible/Puppet) to include the patch and applying them to the server set is automated and uses minimal extra compute.",
+   "C": "Cloning servers and patching copies is resource-intensive and slow.",
+   "D": "Launching new patched images and migrating is heavier and consumes more compute than config-management push."
+  }
+ },
+ {
+  "number": 258,
+  "stem": "Which of the following can connect multiple VPCs and an on-premises network?",
+  "options": {
+   "A": "Subnet  ",
+   "B": "CDN  ",
+   "C": "Peering",
+   "D": "Transit gateway "
+  },
+  "answer": "D",
+  "choose": "all",
+  "domain": 1,
+  "domainName": "Cloud Architecture",
+  "explanations": {
+   "A": "A subnet is an IP addressing segment, not a connectivity hub for multiple VPCs and on-prem.",
+   "B": "A CDN distributes content, not network connectivity.",
+   "C": "VPC peering links two VPCs and does not natively connect many VPCs or on-prem without a mesh.",
+   "D": "A transit gateway is a hub that connects multiple VPCs and on-premises networks through one appliance."
+  }
+ },
+ {
+  "number": 259,
+  "stem": "A cloud application fails to retrieve data from an API. A cloud engineer reviews the following log: [ERROR] HTTP 429 - Too many requests [INFO] API rate limit exceeded [WARNING] API throttled Which of the following is the best resolution?",
+  "options": {
+   "A": "Upgrade the network bandwidth  ",
+   "B": "Increase the database storage.  ",
+   "C": "Implement exponential backoff.  ",
+   "D": "Restart the API server. "
+  },
+  "answer": "C",
+  "choose": "all",
+  "domain": 6,
+  "domainName": "Troubleshooting",
+  "explanations": {
+   "A": "Upgrading bandwidth does not resolve an API rate-limit (429) throttling condition.",
+   "B": "Increasing database storage is unrelated to API throttling.",
+   "C": "HTTP 429 indicates rate limiting; implementing exponential backoff retries with increasing delays respects the limit and succeeds.",
+   "D": "Restarting the API server does not raise the rate limit and will not stop throttling."
+  }
+ },
+ {
+  "number": 260,
+  "stem": "Which of the following has a mandatory tag in the exchange of data between two systems?",
+  "options": {
+   "A": "JSON  ",
+   "B": "SOAP  ",
+   "C": "JWT  ",
+   "D": "REST "
+  },
+  "answer": "B",
+  "choose": "all",
+  "domain": 5,
+  "domainName": "DevOps Fundamentals",
+  "explanations": {
+   "A": "JSON is a flexible data format with no mandatory envelope/tag structure for inter-system exchange.",
+   "B": "SOAP is XML-based and mandates a specific Envelope (with Header/Body) structure for every message exchange.",
+   "C": "JWT is a token format, not a data-exchange protocol with mandatory tags.",
+   "D": "REST is an architectural style with no mandated message tags."
+  }
+ },
+ {
+  "number": 261,
+  "stem": "Which of the following compute services is the best for quick and easy provisioning?",
+  "options": {
+   "A": "Cluster  ",
+   "B": "Container  ",
+   "C": "Server less  ",
+   "D": "Snapshot "
+  },
+  "answer": "C",
+  "choose": "all",
+  "domain": 2,
+  "domainName": "Deployment",
+  "explanations": {
+   "A": "A cluster requires setup and orchestration, not the quickest provisioning.",
+   "B": "Containers need a host/orchestrator to run.",
+   "C": "Serverless functions are provisioned instantly with no infrastructure to stand up, making them quickest and easiest.",
+   "D": "A snapshot is a backup image, not a provisioning method."
+  }
+ },
+ {
+  "number": 262,
+  "stem": "A cloud engineer is designing a solution that requires end users: • To be authenticated • To be authorized • To be in approved locations. • To use only corporate devices Which of the following is the best way to meet these requirements?",
+  "options": {
+   "A": "Secure by design  ",
+   "B": "Principle of least privilege  ",
+   "C": "Zero Trust  ",
+   "D": "Defense in depth "
+  },
+  "answer": "C",
+  "choose": "all",
+  "domain": 4,
+  "domainName": "Security",
+  "explanations": {
+   "A": "Secure by design is a development principle, not the specific model for identity+device+location verification.",
+   "B": "Least privilege limits access scope but does not enforce device/location checks.",
+   "C": "Zero Trust continuously verifies user identity, authorization, device posture, and location before granting access—matching all requirements.",
+   "D": "Defense in depth layers controls but does not specifically encode the verify-everything Zero Trust model."
+  }
+ },
+ {
+  "number": 263,
+  "stem": "Which of the following storage types should be used by a data lake implemented on a CSP?",
+  "options": {
+   "A": "Object  ",
+   "B": "Block  ",
+   "C": "File  ",
+   "D": "Ephemeral "
+  },
+  "answer": "A",
+  "choose": "all",
+  "domain": 3,
+  "domainName": "Operations",
+  "explanations": {
+   "A": "Object storage is designed for massive, scalable, unstructured data lakes (files, logs, datasets).",
+   "B": "Block storage is for VM disks and databases, not ideal for a data lake.",
+   "C": "File storage is for shared file systems, not the petabyte-scale data lake use case.",
+   "D": "Ephemeral storage is temporary and unsuitable for a persistent data lake."
+  }
+ },
+ {
+  "number": 264,
+  "stem": "Which of the following best explains RPO?",
+  "options": {
+   "A": "The time needed to recover from a disaster  ",
+   "B": "The acceptable amount of data loss after a disaster  ",
+   "C": "The estimated amount of data loss after a disaster  ",
+   "D": "The time estimated between disasters "
+  },
+  "answer": "B",
+  "choose": "all",
+  "domain": 1,
+  "domainName": "Cloud Architecture",
+  "explanations": {
+   "A": "The time needed to recover describes RTO (Recovery Time Objective), not RPO.",
+   "B": "RPO (Recovery Point Objective) is the maximum acceptable amount of data loss measured in time after a disruption.",
+   "C": "The estimated amount of data loss is not the definition; RPO is the acceptable/target threshold.",
+   "D": "The time between disasters is unrelated to RPO."
+  }
+ },
+ {
+  "number": 265,
+  "stem": "A security analyst receives the following security alert: The following VM (vm_1) is exhibiting signs increased CPU usage over a 24-hour period. Please consider increasing the allocated CPU cores. After additional investigation, the analyst identifies a process consuming 98% CPU utilization on the VM. The analyst attempts to stop the process, but the process continues. Which of the following is the most likely cause of this security alert?",
+  "options": {
+   "A": "Hashing  ",
+   "B": "Cryptojacking  ",
+   "C": "Phishing",
+   "D": "On-path attack "
+  },
+  "answer": "B",
+  "choose": "all",
+  "domain": 4,
+  "domainName": "Security",
+  "explanations": {
+   "A": "Hashing is a normal cryptographic operation, not a cause of runaway CPU consumption by a malicious process.",
+   "B": "A process pinned at ~98% CPU that cannot be stopped is the classic signature of cryptojacking (illicit cryptocurrency mining).",
+   "C": "Phishing is a social-engineering tactic, not a CPU-bound process.",
+   "D": "An on-path attack intercepts communications; it does not by itself explain sustained 98% CPU."
+  }
+ },
+ {
+  "number": 266,
+  "stem": "A cloud engineer logs in to Grafana. Which of the following actions is the engineer most likely trying to accomplish?",
+  "options": {
+   "A": "Deploying a new version of an application  ",
+   "B": "Observing an application's health  ",
+   "C": "Putting an application into a container  ",
+   "D": "Pushing new code to the Git source "
+  },
+  "answer": "B",
+  "choose": "all",
+  "domain": 5,
+  "domainName": "DevOps Fundamentals",
+  "explanations": {
+   "A": "Deploying application versions is done via CI/CD tools, not Grafana.",
+   "B": "Grafana is a dashboards/visualization tool used to observe an application's health and metrics.",
+   "C": "Containerizing applications is done with Docker/Kubernetes, not Grafana.",
+   "D": "Pushing code to Git is a SCM action, not a Grafana function."
+  }
+ },
+ {
+  "number": 267,
+  "stem": "Which of the following requirements are the most important when provisioning cloud resources for a client in the finance industry? (Choose two.)",
+  "options": {
+   "A": "Cost  ",
+   "B": "Security  ",
+   "C": "Compute  ",
+   "D": "Network  ",
+   "E": "Storage  ",
+   "F": "Compliance  ",
+   "G": "Performance "
+  },
+  "answer": "BF",
+  "choose": "all",
+  "domain": 4,
+  "domainName": "Security",
+  "explanations": {
+   "A": "Cost matters but is secondary to regulatory and security needs in finance.",
+   "B": "Security is paramount for financial client data and systems.",
+   "C": "Compute capacity is a general need, not among the two most critical for finance.",
+   "D": "Networking is general, not one of the top two drivers.",
+   "E": "Storage is general, not one of the top two.",
+   "F": "Compliance with financial regulations (e.g., PCI, SOX) is a top requirement for finance-industry provisioning.",
+   "G": "Performance is general, not one of the two most important here."
+  }
+ },
+ {
+  "number": 268,
+  "stem": "A cloud architect is evaluating a cloud migration strategy for a CRM application. The CRM application's most important requirement is application portability. Which of the following factors is most important for the cloud architect to consider?",
+  "options": {
+   "A": "Management overhead  ",
+   "B": "Vendor lock-in  ",
+   "C": "Platform compatibility  ",
+   "D": "Service availability "
+  },
+  "answer": "B",
+  "choose": "all",
+  "domain": 2,
+  "domainName": "Deployment",
+  "explanations": {
+   "A": "Management overhead is a concern but not the core of application portability.",
+   "B": "Vendor lock-in is the central risk to application portability—being tied to one provider's services prevents easy movement.",
+   "C": "Platform compatibility matters, but lock-in is the factor that most threatens portability.",
+   "D": "Service availability is operational, not a portability consideration."
+  }
+ },
+ {
+  "number": 269,
+  "stem": "A cloud engineer creates a new private subnet within a VPC that contains existing subnets. The new subnet is unreachable from the other subnets. The existing subnets can reach each other. Which of the following best describes the cause of this issue?",
+  "options": {
+   "A": "DNS issues  ",
+   "B": "WAF blocking  ",
+   "C": "Incorrect IP address  ",
+   "D": "Missing route "
+  },
+  "answer": "D",
+  "choose": "all",
+  "domain": 1,
+  "domainName": "Cloud Architecture",
+  "explanations": {
+   "A": "DNS resolves names; it would not prevent IP reachability between subnets.",
+   "B": "A WAF filters HTTP traffic, not subnet-to-subnet routing.",
+   "C": "An incorrect IP would affect the subnet's own addressing, not specifically its unreachability while others communicate.",
+   "D": "A missing route in the routing table prevents traffic from the other subnets from reaching the new subnet, explaining the isolation."
+  }
+ },
+ {
+  "number": 270,
+  "stem": "During an incident, a cloud security engineer finds that a suspicious file was run in a virtual desktop. The cloud security engineer obtains a list of users involved in the incident: The cloud security engineer also obtains the system logs: Which of the following types of vulnerabilities did the malicious application most likely exploit?",
+  "options": {
+   "A": "Privilege escalation  ",
+   "B": "Improper permissions  ",
+   "C": "Data exfiltration  ",
+   "D": "Leaked credentials "
+  },
+  "answer": "A",
+  "choose": "all",
+  "domain": 4,
+  "domainName": "Security",
+  "explanations": {
+   "A": "A suspicious file executing in a virtual desktop and gaining elevated capability indicates privilege escalation—exploiting a flaw to gain higher rights.",
+   "B": "Improper permissions are a misconfiguration, not the exploitation method described.",
+   "C": "Data exfiltration is a possible goal/outcome, not the vulnerability type exploited by the file.",
+   "D": "Leaked credentials involve stolen auth, not a malicious file exploiting a local flaw."
+  }
+ },
+ {
+  "number": 271,
+  "stem": "A company has its application in a Docker container running in a single node in a cloud environment. The company is growing, and multiple customers now require the addition of more containers to accommodate the increasing load. New nodes will be deployed to manage the additional containers. Which of the following is the best approach to manage the new environment?",
+  "options": {
+   "A": "Create a Jenkins pipeline to execute the Docker containers in the nodes farm.  ",
+   "B": "Configure Terraform to start the Docker containers by using customized user data on the new worker nodes  ",
+   "C": "Utilize Ansible to deploy the new containers into the new worker nodes  ",
+   "D": "Use Kubernetes to orchestrate containers allocation throughout multiple worker nodes "
+  },
+  "answer": "D",
+  "choose": "all",
+  "domain": 5,
+  "domainName": "DevOps Fundamentals",
+  "explanations": {
+   "A": "Jenkins is a CI/CD automation server, not a container orchestrator for scaling across nodes.",
+   "B": "Terraform provisions infrastructure (IaC) but does not orchestrate running containers across a node fleet.",
+   "C": "Ansible configures systems but is not purpose-built for dynamic multi-node container orchestration.",
+   "D": "Kubernetes is purpose-built to orchestrate and schedule containers across multiple worker nodes as load grows."
+  }
+ },
+ {
+  "number": 272,
+  "stem": "A company is required to save historical data for seven years. A cloud administrator implements a script that automatically deletes data older than seven years. Which of the following concepts best describes why the historical data is being deleted?",
+  "options": {
+   "A": "End of life  ",
+   "B": "Data loss prevention  ",
+   "C": "Cost implications  ",
+   "D": "Tiered storage for archiving "
+  },
+  "answer": "A",
+  "choose": "all",
+  "domain": 4,
+  "domainName": "Security",
+  "explanations": {
+   "A": "Deleting data once it passes its required seven-year retention period is an end-of-life (retention expiry) action.",
+   "B": "DLP prevents data leakage, not retention expiry deletion.",
+   "C": "Cost may motivate the policy but the concept described is data end-of-life, not cost itself.",
+   "D": "Tiered archiving is a storage placement strategy, not the deletion-on-expiry concept."
+  }
+ },
+ {
+  "number": 273,
+  "stem": "A cloud-based application needs to connect to a legacy, on-premises application but fails to create a secure connection. Which of the following is the most likely reason that the application cannot connect?",
+  "options": {
+   "A": "The cloud application is throttling the API  ",
+   "B": "The cloud application is changing the DNS during connection  ",
+   "C": "The on-premises application cannot communicate to the NAT  ",
+   "D": "The on-premises application is using depreciated ciphers "
+  },
+  "answer": "D",
+  "choose": "all",
+  "domain": 6,
+  "domainName": "Troubleshooting",
+  "explanations": {
+   "A": "The cloud application throttling its own API would not block a secure connection to an on-prem system.",
+   "B": "The cloud app changing DNS during connection is not a typical cause of a failed secure tunnel.",
+   "C": "An on-prem NAT communication failure would be a broader connectivity issue, not specifically a secure-connection failure.",
+   "D": "Deprecated/unsupported ciphers on the legacy on-prem app cause a TLS handshake mismatch, preventing a secure connection."
+  }
+ },
+ {
+  "number": 274,
+  "stem": "A workload runs in an IaaS public cloud environment. An engineering team must secure access to the VMs for managing the services. The VMs currently expose the SSH service to the internet. Which of the following solutions reduces the risk of hacking with the least maintenance?",
+  "options": {
+   "A": "Deploying MFA for the SSH connections  ",
+   "B": "Adding a managed IaaS instance and using it as bastion host to access the VMs  ",
+   "C": "Blocking SSH with a network ACL and using private endpoints for management  ",
+   "D": "Replacing SSH with RDP "
+  },
+  "answer": "B",
+  "choose": "all",
+  "domain": 4,
+  "domainName": "Security",
+  "explanations": {
+   "A": "Adding MFA for SSH improves auth but still exposes SSH to the internet and adds ongoing management.",
+   "B": "Placing a managed bastion host in front removes direct internet exposure of the VMs and is low-maintenance—the best balance.",
+   "C": "Blocking SSH via NACL and using private endpoints is more configuration-heavy to maintain than a bastion.",
+   "D": "Replacing SSH with RDP exposes a different protocol to the internet and carries similar risk."
+  }
+ },
+ {
+  "number": 275,
+  "stem": "A cloud engineer needs to upgrade the pip python module by running the following command: python.exe -m pip install -upgrade pip However, after the command is entered, the engineer receives the following error message: WARNINg: Retrying (Retry(TOTAL=4 connect=None, read=None, redirect=None, status=None) after connection broken by 'SSLError(SSLCertVerificationError(1, [SSL: /packages/07/51/abasciekdkgiyiykrieeeotlriturjaab/pip-27.4.3.py3-none-any.whl Given this scenario, which of the following is more than likely the cause of the issue?",
+  "options": {
+   "A": "Syntax error with the command entered  ",
+   "B": "Python version incompatibility  ",
+   "C": "Broken TLS communication with no internet access  ",
+   "D": "Certificate for package repository is not trusted "
+  },
+  "answer": "D",
+  "choose": "all",
+  "domain": 6,
+  "domainName": "Troubleshooting",
+  "explanations": {
+   "A": "The command executed and reached the network, so it is not a syntax error.",
+   "B": "A Python version mismatch would not produce an SSL certificate verification error.",
+   "C": "Broken TLS with no internet would fail to connect at all; the error is specifically a certificate verification failure.",
+   "D": "The SSLError 'certificate verify failed' indicates the package repository's TLS certificate is not trusted by the client."
+  }
+ },
+ {
+  "number": 276,
+  "stem": "A cloud developer addresses a bug in one of the company’s applications. The developer wants to record the changes and retain the application history. Which of the following steps should the developer take?",
+  "options": {
+   "A": "Code commit  ",
+   "B": "Code refactor  ",
+   "C": "Code review  ",
+   "D": "Code request "
+  },
+  "answer": "A",
+  "choose": "all",
+  "domain": 5,
+  "domainName": "DevOps Fundamentals",
+  "explanations": {
+   "A": "Committing code records the change and retains the full version history in the repository.",
+   "B": "Refactoring restructures code but does not by itself record/retain history.",
+   "C": "Code review is peer evaluation of changes, not the act of recording them.",
+   "D": "Code request is not a standard version-control term for recording changes."
+  }
+ },
+ {
+  "number": 277,
+  "stem": "Which of the following is the most restrictive data classification label?",
+  "options": {
+   "A": "Proprietary  ",
+   "B": "Private  ",
+   "C": "Sensitive  ",
+   "D": "Confidential "
+  },
+  "answer": "D",
+  "choose": "all",
+  "domain": 4,
+  "domainName": "Security",
+  "explanations": {
+   "A": "Proprietary marks intellectual property but is less restrictive than Confidential in standard classification schemes.",
+   "B": "Private typically denotes personal/non-public data, a lower tier than Confidential.",
+   "C": "Sensitive indicates data needing protection but is generally a step below Confidential.",
+   "D": "Confidential is the most restrictive standard label, denoting the highest protection requirement."
+  }
+ },
+ {
+  "number": 278,
+  "stem": "Several fitness centers in an area are collectively looking for a cost-effective way to migrate their servers to the cloud. Which of the following is the best cloud deployment model to meet these needs?",
+  "options": {
+   "A": "Hybrid  ",
+   "B": "Public",
+   "C": "Community  ",
+   "D": "Private "
+  },
+  "answer": "C",
+  "choose": "all",
+  "domain": 2,
+  "domainName": "Deployment",
+  "explanations": {
+   "A": "Hybrid mixes private and public for one organization, not a shared community of fitness centers.",
+   "B": "Public cloud is open to any customer, not specifically shared among the fitness centers with common needs.",
+   "C": "A community cloud is shared by multiple organizations with a common concern (here, cost-effective shared fitness-center infrastructure).",
+   "D": "A private cloud is dedicated to a single organization, not a collective."
+  }
+ },
+ {
+  "number": 279,
+  "stem": "A company is building a loosely coupled application. The engineering team discovers issues with how the application is handling events. Which of the following should the team implement to resolve this issue?",
+  "options": {
+   "A": "Host affinity  ",
+   "B": "Monolithic services  ",
+   "C": "Fan-out architecture  ",
+   "D": "ELK stack "
+  },
+  "answer": "C",
+  "choose": "all",
+  "domain": 1,
+  "domainName": "Cloud Architecture",
+  "explanations": {
+   "A": "Host affinity is a scheduling constraint, unrelated to event handling in a loosely coupled app.",
+   "B": "Monolithic services are tightly coupled, the opposite of the loosely coupled design goal.",
+   "C": "A fan-out (pub/sub) architecture decouples event producers and consumers, resolving the event-handling issues in a loosely coupled system.",
+   "D": "The ELK stack is for logging/analytics, not for solving event-handling architecture."
+  }
+ },
+ {
+  "number": 280,
+  "stem": "A cloud-based VM is no longer required. However, the sensitive data on the VM's data disk must be retained. Which of the following is the best approach for the administrator to take?",
+  "options": {
+   "A": "1. Delete the VM and disks. 2. Retain the VM's backups.  ",
+   "B": "1. Take a snapshot of the data disk. 2. Delete the VM and disks.  ",
+   "C": "1. Stop the VM. 2 Tag the VM.  ",
+   "D": "1. Delete the source VM and disks. 2. Copy the data to another VM. "
+  },
+  "answer": "B",
+  "choose": "all",
+  "domain": 2,
+  "domainName": "Deployment",
+  "explanations": {
+   "A": "Deleting the VM and disks while relying only on backups risks losing the data if backups expire or are insufficiently retained.",
+   "B": "Taking a snapshot of the data disk preserves the sensitive data, after which the VM and disks can be safely deleted.",
+   "C": "Stopping and tagging the VM leaves the data on a disk still tied to a (stopped) VM and does not cleanly retain it independently.",
+   "D": "Copying data to another VM is extra effort when a snapshot already satisfies retention."
+  }
+ },
+ {
+  "number": 281,
+  "stem": "A network engineer wants to implement a service that has the following characteristics: • Highly flexible • Centralized • Programmatic • Dynamically adjustable to traffic Which of the following is the best approach?",
+  "options": {
+   "A": "Software-defined network  ",
+   "B": "Virtual private network  ",
+   "C": "Content delivery network  ",
+   "D": "Network load balancer"
+  },
+  "answer": "A",
+  "choose": "all",
+  "domain": 1,
+  "domainName": "Cloud Architecture",
+  "explanations": {
+   "A": "Software-defined networking (SDN) is programmatically controlled, centralized, flexible, and dynamically adjustable to traffic—matching all stated characteristics.",
+   "B": "A VPN creates a secure tunnel, not a programmable flexible network fabric.",
+   "C": "A CDN distributes content, not a programmable network control plane.",
+   "D": "A network load balancer distributes traffic but is not the centralized, programmatic SDN concept described."
+  }
+ },
+ {
+  "number": 282,
+  "stem": "A user reports that a cloud application has been behaving erratically over the last month. Which of the following should a cloud engineer use to get a clear understanding of the situation?",
+  "options": {
+   "A": "System alerts  ",
+   "B": "Intrusion prevention system  ",
+   "C": "Network logs  ",
+   "D": "Performance metrics "
+  },
+  "answer": "D",
+  "choose": "all",
+  "domain": 3,
+  "domainName": "Operations",
+  "explanations": {
+   "A": "System alerts are discrete notifications and do not show the month-long behavioral trend.",
+   "B": "An IPS is for security detection, not understanding erratic application behavior.",
+   "C": "Network logs are narrow and would not capture full application behavior over time.",
+   "D": "Performance metrics over time reveal trends and patterns that explain erratic behavior across the month."
+  }
+ },
+ {
+  "number": 283,
+  "stem": "Which of the following best explains the use of CDN?",
+  "options": {
+   "A": "To control traffic to and from the cloud environment and prevent unauthorized connections  ",
+   "B": "To protect the perimeter of on-premises and cloud networks through segmentation  ",
+   "C": "To create a secure communication channel to protect traffic between two geographically distant sites  ",
+   "D": "To allow access to content through the geographic distribution and replication of data "
+  },
+  "answer": "D",
+  "choose": "all",
+  "domain": 2,
+  "domainName": "Deployment",
+  "explanations": {
+   "A": "Controlling/authorizing traffic is a firewall/security-group function, not a CDN.",
+   "B": "Perimeter segmentation is a firewall function, not a CDN.",
+   "C": "Secure communication between distant sites is a VPN, not a CDN.",
+   "D": "A CDN improves access by geographically distributing and replicating content across edge locations."
+  }
+ },
+ {
+  "number": 284,
+  "stem": "A small nonprofit wants a cheap and simple way to automate some of its workflows that connect different services together in the cloud. Which of the following options best fulfills this need?",
+  "options": {
+   "A": "Using a managed service provider  ",
+   "B": "Leveraging an integration platform as a service  ",
+   "C": "Automating workflows with Python and deploying in a VM  ",
+   "D": "Implementing a message broker to access the APIs "
+  },
+  "answer": "B",
+  "choose": "all",
+  "domain": 1,
+  "domainName": "Cloud Architecture",
+  "explanations": {
+   "A": "A managed service provider is outsourced staff, heavier than a self-serve automation tool.",
+   "B": "An integration Platform-as-a-Service (iPaaS) lets nonprofits connect cloud services and automate workflows via low-code, cheaply and simply.",
+   "C": "Writing and hosting Python in a VM is more effort and maintenance than needed.",
+   "D": "A message broker requires development effort to build integrations, not a simple off-the-shelf solution."
+  }
+ },
+ {
+  "number": 285,
+  "stem": "A DevOps engineer is performing maintenance on the mail servers for a company's web application. Part of this maintenance includes checking core operating system updates. The servers are currently running version 3.2 of the operating system. The engineer has two update options—one to version 4.1 and the other to version 3.7 Both versions are fully supported by the operating system manufacturer. Which of the following best describes the action the engineer should take?",
+  "options": {
+   "A": "Upgrade to 3.7 in the development environment.  ",
+   "B": "Upgrade to 4.1 on one production server at a time.",
+   "C": "Upgrade only one production server to 4.1.  ",
+   "D": "Schedule a maintenance window and upgrade to 3.7 in the production environment. "
+  },
+  "answer": "A",
+  "choose": "all",
+  "domain": 3,
+  "domainName": "Operations",
+  "explanations": {
+   "A": "Upgrading first to the minor release 3.7 in development lets the team test the conservative update before touching production—the safest path.",
+   "B": "Jumping straight to 4.1 (a major version) in production is risky without prior testing.",
+   "C": "Upgrading only one production server to 4.1 skips testing and risks inconsistency.",
+   "D": "Scheduling a production upgrade to 3.7 without first validating in development skips the safe testing step."
+  }
+ },
+ {
+  "number": 286,
+  "stem": "A cloud engineer is updating a company's Git system that is currently hosted on version 7.1 of a VM. To avoid potential breaking changes, only the latest minor updates are allowed. Which of the following versions should the engineer update the Git system to?",
+  "options": {
+   "A": "6.5  ",
+   "B": "7.6  ",
+   "C": "7.9  ",
+   "D": "8.1 "
+  },
+  "answer": "C",
+  "choose": "all",
+  "domain": 3,
+  "domainName": "Operations",
+  "explanations": {
+   "A": "Version 6.5 is an older major version (downgrade) and is not the latest minor of 7.1.",
+   "B": "Version 7.6 is a minor update but not the latest minor allowed.",
+   "C": "Version 7.9 is the highest minor release within the same major version 7, satisfying 'latest minor updates only.'",
+   "D": "Version 8.1 is a new major version, which the 'only latest minor' constraint forbids."
+  }
+ },
+ {
+  "number": 287,
+  "stem": "An organization hosts its own data center. It has recently migrated some of its applications to the cloud, but some applications remain in its data center. Which of the following best describes the organization’s cloud deployment model?",
+  "options": {
+   "A": "Community  ",
+   "B": "Private  ",
+   "C": "Hybrid  ",
+   "D": "Public "
+  },
+  "answer": "C",
+  "choose": "all",
+  "domain": 2,
+  "domainName": "Deployment",
+  "explanations": {
+   "A": "Community cloud is shared by multiple orgs with a common purpose, not a mix of on-prem and cloud.",
+   "B": "Private cloud refers only to the on-premises data center side, not the combined model.",
+   "C": "Hybrid cloud describes an organization using both its own data center and public cloud together.",
+   "D": "Public cloud alone does not include the retained on-premises applications."
+  }
+ },
+ {
+  "number": 288,
+  "stem": "A workload that is running in the cloud has a stable resource consumption without major variations. After applying an application update, RAM utilization increases by 20%. The application can be stopped with no business impact, and utilization is expected to remain constant for the next two months. Which of the following is a way to adjust the resources for the application with the least amount of effort?",
+  "options": {
+   "A": "Add a trend to trigger vertical scaling  ",
+   "B": "Manually adjust the compute size  ",
+   "C": "Set up a load trigger to modify resources  ",
+   "D": "Develop an IaC script to adjust computing attributes "
+  },
+  "answer": "B",
+  "choose": "all",
+  "domain": 3,
+  "domainName": "Operations",
+  "explanations": {
+   "A": "Adding a trend-based vertical-scaling trigger is unnecessary automation for a one-time, predictable change.",
+   "B": "Because utilization is constant for two months and the app can be stopped, manually resizing the compute is the least-effort approach.",
+   "C": "A load trigger adds ongoing automation not needed for a stable, known increase.",
+   "D": "Developing an IaC script is over-engineering for a single, predictable resize."
+  }
+ },
+ {
+  "number": 289,
+  "stem": "A cloud engineer must scan cloud resources for vulnerabilities. Which of the following is the first step the cloud engineer should take?",
+  "options": {
+   "A": "Remediate the vulnerabilities  ",
+   "B": "Assess the systems.  ",
+   "C": "Define the scope  ",
+   "D": "Research the CVEs "
+  },
+  "answer": "C",
+  "choose": "all",
+  "domain": 4,
+  "domainName": "Security",
+  "explanations": {
+   "A": "Remediation is the final step, performed only after vulnerabilities are found and scoped.",
+   "B": "Assessment occurs within the scoped engagement, after the scope is defined.",
+   "C": "Defining the scope (which assets, what rules) is the essential first step before scanning cloud resources.",
+   "D": "Researching CVEs happens during scanning/assessment, not before scoping."
+  }
+ },
+ {
+  "number": 290,
+  "stem": "A cloud engineer deploys a group of new VMs to the cloud environment. The VMs have access to sensitive data. Which of the following data protection methods should the engineer use to protect this data from ransomware?",
+  "options": {
+   "A": "Volume encryption  ",
+   "B": "Immutable storage  ",
+   "C": "Incremental backups  ",
+   "D": "Data replication "
+  },
+  "answer": "B",
+  "choose": "all",
+  "domain": 3,
+  "domainName": "Operations",
+  "explanations": {
+   "A": "Volume encryption protects data at rest but does not stop ransomware from encrypting the live mounted volume.",
+   "B": "Immutable (WORM) storage cannot be altered or deleted, so ransomware cannot encrypt or overwrite the retained data.",
+   "C": "Incremental backups can themselves be encrypted/locked by ransomware if reachable.",
+   "D": "Data replication copies changes in real time, including ransomware-encrypted data, spreading the damage."
+  }
+ },
+ {
+  "number": 291,
+  "stem": "A DevOps engineer is initiating a build on a CI/CD pipeline by committing changes to a private repository. Which of the following is the purpose of the private repository?",
+  "options": {
+   "A": "To protect code assets  ",
+   "B": "To deploy to production  ",
+   "C": "To implement version control  ",
+   "D": "To perform integration testing "
+  },
+  "answer": "A",
+  "choose": "all",
+  "domain": 5,
+  "domainName": "DevOps Fundamentals",
+  "explanations": {
+   "A": "A private repository restricts code visibility to authorized users, protecting the organization's code assets.",
+   "B": "Deploying to production is triggered by pipelines, not the purpose of repo privacy.",
+   "C": "Version control is provided by any Git repo (public or private), so privacy is not what makes it version-controlled.",
+   "D": "Integration testing is a pipeline stage, not the reason for keeping the repo private."
+  }
+ },
+ {
+  "number": 292,
+  "stem": "A cloud developer is developing a cloud-native application with the following requirements: • Must be a web-based application • Must be as cost-effective as possible • Must have fast response times • Must be scalable to meet demand Which of the following technologies will best meet these requirements?",
+  "options": {
+   "A": "Serverless function  ",
+   "B": "VM  ",
+   "C": "CDN",
+   "D": "API gateway "
+  },
+  "answer": "A",
+  "choose": "all",
+  "domain": 1,
+  "domainName": "Cloud Architecture",
+  "explanations": {
+   "A": "A serverless function is web-invocable, scales automatically to demand, responds fast, and bills only per use—meeting all requirements cost-effectively.",
+   "B": "A VM runs continuously and costs more for sporadic web traffic, hurting cost-effectiveness.",
+   "C": "A CDN only caches/delivers content; it is not the compute for a web application.",
+   "D": "An API gateway fronts services but is not the scalable compute that runs the application logic."
+  }
+ },
+ {
+  "number": 293,
+  "stem": "Which of the following best describes a compute resource that has its own networking system, OS, CPU, and RAM running on physical hardware?",
+  "options": {
+   "A": "Clustering  ",
+   "B": "Virtual machine  ",
+   "C": "Container  ",
+   "D": "Stand-alone "
+  },
+  "answer": "D",
+  "choose": "all",
+  "domain": 1,
+  "domainName": "Cloud Architecture",
+  "explanations": {
+   "A": "Clustering groups multiple compute resources but does not describe a single resource with its own full stack.",
+   "B": "A VM shares physical hardware with others via a hypervisor and does not own the hardware.",
+   "C": "A container shares the host OS kernel and is not a standalone resource with its own OS.",
+   "D": "A stand-alone (bare-metal) server has its own networking, OS, CPU, and RAM running directly on physical hardware."
+  }
+ },
+ {
+  "number": 294,
+  "stem": "Which of the following commands allows a cloud engineer to create a new template on the local system to later send for code review?",
+  "options": {
+   "A": "git checkout -b newfeature  ",
+   "B": "git fetch newfeature  ",
+   "C": "git pull newfeature  ",
+   "D": "git commit -m \"newfeature\" "
+  },
+  "answer": "A",
+  "choose": "all",
+  "domain": 5,
+  "domainName": "DevOps Fundamentals",
+  "explanations": {
+   "A": "'git checkout -b newfeature' creates a new local branch to stage changes before sending them for code review.",
+   "B": "'git fetch' downloads objects/refs from a remote but does not create a local template branch.",
+   "C": "'git pull' fetches and merges from a remote; it does not create a new branch locally.",
+   "D": "'git commit' records changes to the current branch but does not create a new branch to later review."
+  }
+ },
+ {
+  "number": 295,
+  "stem": "An organization uses a cloud provider's specific features to host applications. The organization planned to move to another cloud provider due to rising costs, but moving was not technically feasible. Which of the following best describes this situation?",
+  "options": {
+   "A": "Platform as a service  ",
+   "B": "Oversubscription  ",
+   "C": "Vendor lock-in  ",
+   "D": "Regulatory compliance "
+  },
+  "answer": "C",
+  "choose": "all",
+  "domain": 4,
+  "domainName": "Security",
+  "explanations": {
+   "A": "PaaS is a service model, not the situation of being unable to leave a provider.",
+   "B": "Oversubscription is a capacity concept, not related to migration infeasibility.",
+   "C": "Relying on a provider's specific features that make moving technically infeasible is vendor lock-in.",
+   "D": "Regulatory compliance may influence provider choice but does not describe the inability to move."
+  }
+ },
+ {
+  "number": 296,
+  "stem": "A cloud engineer must configure a backup at the end of the month. Given the following requirements: • Minimal backup size • Faster backup speed Which of the following backup types best meets the requirements?",
+  "options": {
+   "A": "Tape  ",
+   "B": "Full  ",
+   "C": "Differential  ",
+   "D": "Incremental "
+  },
+  "answer": "D",
+  "choose": "all",
+  "domain": 3,
+  "domainName": "Operations",
+  "explanations": {
+   "A": "Tape is a backup medium, not a backup type that minimizes size/speed for monthly runs.",
+   "B": "A full backup copies everything and is the largest and slowest option.",
+   "C": "A differential backup grows over the cycle and is larger/slower than incremental.",
+   "D": "An incremental backup copies only the changes since the last backup, giving the smallest size and fastest speed."
+  }
+ },
+ {
+  "number": 297,
+  "stem": "A company wants to build a database that will receive requests from its application, but it also has a lot of customer data that must be archived. Which of the following solutions takes into consideration performance and cost implications?",
+  "options": {
+   "A": "SSD for the customer data, SSD for the database  ",
+   "B": "SSD for the database, HDD for the customer data  ",
+   "C": "Object storage for the database, SSD for the customer data  ",
+   "D": "Object storage for the customer data, HDD for the database "
+  },
+  "answer": "B",
+  "choose": "all",
+  "domain": 1,
+  "domainName": "Cloud Architecture",
+  "explanations": {
+   "A": "Using SSD for both the archive and the database is costly and wastes high-performance storage on cold archive data.",
+   "B": "SSD for the active database (performance) and HDD for archived customer data (cost) balances performance and cost.",
+   "C": "Object storage cannot serve as a transactional database backend; databases need block storage.",
+   "D": "HDD for the database would hurt performance, and object storage is wrong for the live database."
+  }
+ },
+ {
+  "number": 298,
+  "stem": "A company notices inconsistencies in its cloud environment. After further analysis, the company discovers that some developers have been making manual configuration changes that roll back changes made by the DevOps team. Which of the following should the company do to best manage its cloud infrastructure? (Choose two.)",
+  "options": {
+   "A": "Enable versioning on cloud resources in order to easily roll back changes  ",
+   "B": "Use cloud policies to enforce the company’s standards  ",
+   "C": "Restrict access to the cloud console to only the DevOps team  ",
+   "D": "Create scripts that use the cloud provider’s CLI  ",
+   "E": "Use IaC to handle the company's cloud resources  ",
+   "F": "Deploy the applications using containers "
+  },
+  "answer": "BE",
+  "choose": "all",
+  "domain": 2,
+  "domainName": "Deployment",
+  "explanations": {
+   "A": "Resource versioning helps rollback but does not prevent manual drift by developers.",
+   "B": "Cloud policies (guardrails) enforce standards and block non-compliant manual changes, curbing drift.",
+   "C": "Restricting console to DevOps only is overly restrictive and not the best practice here.",
+   "D": "CLI scripts are still manual and can drift; they do not solve the inconsistency problem.",
+   "E": "Using IaC makes infrastructure declarative and reproducible, preventing the manual-change rollbacks described.",
+   "F": "Deploying via containers addresses packaging, not the infrastructure configuration-drift issue."
+  }
+ },
+ {
+  "number": 299,
+  "stem": "A cloud security engineer discovers that service account information has been committed to the company’s code repository. Which of the following steps should the cloud security engineer take first? (Choose two.)",
+  "options": {
+   "A": "Change the cipher suite  ",
+   "B": "Enable multifactor authentication  ",
+   "C": "Set up a virtual private network.",
+   "D": "Disable the account  ",
+   "E": "Run a port scan  ",
+   "F": "Rotate the credentials "
+  },
+  "answer": "DF",
+  "choose": "all",
+  "domain": 4,
+  "domainName": "Security",
+  "explanations": {
+   "A": "Changing the cipher suite does not address exposed service-account credentials.",
+   "B": "MFA is good hygiene but does not remediate already-exposed credentials.",
+   "C": "A VPN does not resolve leaked credentials in a repo.",
+   "D": "Disabling the compromised service account immediately stops any further misuse of the leaked credentials.",
+   "E": "A port scan is reconnaissance, not a remediation first step.",
+   "F": "Rotating (changing) the credentials ensures the leaked ones no longer work."
+  }
+ },
+ {
+  "number": 300,
+  "stem": "The following is a code excerpt of a playbook.yaml file: Which of the following functions does this code perform?",
+  "options": {
+   "A": "Registers the variable needed to debug the web server stdout result  ",
+   "B": "Executes the command to restart the web server and lists the result  ",
+   "C": "Prints the amount of time the server has been online  ",
+   "D": "Troubleshoots the web server configurations and standard output "
+  },
+  "answer": "C",
+  "choose": "all",
+  "domain": 6,
+  "domainName": "Troubleshooting",
+  "explanations": {
+   "A": "The playbook does not register a debug variable for web-server stdout in this excerpt.",
+   "B": "The code shown does not execute a restart command; it reports status.",
+   "C": "The playbook runs a command (e.g., 'uptime') that prints how long the server has been online.",
+   "D": "The excerpt is a status/uptime check, not a troubleshooting/configuration step."
+  }
+ },
+ {
+  "number": 301,
+  "stem": "A healthcare provider's regulatory requirements include keeping patient data confidential, unaltered, retained for a minimum of five years, and backed up to a bucket in the cloud. Which of the following methods meets these requirements?",
+  "options": {
+   "A": "Object Lock  ",
+   "B": "Daily full backup  ",
+   "C": "Data replication  ",
+   "D": "Bulk recovery "
+  },
+  "answer": "A",
+  "choose": "all",
+  "domain": 3,
+  "domainName": "Operations",
+  "explanations": {
+   "A": "Object Lock (WORM) makes objects immutable and retained for a set period, satisfying confidentiality, integrity (unaltered), and 5-year retention in a cloud bucket.",
+   "B": "A daily full backup does not enforce immutability or a retention period against alteration.",
+   "C": "Data replication copies data but does not guarantee immutability or retention.",
+   "D": "Bulk recovery is a restore method, not a control for confidentiality/retention/integrity."
+  }
+ },
+ {
+  "number": 302,
+  "stem": "An engineer has an application running in the United States in a cloud environment. This application must be replicated into a United Kingdom cloud environment. When the application is deployed to the United Kingdom environment, there are issues acquiring a virtual machine with a GPU. Which of the following is the most likely reason for this issue?",
+  "options": {
+   "A": "The route tables are misconfigured and cannot connect to virtual machines  ",
+   "B": "The API for creating virtual machines is being throttled  ",
+   "C": "The United Kingdom region has an outage",
+   "D": "The United Kingdom region does not have virtual machines that meet the requirements  ",
+   "E": "The United Kingdom region cannot connect to the United States region "
+  },
+  "answer": "D",
+  "choose": "all",
+  "domain": 1,
+  "domainName": "Cloud Architecture",
+  "explanations": {
+   "A": "Misconfigured route tables would block connectivity generally, not specifically prevent acquiring a GPU VM.",
+   "B": "API throttling would affect all VM creation, not just GPU-type instances.",
+   "C": "A region-wide outage would prevent any VM, not selectively GPU VMs.",
+   "D": "The UK region may simply not offer the GPU VM type/size required, explaining the acquisition failure.",
+   "E": "Regional network disconnection would break all cross-region communication, not just GPU VM acquisition in the UK."
+  }
+ },
+ {
+  "number": 303,
+  "stem": "A large financial corporation experienced a data breach. An investigation reveals that the attacker infiltrated the firewall via a vulnerability and accessed different servers within the network. Which of the following security controls should the cloud security team implement to prevent future breaches like this one?",
+  "options": {
+   "A": "An MFA solution  ",
+   "B": "An IDS  ",
+   "C": "A Zero Trust architecture  ",
+   "D": "A NAC "
+  },
+  "answer": "C",
+  "choose": "all",
+  "domain": 4,
+  "domainName": "Security",
+  "explanations": {
+   "A": "MFA strengthens authentication but does not prevent lateral movement after a firewall breach.",
+   "B": "An IDS only detects intrusions; it does not prevent the lateral access described.",
+   "C": "Zero Trust architecture assumes no implicit trust, enforces microsegmentation and continuous verification, and would have limited the attacker's lateral movement.",
+   "D": "NAC controls network admission but does not address post-breach lateral movement like Zero Trust."
+  }
+ },
+ {
+  "number": 304,
+  "stem": "A cloud administrator must increase uptime for an application. Which of the following methods keeps costs to a minimum while increasing uptime?",
+  "options": {
+   "A": "Deploying on-premises services  ",
+   "B": "Deploying a geo-redundant cluster  ",
+   "C": "Deploying services to a cold DR site  ",
+   "D": "Deploying services to availability zones "
+  },
+  "answer": "D",
+  "choose": "all",
+  "domain": 2,
+  "domainName": "Deployment",
+  "explanations": {
+   "A": "Deploying on-premises adds cost and does not inherently increase uptime cheaply.",
+   "B": "A geo-redundant cluster maximizes uptime but at higher cost than necessary.",
+   "C": "A cold DR site has long recovery time (downtime), contradicting uptime goals.",
+   "D": "Deploying across availability zones provides redundancy and high uptime at minimal added cost within a region."
+  }
+ },
+ {
+  "number": 305,
+  "stem": "Which of the following technologies helps secure public-facing API endpoints?",
+  "options": {
+   "A": "DDoS protection  ",
+   "B": "Vulnerability scanning  ",
+   "C": "Data loss prevention  ",
+   "D": "Intrusion detection systems "
+  },
+  "answer": "A",
+  "choose": "all",
+  "domain": 4,
+  "domainName": "Security",
+  "explanations": {
+   "A": "DDoS protection shields public-facing API endpoints from volumetric/flooding attacks.",
+   "B": "Vulnerability scanning identifies weaknesses but does not secure the endpoint in real time.",
+   "C": "DLP protects data egress, not API endpoint availability/security.",
+   "D": "An IDS detects intrusions but is not the primary protection for public API endpoints against floods."
+  }
+ },
+ {
+  "number": 306,
+  "stem": "An e-commerce business operates its web applications using a microservices-based architecture. These application instances run on multiple VMs in the cloud and are interconnected through discovery. As the business grows, prioritizing rapid scaling will be crucial. Which of the following best meets the business's scaling needs?",
+  "options": {
+   "A": "Manually tuning the VM size to meet demand based on estimates and projections  ",
+   "B": "Configuring vertical scaling to increase system resources on a set schedule  ",
+   "C": "Automatically provisioning more application instances when CPU usage hits a set threshold  ",
+   "D": "Setting up a new colocated data center to handle extra load based on specific criteria "
+  },
+  "answer": "C",
+  "choose": "all",
+  "domain": 3,
+  "domainName": "Operations",
+  "explanations": {
+   "A": "Manual VM sizing based on estimates is slow and does not meet rapid-scaling needs.",
+   "B": "Scheduled vertical scaling is rigid and not responsive to actual demand spikes.",
+   "C": "Automatically provisioning more application instances when CPU hits a threshold delivers the rapid, demand-driven horizontal scaling required.",
+   "D": "Building a new colocated data center is costly and slow, not a scaling strategy for the app."
+  }
+ },
+ {
+  "number": 307,
+  "stem": "A company needs an application to manage its CRM system with the least administrative overhead. Which of the following models is the best for migrating the infrastructure to the cloud?",
+  "options": {
+   "A": "PaaS  ",
+   "B": "SaaS  ",
+   "C": "FaaS  ",
+   "D": "IaaS "
+  },
+  "answer": "B",
+  "choose": "all",
+  "domain": 1,
+  "domainName": "Cloud Architecture",
+  "explanations": {
+   "A": "PaaS still leaves the provider managing runtime but the customer manages the app; SaaS is even lower overhead.",
+   "B": "SaaS delivers the CRM as a managed service, giving the least administrative overhead.",
+   "C": "FaaS runs functions, not a full CRM application with the least overhead for this use case.",
+   "D": "IaaS requires the most administrative overhead (OS, middleware, app)."
+  }
+ },
+ {
+  "number": 308,
+  "stem": "Which of the following commands is used to deploy a container in which the image name is \"working\"?",
+  "options": {
+   "A": "$docker run -p 80:8080 -it working images.comptia.org/development:latest -e /bin/bash  ",
+   "B": "$docker run -p 80:8080 -it images.comptia.org/working/production:latest -e /bin/bash  ",
+   "C": "$docker run -p 80:8080 -it images.comptia.org/abcd123/working:latest -e /bin/bash  ",
+   "D": "$docker run -p 80:8080 -it working.images.comptia.org/abcd12:latest -e /bin/bash "
+  },
+  "answer": "C",
+  "choose": "all",
+  "domain": 5,
+  "domainName": "DevOps Fundamentals",
+  "explanations": {
+   "A": "The token 'working images.comptia.org/...' places 'working' as part of the registry host, not the image name, and the syntax is malformed.",
+   "B": "The image path ends in '/working/production:latest', making 'production' the image name, not 'working'.",
+   "C": "The path 'images.comptia.org/abcd123/working:latest' correctly uses 'working' as the image (repository) name with a valid tag.",
+   "D": "Here 'working.images.comptia.org' makes 'working' a subdomain of the registry, not the image name."
+  }
+ },
+ {
+  "number": 309,
+  "stem": "A company uses two mobile applications. Application A is used in the United States market, and Application В is used in the European Union market with GDPR restrictions. Both applications must comply with PCI standards. The company is consolidating both mobile applications into a single application and must standardize its database back-end system. Which of the following is the best option to provision the database for the consolidated mobile application?",
+  "options": {
+   "A": "Deploying one global database across multiple regions  ",
+   "B": "Using two databases in the same region with different access controls  ",
+   "C": "Implementing two databases in two different regions  ",
+   "D": "Provisioning one database in one region with separate IAM permissions "
+  },
+  "answer": "C",
+  "choose": "all",
+  "domain": 4,
+  "domainName": "Security",
+  "explanations": {
+   "A": "A single global database across regions would place EU (GDPR) data outside the EU, violating residency rules.",
+   "B": "Two databases in the same region cannot satisfy GDPR data-residency for the EU market.",
+   "C": "Deploying two databases in two different regions (US and EU) satisfies GDPR residency for EU data while keeping US data local.",
+   "D": "One database in one region with separate IAM still concentrates EU data outside the EU, breaking GDPR residency."
+  }
+ },
+ {
+  "number": 310,
+  "stem": "A company is migrating to a cloud. The company wants a solution that will help developers focus primarily on code rather than on managing infrastructure. Which of the following best meets this need?",
+  "options": {
+   "A": "Deploying IaaS  ",
+   "B": "Configuring FaaS  ",
+   "C": "Subscribing to PaaS  ",
+   "D": "Purchasing SaaS "
+  },
+  "answer": "C",
+  "choose": "all",
+  "domain": 1,
+  "domainName": "Cloud Architecture",
+  "explanations": {
+   "A": "IaaS leaves the company managing servers, OS, and runtime—contrary to focusing on code.",
+   "B": "FaaS is code-level but narrow; PaaS better covers 'focus on code, not infrastructure' for a general app.",
+   "C": "PaaS abstracts away infrastructure management so developers focus on application code.",
+   "D": "SaaS is a consumed application, not a platform for the company's own developers to build on."
+  }
+ },
+ {
+  "number": 311,
+  "stem": "A cloud engineer wants resource-level visibility for billing reports. Which of the following should the cloud engineer configure?",
+  "options": {
+   "A": "Rightsizing  ",
+   "B": "Invoicing  ",
+   "C": "Reserve instances  ",
+   "D": "Tagging "
+  },
+  "answer": "D",
+  "choose": "all",
+  "domain": 1,
+  "domainName": "Cloud Architecture",
+  "explanations": {
+   "A": "Rightsizing optimizes resource sizing/cost, not billing attribution.",
+   "B": "Invoicing is the bill itself, not the mechanism for resource-level detail.",
+   "C": "Reserved instances are a discount commitment, not a visibility feature.",
+   "D": "Tagging resources lets the cloud bill be broken down by resource/project/owner for resource-level visibility."
+  }
+ },
+ {
+  "number": 312,
+  "stem": "A cloud administrator is troubleshooting an issue for a client. The client has the following capabilities: • Can access servers on the VPC, including servers on other subnets • Can ping other resources on the network • Can ping its own gateway However, the client cannot reach the internet Which of the following is most likely the cause?",
+  "options": {
+   "A": "The gateway is missing a route  ",
+   "B": "The client has a duplicate IP address  ",
+   "C": "The DHCP server is not functioning properly  ",
+   "D": "The network has too much latency. "
+  },
+  "answer": "A",
+  "choose": "all",
+  "domain": 1,
+  "domainName": "Cloud Architecture",
+  "explanations": {
+   "A": "The client can reach local subnets and its gateway but not the internet, indicating the gateway/subnet lacks a route (e.g., to an internet gateway) for external traffic.",
+   "B": "A duplicate IP would break local communication, which works here.",
+   "C": "A failing DHCP server would prevent IP assignment, but the client already has working local connectivity.",
+   "D": "High latency would slow but not block internet access entirely."
+  }
+ },
+ {
+  "number": 313,
+  "stem": "A company wants to offer customers an interactive experience through its website to solve common issues. Which of the following would most likely provide this feature?",
+  "options": {
+   "A": "Search engine  ",
+   "B": "Generative AI  ",
+   "C": "Help page",
+   "D": "Text recognition "
+  },
+  "answer": "B",
+  "choose": "all",
+  "domain": 1,
+  "domainName": "Cloud Architecture",
+  "explanations": {
+   "A": "A search engine returns links, not an interactive conversational experience.",
+   "B": "Generative AI powers an interactive chatbot that can solve common issues conversationally on the website.",
+   "C": "A help page is static documentation, not interactive.",
+   "D": "Text recognition (OCR) extracts text from images, not an interactive support experience."
+  }
+ },
+ {
+  "number": 314,
+  "stem": "A company recently migrated to a public cloud provider. The company's computer incident response team needs to configure native cloud services for detailed logging. Which of the following should the team implement on each cloud service to support root cause analysis of past events? (Choose two.)",
+  "options": {
+   "A": "Log retention  ",
+   "B": "Tracing  ",
+   "C": "Log splicing  ",
+   "D": "Log rotation  ",
+   "E": "Hashing  ",
+   "F": "Encryption "
+  },
+  "answer": "AB",
+  "choose": "all",
+  "domain": 3,
+  "domainName": "Operations",
+  "explanations": {
+   "A": "Log retention keeps historical logs available, enabling root-cause analysis of past events.",
+   "B": "Tracing (distributed tracing) follows requests across services, supporting detailed root-cause analysis.",
+   "C": "Log splicing is not a standard native cloud logging service for root-cause analysis.",
+   "D": "Log rotation manages log file size and may delete old logs, working against historical analysis.",
+   "E": "Hashing verifies integrity, not the logging detail needed for analysis.",
+   "F": "Encryption protects log confidentiality but does not by itself support root-cause analysis."
+  }
+ }
 ];
