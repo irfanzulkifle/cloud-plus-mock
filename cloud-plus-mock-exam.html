@@ -221,7 +221,7 @@ body{
     <div class="opt-row">
       <label class="selectlbl">Mode:</label>
       <select id="optMode">
-        <option value="full">Full exam (all 312)</option>
+        <option value="full">Full exam (all 310)</option>
         <option value="domain">By domain</option>
         <option value="rand50">Random 50</option>
         <option value="rand100">Random 100</option>
@@ -370,8 +370,8 @@ window.EXAM_DATA = [
   },
   "answer": "D",
   "choose": "all",
-  "domain": 6,
-  "domainName": "Troubleshooting",
+  "domain": 1,
+  "domainName": "Cloud Architecture",
   "explanations": {
    "A": "Image reconstruction repairs or rebuilds images, not identify/understand objects.",
    "B": "Facial recognition is a narrower subset limited to identifying faces, not all objects/people generally.",
@@ -532,8 +532,8 @@ window.EXAM_DATA = [
   },
   "answer": "AD",
   "choose": "all",
-  "domain": 1,
-  "domainName": "Cloud Architecture",
+  "domain": 2,
+  "domainName": "Deployment",
   "explanations": {
    "A": "Compliance with laws/standards is a top concern for a public sector migration, correct.",
    "B": "Choosing IaaS vs SaaS is a technical detail, not among the most important high-level migration considerations.",
@@ -1159,7 +1159,7 @@ window.EXAM_DATA = [
   "domain": 1,
   "domainName": "Cloud Architecture",
   "explanations": {
-   "A": "Modifying the subnet mask to /23 for IT/ops would combine those two departments' address space but doesn't segregate subnets or provide IT access to all department subnets as required.",
+   "A": "Note: this question references a network configuration diagram that wasn't preserved in the source material, so this option's fit can't be independently re-verified beyond the stated answer key.",
    "B": "Configuring static routes from each subnet to 10.1.40.1 addresses reaching one specific gateway, not enabling IT to reach all subnets while keeping segregation.",
    "C": "Changing BYOD policy reduces device count but doesn't fix the routing/segregation configuration issue described.",
    "D": "Configuring static routes from IT's subnet (10.1.30.1) to each other subnet lets IT communicate with all subnets while those subnets remain otherwise segregated, meeting the requirement.",
@@ -1282,8 +1282,8 @@ window.EXAM_DATA = [
   },
   "answer": "A",
   "choose": "all",
-  "domain": 1,
-  "domainName": "Cloud Architecture",
+  "domain": 6,
+  "domainName": "Troubleshooting",
   "explanations": {
    "A": "Since traffic reaches the development network from the office (per flow logs) but resources aren't reachable, the development network's own routing table is the next thing to check for a return-path routing issue.",
    "B": "Cipher mismatches would cause tunnel establishment failures, but the tunnel is already established, so this isn't the issue.",
@@ -1462,8 +1462,8 @@ window.EXAM_DATA = [
   },
   "answer": "B",
   "choose": "all",
-  "domain": 3,
-  "domainName": "Operations",
+  "domain": 4,
+  "domainName": "Security",
   "explanations": {
    "A": "Scanning scope defines what will be scanned, not an action taken against a found threat.",
    "B": "Blocking a known malicious IP in the firewall/IP tables is a remediation action taken to fix an identified vulnerability/threat.",
@@ -1522,8 +1522,8 @@ window.EXAM_DATA = [
   },
   "answer": "D",
   "choose": "all",
-  "domain": 1,
-  "domainName": "Cloud Architecture",
+  "domain": 5,
+  "domainName": "DevOps Fundamentals",
   "explanations": {
    "A": "IaC deploys infrastructure but doesn't control who can view container image contents.",
    "B": "Converting to VMs doesn't address exposure of proprietary code in Docker Hub images and adds unnecessary overhead.",
@@ -1562,8 +1562,8 @@ window.EXAM_DATA = [
   },
   "answer": "B",
   "choose": "all",
-  "domain": 1,
-  "domainName": "Cloud Architecture",
+  "domain": 4,
+  "domainName": "Security",
   "explanations": {
    "A": "Rebooting the VM wouldn't resolve an access permission issue tied to group membership.",
    "B": "Reviewing the administrator's actual permissions/group propagation is the direct way to find why access still fails despite being added to the group (e.g., permissions not yet applied or misconfigured), matching root-cause troubleshooting.",
@@ -1727,7 +1727,7 @@ window.EXAM_DATA = [
   "explanations": {
    "A": "Peer-reviewed pull requests catch some issues but rely on human review and won't fully eliminate accidental secret leaks in code/containers.",
    "B": "Using VMs instead of containers doesn't address secrets management in CI/CD pipelines at all.",
-   "C": "Private image repositories restrict who can pull images but don't stop secrets from being baked into and exposed within the image layers themselves during the pipeline.",
+   "C": "Private image repositories restrict who can pull an image but don't stop secrets from being baked into image layers during the build — no single option here fully 'eliminates' the risk; this is the best-available mitigation among the four given.",
    "D": "Canary tests validate deployment behavior, unrelated to preventing secret leakage."
   }
  },
@@ -1782,8 +1782,8 @@ window.EXAM_DATA = [
   },
   "answer": "B",
   "choose": "all",
-  "domain": 2,
-  "domainName": "Deployment",
+  "domain": 1,
+  "domainName": "Cloud Architecture",
   "explanations": {
    "A": "A self-managed DB on a VM still requires patching, backups, and tuning, i.e. high operational overhead.",
    "B": "Correct: a managed SQL database (DBaaS) offloads patching, backups, and HA to the provider, minimizing operational overhead.",
@@ -1860,15 +1860,15 @@ window.EXAM_DATA = [
    "C": "The IP address of Server 2 to 172.16.12.18  ",
    "D": "The IP address of Server 2 to 172.16.14.14 "
   },
-  "answer": "C",
+  "answer": "D",
   "choose": "all",
   "domain": 4,
   "domainName": "Security",
   "explanations": {
    "A": "Changing Server 1's IP within the same subnet range doesn't isolate it from others.",
    "B": "Changing Server 1's IP still keeps it in the same /subnet as other servers, doesn't fix isolation.",
-   "C": "Correct: Server 2's IP (172.16.12.18) is in the same subnet as the others; moving it to a different subnet range removes the overlap causing unwanted reachability.",
-   "D": "Changing Server 2's IP to 172.16.14.14 is a different range but not the option that specifically fixes the identified overlap in this scenario."
+   "C": "172.16.12.18 is still within the 172.16.12.0/24 network as Server 1, so it does not isolate Server 2 — the servers remain reachable on the same subnet.",
+   "D": "172.16.14.14 places Server 2 on a different subnet (172.16.14.0/24) entirely, which is what actually prevents the two servers from reaching each other on the same network."
   }
  },
  {
@@ -1942,8 +1942,8 @@ window.EXAM_DATA = [
   },
   "answer": "D",
   "choose": "all",
-  "domain": 2,
-  "domainName": "Deployment",
+  "domain": 5,
+  "domainName": "DevOps Fundamentals",
   "explanations": {
    "A": "Code drifting refers to configuration drift from a baseline, not tracking development changes.",
    "B": "Code control is not a standard cloud/dev term for change tracking.",
@@ -1989,26 +1989,6 @@ window.EXAM_DATA = [
    "B": "Correct: pull requests require peer review before merging, catching misconfigurations before they reach production templates.",
    "C": "Using a web interface to directly edit files bypasses version control and review, increasing misconfiguration risk.",
    "D": "Committing directly to main skips review, increasing chance of introducing errors."
-  }
- },
- {
-  "number": 85,
-  "stem": "An administrator is creating a cron job that shuts down the virtual machines at night to save on costs. Which of the following is the best way to achieve this task?",
-  "options": {
-   "A": "    ",
-   "B": "    ",
-   "C": "    ",
-   "D": ""
-  },
-  "answer": "C",
-  "choose": "all",
-  "domain": 1,
-  "domainName": "Cloud Architecture",
-  "explanations": {
-   "A": "Placeholder option content not meaningfully distinguishable from others in this question.",
-   "B": "Placeholder option content not meaningfully distinguishable from others in this question.",
-   "C": "Correct: this option represents the correct scheduling mechanism (e.g. a proper cron/scheduled task syntax) to shut down VMs nightly.",
-   "D": "Empty/invalid option, not a valid method to schedule the shutdown."
   }
  },
  {
@@ -2182,8 +2162,8 @@ window.EXAM_DATA = [
   },
   "answer": "C",
   "choose": "all",
-  "domain": 2,
-  "domainName": "Deployment",
+  "domain": 4,
+  "domainName": "Security",
   "explanations": {
    "A": "Delaying a major business conference is disruptive and usually not a reasonable first option.",
    "B": "Applying the patch after the event leaves the system exposed to a known critical vulnerability during the sensitive period.",
@@ -2227,7 +2207,7 @@ window.EXAM_DATA = [
   "domain": 4,
   "domainName": "Security",
   "explanations": {
-   "A": "Hashing is one-way and used for integrity verification, not for confidentiality/decryptable storage of data.",
+   "A": "Hashing provides integrity (detects tampering) rather than confidentiality on its own. It's paired with AES here because 'secure' in this context covers both integrity and confidentiality (the broader CIA triad), not confidentiality alone.",
    "B": "Encoding (e.g. Base64) is reversible and offers no real security, not encryption.",
    "C": "SAML is used for authentication/SSO, not for encrypting data at rest.",
    "D": "Correct: AES is a strong symmetric encryption algorithm suitable for protecting data at rest.",
@@ -2366,8 +2346,8 @@ window.EXAM_DATA = [
   },
   "answer": "D",
   "choose": "all",
-  "domain": 1,
-  "domainName": "Cloud Architecture",
+  "domain": 4,
+  "domainName": "Security",
   "explanations": {
    "A": "Defacement modifies the visible page but isn't indicated as the described impact here.",
    "B": "DoS attacks impact availability, not indicated by the log evidence described.",
@@ -2386,8 +2366,8 @@ window.EXAM_DATA = [
   },
   "answer": "B",
   "choose": "all",
-  "domain": 2,
-  "domainName": "Deployment",
+  "domain": 4,
+  "domainName": "Security",
   "explanations": {
    "A": "A core dump could expose data but isn't tied to a public code repository push.",
    "B": "Correct: hard-coded credentials committed to the public repo would let attackers directly access the database.",
@@ -2446,8 +2426,8 @@ window.EXAM_DATA = [
   },
   "answer": "C",
   "choose": "all",
-  "domain": 2,
-  "domainName": "Deployment",
+  "domain": 1,
+  "domainName": "Cloud Architecture",
   "explanations": {
    "A": "File storage is less scalable and typically costs more than object storage for unstructured data at scale.",
    "B": "Block storage is optimized for structured, low-latency access (like databases), not ideal or as cost-effective for unstructured data.",
@@ -2506,8 +2486,8 @@ window.EXAM_DATA = [
   },
   "answer": "B",
   "choose": "all",
-  "domain": 2,
-  "domainName": "Deployment",
+  "domain": 3,
+  "domainName": "Operations",
   "explanations": {
    "A": "A simple ping only checks basic reachability, not detailed event-based monitoring.",
    "B": "Correct: a real-time dashboard with visualizations lets the team monitor specific events and critical activity as they occur.",
@@ -2770,8 +2750,8 @@ window.EXAM_DATA = [
   },
   "answer": "B",
   "choose": "all",
-  "domain": 4,
-  "domainName": "Security",
+  "domain": 1,
+  "domainName": "Cloud Architecture",
   "explanations": {
    "A": "A CDN doesn't eliminate storage costs; origin storage is still required.",
    "B": "Correct: a CDN caches content closer to users geographically, improving site speed/load times for images.",
@@ -2990,8 +2970,8 @@ window.EXAM_DATA = [
   },
   "answer": "D",
   "choose": "all",
-  "domain": 6,
-  "domainName": "Troubleshooting",
+  "domain": 1,
+  "domainName": "Cloud Architecture",
   "explanations": {
    "A": "Monolithic architecture is a single tightly-coupled unit, opposite of decoupled/decentralized.",
    "B": "Hybrid cloud describes deployment location mix, not an application architecture pattern for decoupling.",
@@ -3264,26 +3244,6 @@ window.EXAM_DATA = [
   }
  },
  {
-  "number": 148,
-  "stem": "A cloud solutions architect needs to deploy a simple, public-facing website with the following requirements: • Cost-effective • Highly available • Self-healing • Secure Which of the following will be the most appropriate template to use?",
-  "options": {
-   "A": "    ",
-   "B": "",
-   "C": "    ",
-   "D": "    "
-  },
-  "answer": "D",
-  "choose": "all",
-  "domain": 2,
-  "domainName": "Deployment",
-  "explanations": {
-   "A": "Not the best fit: this template option lacks the automated scaling/self-healing needed for the given requirements.",
-   "B": "Not the best fit: without self-healing and HA automation, this option fails the availability requirement.",
-   "C": "Not the best fit: doesn't provide the combination of cost efficiency and automatic recovery required.",
-   "D": "Correct: this template (e.g., static hosting + CDN + auto-scaling/managed service) best balances cost, availability, self-healing, and security for a simple public site."
-  }
- },
- {
   "number": 149,
   "stem": "Which of the following interfaces is most commonly used for SSDs but not for HDDs?",
   "options": {
@@ -3498,8 +3458,8 @@ window.EXAM_DATA = [
   },
   "answer": "D",
   "choose": "all",
-  "domain": 3,
-  "domainName": "Operations",
+  "domain": 4,
+  "domainName": "Security",
   "explanations": {
    "A": "Metrics and alerts show performance data, not protection against log tampering.",
    "B": "Tracing and aggregation help correlate events but don't prevent logs from being altered.",
@@ -3582,8 +3542,8 @@ window.EXAM_DATA = [
   },
   "answer": "A",
   "choose": "all",
-  "domain": 2,
-  "domainName": "Deployment",
+  "domain": 4,
+  "domainName": "Security",
   "explanations": {
    "A": "Correct: an API key is the standard, lightweight way for an application (machine) to authenticate to cloud APIs.",
    "B": "Cookies are used for browser session state, not application-to-API authentication.",
@@ -3642,8 +3602,8 @@ window.EXAM_DATA = [
   },
   "answer": "A",
   "choose": "all",
-  "domain": 1,
-  "domainName": "Cloud Architecture",
+  "domain": 4,
+  "domainName": "Security",
   "explanations": {
    "A": "Correct: the standard order is scanning scope, identification, assessment, then remediation.",
    "B": "Assessment before identification is out of order; you must identify before assessing.",
@@ -3683,8 +3643,8 @@ window.EXAM_DATA = [
   },
   "answer": "C",
   "choose": "all",
-  "domain": 5,
-  "domainName": "DevOps Fundamentals",
+  "domain": 4,
+  "domainName": "Security",
   "explanations": {
    "A": "A password-sharing policy doesn't address the active exfiltration happening now.",
    "B": "Fully preventing repo access might be too broad/slow to implement immediately and could disrupt legitimate offboarding tasks.",
@@ -3764,8 +3724,8 @@ window.EXAM_DATA = [
   },
   "answer": "B",
   "choose": "all",
-  "domain": 2,
-  "domainName": "Deployment",
+  "domain": 1,
+  "domainName": "Cloud Architecture",
   "explanations": {
    "A": "A private cloud is dedicated to one organization, not shared to reduce costs across multiple tenants.",
    "B": "Correct: a community cloud is shared among organizations with common interests (e.g., finance sector), reducing costs via shared infrastructure.",
@@ -3864,8 +3824,8 @@ window.EXAM_DATA = [
   },
   "answer": "D",
   "choose": "all",
-  "domain": 3,
-  "domainName": "Operations",
+  "domain": 4,
+  "domainName": "Security",
   "explanations": {
    "A": "2FA on the console helps but doesn't fix the root cause of the service account having overly broad group membership.",
    "B": "A stronger password doesn't prevent the account from self-escalating privileges again if it still has broad access.",
@@ -4024,8 +3984,8 @@ window.EXAM_DATA = [
   },
   "answer": "C",
   "choose": "all",
-  "domain": 6,
-  "domainName": "Troubleshooting",
+  "domain": 1,
+  "domainName": "Cloud Architecture",
   "explanations": {
    "A": "Document scanning just creates a digital image; it doesn't extract/read the text content itself.",
    "B": "Sentiment analysis interprets emotional tone in text, not reading printed characters from an image.",
@@ -4164,8 +4124,8 @@ window.EXAM_DATA = [
   },
   "answer": "D",
   "choose": "all",
-  "domain": 4,
-  "domainName": "Security",
+  "domain": 6,
+  "domainName": "Troubleshooting",
   "explanations": {
    "A": "Disk space on app servers wouldn't cause the load balancer itself to deny connections.",
    "B": "If the LB couldn't reach app servers, backend health checks would fail, not necessarily show \"denied\" at the LB layer with servers reporting healthy.",
@@ -4204,8 +4164,8 @@ window.EXAM_DATA = [
   },
   "answer": "C",
   "choose": "all",
-  "domain": 4,
-  "domainName": "Security",
+  "domain": 3,
+  "domainName": "Operations",
   "explanations": {
    "A": "Storage costs scale with data volume, not significantly with cross-region architecture choice.",
    "B": "Power and cooling costs are borne by the CSP, not directly billed based on region count to the customer.",
@@ -4284,8 +4244,8 @@ window.EXAM_DATA = [
   },
   "answer": "B",
   "choose": "all",
-  "domain": 4,
-  "domainName": "Security",
+  "domain": 1,
+  "domainName": "Cloud Architecture",
   "explanations": {
    "A": "ICMP is used for diagnostics (e.g., ping), not typical IoT-to-gateway application messaging.",
    "B": "Correct: MQTT is a lightweight pub/sub protocol commonly used by IoT devices to communicate with gateways.",
@@ -4324,8 +4284,8 @@ window.EXAM_DATA = [
   },
   "answer": "A",
   "choose": "all",
-  "domain": 4,
-  "domainName": "Security",
+  "domain": 5,
+  "domainName": "DevOps Fundamentals",
   "explanations": {
    "A": "Correct: branching lets developers maintain separate lines of code per client/feature set while sharing a common base product.",
    "B": "A commit just records a change snapshot; it doesn't itself manage multiple parallel client variations.",
@@ -4602,14 +4562,14 @@ window.EXAM_DATA = [
    "C": "Security of the application  ",
    "D": "Security of the cloud "
   },
-  "answer": "C",
+  "answer": "B",
   "choose": "all",
   "domain": 1,
   "domainName": "Cloud Architecture",
   "explanations": {
    "A": "The physical security of data-center facilities is the cloud provider's responsibility under the shared responsibility model, not the customer's.",
-   "B": "'Security in the cloud' is the customer's broad domain, but the specific accountable item the question targets is the customer's own application.",
-   "C": "Under the shared responsibility model the customer is accountable for securing the applications (and data, OS, access) they deploy 'in the cloud.'",
+   "B": "In the shared responsibility model, the customer is responsible for 'security in the cloud' — securing what they put into the cloud (data, apps, configs, access) — while the provider secures 'of the cloud' (the underlying infrastructure).",
+   "C": "This is close but not the standard shared-responsibility phrasing. The customer's responsibility is broadly termed 'security in the cloud,' which covers the application and more, not just the application in isolation.",
    "D": "'Security of the cloud' (the underlying infrastructure) is the provider's responsibility, not the customer's."
   }
  },
@@ -4644,8 +4604,8 @@ window.EXAM_DATA = [
   },
   "answer": "C",
   "choose": "all",
-  "domain": 1,
-  "domainName": "Cloud Architecture",
+  "domain": 4,
+  "domainName": "Security",
   "explanations": {
    "A": "Regulatory requirements come from laws/regulators, not from a bilateral agreement between two organizations.",
    "B": "Litigation refers to legal disputes, not a mutual contractual obligation to encrypt data.",
@@ -5108,8 +5068,8 @@ window.EXAM_DATA = [
   },
   "answer": "D",
   "choose": "all",
-  "domain": 6,
-  "domainName": "Troubleshooting",
+  "domain": 1,
+  "domainName": "Cloud Architecture",
   "explanations": {
    "A": "A clustered instance improves local HA but may reside in a single AZ and lacks guaranteed cross-DC failover.",
    "B": "A Redis cache is an in-memory cache, not a durable primary database with point-in-time restore.",
@@ -5148,8 +5108,8 @@ window.EXAM_DATA = [
   },
   "answer": "B",
   "choose": "all",
-  "domain": 2,
-  "domainName": "Deployment",
+  "domain": 6,
+  "domainName": "Troubleshooting",
   "explanations": {
    "A": "Restarting the database is a guess that bypasses diagnosing why the gateway timed out.",
    "B": "An HTTP 504 means the load balancer did not get a timely response from a backend; reviewing the health-check configuration reveals which targets are unhealthy/unresponsive.",
@@ -5188,8 +5148,8 @@ window.EXAM_DATA = [
   },
   "answer": "D",
   "choose": "all",
-  "domain": 3,
-  "domainName": "Operations",
+  "domain": 2,
+  "domainName": "Deployment",
   "explanations": {
    "A": "Containers share the host OS kernel, which reduces isolation; sharing resources does not improve security control.",
    "B": "Container technology (e.g., Docker) is open-source, not proprietary, and that is not its DevOps benefit.",
@@ -5288,8 +5248,8 @@ window.EXAM_DATA = [
   },
   "answer": "D",
   "choose": "all",
-  "domain": 1,
-  "domainName": "Cloud Architecture",
+  "domain": 2,
+  "domainName": "Deployment",
   "explanations": {
    "A": "A forward proxy handles outbound client requests, not exposing container services to networks.",
    "B": "Network orchestration manages scheduling/networking but is not the mechanism that exposes a container port.",
@@ -5408,17 +5368,17 @@ window.EXAM_DATA = [
    "E": "The cloud provider has a full outage.  ",
    "F": "The permissions are insufficient. "
   },
-  "answer": "BF",
+  "answer": "AF",
   "choose": "all",
   "domain": 6,
   "domainName": "Troubleshooting",
   "explanations": {
-   "A": "Service quotas being exceeded would typically block a deployment entirely rather than produce the selective partial failure described here.",
-   "B": "Incorrect deployment credentials can cause a partial failure if some components were already authenticated/deployed before the error surfaced.",
+   "A": "Exceeding a service quota (e.g. a per-region VM quota) would specifically block VM creation while leaving other automated components (which don't hit that quota) to deploy successfully — explaining a partial failure.",
+   "B": "Incorrect credentials would fail authentication for the entire deployment pipeline, causing a total failure, not a selective one where only VM creation fails.",
    "C": "A non-working provider API would cause a total, not partial, deployment failure.",
    "D": "An outdated IaC version may still deploy or fail on specific resources but is less directly a partial-failure cause than permissions/credentials.",
    "E": "A full provider outage causes a total failure, not a partial one.",
-   "F": "Insufficient permissions on specific resources cause only those resources to fail while others succeed—a classic partial failure."
+   "F": "Insufficient permissions scoped specifically to the VM-creation action would block just that step while other components (which don't need that permission) succeed — explaining a partial failure."
   }
  },
  {
@@ -5434,8 +5394,8 @@ window.EXAM_DATA = [
   },
   "answer": "BC",
   "choose": "all",
-  "domain": 4,
-  "domainName": "Security",
+  "domain": 1,
+  "domainName": "Cloud Architecture",
   "explanations": {
    "A": "Cost is a factor but does not by itself prevent lock-in.",
    "B": "Using open-source technologies avoids proprietary formats/APIs that create lock-in.",
@@ -5596,8 +5556,8 @@ window.EXAM_DATA = [
   },
   "answer": "A",
   "choose": "all",
-  "domain": 3,
-  "domainName": "Operations",
+  "domain": 1,
+  "domainName": "Cloud Architecture",
   "explanations": {
    "A": "Object storage is designed for massive, scalable, unstructured data lakes (files, logs, datasets).",
    "B": "Block storage is for VM disks and databases, not ideal for a data lake.",
@@ -5656,8 +5616,8 @@ window.EXAM_DATA = [
   },
   "answer": "B",
   "choose": "all",
-  "domain": 5,
-  "domainName": "DevOps Fundamentals",
+  "domain": 3,
+  "domainName": "Operations",
   "explanations": {
    "A": "Deploying application versions is done via CI/CD tools, not Grafana.",
    "B": "Grafana is a dashboards/visualization tool used to observe an application's health and metrics.",
@@ -5762,8 +5722,8 @@ window.EXAM_DATA = [
   },
   "answer": "D",
   "choose": "all",
-  "domain": 5,
-  "domainName": "DevOps Fundamentals",
+  "domain": 2,
+  "domainName": "Deployment",
   "explanations": {
    "A": "Jenkins is a CI/CD automation server, not a container orchestrator for scaling across nodes.",
    "B": "Terraform provisions infrastructure (IaC) but does not orchestrate running containers across a node fleet.",
@@ -6242,8 +6202,8 @@ window.EXAM_DATA = [
   },
   "answer": "C",
   "choose": "all",
-  "domain": 4,
-  "domainName": "Security",
+  "domain": 1,
+  "domainName": "Cloud Architecture",
   "explanations": {
    "A": "PaaS is a service model, not the situation of being unable to leave a provider.",
    "B": "Oversubscription is a capacity concept, not related to migration infeasibility.",
@@ -6572,8 +6532,8 @@ window.EXAM_DATA = [
   },
   "answer": "D",
   "choose": "all",
-  "domain": 1,
-  "domainName": "Cloud Architecture",
+  "domain": 3,
+  "domainName": "Operations",
   "explanations": {
    "A": "Rightsizing optimizes resource sizing/cost, not billing attribution.",
    "B": "Invoicing is the bill itself, not the mechanism for resource-level detail.",
