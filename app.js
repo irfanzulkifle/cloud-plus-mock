@@ -149,9 +149,19 @@ function renderQuestion(){
     const yourTxt = [...sel].sort().join(', ');
     const ansTxt = [...correctSet].sort().join(', ');
     fb.className = 'study-feedback ' + (correct ? 'ok' : 'no');
-    fb.innerHTML = correct
+    let html = correct
       ? `<b>✓ Correct!</b>`
       : `<b>✗ Not quite.</b> Correct answer: <b>${ansTxt}</b>` + (yourTxt ? ` &nbsp;·&nbsp; Your answer: ${yourTxt}` : '');
+    // per-option explanations: chosen option(s) + any correct option(s) not chosen
+    const explLetters = [...new Set([...sel, ...correctSet])].sort();
+    const explLines = explLetters.map(letter => {
+      const text = q.explanations && q.explanations[letter];
+      if (!text) return '';
+      const label = correctSet.has(letter) ? `Correct answer (${letter})` : `Your answer (${letter})`;
+      return `<div class="study-explain"><b>${label}:</b> ${text}</div>`;
+    }).join('');
+    if (explLines) html += explLines;
+    fb.innerHTML = html;
     fb.style.display = 'block';
   } else {
     fb.style.display = 'none';
