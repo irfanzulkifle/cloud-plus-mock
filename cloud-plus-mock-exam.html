@@ -180,10 +180,18 @@ body{
 .opt .obox{width:24px;height:24px;flex:0 0 24px;border:2px solid var(--line);border-radius:7px;display:flex;
   align-items:center;justify-content:center;font-weight:800;color:var(--brand);margin-top:1px;transition:all .15s var(--ease)}
 .opt.sel .obox{background:var(--brand);border-color:var(--brand);color:#fff}
+.opt.is-correct{border-color:var(--green);background:var(--green-l)}
+.opt.is-correct .obox{background:var(--green);border-color:var(--green);color:#fff}
+.opt.is-wrong{border-color:var(--red);background:var(--red-l)}
+.opt.is-wrong .obox{background:var(--red);border-color:var(--red);color:#fff}
 .opt .otext{font-size:14.5px}
 .opt .letter{font-weight:800;margin-right:8px;color:var(--muted)}
 
-.nav-btns{display:flex;justify-content:space-between;margin-top:32px;gap:12px;flex-wrap:wrap}
+.study-feedback{margin-top:16px;padding:12px 16px;border-radius:var(--radius);font-size:14px;font-weight:600;
+  border:1.5px solid var(--line);display:none}
+.study-feedback.ok{background:var(--green-l);border-color:var(--green);color:var(--green)}
+.study-feedback.no{background:var(--red-l);border-color:var(--red);color:var(--red)}
+.study-feedback b{font-weight:800}
 .btn-nav{background:var(--panel);border:1px solid var(--line);border-radius:var(--radius-sm);padding:12px 22px;font-weight:700;
   font-size:14px;cursor:pointer;color:var(--ink);transition:all .18s var(--ease)}
 .btn-nav:hover:not(:disabled){border-color:var(--brand);color:var(--brand)}
@@ -6912,9 +6920,16 @@ function renderQuestion(){
 
   const wrap = $('#options');
   wrap.innerHTML = '';
+  const correctSet = new Set(answerOf(q));
+  const showStudy = study && sel.size > 0; // instant feedback once an answer is picked
   Object.keys(q.options).forEach(letter => {
+    let cls = 'opt' + (sel.has(letter) ? ' sel' : '');
+    if (showStudy){
+      if (correctSet.has(letter)) cls += ' is-correct';
+      else if (sel.has(letter)) cls += ' is-wrong';
+    }
     const div = document.createElement('div');
-    div.className = 'opt' + (sel.has(letter) ? ' sel' : '');
+    div.className = cls;
     div.tabIndex = 0;
     div.setAttribute('role', 'option');
     div.setAttribute('aria-selected', sel.has(letter) ? 'true' : 'false');
@@ -6927,6 +6942,22 @@ function renderQuestion(){
       `<div class="otext"><span class="letter">${letter}.</span>${q.options[letter]}</div>`;
     wrap.appendChild(div);
   });
+
+  // study-mode instant feedback line
+  let fb = $('#studyFeedback');
+  if (!fb){ fb = document.createElement('div'); fb.id = 'studyFeedback'; fb.className = 'study-feedback'; wrap.parentNode.insertBefore(fb, wrap.nextSibling); }
+  if (showStudy){
+    const correct = isCorrect(q, sel);
+    const yourTxt = [...sel].sort().join(', ');
+    const ansTxt = [...correctSet].sort().join(', ');
+    fb.className = 'study-feedback ' + (correct ? 'ok' : 'no');
+    fb.innerHTML = correct
+      ? `<b>✓ Correct!</b>`
+      : `<b>✗ Not quite.</b> Correct answer: <b>${ansTxt}</b>` + (yourTxt ? ` &nbsp;·&nbsp; Your answer: ${yourTxt}` : '');
+    fb.style.display = 'block';
+  } else {
+    fb.style.display = 'none';
+  }
 
   $('#btnFlag').classList.toggle('on', state.flagged[pos]);
   $('#btnFlag').textContent = state.flagged[pos] ? '★ Flagged' : '☆ Flag for review';

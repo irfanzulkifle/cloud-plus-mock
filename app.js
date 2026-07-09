@@ -118,9 +118,16 @@ function renderQuestion(){
 
   const wrap = $('#options');
   wrap.innerHTML = '';
+  const correctSet = new Set(answerOf(q));
+  const showStudy = study && sel.size > 0; // instant feedback once an answer is picked
   Object.keys(q.options).forEach(letter => {
+    let cls = 'opt' + (sel.has(letter) ? ' sel' : '');
+    if (showStudy){
+      if (correctSet.has(letter)) cls += ' is-correct';
+      else if (sel.has(letter)) cls += ' is-wrong';
+    }
     const div = document.createElement('div');
-    div.className = 'opt' + (sel.has(letter) ? ' sel' : '');
+    div.className = cls;
     div.tabIndex = 0;
     div.setAttribute('role', 'option');
     div.setAttribute('aria-selected', sel.has(letter) ? 'true' : 'false');
@@ -133,6 +140,22 @@ function renderQuestion(){
       `<div class="otext"><span class="letter">${letter}.</span>${q.options[letter]}</div>`;
     wrap.appendChild(div);
   });
+
+  // study-mode instant feedback line
+  let fb = $('#studyFeedback');
+  if (!fb){ fb = document.createElement('div'); fb.id = 'studyFeedback'; fb.className = 'study-feedback'; wrap.parentNode.insertBefore(fb, wrap.nextSibling); }
+  if (showStudy){
+    const correct = isCorrect(q, sel);
+    const yourTxt = [...sel].sort().join(', ');
+    const ansTxt = [...correctSet].sort().join(', ');
+    fb.className = 'study-feedback ' + (correct ? 'ok' : 'no');
+    fb.innerHTML = correct
+      ? `<b>✓ Correct!</b>`
+      : `<b>✗ Not quite.</b> Correct answer: <b>${ansTxt}</b>` + (yourTxt ? ` &nbsp;·&nbsp; Your answer: ${yourTxt}` : '');
+    fb.style.display = 'block';
+  } else {
+    fb.style.display = 'none';
+  }
 
   $('#btnFlag').classList.toggle('on', state.flagged[pos]);
   $('#btnFlag').textContent = state.flagged[pos] ? '★ Flagged' : '☆ Flag for review';
