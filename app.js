@@ -147,6 +147,29 @@ function renderQuestion(){
     $('#qCounter').textContent += `  ·  ${d}.0 ${q.domainName}`;
   }
   $('#stem').textContent = q.stem;
+  // per-question source image (uploaded to question-images/q<number>.<ext>, or
+  // embedded as a data URI in window.QIMAGES for the offline standalone build)
+  const img = $('#stemImg');
+  const n = q.number;
+  img.hidden = true;
+  img.removeAttribute('src');
+  const embedded = (window.QIMAGES && window.QIMAGES[n]);
+  if (embedded) {
+    img.onload = () => { img.hidden = false; };
+    img.onerror = () => { img.hidden = true; };
+    img.src = embedded;
+  } else {
+    const candidates = [`question-images/q${n}.jpg`, `question-images/q${n}.jpeg`, `question-images/q${n}.png`];
+    let tried = 0;
+    const tryNext = () => {
+      if (tried >= candidates.length) { img.hidden = true; img.removeAttribute('src'); return; }
+      const src = candidates[tried++];
+      img.onload = () => { img.hidden = false; };
+      img.onerror = tryNext;
+      img.src = src;
+    };
+    tryNext();
+  }
   $('#multiHint').hidden = !multi;
   if (multi) {
     const n = q.choose || 'all';

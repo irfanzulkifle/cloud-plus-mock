@@ -141,7 +141,7 @@ window.EXAM_DATA = [
  },
  {
   "number": 8,
-  "stem": "A cloud engineer is reviewing the following Dockerfile to deploy a Python web application: Which of the following changes should the engineer make to the file to improve container security?",
+  "stem": "A cloud engineer is reviewing the following Dockerfile to deploy a Python web application:\n\n  FROM cgr.dev/chainguard/python:latest\n  WORKDIR /myapp\n  COPY main.py ./\n  ENTRYPOINT [\"python\", \"/myapp/main.py\"]\n\nWhich of the following changes should the engineer make to the file to improve container security?",
   "options": {
    "A": "Add the instruction USER nonroot.  ",
    "B": "Change the version from latest to 3.11.  ",
