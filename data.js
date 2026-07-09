@@ -305,7 +305,7 @@ window.EXAM_DATA = [
  },
  {
   "number": 16,
-  "stem": "A developer is testing code that will be used to deploy a web farm in a public cloud. The main code block is a function to create a load balancer and a loop to create 1,000 web servers, as shown below:\n\nThe developer runs the code against the company’s cloud account and observes that the load balancer is successfully created, but only 100 web servers have been created. Which of the following should the developer do to fix this issue?",
+  "stem": "A developer is testing code that will be used to deploy a web farm in a public cloud. The main code block is a function to create a load balancer and a loop to create 1,000 web servers, as shown below:\n\n  my_load_balancer ()\n  for x in range(1000):\n  my_web_server ()\n\nThe developer runs the code against the company’s cloud account and observes that the load balancer is successfully created, but only 100 web servers have been created. Which of the following should the developer do to fix this issue?",
   "options": {
    "A": "Request an increase of instance quota.  ",
    "B": "Run the code multiple times until all servers are created.  ",
