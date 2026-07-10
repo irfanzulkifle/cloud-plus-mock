@@ -32,7 +32,6 @@ let examStartedAt = 0;
 
 /* ---------- deep-dive block (why correct / why others wrong / objective) ---------- */
 function deepdiveHtml(text, label){
-  const id = 'dd_' + Math.random().toString(36).slice(2);
   // escape minimal — text is trusted author content, but guard < and &
   const safe = text
     .replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
@@ -40,12 +39,17 @@ function deepdiveHtml(text, label){
   const pretty = safe.replace(/^(WHY|WHY THE OTHER OPTIONS ARE WRONG|DESIGN TRAP TO INTERNALIZE|OBJECTIVE)(?=\n)/gm,
     '<b>$1</b>');
   return `<div class="deepdive">
-    <div class="deepdive-toggle" onclick="document.getElementById('${id}').parentElement.classList.toggle('open')">
+    <div class="deepdive-toggle">
       <span class="chev">▸</span>${label}
     </div>
-    <div class="deepdive-body" id="${id}">${pretty}</div>
+    <div class="deepdive-body">${pretty}</div>
   </div>`;
 }
+// event delegation: any click on a deepdive toggle opens/closes its block
+document.addEventListener('click', (e) => {
+  const t = e.target.closest('.deepdive-toggle');
+  if (t) t.parentElement.classList.toggle('open');
+});
 
 /* ---------- helpers ---------- */
 function shuffle(arr){
