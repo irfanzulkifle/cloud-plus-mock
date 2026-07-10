@@ -3475,7 +3475,7 @@ window.EXAM_DATA = [
  },
  {
   "number": 177,
-  "stem": "A company’s cybersecurity team receives the following alert that a production VM was deleted from the virtual network: 21 September 09:19:08 (GMT-5) Resource with ID: PROD-WEB001 was deleted by User: Logging Service The console to manage virtual network resources uses directory authentication. Only users in a particular directory group can interactively access the virtual network management console. The logging service account is not part of this group and requires some local administration privileges to aggregate logs from various resources. The cybersecurity team discovers that the logging service account was previously given full directory administration privileges and they see the following entry: 21 September 09:10:55 (GMT-5) User with ID: Logging Service was added to the Group: VNet Console Administrators by actor: Logging Service. The cybersecurity team removes the compromised service account from the directory group. Which of the following should the cybersecurity team do next to prevent repeat instances of this issue?",
+  "stem": "A company’s cybersecurity team receives the following alert that a production VM was deleted from the virtual network:\n\n  21 September 09:19:08 (GMT-5) Resource with ID: PROD-WEB001 was deleted by User: Logging Service The console to manage virtual network resources uses directory authentication. Only users in a particular directory group can interactively access the virtual network management console. The logging service account is not part of this group and requires some local administration privileges to aggregate logs from various resources. The cybersecurity team discovers that the logging service account was previously given full directory administration privileges and they see the following entry:\n\n  21 September 09:10:55 (GMT-5) User with ID: Logging Service was added to the Group: VNet Console Administrators by actor: Logging Service. The cybersecurity team removes the compromised service account from the directory group. Which of the following should the cybersecurity team do next to prevent repeat instances of this issue?",
   "options": {
    "A": "Enable two-factor authentication on the virtual network console.  ",
    "B": "Reset the logging service account to use a long and complex password.  ",
@@ -3495,7 +3495,7 @@ window.EXAM_DATA = [
  },
  {
   "number": 178,
-  "stem": "A systems engineer tries to mount an iSCSI LUN to a VM host in a data center, but the host does not discover any iSCSI targets. A sample of the switch configuration is shown in the following image: GigabitEthernet 1/0/1 description \"Development Network Uplink to VM Host A\" access vlan 24 GigabitEthernet 1/0/2 description \"Storage Network Uplink to VM Host A\" access vlan 24 spanning-tree portfast mtu 9216 GigabitEthernet 1/0/3 description \"Lights-Out Management VM Host A\" access vlan 20 spanning-tree portfast GigabitEthernet 1/0/4 description \"SAN Management Controller A\" access vlan 20 GigabitEthernet 1/0/5 description \"SAN Management Controller B\" access vlan 20 spanning-tree portfast GigabitEthernet 1/0/6 description \"SAN iSCSI Controller A\" access vlan 25 spanning-tree portfast GigabitEthernet 1/0/7 description \"SAN iSCSI Controller B™ access vlan 25 spanning-tree portfast Which of the following configuration changes would most likely resolve the discovery issues?",
+  "stem": "A systems engineer tries to mount an iSCSI LUN to a VM host in a data center, but the host does not discover any iSCSI targets. A sample of the switch configuration is shown in the following image:\n\n  GigabitEthernet 1/0/1 description \"Development Network Uplink to VM Host A\" access vlan 24 GigabitEthernet 1/0/2 description \"Storage Network Uplink to VM Host A\" access vlan 24 spanning-tree portfast mtu 9216 GigabitEthernet 1/0/3 description \"Lights-Out Management VM Host A\" access vlan 20 spanning-tree portfast GigabitEthernet 1/0/4 description \"SAN Management Controller A\" access vlan 20 GigabitEthernet 1/0/5 description \"SAN Management Controller B\" access vlan 20 spanning-tree portfast GigabitEthernet 1/0/6 description \"SAN iSCSI Controller A\" access vlan 25 spanning-tree portfast GigabitEthernet 1/0/7 description \"SAN iSCSI Controller B™ access vlan 25 spanning-tree portfast Which of the following configuration changes would most likely resolve the discovery issues?",
   "options": {
    "A": "Disabling Gigabit Ethernet 1/0/7  ",
    "B": "Changing the MTU on Gigabit Ethernet 1/0/2  ",
@@ -3735,7 +3735,7 @@ window.EXAM_DATA = [
  },
  {
   "number": 190,
-  "stem": "A cloud engineer is developing an operating expense report that will be used to purchase various cloud billing models for virtual machine instances. The cloud billing model must meet the following requirements: • The instance cannot be ephemeral. • The minimum life cycle of the instance is expected to be five years. • The software license is charged per physical CPU count. Which of the following best meets these requirements?",
+  "stem": "A cloud engineer is developing an operating expense report that will be used to purchase various cloud billing models for virtual machine instances. The cloud billing model must meet the following requirements:\n  • The instance cannot be ephemeral.\n  • The minimum life cycle of the instance is expected to be five years.\n  • The software license is charged per physical CPU count.\n\n  Which of the following best meets these requirements?",
   "options": {
    "A": "Dedicated host  ",
    "B": "Spot instance  ",
@@ -3775,7 +3775,7 @@ window.EXAM_DATA = [
  },
  {
   "number": 192,
-  "stem": "A cloud administrator is troubleshooting an issue in which clients receive errors when connecting to an application server. The initial investigation shows the following: • The application is behind a load balancer. • The load balancer logs show connections being denied. • There are no security issues. • There are no infrastructure issues on the application servers. • All connected clients are working as expected. Which of the following would most likely cause the issue?",
+  "stem": "A cloud administrator is troubleshooting an issue in which clients receive errors when connecting to an application server. The initial investigation shows the following:\n  • The application is behind a load balancer.\n  • The load balancer logs show connections being denied.\n  • There are no security issues.\n  • There are no infrastructure issues on the application servers.\n  • All connected clients are working as expected.\n\n  Which of the following would most likely cause the issue?",
   "options": {
    "A": "The application servers are running low on disk space.  ",
    "B": "The load balancer is unable to connect to the application servers.  ",
