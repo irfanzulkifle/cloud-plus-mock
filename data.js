@@ -4157,10 +4157,10 @@ window.EXAM_DATA = [
   "number": 211,
   "stem": "An administrator deploys a VM with an additional data disk. A developer installs and configures a database application on the data disk. After using the VM to perform very intensive read-and-write operations, the developer reports that the VM seems sluggish. Which of the following solutions represents the least amount of work the administrator needs to do to fix the issue?",
   "options": {
-   "A": "1. Create a new VM with more CPU and RAM. 2. Have the developer install and configure the database application.  ",
-   "B": "1. Stop the VM. 2. Change the data disk storage type to high performance. 3. Start the VM.  ",
-   "C": "1. Create a new VM with a high-performance data disk. 2. Have the developer install and configure the database application.  ",
-   "D": "1. Stop the VM. 2. Detach the data disk. 3. Create and attach a new high-performance data disk. 4. Start the VM. "
+   "A": "1. Create a new VM with more CPU and RAM.<br>2. Have the developer install and configure the database application.",
+   "B": "1. Stop the VM.<br>2. Change the data disk storage type to high performance.<br>3. Start the VM.",
+   "C": "1. Create a new VM with a high-performance data disk.<br>2. Have the developer install and configure the database application.",
+   "D": "1. Stop the VM.<br>2. Detach the data disk.<br>3. Create and attach a new high-performance data disk.<br>4. Start the VM."
   },
   "answer": "B",
   "choose": "all",
