@@ -1767,14 +1767,15 @@ window.EXAM_DATA = [
   },
   "answer": "D",
   "choose": "all",
-  "domain": 3,
-  "domainName": "Operations",
+  "domain": 1,
+  "domainName": "Cloud Architecture",
   "explanations": {
    "A": "Text recognition (OCR) extracts text from images, doesn't assess tone.",
    "B": "Computer vision analyzes images/video, not text tone.",
    "C": "Visual recognition identifies objects/images, unrelated to text tone.",
    "D": "Correct: sentiment analysis is the NLP/ML technique that processes text to determine tone/emotion."
-  }
+},
+  "deepdive": "WHY\n• Anchor on the two clues — \"consumes text input\" + \"discern tone\": the technology that reads text and determines its emotional tone/attitude (positive, negative, neutral) is sentiment analysis. Both clues point squarely at it.\n• Sentiment analysis = detecting tone/emotion in text: it's the NLP (natural language processing) technique that analyzes written language to classify sentiment/mood — exactly \"discerning tone.\" It's purpose-built for this task.\n• Keyword \"text\" + \"tone\" → sentiment analysis → the flashing arrow: the input modality is text and the output is an emotional judgment. That combination uniquely identifies sentiment analysis and rules out the image/vision-based options.\n• Distinguish by input type: the wrong answers are all visual technologies (they consume images, not text) except the trap. Since the input here is text, only a text/language technology qualifies.\n• Real-world anchor: brands run sentiment analysis on tweets, reviews, and support tickets to gauge whether customer feedback is positive or negative — reading text to discern tone (ties to the AI/ML concepts in Objective 1.11).\nWHY THE OTHER OPTIONS ARE WRONG\n• A. Text recognition (OCR) — the strongest distractor because it contains the word \"text.\" But text recognition (OCR) extracts/reads text FROM images — it converts pictures of words into machine-readable text. It identifies what the words are, not the tone/emotion behind them. Wrong function (it produces text, it doesn't interpret sentiment). Correct for digitizing printed/handwritten text from images.\n• B. Computer vision — the broad field of enabling machines to interpret images/video. Its bait: it's a core AI/ML technology. But computer vision consumes visual input, not text, and doesn't analyze written tone. Wrong input modality entirely. Correct for analyzing/understanding images and video.\n• C. Visual recognition — identifying objects, faces, or scenes in images. Its bait: it's another legitimate AI/ML capability. But like computer vision, it works on images, not text, and has nothing to do with tone. Wrong modality. Correct for recognizing content within images/photos.\nOBJECTIVE\n• Domain 1.0 — Cloud Architecture (23% of the exam).\n• Objective 1.11 — Explain the importance of the appropriate use of AI/ML and emerging technologies (text/visual recognition, sentiment analysis, voice-to-text, generative AI).\n• Why it maps here: Objective 1.11 explicitly lists AI/ML technologies including sentiment analysis, text recognition, and visual recognition/computer vision — meaning all four options come straight from this objective. This question tests distinguishing them by input and purpose: sentiment analysis consumes text to discern tone, versus the image-based recognition technologies and OCR (which reads text but doesn't interpret emotion)."
  },
  {
   "number": 87,
