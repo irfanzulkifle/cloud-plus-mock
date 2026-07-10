@@ -161,7 +161,7 @@ body{
 .btn-flag.on{background:var(--amber-l);border-color:var(--amber);color:var(--amber)}
 .btn-flag:focus-visible{outline:3px solid var(--brand);outline-offset:2px}
 .multihint{background:var(--blue-l);color:var(--brand);font-size:12px;font-weight:700;padding:5px 12px;border-radius:var(--radius-pill)}
-.stem{font-size:16px;line-height:1.6;margin-bottom:24px;white-space:pre-wrap;word-wrap:break-word}
+.stem{font-size:15px;line-height:1.55;margin-bottom:22px;white-space:pre-wrap;word-wrap:break-word}
 .stem-img{display:block;max-width:100%;height:auto;margin:0 0 22px;border:1px solid var(--line);border-radius:12px;background:var(--bg);padding:10px}
 .stem-img[hidden]{display:none}
 .options{display:flex;flex-direction:column;gap:12px}
@@ -177,7 +177,7 @@ body{
 .opt.is-correct .obox{background:var(--green);border-color:var(--green);color:#fff}
 .opt.is-wrong{border-color:var(--red);background:var(--red-l)}
 .opt.is-wrong .obox{background:var(--red);border-color:var(--red);color:#fff}
-.opt .otext{font-size:14.5px}
+.opt .otext{font-size:13.5px}
 .opt .letter{font-weight:800;margin-right:8px;color:var(--muted)}
 .cfg{font-family:var(--mono);font-size:12.5px;line-height:1.5;background:var(--bg);border:1px solid var(--line);border-radius:8px;padding:10px 12px;margin-top:6px;white-space:pre;overflow-x:auto;color:var(--ink)}
 
