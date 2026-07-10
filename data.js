@@ -326,19 +326,20 @@ window.EXAM_DATA = [
   "options": {
    "A": "Request an increase of instance quota.  ",
    "B": "Run the code multiple times until all servers are created.  ",
-   "C": "Check the my_web_server () function to ensure itis using the right credentials.  ",
+   "C": "Check the my_web_server () function to ensure it is using the right credentials.  ",
    "D": "Place the my_load_balancer () function after the loop. "
   },
   "answer": "A",
   "choose": "all",
-  "domain": 2,
-  "domainName": "Deployment",
+  "domain": 6,
+  "domainName": "Troubleshooting",
   "explanations": {
    "A": "Cloud accounts have default instance quotas; hitting the quota after 100 servers explains why only 100 of 1,000 were created, so raising the quota fixes it.",
    "B": "Re-running the code wouldn't fix an underlying quota limit and could create duplicate/partial resources.",
    "C": "Credentials issue would likely cause total failure, not success up to exactly a round number like 100.",
    "D": "Load balancer placement order doesn't explain a hard stop at 100 servers."
-  }
+},
+  "deepdive": "WHY\n• Diagnose the symptom precisely: the code asks for 1,000 web servers, but exactly 100 are created — a clean, round cap. When a loop stops at a suspiciously round number, that's the signature of a service quota / limit being hit, not a code bug.\n• The load balancer succeeded → code and credentials are fine: my_load_balancer() ran successfully and the loop did create servers (100 of them). So authentication, permissions, and logic all work — the deployment simply ran into the cloud account's default instance limit.\n• Keyword \"public cloud\" + \"only 100 of 1,000\" → service quota: cloud providers impose default limits (soft quotas) on how many instances an account can launch. Hitting a hard round ceiling is the textbook API throttling / service quota troubleshooting scenario. The fix is to request a quota increase.\n• Matches CompTIA's deployment-troubleshooting model: when a deployment partially succeeds and stops at a fixed count, CompTIA wants you to think resource limits → service quotas, then remediate by raising the limit.\nReal-world anchor: AWS EC2 \"vCPU/instance limits,\" Azure \"subscription quotas,\" and GCP \"quotas\" all default-cap resource counts; the standard remediation is filing a quota/limit increase request with the provider.\nWHY THE OTHER OPTIONS ARE WRONG\n• B. Run the code multiple times until all servers are created — its bait: it feels like a quick workaround to eventually reach 1,000. But the account is capped at 100 — re-running won't bypass the quota; you'll keep hitting the same ceiling (and may error out or create duplicates). It treats the symptom, not the cause. Never the correct fix for a hard limit.\n• C. Check the my_web_server() function for the right credentials — its bait: credential/permission issues are a real deployment-troubleshooting cause. But credentials are clearly valid — the load balancer was created and 100 servers succeeded. A credential problem would have caused zero resources or an auth error, not a partial success stopping at a round number. Wrong root cause. Correct if nothing deployed due to an authentication/permission error.\n• D. Place the my_load_balancer() function after the loop — its bait: reordering code sounds like a logic fix. But the order is irrelevant to the problem — the load balancer already succeeded, and moving it changes nothing about the quota capping the servers at 100. It doesn't address the actual limit. No scenario here makes this the fix.\nOBJECTIVE\n• Domain 6.0 — Troubleshooting (12% of the exam).\n• Objective 6.1 — Given a scenario, troubleshoot deployment issues.\n• Why it maps here: Objective 6.1 explicitly lists Resource limits → API throttling, Service quotas as deployment issues. This question is a textbook 6.1 item: a partial deployment capped at a round number = service quota reached, remediated by requesting a quota increase."
  },
  {
   "number": 17,
