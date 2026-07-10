@@ -2945,7 +2945,7 @@ window.EXAM_DATA = [
  },
  {
   "number": 151,
-  "stem": "A company experienced a data leak through its website. A security engineer, who is investigating the issue, runs a vulnerability scan against the website and receives the following output: Which of the following is the most likely cause of this leak?",
+  "stem": "A company experienced a data leak through its website. A security engineer, who is investigating the issue, runs a vulnerability scan against the website and receives the following output:\n\n  Nmap scan report for www.example.com (93.184.216.34)\n  Host is up (0.020s latency).\n\n  PORT      STATE    SERVICE\n  21/tcp    open     ftp\n  443/tcp   open     ssl/https\n  1119/tcp  closed   bnetgame\n  1935/tcp  closed   rtmp\n\n  Which of the following is the most likely cause of this leak?",
   "options": {
    "A": "RTMP port open  ",
    "B": "SQL injection  ",
