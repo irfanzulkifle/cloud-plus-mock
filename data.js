@@ -835,14 +835,15 @@ window.EXAM_DATA = [
   },
   "answer": "C",
   "choose": "all",
-  "domain": 3,
-  "domainName": "Operations",
+  "domain": 1,
+  "domainName": "Cloud Architecture",
   "explanations": {
    "A": "File storage adds file-system-level overhead unsuitable for the low-latency I/O relational databases need.",
    "B": "Object storage is optimized for large unstructured data and has higher latency, poor fit for transactional databases.",
    "C": "Block storage provides direct, low-latency disk-level access ideal for relational database I/O performance, making it the best choice.",
    "D": "Ephemeral storage isn't durable, unsuitable for a database's persistent data needs despite any performance benefit."
-  }
+},
+  "deepdive": "WHY\n• Anchor on the workload — a traditional relational database: relational databases perform frequent, random reads/writes of small pieces of data and demand low latency + high IOPS. The storage type built for exactly that is block storage.\n• Block storage = highest performance, lowest latency: it splits data into fixed-size blocks the OS can access directly, like a raw disk. This gives the fast, random-access I/O that database engines (with their indexes and transactions) need — the greatest performance advantage of the options.\n• Databases run on block volumes by design: you attach a block volume to the instance and the DB writes to it as a mounted disk. This delivers the consistent, high-throughput, low-latency access transactional databases require.\n• Keyword \"greatest performance\" + \"relational database\" → block: the flashing arrow. When a question pairs \"database performance\" with a storage-type choice, the answer is almost always block storage.\nReal-world anchor — the standard backing for relational DBs like MySQL, PostgreSQL, and SQL Server / RDS:\n• AWS EBS\n• Azure Managed Disks\n• GCP Persistent Disks\nWHY THE OTHER OPTIONS ARE WRONG\n• A. File — file storage presents a shared, hierarchical file system (folders/files) accessed over protocols like NFS/SMB. Its bait: it's a common, familiar storage type. But the network file-sharing protocol layer adds latency, making it slower than block for a database's random small-I/O workload. Correct for shared file access across multiple users/systems (shared drives, home directories).\n• B. Object — object storage keeps data as objects with metadata in a flat namespace, accessed via HTTP/REST APIs. Its bait: it's massively scalable and cheap. But it's designed for large, static, write-once/read-many items (media, backups, static sites) and has high latency with no in-place random updates — terrible for transactional DB I/O. Correct for unstructured data at scale (images, backups, archives — see Q19/Q32).\n• D. Ephemeral — temporary instance storage that is wiped when the instance stops/terminates (see Q15). Its bait: instance-local storage can be fast. But it's non-persistent, so a relational database would lose all its data on any stop/restart — unacceptable for a DB regardless of speed. Correct for temporary scratch data (caches, temp files) that doesn't need to survive.\nOBJECTIVE\n• Domain 1.0 — Cloud Architecture (23% of the exam).\n• Objective 1.4 — Compare and contrast storage resources and technologies.\n• Why it maps here: Objective 1.4 explicitly lists Storage types → Object, Block, File, along with performance implications — options A, B, and C come straight from this list. This question tests matching a performance-sensitive relational database to block storage. (Ephemeral in option D comes from containerization/storage concepts in Objective 1.6, used here as a persistence-vs-speed distractor.)"
  },
  {
   "number": 41,
