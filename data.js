@@ -310,14 +310,15 @@ window.EXAM_DATA = [
   },
   "answer": "C",
   "choose": "all",
-  "domain": 3,
-  "domainName": "Operations",
+  "domain": 1,
+  "domainName": "Cloud Architecture",
   "explanations": {
    "A": "Object storage persists data independent of container lifecycle.",
    "B": "Persistent volumes are specifically designed to retain data across container restarts.",
    "C": "Ephemeral storage is tied to the container's lifecycle and is wiped when the container restarts, matching the description.",
    "D": "Block storage attached as a volume can persist data across restarts, unlike ephemeral storage."
-  }
+},
+  "deepdive": "WHY\nAnchor on the exact behavior asked: \"loses data after a restart.\" The term that literally means \"temporary / short-lived\" is ephemeral — ephemeral storage exists only for the container's lifecycle and is wiped when the container restarts, stops, or is removed.\n• Definition match: ephemeral storage is the container's temporary, non-durable layer (e.g., the container's writable layer / temp scratch space). Because it isn't persisted outside the container instance, a restart means the data is gone — exactly the described behavior.\n• Keyword \"restart\" + \"loses data\" → ephemeral: these words are the flashing arrow. CompTIA pairs ephemeral = non-persistent (lost on restart) vs. persistent = survives restarts — this question is testing that exact contrast.\n• The word itself is the mnemonic: ephemeral = \"lasting a very short time.\" If you know the vocabulary, the answer is immediate.\nReal-world anchor — these are wiped on restart/reschedule:\n• a container's writable layer\n• Kubernetes emptyDir — restart/reschedule the pod and that scratch data disappears; you'd use a persistent volume (backed by EBS/Azure Disk/PD) to keep it\nWHY THE OTHER OPTIONS ARE WRONG\n• A. Object — object storage stores data as durable objects with metadata (e.g., S3-style). Its bait: it's a real storage type on the exam. But object storage is highly durable and persistent — it does not lose data on a container restart, and it's not a container-lifecycle storage type. Correct for storing large, durable, unstructured data (backups, media, static assets).\n• B. Persistent volume — this is the direct opposite of the answer. Its bait: it's a container storage type, so it fits the category. But a persistent volume is designed specifically to survive container restarts, rescheduling, and deletion — its whole purpose is durability. Correct when the question asks which storage retains/keeps data across restarts.\n• D. Block — block storage presents raw volumes that are typically durable and persistent (attached like a disk). Its bait: it's a legitimate storage type. But block storage persists data (it's the backing for many persistent volumes), so it doesn't lose data on restart. Correct for high-performance, persistent disk-level storage (databases, VM disks).\nOBJECTIVE\n• Domain 1.0 — Cloud Architecture (23% of the exam).\n• Objective 1.6 — Compare and contrast containerization concepts.\n• Why it maps here: Objective 1.6 explicitly lists Storage types → Persistent volumes, Ephemeral storage under containerization. This question is a direct persistent vs. ephemeral container-storage comparison — a textbook 1.6 item. (Object and block are container/storage distractors pulled from the broader storage types in 1.4.)"
  },
  {
   "number": 16,
