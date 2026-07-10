@@ -902,14 +902,15 @@ window.EXAM_DATA = [
   },
   "answer": "B",
   "choose": "all",
-  "domain": 3,
-  "domainName": "Operations",
+  "domain": 1,
+  "domainName": "Cloud Architecture",
   "explanations": {
    "A": "Persistent storage implies data is retained indefinitely, but here it's deleted after upload, contradicting persistence.",
    "B": "Ephemeral storage is temporary, used only until data is uploaded and then discarded, matching the described local storage behavior.",
    "C": "Differential describes a backup type, not a storage nature/duration.",
    "D": "Incremental describes a backup type, not the storage's temporary nature."
-  }
+},
+  "deepdive": "WHY\n• Anchor on the data's lifecycle: the video is stored locally only temporarily — recorded, uploaded to the cloud, then deleted from local storage. Storage that holds data transiently and then discards it is by definition ephemeral.\n• Ephemeral = short-lived, not meant to persist: the local copy exists only until the upload completes. It's a temporary staging buffer, never intended to be the permanent home for the data — the cloud is. That \"here now, gone after use\" behavior is the exact meaning of ephemeral.\n• Keyword \"stores locally before uploading... and deleting\" → ephemeral: the flashing arrow is the delete-after-transfer step. Data that is intentionally removed once it's served its short-term purpose is ephemeral, not persistent.\n• Contrast with persistent: persistent storage is designed to retain data long-term across restarts/sessions. Here the local storage does the opposite — it's a throwaway holding area, so it's ephemeral.\nReal-world anchor — local disk acts as ephemeral staging while the cloud is the persistent store of record:\n• an edge/IoT camera buffering footage to a local scratch disk\n• syncing to cloud object storage (e.g., S3)\n• then clearing the buffer\nWHY THE OTHER OPTIONS ARE WRONG\n• A. Persistent — storage that retains data durably over time, surviving restarts and sessions. Its bait: it's the natural opposite term and a very common storage descriptor. But the scenario explicitly deletes the local data after upload, which is the opposite of persisting it — the cloud is the persistent tier, not the local storage. Correct for describing the cloud-side storage or any store meant to keep data long-term.\n• C. Differential — a backup type capturing all changes since the last full backup (see Q27). Its bait: it's a legitimate storage/backup term. But differential describes a backup method, not the temporary vs. permanent nature of local storage. It has nothing to do with staging-then-deleting video. Correct only in a backup-scheme question.\n• D. Incremental — a backup type capturing changes since the last backup of any kind (see Q27). Its bait: again a real backup term paired with differential to look plausible. But like differential, it's about how backups are taken, not whether storage is transient or persistent. Wrong category entirely. Correct only when comparing backup methods.\nOBJECTIVE\n• Domain 1.0 — Cloud Architecture (23% of the exam).\n• Objective 1.6 — Explain concepts related to containerization / storage types (persistent volumes vs. ephemeral storage).\n• Why it maps here: the persistent-vs-ephemeral distinction is a core storage concept (highlighted under containerization storage in Objective 1.6, and reinforced by storage-type discussions in Objective 1.4). This question tests recognizing temporary, delete-after-use local storage as ephemeral — the same concept as Q15. (The differential/incremental distractors come from backup types in Objective 3.3, placed to bait a \"storage term\" guess.)"
  },
  {
   "number": 44,
