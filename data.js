@@ -5353,7 +5353,7 @@ window.EXAM_DATA = [
  },
  {
   "number": 270,
-  "stem": "During an incident, a cloud security engineer finds that a suspicious file was run in a virtual desktop. The cloud security engineer obtains a list of users involved in the incident:\n  userID   groupID\n  user_a   FTP_Users, APP1_Users\n  user_b   FTP_Users, APP2_Users\n  admin    Admins, FTP_Users, SSH_Users\n\nThe cloud security engineer also obtains the system logs: Which of the following types of vulnerabilities did the malicious application most likely exploit?",
+  "stem": "During an incident, a cloud security engineer finds that a suspicious file was run in a virtual desktop. The cloud security engineer obtains a list of users involved in the incident:\n  userID   groupID\n  user_a   FTP_Users, APP1_Users\n  user_b   FTP_Users, APP2_Users\n  admin    Admins, FTP_Users, SSH_Users\n\nThe cloud security engineer also obtains the system logs:\nWhich of the following types of vulnerabilities did the malicious application most likely exploit?",
   "options": {
    "A": "Privilege escalation  ",
    "B": "Improper permissions  ",
