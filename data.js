@@ -352,14 +352,15 @@ window.EXAM_DATA = [
   },
   "answer": "B",
   "choose": "all",
-  "domain": 3,
-  "domainName": "Operations",
+  "domain": 4,
+  "domainName": "Security",
   "explanations": {
    "A": "Recoverability is about the ability to restore data, not the duration it must be kept.",
    "B": "Retention refers to how long data must be kept, matching the legal requirement to store data for at least a year.",
    "C": "Encryption protects confidentiality, unrelated to storage duration.",
    "D": "Integrity ensures data hasn't been altered, not how long it's stored."
-  }
+},
+  "deepdive": "WHY\n• Anchor on the key phrase: \"store the data... for a minimum of one year.\" Keeping data for a defined period of time is the literal definition of data retention.\n• Legal department + fixed time period = retention (litigation/legal hold): the instruction comes from legal and specifies a duration. That's a data retention requirement — specifically a litigation hold, where data must be preserved for potential legal proceedings.\n• Keyword \"minimum of one year\" → retention: a stated length of time to keep data is the flashing arrow for retention. None of the other options define a time-based keep policy.\n• CompTIA framing: retention is presented under compliance/regulation with sub-types litigation hold, contractual, and regulatory — a legal instruction to preserve breach-related data maps directly to the litigation hold flavor of retention.\nReal-world anchor: after a security incident, legal issues a \"hold\" requiring affected VM data/backups to be kept for a set period (e.g., S3 Object Lock / retention policies, Azure immutable blob retention) so it can't be deleted before the deadline.\nWHY THE OTHER OPTIONS ARE WRONG\n• A. Recoverability — the ability to successfully restore data from backups. Its bait: it's a backup/DR term and this scenario involves affected VMs. But recoverability is about testing that a restore works, not about how long you keep the data. The stem specifies a duration to store, not a restore capability. Correct if the question asked about verifying that backups can actually be restored.\n• C. Encryption — protecting data confidentiality by converting it to unreadable ciphertext. Its bait: ransomware and security context make encryption sound relevant. But encryption is about protecting data, not about the time period it must be stored. It doesn't match \"store for a minimum of one year.\" Correct for making data unusable/confidential (like Q4), not for a keep-duration mandate.\n• D. Integrity — ensuring data is accurate and unaltered (often via hashing/checksums). Its bait: it's a core security principle and a backup-testing sub-item. But integrity concerns whether data changed, not how long it's kept. The instruction is about duration, not tamper verification. Correct if the question asked about verifying data hasn't been modified.\nOBJECTIVE\n• Domain 4.0 — Security (19% of the exam).\n• Objective 4.2 — Compare and contrast aspects of compliance and regulation.\n• Why it maps here: Objective 4.2 explicitly lists Data retention → Litigation hold, Contractual, Regulatory. A legal-department instruction to preserve breach data for a minimum period is a direct example of data retention (litigation hold) — a textbook 4.2 item. (Recoverability and Integrity are distractors drawn from backup testing in Objective 3.3; Encryption from 4.4.)"
  },
  {
   "number": 18,
