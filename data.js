@@ -4599,7 +4599,7 @@ window.EXAM_DATA = [
  },
  {
   "number": 233,
-  "stem": "A cloud engineer needs to choose a storage technology that fulfills the following requirements: • 99.99% durability • Resilient to instance failures • Resilient to instance deletions Which of the following types of storage is the best option?",
+  "stem": "A cloud engineer needs to choose a storage technology that fulfills the following requirements:\n  • 99.99% durability\n  • Resilient to instance failures\n  • Resilient to instance deletions\n\nWhich of the following types of storage is the best option?",
   "options": {
    "A": "Ephemeral  ",
    "B": "Cache  ",
