@@ -1851,8 +1851,10 @@ window.EXAM_DATA = [
   },
   "answer": "D",
   "choose": "all",
-  "domain": 3,
-  "domainName": "Operations",
+  "domain": 6,
+  "domainName": "Troubleshooting",
+  "domain2": 3,
+  "domainName2": "Operations",
   "explanations": {
    "A": "Security patching typically doesn't require full VM type migration, just patch application.",
    "B": "Updates affecting VM state is vague and not the primary business driver for forced migration.",
@@ -1937,6 +1939,8 @@ window.EXAM_DATA = [
   "choose": "all",
   "domain": 3,
   "domainName": "Operations",
+  "domain2": 6,
+  "domainName2": "Troubleshooting",
   "explanations": {
    "A": "Delaying a major business conference is disruptive and usually not a reasonable first option.",
    "B": "Applying the patch after the event leaves the system exposed to a known critical vulnerability during the sensitive period.",
