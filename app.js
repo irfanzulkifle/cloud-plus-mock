@@ -36,8 +36,15 @@ function deepdiveHtml(text, label){
   const safe = text
     .replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
   // bold the section headers (WHY / WHY THE OTHER... / DESIGN TRAP / OBJECTIVE)
-  const pretty = safe.replace(/^(WHY|WHY THE OTHER OPTIONS ARE WRONG|DESIGN TRAP TO INTERNALIZE|OBJECTIVE)(?=\n)/gm,
+  const withHeaders = safe.replace(/^(WHY|WHY THE OTHER OPTIONS ARE WRONG|DESIGN TRAP TO INTERNALIZE|OBJECTIVE)(?=\n)/gm,
     '<b>$1</b>');
+  // wrap bullet lines (start with "• ") in a span for hanging-indent styling
+  const pretty = withHeaders.split('\n').map(line => {
+    if (/^•\s/.test(line)) {
+      return '<span class="dd-bullet">' + line.replace(/^•\s/, '') + '</span>';
+    }
+    return line;
+  }).join('\n');
   return `<div class="deepdive">
     <div class="deepdive-toggle">
       <span class="chev">▸</span>${label}

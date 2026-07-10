@@ -193,6 +193,8 @@ body{
 .deepdive-body{display:none;padding:12px 16px;white-space:pre-wrap;font-size:13px;line-height:1.6;color:var(--ink)}
 .deepdive.open .deepdive-body{display:block}
 .deepdive-body b{color:var(--ink)}
+.deepdive-body .dd-bullet{display:block;padding-left:18px;text-indent:-15px;margin:2px 0}
+.deepdive-body .dd-bullet::before{content:"•";color:var(--muted);margin-right:8px}
 .study-feedback.ok{background:var(--green-l);border-color:var(--green);color:var(--green)}
 .study-feedback.no{background:var(--red-l);border-color:var(--red);color:var(--red)}
 .study-feedback b{font-weight:800}
