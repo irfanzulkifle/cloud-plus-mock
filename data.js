@@ -2905,7 +2905,7 @@ window.EXAM_DATA = [
  },
  {
   "number": 147,
-  "stem": "A cloud engineer is implementing a deployment strategy with the following requirements: • At least two environments for production and development must be supported. • Changes in one environment must not impact the other environment. • The highest possible availability must be achieved. Which of the following deployment strategies should the engineer implement?",
+  "stem": "A cloud engineer is implementing a deployment strategy with the following requirements:\n  • At least two environments for production and development must be supported.\n  • Changes in one environment must not impact the other environment.\n  • The highest possible availability must be achieved.\n\nWhich of the following deployment strategies should the engineer implement?",
   "options": {
    "A": "Rolling  ",
    "B": "Blue-green  ",
