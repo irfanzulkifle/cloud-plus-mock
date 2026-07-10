@@ -5353,7 +5353,7 @@ window.EXAM_DATA = [
  },
  {
   "number": 270,
-  "stem": "During an incident, a cloud security engineer finds that a suspicious file was run in a virtual desktop. The cloud security engineer obtains a list of users involved in the incident: The cloud security engineer also obtains the system logs: Which of the following types of vulnerabilities did the malicious application most likely exploit?",
+  "stem": "During an incident, a cloud security engineer finds that a suspicious file was run in a virtual desktop. The cloud security engineer obtains a list of users involved in the incident:\n  userID   groupID\n  user_a   FTP_Users, APP1_Users\n  user_b   FTP_Users, APP2_Users\n  admin    Admins, FTP_Users, SSH_Users\n\nThe cloud security engineer also obtains the system logs: Which of the following types of vulnerabilities did the malicious application most likely exploit?",
   "options": {
    "A": "Privilege escalation  ",
    "B": "Improper permissions  ",
@@ -5453,7 +5453,7 @@ window.EXAM_DATA = [
  },
  {
   "number": 275,
-  "stem": "A cloud engineer needs to upgrade the pip python module by running the following command: python.exe -m pip install -upgrade pip However, after the command is entered, the engineer receives the following error message: WARNINg: Retrying (Retry(TOTAL=4 connect=None, read=None, redirect=None, status=None) after connection broken by 'SSLError(SSLCertVerificationError(1, [SSL: /packages/07/51/abasciekdkgiyiykrieeeotlriturjaab/pip-27.4.3.py3-none-any.whl Given this scenario, which of the following is more than likely the cause of the issue?",
+  "stem": "A cloud engineer needs to upgrade the pip python module by running the following command:\n  python.exe -m pip install --upgrade pip\n\nHowever, after the command is entered, the engineer receives the following error message:\n  WARNING: Retrying (Retry(total=4, connect=None, read=None, redirect=None, status=None)) after connection broken by 'SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1000)'))'\n\nGiven this scenario, which of the following is more than likely the cause of the issue?",
   "options": {
    "A": "Syntax error with the command entered  ",
    "B": "Python version incompatibility  ",
@@ -5555,10 +5555,10 @@ window.EXAM_DATA = [
   "number": 280,
   "stem": "A cloud-based VM is no longer required. However, the sensitive data on the VM's data disk must be retained. Which of the following is the best approach for the administrator to take?",
   "options": {
-   "A": "1. Delete the VM and disks. 2. Retain the VM's backups.  ",
-   "B": "1. Take a snapshot of the data disk. 2. Delete the VM and disks.  ",
-   "C": "1. Stop the VM. 2 Tag the VM.  ",
-   "D": "1. Delete the source VM and disks. 2. Copy the data to another VM. "
+   "A": "1. Delete the VM and disks.<br>2. Retain the VM's backups.  ",
+   "B": "1. Take a snapshot of the data disk.<br>2. Delete the VM and disks.  ",
+   "C": "1. Stop the VM.<br>2. Tag the VM.  ",
+   "D": "1. Delete the source VM and disks.<br>2. Copy the data to another VM. "
   },
   "answer": "B",
   "choose": "all",
@@ -5573,7 +5573,7 @@ window.EXAM_DATA = [
  },
  {
   "number": 281,
-  "stem": "A network engineer wants to implement a service that has the following characteristics: • Highly flexible • Centralized • Programmatic • Dynamically adjustable to traffic Which of the following is the best approach?",
+  "stem": "A network engineer wants to implement a service that has the following characteristics:\n  • Highly flexible\n  • Centralized\n  • Programmatic\n  • Dynamically adjustable to traffic\n\nWhich of the following is the best approach?",
   "options": {
    "A": "Software-defined network  ",
    "B": "Virtual private network  ",
@@ -5793,7 +5793,7 @@ window.EXAM_DATA = [
  },
  {
   "number": 292,
-  "stem": "A cloud developer is developing a cloud-native application with the following requirements: • Must be a web-based application • Must be as cost-effective as possible • Must have fast response times • Must be scalable to meet demand Which of the following technologies will best meet these requirements?",
+  "stem": "A cloud developer is developing a cloud-native application with the following requirements:\n  • Must be a web-based application\n  • Must be as cost-effective as possible\n  • Must have fast response times\n  • Must be scalable to meet demand\n\nWhich of the following technologies will best meet these requirements?",
   "options": {
    "A": "Serverless function  ",
    "B": "VM  ",
@@ -5873,7 +5873,7 @@ window.EXAM_DATA = [
  },
  {
   "number": 296,
-  "stem": "A cloud engineer must configure a backup at the end of the month. Given the following requirements: • Minimal backup size • Faster backup speed Which of the following backup types best meets the requirements?",
+  "stem": "A cloud engineer must configure a backup at the end of the month. Given the following requirements:\n  • Minimal backup size\n  • Faster backup speed\n\nWhich of the following backup types best meets the requirements?",
   "options": {
    "A": "Tape  ",
    "B": "Full  ",
@@ -6203,7 +6203,7 @@ window.EXAM_DATA = [
  },
  {
   "number": 312,
-  "stem": "A cloud administrator is troubleshooting an issue for a client. The client has the following capabilities: • Can access servers on the VPC, including servers on other subnets • Can ping other resources on the network • Can ping its own gateway However, the client cannot reach the internet Which of the following is most likely the cause?",
+  "stem": "A cloud administrator is troubleshooting an issue for a client. The client has the following capabilities:\n  • Can access servers on the VPC, including servers on other subnets\n  • Can ping other resources on the network\n  • Can ping its own gateway\n\nHowever, the client cannot reach the internet. Which of the following is most likely the cause?",
   "options": {
    "A": "The gateway is missing a route  ",
    "B": "The client has a duplicate IP address  ",
