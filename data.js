@@ -751,14 +751,15 @@ window.EXAM_DATA = [
   },
   "answer": "A",
   "choose": "all",
-  "domain": 3,
-  "domainName": "Operations",
+  "domain": 4,
+  "domainName": "Security",
   "explanations": {
    "A": "Network flow logs show traffic volume/patterns (source, destination, byte counts) which can reveal a DDoS attack pattern, matching the need.",
    "B": "EDR logs focus on endpoint/host activity, not network-level traffic floods.",
    "C": "Cloud provider event logs track API/management actions, not network traffic patterns indicative of DDoS.",
    "D": "Instance syslog shows OS-level events, not network flow data useful for spotting DDoS."
-  }
+},
+  "deepdive": "WHY\n• Anchor on the attack type — DDoS: a Distributed Denial-of-Service attack floods a target with massive volumes of network traffic from many sources. To detect it, you need visibility into network traffic patterns — which is exactly what network flow logs capture.\n• Flow logs = the right telemetry for volumetric attacks: flow logs record source/destination IPs, ports, protocols, packet/byte counts, and connection volume. A DDoS shows up clearly as a spike in inbound traffic from many IPs to the CMS — a pattern flow logs are purpose-built to reveal.\n• Keyword \"DDoS\" + \"identify attacks\" → network-level monitoring → flow logs: DDoS is a network-layer phenomenon, so you monitor at the network layer. The flashing arrow from \"DDoS\" points to traffic/flow analysis, not host or application logs.\n• Matches how DDoS detection actually works: you watch for abnormal traffic volume, connection rates, and source diversity — all visible in flow logs — then trigger DDoS protection/mitigation.\nReal-world anchor — the standard sources analysts use to spot DDoS traffic spikes:\n• AWS VPC Flow Logs\n• Azure NSG Flow Logs\n• GCP VPC Flow Logs\n• feed DDoS-protection tooling\nWHY THE OTHER OPTIONS ARE WRONG\n• B. Endpoint detection and response (EDR) logs — EDR monitors endpoint/host-level activity (malware, suspicious processes, file changes). Its bait: it's a strong security-monitoring tool. But EDR focuses on what's happening on a host, not on network traffic floods hitting the service from outside. It won't reveal a volumetric DDoS pattern. Correct for detecting malware, ransomware, and endpoint compromise.\n• C. Cloud provider event logs — these record control-plane/API and account activity (who created/modified/deleted resources). Its bait: they're a common cloud audit source. But they track management actions, not the inbound network traffic volume of a DDoS. They'd show configuration changes, not an attack flood. Correct for auditing API calls, account activity, and configuration changes (e.g., detecting unauthorized actions).\n• D. Instance syslog — the OS-level system log on a single instance (services, kernel, auth events). Its bait: logs sound relevant to detecting attacks. But syslog reflects one host's internal events, not the aggregate network traffic of a distributed flood — by the time an instance is overwhelmed, syslog gives host symptoms, not the attack's network signature. Correct for troubleshooting OS/service-level issues on a specific instance.\nOBJECTIVE\n• Domain 4.0 — Security (19% of the exam).\n• Objective 4.6 — Given a scenario, monitor suspicious activities to identify common attacks.\n• Why it maps here: Objective 4.6 explicitly lists common attack types including DDoS, and the skill of monitoring the right telemetry to identify them. For a network-flooding attack like DDoS, the correct data source is network flow logs (traffic-level visibility). (The various log types also connect to observability/logging in Objective 3.1, but the core skill — monitoring to identify an attack — lives in 4.6.)"
  },
  {
   "number": 37,
