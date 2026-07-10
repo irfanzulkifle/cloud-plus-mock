@@ -585,7 +585,7 @@ window.EXAM_DATA = [
  },
  {
   "number": 30,
-  "stem": "An administrator used a script that worked in the past to create and tag five virtual machines. All of the virtual machines have been created; however, the administrator sees the following results:\n  {tags: []}\n\nWhich of the following is the most likely reason for this result?",
+  "stem": "An administrator used a script that worked in the past to create and tag five virtual machines. All of the virtual machines have been created; however, the administrator sees the following results:\n{tags: []}\n\nWhich of the following is the most likely reason for this result?",
   "options": {
    "A": "API throttling  ",
    "B": "Service quotas  ",
@@ -805,7 +805,7 @@ window.EXAM_DATA = [
  },
  {
   "number": 41,
-  "stem": "A cloud networking engineer is troubleshooting the corporate office’s network configuration. Employees in the IT and operations departments are unable to resolve IP addresses on all devices, and the IT department cannot establish a connection to other departments’ subnets. The engineer identifies the following configuration currently in place to support the office network:\n\n  Subnet          Department   Employees\n  10.1.20.1/24    Finance      50\n  10.1.30.1/24    IT           90\n  10.1.40.1/24    Legal        30\n  10.1.50.1/24    Operations   100\n\n  Each employee needs to connect to the network with a maximum of three hosts. Each subnet must be segregated, but the IT department must have the ability to communicate with all subnets. Which of the following meet the IP addressing and routing requirements? (Choose two.)",
+  "stem": "A cloud networking engineer is troubleshooting the corporate office’s network configuration. Employees in the IT and operations departments are unable to resolve IP addresses on all devices, and the IT department cannot establish a connection to other departments’ subnets. The engineer identifies the following configuration currently in place to support the office network:\n\nSubnet          Department   Employees\n10.1.20.1/24    Finance      50\n10.1.30.1/24    IT           90\n10.1.40.1/24    Legal        30\n10.1.50.1/24    Operations   100\n\nEach employee needs to connect to the network with a maximum of three hosts. Each subnet must be segregated, but the IT department must have the ability to communicate with all subnets. Which of the following meet the IP addressing and routing requirements? (Choose two.)",
   "options": {
    "A": "Modifying the subnet mask to 255.255.254.0 for IT and operations departments  ",
    "B": "Configuring static routing to allow access from each subnet to 10.1.40.1  ",
@@ -973,7 +973,7 @@ window.EXAM_DATA = [
  },
  {
   "number": 49,
-  "stem": "An organization’s critical data was exfiltrated from a computer system in a cyberattack. A cloud analyst wants to identify the root cause and is reviewing the following security logs of a software web application:\n\n  [2021/12/18 09:33:12] [10.34.32.18] [104.224.123.119] \"POST /login.php?u=administrator\&p=or%201%20=1\"\n  [2021/12/18 09:33:13] [10.34.32.18] [104.224.123.119] \"POST /login.php?u=administrator\&p=%27%0A\"\n  [2021/12/18 09:33:14] [10.34.32.18] [104.224.123.119] \"POST /login.php?u=administrator\&p=%26\"\n  [2021/12/18 09:33:17] [10.34.32.18] [104.224.123.119] \"POST /login.php?u=administrator\&p=%3B\"\n  [2021/12/18 09:33:19] [10.34.32.18] [104.224.123.119] \"POST /login.php?u=admin\&p=or%201%20=1\"\n  [2021/12/18 09:33:21] [10.34.32.18] [104.224.123.119] \"POST /login.php?u=admin\&p=%27%0A\"\n  [2021/12/18 09:33:23] [10.34.32.18] [104.224.123.119] \"POST /login.php?u=admin\&p=%26\"\n  [2021/12/18 09:33:23] [10.34.32.18] [104.224.123.119] \"POST /login.php?u=admin\&p=%3B\"\n\nWhich of the following types of attacks occurred?",
+  "stem": "An organization’s critical data was exfiltrated from a computer system in a cyberattack. A cloud analyst wants to identify the root cause and is reviewing the following security logs of a software web application:\n\n[2021/12/18 09:33:12] [10.34.32.18] [104.224.123.119] \"POST /login.php?u=administrator\&p=or%201%20=1\"\n[2021/12/18 09:33:13] [10.34.32.18] [104.224.123.119] \"POST /login.php?u=administrator\&p=%27%0A\"\n[2021/12/18 09:33:14] [10.34.32.18] [104.224.123.119] \"POST /login.php?u=administrator\&p=%26\"\n[2021/12/18 09:33:17] [10.34.32.18] [104.224.123.119] \"POST /login.php?u=administrator\&p=%3B\"\n[2021/12/18 09:33:19] [10.34.32.18] [104.224.123.119] \"POST /login.php?u=admin\&p=or%201%20=1\"\n[2021/12/18 09:33:21] [10.34.32.18] [104.224.123.119] \"POST /login.php?u=admin\&p=%27%0A\"\n[2021/12/18 09:33:23] [10.34.32.18] [104.224.123.119] \"POST /login.php?u=admin\&p=%26\"\n[2021/12/18 09:33:23] [10.34.32.18] [104.224.123.119] \"POST /login.php?u=admin\&p=%3B\"\n\nWhich of the following types of attacks occurred?",
   "options": {
    "A": "SQL injection  ",
    "B": "Cross-site scripting  ",
@@ -1253,7 +1253,7 @@ window.EXAM_DATA = [
  },
  {
   "number": 63,
-  "stem": "A DevOps engineer is receiving reports that users can no longer access the company’s web application after hardening of a web server. The users are receiving the following error:\n  ERR_SSL_VERSION_OR_CIPHER_MISMATCH\n\nWhich of the following actions should the engineer take to resolve the issue?",
+  "stem": "A DevOps engineer is receiving reports that users can no longer access the company’s web application after hardening of a web server. The users are receiving the following error:\nERR_SSL_VERSION_OR_CIPHER_MISMATCH\n\nWhich of the following actions should the engineer take to resolve the issue?",
   "options": {
    "A": "Restart the web server.  ",
    "B": "Configure TLS 1.2 or newer.  ",
@@ -1977,7 +1977,7 @@ window.EXAM_DATA = [
  },
  {
   "number": 101,
-  "stem": "Given the following command:\n  $ docker pull images.comptia.org/user1/myimage:latest\n\nWhich of the following correctly identifies images.comptia.org?",
+  "stem": "Given the following command:\n$ docker pull images.comptia.org/user1/myimage:latest\n\nWhich of the following correctly identifies images.comptia.org?",
   "options": {
    "A": "Image registry  ",
    "B": "Image creator  ",
@@ -2581,7 +2581,7 @@ window.EXAM_DATA = [
  },
  {
   "number": 131,
-  "stem": "A newly configured VM fails to run application updates despite having internet access. The updates download automatically from a third- party network. Given the following output:\n\n  $ dig +short apac.updateserver.net\n  38.102.218.7\n  $ dig +short na.updateserver.net\n  request timeout\n\nWhich of the following troubleshooting steps would be best to take?",
+  "stem": "A newly configured VM fails to run application updates despite having internet access. The updates download automatically from a third- party network. Given the following output:\n\n$ dig +short apac.updateserver.net\n38.102.218.7\n$ dig +short na.updateserver.net\nrequest timeout\n\nWhich of the following troubleshooting steps would be best to take?",
   "options": {
    "A": "Checking DNS configurations",
    "B": "Reconfiguring routing protocols  ",
@@ -2965,7 +2965,7 @@ window.EXAM_DATA = [
  },
  {
   "number": 151,
-  "stem": "A company experienced a data leak through its website. A security engineer, who is investigating the issue, runs a vulnerability scan against the website and receives the following output:\n\n  Nmap scan report for www.example.com (93.184.216.34)\n  Host is up (0.020s latency).\n\n  PORT      STATE    SERVICE\n  21/tcp    open     ftp\n  443/tcp   open     ssl/https\n  1119/tcp  closed   bnetgame\n  1935/tcp  closed   rtmp\n\nWhich of the following is the most likely cause of this leak?",
+  "stem": "A company experienced a data leak through its website. A security engineer, who is investigating the issue, runs a vulnerability scan against the website and receives the following output:\n\nNmap scan report for www.example.com (93.184.216.34)\nHost is up (0.020s latency).\n\nPORT      STATE    SERVICE\n21/tcp    open     ftp\n443/tcp   open     ssl/https\n1119/tcp  closed   bnetgame\n1935/tcp  closed   rtmp\n\nWhich of the following is the most likely cause of this leak?",
   "options": {
    "A": "RTMP port open  ",
    "B": "SQL injection  ",
@@ -3495,7 +3495,7 @@ window.EXAM_DATA = [
  },
  {
   "number": 177,
-  "stem": "A company’s cybersecurity team receives the following alert that a production VM was deleted from the virtual network:\n\n  21 September 09:19:08 (GMT-5)\n  Resource with ID: PROD-WEB001 was deleted by User: Logging Service\n\nThe console to manage virtual network resources uses directory authentication. Only users in a particular directory group can interactively access the virtual network management console. The logging service account is not part of this group and requires some local administration privileges to aggregate logs from various resources. The cybersecurity team discovers that the logging service account was previously given full directory administration privileges and they see the following entry:\n\n  21 September 09:10:55 (GMT-5)\n  User with ID: Logging Service was added to the Group: VNet Console Administrators by actor: Logging Service.\n\nThe cybersecurity team removes the compromised service account from the directory group. Which of the following should the cybersecurity team do next to prevent repeat instances of this issue?",
+  "stem": "A company’s cybersecurity team receives the following alert that a production VM was deleted from the virtual network:\n\n21 September 09:19:08 (GMT-5)\nResource with ID: PROD-WEB001 was deleted by User: Logging Service\n\nThe console to manage virtual network resources uses directory authentication. Only users in a particular directory group can interactively access the virtual network management console. The logging service account is not part of this group and requires some local administration privileges to aggregate logs from various resources. The cybersecurity team discovers that the logging service account was previously given full directory administration privileges and they see the following entry:\n\n21 September 09:10:55 (GMT-5)\nUser with ID: Logging Service was added to the Group: VNet Console Administrators by actor: Logging Service.\n\nThe cybersecurity team removes the compromised service account from the directory group. Which of the following should the cybersecurity team do next to prevent repeat instances of this issue?",
   "options": {
    "A": "Enable two-factor authentication on the virtual network console.  ",
    "B": "Reset the logging service account to use a long and complex password.  ",
@@ -4559,7 +4559,7 @@ window.EXAM_DATA = [
  },
  {
   "number": 230,
-  "stem": "An administrator configures three subnets to the corporate network. All servers should communicate with the main corporate network and access the internet. The administrator creates the following configurations:\n  Corporate network: 192.168.0.0/24\n  Network 2: 192.168.10.0/24\n  Network 3: 192.168.11.0/24\n  Network 4: 192.168.12.0/24\n\nAfter configuring the networks, the administrator recognizes an issue with the configuration. Which of the following can the administrator change in one step to accomplish the goal?",
+  "stem": "An administrator configures three subnets to the corporate network. All servers should communicate with the main corporate network and access the internet. The administrator creates the following configurations:\nCorporate network: 192.168.0.0/24\nNetwork 2: 192.168.10.0/24\nNetwork 3: 192.168.11.0/24\nNetwork 4: 192.168.12.0/24\n\nAfter configuring the networks, the administrator recognizes an issue with the configuration. Which of the following can the administrator change in one step to accomplish the goal?",
   "options": {
    "A": "Remove source 192.168.12.0/24 and destination 192.168.1.0/24 from the routing table  ",
    "B": "Replace destination 192.168.1.0/24 with destination 192.168.0.0/24  ",
@@ -5147,7 +5147,7 @@ window.EXAM_DATA = [
  },
  {
   "number": 259,
-  "stem": "A cloud application fails to retrieve data from an API. A cloud engineer reviews the following log:\n  [ERROR] HTTP 429 - Too many requests\n  [INFO] API rate limit exceeded\n  [WARNING] API throttled\n\nWhich of the following is the best resolution?",
+  "stem": "A cloud application fails to retrieve data from an API. A cloud engineer reviews the following log:\n[ERROR] HTTP 429 - Too many requests\n[INFO] API rate limit exceeded\n[WARNING] API throttled\n\nWhich of the following is the best resolution?",
   "options": {
    "A": "Upgrade the network bandwidth  ",
    "B": "Increase the database storage.  ",
@@ -5373,7 +5373,7 @@ window.EXAM_DATA = [
  },
  {
   "number": 270,
-  "stem": "During an incident, a cloud security engineer finds that a suspicious file was run in a virtual desktop. The cloud security engineer obtains a list of users involved in the incident:\n  userID   groupID\n  user_a   FTP_Users, APP1_Users\n  user_b   FTP_Users, APP2_Users\n  admin    Admins, FTP_Users, SSH_Users\n\nThe cloud security engineer also obtains the system logs:\nWhich of the following types of vulnerabilities did the malicious application most likely exploit?",
+  "stem": "During an incident, a cloud security engineer finds that a suspicious file was run in a virtual desktop. The cloud security engineer obtains a list of users involved in the incident:\nuserID   groupID\nuser_a   FTP_Users, APP1_Users\nuser_b   FTP_Users, APP2_Users\nadmin    Admins, FTP_Users, SSH_Users\n\nThe cloud security engineer also obtains the system logs:\nWhich of the following types of vulnerabilities did the malicious application most likely exploit?",
   "options": {
    "A": "Privilege escalation  ",
    "B": "Improper permissions  ",
@@ -5473,7 +5473,7 @@ window.EXAM_DATA = [
  },
  {
   "number": 275,
-  "stem": "A cloud engineer needs to upgrade the pip python module by running the following command:\n  python.exe -m pip install --upgrade pip\n\nHowever, after the command is entered, the engineer receives the following error message:\n  WARNING: Retrying (Retry(total=4, connect=None, read=None, redirect=None, status=None)) after connection broken by 'SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1000)'))'\n\nGiven this scenario, which of the following is more than likely the cause of the issue?",
+  "stem": "A cloud engineer needs to upgrade the pip python module by running the following command:\npython.exe -m pip install --upgrade pip\n\nHowever, after the command is entered, the engineer receives the following error message:\nWARNING: Retrying (Retry(total=4, connect=None, read=None, redirect=None, status=None)) after connection broken by 'SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1000)'))'\n\nGiven this scenario, which of the following is more than likely the cause of the issue?",
   "options": {
    "A": "Syntax error with the command entered  ",
    "B": "Python version incompatibility  ",
