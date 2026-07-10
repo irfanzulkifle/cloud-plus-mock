@@ -2441,7 +2441,7 @@ window.EXAM_DATA = [
  },
  {
   "number": 125,
-  "stem": "A developer is building a new application version using a CI/CD pipeline. The developer receives the following error message log when the build fails. Which of the following is the most likely cause of this failure?",
+  "stem": "A developer is building a new application version using a CI/CD pipeline. The developer receives the following error message log when the build fails:\n\n  Traceback (most recent call last):\n    File \"app.py\", line 4, in <module>\n      import requests\n  ModuleNotFoundError: No module named 'requests'\n\n  Which of the following is the most likely cause of this failure?",
   "options": {
    "A": "Incorrect version  ",
    "B": "Test case failure  ",
@@ -2561,7 +2561,7 @@ window.EXAM_DATA = [
  },
  {
   "number": 131,
-  "stem": "A newly configured VM fails to run application updates despite having internet access. The updates download automatically from a third- party network. Given the following output: Which of the following troubleshooting steps would be best to take?",
+  "stem": "A newly configured VM fails to run application updates despite having internet access. The updates download automatically from a third- party network. Given the following output:\n\n  $ dig +short apac.updateserver.net\n  38.102.218.7\n  $ dig +short na.updateserver.net\n  request timeout\n\n  Which of the following troubleshooting steps would be best to take?",
   "options": {
    "A": "Checking DNS configurations",
    "B": "Reconfiguring routing protocols  ",
