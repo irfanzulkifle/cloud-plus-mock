@@ -933,7 +933,7 @@ window.EXAM_DATA = [
  },
  {
   "number": 47,
-  "stem": "A network administrator is building a site-to-site VPN tunnel from the company’s headquarters office to the company’s public cloud development network. The network administrator confirms the following: The VPN tunnel is established on the headquarters office firewall. While inside the office, developers report that they cannot connect to the development network resources. While outside the office on a client VPN, developers report that they can connect to the development network resources. The office and the client VPN have different IP subnet ranges. The firewall flow logs show that traffic is reaching the development network from the office. Which of the following is the next step the network administrator should take to troubleshoot the VPN tunnel?",
+  "stem": "A network administrator is building a site-to-site VPN tunnel from the company’s headquarters office to the company’s public cloud development network. The network administrator confirms the following:\n\n  The VPN tunnel is established on the headquarters office firewall. While inside the office, developers report that they cannot connect to the development network resources. While outside the office on a client VPN, developers report that they can connect to the development network resources. The office and the client VPN have different IP subnet ranges. The firewall flow logs show that traffic is reaching the development network from the office. Which of the following is the next step the network administrator should take to troubleshoot the VPN tunnel?",
   "options": {
    "A": "Review the development network routing table.  ",
    "B": "Change the ciphers on the site-to-site VPN.  ",
@@ -1833,7 +1833,7 @@ window.EXAM_DATA = [
  },
  {
   "number": 95,
-  "stem": "A cloud engineer is troubleshooting a connectivity issue. The application server with IP 192.168.1.10 in one subnet is not connecting to the MySQL database server with IP 192.168.2.20 in a different subnet. The cloud engineer reviews the following information: Which of the following should the cloud engineer address to fix the communication issue?",
+  "stem": "A cloud engineer is troubleshooting a connectivity issue. The application server with IP 192.168.1.10 in one subnet is not connecting to the MySQL database server with IP 192.168.2.20 in a different subnet. The cloud engineer reviews the following information:\n\n  Which of the following should the cloud engineer address to fix the communication issue?",
   "options": {
    "A": "The Application Server Stateful Firewall  ",
    "B": "The Application Server Subnet Routing Table  ",
@@ -1997,7 +1997,7 @@ window.EXAM_DATA = [
  },
  {
   "number": 103,
-  "stem": "A cloud security analyst is investigating the impact of a recent cyberattack. The analyst is reviewing the following information: Which of the following has occurred?",
+  "stem": "A cloud security analyst is investigating the impact of a recent cyberattack. The analyst is reviewing the following information:\n\n  Which of the following has occurred?",
   "options": {
    "A": "The corporate administration page was defaced by the attacker  ",
    "B": "A denial-of-service attack was successfully performed on the web server  ",
@@ -2421,7 +2421,7 @@ window.EXAM_DATA = [
  },
  {
   "number": 124,
-  "stem": "The company's IDS has reported an anomaly. The cloud engineer remotely accesses the cloud instance, runs a command, and receives the following information: Which of the following is the most likely root cause of this anomaly?",
+  "stem": "The company's IDS has reported an anomaly. The cloud engineer remotely accesses the cloud instance, runs a command, and receives the following information:\n\n  Which of the following is the most likely root cause of this anomaly?",
   "options": {
    "A": "Privilege escalation  ",
    "B": "Leaked credentials",
@@ -3005,7 +3005,7 @@ window.EXAM_DATA = [
  },
  {
   "number": 154,
-  "stem": "A SaaS provider introduced new software functionality for customers as part of quarterly production enhancements. After an update is implemented, users cannot locate certain transactions from an inbound integration. During the investigation, the application owner finds the following error in the logs: Error: REST API - Deprecated call is no longer supported in this release. Which of the following is the best action for the application owner to take to resolve the issue?",
+  "stem": "A SaaS provider introduced new software functionality for customers as part of quarterly production enhancements. After an update is implemented, users cannot locate certain transactions from an inbound integration. During the investigation, the application owner finds the following error in the logs:\n\n  Error: REST API - Deprecated call is no longer supported in this release\n\n  Which of the following is the best action for the application owner to take to resolve the issue?",
   "options": {
    "A": "Update the custom integration to use a supported function.  ",
    "B": "Include the custom integration in the quarterly testing scope.  ",
@@ -4619,7 +4619,7 @@ window.EXAM_DATA = [
  },
  {
   "number": 234,
-  "stem": "A cloud engineering team recently built a new website to be hosted on a cloud server. However, the website is not loading. The team runs a troubleshooting command that provides the following output: Which of the following records would the team most likely add to resolve this issue?",
+  "stem": "A cloud engineering team recently built a new website to be hosted on a cloud server. However, the website is not loading. The team runs a troubleshooting command that provides the following output:\n\n  Which of the following records would the team most likely add to resolve this issue?",
   "options": {
    "A": "MX",
    "B": "A  ",
