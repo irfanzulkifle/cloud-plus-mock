@@ -141,7 +141,7 @@ window.EXAM_DATA = [
  },
  {
   "number": 8,
-  "stem": "A cloud engineer is reviewing the following Dockerfile to deploy a Python web application:\n\n  FROM cgr.dev/chainguard/python:latest\n  WORKDIR /myapp\n  COPY main.py ./\n  ENTRYPOINT [\"python\", \"/myapp/main.py\"]\n\nWhich of the following changes should the engineer make to the file to improve container security?",
+  "stem": "A cloud engineer is reviewing the following Dockerfile to deploy a Python web application:\n\nFROM cgr.dev/chainguard/python:latest\nWORKDIR /myapp\nCOPY main.py ./\nENTRYPOINT [\"python\", \"/myapp/main.py\"]\n\nWhich of the following changes should the engineer make to the file to improve container security?",
   "options": {
    "A": "Add the instruction USER nonroot.  ",
    "B": "Change the version from latest to 3.11.  ",
@@ -3475,7 +3475,7 @@ window.EXAM_DATA = [
  },
  {
   "number": 176,
-  "stem": "A cloud engineer tries to deploy five new cloud instances using code. An error occurs, and the instances are not created. The configuration fails to run. The engineer then receives the following error message:\n\n  ERROR: Parse error on JSON line X in config\n\n  Given the following snippet from the config.json file:\n\n  {\n    \"instance_count\": 5,\n    \"ssd_options\": [\"100GB\", \"200GB\", \"300GB\"],\n    \"instance_region\": \"apac\",\n    \"instance_code\": 255,\n    \"start_instance\": true\n  }\n\nWhich of the following oversights created the error in the configuration file?",
+  "stem": "A cloud engineer tries to deploy five new cloud instances using code. An error occurs, and the instances are not created. The configuration fails to run. The engineer then receives the following error message:\n\nERROR: Parse error on JSON line X in config\n\nGiven the following snippet from the config.json file:\n\n{\n\"instance_count\": 5,\n\"ssd_options\": [\"100GB\", \"200GB\", \"300GB\"],\n\"instance_region\": \"apac\",\n\"instance_code\": 255,\n\"start_instance\": true\n}\n\nWhich of the following oversights created the error in the configuration file?",
   "options": {
    "A": "Incorrect instance_count  ",
    "B": "Incorrect ssd_options  ",
@@ -3515,7 +3515,7 @@ window.EXAM_DATA = [
  },
  {
   "number": 178,
-  "stem": "A systems engineer tries to mount an iSCSI LUN to a VM host in a data center, but the host does not discover any iSCSI targets. A sample of the switch configuration is shown in the following image:\n\nGigabitEthernet 1/0/1\n  description \"Development Network Uplink to VM Host A\"\n  access vlan 24\n\nGigabitEthernet 1/0/2\n  description \"Storage Network Uplink to VM Host A\"\n  access vlan 24\n  spanning-tree portfast\n  mtu 9216\n\nGigabitEthernet 1/0/3\n  description \"Lights-Out Management VM Host A\"\n  access vlan 20\n  spanning-tree portfast\n\nGigabitEthernet 1/0/4\n  description \"SAN Management Controller A\"\n  access vlan 20\n\nGigabitEthernet 1/0/5\n  description \"SAN Management Controller B\"\n  access vlan 20\n  spanning-tree portfast\n\nGigabitEthernet 1/0/6\n  description \"SAN iSCSI Controller A\"\n  access vlan 25\n  spanning-tree portfast\n\nGigabitEthernet 1/0/7\n  description \"SAN iSCSI Controller B\"\n  access vlan 25\n  spanning-tree portfast\n\nWhich of the following configuration changes would most likely resolve the discovery issues?",
+  "stem": "A systems engineer tries to mount an iSCSI LUN to a VM host in a data center, but the host does not discover any iSCSI targets. A sample of the switch configuration is shown in the following image:\n\nGigabitEthernet 1/0/1\ndescription \"Development Network Uplink to VM Host A\"\naccess vlan 24\n\nGigabitEthernet 1/0/2\ndescription \"Storage Network Uplink to VM Host A\"\naccess vlan 24\nspanning-tree portfast\nmtu 9216\n\nGigabitEthernet 1/0/3\ndescription \"Lights-Out Management VM Host A\"\naccess vlan 20\nspanning-tree portfast\n\nGigabitEthernet 1/0/4\ndescription \"SAN Management Controller A\"\naccess vlan 20\n\nGigabitEthernet 1/0/5\ndescription \"SAN Management Controller B\"\naccess vlan 20\nspanning-tree portfast\n\nGigabitEthernet 1/0/6\ndescription \"SAN iSCSI Controller A\"\naccess vlan 25\nspanning-tree portfast\n\nGigabitEthernet 1/0/7\ndescription \"SAN iSCSI Controller B\"\naccess vlan 25\nspanning-tree portfast\n\nWhich of the following configuration changes would most likely resolve the discovery issues?",
   "options": {
    "A": "Disabling Gigabit Ethernet 1/0/7  ",
    "B": "Changing the MTU on Gigabit Ethernet 1/0/2  ",
