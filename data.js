@@ -1884,7 +1884,7 @@ window.EXAM_DATA = [
  },
  {
   "number": 92,
-  "stem": "A company wants to build its new platform using a public cloud. The workload requirements include the following:\n• Implementation of custom CIS compliance\n• Patch for vulnerabilities within 24 hours\n• Warranty at least 8000 IOPS per volume\n\nWhich of the following meets the requirements?",
+  "stem": "A company wants to build its new platform using a public cloud. The workload requirements include the following:\n• Implementation of custom CIS compliance\n• Patch for vulnerabilities within 24 hours\n• Warranty at least 1800 IOPS per volume\n\nWhich of the following meets the requirements?",
   "options": {
    "A": "SaaS  ",
    "B": "IaaS  ",
