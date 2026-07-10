@@ -1651,7 +1651,27 @@ window.EXAM_DATA = [
    "D": "Committing directly to main skips review, increasing chance of introducing errors."
   }
  },
- {
+  {
+  "number": 85,
+  "stem": "An administrator is creating a cron job that shuts down the virtual machines at night to save on costs. Which of the following is the best way to achieve this task?",
+  "options": {
+   "A": "<img src=\"question-images/q85a.jpg\" alt=\"Option A\" style=\"max-width:360px;width:100%;height:auto;display:block;border:1px solid #d0d7de;border-radius:8px;margin-top:2px\">",
+   "B": "<img src=\"question-images/q85b.jpg\" alt=\"Option B\" style=\"max-width:360px;width:100%;height:auto;display:block;border:1px solid #d0d7de;border-radius:8px;margin-top:2px\">",
+   "C": "<img src=\"question-images/q85c.jpg\" alt=\"Option C\" style=\"max-width:360px;width:100%;height:auto;display:block;border:1px solid #d0d7de;border-radius:8px;margin-top:2px\">",
+   "D": "<img src=\"question-images/q85d.jpg\" alt=\"Option D\" style=\"max-width:360px;width:100%;height:auto;display:block;border:1px solid #d0d7de;border-radius:8px;margin-top:2px\">"
+  },
+  "answer": "C",
+  "choose": "all",
+  "domain": 3,
+  "domainName": "Operations",
+  "explanations": {
+   "A": "Does not automate a scheduled nightly shutdown of VMs for cost savings.",
+   "B": "Does not automate a scheduled nightly shutdown of VMs for cost savings.",
+   "C": "Correct: this approach automates shutting down the VMs on a schedule (e.g., via a cloud scheduler/automation tool), cutting compute costs overnight while keeping the workload available during the day.",
+   "D": "Does not automate a scheduled nightly shutdown of VMs for cost savings."
+  }
+ },
+{
   "number": 86,
   "stem": "Which of the following AI/ML technologies consumes text input to discern tone?",
   "options": {
