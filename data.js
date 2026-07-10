@@ -1793,7 +1793,7 @@ window.EXAM_DATA = [
  },
  {
   "number": 92,
-  "stem": "A company wants to build its new platform using a public cloud. The workload requirements include the following: • Implementation of custom CIS compliance • Patch for vulnerabilities within 24 hours • Warrant at least 1 8001OPS per volume Which of the following meets the requirements?",
+  "stem": "A company wants to build its new platform using a public cloud. The workload requirements include the following:\n  • Implementation of custom CIS compliance\n  • Patch for vulnerabilities within 24 hours\n  • Warranty at least 8000 IOPS per volume\n\nWhich of the following meets the requirements?",
   "options": {
    "A": "SaaS  ",
    "B": "IaaS  ",
@@ -1977,7 +1977,7 @@ window.EXAM_DATA = [
  },
  {
   "number": 101,
-  "stem": "Given the following command: $docker pull images.comptia.org/user1/myimage:latest Which of the following correctly identifies images.comptia.org?",
+  "stem": "Given the following command:\n  $ docker pull images.comptia.org/user1/myimage:latest\n\nWhich of the following correctly identifies images.comptia.org?",
   "options": {
    "A": "Image registry  ",
    "B": "Image creator  ",
@@ -2077,7 +2077,7 @@ window.EXAM_DATA = [
  },
  {
   "number": 106,
-  "stem": "A cloud engineer is extending on-premises services to a public cloud. The following design requirements must be considered in the overall solution: • The ability to remotely connect systems from both environments • No IP address conflicts or overlap • Cost-effectiveness Which of the following cloud network concepts best meets these requirements?",
+  "stem": "A cloud engineer is extending on-premises services to a public cloud. The following design requirements must be considered in the overall solution:\n  • The ability to remotely connect systems from both environments\n  • No IP address conflicts or overlap\n  • Cost-effectiveness\n\nWhich of the following cloud network concepts best meets these requirements?",
   "options": {
    "A": "Dedicated connection  ",
    "B": "VPN  ",
