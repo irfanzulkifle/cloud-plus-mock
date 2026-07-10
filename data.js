@@ -525,7 +525,7 @@ window.EXAM_DATA = [
  },
  {
   "number": 27,
-  "stem": "A cloud engineer is reviewing a disaster recovery plan that includes the following requirements:\n  • System state, files, and configurations must be backed up on a weekly basis.\n  • The system state, file, and configuration backups must be tested annually.\n\nWhich of the following backup methods should the engineer implement for the first week the plan is executed?",
+  "stem": "A cloud engineer is reviewing a disaster recovery plan that includes the following requirements:\n• System state, files, and configurations must be backed up on a weekly basis.\n• The system state, file, and configuration backups must be tested annually.\n\nWhich of the following backup methods should the engineer implement for the first week the plan is executed?",
   "options": {
    "A": "Differential  ",
    "B": "Incremental  ",
@@ -645,7 +645,7 @@ window.EXAM_DATA = [
  },
  {
   "number": 33,
-  "stem": "A cloud engineer is designing a cloud native, three-tier application. The engineer must adhere to the following security best practices:\n  • Minimal services should run on all layers of the stack.\n  • The solution should be vendor agnostic.\n  • Virtualization could be used over physical hardware.\n\nWhich of the following concepts should the engineer use to design the system to best meet these requirements?",
+  "stem": "A cloud engineer is designing a cloud native, three-tier application. The engineer must adhere to the following security best practices:\n• Minimal services should run on all layers of the stack.\n• The solution should be vendor agnostic.\n• Virtualization could be used over physical hardware.\n\nWhich of the following concepts should the engineer use to design the system to best meet these requirements?",
   "options": {
    "A": "Virtual machine  ",
    "B": "Microservices  ",
@@ -1793,7 +1793,7 @@ window.EXAM_DATA = [
  },
  {
   "number": 92,
-  "stem": "A company wants to build its new platform using a public cloud. The workload requirements include the following:\n  • Implementation of custom CIS compliance\n  • Patch for vulnerabilities within 24 hours\n  • Warranty at least 8000 IOPS per volume\n\nWhich of the following meets the requirements?",
+  "stem": "A company wants to build its new platform using a public cloud. The workload requirements include the following:\n• Implementation of custom CIS compliance\n• Patch for vulnerabilities within 24 hours\n• Warranty at least 8000 IOPS per volume\n\nWhich of the following meets the requirements?",
   "options": {
    "A": "SaaS  ",
    "B": "IaaS  ",
@@ -2077,7 +2077,7 @@ window.EXAM_DATA = [
  },
  {
   "number": 106,
-  "stem": "A cloud engineer is extending on-premises services to a public cloud. The following design requirements must be considered in the overall solution:\n  • The ability to remotely connect systems from both environments\n  • No IP address conflicts or overlap\n  • Cost-effectiveness\n\nWhich of the following cloud network concepts best meets these requirements?",
+  "stem": "A cloud engineer is extending on-premises services to a public cloud. The following design requirements must be considered in the overall solution:\n• The ability to remotely connect systems from both environments\n• No IP address conflicts or overlap\n• Cost-effectiveness\n\nWhich of the following cloud network concepts best meets these requirements?",
   "options": {
    "A": "Dedicated connection  ",
    "B": "VPN  ",
@@ -2681,7 +2681,7 @@ window.EXAM_DATA = [
  },
  {
   "number": 136,
-  "stem": "A new application that will be deployed to cloud VMs has the following requirements:\n  • Low inter-VM latency\n  • Horizontal scaling support\n  • 98.5% availability\n  • 8vCPU and 16GB RAM\n  • Ability to split jobs across VMs\n\nWhich of the following will best meet these requirements?",
+  "stem": "A new application that will be deployed to cloud VMs has the following requirements:\n• Low inter-VM latency\n• Horizontal scaling support\n• 98.5% availability\n• 8vCPU and 16GB RAM\n• Ability to split jobs across VMs\n\nWhich of the following will best meet these requirements?",
   "options": {
    "A": "Load balanced 2vCPU with 4GB RAM on multiregion  ",
    "B": "Load balanced 4vCPU with 8GB RAM on single availability zone  ",
@@ -2785,7 +2785,7 @@ window.EXAM_DATA = [
  },
  {
   "number": 141,
-  "stem": "A cloud administrator is provisioning infrastructure to run an application with the following requirements:\n  • Ten midsize instances need to run as a cluster most of the day.\n  • Sixteen midsize instances are required during peak hours.\n  • Costs must be kept low.\n  • The instances must be deployed in an IaaS model.\n  • The application has no tolerance for service disruptions.\n\nWhich of the following steps should the cloud architect take to host the application?",
+  "stem": "A cloud administrator is provisioning infrastructure to run an application with the following requirements:\n• Ten midsize instances need to run as a cluster most of the day.\n• Sixteen midsize instances are required during peak hours.\n• Costs must be kept low.\n• The instances must be deployed in an IaaS model.\n• The application has no tolerance for service disruptions.\n\nWhich of the following steps should the cloud architect take to host the application?",
   "options": {
    "A": "Reserve 16 instances but turn off the unused instances outside of peak hours.  ",
    "B": "Use ten pay-as-you-go instances and add six spot instances during peak hours.  ",
@@ -2905,7 +2905,7 @@ window.EXAM_DATA = [
  },
  {
   "number": 147,
-  "stem": "A cloud engineer is implementing a deployment strategy with the following requirements:\n  • At least two environments for production and development must be supported.\n  • Changes in one environment must not impact the other environment.\n  • The highest possible availability must be achieved.\n\nWhich of the following deployment strategies should the engineer implement?",
+  "stem": "A cloud engineer is implementing a deployment strategy with the following requirements:\n• At least two environments for production and development must be supported.\n• Changes in one environment must not impact the other environment.\n• The highest possible availability must be achieved.\n\nWhich of the following deployment strategies should the engineer implement?",
   "options": {
    "A": "Rolling  ",
    "B": "Blue-green  ",
@@ -3755,7 +3755,7 @@ window.EXAM_DATA = [
  },
  {
   "number": 190,
-  "stem": "A cloud engineer is developing an operating expense report that will be used to purchase various cloud billing models for virtual machine instances. The cloud billing model must meet the following requirements:\n  • The instance cannot be ephemeral.\n  • The minimum life cycle of the instance is expected to be five years.\n  • The software license is charged per physical CPU count.\n\nWhich of the following best meets these requirements?",
+  "stem": "A cloud engineer is developing an operating expense report that will be used to purchase various cloud billing models for virtual machine instances. The cloud billing model must meet the following requirements:\n• The instance cannot be ephemeral.\n• The minimum life cycle of the instance is expected to be five years.\n• The software license is charged per physical CPU count.\n\nWhich of the following best meets these requirements?",
   "options": {
    "A": "Dedicated host  ",
    "B": "Spot instance  ",
@@ -3795,7 +3795,7 @@ window.EXAM_DATA = [
  },
  {
   "number": 192,
-  "stem": "A cloud administrator is troubleshooting an issue in which clients receive errors when connecting to an application server. The initial investigation shows the following:\n  • The application is behind a load balancer.\n  • The load balancer logs show connections being denied.\n  • There are no security issues.\n  • There are no infrastructure issues on the application servers.\n  • All connected clients are working as expected.\n\nWhich of the following would most likely cause the issue?",
+  "stem": "A cloud administrator is troubleshooting an issue in which clients receive errors when connecting to an application server. The initial investigation shows the following:\n• The application is behind a load balancer.\n• The load balancer logs show connections being denied.\n• There are no security issues.\n• There are no infrastructure issues on the application servers.\n• All connected clients are working as expected.\n\nWhich of the following would most likely cause the issue?",
   "options": {
    "A": "The application servers are running low on disk space.  ",
    "B": "The load balancer is unable to connect to the application servers.  ",
@@ -4619,7 +4619,7 @@ window.EXAM_DATA = [
  },
  {
   "number": 233,
-  "stem": "A cloud engineer needs to choose a storage technology that fulfills the following requirements:\n  • 99.99% durability\n  • Resilient to instance failures\n  • Resilient to instance deletions\n\nWhich of the following types of storage is the best option?",
+  "stem": "A cloud engineer needs to choose a storage technology that fulfills the following requirements:\n• 99.99% durability\n• Resilient to instance failures\n• Resilient to instance deletions\n\nWhich of the following types of storage is the best option?",
   "options": {
    "A": "Ephemeral  ",
    "B": "Cache  ",
@@ -4739,7 +4739,7 @@ window.EXAM_DATA = [
  },
  {
   "number": 239,
-  "stem": "A cloud engineer must improve the availability of a database for an application. The database must meet the following requirements:\n  • Failover capability in case of a data center outage\n  • Point-in-time data restoration capabilities\n\nWhich of the following best meets these requirements?",
+  "stem": "A cloud engineer must improve the availability of a database for an application. The database must meet the following requirements:\n• Failover capability in case of a data center outage\n• Point-in-time data restoration capabilities\n\nWhich of the following best meets these requirements?",
   "options": {
    "A": "Clustered database instance  ",
    "B": "Cached Redis cluster  ",
@@ -4859,7 +4859,7 @@ window.EXAM_DATA = [
  },
  {
   "number": 245,
-  "stem": "A developer is deploying a new version of a containerized application. The DevOps team wants:\n  • No disruption\n  • No performance degradation\n  • Cost-effective deployment\n  • Minimal deployment time\n\nWhich of the following is the best deployment strategy given the requirements?",
+  "stem": "A developer is deploying a new version of a containerized application. The DevOps team wants:\n• No disruption\n• No performance degradation\n• Cost-effective deployment\n• Minimal deployment time\n\nWhich of the following is the best deployment strategy given the requirements?",
   "options": {
    "A": "Canary  ",
    "B": "In-place  ",
@@ -5039,7 +5039,7 @@ window.EXAM_DATA = [
  },
  {
   "number": 254,
-  "stem": "An engineer is deploying a new application with the following requirements:\n  • Uses automation\n  • Deploys some components\n  • Does not deploy the virtual machines\n\nWhich of the following are reasons that the deployment may only partially fail? (Choose two.)",
+  "stem": "An engineer is deploying a new application with the following requirements:\n• Uses automation\n• Deploys some components\n• Does not deploy the virtual machines\n\nWhich of the following are reasons that the deployment may only partially fail? (Choose two.)",
   "options": {
    "A": "Service quotas cannot be exceeded.  ",
    "B": "The credentials for the deployment are incorrect.  ",
@@ -5087,7 +5087,7 @@ window.EXAM_DATA = [
  },
  {
   "number": 256,
-  "stem": "A media company is dealing with a large influx of live stream traffic. A cloud engineer notices the following on a VM:\n  • Network usage metric is at 100%.\n  • CPU is under 65% utilization.\n  • Memory utilization is at 50%.\n  • Response time to the website is increasing.\n\nWhich of the following is the best solution to address these issues?",
+  "stem": "A media company is dealing with a large influx of live stream traffic. A cloud engineer notices the following on a VM:\n• Network usage metric is at 100%.\n• CPU is under 65% utilization.\n• Memory utilization is at 50%.\n• Response time to the website is increasing.\n\nWhich of the following is the best solution to address these issues?",
   "options": {
    "A": "Increasing the storage capacity  ",
    "B": "Increasing the virtual machine size  ",
@@ -5207,7 +5207,7 @@ window.EXAM_DATA = [
  },
  {
   "number": 262,
-  "stem": "A cloud engineer is designing a solution that requires end users:\n  • To be authenticated\n  • To be authorized\n  • To be in approved locations.\n  • To use only corporate devices\n\nWhich of the following is the best way to meet these requirements?",
+  "stem": "A cloud engineer is designing a solution that requires end users:\n• To be authenticated\n• To be authorized\n• To be in approved locations.\n• To use only corporate devices\n\nWhich of the following is the best way to meet these requirements?",
   "options": {
    "A": "Secure by design  ",
    "B": "Principle of least privilege  ",
@@ -5593,7 +5593,7 @@ window.EXAM_DATA = [
  },
  {
   "number": 281,
-  "stem": "A network engineer wants to implement a service that has the following characteristics:\n  • Highly flexible\n  • Centralized\n  • Programmatic\n  • Dynamically adjustable to traffic\n\nWhich of the following is the best approach?",
+  "stem": "A network engineer wants to implement a service that has the following characteristics:\n• Highly flexible\n• Centralized\n• Programmatic\n• Dynamically adjustable to traffic\n\nWhich of the following is the best approach?",
   "options": {
    "A": "Software-defined network  ",
    "B": "Virtual private network  ",
@@ -5813,7 +5813,7 @@ window.EXAM_DATA = [
  },
  {
   "number": 292,
-  "stem": "A cloud developer is developing a cloud-native application with the following requirements:\n  • Must be a web-based application\n  • Must be as cost-effective as possible\n  • Must have fast response times\n  • Must be scalable to meet demand\n\nWhich of the following technologies will best meet these requirements?",
+  "stem": "A cloud developer is developing a cloud-native application with the following requirements:\n• Must be a web-based application\n• Must be as cost-effective as possible\n• Must have fast response times\n• Must be scalable to meet demand\n\nWhich of the following technologies will best meet these requirements?",
   "options": {
    "A": "Serverless function  ",
    "B": "VM  ",
@@ -5893,7 +5893,7 @@ window.EXAM_DATA = [
  },
  {
   "number": 296,
-  "stem": "A cloud engineer must configure a backup at the end of the month. Given the following requirements:\n  • Minimal backup size\n  • Faster backup speed\n\nWhich of the following backup types best meets the requirements?",
+  "stem": "A cloud engineer must configure a backup at the end of the month. Given the following requirements:\n• Minimal backup size\n• Faster backup speed\n\nWhich of the following backup types best meets the requirements?",
   "options": {
    "A": "Tape  ",
    "B": "Full  ",
@@ -6223,7 +6223,7 @@ window.EXAM_DATA = [
  },
  {
   "number": 312,
-  "stem": "A cloud administrator is troubleshooting an issue for a client. The client has the following capabilities:\n  • Can access servers on the VPC, including servers on other subnets\n  • Can ping other resources on the network\n  • Can ping its own gateway\n\nHowever, the client cannot reach the internet. Which of the following is most likely the cause?",
+  "stem": "A cloud administrator is troubleshooting an issue for a client. The client has the following capabilities:\n• Can access servers on the VPC, including servers on other subnets\n• Can ping other resources on the network\n• Can ping its own gateway\n\nHowever, the client cannot reach the internet. Which of the following is most likely the cause?",
   "options": {
    "A": "The gateway is missing a route  ",
    "B": "The client has a duplicate IP address  ",
