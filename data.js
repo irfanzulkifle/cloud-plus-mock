@@ -5247,7 +5247,7 @@ window.EXAM_DATA = [
  },
  {
   "number": 265,
-  "stem": "A security analyst receives the following security alert:\n  The following VM (vm_1) is exhibiting signs of increased CPU usage over a 24-hour period. Please consider increasing the allocated CPU cores.\n\nAfter additional investigation, the analyst identifies a process consuming 98% CPU utilization on the VM. The analyst attempts to stop the process, but the process continues. Which of the following is the most likely cause of this security alert?",
+  "stem": "A security analyst receives the following security alert:\nThe following VM (vm_1) is exhibiting signs of increased CPU usage over a 24-hour period. Please consider increasing the allocated CPU cores.\n\nAfter additional investigation, the analyst identifies a process consuming 98% CPU utilization on the VM. The analyst attempts to stop the process, but the process continues. Which of the following is the most likely cause of this security alert?",
   "options": {
    "A": "Hashing  ",
    "B": "Cryptojacking  ",
