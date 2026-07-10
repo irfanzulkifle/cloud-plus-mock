@@ -2681,7 +2681,7 @@ window.EXAM_DATA = [
  },
  {
   "number": 136,
-  "stem": "A new application that will be deployed to cloud VMs has the following requirements: • Low inter-VM latency • Horizontal scaling support • 98.5% availability • 8vCPU and 16GB • Ability to split jobs across VMs Which of the following will best meet these requirements?",
+  "stem": "A new application that will be deployed to cloud VMs has the following requirements:\n  • Low inter-VM latency\n  • Horizontal scaling support\n  • 98.5% availability\n  • 8vCPU and 16GB RAM\n  • Ability to split jobs across VMs\n\nWhich of the following will best meet these requirements?",
   "options": {
    "A": "Load balanced 2vCPU with 4GB RAM on multiregion  ",
    "B": "Load balanced 4vCPU with 8GB RAM on single availability zone  ",
@@ -2785,7 +2785,7 @@ window.EXAM_DATA = [
  },
  {
   "number": 141,
-  "stem": "A cloud administrator is provisioning infrastructure to run an application with the following requirements: • Ten midsize instances need to run as a cluster most of the day. • Sixteen midsize instances are required during peak hours. • Costs must be kept low. • The instances must be deployed in an IaaS model. • The application has no tolerance for service disruptions. Which of the following steps should the cloud architect take to host the application?",
+  "stem": "A cloud administrator is provisioning infrastructure to run an application with the following requirements:\n  • Ten midsize instances need to run as a cluster most of the day.\n  • Sixteen midsize instances are required during peak hours.\n  • Costs must be kept low.\n  • The instances must be deployed in an IaaS model.\n  • The application has no tolerance for service disruptions.\n\nWhich of the following steps should the cloud architect take to host the application?",
   "options": {
    "A": "Reserve 16 instances but turn off the unused instances outside of peak hours.  ",
    "B": "Use ten pay-as-you-go instances and add six spot instances during peak hours.  ",
