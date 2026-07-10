@@ -3435,7 +3435,7 @@ window.EXAM_DATA = [
  },
  {
   "number": 175,
-  "stem": "An administrator attempts to use a script to deploy a cloud-based virtual machine with five data disks. After running the script, the administrator sees the following message: ERROR: Response 403 storage API provisioning error Which of the following is the reason the deployment failed?",
+  "stem": "An administrator attempts to use a script to deploy a cloud-based virtual machine with five data disks. After running the script, the administrator sees the following message:\n\n  ERROR: Response 403 storage API provisioning error\n\n  Which of the following is the reason the deployment failed?",
   "options": {
    "A": "Permission issues  ",
    "B": "Partial outage  ",
