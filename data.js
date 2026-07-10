@@ -913,7 +913,7 @@ window.EXAM_DATA = [
  },
  {
   "number": 46,
-  "stem": "A cloud engineer wants to deploy a new application to the cloud and is writing the following script:\n\n  terraform {\n    required_providers {\n      cloud_provider1 = {\n        source  = \"hashicorp/cloud_provider1\"\n        version = \"~> 4.16\"\n      }\n    }\n    required_version = \">= 1.2.0\"\n  }\n\n  provider \"cloud_provider1\" {\n    region = \"us-west-2\"\n  }\n\n  resource \"server_instance\" \"app_server\" {\n    ami           = \"ami-830c94e3\"\n    instance_type = \"t2.micro\"\n    tags = {\n      Name = \"AppServerInstance\"\n    }\n  }\n\n  Which of the following actions will this script perform?",
+  "stem": "A cloud engineer wants to deploy a new application to the cloud and is writing the following script:\n\n  terraform {\n    required_providers {\n      cloud_provider1 = {\n        source  = \"hashicorp/cloud_provider1\"\n        version = \"~> 4.16\"\n      }\n    }\n    required_version = \">= 1.2.0\"\n  }\n\n  provider \"cloud_provider1\" {\n    region = \"us-west-2\"\n  }\n\n  resource \"server_instance\" \"app_server\" {\n    ami           = \"ami-830c94e3\"\n    instance_type = \"t2.micro\"\n    tags = {\n      Name = \"AppServerInstance\"\n    }\n  }\n\nWhich of the following actions will this script perform?",
   "options": {
    "A": "Upload a new VM image.",
    "B": "Create a new cloud resource.  ",
@@ -933,7 +933,7 @@ window.EXAM_DATA = [
  },
  {
   "number": 47,
-  "stem": "A network administrator is building a site-to-site VPN tunnel from the company’s headquarters office to the company’s public cloud development network. The network administrator confirms the following:\n\n  The VPN tunnel is established on the headquarters office firewall. While inside the office, developers report that they cannot connect to the development network resources. While outside the office on a client VPN, developers report that they can connect to the development network resources. The office and the client VPN have different IP subnet ranges. The firewall flow logs show that traffic is reaching the development network from the office. Which of the following is the next step the network administrator should take to troubleshoot the VPN tunnel?",
+  "stem": "A network administrator is building a site-to-site VPN tunnel from the company’s headquarters office to the company’s public cloud development network. The network administrator confirms the following:\n\nThe VPN tunnel is established on the headquarters office firewall. While inside the office, developers report that they cannot connect to the development network resources. While outside the office on a client VPN, developers report that they can connect to the development network resources. The office and the client VPN have different IP subnet ranges. The firewall flow logs show that traffic is reaching the development network from the office. Which of the following is the next step the network administrator should take to troubleshoot the VPN tunnel?",
   "options": {
    "A": "Review the development network routing table.  ",
    "B": "Change the ciphers on the site-to-site VPN.  ",
@@ -973,7 +973,7 @@ window.EXAM_DATA = [
  },
  {
   "number": 49,
-  "stem": "An organization’s critical data was exfiltrated from a computer system in a cyberattack. A cloud analyst wants to identify the root cause and is reviewing the following security logs of a software web application:\n\n  [2021/12/18 09:33:12] [10.34.32.18] [104.224.123.119] \"POST /login.php?u=administrator\&p=or%201%20=1\"\n  [2021/12/18 09:33:13] [10.34.32.18] [104.224.123.119] \"POST /login.php?u=administrator\&p=%27%0A\"\n  [2021/12/18 09:33:14] [10.34.32.18] [104.224.123.119] \"POST /login.php?u=administrator\&p=%26\"\n  [2021/12/18 09:33:17] [10.34.32.18] [104.224.123.119] \"POST /login.php?u=administrator\&p=%3B\"\n  [2021/12/18 09:33:19] [10.34.32.18] [104.224.123.119] \"POST /login.php?u=admin\&p=or%201%20=1\"\n  [2021/12/18 09:33:21] [10.34.32.18] [104.224.123.119] \"POST /login.php?u=admin\&p=%27%0A\"\n  [2021/12/18 09:33:23] [10.34.32.18] [104.224.123.119] \"POST /login.php?u=admin\&p=%26\"\n  [2021/12/18 09:33:23] [10.34.32.18] [104.224.123.119] \"POST /login.php?u=admin\&p=%3B\"\n\n  Which of the following types of attacks occurred?",
+  "stem": "An organization’s critical data was exfiltrated from a computer system in a cyberattack. A cloud analyst wants to identify the root cause and is reviewing the following security logs of a software web application:\n\n  [2021/12/18 09:33:12] [10.34.32.18] [104.224.123.119] \"POST /login.php?u=administrator\&p=or%201%20=1\"\n  [2021/12/18 09:33:13] [10.34.32.18] [104.224.123.119] \"POST /login.php?u=administrator\&p=%27%0A\"\n  [2021/12/18 09:33:14] [10.34.32.18] [104.224.123.119] \"POST /login.php?u=administrator\&p=%26\"\n  [2021/12/18 09:33:17] [10.34.32.18] [104.224.123.119] \"POST /login.php?u=administrator\&p=%3B\"\n  [2021/12/18 09:33:19] [10.34.32.18] [104.224.123.119] \"POST /login.php?u=admin\&p=or%201%20=1\"\n  [2021/12/18 09:33:21] [10.34.32.18] [104.224.123.119] \"POST /login.php?u=admin\&p=%27%0A\"\n  [2021/12/18 09:33:23] [10.34.32.18] [104.224.123.119] \"POST /login.php?u=admin\&p=%26\"\n  [2021/12/18 09:33:23] [10.34.32.18] [104.224.123.119] \"POST /login.php?u=admin\&p=%3B\"\n\nWhich of the following types of attacks occurred?",
   "options": {
    "A": "SQL injection  ",
    "B": "Cross-site scripting  ",
@@ -1833,7 +1833,7 @@ window.EXAM_DATA = [
  },
  {
   "number": 95,
-  "stem": "A cloud engineer is troubleshooting a connectivity issue. The application server with IP 192.168.1.10 in one subnet is not connecting to the MySQL database server with IP 192.168.2.20 in a different subnet. The cloud engineer reviews the following information:\n\n  Which of the following should the cloud engineer address to fix the communication issue?",
+  "stem": "A cloud engineer is troubleshooting a connectivity issue. The application server with IP 192.168.1.10 in one subnet is not connecting to the MySQL database server with IP 192.168.2.20 in a different subnet. The cloud engineer reviews the following information:\n\nWhich of the following should the cloud engineer address to fix the communication issue?",
   "options": {
    "A": "The Application Server Stateful Firewall  ",
    "B": "The Application Server Subnet Routing Table  ",
@@ -1997,7 +1997,7 @@ window.EXAM_DATA = [
  },
  {
   "number": 103,
-  "stem": "A cloud security analyst is investigating the impact of a recent cyberattack. The analyst is reviewing the following information:\n\n  Which of the following has occurred?",
+  "stem": "A cloud security analyst is investigating the impact of a recent cyberattack. The analyst is reviewing the following information:\n\nWhich of the following has occurred?",
   "options": {
    "A": "The corporate administration page was defaced by the attacker  ",
    "B": "A denial-of-service attack was successfully performed on the web server  ",
@@ -2421,7 +2421,7 @@ window.EXAM_DATA = [
  },
  {
   "number": 124,
-  "stem": "The company's IDS has reported an anomaly. The cloud engineer remotely accesses the cloud instance, runs a command, and receives the following information:\n\n  Which of the following is the most likely root cause of this anomaly?",
+  "stem": "The company's IDS has reported an anomaly. The cloud engineer remotely accesses the cloud instance, runs a command, and receives the following information:\n\nWhich of the following is the most likely root cause of this anomaly?",
   "options": {
    "A": "Privilege escalation  ",
    "B": "Leaked credentials",
@@ -2441,7 +2441,7 @@ window.EXAM_DATA = [
  },
  {
   "number": 125,
-  "stem": "A developer is building a new application version using a CI/CD pipeline. The developer receives the following error message log when the build fails:\n\n  Traceback (most recent call last):\n    File \"app.py\", line 4, in <module>\n      import requests\n  ModuleNotFoundError: No module named 'requests'\n\n  Which of the following is the most likely cause of this failure?",
+  "stem": "A developer is building a new application version using a CI/CD pipeline. The developer receives the following error message log when the build fails:\n\n  Traceback (most recent call last):\n    File \"app.py\", line 4, in <module>\n      import requests\n  ModuleNotFoundError: No module named 'requests'\n\nWhich of the following is the most likely cause of this failure?",
   "options": {
    "A": "Incorrect version  ",
    "B": "Test case failure  ",
@@ -2561,7 +2561,7 @@ window.EXAM_DATA = [
  },
  {
   "number": 131,
-  "stem": "A newly configured VM fails to run application updates despite having internet access. The updates download automatically from a third- party network. Given the following output:\n\n  $ dig +short apac.updateserver.net\n  38.102.218.7\n  $ dig +short na.updateserver.net\n  request timeout\n\n  Which of the following troubleshooting steps would be best to take?",
+  "stem": "A newly configured VM fails to run application updates despite having internet access. The updates download automatically from a third- party network. Given the following output:\n\n  $ dig +short apac.updateserver.net\n  38.102.218.7\n  $ dig +short na.updateserver.net\n  request timeout\n\nWhich of the following troubleshooting steps would be best to take?",
   "options": {
    "A": "Checking DNS configurations",
    "B": "Reconfiguring routing protocols  ",
@@ -2945,7 +2945,7 @@ window.EXAM_DATA = [
  },
  {
   "number": 151,
-  "stem": "A company experienced a data leak through its website. A security engineer, who is investigating the issue, runs a vulnerability scan against the website and receives the following output:\n\n  Nmap scan report for www.example.com (93.184.216.34)\n  Host is up (0.020s latency).\n\n  PORT      STATE    SERVICE\n  21/tcp    open     ftp\n  443/tcp   open     ssl/https\n  1119/tcp  closed   bnetgame\n  1935/tcp  closed   rtmp\n\n  Which of the following is the most likely cause of this leak?",
+  "stem": "A company experienced a data leak through its website. A security engineer, who is investigating the issue, runs a vulnerability scan against the website and receives the following output:\n\n  Nmap scan report for www.example.com (93.184.216.34)\n  Host is up (0.020s latency).\n\n  PORT      STATE    SERVICE\n  21/tcp    open     ftp\n  443/tcp   open     ssl/https\n  1119/tcp  closed   bnetgame\n  1935/tcp  closed   rtmp\n\nWhich of the following is the most likely cause of this leak?",
   "options": {
    "A": "RTMP port open  ",
    "B": "SQL injection  ",
@@ -3005,7 +3005,7 @@ window.EXAM_DATA = [
  },
  {
   "number": 154,
-  "stem": "A SaaS provider introduced new software functionality for customers as part of quarterly production enhancements. After an update is implemented, users cannot locate certain transactions from an inbound integration. During the investigation, the application owner finds the following error in the logs:\n\n  Error: REST API - Deprecated call is no longer supported in this release\n\n  Which of the following is the best action for the application owner to take to resolve the issue?",
+  "stem": "A SaaS provider introduced new software functionality for customers as part of quarterly production enhancements. After an update is implemented, users cannot locate certain transactions from an inbound integration. During the investigation, the application owner finds the following error in the logs:\n\n  Error: REST API - Deprecated call is no longer supported in this release\n\nWhich of the following is the best action for the application owner to take to resolve the issue?",
   "options": {
    "A": "Update the custom integration to use a supported function.  ",
    "B": "Include the custom integration in the quarterly testing scope.  ",
@@ -3435,7 +3435,7 @@ window.EXAM_DATA = [
  },
  {
   "number": 175,
-  "stem": "An administrator attempts to use a script to deploy a cloud-based virtual machine with five data disks. After running the script, the administrator sees the following message:\n\n  ERROR: Response 403 storage API provisioning error\n\n  Which of the following is the reason the deployment failed?",
+  "stem": "An administrator attempts to use a script to deploy a cloud-based virtual machine with five data disks. After running the script, the administrator sees the following message:\n\n  ERROR: Response 403 storage API provisioning error\n\nWhich of the following is the reason the deployment failed?",
   "options": {
    "A": "Permission issues  ",
    "B": "Partial outage  ",
@@ -3455,7 +3455,7 @@ window.EXAM_DATA = [
  },
  {
   "number": 176,
-  "stem": "A cloud engineer tries to deploy five new cloud instances using code. An error occurs, and the instances are not created. The configuration fails to run. The engineer then receives the following error message:\n\n  ERROR: Parse error on JSON line X in config\n\n  Given the following snippet from the config.json file:\n\n  {\n    \"instance_count\": 5,\n    \"ssd_options\": [\"100GB\", \"200GB\", \"300GB\"],\n    \"instance_region\": \"apac\",\n    \"instance_code\": 255,\n    \"start_instance\": true\n  }\n\n  Which of the following oversights created the error in the configuration file?",
+  "stem": "A cloud engineer tries to deploy five new cloud instances using code. An error occurs, and the instances are not created. The configuration fails to run. The engineer then receives the following error message:\n\n  ERROR: Parse error on JSON line X in config\n\n  Given the following snippet from the config.json file:\n\n  {\n    \"instance_count\": 5,\n    \"ssd_options\": [\"100GB\", \"200GB\", \"300GB\"],\n    \"instance_region\": \"apac\",\n    \"instance_code\": 255,\n    \"start_instance\": true\n  }\n\nWhich of the following oversights created the error in the configuration file?",
   "options": {
    "A": "Incorrect instance_count  ",
    "B": "Incorrect ssd_options  ",
@@ -3495,7 +3495,7 @@ window.EXAM_DATA = [
  },
  {
   "number": 178,
-  "stem": "A systems engineer tries to mount an iSCSI LUN to a VM host in a data center, but the host does not discover any iSCSI targets. A sample of the switch configuration is shown in the following image:\n\nGigabitEthernet 1/0/1\n  description \"Development Network Uplink to VM Host A\"\n  access vlan 24\n\nGigabitEthernet 1/0/2\n  description \"Storage Network Uplink to VM Host A\"\n  access vlan 24\n  spanning-tree portfast\n  mtu 9216\n\nGigabitEthernet 1/0/3\n  description \"Lights-Out Management VM Host A\"\n  access vlan 20\n  spanning-tree portfast\n\nGigabitEthernet 1/0/4\n  description \"SAN Management Controller A\"\n  access vlan 20\n\nGigabitEthernet 1/0/5\n  description \"SAN Management Controller B\"\n  access vlan 20\n  spanning-tree portfast\n\nGigabitEthernet 1/0/6\n  description \"SAN iSCSI Controller A\"\n  access vlan 25\n  spanning-tree portfast\n\nGigabitEthernet 1/0/7\n  description \"SAN iSCSI Controller B\"\n  access vlan 25\n  spanning-tree portfast\n\n  Which of the following configuration changes would most likely resolve the discovery issues?",
+  "stem": "A systems engineer tries to mount an iSCSI LUN to a VM host in a data center, but the host does not discover any iSCSI targets. A sample of the switch configuration is shown in the following image:\n\nGigabitEthernet 1/0/1\n  description \"Development Network Uplink to VM Host A\"\n  access vlan 24\n\nGigabitEthernet 1/0/2\n  description \"Storage Network Uplink to VM Host A\"\n  access vlan 24\n  spanning-tree portfast\n  mtu 9216\n\nGigabitEthernet 1/0/3\n  description \"Lights-Out Management VM Host A\"\n  access vlan 20\n  spanning-tree portfast\n\nGigabitEthernet 1/0/4\n  description \"SAN Management Controller A\"\n  access vlan 20\n\nGigabitEthernet 1/0/5\n  description \"SAN Management Controller B\"\n  access vlan 20\n  spanning-tree portfast\n\nGigabitEthernet 1/0/6\n  description \"SAN iSCSI Controller A\"\n  access vlan 25\n  spanning-tree portfast\n\nGigabitEthernet 1/0/7\n  description \"SAN iSCSI Controller B\"\n  access vlan 25\n  spanning-tree portfast\n\nWhich of the following configuration changes would most likely resolve the discovery issues?",
   "options": {
    "A": "Disabling Gigabit Ethernet 1/0/7  ",
    "B": "Changing the MTU on Gigabit Ethernet 1/0/2  ",
@@ -3735,7 +3735,7 @@ window.EXAM_DATA = [
  },
  {
   "number": 190,
-  "stem": "A cloud engineer is developing an operating expense report that will be used to purchase various cloud billing models for virtual machine instances. The cloud billing model must meet the following requirements:\n  • The instance cannot be ephemeral.\n  • The minimum life cycle of the instance is expected to be five years.\n  • The software license is charged per physical CPU count.\n\n  Which of the following best meets these requirements?",
+  "stem": "A cloud engineer is developing an operating expense report that will be used to purchase various cloud billing models for virtual machine instances. The cloud billing model must meet the following requirements:\n  • The instance cannot be ephemeral.\n  • The minimum life cycle of the instance is expected to be five years.\n  • The software license is charged per physical CPU count.\n\nWhich of the following best meets these requirements?",
   "options": {
    "A": "Dedicated host  ",
    "B": "Spot instance  ",
@@ -3775,7 +3775,7 @@ window.EXAM_DATA = [
  },
  {
   "number": 192,
-  "stem": "A cloud administrator is troubleshooting an issue in which clients receive errors when connecting to an application server. The initial investigation shows the following:\n  • The application is behind a load balancer.\n  • The load balancer logs show connections being denied.\n  • There are no security issues.\n  • There are no infrastructure issues on the application servers.\n  • All connected clients are working as expected.\n\n  Which of the following would most likely cause the issue?",
+  "stem": "A cloud administrator is troubleshooting an issue in which clients receive errors when connecting to an application server. The initial investigation shows the following:\n  • The application is behind a load balancer.\n  • The load balancer logs show connections being denied.\n  • There are no security issues.\n  • There are no infrastructure issues on the application servers.\n  • All connected clients are working as expected.\n\nWhich of the following would most likely cause the issue?",
   "options": {
    "A": "The application servers are running low on disk space.  ",
    "B": "The load balancer is unable to connect to the application servers.  ",
@@ -4619,7 +4619,7 @@ window.EXAM_DATA = [
  },
  {
   "number": 234,
-  "stem": "A cloud engineering team recently built a new website to be hosted on a cloud server. However, the website is not loading. The team runs a troubleshooting command that provides the following output:\n\n  Which of the following records would the team most likely add to resolve this issue?",
+  "stem": "A cloud engineering team recently built a new website to be hosted on a cloud server. However, the website is not loading. The team runs a troubleshooting command that provides the following output:\n\nWhich of the following records would the team most likely add to resolve this issue?",
   "options": {
    "A": "MX",
    "B": "A  ",
