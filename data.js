@@ -525,7 +525,7 @@ window.EXAM_DATA = [
  },
  {
   "number": 27,
-  "stem": "A cloud engineer is reviewing a disaster recovery plan that includes the following requirements: System state, files, and configurations must be backed up on a weekly basis. The system state, file, and configuration backups must be tested annually. Which of the following backup methods should the engineer implement for the first week the plan is executed?",
+  "stem": "A cloud engineer is reviewing a disaster recovery plan that includes the following requirements:\n  • System state, files, and configurations must be backed up on a weekly basis.\n  • The system state, file, and configuration backups must be tested annually.\n\nWhich of the following backup methods should the engineer implement for the first week the plan is executed?",
   "options": {
    "A": "Differential  ",
    "B": "Incremental  ",
@@ -585,7 +585,7 @@ window.EXAM_DATA = [
  },
  {
   "number": 30,
-  "stem": "An administrator used a script that worked in the past to create and tag five virtual machines. All of the virtual machines have been created; however, the administrator sees the following results: {tags: []} Which of the following is the most likely reason for this result?",
+  "stem": "An administrator used a script that worked in the past to create and tag five virtual machines. All of the virtual machines have been created; however, the administrator sees the following results:\n  {tags: []}\n\nWhich of the following is the most likely reason for this result?",
   "options": {
    "A": "API throttling  ",
    "B": "Service quotas  ",
@@ -645,7 +645,7 @@ window.EXAM_DATA = [
  },
  {
   "number": 33,
-  "stem": "A cloud engineer is designing a cloud native, three-tier application. The engineer must adhere to the following security best practices: Minimal services should run on all layers of the stack. The solution should be vendor agnostic. Virtualization could be used over physical hardware. Which of the following concepts should the engineer use to design the system to best meet these requirements?",
+  "stem": "A cloud engineer is designing a cloud native, three-tier application. The engineer must adhere to the following security best practices:\n  • Minimal services should run on all layers of the stack.\n  • The solution should be vendor agnostic.\n  • Virtualization could be used over physical hardware.\n\nWhich of the following concepts should the engineer use to design the system to best meet these requirements?",
   "options": {
    "A": "Virtual machine  ",
    "B": "Microservices  ",
