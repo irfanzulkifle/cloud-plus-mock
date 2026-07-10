@@ -869,7 +869,7 @@ window.EXAM_DATA = [
  },
  {
   "number": 44,
-  "stem": "An organization is hosting a seminar with eight individuals who need to connect to their own dedicated VM. The technician used the following VM configurations: IP address: DHCP NIC: 1Gbps Network: 10.1.10.0/29 Several users are unable to access their VMs. Which of the following best describes the reason?",
+  "stem": "An organization is hosting a seminar with eight individuals who need to connect to their own dedicated VM. The technician used the following VM configurations:\n  IP address: DHCP\n  NIC: 1Gbps\n  Network: 10.1.10.0/29\n\nSeveral users are unable to access their VMs. Which of the following best describes the reason?",
   "options": {
    "A": "Not enough addresses are available.  ",
    "B": "The routes are misconfigured.  ",
