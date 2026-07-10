@@ -520,14 +520,15 @@ window.EXAM_DATA = [
   },
   "answer": "D",
   "choose": "all",
-  "domain": 3,
-  "domainName": "Operations",
+  "domain": 1,
+  "domainName": "Cloud Architecture",
   "explanations": {
    "A": "Clustering describes local high availability, not the hot site's defining trait relative to the main site.",
    "B": "Balanced traffic between sites describes active-active load balancing, not the general hot site definition.",
    "C": "Offline hourly backups describe a warm/cold site approach, not a hot site.",
    "D": "A hot site keeps all servers continuously replicated and online in real time from the main site, enabling near-instant failover, matching the definition."
-  }
+},
+  "deepdive": "WHY\n• Know the DR site definitions: in disaster recovery, sites are ranked by readiness — Hot > Warm > Cold. A hot site is a fully operational, real-time mirror of production that is online and ready to take over immediately (near-zero RTO/RPO).\n• \"Online status\" + \"all servers replicated\" = hot site: a hot site has all systems live, powered on, and continuously synchronized with the main site's data. That's exactly what option D describes — the defining trait of hot.\n• Keyword \"characteristic of a hot site\" → immediate, fully mirrored, online: the flashing arrow is online + fully replicated. The hotter the site, the more it's already running and in sync; a hot site is the closest thing to a live duplicate.\n• CompTIA framing (RTO/RPO): hot sites give the lowest recovery time/point objectives because failover is essentially instant — no provisioning, restoring, or powering up needed. That requires everything to be online and replicated.\nReal-world anchor — traffic can cut over with minimal disruption:\n• active-active multi-region setups\n• a fully running standby environment in a second AWS/Azure region with continuous replication\nWHY THE OTHER OPTIONS ARE WRONG\n• A. Servers in the hot site are clustered with the main site — clustering ties nodes together for load/availability. Its bait: clustering sounds like high availability, which is hot-site-adjacent. But a hot site is a separate DR facility that mirrors the main site, not necessarily clustered with it — clustering describes a local HA architecture, not the defining characteristic of a hot DR site. It mischaracterizes the relationship. Correct for describing a local high-availability cluster, not DR site tiers.\n• B. Network traffic is balanced between the main site and hot site — this describes load balancing / active-active operation. Its bait: an active-active hot site can share traffic, so it seems plausible. But traffic balancing is not the defining characteristic of a hot site — the essence is full, online replication ready for failover, not that live traffic is currently split across both. It describes an operational mode, not the DR-tier definition. Correct when describing load distribution/active-active designs.\n• C. Offline server backups are replicated hourly from the main site — \"offline\" and periodic hourly backups describe a cold or warm site, not hot. Its bait: it mentions replication. But a hot site is online and continuously (real-time) synced, not offline with hourly batches. This is the near-opposite of hot. Correct for describing a cold site (offline, minimal, periodic) or a lower-tier warm setup.\nOBJECTIVE\n• Domain 1.0 — Cloud Architecture (23% of the exam).\n• Objective 1.2 — Explain concepts related to service availability.\n• Why it maps here: Objective 1.2 explicitly lists Disaster recovery (DR) → RTO, RPO, Hot site, Warm site, Cold site. This question tests the defining characteristic of a hot site (fully replicated, online, immediate failover) versus warm/cold — a textbook 1.2 item."
  },
  {
   "number": 26,
