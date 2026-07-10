@@ -3235,10 +3235,10 @@ window.EXAM_DATA = [
   "number": 165,
   "stem": "A cloud solutions architect wants to deploy a three-tier web application that requires the minimum amount of operational overhead. Which of the following is the best template given these requirements?",
   "options": {
-   "A": "    ",
-   "B": "",
-   "C": "    ",
-   "D": "    "
+   "A": "<pre class=\"cfg\">\n  virtual_machine:\n    name: front-end-vm\n    size: small\n    bootstrapping: git\n      repository: front-end-repo\n    autoScaling: enabled\n\n  object_storage:\n    name: query-handler\n    staticWebContent: disabled\n    versioning: enabled\n\n  virtual_machine:\n    name: db-vm\n    size: medium\n    bootstrapping: /bin/bash yum install -y psql\n</pre>",
+   "B": "<pre class=\"cfg\">\n  object_storage:\n    name: front-end\n    staticWebContent: enabled\n    versioning: enabled\n\n  serverless_function:\n    name: app\n    runtime: nodejs\n    memorySize: 2G\n    code: git\n      repository: backend-repo\n\n  relational_database:\n    engine: PostgreSQL\n    clusterMode: enabled\n</pre>",
+   "C": "<pre class=\"cfg\">\n  virtual_machine:\n    name: three-tiered-app\n    size: xlarge\n    bootstrapping:\n      /bin/bash yum install -y nodejs httpd psql &&\n      git clone three-tiered-app &&\n      ./app.sh -listen 8443\n    autoScaling: enabled\n\n  load_balancer:\n    name: front-end-lb\n    target: three-tiered-app\n    targetPort: 8443\n    listener: 443\n</pre>",
+   "D": "<pre class=\"cfg\">\n  object_storage:\n    name: front-end\n    staticWebContent: enabled\n    versioning: enabled\n\n  serverless_function:\n    name: app-vm\n    size: small\n    bootstrapping: git\n    repository: backend-repo\n    autoScaling: enabled\n\n  relational_database:\n    engine: PostgreSQL\n    clusterMode: enabled\n</pre>"
   },
   "answer": "B",
   "choose": "all",
