@@ -5961,7 +5961,7 @@ window.EXAM_DATA = [
  },
  {
   "number": 300,
-  "stem": "The following is a code excerpt of a playbook.yaml file: Which of the following functions does this code perform?",
+  "stem": "The following is a code excerpt of a playbook.yaml file:\nWhich of the following functions does this code perform?",
   "options": {
    "A": "Registers the variable needed to debug the web server stdout result  ",
    "B": "Executes the command to restart the web server and lists the result  ",
