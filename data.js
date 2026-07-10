@@ -805,7 +805,7 @@ window.EXAM_DATA = [
  },
  {
   "number": 41,
-  "stem": "A cloud networking engineer is troubleshooting the corporate office’s network configuration. Employees in the IT and operations departments are unable to resolve IP addresses on all devices, and the IT department cannot establish a connection to other departments’ subnets. The engineer identifies the following configuration currently in place to support the office network: Each employee needs to connect to the network with a maximum of three hosts. Each subnet must be segregated, but the IT department must have the ability to communicate with all subnets. Which of the following meet the IP addressing and routing requirements? (Choose two.)",
+  "stem": "A cloud networking engineer is troubleshooting the corporate office’s network configuration. Employees in the IT and operations departments are unable to resolve IP addresses on all devices, and the IT department cannot establish a connection to other departments’ subnets. The engineer identifies the following configuration currently in place to support the office network:\n\n  Subnet          Department   Employees\n  10.1.20.1/24    Finance      50\n  10.1.30.1/24    IT           90\n  10.1.40.1/24    Legal        30\n  10.1.50.1/24    Operations   100\n\n  Each employee needs to connect to the network with a maximum of three hosts. Each subnet must be segregated, but the IT department must have the ability to communicate with all subnets. Which of the following meet the IP addressing and routing requirements? (Choose two.)",
   "options": {
    "A": "Modifying the subnet mask to 255.255.254.0 for IT and operations departments  ",
    "B": "Configuring static routing to allow access from each subnet to 10.1.40.1  ",
@@ -913,7 +913,7 @@ window.EXAM_DATA = [
  },
  {
   "number": 46,
-  "stem": "A cloud engineer wants to deploy a new application to the cloud and is writing the following script: Which of the following actions will this script perform?",
+  "stem": "A cloud engineer wants to deploy a new application to the cloud and is writing the following script:\n\n  terraform {\n    required_providers {\n      cloud_provider1 = {\n        source  = \"hashicorp/cloud_provider1\"\n        version = \"~> 4.16\"\n      }\n    }\n    required_version = \">= 1.2.0\"\n  }\n\n  provider \"cloud_provider1\" {\n    region = \"us-west-2\"\n  }\n\n  resource \"server_instance\" \"app_server\" {\n    ami           = \"ami-830c94e3\"\n    instance_type = \"t2.micro\"\n    tags = {\n      Name = \"AppServerInstance\"\n    }\n  }\n\n  Which of the following actions will this script perform?",
   "options": {
    "A": "Upload a new VM image.",
    "B": "Create a new cloud resource.  ",
@@ -973,7 +973,7 @@ window.EXAM_DATA = [
  },
  {
   "number": 49,
-  "stem": "An organization’s critical data was exfiltrated from a computer system in a cyberattack. A cloud analyst wants to identify the root cause and is reviewing the following security logs of a software web application: Which of the following types of attacks occurred?",
+  "stem": "An organization’s critical data was exfiltrated from a computer system in a cyberattack. A cloud analyst wants to identify the root cause and is reviewing the following security logs of a software web application:\n\n  [2021/12/18 09:33:12] [10.34.32.18] [104.224.123.119] \"POST /login.php?u=administrator\&p=or%201%20=1\"\n  [2021/12/18 09:33:13] [10.34.32.18] [104.224.123.119] \"POST /login.php?u=administrator\&p=%27%0A\"\n  [2021/12/18 09:33:14] [10.34.32.18] [104.224.123.119] \"POST /login.php?u=administrator\&p=%26\"\n  [2021/12/18 09:33:17] [10.34.32.18] [104.224.123.119] \"POST /login.php?u=administrator\&p=%3B\"\n  [2021/12/18 09:33:19] [10.34.32.18] [104.224.123.119] \"POST /login.php?u=admin\&p=or%201%20=1\"\n  [2021/12/18 09:33:21] [10.34.32.18] [104.224.123.119] \"POST /login.php?u=admin\&p=%27%0A\"\n  [2021/12/18 09:33:23] [10.34.32.18] [104.224.123.119] \"POST /login.php?u=admin\&p=%26\"\n  [2021/12/18 09:33:23] [10.34.32.18] [104.224.123.119] \"POST /login.php?u=admin\&p=%3B\"\n\n  Which of the following types of attacks occurred?",
   "options": {
    "A": "SQL injection  ",
    "B": "Cross-site scripting  ",
