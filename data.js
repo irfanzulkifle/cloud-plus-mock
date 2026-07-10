@@ -4539,7 +4539,7 @@ window.EXAM_DATA = [
  },
  {
   "number": 230,
-  "stem": "An administrator configures three subnets to the corporate network. All servers should communicate with the main corporate network and access the internet. The administrator creates the following configurations: Corporate network: 192.168.0.0/24 Network 2: 192 168.10.0/24 Network 3: 192.168.11.0/24 Network 4: 192.168.12.0/24 After configuring the networks, the administrator recognizes an issue with the configuration. Which of the following can the administrator change in one step to accomplish the goal?",
+  "stem": "An administrator configures three subnets to the corporate network. All servers should communicate with the main corporate network and access the internet. The administrator creates the following configurations:\n  Corporate network: 192.168.0.0/24\n  Network 2: 192.168.10.0/24\n  Network 3: 192.168.11.0/24\n  Network 4: 192.168.12.0/24\n\nAfter configuring the networks, the administrator recognizes an issue with the configuration. Which of the following can the administrator change in one step to accomplish the goal?",
   "options": {
    "A": "Remove source 192.168.12.0/24 and destination 192.168.1.0/24 from the routing table  ",
    "B": "Replace destination 192.168.1.0/24 with destination 192.168.0.0/24  ",
@@ -4719,7 +4719,7 @@ window.EXAM_DATA = [
  },
  {
   "number": 239,
-  "stem": "A cloud engineer must improve the availability of a database for an application. The database must meet the following requirements: • Failover capability in case of a data center outage • Point-in-time data restoration capabilities Which of the following best meets these requirements?",
+  "stem": "A cloud engineer must improve the availability of a database for an application. The database must meet the following requirements:\n  • Failover capability in case of a data center outage\n  • Point-in-time data restoration capabilities\n\nWhich of the following best meets these requirements?",
   "options": {
    "A": "Clustered database instance  ",
    "B": "Cached Redis cluster  ",
@@ -4839,7 +4839,7 @@ window.EXAM_DATA = [
  },
  {
   "number": 245,
-  "stem": "A developer is deploying a new version of a containerized application The DevOps team wants: • No disruption • No performance degradation • Cost-effective deployment • Minimal deployment time Which of the following is the best deployment strategy given the requirements?",
+  "stem": "A developer is deploying a new version of a containerized application. The DevOps team wants:\n  • No disruption\n  • No performance degradation\n  • Cost-effective deployment\n  • Minimal deployment time\n\nWhich of the following is the best deployment strategy given the requirements?",
   "options": {
    "A": "Canary  ",
    "B": "In-place  ",
@@ -5019,7 +5019,7 @@ window.EXAM_DATA = [
  },
  {
   "number": 254,
-  "stem": "An engineer is deploying a new application with the following requirements: • Uses automation • Deploys some components • Does not deploy the virtual machines Which of the following are reasons that the deployment may only partially fail? (Choose two.)",
+  "stem": "An engineer is deploying a new application with the following requirements:\n  • Uses automation\n  • Deploys some components\n  • Does not deploy the virtual machines\n\nWhich of the following are reasons that the deployment may only partially fail? (Choose two.)",
   "options": {
    "A": "Service quotas cannot be exceeded.  ",
    "B": "The credentials for the deployment are incorrect.  ",
@@ -5067,7 +5067,7 @@ window.EXAM_DATA = [
  },
  {
   "number": 256,
-  "stem": "A media company is dealing with a large influx of live stream traffic. A cloud engineer notices the following on a VM: • Network usage metric is at 100%. • CPU is under 65% utilization. • Memory utilization is at 50%. • Response time to the website is increasing. Which of the following is the best solution to address these issues?",
+  "stem": "A media company is dealing with a large influx of live stream traffic. A cloud engineer notices the following on a VM:\n  • Network usage metric is at 100%.\n  • CPU is under 65% utilization.\n  • Memory utilization is at 50%.\n  • Response time to the website is increasing.\n\nWhich of the following is the best solution to address these issues?",
   "options": {
    "A": "Increasing the storage capacity  ",
    "B": "Increasing the virtual machine size  ",
@@ -5127,7 +5127,7 @@ window.EXAM_DATA = [
  },
  {
   "number": 259,
-  "stem": "A cloud application fails to retrieve data from an API. A cloud engineer reviews the following log: [ERROR] HTTP 429 - Too many requests [INFO] API rate limit exceeded [WARNING] API throttled Which of the following is the best resolution?",
+  "stem": "A cloud application fails to retrieve data from an API. A cloud engineer reviews the following log:\n  [ERROR] HTTP 429 - Too many requests\n  [INFO] API rate limit exceeded\n  [WARNING] API throttled\n\nWhich of the following is the best resolution?",
   "options": {
    "A": "Upgrade the network bandwidth  ",
    "B": "Increase the database storage.  ",
@@ -5187,7 +5187,7 @@ window.EXAM_DATA = [
  },
  {
   "number": 262,
-  "stem": "A cloud engineer is designing a solution that requires end users: • To be authenticated • To be authorized • To be in approved locations. • To use only corporate devices Which of the following is the best way to meet these requirements?",
+  "stem": "A cloud engineer is designing a solution that requires end users:\n  • To be authenticated\n  • To be authorized\n  • To be in approved locations.\n  • To use only corporate devices\n\nWhich of the following is the best way to meet these requirements?",
   "options": {
    "A": "Secure by design  ",
    "B": "Principle of least privilege  ",
@@ -5247,7 +5247,7 @@ window.EXAM_DATA = [
  },
  {
   "number": 265,
-  "stem": "A security analyst receives the following security alert: The following VM (vm_1) is exhibiting signs increased CPU usage over a 24-hour period. Please consider increasing the allocated CPU cores. After additional investigation, the analyst identifies a process consuming 98% CPU utilization on the VM. The analyst attempts to stop the process, but the process continues. Which of the following is the most likely cause of this security alert?",
+  "stem": "A security analyst receives the following security alert:\n  The following VM (vm_1) is exhibiting signs of increased CPU usage over a 24-hour period. Please consider increasing the allocated CPU cores.\n\nAfter additional investigation, the analyst identifies a process consuming 98% CPU utilization on the VM. The analyst attempts to stop the process, but the process continues. Which of the following is the most likely cause of this security alert?",
   "options": {
    "A": "Hashing  ",
    "B": "Cryptojacking  ",
