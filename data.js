@@ -1253,7 +1253,7 @@ window.EXAM_DATA = [
  },
  {
   "number": 63,
-  "stem": "A DevOps engineer is receiving reports that users can no longer access the company’s web application after hardening of a web server. The users are receiving the following error: ERR SSL VERSION OR CIPHER MISMATCH. Which of the following actions should the engineer take to resolve the issue?",
+  "stem": "A DevOps engineer is receiving reports that users can no longer access the company’s web application after hardening of a web server. The users are receiving the following error:\n  ERR_SSL_VERSION_OR_CIPHER_MISMATCH\n\nWhich of the following actions should the engineer take to resolve the issue?",
   "options": {
    "A": "Restart the web server.  ",
    "B": "Configure TLS 1.2 or newer.  ",
