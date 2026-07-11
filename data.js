@@ -6513,14 +6513,15 @@ window.EXAM_DATA = [
   },
   "answer": "D",
   "choose": "all",
-  "domain": 2,
-  "domainName": "Deployment",
+  "domain": 1,
+  "domainName": "Cloud Architecture",
   "explanations": {
    "A": "Deploying on-premises adds cost and does not inherently increase uptime cheaply.",
    "B": "A geo-redundant cluster maximizes uptime but at higher cost than necessary.",
    "C": "A cold DR site has long recovery time (downtime), contradicting uptime goals.",
    "D": "Deploying across availability zones provides redundancy and high uptime at minimal added cost within a region."
-  }
+  },
+  "deepdive": "WHY\n• Match both goals — higher uptime and minimal cost: distributing the app across multiple availability zones (AZs) provides redundancy/failover within one region so it survives a single-datacenter failure — cost-effectively, using native cloud infrastructure. ← the flashing arrow\n• AZs = built-in HA at low cost: AZs are isolated datacenters within a region; spreading instances across them gives automatic high availability without the expense of a second region or full DR site (recall Q210/Q239: multi-AZ = HA).\n• Cheapest path to redundancy: you leverage existing in-region infrastructure rather than paying for geo-redundancy or standby sites — the minimal-cost way to raise uptime (ties to service availability/HA in Objective 1.2).\n• Keyword \"increase uptime + keep costs to a minimum → in-region redundancy → availability zones → D: cheap HA = multi-AZ.\n• Real-world anchor: the standard first HA step is multi-AZ deployment (spread instances/load balancer across AZs) — far cheaper than multi-region or dedicated DR.\nWHY THE OTHER OPTIONS ARE WRONG\n• B. Deploying a geo-redundant cluster — the strongest distractor. Geo-redundancy genuinely delivers the highest uptime (survives whole-region loss), so it's tempting. Its bait: \"more redundancy = better uptime.\" But spanning multiple geographic regions is significantly more expensive (duplicate infrastructure, cross-region data transfer/egress) — it fails the \"minimum cost\" requirement. Right on uptime, wrong on cost. Correct when you need maximum regional resilience regardless of cost.\n• C. Deploying services to a cold DR site — its bait: a DR site improves resilience. But a cold site is for disaster recovery, not continuous uptime — it requires manual spin-up and long recovery time (see Q173/Q197), so it doesn't increase uptime for the running app. Wrong purpose. Correct for low-cost DR, not active high availability.\n• A. Deploying on-premises services — its bait: it's an infrastructure option. But on-prem adds hardware/facility/maintenance cost and doesn't inherently improve cloud app uptime — it's the opposite of cost-minimizing. Wrong direction. Correct for specific on-prem requirements, not cheap cloud HA.\nOBJECTIVE\n• Domain 1.0 — Cloud Architecture (23% of the exam).\n• Objective 1.2 — Explain the factors that contribute to high availability and scalability (availability zones, multi-AZ redundancy, failover).\n• Why it maps here: Objective 1.2 covers availability zones for HA. This tests choosing the cost-effective uptime boost ' + D + ' multi-AZ deployment (in-region redundancy) ' + D + ' versus a geo-redundant cluster (highest uptime but expensive multi-region), a cold DR site (disaster recovery, not active uptime), or on-prem services (added cost, no HA benefit). (Ties to availability/HA questions Q52/Q112/Q129/Q197/Q210/Q239/Q304; the rule: cheapest way to raise uptime = spread across availability zones (in-region HA); geo-redundancy = max resilience at higher cost; cold DR = recovery not uptime.)"
  },
  {
   "number": 305,
