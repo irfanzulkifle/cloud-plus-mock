@@ -5223,14 +5223,17 @@ window.EXAM_DATA = [
   },
   "answer": "C",
   "choose": "all",
-  "domain": 5,
-  "domainName": "DevOps Fundamentals",
+  "domain": 3,
+  "domainName": "Operations",
+  "domain2": 5,
+  "domain2Name": "DevOps Fundamentals",
   "explanations": {
    "A": "Alpha is an early pre-release stage, not a version-numbering classification for 1.0 to 1.1.",
    "B": "Beta is a testing pre-release stage, not the version bump described.",
    "C": "Under semantic versioning, changing the second digit (1.0 to 1.1) is a minor release (backward-compatible additions).",
    "D": "A major release increments the first digit (e.g., 1.x to 2.0) and implies breaking changes."
-  }
+  },
+  "deepdive": "WHY\n• Judge by the digit that changed — 1.0 → 1.1 increments the minor digit: under semantic versioning (MAJOR.MINOR.PATCH), the change from 1.0 to 1.1 advances the second (minor) position — so it's a minor release. ← the flashing arrow\n• The major digit stayed at 1, so it's not a major release: the leading number is unchanged (1 → 1), meaning no backward-incompatible/breaking change — which rules out a major release.\n• Minor releases add functionality in a backward-compatible way: a bump in the minor position typically means new features without breaking existing behavior, exactly what 1.0→1.1 signals (ties to versioning — major/minor/patch — in Objective 3.4 and source control in Objective 5.1).\n• Keyword \"1.0 → 1.1 → middle (second) digit changed → minor → C: minor digit incremented = minor release.\n• Real-world anchor: SemVer defines MAJOR.MINOR.PATCH, so 1.0 → 1.1 is a minor version bump (new backward-compatible features).\nWHY THE OTHER OPTIONS ARE WRONG\n• D. Major — the strongest distractor. It's a real SemVer release type and the natural counterpart. Its bait: \"major\" is the most prominent version term. But a major release changes the first digit (e.g., 1.x → 2.0) to signal breaking/incompatible changes (see Q232) — here the first digit stayed at 1, so it's not major. Correct for breaking-change releases (first digit), not this change.\n• A. Alpha — its bait: it's a version/release-stage term. But \"alpha\" denotes an early pre-release testing stage, not a numeric SemVer position — 1.0→1.1 is a released production version bump, not a pre-release phase. Wrong category. Correct for early unstable pre-release builds, not a production minor bump.\n• B. Beta — its bait: another pre-release stage term. But \"beta\" is a later pre-release testing stage (feature-complete but still testing) — again a maturity stage, not the minor version digit. Wrong category. Correct for pre-release testing, not a numeric release type.\nOBJECTIVE\n• Domain 3.0 — Operations (17% of the exam), with DevOps crossover.\n• Objective 3.4 — Given a scenario, apply proper resource management methodologies (change/upgrade management; major/minor/patch versioning) — with Objective 5.1 (source control/version management) crossover.\n• Why it maps here: Objective 3.4 covers semantic versioning. This question tests reading MAJOR.MINOR.PATCH and recognizing that 1.0 → 1.1 increments the minor digit = a minor release (backward-compatible feature addition) — versus major (first digit / breaking changes), or alpha/beta (pre-release testing stages, not numeric version types). (Direct sibling to Q193 (3.4.0→3.5.0 = minor) and Q232 (major = breaking changes) and lifecycle/versioning Q158/Q181; the rule: judge the release type by the digit that changed — first = major, second = minor, third = patch.)"
  },
  {
   "number": 247,
