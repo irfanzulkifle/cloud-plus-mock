@@ -3992,14 +3992,17 @@ window.EXAM_DATA = [
   },
   "answer": "B",
   "choose": "all",
-  "domain": 1,
-  "domainName": "Cloud Architecture",
+  "domain": 2,
+  "domainName": "Deployment",
+  "domain2": 1,
+  "domainName2": "Cloud Architecture",
   "explanations": {
    "A": "Object storage uses fairly standard APIs (e.g., S3-compatible) across many providers, giving lower lock-in.",
    "B": "Correct: a PaaS database uses provider-specific proprietary APIs/engines, making migration to another vendor difficult (highest lock-in).",
    "C": "Virtual machines are relatively portable across providers using standard OS images/hypervisors.",
    "D": "File servers use standard protocols (SMB/NFS), which are broadly portable across vendors."
-  }
+  },
+  "deepdive": "WHY\n• Anchor on the lock-in principle — the more managed/proprietary the service, the harder it is to leave: a PaaS (managed) database is deeply tied to the provider's proprietary engine, APIs, features, and management layer, making migration away the most difficult — the highest vendor lock-in of these options. ← the flashing arrow\n• PaaS databases embed provider-specific dependencies: proprietary query extensions, connection/management APIs, scaling/backup features, and data formats mean your application is coded against that specific service. Moving to another provider requires re-engineering and complex data migration — the essence of lock-in.\n• Higher up the service stack = more lock-in: as you move from IaaS → PaaS → SaaS, the provider manages more and exposes more proprietary abstractions. A PaaS database sits well up the stack, so it carries more lock-in than portable IaaS-level resources (ties to migration considerations/vendor lock-in in Objective 2.3 and service models in Objective 1.1).\n• Keyword \"highest vendor lock-in → most proprietary/managed service → PaaS database → B: managed platform services bind you tightest.\n• Real-world anchor: migrating off a proprietary managed database (e.g., DynamoDB, Cosmos DB, BigQuery) is far harder than moving a VM image or copying object-storage files — the proprietary engine/APIs make it sticky.\nWHY THE OTHER OPTIONS ARE WRONG\n• A. Object storage — the strongest distractor. Object storage uses somewhat provider-specific APIs (e.g., S3-style), so it carries some lock-in. Its bait: proprietary API endpoints feel sticky. But object storage holds portable files/objects accessed via largely standardized, widely-compatible APIs, so data egress and migration are comparatively straightforward. Moderate lock-in, not the highest. Correct as some lock-in, but far less than a proprietary managed database.\n• C. Virtual machine — its bait: it's a cloud service you deploy on. But a VM (IaaS) runs a standard OS and is highly portable — images can be exported/rebuilt on any provider. It sits lowest on the stack with the least lock-in. Opposite of the answer. Correct for low lock-in / high portability, not highest.\n• D. File server — its bait: it's a storage service. But a file server uses standard file protocols (SMB/NFS) and stores portable files — easily migrated to another environment. Low lock-in. Correct for portable, standards-based file access, not highest lock-in.\nOBJECTIVE\n• Domain 2.0 — Deployment (19% of the exam), with Cloud Architecture crossover.\n• Objective 2.3 — Summarize aspects of cloud migration (migration considerations: vendor lock-in) — with Objective 1.1 (service models: IaaS/PaaS/SaaS) crossover.\n• Why it maps here: Objective 2.3 lists vendor lock-in as a key migration consideration. This question tests recognizing that managed/proprietary PaaS services (a PaaS database) create the highest lock-in — because of proprietary engines/APIs/features that are hard to migrate — versus portable IaaS-level resources (VM), standards-based file servers, and comparatively portable object storage. (Ties to migration considerations in Q138/Q161 (vendor lock-in, platform compatibility) and service models in Q1/Q126/Q142/Q165; \"more managed/proprietary = more lock-in\" is the key cue.)"
  },
  {
   "number": 190,
