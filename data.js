@@ -2089,14 +2089,15 @@ window.EXAM_DATA = [
   },
   "answer": "A",
   "choose": "all",
-  "domain": 5,
-  "domainName": "DevOps Fundamentals",
+  "domain": 1,
+  "domainName": "Cloud Architecture",
   "explanations": {
    "A": "Correct: images.comptia.org is the registry hostname where the container image is hosted.",
    "B": "user1 represents the creator/namespace, not images.comptia.org.",
    "C": "latest is the image version/tag, not the registry.",
    "D": "myimage is the image name, not the registry address."
-  }
+  },
+  "deepdive": "WHY\n• Parse the Docker pull reference left to right — the first segment is the registry: the full image reference format is [REGISTRY]/[NAMESPACE/USER]/[IMAGE]:[TAG]. Breaking down images.comptia.org/user1/myimage:latest:\nimages.comptia.org → registry (the hostname/server hosting the images)  the flashing arrow\nuser1 → the namespace/user (repository owner)\nmyimage → the image name\nlatest → the tag/version\n• A hostname/domain in the first position = the image registry: because images.comptia.org is a domain name in the leading position (before the first /), Docker treats it as the registry endpoint to pull from. Registries are addressed by hostname (like a server URL), which is exactly what this looks like.\n• The registry is the server that stores/serves images: an image registry is the centralized service hosting container image repositories (see Q59/Q62/Q69). docker pull contacts that registry first to locate and download the requested image — so the domain identifies where the image lives.\n• Keyword: a domain before the path → registry: the .org domain is the tell. Image name, version, and user are path/tag components, not hostnames — only the registry is expressed as a domain/host.\n• Real-world anchor: in docker pull registry.example.com/team/app:1.0, the leading registry.example.com is the registry (e.g., Docker Hub's implied docker.io, or a private registry like ghcr.io, ECR, or Harbor). Same structure here with images.comptia.org.\nWHY THE OTHER OPTIONS ARE WRONG\n• D. Image name — the strongest distractor. In this reference the image name is myimage, not the domain. Its bait: people loosely call the whole string the \"image name.\" But precisely, the name is the component right before the tag (myimage) — images.comptia.org is the host/registry, not the name. Correct for identifying myimage, not the domain.\n• C. Image version — the version/tag is latest (the part after the colon :). Its bait: every reference has a version and you must locate it. But the version is :latest, clearly not the leading domain. Correct for identifying latest, not images.comptia.org.\n• B. Image creator — the closest thing to a creator/owner is user1 (the namespace/repository user). Its bait: \"creator\" sounds like it could be the org domain. But the user/creator segment is user1, sitting between the registry and the image name — not the domain. Correct for identifying user1, not the registry host.\nOBJECTIVE\n• Domain 1.0 — Cloud Architecture (23% of the exam).\n• Objective 1.6 — Explain concepts and differences related to containerization (image registries/repositories, image references, orchestration).\n• Why it maps here: Objective 1.6 covers container image registries and repositories. This question tests parsing a docker pull image reference and correctly identifying that the leading domain (images.comptia.org) is the image registry (the host serving the images), versus the user/creator (user1), image name (myimage), or version tag (latest). (Ties to the container-registry security theme in Q59/Q62/Q69/Q93 and the docker/container tooling from Q80.)"
  },
  {
   "number": 102,
