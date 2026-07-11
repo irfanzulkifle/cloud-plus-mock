@@ -5985,14 +5985,17 @@ window.EXAM_DATA = [
   },
   "answer": "B",
   "choose": "all",
-  "domain": 2,
-  "domainName": "Deployment",
+  "domain": 3,
+  "domainName": "Operations",
+  "domain2": 2,
+  "domain2Name": "Deployment",
   "explanations": {
    "A": "Deleting the VM and disks while relying only on backups risks losing the data if backups expire or are insufficiently retained.",
    "B": "Taking a snapshot of the data disk preserves the sensitive data, after which the VM and disks can be safely deleted.",
    "C": "Stopping and tagging the VM leaves the data on a disk still tied to a (stopped) VM and does not cleanly retain it independently.",
    "D": "Copying data to another VM is extra effort when a snapshot already satisfies retention."
-  }
+  },
+  "deepdive": "WHY\n• Match the requirement — preserve the data before destroying anything: the sensitive data must be retained, so the correct sequence is to capture a snapshot of the data disk first, then safely delete the VM and disks. ← the flashing arrow\n• A snapshot is a durable, independent copy: the snapshot persists after the VM/disks are deleted, so the sensitive data is retained while the unneeded compute is decommissioned — meeting both goals.\n• Order matters — save, then delete: you must secure the data first; deleting before copying risks permanent data loss. This is proper decommissioning (retain required data, then dispose of resources) — ties to lifecycle/decommissioning in Objective 3.4 and backup/snapshot replication in Objective 3.3.\n• Keyword \"VM not needed but data must be retained → snapshot the disk first → then delete VM/disks → B: retain data before decommissioning = snapshot then delete.\n• Real-world anchor: to retire a VM but keep its data, you snapshot the data volume (or create an image), confirm it, then terminate the instance and volumes — the snapshot remains available for later restore.\nWHY THE OTHER OPTIONS ARE WRONG\n• A. 1. Delete the VM and disks. 2. Retain the VM's backups — the strongest distractor. It does end with \"retain backups,\" which sounds like it preserves data. Its bait: backups seem to satisfy retention. But it deletes the disks first and only then relies on backups that may not exist, may be stale, or may not cover the data disk — a risky, out-of-order approach that can lose the sensitive data. Correct data preservation must happen before deletion. Wrong order / unreliable.\n• D. 1. Delete the source VM and disks. 2. Copy the data to another VM — its bait: it mentions copying the data (retention). But the order is logically impossible — once you've deleted the disks, there's nothing left to copy. Fatally wrong sequence. You must copy before deleting.\n• C. 1. Stop the VM. 2. Tag the VM — its bait: stopping/tagging are legitimate ops actions. But this neither reliably retains the data long-term nor decommissions the VM — a stopped VM (and its disks) still exists/costs, and tagging just labels it. It doesn't meet \"no longer required\" (dispose) or durable retention. Wrong outcome. Correct for organizing/pausing resources, not decommissioning with data retention.\nOBJECTIVE\n• Domain 3.0 — Operations (17% of the exam).\n• Objective 3.4 — Given a scenario, perform appropriate resource management and lifecycle operations (decommissioning; data retention/disposal) — with Objective 3.3 (backup/recovery: snapshots) crossover.\n• Why it maps here: this tests the correct decommissioning sequence when data must be retained — snapshot the data disk first, then delete the VM and disks (preserve, then dispose) — versus deleting first and hoping backups exist (A, risky/out-of-order), deleting then copying (D, impossible), or stop+tag (C, neither retains durably nor decommissions). (Ties to decommission/lifecycle questions Q218/Q272/Q280 and snapshot/backup Q153/Q159; the rule: when retiring a resource but keeping its data, snapshot/copy the data BEFORE deleting — never delete first.)"
  },
  {
   "number": 281,
