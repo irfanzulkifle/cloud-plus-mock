@@ -3700,7 +3700,7 @@ window.EXAM_DATA = [
  },
  {
   "number": 176,
-  "stem": "A cloud engineer tries to deploy five new cloud instances using code. An error occurs, and the instances are not created. The configuration fails to run. The engineer then receives the following error message:\n\nERROR: Parse error on JSON line X in config\n\nGiven the following snippet from the config.json file:\n\n{\n\"instance_count\": 5,\n\"ssd_options\": [\"100GB\", \"200GB\", \"300GB\"],\ninstance_region: apac,\n\"instance_code\": 255,\n\"start_instance\": true\n}\n\nWhich of the following oversights created the error in the configuration file?",
+  "stem": "A cloud engineer tries to deploy five new cloud instances using code. An error occurs, and the instances are not created. The configuration fails to run. The engineer then receives the following error message:\n\nERROR: Parse error on JSON line X in config\n\nGiven the following snippet from the config.json file:\n\n{\n\"instance_count\": 5,\n\"ssd_options\": [\"100GB\", \"200GB\", \"300GB\"],\n\"instance_region\": apac,\n\"instance_code\": 255,\n\"start_instance\": true\n}\n\nWhich of the following oversights created the error in the configuration file?",
   "options": {
    "A": "Incorrect instance_count  ",
    "B": "Incorrect ssd_options  ",
