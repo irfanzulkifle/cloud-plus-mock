@@ -368,21 +368,3 @@ body{
 .gate-input:focus{border-color:var(--brand);box-shadow:0 0 0 3px rgba(11,98,201,.15)}
 .gate-err{color:var(--red);font-size:12.5px;margin:12px 0 0;font-weight:600}
 .gate-err[hidden]{display:none}
-.kofi-foot{position:fixed;left:14px;bottom:14px;z-index:50;display:flex;align-items:center;gap:9px;
-  max-width:min(360px,calc(100vw - 28px));padding:9px 14px;border-radius:var(--radius-pill);
-  background:var(--panel);border:1px solid var(--line);box-shadow:var(--shadow-sm);
-  text-decoration:none;color:var(--muted);font-size:12.5px;line-height:1.35;
-  transition:border-color .18s var(--ease),box-shadow .18s var(--ease),transform .12s var(--ease)}
-.kofi-foot:hover{border-color:var(--brand);box-shadow:0 0 0 3px rgba(11,98,201,.12);transform:translateY(-1px)}
-.kofi-foot:focus-visible{outline:3px solid var(--brand);outline-offset:2px}
-.kofi-coffee{font-size:18px;line-height:1;flex:0 0 auto}
-.kofi-text b{color:var(--brand);font-weight:800}
-/* hide during the live exam so it doesn't clash with the bottom-docked navigator */
-#examScreen.active ~ .kofi-foot{display:none}
-@media(max-width:560px){
-  /* compact circular icon chip — predictable 44px tap target, never crowds buttons */
-  .kofi-foot{left:12px;bottom:12px;width:44px;height:44px;padding:0;max-width:none;
-    justify-content:center;border-radius:50%;gap:0}
-  .kofi-text{display:none}
-  .kofi-coffee{font-size:21px}
-}
