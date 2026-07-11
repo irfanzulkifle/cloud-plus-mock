@@ -6665,14 +6665,15 @@ window.EXAM_DATA = [
   },
   "answer": "D",
   "choose": "all",
-  "domain": 3,
-  "domainName": "Operations",
+  "domain": 1,
+  "domainName": "Cloud Architecture",
   "explanations": {
    "A": "Rightsizing optimizes resource sizing/cost, not billing attribution.",
    "B": "Invoicing is the bill itself, not the mechanism for resource-level detail.",
    "C": "Reserved instances are a discount commitment, not a visibility feature.",
    "D": "Tagging resources lets the cloud bill be broken down by resource/project/owner for resource-level visibility."
-  }
+  },
+  "deepdive": "WHY\n• Match the goal — resource-level visibility in billing = tagging: applying metadata tags (e.g., cost center, project, environment, owner) to individual resources lets billing reports break down and attribute costs per resource/group — the direct enabler of granular cost visibility. ← the flashing arrow\n• Tags map spending to the things you care about: by labeling resources, you can filter, group, and allocate costs (by team, app, environment) in cost reports — turning a lump bill into per-resource insight.\n• It's the standard cost-allocation mechanism: cloud cost tools rely on tags for chargeback/showback and detailed billing breakdowns (recall Q31/Q141: tagging = cost allocation/metering context). Ties to cost management/billing in Objective 1.8.\n• Keyword \"resource-level visibility for billing reports → label resources for cost breakdown → tagging → D: granular billing attribution = tagging.\n• Real-world anchor: teams apply cost-allocation tags (e.g., Project=X, Env=Prod) so billing dashboards show spend per project/team/resource.\nWHY THE OTHER OPTIONS ARE WRONG\n• B. Invoicing — the strongest distractor. Invoicing is directly about billing, so it seems the obvious match. Its bait: \"billing report\" ≈ \"invoice.\" But an invoice shows the total/summary amount owed — it doesn't provide resource-level breakdown/visibility. It's the output of billing, not the mechanism that adds granular attribution. Correct for billing statements, not per-resource visibility.\n• A. Rightsizing — its bait: it's a cost-management practice. But rightsizing optimizes/reduces resource costs (matching size to workload) — it doesn't provide billing visibility per resource. Wrong function. Correct for cost optimization, not reporting granularity.\n• C. Reserve instances — its bait: it's a billing/purchasing option. But reserved instances are a pricing/commitment model (discount for steady usage — see Q141) — they don't give resource-level billing visibility. Wrong purpose. Correct for cost savings on steady workloads, not visibility.\nOBJECTIVE\n• Domain 1.0 — Cloud Architecture (23% of the exam).\n• Objective 1.8 — Explain cloud cost management and optimization (tagging, cost allocation, metering, rightsizing, reserved/spot pricing).\n• Why it maps here: Objective 1.8 lists tagging for cost allocation. This tests knowing that resource-level billing visibility comes from tagging (metadata labels enabling per-resource/group cost breakdown) ' + D + ' versus invoicing (summary of amount owed, no granularity), rightsizing (cost optimization, not visibility), or reserved instances (a pricing/commitment model, not reporting). (Ties to cost/billing questions Q31/Q141/Q189/Q190/Q194/Q226/Q311; the rule: resource-level cost visibility/allocation = tagging; invoicing = billing summary; rightsizing = optimization; reserved instances = discount pricing model.)"
  },
  {
   "number": 312,
