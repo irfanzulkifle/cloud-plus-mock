@@ -5828,18 +5828,21 @@ window.EXAM_DATA = [
    "A": "The cloud application is throttling the API  ",
    "B": "The cloud application is changing the DNS during connection  ",
    "C": "The on-premises application cannot communicate to the NAT  ",
-   "D": "The on-premises application is using depreciated ciphers "
+   "D": "The on-premises application is using deprecated ciphers "
   },
   "answer": "D",
   "choose": "all",
-  "domain": 6,
-  "domainName": "Troubleshooting",
+  "domain": 4,
+  "domainName": "Security",
+  "domain2": 6,
+  "domain2Name": "Troubleshooting",
   "explanations": {
    "A": "The cloud application throttling its own API would not block a secure connection to an on-prem system.",
    "B": "The cloud app changing DNS during connection is not a typical cause of a failed secure tunnel.",
    "C": "An on-prem NAT communication failure would be a broader connectivity issue, not specifically a secure-connection failure.",
    "D": "Deprecated/unsupported ciphers on the legacy on-prem app cause a TLS handshake mismatch, preventing a secure connection."
-  }
+  },
+  "deepdive": "WHY\n• Anchor on two keywords — \"legacy\" + \"secure connection\": a secure connection is negotiated via a TLS handshake, and a legacy on-prem app typically supports only old/deprecated ciphers or TLS versions that a modern cloud app rejects, so the handshake fails. ← the flashing arrow\n• Cipher mismatch breaks the TLS negotiation: modern clients require TLS 1.2+ with strong ciphers; if the legacy side only offers outdated ciphers (SSL/TLS 1.0/1.1, weak algorithms), there's no common cipher suite, and the secure connection can't be established.\n• \"Legacy\" is the deliberate clue pointing to outdated crypto: the failure is specifically about security (secure connection), not routing or rate limits — an aging application's deprecated ciphers is the classic cause (ties to encryption in transit / TLS and security-issue troubleshooting in Objective 4.4 / 6.3).\n• Keyword \"legacy on-prem app + fails to create secure connection → outdated TLS/cipher mismatch → deprecated ciphers → D: legacy + secure handshake failure = deprecated ciphers.\n• Real-world anchor: modern services refuse to connect to legacy systems still offering TLS 1.0/1.1 or weak ciphers, causing handshake failures until the old side is upgraded.\nWHY THE OTHER OPTIONS ARE WRONG\n• C. The on-premises application cannot communicate to the NAT — the strongest distractor. A NAT/network issue can genuinely block on-prem ↔ cloud connectivity. Its bait: hybrid connections often involve NAT. But a NAT problem would cause a general connectivity failure, not specifically a failure to create a secure connection — the question emphasizes secure, which points to a TLS/cipher issue, not routing. Correct for network reachability problems, not a secure-handshake failure.\n• A. The cloud application is throttling the API — its bait: throttling causes failures. But throttling produces rate-limit errors (HTTP 429 — see Q259), not a secure-connection/TLS failure. Wrong failure type. Correct for rate-limit issues, not encryption negotiation.\n• B. The cloud application is changing the DNS during connection — its bait: DNS problems break connections. But DNS handles name resolution (see Q234), not the security/encryption of the connection — and there's no basis for \"changing DNS during connection.\" Wrong layer. Correct for name-resolution issues, not secure-handshake failures.\nOBJECTIVE\n• Domain 4.0 — Security (19% of the exam), with Troubleshooting crossover.\n• Objective 4.4 — Given a scenario, apply security best practices (encryption in transit: TLS versions/ciphers) — with Objective 6.3 (troubleshoot security issues: encryption/TLS configuration) crossover.\n• Why it maps here: this tests recognizing that a legacy system failing to create a secure connection is most likely caused by deprecated ciphers/outdated TLS (no common secure cipher suite in the handshake) — versus a NAT communication problem (general connectivity, not secure-specific), API throttling (rate limits/429), or DNS changes (name resolution). (Ties to encryption-in-transit questions Q29/Q63/Q96/Q151/Q156/Q184 and TLS/security-config troubleshooting Objective 6.3; the rule: \"legacy\" + \"secure connection fails\" = deprecated ciphers / outdated TLS handshake mismatch.)"
  },
  {
   "number": 274,
