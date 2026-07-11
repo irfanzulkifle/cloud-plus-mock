@@ -2771,14 +2771,15 @@ window.EXAM_DATA = [
   },
   "answer": "B",
   "choose": "all",
-  "domain": 6,
-  "domainName": "Troubleshooting",
+  "domain": 3,
+  "domainName": "Operations",
   "explanations": {
    "A": "Splicing isn't a standard log management term for controlling log volume.",
    "B": "Correct: log rotation archives/deletes old logs on a schedule, managing storage growth from continuous log accumulation.",
    "C": "Sampling reduces the volume of collected logs but doesn't address logs already piling up in storage.",
    "D": "Inspection is about reviewing log content, not managing storage size."
-  }
+  },
+  "deepdive": "WHY\n• Anchor on the problem — \"logs are piling up and causing storage issues\": the fix is a mechanism that caps how much log data accumulates. Log rotation does exactly that. ← the flashing arrow\n• Log rotation = automatically archive/compress/delete old logs: it closes the current log file on a schedule or size threshold, starts a fresh one, and compresses or deletes the oldest files — keeping total log storage bounded. That directly solves logs consuming too much disk.\n• Purpose-built for the exact symptom: rotation is the standard operational control for preventing logs from filling up storage while still retaining recent logs for troubleshooting (ties to logging/observability in Objective 3.1, sibling to Q36).\n• Keyword \"logs piling up / storage issues\" → log rotation → B: managing log growth/retention on disk is precisely what rotation is for.\n• Real-world anchor: Linux's logrotate (or web-server log rotation) rotates logs daily/by size, compresses old ones (.gz), and deletes those past a retention window — preventing /var/log from filling the disk while keeping recent logs available.\nWHY THE OTHER OPTIONS ARE WRONG\n• C. Sampling — the strongest distractor. Sampling records only a subset of log entries/events, which would reduce volume. Its bait: it also lowers how much log data you keep. But sampling discards data at capture time — meaning you lose entries that could be vital for troubleshooting intermittent issues (the very thing the engineer is investigating). Rotation manages storage without losing recent completeness. Correct for reducing high-volume telemetry where full fidelity isn't required, not for retaining logs to catch intermittent bugs.\n• A. Splicing — not a standard log-management mechanism. Its bait: it sounds technical (joining/cutting). But \"log splicing\" isn't a recognized CV0-004 log control for managing storage. Distractor term. Not a real solution here.\n• D. Inspection — examining/analyzing log contents. Its bait: the engineer is looking at logs to troubleshoot. But inspection is about reading/analyzing logs, not managing their storage footprint — it does nothing to stop logs from piling up. Correct for analyzing log data (troubleshooting/security review), not controlling log growth.\nOBJECTIVE\n• Domain 3.0 — Operations (17% of the exam).\n• Objective 3.1 — Given a scenario, apply observability concepts (logging, log management/rotation, monitoring, tracing, alerting).\n• Why it maps here: Objective 3.1 covers logging and log management. This question tests recognizing that log rotation — scheduled/size-based archiving, compression, and deletion of old logs — is the mechanism to stop logs from filling storage while retaining recent logs for troubleshooting, versus sampling (drops data, risking loss of intermittent-issue evidence), inspection (analysis, not storage control), or the non-standard \"splicing.\" (Direct sibling to Q36 (service logging) and relates to the log-analysis scenarios in Q103/Q124.)"
  },
  {
   "number": 134,
