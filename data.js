@@ -6117,12 +6117,15 @@ window.EXAM_DATA = [
   "choose": "all",
   "domain": 3,
   "domainName": "Operations",
+  "domain2": 5,
+  "domain2Name": "DevOps",
   "explanations": {
    "A": "Version 6.5 is an older major version (downgrade) and is not the latest minor of 7.1.",
    "B": "Version 7.6 is a minor update but not the latest minor allowed.",
    "C": "Version 7.9 is the highest minor release within the same major version 7, satisfying 'latest minor updates only.'",
    "D": "Version 8.1 is a new major version, which the 'only latest minor' constraint forbids."
-  }
+  },
+  "deepdive": "WHY\n• Match the constraint — \"latest minor update, no breaking changes\" = highest 7.x version: to avoid breaking changes you must stay within the same major version (7), and among the 7.x options the latest minor is 7.9. ← the flashing arrow\n• Same major = backward-compatible: staying on major version 7 guarantees the update is a minor (feature/fix) release with no breaking changes; 7.9 > 7.6, so it's the newest allowed minor.\n• \"Latest minor\" means pick the highest minor in the current major line: from 7.1, the newest same-major option is 7.9 (recall SemVer: middle digit = minor, backward-compatible) — ties to versioning/change management in Objective 3.4 and source control in Objective 5.1.\n• Keyword \"currently 7.1 + latest minor + avoid breaking → highest 7.x → 7.9 → C: latest minor in major 7 = 7.9.\n• Real-world anchor: upgrading 7.1 → 7.9 is a safe in-major minor bump; 7.1 → 8.x would be a major upgrade with potential breaking changes.\nWHY THE OTHER OPTIONS ARE WRONG\n• B. 7.6 — the strongest distractor. It is a valid same-major minor update (no breaking changes), so it satisfies part of the requirement. Its bait: it's within version 7 and safe. But the question asks for the latest minor update, and 7.9 is newer than 7.6 — so 7.6 isn't the latest allowed. Correct as a minor upgrade, just not the newest.\n• D. 8.1 — its bait: it's the highest number, so it looks like \"latest.\" But 8.1 is a major version jump (7 → 8), which risks the breaking changes the question explicitly forbids. Wrong — violates the constraint. Correct only if major upgrades were allowed.\n• A. 6.5 — its bait: it's a valid version number. But 6.5 is an older major version — that's a downgrade, not an update, and it's a different major line. Wrong direction entirely. Correct for nothing here.\nOBJECTIVE\n• Domain 3.0 — Operations (17% of the exam), with DevOps crossover.\n• Objective 3.4 — Given a scenario, perform appropriate resource management and lifecycle operations (change/upgrade management; major/minor versioning) — with Objective 5.1 (source control systems: Git) crossover.\n• Why it maps here: this tests SemVer judgment ' + D + ' to apply the latest minor update without breaking changes, stay in the same major version (7) and pick the highest minor (7.9) ' + D + ' versus 7.6 (a valid but not-latest minor), 8.1 (a major upgrade with breaking-change risk), or 6.5 (an older-major downgrade). (Ties to versioning/change-management questions Q158/Q181/Q193/Q232/Q246/Q285/Q286; the rule: \"minor update, no breaking changes\" = stay within the current major version; \"latest minor\" = highest same-major version; a major-digit bump risks breaking changes.)"
  },
  {
   "number": 287,
