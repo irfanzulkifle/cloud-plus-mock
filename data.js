@@ -3795,14 +3795,15 @@ window.EXAM_DATA = [
   },
   "answer": "A",
   "choose": "all",
-  "domain": 3,
-  "domainName": "Operations",
+  "domain": 1,
+  "domainName": "Cloud Architecture",
   "explanations": {
    "A": "Correct: RPO defines the maximum acceptable amount of data loss, measured as time since the last backup.",
    "B": "BCDR is the overall planning discipline, not a specific metric for data loss amount.",
    "C": "MTTR measures time to restore service, not amount of data lost.",
    "D": "RTO defines acceptable downtime/recovery time, not data loss amount."
-  }
+  },
+  "deepdive": "WHY\n• Match the exact definition — \"maximum data loss in the event of a disaster\": RPO (Recovery Point Objective) is defined as the maximum acceptable amount of data loss, measured as the time between the last good backup and the disaster. That is a one-to-one match. ← the flashing arrow\n• RPO answers \"how much data can we afford to lose?\": it sets the backup/replication frequency — an RPO of 1 hour means backups every hour, so at most 1 hour of data is lost in a disaster. It directly governs the data-loss ceiling.\n• \"Data loss\" is the RPO keyword — whenever a question asks about how much data (not how much time to recover), the answer is RPO. It's the point in time to which you can recover (ties to DR metrics in Objective 1.2, sibling to Q139/Q64).\n• Real-world anchor: setting an RPO of 15 minutes drives 15-minute snapshot/replication intervals, capping worst-case data loss at 15 minutes — the metric that \"most influences maximum data loss.\"\nWHY THE OTHER OPTIONS ARE WRONG\n• D. Recovery time objective (RTO) — the strongest distractor. RTO is the twin DR metric, always paired with RPO. Its bait: both are core DR objectives and easily confused. But RTO measures time to restore service (maximum acceptable downtime) — it's about how long recovery takes, not how much data is lost. Correct for maximum tolerable downtime, not data loss.\n• C. Mean time to recover (MTTR) — its bait: it sounds like a recovery metric. But MTTR is the average time to repair/recover a failed component — again a time/downtime measure, not a data-loss measure. Correct for average repair duration, not maximum data loss.\n• B. Business continuity and disaster recovery (BCDR) — its bait: it's the overarching discipline that contains RPO. But BCDR is the broad framework/plan, not a specific metric that quantifies data loss. The question asks what has \"most influence when determining maximum data loss\" — that's the precise metric RPO, not the umbrella program. Correct for the overall DR strategy, not the data-loss metric.\nOBJECTIVE\n• Domain 1.0 — Cloud Architecture (23% of the exam).\n• Objective 1.2 — Explain the factors that contribute to high availability and disaster recovery (RPO, RTO, MTTR, backup frequency).\n• Why it maps here: Objective 1.2 covers DR metrics. This question tests the RPO-vs-RTO distinction — RPO = maximum acceptable data loss (drives backup frequency), versus RTO/MTTR (which measure time/downtime to recover) and BCDR (the overarching framework, not a metric). (Ties to DR/backup questions Q64 (RTO/RPO), Q139 (replication for RPO), Q52/Q112/Q129 (backup); the \"data loss = RPO, time = RTO\" rule is the key exam cue.)"
  },
  {
   "number": 181,
