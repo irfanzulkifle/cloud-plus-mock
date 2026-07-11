@@ -5744,14 +5744,17 @@ window.EXAM_DATA = [
   },
   "answer": "D",
   "choose": "all",
-  "domain": 1,
-  "domainName": "Cloud Architecture",
+  "domain": 6,
+  "domainName": "Troubleshooting",
+  "domain2": 1,
+  "domain2Name": "Cloud Architecture",
   "explanations": {
    "A": "DNS resolves names; it would not prevent IP reachability between subnets.",
    "B": "A WAF filters HTTP traffic, not subnet-to-subnet routing.",
    "C": "An incorrect IP would affect the subnet's own addressing, not specifically its unreachability while others communicate.",
    "D": "A missing route in the routing table prevents traffic from the other subnets from reaching the new subnet, explaining the isolation."
-  }
+  },
+  "deepdive": "WHY\n• Match the symptom — a new subnet is isolated while existing ones talk fine: subnets communicate through the VPC route table, so if the existing subnets reach each other but the new one is unreachable, the new subnet is missing its route table entry/association. ← the flashing arrow\n• The working subnets prove the rest of the network is fine: since existing subnets can reach each other, core VPC connectivity, DNS, and addressing are healthy — the only thing different is the newly added subnet, pointing to a routing gap for it specifically.\n• New subnets need a route/association to be reachable: a freshly created subnet isn't reachable until it's associated with a route table containing the routes to the other subnets — omitting that leaves it stranded (ties to network troubleshooting — routing tables — in Objective 6.2 and cloud networking in Objective 1.3).\n• Keyword \"new subnet unreachable + existing subnets reachable → routing gap for the new subnet → missing route → D: selective isolation of a new subnet = missing route.\n• Real-world anchor: a new VPC subnet that can't be reached usually isn't associated with the right route table / lacks the local route entry — adding the route restores connectivity.\nWHY THE OTHER OPTIONS ARE WRONG\n• C. Incorrect IP address — the strongest distractor. Addressing mistakes do cause unreachability, so it's plausible. Its bait: IP misconfig is a common connectivity culprit. But an incorrect/overlapping CIDR would typically fail at subnet creation or affect addressing more broadly — and the scenario says the issue is reaching the new subnet from others, which is a routing function, not an address typo. The clean \"existing works, new doesn't\" pattern points to a missing route. Correct for address misconfiguration, not this routing-scoped isolation.\n• A. DNS issues — its bait: DNS problems break connectivity by name. But subnet-to-subnet reachability is by IP via routing, not DNS — and DNS problems would likely affect existing subnets too. Wrong layer. Correct for name-resolution failures (see Q234), not IP-level subnet routing.\n• B. WAF blocking — its bait: a WAF blocks traffic. But a WAF filters Layer-7 web-application traffic (see Q223), not internal subnet-to-subnet routing within a VPC — it wouldn't isolate a whole subnet. Wrong control entirely. Correct for web-app traffic filtering, not subnet reachability.\nOBJECTIVE\n• Domain 6.0 — Troubleshooting (12% of the exam), with Cloud Architecture crossover.\n• Objective 6.2 — Given a scenario, troubleshoot network issues (routing tables, subnetting/CIDR) — with Objective 1.3 (cloud networking: VPC, subnets, routing) crossover.\n• Why it maps here: Objective 6.2 covers routing table troubleshooting. This question tests recognizing that a new subnet unreachable while existing subnets communicate = a missing route (the new subnet lacks its route table entry/association) — versus incorrect IP (would fail at creation / broader impact), DNS issues (name resolution, not IP routing), or WAF blocking (L7 web filtering, not subnet routing). (Ties to routing/subnetting questions Q41/Q44/Q78/Q230 and network-troubleshooting Q131/Q156/Q162/Q178/Q192/Q234/Q269; the rule: new subnet isolated while others work = missing route/route-table association.)"
  },
  {
   "number": 270,
