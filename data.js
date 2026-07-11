@@ -6310,14 +6310,15 @@ window.EXAM_DATA = [
   },
   "answer": "C",
   "choose": "all",
-  "domain": 1,
-  "domainName": "Cloud Architecture",
+  "domain": 2,
+  "domainName": "Deployment",
   "explanations": {
    "A": "PaaS is a service model, not the situation of being unable to leave a provider.",
    "B": "Oversubscription is a capacity concept, not related to migration infeasibility.",
    "C": "Relying on a provider's specific features that make moving technically infeasible is vendor lock-in.",
    "D": "Regulatory compliance may influence provider choice but does not describe the inability to move."
-  }
+  },
+  "deepdive": "WHY\n• Match the scenario — provider-specific features made migration technically infeasible: relying on one cloud provider's proprietary features created a dependency so deep that moving to another provider isn't feasible — the textbook definition of vendor lock-in. ← the flashing arrow\n• Proprietary dependency = the trap: by building on provider-specific/proprietary services, the org's apps can't run elsewhere without major rework, so they're \"locked\" to that vendor despite wanting to leave.\n• The inability to move is the defining symptom: vendor lock-in is precisely being unable to switch providers (here, blocked by technical infeasibility even when cost pressures push for a move) — recall Q189/Q255/Q268. Ties to migration considerations — vendor lock-in — in Objective 2.3.\n• Keyword \"provider-specific/proprietary features + can't move to another provider → dependency traps you → vendor lock-in → C: can't switch = lock-in.\n• Real-world anchor: building heavily on one cloud's proprietary managed services (unique databases, serverless, APIs) makes re-platforming to a competitor impractical — classic lock-in.\nWHY THE OTHER OPTIONS ARE WRONG\n• A. Platform as a service — the strongest distractor. PaaS is often where lock-in happens (proprietary managed platforms cause it), so it's associated. Its bait: provider-specific features sound like PaaS. But PaaS is a service model, not a description of the situation — the scenario describes being unable to migrate, which is lock-in (the consequence), not the delivery model itself. Correct as a service model, but it doesn't describe this situation.\n• B. Oversubscription — its bait: it's a cloud term. But oversubscription means allocating more virtual resources than physical capacity (overcommit) — nothing to do with being unable to switch providers. Wrong concept. Correct for resource overcommitment, not migration barriers.\n• D. Regulatory compliance — its bait: it's a common migration consideration. But compliance concerns laws/standards/regulations (see Q216/Q221) — the blocker here is technical dependency on proprietary features, not a legal requirement. Wrong driver. Correct for legal/standards constraints, not proprietary lock-in.\nOBJECTIVE\n• Domain 2.0 — Deployment (19% of the exam).\n• Objective 2.3 — Given a scenario, apply the appropriate migration strategy (migration considerations: vendor lock-in).\n• Why it maps here: Objective 2.3 lists vendor lock-in as a migration consideration. This tests recognizing that using provider-specific/proprietary features to the point where migrating to another provider is not technically feasible = vendor lock-in ' + D + ' versus PaaS (a service model that can cause lock-in, but not the situation's description), oversubscription (resource overcommit), or regulatory compliance (legal constraints). (Ties to vendor-lock-in/portability questions Q189/Q199/Q255/Q268/Q295; the rule: proprietary dependency that prevents switching providers = vendor lock-in; avoid it with open/portable tech and data portability.)"
  },
  {
   "number": 296,
