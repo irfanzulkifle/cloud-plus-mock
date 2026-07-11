@@ -6280,7 +6280,7 @@ window.EXAM_DATA = [
  },
  {
   "number": 294,
-  "stem": "Which of the following commands allows a cloud engineer to create a new template on the local system to later send for code review?",
+  "stem": "Which of the following commands allows a cloud engineer to create a new branch on the local system to later send for code review?",
   "options": {
    "A": "git checkout -b newfeature  ",
    "B": "git fetch newfeature  ",
@@ -6296,7 +6296,8 @@ window.EXAM_DATA = [
    "B": "'git fetch' downloads objects/refs from a remote but does not create a local template branch.",
    "C": "'git pull' fetches and merges from a remote; it does not create a new branch locally.",
    "D": "'git commit' records changes to the current branch but does not create a new branch to later review."
-  }
+  },
+  "deepdive": "WHY\n• Match the intent — \"create a new (branch) on the local system\": git checkout -b newfeature creates a new branch locally and switches to it, giving the engineer an isolated line of work to develop and later submit for review. ← the flashing arrow\n• The -b flag is what creates the branch: checkout -b <name> makes a new branch (from the current one) and checks it out in one step — a local operation, matching \"on the local system.\"\n• A feature branch is the setup for a later code review: you branch, commit your work, push, then open a pull request for code review — so creating the branch is the correct first command (ties to source control — branch management — in Objective 5.1).\n• Keyword \"create a new [branch] locally + later send for code review → make a feature branch → git checkout -b → A: create local branch = checkout -b.\n• Real-world anchor: developers run git checkout -b newfeature to start a feature branch, then commit/push and raise a PR for review.\nWHY THE OTHER OPTIONS ARE WRONG\n• D. git commit -m \"newfeature\" — the strongest distractor. It's part of the workflow and even reuses the \"newfeature\" name, so it looks relevant. Its bait: committing is a normal next step. But commit records changes to the current branch (see Q276) — it doesn't create a new branch. It saves work; it doesn't establish the new line of development the question asks for. Correct for recording changes, not creating a branch.\n• B. git fetch newfeature — its bait: it's a real Git command. But fetch downloads updates from a remote — it neither creates anything locally nor is it a local-creation step. Wrong direction (remote — local retrieval). Correct for retrieving remote refs, not creating a branch.\n• C. git pull newfeature — its bait: another common Git command. But pull = fetch + merge from a remote — it brings remote changes in, it doesn't create a new local branch. Wrong operation. Correct for updating from remote, not branch creation.\nOBJECTIVE\n• Domain 5.0 — DevOps Fundamentals (10% of the exam).\n• Objective 5.1 — Given a scenario, use appropriate source control methods (branch management, commit, fetch, pull, pull request).\n• Why it maps here: Objective 5.1 covers branch management and Git commands. This tests knowing that creating a new branch locally = git checkout -b <name> (the -b flag creates + switches), setting up work to later submit for code review ' + D + ' versus commit (records changes, doesn't create a branch), fetch (downloads from remote), or pull (fetch + merge from remote). (Ties to source-control/git questions Q82/Q84/Q121/Q200/Q205/Q208/Q246/Q276/Q291/Q294; the rule: checkout -b = create new local branch; commit = save changes; fetch = download remote; pull = fetch + merge; push = send to remote; then open a pull request for review.)"
  },
  {
   "number": 295,
