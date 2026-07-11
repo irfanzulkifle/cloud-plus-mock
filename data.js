@@ -2433,14 +2433,15 @@ window.EXAM_DATA = [
   },
   "answer": "D",
   "choose": "all",
-  "domain": 1,
-  "domainName": "Cloud Architecture",
+  "domain": 5,
+  "domainName": "DevOps Fundamentals",
   "explanations": {
    "A": "YUM is used on RHEL/CentOS-based distributions, not Ubuntu.",
    "B": "DNF is the newer package manager for Fedora/RHEL-based systems, not Ubuntu.",
    "C": "Pacman is used by Arch Linux, not Ubuntu.",
    "D": "Correct: APT (Advanced Package Tool) is the standard package manager for Debian/Ubuntu-based distributions."
-  }
+  },
+  "deepdive": "WHY\n• Anchor on the distro — Ubuntu is Debian-based → APT: Ubuntu is built on Debian, and Debian-family distributions use APT as their native package manager. ← the flashing arrow\n• APT = the Debian/Ubuntu package manager: commands like apt install, apt update, and apt upgrade are the standard way to install and manage software on Ubuntu. It handles .deb packages and dependency resolution.\n• Match package manager to distro family — the whole point of the question: each Linux family has its own package tooling. Ubuntu/Debian → APT (.deb); Red Hat/CentOS/Fedora → YUM/DNF (.rpm); Arch → Pacman. Knowing Ubuntu = Debian-based directly selects APT.\n• Keyword \"Ubuntu\" → Debian lineage → APT: the distro name is the entire tell.\n• Real-world anchor: on Ubuntu you run sudo apt install nginx to install software — APT is the default tool for automation and provisioning scripts (ties to Linux administration / DevOps tooling in Objective 5.4).\nWHY THE OTHER OPTIONS ARE WRONG\n• A. YUM (Yellowdog Updater Modified) — the strongest distractor. YUM is a legitimate, widely-known package manager. Its bait: it's the classic go-to name for Linux package management. But YUM is the Red Hat/CentOS/RHEL (.rpm-based) tool — not Ubuntu's. Correct for older Red Hat-family systems, not Debian/Ubuntu.\n• B. DNF (Dandified YUM) — the modern successor to YUM. Its bait: it's current and RPM-related. But DNF is used on Fedora / newer RHEL/CentOS (.rpm) — again the Red Hat family, not Ubuntu. Correct for modern Fedora/RHEL, not Debian/Ubuntu.\n• C. Pacman — a real, capable package manager. Its bait: it's a valid Linux tool. But Pacman is the package manager for Arch Linux (and derivatives), not Ubuntu. Correct for Arch-based distributions.\nOBJECTIVE\n• Domain 5.0 — DevOps Fundamentals (10% of the exam) / general Linux administration.\n• Objective 5.4 — Identify the appropriate DevOps automation tools and techniques (OS/package management underpinning provisioning and configuration).\n• Why it maps here: managing software via the correct package manager is foundational to Linux-based cloud provisioning and configuration automation. This question tests matching the distro to its packaging tool: Ubuntu (Debian-based) → APT, versus YUM/DNF (Red Hat family) or Pacman (Arch). (Ties to Linux/config-management tooling like Ansible in Q80 and the OS-level control themes in Q92/Q102.)"
  },
  {
   "number": 118,
