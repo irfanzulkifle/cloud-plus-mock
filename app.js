@@ -68,6 +68,13 @@ function shuffle(arr){
   return a;
 }
 
+// `domains` supports arbitrary memberships; legacy domain/domain2 stays valid.
+function questionDomains(q){
+  if (!q) return [];
+  return [...new Set((Array.isArray(q.domains) ? q.domains : [q.domain, q.domain2])
+    .filter(d => Number.isInteger(d) && d >= 1 && d <= 6 && Object.prototype.hasOwnProperty.call(DOMAINS, d)))];
+}
+
 // Build an N-question exam whose domain mix mirrors the official CV0-004
 // weightings (Architecture 23, Deployment 19, Operations 17, Security 19,
 // DevOps 10, Troubleshooting 12). Caps each domain at its available pool.
@@ -127,7 +134,7 @@ function beginExam(){
   let idx = DATA.map((_, i) => i);
   if (mode === 'domain') {
     const d = parseInt($('#optDomain').value, 10);
-    idx = idx.filter(i => DATA[i].domain === d);
+    idx = idx.filter(i => questionDomains(DATA[i]).includes(d));
     if (!idx.length) { alert('No questions matched that domain.'); return; }
   } else if (mode === 'rand90') {
     idx = weightedSample(DATA, 90);
@@ -171,8 +178,8 @@ function renderQuestion(){
 
   $('#qCounter').textContent = `Question ${pos + 1} of ${order.length}`;
   if ($('#optMode').value === 'domain') {
-    const d = q.domain;
-    $('#qCounter').textContent += `  ·  ${d}.0 ${q.domainName}`;
+    const d = parseInt($('#optDomain').value, 10);
+    $('#qCounter').textContent += `  ·  ${d}.0 ${DOMAINS[d].name}`;
   }
   $('#stem').textContent = q.stem;
   // per-question source image (uploaded to question-images/q<number>.<ext>, or
@@ -414,7 +421,7 @@ function openReview(){
 function buildRwDomainFilter(){
   const wrap = $('#rwDomainFilter');
   wrap.innerHTML = '';
-  const present = [...new Set(rwWrong.map(w => w.q.domain).filter(Boolean))].sort();
+  const present = [...new Set(rwWrong.flatMap(w => questionDomains(w.q)))].sort((a, b) => a - b);
   if (!present.length){ wrap.hidden = true; return; }
   wrap.hidden = false;
 
@@ -426,11 +433,11 @@ function buildRwDomainFilter(){
   wrap.appendChild(allChip);
 
   present.forEach(d => {
-    const n = rwWrong.filter(w => w.q.domain === d).length;
+    const n = rwWrong.filter(w => questionDomains(w.q).includes(d)).length;
     const chip = document.createElement('button');
     chip.type = 'button';
     chip.className = 'rw-fchip' + (rwDomainFilter === d ? ' on' : '');
-    chip.textContent = `${d}.0 ${rwWrong.find(w => w.q.domain === d).q.domainName} (${n})`;
+    chip.textContent = `${d}.0 ${DOMAINS[d].name} (${n})`;
     chip.onclick = () => { rwDomainFilter = d; renderRwList(); };
     wrap.appendChild(chip);
   });
@@ -438,7 +445,7 @@ function buildRwDomainFilter(){
 
 function renderRwList(){
   buildRwDomainFilter(); // refresh 'on' state
-  const items = rwDomainFilter === 0 ? rwWrong : rwWrong.filter(w => w.q.domain === rwDomainFilter);
+  const items = rwDomainFilter === 0 ? rwWrong : rwWrong.filter(w => questionDomains(w.q).includes(rwDomainFilter));
 
   const label = rwMode === 'all' ? 'all' : 'incorrect';
   $('#rwCount').textContent = `(${items.length} of ${rwWrong.length} ${label})`;
@@ -553,7 +560,7 @@ function buildDomainChips() {
   wrap.innerHTML = '';
   Object.keys(DOMAINS).forEach(k => {
     const d = parseInt(k, 10);
-    const count = (window.EXAM_DATA || []).filter(q => q.domain === d).length;
+    const count = (window.EXAM_DATA || []).filter(q => questionDomains(q).includes(d)).length;
     const chip = document.createElement('button');
     chip.type = 'button';
     chip.className = 'chip' + (d === parseInt($('#optDomain').value, 10) ? ' on' : '');

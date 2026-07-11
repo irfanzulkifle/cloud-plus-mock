@@ -501,6 +501,7 @@ window.EXAM_DATA = [
   "choose": "all",
   "domain": 4,
   "domainName": "Security",
+  "domains": [4, 6],
   "explanations": {
    "A": "SQL injection targets databases via malicious queries, not typically causing a website crash from traffic patterns alone.",
    "B": "Cross-site scripting injects malicious scripts into pages viewed by users, not a cause of server crash from logs showing traffic volume.",
@@ -860,6 +861,7 @@ window.EXAM_DATA = [
   "choose": "all",
   "domain": 6,
   "domainName": "Troubleshooting",
+  "domains": [6, 1],
   "explanations": {
    "A": "A /23 (255.255.254.0) provides 510 usable hosts, covering IT's 270 and Operations' 300 (each employee x 3 hosts), fixing the IP exhaustion that prevented devices from getting addresses. Finance (150) and Legal (90) already fit in their /24s.",
    "B": "Configuring static routes from each subnet to 10.1.40.1 addresses reaching one specific gateway, not enabling IT to reach all subnets while keeping segregation.",
@@ -948,6 +950,7 @@ window.EXAM_DATA = [
   "choose": "all",
   "domain": 1,
   "domainName": "Cloud Architecture",
+  "domains": [1, 3],
   "explanations": {
    "A": "Log retention settings matter for compliance but aren't the primary step for building a utilization/cost report.",
    "B": "Application tracing is for performance/latency debugging, not utilization/cost reporting.",
@@ -1055,6 +1058,7 @@ window.EXAM_DATA = [
   "choose": "all",
   "domain": 3,
   "domainName": "Operations",
+  "domains": [3, 4],
   "explanations": {
    "A": "Keeping it temporarily leaves sensitive banking data exposed longer than necessary with no clear purpose.",
    "B": "Archiving retains the data long-term, unnecessary here since the data was only mirrored/testing and the server is decommissioned.",
@@ -1097,6 +1101,7 @@ window.EXAM_DATA = [
   "choose": "all",
   "domain": 3,
   "domainName": "Operations",
+  "domains": [3, 1],
   "explanations": {
    "A": "Snapshot replication is point-in-time and wouldn't meet a strict sub-second latency/immediate failover requirement.",
    "B": "Transactional replication focuses on database transaction consistency, not immediate multi-datacenter failover for a VM.",
@@ -1223,6 +1228,7 @@ window.EXAM_DATA = [
   "choose": "all",
   "domain": 1,
   "domainName": "Cloud Architecture",
+  "domains": [1, 5, 3, 6],
   "explanations": {
    "A": "Audit logs record what happened but don't stop the instances themselves.",
    "B": "Using the web console to manually stop many instances is slower and more effort than a scripted/tag-based command.",
@@ -1454,6 +1460,7 @@ window.EXAM_DATA = [
   "choose": "all",
   "domain": 4,
   "domainName": "Security",
+  "domains": [4, 5],
   "explanations": {
    "A": "Peer-reviewed pull requests catch some issues but rely on human review and won't fully eliminate accidental secret leaks in code/containers.",
    "B": "Using VMs instead of containers doesn't address secrets management in CI/CD pipelines at all.",
@@ -1601,6 +1608,7 @@ window.EXAM_DATA = [
   "choose": "all",
   "domain": 6,
   "domainName": "Troubleshooting",
+  "domains": [6, 1, 4],
   "explanations": {
    "A": "172.16.12.36 falls in the .32\u2013.47 block \u2192 172.16.12.32/28, a different subnet from Server 2. But Server 1's gateway is 172.16.12.1 (in the .0/28 block), so at .36 its gateway would be on a different network and unreachable \u2014 breaking Server 1's routing. Wrong: creates a gateway mismatch.",
    "B": "172.16.12.2 stays in the .0\u2013.15 block \u2192 172.16.12.0/28, the SAME /28 network as Server 2 (.14). It's a valid free host with a matching gateway (.1), but it leaves Server 1 on the same subnet as Server 2, so they still communicate directly. Fails the isolation goal.",
@@ -1643,6 +1651,7 @@ window.EXAM_DATA = [
   "choose": "all",
   "domain": 5,
   "domainName": "DevOps Fundamentals",
+  "domains": [5, 4],
   "explanations": {
    "A": "Docker builds/runs containers, it doesn't perform OS hardening tasks like config management.",
    "B": "Kubernetes orchestrates containers, not OS-level hardening of VMs.",
@@ -1748,6 +1757,7 @@ window.EXAM_DATA = [
   "choose": "all",
   "domain": 5,
   "domainName": "DevOps Fundamentals",
+  "domains": [5, 3, 1],
   "explanations": {
    "A": "Does not automate a scheduled nightly shutdown of VMs for cost savings.",
    "B": "Does not automate a scheduled nightly shutdown of VMs for cost savings.",
@@ -1832,6 +1842,7 @@ window.EXAM_DATA = [
   "choose": "all",
   "domain": 4,
   "domainName": "Security",
+  "domains": [4, 3],
   "explanations": {
    "A": "Disk I/O may rise with mining but is not the most direct indicator.",
    "B": "Network packets aren't typically elevated significantly by cryptomining, which is compute-bound.",
@@ -1853,6 +1864,7 @@ window.EXAM_DATA = [
   "choose": "all",
   "domain": 6,
   "domainName": "Troubleshooting",
+  "domains": [6, 3],
   "domain2": 3,
   "domainName2": "Operations",
   "explanations": {
@@ -1939,6 +1951,7 @@ window.EXAM_DATA = [
   "choose": "all",
   "domain": 3,
   "domainName": "Operations",
+  "domains": [3, 6],
   "domain2": 6,
   "domainName2": "Troubleshooting",
   "explanations": {
@@ -1960,8 +1973,9 @@ window.EXAM_DATA = [
   },
   "answer": "C",
   "choose": "all",
-  "domain": 1,
-  "domainName": "Cloud Architecture",
+  "domain": 6,
+  "domainName": "Troubleshooting",
+  "domains": [6, 1, 4],
   "explanations": {
    "A": "The app server's own firewall wouldn't block inbound traffic to a different server.",
    "B": "A routing table issue would typically prevent all communication, but subnet routing is set up correctly in a standard VPC by default.",
@@ -2112,6 +2126,7 @@ window.EXAM_DATA = [
   "choose": "all",
   "domain": 1,
   "domainName": "Cloud Architecture",
+  "domains": [1, 4],
   "domain2": 4,
   "domainName2": "Security",
   "explanations": {
@@ -2324,6 +2339,7 @@ window.EXAM_DATA = [
   "choose": "all",
   "domain": 3,
   "domainName": "Operations",
+  "domains": [3, 4],
   "domain2": 4,
   "domainName2": "Security",
   "explanations": {
@@ -2687,6 +2703,7 @@ window.EXAM_DATA = [
   "choose": "all",
   "domain": 3,
   "domainName": "Operations",
+  "domains": [3, 1],
   "domain2": 1,
   "domainName2": "Cloud Architecture",
   "explanations": {
@@ -2836,6 +2853,7 @@ window.EXAM_DATA = [
   "choose": "all",
   "domain": 1,
   "domainName": "Cloud Architecture",
+  "domains": [1, 3],
   "domain2": 3,
   "domainName2": "Operations",
   "explanations": {
@@ -2861,6 +2879,7 @@ window.EXAM_DATA = [
   "choose": "all",
   "domain": 1,
   "domainName": "Cloud Architecture",
+  "domains": [1, 4],
   "domain2": 4,
   "domainName2": "Security",
   "explanations": {
@@ -2949,6 +2968,7 @@ window.EXAM_DATA = [
   "choose": "all",
   "domain": 1,
   "domainName": "Cloud Architecture",
+  "domains": [1, 3],
   "domain2": 3,
   "domainName2": "Operations",
   "explanations": {
@@ -2972,6 +2992,7 @@ window.EXAM_DATA = [
   "choose": "all",
   "domain": 1,
   "domainName": "Cloud Architecture",
+  "domains": [1, 2],
   "domain2": 2,
   "domainName2": "Deployment",
   "explanations": {
@@ -2995,6 +3016,7 @@ window.EXAM_DATA = [
   "choose": "all",
   "domain": 3,
   "domainName": "Operations",
+  "domains": [3, 6],
   "domain2": 6,
   "domainName2": "Troubleshooting",
   "explanations": {
@@ -3039,6 +3061,7 @@ window.EXAM_DATA = [
   "choose": "all",
   "domain": 4,
   "domainName": "Security",
+  "domains": [4, 1],
   "domain2": 1,
   "domainName2": "Cloud Architecture",
   "explanations": {
@@ -3146,6 +3169,7 @@ window.EXAM_DATA = [
   "choose": "all",
   "domain": 4,
   "domainName": "Security",
+  "domains": [4, 6],
   "domain2": 6,
   "domainName2": "Troubleshooting",
   "explanations": {
@@ -3190,6 +3214,7 @@ window.EXAM_DATA = [
   "choose": "all",
   "domain": 3,
   "domainName": "Operations",
+  "domains": [3, 4],
   "domain2": 4,
   "domainName2": "Security",
   "explanations": {
@@ -3213,8 +3238,9 @@ window.EXAM_DATA = [
   "choose": "all",
   "domain": 6,
   "domainName": "Troubleshooting",
+  "domains": [6, 5],
   "domain2": 5,
-  "domainName2": "DevOps",
+  "domainName2": "DevOps Fundamentals",
   "explanations": {
    "A": "Correct: the log shows a deprecated API call, so the fix is to update the custom integration to a supported function.",
    "B": "Including it in future testing scope helps prevent recurrence but doesn't fix the current broken integration.",
@@ -3257,6 +3283,7 @@ window.EXAM_DATA = [
   "choose": "all",
   "domain": 4,
   "domainName": "Security",
+  "domains": [4, 6],
   "domain2": 6,
   "domainName2": "Troubleshooting",
   "explanations": {
@@ -3282,6 +3309,7 @@ window.EXAM_DATA = [
   "choose": "all",
   "domain": 4,
   "domainName": "Security",
+  "domains": [4, 1],
   "domain2": 1,
   "domainName2": "Cloud Architecture",
   "explanations": {
@@ -3307,6 +3335,7 @@ window.EXAM_DATA = [
   "choose": "all",
   "domain": 3,
   "domainName": "Operations",
+  "domains": [3, 4],
   "domain2": 4,
   "domainName2": "Security",
   "explanations": {
@@ -3330,6 +3359,7 @@ window.EXAM_DATA = [
   "choose": "all",
   "domain": 3,
   "domainName": "Operations",
+  "domains": [3, 4],
   "domain2": 4,
   "domainName2": "Security",
   "explanations": {
@@ -3353,6 +3383,7 @@ window.EXAM_DATA = [
   "choose": "all",
   "domain": 2,
   "domainName": "Deployment",
+  "domains": [2, 5],
   "domain2": 5,
   "domainName2": "DevOps Fundamentals",
   "explanations": {
@@ -3378,6 +3409,7 @@ window.EXAM_DATA = [
   "choose": "all",
   "domain": 2,
   "domainName": "Deployment",
+  "domains": [2, 4],
   "domain2": 4,
   "domainName2": "Security",
   "explanations": {
@@ -3403,6 +3435,7 @@ window.EXAM_DATA = [
   "choose": "all",
   "domain": 6,
   "domainName": "Troubleshooting",
+  "domains": [6, 2],
   "domain2": 2,
   "domainName2": "Deployment",
   "explanations": {
@@ -3468,6 +3501,7 @@ window.EXAM_DATA = [
   "choose": "all",
   "domain": 1,
   "domainName": "Cloud Architecture",
+  "domains": [1, 2],
   "domain2": 2,
   "domainName2": "Deployment",
   "explanations": {
@@ -3556,6 +3590,7 @@ window.EXAM_DATA = [
   "choose": "all",
   "domain": 1,
   "domainName": "Cloud Architecture",
+  "domains": [1, 5],
   "domain2": 5,
   "domainName2": "DevOps Fundamentals",
   "explanations": {
@@ -3579,6 +3614,7 @@ window.EXAM_DATA = [
   "choose": "all",
   "domain": 1,
   "domainName": "Cloud Architecture",
+  "domains": [1, 5],
   "domain2": 5,
   "domainName2": "DevOps Fundamentals",
   "explanations": {
@@ -3602,6 +3638,7 @@ window.EXAM_DATA = [
   "choose": "all",
   "domain": 1,
   "domainName": "Cloud Architecture",
+  "domains": [1, 3],
   "domain2": 3,
   "domainName2": "Operations",
   "explanations": {
@@ -3688,6 +3725,7 @@ window.EXAM_DATA = [
   "choose": "all",
   "domain": 6,
   "domainName": "Troubleshooting",
+  "domains": [6, 4],
   "domain2": 4,
   "domainName2": "Security",
   "explanations": {
@@ -3711,6 +3749,7 @@ window.EXAM_DATA = [
   "choose": "all",
   "domain": 2,
   "domainName": "Deployment",
+  "domains": [2, 6],
   "domain2": 6,
   "domainName2": "Troubleshooting",
   "explanations": {
@@ -3755,6 +3794,7 @@ window.EXAM_DATA = [
   "choose": "all",
   "domain": 6,
   "domainName": "Troubleshooting",
+  "domains": [6, 1],
   "explanations": {
    "A": "Disabling a redundant SAN controller port would reduce resiliency and doesn't fix the discovery issue.",
    "B": "Gi1/0/2 already has mtu 9216 (jumbo frames) set correctly; MTU mismatches cause performance/fragmentation issues, not discovery failure, so changing it won't restore iSCSI targets.",
@@ -3860,6 +3900,7 @@ window.EXAM_DATA = [
   "choose": "all",
   "domain": 4,
   "domainName": "Security",
+  "domains": [4, 5],
   "domain2": 5,
   "domainName2": "DevOps Fundamentals",
   "explanations": {
@@ -3925,6 +3966,7 @@ window.EXAM_DATA = [
   "choose": "all",
   "domain": 1,
   "domainName": "Cloud Architecture",
+  "domains": [1, 4],
   "domain2": 4,
   "domainName2": "Security",
   "explanations": {
@@ -3948,6 +3990,7 @@ window.EXAM_DATA = [
   "choose": "all",
   "domain": 4,
   "domainName": "Security",
+  "domains": [4, 3],
   "domain2": 3,
   "domainName2": "Operations",
   "explanations": {
@@ -3971,6 +4014,7 @@ window.EXAM_DATA = [
   "choose": "all",
   "domain": 4,
   "domainName": "Security",
+  "domains": [4, 3],
   "domain2": 3,
   "domainName2": "Operations",
   "explanations": {
@@ -3994,6 +4038,7 @@ window.EXAM_DATA = [
   "choose": "all",
   "domain": 2,
   "domainName": "Deployment",
+  "domains": [2, 1],
   "domain2": 1,
   "domainName2": "Cloud Architecture",
   "explanations": {
@@ -4059,6 +4104,7 @@ window.EXAM_DATA = [
   "choose": "all",
   "domain": 6,
   "domainName": "Troubleshooting",
+  "domains": [6, 1],
   "domain2": 1,
   "domainName2": "Cloud Architecture",
   "explanations": {
@@ -4082,6 +4128,7 @@ window.EXAM_DATA = [
   "choose": "all",
   "domain": 3,
   "domainName": "Operations",
+  "domains": [3, 2, 5],
   "domain2": 2,
   "domainName2": "Deployment",
   "explanations": {
@@ -4147,6 +4194,7 @@ window.EXAM_DATA = [
   "choose": "all",
   "domain": 3,
   "domainName": "Operations",
+  "domains": [3, 4],
   "domain2": 4,
   "domainName2": "Security",
   "explanations": {
@@ -4254,6 +4302,7 @@ window.EXAM_DATA = [
   "choose": "all",
   "domain": 1,
   "domainName": "Cloud Architecture",
+  "domains": [1, 3],
   "explanations": {
    "A": "Archive storage has retrieval delays (hours), unsuitable for immediate disaster access.",
    "B": "Correct: hot storage provides immediate, low-latency access needed for fast disaster recovery.",
@@ -4296,6 +4345,7 @@ window.EXAM_DATA = [
   "choose": "all",
   "domain": 2,
   "domainName": "Deployment",
+  "domains": [2, 1],
   "domain2": 1,
   "domain2Name": "Cloud Architecture",
   "explanations": {
@@ -4382,6 +4432,7 @@ window.EXAM_DATA = [
   "choose": "all",
   "domain": 4,
   "domainName": "Security",
+  "domains": [4, 1],
   "domain2": 1,
   "domain2Name": "Cloud Architecture",
   "explanations": {
@@ -4531,6 +4582,7 @@ window.EXAM_DATA = [
   "choose": "all",
   "domain": 1,
   "domainName": "Cloud Architecture",
+  "domains": [1, 4],
   "explanations": {
    "A": "The physical security of data-center facilities is the cloud provider's responsibility under the shared responsibility model, not the customer's.",
    "B": "'Security in the cloud' is the broad umbrella term for the customer's side, but it is not the specific, concrete accountability the question targets — among the listed items, the application is the precise customer-owned layer that the umbrella merely contains.",
@@ -4552,6 +4604,7 @@ window.EXAM_DATA = [
   "choose": "all",
   "domain": 3,
   "domainName": "Operations",
+  "domains": [3, 1],
   "explanations": {
    "A": "Heap utilization is an application-process memory metric and is not directly tied to disk performance.",
    "B": "Swap usage reflects memory being paged to disk under pressure, directly linking memory behavior to disk I/O performance.",
@@ -4615,6 +4668,7 @@ window.EXAM_DATA = [
   "choose": "all",
   "domain": 3,
   "domainName": "Operations",
+  "domains": [3, 2],
   "explanations": {
    "A": "A full system backup is unnecessary once the workload has already been successfully migrated off the private cloud.",
    "B": "Patching the old hardware is pointless because it is no longer compatible for reuse after migration.",
@@ -4636,6 +4690,7 @@ window.EXAM_DATA = [
   "choose": "all",
   "domain": 6,
   "domainName": "Troubleshooting",
+  "domains": [6, 4],
   "domain2": 4,
   "domain2Name": "Security",
   "explanations": {
@@ -4661,6 +4716,7 @@ window.EXAM_DATA = [
   "choose": "all",
   "domain": 4,
   "domainName": "Security",
+  "domains": [4, 5],
   "domain2": 5,
   "domain2Name": "DevOps Fundamentals",
   "explanations": {
@@ -4875,6 +4931,7 @@ window.EXAM_DATA = [
   "choose": "all",
   "domain": 6,
   "domainName": "Troubleshooting",
+  "domains": [6, 1],
   "domain2": 1,
   "domain2Name": "Cloud Architecture",
   "explanations": {
@@ -4961,6 +5018,7 @@ window.EXAM_DATA = [
   "choose": "all",
   "domain": 6,
   "domainName": "Troubleshooting",
+  "domains": [6, 1],
   "domain2": 1,
   "domain2Name": "Cloud Architecture",
   "explanations": {
@@ -5068,6 +5126,7 @@ window.EXAM_DATA = [
   "choose": "all",
   "domain": 1,
   "domainName": "Cloud Architecture",
+  "domains": [1, 3],
   "domain2": 3,
   "domain2Name": "Operations",
   "explanations": {
@@ -5112,6 +5171,7 @@ window.EXAM_DATA = [
   "choose": "all",
   "domain": 6,
   "domainName": "Troubleshooting",
+  "domains": [6, 1],
   "domain2": 1,
   "domain2Name": "Cloud Architecture",
   "explanations": {
@@ -5156,6 +5216,7 @@ window.EXAM_DATA = [
   "choose": "all",
   "domain": 1,
   "domainName": "Cloud Architecture",
+  "domains": [1, 5],
   "domain2": 5,
   "domain2Name": "DevOps Fundamentals",
   "explanations": {
@@ -5179,6 +5240,7 @@ window.EXAM_DATA = [
   "choose": "all",
   "domain": 1,
   "domainName": "Cloud Architecture",
+  "domains": [1, 2],
   "domain2": 2,
   "domain2Name": "Deployment",
   "explanations": {
@@ -5202,6 +5264,7 @@ window.EXAM_DATA = [
   "choose": "all",
   "domain": 2,
   "domainName": "Deployment",
+  "domains": [2, 1],
   "domain2": 1,
   "domain2Name": "Cloud Architecture",
   "explanations": {
@@ -5225,6 +5288,7 @@ window.EXAM_DATA = [
   "choose": "all",
   "domain": 3,
   "domainName": "Operations",
+  "domains": [3, 5],
   "domain2": 5,
   "domain2Name": "DevOps Fundamentals",
   "explanations": {
@@ -5332,6 +5396,7 @@ window.EXAM_DATA = [
   "choose": "all",
   "domain": 3,
   "domainName": "Operations",
+  "domains": [3, 6, 5],
   "domain2": 6,
   "domain2Name": "Troubleshooting",
   "explanations": {
@@ -5355,6 +5420,7 @@ window.EXAM_DATA = [
   "choose": "all",
   "domain": 5,
   "domainName": "DevOps Fundamentals",
+  "domains": [5, 2],
   "domain2": 2,
   "domain2Name": "Deployment",
   "explanations": {
@@ -5401,6 +5467,7 @@ window.EXAM_DATA = [
   "choose": "all",
   "domain": 6,
   "domainName": "Troubleshooting",
+  "domains": [6, 4],
   "domain2": 4,
   "domain2Name": "Security",
   "explanations": {
@@ -5451,6 +5518,7 @@ window.EXAM_DATA = [
   "choose": "all",
   "domain": 1,
   "domainName": "Cloud Architecture",
+  "domains": [1, 3],
   "domain2": 3,
   "domain2Name": "Operations",
   "explanations": {
@@ -5474,6 +5542,7 @@ window.EXAM_DATA = [
   "choose": "all",
   "domain": 5,
   "domainName": "DevOps Fundamentals",
+  "domains": [5, 3],
   "domain2": 3,
   "domain2Name": "Operations",
   "explanations": {
@@ -5518,8 +5587,9 @@ window.EXAM_DATA = [
   "choose": "all",
   "domain": 6,
   "domainName": "Troubleshooting",
+  "domains": [6, 5],
   "domain2": 5,
-  "domain2Name": "DevOps",
+  "domain2Name": "DevOps Fundamentals",
   "explanations": {
    "A": "Upgrading bandwidth does not resolve an API rate-limit (429) throttling condition.",
    "B": "Increasing database storage is unrelated to API throttling.",
@@ -5562,6 +5632,7 @@ window.EXAM_DATA = [
   "choose": "all",
   "domain": 1,
   "domainName": "Cloud Architecture",
+  "domains": [1, 2],
   "domain2": 2,
   "domain2Name": "Deployment",
   "explanations": {
@@ -5585,8 +5656,6 @@ window.EXAM_DATA = [
   "choose": "all",
   "domain": 4,
   "domainName": "Security",
-  "domain2": 4,
-  "domain2Name": "Security",
   "explanations": {
    "A": "Secure by design is a development principle, not the specific model for identity+device+location verification.",
    "B": "Least privilege limits access scope but does not enforce device/location checks.",
@@ -5629,6 +5698,7 @@ window.EXAM_DATA = [
   "choose": "all",
   "domain": 1,
   "domainName": "Cloud Architecture",
+  "domains": [1, 3],
   "domain2": 3,
   "domain2Name": "Operations",
   "explanations": {
@@ -5673,8 +5743,9 @@ window.EXAM_DATA = [
   "choose": "all",
   "domain": 3,
   "domainName": "Operations",
+  "domains": [3, 5],
   "domain2": 5,
-  "domain2Name": "DevOps",
+  "domain2Name": "DevOps Fundamentals",
   "explanations": {
    "A": "Deploying application versions is done via CI/CD tools, not Grafana.",
    "B": "Grafana is a dashboards/visualization tool used to observe an application's health and metrics.",
@@ -5699,6 +5770,7 @@ window.EXAM_DATA = [
   "choose": "all",
   "domain": 4,
   "domainName": "Security",
+  "domains": [4, 2],
   "domain2": 2,
   "domain2Name": "Deployment",
   "explanations": {
@@ -5746,6 +5818,7 @@ window.EXAM_DATA = [
   "choose": "all",
   "domain": 6,
   "domainName": "Troubleshooting",
+  "domains": [6, 1],
   "domain2": 1,
   "domain2Name": "Cloud Architecture",
   "explanations": {
@@ -5790,8 +5863,9 @@ window.EXAM_DATA = [
   "choose": "all",
   "domain": 1,
   "domainName": "Cloud Architecture",
+  "domains": [1, 5],
   "domain2": 5,
-  "domain2Name": "DevOps",
+  "domain2Name": "DevOps Fundamentals",
   "explanations": {
    "A": "Jenkins is a CI/CD automation server, not a container orchestrator for scaling across nodes.",
    "B": "Terraform provisions infrastructure (IaC) but does not orchestrate running containers across a node fleet.",
@@ -5813,6 +5887,7 @@ window.EXAM_DATA = [
   "choose": "all",
   "domain": 4,
   "domainName": "Security",
+  "domains": [4, 3],
   "explanations": {
    "A": "Deleting data once it passes its required seven-year retention period is an end-of-life (retention expiry) action.",
    "B": "DLP prevents data leakage, not retention expiry deletion.",
@@ -5834,6 +5909,7 @@ window.EXAM_DATA = [
   "choose": "all",
   "domain": 4,
   "domainName": "Security",
+  "domains": [4, 6],
   "domain2": 6,
   "domain2Name": "Troubleshooting",
   "explanations": {
@@ -5878,6 +5954,7 @@ window.EXAM_DATA = [
   "choose": "all",
   "domain": 6,
   "domainName": "Troubleshooting",
+  "domains": [6, 4, 5],
   "domain2": 4,
   "domain2Name": "Security",
   "explanations": {
@@ -5964,8 +6041,9 @@ window.EXAM_DATA = [
   "choose": "all",
   "domain": 1,
   "domainName": "Cloud Architecture",
+  "domains": [1, 5],
   "domain2": 5,
-  "domain2Name": "DevOps",
+  "domain2Name": "DevOps Fundamentals",
   "explanations": {
    "A": "Host affinity is a scheduling constraint, unrelated to event handling in a loosely coupled app.",
    "B": "Monolithic services are tightly coupled, the opposite of the loosely coupled design goal.",
@@ -5987,6 +6065,7 @@ window.EXAM_DATA = [
   "choose": "all",
   "domain": 3,
   "domainName": "Operations",
+  "domains": [3, 2],
   "domain2": 2,
   "domain2Name": "Deployment",
   "explanations": {
@@ -6073,8 +6152,9 @@ window.EXAM_DATA = [
   "choose": "all",
   "domain": 1,
   "domainName": "Cloud Architecture",
+  "domains": [1, 5],
   "domain2": 5,
-  "domain2Name": "DevOps",
+  "domain2Name": "DevOps Fundamentals",
   "explanations": {
    "A": "A managed service provider is outsourced staff, heavier than a self-serve automation tool.",
    "B": "An integration Platform-as-a-Service (iPaaS) lets nonprofits connect cloud services and automate workflows via low-code, cheaply and simply.",
@@ -6117,8 +6197,9 @@ window.EXAM_DATA = [
   "choose": "all",
   "domain": 3,
   "domainName": "Operations",
+  "domains": [3, 5],
   "domain2": 5,
-  "domain2Name": "DevOps",
+  "domain2Name": "DevOps Fundamentals",
   "explanations": {
    "A": "Version 6.5 is an older major version (downgrade) and is not the latest minor of 7.1.",
    "B": "Version 7.6 is a minor update but not the latest minor allowed.",
@@ -6203,6 +6284,7 @@ window.EXAM_DATA = [
   "choose": "all",
   "domain": 3,
   "domainName": "Operations",
+  "domains": [3, 4],
   "domain2": 4,
   "domain2Name": "Security",
   "explanations": {
@@ -6226,6 +6308,7 @@ window.EXAM_DATA = [
   "choose": "all",
   "domain": 5,
   "domainName": "DevOps Fundamentals",
+  "domains": [5, 4],
   "domain2": 4,
   "domain2Name": "Security",
   "explanations": {
@@ -6377,6 +6460,7 @@ window.EXAM_DATA = [
   "choose": "all",
   "domain": 2,
   "domainName": "Deployment",
+  "domains": [2, 4],
   "domain2": 4,
   "domainName2": "Security",
   "explanations": {
@@ -6448,6 +6532,7 @@ window.EXAM_DATA = [
   "choose": "all",
   "domain": 4,
   "domainName": "Security",
+  "domains": [4, 3],
   "domain2": 3,
   "domainName2": "Operations",
   "explanations": {
@@ -6600,6 +6685,7 @@ window.EXAM_DATA = [
   "choose": "all",
   "domain": 1,
   "domainName": "Cloud Architecture",
+  "domains": [1, 5],
   "domain2": 5,
   "domainName2": "DevOps Fundamentals",
   "explanations": {
@@ -6623,6 +6709,7 @@ window.EXAM_DATA = [
   "choose": "all",
   "domain": 4,
   "domainName": "Security",
+  "domains": [4, 2],
   "domain2": 2,
   "domainName2": "Deployment",
   "explanations": {
