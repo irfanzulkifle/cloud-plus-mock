@@ -4699,7 +4699,7 @@ window.EXAM_DATA = [
   "stem": "A development team is ready to release the latest version of an application. Which of the following strategies best ensures successful deployment without impacting the bandwidth of company resources?",
   "options": {
    "A": "Blue-green  ",
-   "B": "A/В testing  ",
+   "B": "A/B testing  ",
    "C": "Rolling  ",
    "D": "Shadow "
   },
@@ -4712,7 +4712,8 @@ window.EXAM_DATA = [
    "B": "A/B testing serves variant versions to subsets for comparison, not a strategy to minimize resource impact of a release.",
    "C": "A rolling deployment replaces instances gradually in batches, avoiding duplicate environments and thus minimizing extra bandwidth/resource usage.",
    "D": "Shadow deployment mirrors live traffic to a parallel version, adding load rather than minimizing it."
-  }
+  },
+  "deepdive": "WHY\n• Match the constraint — \"without impacting the bandwidth of company resources\": a rolling deployment updates instances incrementally within the existing resource pool, so it doesn't require standing up a second full environment or duplicating traffic — minimizing resource/bandwidth impact. ← the flashing arrow\n• Rolling reuses current capacity, batch by batch: it replaces a few instances at a time with the new version while the rest keep serving — no doubling of infrastructure, so the deployment stays within normal resource/bandwidth usage.\n• It ensures a successful, low-risk release efficiently: the gradual replacement provides a controlled rollout without the heavy resource overhead of parallel environments or mirrored traffic (ties to deployment strategies in Objective 2.2).\n• Keyword \"successful deployment + without impacting bandwidth/resources → incremental in-place replacement using existing capacity → rolling → C: resource-efficient rollout = rolling.\n• Real-world anchor: rolling updates (e.g., Kubernetes RollingUpdate) upgrade pods gradually using the existing cluster capacity — no duplicate environment, no mirrored traffic, minimal extra resource/bandwidth draw.\nWHY THE OTHER OPTIONS ARE WRONG\n• A. Blue-green — the strongest distractor. It's a very reliable \"successful deployment\" strategy, matching the first half of the question. Its bait: blue-green ensures safe, instant cutover. But it requires running two complete parallel environments (blue + green) simultaneously — doubling infrastructure and bandwidth during the switch. That directly violates the \"without impacting bandwidth of company resources\" constraint. Correct when you can afford duplicate environments for zero-downtime cutover, not when resource/bandwidth must be conserved.\n• D. Shadow — its bait: shadow deployments test new versions safely. But shadow mirrors/duplicates production traffic to a shadow copy for testing — doubling traffic and bandwidth consumption. That's the opposite of preserving bandwidth. Correct for risk-free testing with mirrored traffic, not bandwidth conservation.\n• B. A/B testing — its bait: it's a real release/experimentation strategy. But A/B testing runs multiple versions in parallel and splits traffic to compare user response — it's for evaluating features/UX, requiring parallel versions (extra resources), not for a resource-efficient production rollout. Correct for comparing versions/experimentation, not minimizing resource impact.\nOBJECTIVE\n• Domain 2.0 — Deployment (19% of the exam).\n• Objective 2.2 — Given a scenario, apply the appropriate deployment strategy (blue-green, canary, rolling, in-place; A/B, shadow).\n• Why it maps here: Objective 2.2 covers deployment strategies. This question tests recognizing that a rolling deployment achieves a successful release while conserving resources/bandwidth (incremental in-place updates using existing capacity) — versus blue-green (duplicate parallel environments, doubles resources), shadow (mirrors/duplicates traffic, high bandwidth), or A/B testing (parallel versions for experimentation). (Member of the deployment-strategy family Q70/Q98/Q116/Q147/Q167/Q203/Q222; the resource rule: blue-green/shadow = high resource/bandwidth (duplication); rolling = resource-efficient (reuses existing capacity).)"
  },
  {
   "number": 223,
@@ -6460,7 +6461,7 @@ window.EXAM_DATA = [
  },
  {
   "number": 309,
-  "stem": "A company uses two mobile applications. Application A is used in the United States market, and Application В is used in the European Union market with GDPR restrictions. Both applications must comply with PCI standards. The company is consolidating both mobile applications into a single application and must standardize its database back-end system. Which of the following is the best option to provision the database for the consolidated mobile application?",
+  "stem": "A company uses two mobile applications. Application A is used in the United States market, and Application B is used in the European Union market with GDPR restrictions. Both applications must comply with PCI standards. The company is consolidating both mobile applications into a single application and must standardize its database back-end system. Which of the following is the best option to provision the database for the consolidated mobile application?",
   "options": {
    "A": "Deploying one global database across multiple regions  ",
    "B": "Using two databases in the same region with different access controls  ",
