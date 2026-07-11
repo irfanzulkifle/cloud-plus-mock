@@ -3554,14 +3554,17 @@ window.EXAM_DATA = [
   },
   "answer": "C",
   "choose": "all",
-  "domain": 5,
-  "domainName": "DevOps Fundamentals",
+  "domain": 1,
+  "domainName": "Cloud Architecture",
+  "domain2": 5,
+  "domainName2": "DevOps Fundamentals",
   "explanations": {
-   "A": "A Debian package is a static install artifact, not it self a continuous deployment update mechanism.",
+   "A": "A Debian package is a static install artifact, not itself a continuous deployment update mechanism.",
    "B": "Version management tracks code changes but doesn't handle runtime deployment without reinstalling.",
    "C": "Correct: container images allow updated app versions to be deployed as new containers without a clean OS install each time.",
    "D": "Bare-metal servers require full OS-level installs, the opposite of avoiding a clean install."
-  }
+  },
+  "deepdive": "WHY\n• Match the requirement — \"continuous deployment without a clean install on each iteration\": a container image packages the app and all its dependencies into a portable, prebuilt unit that deploys consistently every time — no need to reinstall/reconfigure the environment on each release. ← the flashing arrow\n• Container images = build once, deploy repeatedly: the image is a prebuilt, immutable artifact. Each deployment just pulls and runs the same image, avoiding a fresh OS/dependency install per iteration — which is exactly what enables fast, repeatable continuous deployment.\n• Consistency across iterations: because every deployment uses the identical image, you get deterministic, drift-free releases — no reconfiguring from scratch, no \"clean install\" each cycle (ties to containerization in Objective 1.6 and CI/CD in Objective 5.2).\n• Keyword \"continuous deployment + no clean install per iteration → prebuilt reusable artifact → container image → C: the packaged image is what removes the reinstall step.\n• Real-world anchor: CI/CD pipelines build a Docker image once, then deploy that same image through environments (dev→staging→prod) and across iterations — each release is a pull-and-run, never a clean install (connects to Docker in Q117/Q160, container security in Q145).\nWHY THE OTHER OPTIONS ARE WRONG\n• A. Debian package — the strongest distractor. A .deb package is a prebuilt installable artifact (see Q144). Its bait: it packages software for deployment. But installing a .deb still performs an install/upgrade onto an existing OS each time (via APT/dpkg) — it doesn't bundle the whole runtime environment for pull-and-run deployment, and it's OS-specific. It doesn't eliminate per-iteration installation the way an image does. Correct for installing software onto a Linux host (Q144), not clean-install-free continuous deployment.\n• B. Version management — its bait: version control (Q82/Q121) is part of CI/CD workflows. But version management tracks source code changes — it stores/versions code, it doesn't deploy applications or eliminate reinstalls. Wrong function/layer. Correct for tracking code versions (Git), not the deployment artifact.\n• D. Bare-metal server — its bait: it's a real deployment target. But a bare-metal server is physical infrastructure you deploy onto — provisioning/reinstalling on bare metal is slow and heavy, the opposite of clean-install-free continuous deployment. Wrong category (hardware, not a deployment artifact). Correct for dedicated single-tenant physical hosting, not rapid iterative deployment.\nOBJECTIVE\n• Domain 1.0 — Cloud Architecture (23% of the exam), with DevOps crossover.\n• Objective 1.6 — Explain the importance of containerization (container images/registries, portability, immutability) — with Objective 5.2 (CI/CD) crossover.\n• Why it maps here: Objective 1.6 covers container images. This question tests recognizing that a container image — a prebuilt, immutable, portable artifact — enables continuous deployment by being deployed repeatedly without a clean install each iteration, versus a Debian package (still installs onto an OS each time), version management (tracks code, doesn't deploy), or a bare-metal server (physical target, not an artifact). (Ties to Docker/containers in Q117/Q145/Q160 and CI/CD in Q34/Q46/Q125; the container image is the key continuous-deployment artifact.)"
  },
  {
   "number": 170,
