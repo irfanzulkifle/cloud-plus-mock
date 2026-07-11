@@ -2110,14 +2110,17 @@ window.EXAM_DATA = [
   },
   "answer": "D",
   "choose": "all",
-  "domain": 4,
-  "domainName": "Security",
+  "domain": 1,
+  "domainName": "Cloud Architecture",
+  "domain2": 4,
+  "domainName2": "Security",
   "explanations": {
    "A": "Compiling sources is a build task, not relevant to managed service considerations.",
    "B": "With managed services, the provider handles OS patching, not the customer.",
    "C": "Installing the underlying service is handled by the provider in a managed service.",
    "D": "Correct: even with managed services, the customer remains responsible for configuring IAM (identity and access management) for their resources."
-  }
+  },
+  "deepdive": "WHY\n• Anchor on what \"cloud-managed\" shifts vs. keeps — the shared responsibility model: with a managed service (managed database, PaaS, etc.), the provider handles the underlying infrastructure — OS, patching, service installation, compiling. What remains the customer's job is controlling who can access the service — i.e., configuring IAM.\n• IAM stays on the customer's side of the line → the flashing arrow: no matter how much the provider manages, access control is always yours to configure. You must define users, groups, roles, and policies to secure the managed service. So IAM is the thing you must still consider when adopting it.\n• Eliminate by \"who does it\": compiling, OS patching, and installing the service are all provider-managed in a managed offering — you don't do those. That leaves IAM as the only listed task that's genuinely a customer consideration.\n• Keyword \"cloud-managed services\" + \"should be considered\" → your remaining responsibility → IAM: the question is really asking what's still on your plate. Under shared responsibility, that's identity and access management.\n• Real-world anchor: when you spin up a managed database (RDS, Cloud SQL, Azure SQL), the provider patches/maintains the engine and OS, but you must configure IAM roles/policies and access permissions to control who connects — the customer's retained duty (ties to IAM in Q61/Q88 and service models in Q64/Q92).\nWHY THE OTHER OPTIONS ARE WRONG\n• B. Patching the operating system — the strongest distractor. Patching is a critical security task (see Q90/Q94). Its bait: patching is always important in general. But with a managed service, the provider patches the OS — that's the whole point of \"managed.\" So it's not a customer consideration here. Correct concern for IaaS/self-managed systems (see Q64/Q92), not managed services.\n• A. Compiling sources — building application code from source. Its bait: it's a real dev activity. But compiling is not a concern of consuming a managed service — the provider delivers a ready-to-use service; you don't compile it. Irrelevant to the managed-service model. Relevant only when you're building/deploying your own application code.\n• C. Installing the service — provisioning/installing the software. Its bait: you use the service, so maybe you install it? But in a managed offering the provider installs, configures, and maintains the service for you — you simply consume it. Not a customer task. Relevant for self-hosted/IaaS deployments where you install everything yourself.\nOBJECTIVE\n• Domain 1.0 — Cloud Architecture (23% of the exam), with security crossover.\n• Objective 1.1 — Compare and contrast cloud service models (managed vs. self-managed, shared responsibility model), reinforced by Objective 4.3 — IAM.\n• Why it maps here: this tests the shared responsibility model for cloud-managed services — recognizing that the provider handles OS patching, installation, and compiling, while the customer retains access control (IAM configuration). IAM as the customer's duty ties to Objective 4.3 (identity and access management). (Sibling to Q64/Q92 on service-model control levels and Q61/Q88 on IAM.)"
  },
  {
   "number": 103,
