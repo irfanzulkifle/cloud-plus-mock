@@ -2970,14 +2970,17 @@ window.EXAM_DATA = [
   },
   "answer": "B",
   "choose": "all",
-  "domain": 2,
-  "domainName": "Deployment",
+  "domain": 1,
+  "domainName": "Cloud Architecture",
+  "domain2": 2,
+  "domainName2": "Deployment",
   "explanations": {
    "A": "Colocation still involves managing physical or leased hardware presence, conflicting with 'no on-premises servers'.",
    "B": "Correct: SaaS implementation delivers a fully managed application with no on-prem infrastructure needed, matching the requirement.",
    "C": "IaaS migration still requires managing VMs/OS, which is more infrastructure responsibility than wanted.",
    "D": "A hybrid approach implies retaining some on-premises component, contradicting the stated requirement."
-  }
+  },
+  "deepdive": "WHY\n• Two clues pin both halves of the answer — \"new company\" (the approach) + \"no on-premises servers or applications\" (the service model): a brand-new company has nothing to move, so the approach is a fresh implementation; wanting no servers or apps to run points to SaaS. ← the flashing arrow\n• \"New company\" → Implementation, not Migration: migration means moving existing systems — but a new company has no legacy infrastructure to migrate. You're implementing from scratch, so \"implementation\" is the correct approach term (contrast Q54/Q138's migration scenarios, which had existing systems).\n• \"Does not want on-premises servers OR applications\" → SaaS: SaaS delivers fully-managed, ready-to-use applications — the provider runs all the servers, OS, and the applications themselves. The company just uses the software, with zero on-prem servers or apps to maintain (ties to service models in Objective 1.1, sibling to Q126).\n• Keyword \"no servers, no applications, brand new\" → fresh implementation of ready-to-use apps → Implementation + SaaS → B: both parts of the pair must fit, and only B matches both.\n• Real-world anchor: a startup that runs entirely on Microsoft 365, Salesforce, Google Workspace (SaaS) implements these cloud apps directly — never buying servers or managing applications on-prem.\nWHY THE OTHER OPTIONS ARE WRONG\n• C. Migration — IaaS — the strongest distractor. It pairs a real approach with a real model. Its bait: \"cloud deployment\" makes migration+IaaS sound standard. But both halves fail: it's a new company with nothing to migrate (not migration), and IaaS still requires managing servers/VMs/OS — which the company explicitly doesn't want. Correct for moving existing workloads onto customer-managed cloud infrastructure, not a greenfield, server-free build.\n• A. Colocation — PaaS — its bait: colocation is a real hosting approach. But colocation means placing your own physical servers in a provider's facility — which is having on-premises-style servers the company doesn't want. The approach directly contradicts the requirement. Correct for housing owned hardware off-site, not avoiding servers (see Q105's colocation contrast).\n• D. Hybrid — XaaS — its bait: \"hybrid\" and \"anything-as-a-service\" sound flexible/modern. But hybrid includes an on-premises component — again contradicting \"no on-premises servers or applications.\" Wrong approach for a fully-cloud, server-free company. Correct when a company wants both on-prem and cloud (see Q106/Q130/Q138), not a pure no-server model.\nOBJECTIVE\n• Domain 1.0 — Cloud Architecture (23% of the exam), with Deployment crossover.\n• Objective 1.1 — Compare and contrast the different types of cloud models (service models: SaaS, PaaS, IaaS) — with Objective 2.3 (migration vs. fresh implementation) crossover.\n• Why it maps here: this question tests pairing the right approach with the right service model: a new company with no legacy systems does a fresh implementation (not migration), and wanting no servers or applications to manage means SaaS (fully-managed apps). Distractors mix in migration/IaaS (no legacy to move, still manage servers), colocation/PaaS (owned hardware = on-prem), and hybrid/XaaS (includes on-prem). (Direct sibling to Q126 (SaaS = ready-to-use, lowest overhead) and contrasts with the migration scenarios in Q54/Q138.)"
  },
  {
   "number": 143,
