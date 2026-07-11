@@ -4868,19 +4868,22 @@ window.EXAM_DATA = [
   "options": {
    "A": "Remove source 192.168.12.0/24 and destination 192.168.1.0/24 from the routing table  ",
    "B": "Replace destination 192.168.1.0/24 with destination 192.168.0.0/24  ",
-   "C": "Add source 192.168.12.0/24 and destination 192 168 0.0/24 to the routing table  ",
+   "C": "Add source 192.168.12.0/24 and destination 192.168.0.0/24 to the routing table  ",
    "D": "Reconfigure Network 4 to 192.168.13.0/24 "
   },
   "answer": "B",
   "choose": "all",
-  "domain": 1,
-  "domainName": "Cloud Architecture",
+  "domain": 6,
+  "domainName": "Troubleshooting",
+  "domain2": 1,
+  "domain2Name": "Cloud Architecture",
   "explanations": {
    "A": "Removing a route to 192.168.1.0/24 does not fix the misconfigured destination that points to a non-existent network.",
    "B": "The corporate network is 192.168.0.0/24, but the routing table references a non-existent 192.168.1.0/24; correcting the destination to 192.168.0.0/24 fixes reachability in one step.",
    "C": "Adding a new route duplicates rather than correcting the erroneous 192.168.1.0/24 destination.",
    "D": "Reconfiguring Network 4's address does not resolve the routing-table destination error to the corporate network."
-  }
+  },
+  "deepdive": "WHY\n• Diagnose the fault first — the goal is every subnet reaching the corporate network (192.168.0.0/24): the three configured subnets are 192.168.10.0/24, .11.0/24, .12.0/24, and all must route to 192.168.0.0/24. Two routes point to the wrong destination (192.168.1.0/24), so fixing that destination is the fix. ← the flashing arrow\n• Rows 1–2 are already correct; the broken one is Network 4: 192.168.10.0/24→0.0/24 ✓ and 192.168.11.0/24→0.0/24 ✓, but 192.168.12.0/24 (Network 4) → 192.168.1.0/24 is wrong (it should be 0.0/24). That typo (.1.0 instead of .0.0) is why Network 4 can't reach corporate.\n• One find-and-replace corrects it in a single step: replacing destination 192.168.1.0/24 → 192.168.0.0/24 fixes the Network 4 route (and the stray 192.168.13.0/24 row) at once, so all three real subnets now route to the corporate network — goal accomplished in one change (ties to routing-table troubleshooting in Objective 6.2 and cloud networking/routing in Objective 1.3).\n• Keyword \"change in one step to reach 192.168.0.0/24 → the destination is mistyped as .1.0 → replace it with .0.0 → B: wrong-destination typo = single replace.\n• Real-world anchor: a routing entry pointing at a nonexistent 192.168.1.0/24 instead of the real 192.168.0.0/24 is a classic transposition error — correcting the destination restores reachability.\nWHY THE OTHER OPTIONS ARE WRONG\n• C. Add source 192.168.12.0/24 and destination 192.168.0.0/24 to the routing table — the strongest distractor. It would give Network 4 a correct path to corporate, so it seems to work. Its bait: adding the right route fixes reachability. But it leaves the wrong route (192.168.12.0/24 → 192.168.1.0/24) still in the table, creating a conflicting/duplicate entry and messy state — it patches around the error instead of correcting it. B fixes the actual mistake cleanly; adding a second route is inferior. Correct as a workaround, not the proper one-step fix.\n• A. Remove source 192.168.12.0/24 and destination 192.168.1.0/24 from the routing table — its bait: it deletes the erroneous entry. But removing Network 4's only route leaves it with no path to the corporate network — the opposite of the goal. Correct for deleting a bad route, but it strands Network 4 instead of connecting it.\n• D. Reconfigure Network 4 to 192.168.13.0/24 — its bait: it makes Network 4 match the stray 192.168.13.0/24 source row. But that row still points to the wrong destination (192.168.1.0/24) — so Network 4 still wouldn't reach corporate, and you'd also abandon the intended 192.168.12.0/24 subnet. Goal not met. Correct as a distractor exploiting the 13.0/24 row, but it doesn't fix the destination.\nOBJECTIVE\n• Domain 6.0 — Troubleshooting (12% of the exam), with Cloud Architecture crossover.\n• Objective 6.2 — Given a scenario, troubleshoot common network connectivity issues (routing tables, subnetting/CIDR) — with Objective 1.3 (cloud networking: routing, subnets) crossover.\n• Why it maps here: Objective 6.2 covers routing-table troubleshooting. This question tests reading a routing table, spotting that Network 4's destination is mistyped as 192.168.1.0/24 instead of the corporate 192.168.0.0/24, and fixing it with a single replace — versus adding a duplicate route (leaves the error, C), removing the route (strands Network 4, A), or renumbering Network 4 (destination still wrong, D). (Ties to network-troubleshooting/routing questions Q47/Q60/Q78/Q95/Q131/Q156/Q162/Q178/Q192; the rule: fix the wrong entry directly (replace) rather than adding around it or deleting it.)"
  },
  {
   "number": 231,
