@@ -34,5 +34,5 @@ for (const [number, additions] of Object.entries(expectedAdditions))
     assert.ok(byNumber.get(Number(number)).domains.includes(domain), `Q${number} audit addition ${domain}`);
 for (const [number, domains] of Object.entries(expectedRecommendations))
   assert.deepStrictEqual(byNumber.get(Number(number)).domains, domains, `Q${number} full recommendation`);
-assert.strictEqual(contentHash, "34dea5c053f3ee77e2c8329fc750c793e7f30e6798f862d4d56c1e6596a01aa0", "question content unchanged");
+assert.strictEqual(contentHash, "646d80dafdb4bb672bf35fb76352ecb159bde9972e95e2a5331d905de20439bf", "question content unchanged");
 console.log(`domain data tests: PASS (${data.length} entries, ${data.filter(q=>q.domains).length} multi-domain, content ${contentHash})`);

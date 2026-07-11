@@ -480,6 +480,7 @@ window.EXAM_DATA = [
   "choose": "all",
   "domain": 5,
   "domainName": "DevOps Fundamentals",
+  "domains": [5, 4],
   "explanations": {
    "A": "RPC over SSL is less standard/widely supported for web-based payment integrations compared to REST.",
    "B": "Transactional SQL is a database query approach, not an integration protocol for web-based third-party services.",
@@ -754,6 +755,7 @@ window.EXAM_DATA = [
   "choose": "all",
   "domain": 4,
   "domainName": "Security",
+  "domains": [4, 3],
   "explanations": {
    "A": "Network flow logs show traffic volume/patterns (source, destination, byte counts) which can reveal a DDoS attack pattern, matching the need.",
    "B": "EDR logs focus on endpoint/host activity, not network-level traffic floods.",
@@ -775,6 +777,7 @@ window.EXAM_DATA = [
   "choose": "all",
   "domain": 3,
   "domainName": "Operations",
+  "domains": [3, 1],
   "explanations": {
    "A": "Cold site is a DR facility type, not specifically a data storage tier for infrequently accessed data cost efficiency.",
    "B": "Hot site is the most expensive DR option, opposite of cost-effective for storage.",
@@ -927,6 +930,7 @@ window.EXAM_DATA = [
   "choose": "all",
   "domain": 6,
   "domainName": "Troubleshooting",
+  "domains": [6, 1],
   "explanations": {
    "A": "A /29 subnet has only 8 total addresses (6 usable after network/broadcast), meaning with 8 VMs needing addresses via DHCP, some run out of available IPs, matching the failure.",
    "B": "Misconfigured routes would cause connectivity issues, not directly explain VMs failing to get access tied to address exhaustion described.",
@@ -995,6 +999,7 @@ window.EXAM_DATA = [
   "choose": "all",
   "domain": 6,
   "domainName": "Troubleshooting",
+  "domains": [6, 1],
   "explanations": {
    "A": "Since traffic reaches the development network from the office (per flow logs) but resources aren't reachable, the development network's own routing table is the next thing to check for a return-path routing issue.",
    "B": "Cipher mismatches would cause tunnel establishment failures, but the tunnel is already established, so this isn't the issue.",
@@ -1250,6 +1255,7 @@ window.EXAM_DATA = [
   "choose": "all",
   "domain": 4,
   "domainName": "Security",
+  "domains": [4, 1],
   "explanations": {
    "A": "IaC deploys infrastructure but doesn't control who can view container image contents.",
    "B": "Converting to VMs doesn't address exposure of proprietary code in Docker Hub images and adds unnecessary overhead.",
@@ -1292,6 +1298,7 @@ window.EXAM_DATA = [
   "choose": "all",
   "domain": 6,
   "domainName": "Troubleshooting",
+  "domains": [6, 4],
   "explanations": {
    "A": "Rebooting the VM wouldn't resolve an access permission issue tied to group membership.",
    "B": "Reviewing the administrator's actual permissions/group propagation is the direct way to find why access still fails despite being added to the group (e.g., permissions not yet applied or misconfigured), matching root-cause troubleshooting.",
@@ -1313,6 +1320,7 @@ window.EXAM_DATA = [
   "choose": "all",
   "domain": 4,
   "domainName": "Security",
+  "domains": [4, 1],
   "explanations": {
    "A": "Private repositories require authorization to pull/push images, while public repositories allow unauthenticated access, correctly capturing the main access-control difference.",
    "B": "Visibility/browsability differences exist but the core distinguishing factor tested is authorization requirement, not just hiding names.",
@@ -1460,7 +1468,7 @@ window.EXAM_DATA = [
   "choose": "all",
   "domain": 4,
   "domainName": "Security",
-  "domains": [4, 5],
+  "domains": [4, 1, 5],
   "explanations": {
    "A": "Peer-reviewed pull requests catch some issues but rely on human review and won't fully eliminate accidental secret leaks in code/containers.",
    "B": "Using VMs instead of containers doesn't address secrets management in CI/CD pipelines at all.",
@@ -2926,6 +2934,7 @@ window.EXAM_DATA = [
   "choose": "all",
   "domain": 3,
   "domainName": "Operations",
+  "domains": [3, 1],
   "explanations": {
    "A": "Correct: replication continuously copies data to another region, enabling recovery within a short RPO like one hour.",
    "B": "Retention defines how long backups are kept, not how quickly data can be recovered after a disaster.",
@@ -4477,6 +4486,7 @@ window.EXAM_DATA = [
   "choose": "all",
   "domain": 3,
   "domainName": "Operations",
+  "domains": [3, 1],
   "explanations": {
    "A": "A load-balancing method change alone doesn't add capacity for a seasonal traffic surge.",
    "B": "Correct: scheduled/scaling configuration for the known seasonal timeline adds capacity only when needed, minimizing cost.",
@@ -5225,7 +5235,7 @@ window.EXAM_DATA = [
    "C": "Monitoring is not inherently better on containers than VMs; this is not the key benefit.",
    "D": "Containerization enables loosely coupled, interconnected microservice components that can be developed and deployed independently—a core DevOps benefit."
   },
-  "deepdive": "WHY\n• Match the real benefit — containers enable microservices (interconnected components): containerization lets you package each service into its own lightweight container, so you can build applications composed of many small, independent, interconnected services — the microservices model that DevOps thrives on. ← the flashing arrow\n• This is the defining DevOps advantage: breaking an app into containerized, loosely coupled components enables independent development, deployment, and scaling of each part — accelerating CI/CD and iteration (the core of DevOps).\n• It's the only true statement about containerization here: containers naturally support decomposed, service-based architectures (recall Q13/Q134/Q195: microservices = loosely coupled), which is a genuine, well-established benefit (ties to containerization in Objective 1.6 and DevOps fundamentals in Objective 5.0).\n• Keyword \"benefit of containerization in DevOps → build apps from interconnected microservice components → D: containers = microservices enablement.\n• Real-world anchor: teams containerize each microservice (e.g., with Docker) and orchestrate them (Kubernetes) so the app's interconnected components deploy and scale independently.\nWHY THE OTHER OPTIONS ARE WRONG\n• A. Improves security control by sharing resources among containers — the strongest distractor. It sounds like a plausible efficiency/security claim. But it's false reasoning — containers share the host OS kernel, and sharing resources does not improve security control; if anything, shared kernel/resources is a security consideration/risk requiring isolation controls (recall container security in Q145/Q182). Resource sharing is an efficiency trait, not a security benefit. Correct as a distractor twisting a real trait into a false security claim.\n• B. Provides the use of a proprietary technology that improves integrity — its bait: it invokes \"integrity,\" a security-sounding good. But containerization is built on open standards (Docker/OCI), not proprietary technology — the premise is factually wrong, and \"improves integrity\" isn't a defining container benefit. Wrong on the facts.\n• C. Facilitates performance monitoring over VMs — its bait: monitoring is valuable in DevOps. But performance monitoring isn't a defining benefit of containerization, and containers don't inherently monitor \"over VMs\" — this is a vague, unsupported claim. Monitoring is a separate observability concern (Objective 3.1), not a core container benefit. Wrong/misattributed.\nOBJECTIVE\n• Domain 1.0 — Cloud Architecture (23% of the exam), with DevOps crossover.\n• Objective 1.6 — Given a scenario, deploy cloud-native design and containerization solutions — with Objective 5.0 (DevOps fundamentals) crossover.\n• Why it maps here: Objective 1.6 covers containerization. This question tests recognizing a genuine container benefit — building applications from interconnected (microservice) components that deploy/scale independently in DevOps — versus false claims that sharing resources improves security (A), that containers are proprietary (B), or that they inherently facilitate monitoring over VMs (C). (Ties to container questions Q59/Q62/Q69/Q101/Q145/Q170/Q182/Q199/Q203 and microservices Q13/Q134/Q195; the rule: containers enable loosely coupled, interconnected microservice components — the core DevOps benefit.)"
+  "deepdive": "WHY\n• Match the real benefit — containers enable microservices (interconnected components): containerization lets you package each service into its own lightweight container, so you can build applications composed of many small, independent, interconnected services — the microservices model that DevOps thrives on. ← the flashing arrow\n• This is the defining DevOps advantage: breaking an app into containerized, loosely coupled components enables independent development, deployment, and scaling of each part — accelerating CI/CD and iteration (the core of DevOps).\n• It's the only true statement about containerization here: containers naturally support decomposed, service-based architectures (recall Q13/Q134/Q195: microservices = loosely coupled), which is a genuine, well-established benefit (ties to containerization in Objective 1.6 and DevOps fundamentals in Objective 5.1).\n• Keyword \"benefit of containerization in DevOps → build apps from interconnected microservice components → D: containers = microservices enablement.\n• Real-world anchor: teams containerize each microservice (e.g., with Docker) and orchestrate them (Kubernetes) so the app's interconnected components deploy and scale independently.\nWHY THE OTHER OPTIONS ARE WRONG\n• A. Improves security control by sharing resources among containers — the strongest distractor. It sounds like a plausible efficiency/security claim. But it's false reasoning — containers share the host OS kernel, and sharing resources does not improve security control; if anything, shared kernel/resources is a security consideration/risk requiring isolation controls (recall container security in Q145/Q182). Resource sharing is an efficiency trait, not a security benefit. Correct as a distractor twisting a real trait into a false security claim.\n• B. Provides the use of a proprietary technology that improves integrity — its bait: it invokes \"integrity,\" a security-sounding good. But containerization is built on open standards (Docker/OCI), not proprietary technology — the premise is factually wrong, and \"improves integrity\" isn't a defining container benefit. Wrong on the facts.\n• C. Facilitates performance monitoring over VMs — its bait: monitoring is valuable in DevOps. But performance monitoring isn't a defining benefit of containerization, and containers don't inherently monitor \"over VMs\" — this is a vague, unsupported claim. Monitoring is a separate observability concern (Objective 3.1), not a core container benefit. Wrong/misattributed.\nOBJECTIVE\n• Domain 1.0 — Cloud Architecture (23% of the exam), with DevOps crossover.\n• Objective 1.6 — Given a scenario, deploy cloud-native design and containerization solutions — with Objective 5.1 (DevOps fundamentals) crossover.\n• Why it maps here: Objective 1.6 covers containerization. This question tests recognizing a genuine container benefit — building applications from interconnected (microservice) components that deploy/scale independently in DevOps — versus false claims that sharing resources improves security (A), that containers are proprietary (B), or that they inherently facilitate monitoring over VMs (C). (Ties to container questions Q59/Q62/Q69/Q101/Q145/Q170/Q182/Q199/Q203 and microservices Q13/Q134/Q195; the rule: containers enable loosely coupled, interconnected microservice components — the core DevOps benefit.)"
  },
  {
   "number": 244,
@@ -6150,11 +6160,11 @@ window.EXAM_DATA = [
   },
   "answer": "B",
   "choose": "all",
-  "domain": 1,
-  "domainName": "Cloud Architecture",
-  "domains": [1, 5],
-  "domain2": 5,
-  "domain2Name": "DevOps Fundamentals",
+  "domain": 5,
+  "domainName": "DevOps Fundamentals",
+  "domains": [5, 1],
+  "domain2": 1,
+  "domain2Name": "Cloud Architecture",
   "explanations": {
    "A": "A managed service provider is outsourced staff, heavier than a self-serve automation tool.",
    "B": "An integration Platform-as-a-Service (iPaaS) lets nonprofits connect cloud services and automate workflows via low-code, cheaply and simply.",
