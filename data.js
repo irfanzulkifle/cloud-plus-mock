@@ -4252,14 +4252,15 @@ window.EXAM_DATA = [
   },
   "answer": "B",
   "choose": "all",
-  "domain": 3,
-  "domainName": "Operations",
+  "domain": 1,
+  "domainName": "Cloud Architecture",
   "explanations": {
    "A": "Archive storage has retrieval delays (hours), unsuitable for immediate disaster access.",
    "B": "Correct: hot storage provides immediate, low-latency access needed for fast disaster recovery.",
    "C": "Cold storage has slower retrieval times, not suited for immediate access needs.",
    "D": "Warm storage has moderate retrieval latency, slower than hot tier for immediate access."
-  }
+  },
+  "deepdive": "WHY\n• Match the requirement — \"immediate access\" to backup data during a disaster: hot storage is the tier optimized for instant, frequent, low-latency access, so backup data is available immediately when a disaster strikes. ← the flashing arrow\n• Hot = fastest retrieval, no delay: data on hot storage can be read instantly with no rehydration or retrieval lag — exactly what a disaster recovery scenario needing immediate access demands (minimal RTO).\n• Disaster recovery with \"immediate access\" prioritizes speed over cost: hot storage costs more per GB but delivers the fastest access, which is the right trade-off when recovery time is critical (ties to storage tiers in Objective 1.4 and recovery/RTO in Objective 3.3).\n• Keyword \"immediate access to backup in a disaster → fastest/instant tier → hot → B: immediate access = hot tier.\n• Real-world anchor: DR designs needing rapid failover keep recovery data in hot storage (or hot standby), not in slow archive tiers, so services resume immediately.\nWHY THE OTHER OPTIONS ARE WRONG\n• C. Cold — the strongest distractor. Cold is a legitimate backup tier, so it feels right for \"backup data.\" Its bait: backups are often stored cold to save cost. But cold storage is for infrequent access with higher retrieval latency/cost — it does not provide the immediate access the disaster scenario requires. Correct for infrequently accessed backups where speed isn't critical, not immediate disaster recovery. (Recall Q173: cold = infrequent but still active read/write.)\n• A. Archive — its bait: archives store backup/retention data long-term. But archive is the slowest tier — read-only, long-term retention, retrieved only when needed with significant retrieval delays (minutes to hours). The opposite of immediate access. Correct for long-term, rarely-accessed retention (see Q173), not immediate DR access.\n• D. Warm — its bait: warm sits between hot and cold, offering moderate access. But warm storage provides only moderate, not immediate, access — it's for data accessed occasionally, with more latency than hot. Not fast enough for \"immediate.\" Correct for moderately-accessed data, not instant disaster recovery.\nOBJECTIVE\n• Domain 1.0 — Cloud Architecture (23% of the exam), with Operations crossover.\n• Objective 1.4 — Given a scenario, analyze the solution design in support of the business requirements (storage tiers: hot/warm/cold/archive) — with Objective 3.3 (backup/recovery, RTO) crossover.\n• Why it maps here: Objective 1.4 covers storage tiers by access frequency/speed. This question tests knowing that hot storage provides immediate, instant access — required for backup data in a disaster needing fast recovery — versus warm (moderate access), cold (infrequent, higher latency), or archive (slowest, retrieved only when needed). (Direct member of the storage-tier family Q19/Q81/Q107/Q149/Q173/Q201; the confirmed rule: hot = frequent/immediate; warm = moderate; cold = infrequent but active; archive = read-only long-term, slowest.)"
  },
  {
   "number": 202,
