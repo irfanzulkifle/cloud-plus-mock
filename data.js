@@ -6598,14 +6598,17 @@ window.EXAM_DATA = [
   },
   "answer": "C",
   "choose": "all",
-  "domain": 5,
-  "domainName": "DevOps Fundamentals",
+  "domain": 1,
+  "domainName": "Cloud Architecture",
+  "domain2": 5,
+  "domainName2": "DevOps Fundamentals",
   "explanations": {
    "A": "The token 'working images.comptia.org/...' places 'working' as part of the registry host, not the image name, and the syntax is malformed.",
    "B": "The image path ends in '/working/production:latest', making 'production' the image name, not 'working'.",
    "C": "The path 'images.comptia.org/abcd123/working:latest' correctly uses 'working' as the image (repository) name with a valid tag.",
    "D": "Here 'working.images.comptia.org' makes 'working' a subdomain of the registry, not the image name."
-  }
+  },
+  "deepdive": "WHY\n• Apply the image-reference format — [REGISTRY]/[NAMESPACE]/[IMAGE]:[TAG] — the image name is the last path segment before the tag: in option C, images.comptia.org = registry, abcd123 = namespace, and working = the image name, :latest = tag — so the image is exactly working. ← the flashing arrow\n• Parse right-to-left from the tag: the segment immediately before :tag is the image name; here that's working, matching the requirement.\n• Everything before the image name is registry/namespace: images.comptia.org/abcd123/ is just the registry + namespace path, correctly leaving working as the image (recall Q101: [REGISTRY]/[NAMESPACE/USER]/[IMAGE]:[TAG]). Ties to containerization — image registries/repositories — in Objective 1.6.\n• Keyword \"image name is 'working' → last path segment before the tag = working → images.comptia.org/abcd123/working:latest → C: image = segment before :tag.\n• Real-world anchor: in registry/namespace/image:tag, the pull always resolves the final path component as the image name — e.g., docker.io/library/nginx:latest → image nginx.\nWHY THE OTHER OPTIONS ARE WRONG\n• B. images.comptia.org/working/production:latest — the strongest distractor. It contains the word \"working,\" so it looks like a match. Its bait: \"working\" appears in the path. But here working is the namespace, and the image name is production (the last segment before :latest). Wrong position — image = production, not working. Correct if we wanted the image production under namespace working.\n• D. working.images.comptia.org/abcd12:latest — its bait: it starts with \"working.\" But working.images.comptia.org is the registry hostname (a domain), and the image name is abcd12. Wrong role — \"working\" is part of the registry, not the image. Correct only if the image were abcd12.\n• A. working images.comptia.org/development:latest — its bait: \"working\" appears right after the flags. But it's malformed — the space makes working a stray token (not part of the reference), and the actual image resolves to development. Wrong image and broken syntax. Correct for nothing here.\nOBJECTIVE\n• Domain 1.0 — Cloud Architecture (23% of the exam).\n• Objective 1.6 — Explain the importance of containers (image registries/repositories; image naming; running containers), with Objective 5.4 (Docker tooling) crossover.\n• Why it maps here: this tests parsing a Docker image reference ([REGISTRY]/[NAMESPACE]/[IMAGE]:[TAG]) to identify the image name as the last path segment before the tag ' + D + ' so images.comptia.org/abcd123/working:latest has image working ' + D + ' versus \"working\" appearing as a namespace (B ' + D + ' image production), as part of the registry hostname (D ' + D + ' image abcd12), or as a malformed stray token (A ' + D + ' image development). (Ties to Docker/container-image questions Q59/Q62/Q69/Q93/Q101/Q104/Q170/Q248/Q261/Q271/Q308; the rule: in registry/namespace/image:tag, the image name is the final path component immediately before :tag; earlier segments are registry/namespace.)"
  },
  {
   "number": 309,
