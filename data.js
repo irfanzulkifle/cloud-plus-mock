@@ -2859,8 +2859,10 @@ window.EXAM_DATA = [
   },
   "answer": "BE",
   "choose": "all",
-  "domain": 3,
-  "domainName": "Operations",
+  "domain": 1,
+  "domainName": "Cloud Architecture",
+  "domain2": 4,
+  "domainName2": "Security",
   "explanations": {
    "A": "In a managed database service, the provider patches the underlying OS.",
    "B": "Correct: the customer is responsible for managing table-level permissions/access within the database.",
@@ -2868,7 +2870,8 @@ window.EXAM_DATA = [
    "D": "The provider manages cluster configuration/infrastructure in a managed service.",
    "E": "Correct: the customer is responsible for implementing data-level protections like row-level encryption for their own data.",
    "F": "The provider ensures hardware availability for scaling in a managed service."
-  }
+  },
+  "deepdive": "WHY\n• Anchor on the shared-responsibility line for a provider-managed (DBaaS) service — the customer owns the data and access, the provider owns the infrastructure: in a managed database, the provider runs the platform, but who can access the data and how the data is protected stays with the customer. Both correct answers are data/access-layer responsibilities. ← the flashing arrow\n• B = Table-level permissions (access control → customer): deciding who can access which tables/data is an IAM/authorization responsibility that always remains with the customer — the provider can't know your access policies. This is core to the customer side of the shared-responsibility model (ties to Q102, where the customer retained IAM).\n• E = Row-level encryption (data protection → customer): protecting the customer's own data — including encrypting sensitive rows/fields — is a data-layer duty the customer controls. The provider secures the infrastructure, but the customer decides how their data is encrypted/classified (ties to encryption/data security in Objective 4.4).\n• Rule of thumb — \"data and access = customer; platform and hardware = provider\": in DBaaS, anything about your data, its access, and its protection is yours; anything about running/patching/scaling the engine and hardware is the provider's (ties to DBaaS/shared responsibility in Objective 1.1, sibling to Q72/Q102/Q126).\nWHY THE OTHER OPTIONS ARE WRONG\n• A. Operating system patches — the strongest distractor. Patching is a real security duty, so it feels like a customer responsibility. But in a provider-managed service, the provider patches the underlying OS — that's the whole point of \"managed\" (contrast IaaS, where the customer patches — see Q92/Q102). Customer responsibility only in IaaS, not DBaaS.\n• C. Minor database engine updates — its bait: engine updates sound like DBA (customer) work. But in DBaaS the provider manages engine maintenance/patching (minor version updates, security patches to the DB software). That's a defining managed-service benefit. Provider's job, not the customer's.\n• D. Cluster configuration — its bait: configuration sounds customer-controlled. But the provider manages the cluster topology/infrastructure in a managed database (nodes, replication plumbing, failover). Customer doesn't configure the underlying cluster. Provider's responsibility.\n• F. Availability of hardware for scaling — its bait: scaling is a shared concern. But provisioning/availability of underlying hardware for scaling is squarely the provider's responsibility in any cloud service model (the provider supplies the capacity). Provider's job, not the customer's.\nOBJECTIVE\n• Domain 1.0 — Cloud Architecture (23% of the exam).\n• Objective 1.1 — Compare and contrast the different types of cloud models (shared responsibility model, service models incl. DBaaS/provider-managed databases) — with Objective 4.3 (IAM) and 4.4 (data encryption) crossover.\n• Why it maps here: Objective 1.1 covers the shared-responsibility model across service models. This question tests knowing that in a provider-managed database (DBaaS), the customer retains data-and-access duties — table-level permissions (access control) and row-level encryption (data protection) — while the provider handles OS patching, engine updates, cluster configuration, and hardware/scaling capacity. (Direct sibling to Q102 (shared responsibility — customer keeps IAM), Q72 (managed database), and Q126 (SaaS/DBaaS overhead); same \"choose two\" style as Q96/Q113. Ties to IAM in Objective 4.3 and encryption in 4.4.)"
  },
  {
   "number": 138,
