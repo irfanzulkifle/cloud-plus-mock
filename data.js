@@ -5267,14 +5267,15 @@ window.EXAM_DATA = [
   },
   "answer": "D",
   "choose": "all",
-  "domain": 2,
-  "domainName": "Deployment",
+  "domain": 1,
+  "domainName": "Cloud Architecture",
   "explanations": {
    "A": "A forward proxy handles outbound client requests, not exposing container services to networks.",
    "B": "Network orchestration manages scheduling/networking but is not the mechanism that exposes a container port.",
    "C": "Host affinity controls scheduling placement, not network exposure.",
    "D": "Port mapping publishes a container's internal port to a host port, allowing network access to the containerized service."
-  }
+  },
+  "deepdive": "WHY\n• Match the need — exposing a container's service to the network: port mapping publishes a container's internal port to a port on the host, so external clients can reach the service running inside the container. ← the flashing arrow\n• Containers are network-isolated by default: a service inside a container listens on a container-internal port that isn't reachable from outside until you map it to a host port — that mapping is what allows network access to the containerized service.\n• It's the specific container networking mechanism for this: among the options, port mapping is the container feature that bridges the container port to the host/external network (ties to containerization — port mapping — in Objective 1.6).\n• Keyword \"network access to services in a container → publish container port to host → port mapping → D: reach a container service = port mapping.\n• Real-world anchor: docker run -p 80:8080 maps host port 80 to the container's 8080 (recall Q170), letting outside traffic reach the containerized app.\nWHY THE OTHER OPTIONS ARE WRONG\n• B. Network orchestration — the strongest distractor. It's a container-networking-adjacent term, so it sounds right. Its bait: orchestration manages containers and their networking at scale. But orchestration is the broad management/coordination of containers (scheduling, service discovery, scaling) — it's not the specific mechanism that exposes a single service's port for network access. Too broad. Correct for managing/coordinating containers, not the direct port-exposure mechanism.\n• A. Forward proxy — its bait: proxies handle network traffic. But a forward proxy sits in front of clients to mediate their outbound requests (see Q212) — it doesn't expose an inbound containerized service to the network. Wrong direction. Correct for client-side outbound traffic mediation, not exposing container services.\n• C. Host affinity — its bait: it's a real container/VM placement feature. But host affinity controls which host a container/VM runs on (scheduling/placement — see Q213) — it has nothing to do with network access to the service. Wrong concept. Correct for pinning workloads to specific hosts, not networking.\nOBJECTIVE\n• Domain 1.0 — Cloud Architecture (23% of the exam).\n• Objective 1.6 — Given a scenario, deploy cloud-native design and containerization solutions (containerization: port mapping, persistent volumes, orchestration).\n• Why it maps here: Objective 1.6 explicitly lists port mapping. This question tests knowing that port mapping is what allows network access to a service in a container (publishing the container port to the host/external network) — versus network orchestration (broad container management, not port exposure), forward proxy (client-side outbound mediation), or host affinity (placement/scheduling). (Ties to container questions Q101/Q170 (Docker port mapping -p host:container), Q199/Q203/Q243, and host affinity Q213/Q248; the rule: expose a container service to the network = port mapping.)"
  },
  {
   "number": 249,
