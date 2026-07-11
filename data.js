@@ -6050,14 +6050,15 @@ window.EXAM_DATA = [
   },
   "answer": "D",
   "choose": "all",
-  "domain": 2,
-  "domainName": "Deployment",
+  "domain": 1,
+  "domainName": "Cloud Architecture",
   "explanations": {
    "A": "Controlling/authorizing traffic is a firewall/security-group function, not a CDN.",
    "B": "Perimeter segmentation is a firewall function, not a CDN.",
    "C": "Secure communication between distant sites is a VPN, not a CDN.",
    "D": "A CDN improves access by geographically distributing and replicating content across edge locations."
-  }
+  },
+  "deepdive": "WHY\n• Match the definition — a CDN distributes/replicates content across geographic edge locations: a Content Delivery Network caches copies of content on servers spread worldwide so users are served from the nearest edge, reducing latency and speeding delivery. ← the flashing arrow\n• Geographic distribution + replication = the core CDN purpose: the CDN replicates content to many edge nodes and routes each user to a nearby copy — exactly \"geographic distribution and replication of data.\"\n• It's about content proximity/performance, not security: a CDN's job is faster content access and offloading origin servers, achieved through distributed caching (ties to cloud networking — CDN — in Objective 1.3).\n• Keyword \"CDN → distribute/replicate content geographically for faster access → D: CDN = geographic content distribution.\n• Real-world anchor: CloudFront/Akamai cache site assets at global edge locations, serving each visitor from the closest node.\nWHY THE OTHER OPTIONS ARE WRONG\n• C. To create a secure communication channel to protect traffic between two geographically distant sites — the strongest distractor. It mentions \"geographically distant,\" echoing the CDN's geographic aspect. Its bait: the geography wording overlaps. But that describes a site-to-site VPN (encrypted tunnel between locations — see Q106/Q132), not content caching/distribution. Wrong service. Correct for VPN, not CDN.\n• A. To control traffic to and from the cloud environment and prevent unauthorized connections — its bait: it sounds like traffic management. But that describes a firewall/security group/ACL (see Q223/Q274) — access control, not content delivery. Wrong purpose. Correct for firewall/network security, not CDN.\n• B. To protect the perimeter of on-premises and cloud networks through segmentation — its bait: it's a network-security concept. But that describes network segmentation/perimeter security, not content distribution. Wrong domain. Correct for segmentation/perimeter defense, not CDN.\nOBJECTIVE\n• Domain 1.0 — Cloud Architecture (23% of the exam).\n• Objective 1.3 — Explain the importance of cloud network concepts (CDN, VPN, load balancing).\n• Why it maps here: Objective 1.3 lists CDN. This tests knowing a CDN's purpose ' + D + ' geographic distribution and replication of content to serve users from nearby edge locations (faster access, origin offload) ' + D + ' versus a VPN (secure channel between distant sites), firewall/ACL (traffic control), or segmentation (perimeter protection). (Ties to cloud-networking questions Q253/Q258/Q281/Q283; the rule: CDN = replicate/distribute content to global edges for proximity/performance; VPN = secure site-to-site tunnel; firewall = traffic control; segmentation = perimeter security.)"
  },
  {
   "number": 284,
