@@ -3016,14 +3016,15 @@ window.EXAM_DATA = [
   },
   "answer": "C",
   "choose": "all",
-  "domain": 2,
-  "domainName": "Deployment",
+  "domain": 5,
+  "domainName": "DevOps Fundamentals",
   "explanations": {
    "A": "package.json is a Node.js/npm project manifest, not an installable package for a system package manager.",
    "B": "package.zip is a generic archive, not a format package managers (apt/dpkg) recognize.",
    "C": "Correct: .deb is the Debian/Ubuntu package format installed via dpkg/apt.",
    "D": "package.tar is just a tarball, not a package-manager-native format."
-  }
+  },
+  "deepdive": "WHY\n• Anchor on what a package manager installs — a package file: a .deb file is a Debian software package, the native installable format that package managers like APT/dpkg consume to install software. ← the flashing arrow\n• .deb = the Debian/Ubuntu package format: it bundles the compiled software, metadata, and dependency information in the exact structure a package manager expects to install, upgrade, and track software (ties directly to APT in Q117).\n• Match the file format to the tool: package managers install from distribution-specific package files — .deb (Debian/Ubuntu via APT/dpkg) or .rpm (Red Hat/Fedora via YUM/DNF). Of the options, only .deb is an actual package-manager package file.\n• Keyword \"install software with a package manager\" → package file → .deb → C: the format is what a package manager natively handles.\n• Real-world anchor: on Ubuntu you install with sudo apt install ./package.deb or sudo dpkg -i package.deb — the .deb is the installable package (connects to the Ubuntu/APT answer in Q117).\nWHY THE OTHER OPTIONS ARE WRONG\n• A. package.json — the strongest distractor. It's a real, widely-seen file. Its bait: it literally contains \"package\" and lists dependencies. But package.json is a Node.js/npm project manifest — it declares project metadata and dependencies for a language-level tool (npm), it is not an installable OS package file you feed to a system package manager. Correct for defining a Node.js project's dependencies, not installing an OS software package.\n• B. package.zip — its bait: a zip can bundle software. But .zip is a generic compressed archive — it's not a package-manager format and carries no dependency/metadata structure a package manager understands. Correct for general file compression/bundling, not package-managed installation.\n• D. package.tar — its bait: .tar archives are common in Linux for distributing source/binaries. But .tar is a plain archive (tarball) — installing from it typically means manual extraction/compilation, not package-manager-tracked installation with dependency handling. Correct for archiving/manual source distribution, not package-manager installs.\nOBJECTIVE\n• Domain 5.0 — DevOps Fundamentals (10% of the exam) / Linux administration.\n• Objective 5.4 — Identify the appropriate DevOps automation tools and techniques (OS package management underpinning provisioning/configuration).\n• Why it maps here: installing software via the correct package file is foundational to Linux-based provisioning/automation. This question tests knowing that a package manager installs from a package file — a .deb (Debian/Ubuntu) — versus a Node.js manifest (package.json), a generic archive (.zip), or a tarball (.tar). (Direct sibling to Q117 (APT is Ubuntu's package manager); .deb is the file APT installs.)"
  },
  {
   "number": 145,
