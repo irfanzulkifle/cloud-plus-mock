@@ -3700,7 +3700,7 @@ window.EXAM_DATA = [
  },
  {
   "number": 176,
-  "stem": "A cloud engineer tries to deploy five new cloud instances using code. An error occurs, and the instances are not created. The configuration fails to run. The engineer then receives the following error message:\n\nERROR: Parse error on JSON line X in config\n\nGiven the following snippet from the config.json file:\n\n{\n\"instance_count\": 5,\n\"ssd_options\": [\"100GB\", \"200GB\", \"300GB\"],\n\"instance_region\": \"apac\",\n\"instance_code\": 255,\n\"start_instance\": true\n}\n\nWhich of the following oversights created the error in the configuration file?",
+  "stem": "A cloud engineer tries to deploy five new cloud instances using code. An error occurs, and the instances are not created. The configuration fails to run. The engineer then receives the following error message:\n\nERROR: Parse error on JSON line X in config\n\nGiven the following snippet from the config.json file:\n\n{\n\"instance_count\": 5,\n\"ssd_options\": [\"100GB\", \"200GB\", \"300GB\"],\ninstance_region: apac,\n\"instance_code\": 255,\n\"start_instance\": true\n}\n\nWhich of the following oversights created the error in the configuration file?",
   "options": {
    "A": "Incorrect instance_count  ",
    "B": "Incorrect ssd_options  ",
@@ -3711,12 +3711,15 @@ window.EXAM_DATA = [
   "choose": "all",
   "domain": 2,
   "domainName": "Deployment",
+  "domain2": 6,
+  "domainName2": "Troubleshooting",
   "explanations": {
    "A": "instance_count: 5 is a valid integer value, not the cause of the parse error.",
    "B": "ssd_options is correctly formatted as a JSON array of quoted strings.",
    "C": "Correct: instance_region: apac is missing quotation marks around the string value \"apac\", causing a JSON parse error.",
    "D": "JSON does not use trailing commas after the last element; there being none is correct, not an error."
-  }
+  },
+  "deepdive": "WHY\n• Read the JSON syntax rule — string values must be quoted: in JSON, any text/string value must be enclosed in double quotes. The line \"instance_region\": apac, has an unquoted string value (apac), which is invalid JSON and triggers the parse error. ← the flashing arrow\n• apac is a bare word JSON can't interpret: JSON only allows unquoted values that are numbers, true/false, null, objects, or arrays. apac is none of those — it's a string, so it must be \"apac\". Without quotes the parser fails on that line (\"Parse error on json line x\").\n• Compare with the valid lines to confirm: instance_count: 5 (valid number), ssd_options: [...] (valid quoted-string array), instance_code: 255 (valid number), start_instance: true (valid boolean) — all syntactically fine. Only instance_region: apac breaks the rules (ties to IaC config/JSON syntax in Objective 2.4 and deployment troubleshooting in Objective 6.1).\n• Keyword \"JSON parse error + unquoted text value → missing quotes → C: a bare string value is the classic JSON parse failure.\n• Real-world anchor: IaC/config parsers reject \"region\": apac and require \"region\": \"apac\" — forgetting quotes around a string value is one of the most common JSON syntax mistakes.\nWHY THE OTHER OPTIONS ARE WRONG\n• D. Missing trailing comma on start_instance — the strongest distractor. Comma errors are a real, common JSON mistake. Its bait: it points at punctuation, which is the error category. But start_instance is the last property before the closing } — JSON must NOT have a trailing comma after the final element. So the absence of a comma there is correct, not an error. Adding one would actually break it. Correct-sounding, but backwards.\n• A. Incorrect instance_count — its bait: it's the first field. But \"instance_count\": 5 is valid JSON (a properly quoted key with a numeric value) and matches the \"five instances\" intent. No syntax problem. Not the parse error.\n• B. Incorrect ssd_options — its bait: the array looks complex. But \"ssd_options\": [\"100GB\",\"200GB\",\"300GB\"] is a well-formed JSON array of quoted strings — perfectly valid syntax. No parse issue here. Not the error.\nOBJECTIVE\n• Domain 2.0 — Deployment (19% of the exam), with Troubleshooting crossover.\n• Objective 2.4 — Given a scenario, deploy cloud resources using infrastructure as code (IaC) / configuration as code (JSON/YAML/HCL syntax) — with Objective 6.1 (troubleshoot deployment/config errors) crossover.\n• Why it maps here: Objective 2.4 covers IaC config formats including JSON. This question tests reading a config.json and spotting the syntax error — a string value (apac) missing its required double quotes — versus a valid number field (A), a valid string array (B), or a correctly-absent trailing comma on the final property (D). (Ties to IaC/code-reading questions Q34/Q46/Q71/Q125/Q160/Q176 and deployment-error troubleshooting Q154/Q175; JSON string values must be quoted, and the last element takes no trailing comma.)"
  },
  {
   "number": 177,
