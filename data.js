@@ -5555,19 +5555,22 @@ window.EXAM_DATA = [
   "options": {
    "A": "Cluster  ",
    "B": "Container  ",
-   "C": "Server less  ",
+   "C": "Serverless  ",
    "D": "Snapshot "
   },
   "answer": "C",
   "choose": "all",
-  "domain": 2,
-  "domainName": "Deployment",
+  "domain": 1,
+  "domainName": "Cloud Architecture",
+  "domain2": 2,
+  "domain2Name": "Deployment",
   "explanations": {
    "A": "A cluster requires setup and orchestration, not the quickest provisioning.",
    "B": "Containers need a host/orchestrator to run.",
    "C": "Serverless functions are provisioned instantly with no infrastructure to stand up, making them quickest and easiest.",
    "D": "A snapshot is a backup image, not a provisioning method."
-  }
+  },
+  "deepdive": "WHY\n• Match the requirement — \"quick and easy provisioning\" = no infrastructure to set up: with serverless, you just deploy your code and the platform automatically provisions and manages all underlying compute — the fastest, simplest option with nothing to stand up. ← the flashing arrow\n• Zero infrastructure management: there are no servers, clusters, OS, or orchestration to configure — the provider handles provisioning, scaling, and capacity on demand, so you go from code to running instantly.\n• It's the least-effort compute model: compared to the other compute options, serverless removes all provisioning overhead, making it the best fit for \"quick and easy\" (ties to service models — serverless/FaaS — in Objective 1.1 and provisioning in Objective 2.5).\n• Keyword \"compute service + quick and easy provisioning → no infra to manage → serverless → C: least setup effort = serverless.\n• Real-world anchor: deploying a function to AWS Lambda / Azure Functions needs no server setup — you upload code and it runs, the epitome of quick/easy provisioning.\nWHY THE OTHER OPTIONS ARE WRONG\n• B. Container — the strongest distractor. Containers are lightweight and fast to spin up, so they feel \"quick.\" Its bait: containers are known for portability and speed. But containers still require you to build images, configure runtimes, and often set up orchestration (Kubernetes) and the hosts they run on — more provisioning effort than serverless. Correct for portable, packaged workloads (see Q199/Q243/Q248), not the absolute easiest provisioning.\n• A. Cluster — its bait: clusters are a real compute construct. But a cluster requires provisioning and managing multiple nodes, networking, and orchestration — the most setup effort, the opposite of \"quick and easy.\" Correct for HA/scaled workloads (see Q239), not simple provisioning.\n• D. Snapshot — its bait: it's a cloud term. But a snapshot is a point-in-time backup/storage artifact, not a compute service at all (see backup/recovery Q153/Q159). Wrong category entirely. Correct for backup/recovery, not compute provisioning.\nOBJECTIVE\n• Domain 1.0 — Cloud Architecture (23% of the exam), with Deployment crossover.\n• Objective 1.1 — Compare and contrast cloud service models (serverless/FaaS) — with Objective 2.5 (provision cloud resources) crossover.\n• Why it maps here: this tests knowing that serverless offers the quickest, easiest provisioning (no infrastructure to set up or manage — just deploy code) — versus containers (need images/runtime/orchestration setup), clusters (multi-node provisioning, most effort), or snapshots (a backup artifact, not compute). (Ties to serverless/service-model questions Q226 (infrequent + cost-effective = serverless), Q236 (PaaS), Q261; the rule: least provisioning effort = serverless; containers need image/orchestration setup; clusters need node/orchestration management; snapshot = backup, not compute.)"
  },
  {
   "number": 262,
