@@ -5699,6 +5699,8 @@ window.EXAM_DATA = [
   "choose": "all",
   "domain": 4,
   "domainName": "Security",
+  "domain2": 2,
+  "domain2Name": "Deployment",
   "explanations": {
    "A": "Cost matters but is secondary to regulatory and security needs in finance.",
    "B": "Security is paramount for financial client data and systems.",
@@ -5707,7 +5709,8 @@ window.EXAM_DATA = [
    "E": "Storage is general, not one of the top two.",
    "F": "Compliance with financial regulations (e.g., PCI, SOX) is a top requirement for finance-industry provisioning.",
    "G": "Performance is general, not one of the two most important here."
-  }
+  },
+  "deepdive": "WHY (CHOOSE TWO: B + F)\n• Anchor on \"finance industry\" — a heavily regulated, high-sensitivity sector: finance handles sensitive financial/personal data under strict regulations, so the two paramount provisioning requirements are protecting that data (security) and meeting the mandated regulations (compliance). ← the flashing arrow\n• B — security protects sensitive financial data: financial data is a prime target, so encryption, access control, and strong safeguards are non-negotiable when provisioning resources for a finance client.\n• F — compliance is legally mandatory in finance: finance must adhere to regulations/standards like PCI-DSS, SOC 2, GDPR, etc., so provisioned resources must be compliant — a legal obligation, not optional.\n• Keyword \"finance industry + most important provisioning requirements → protect data + meet regulations → security + compliance → B + F: regulated industry = security + compliance (ties to compliance/regulation in Objective 4.2 and security best practices in Objective 4.4).\n• Real-world anchor: provisioning cloud for a bank centers on PCI-DSS/SOC 2 compliance and strong security controls (encryption, IAM, auditing) above cost or raw performance.\nWHY THE OTHER OPTIONS ARE WRONG\n• A. Cost — the strongest distractor. Cost matters in every project, so it's tempting. Its bait: budgets are always a consideration. But for a regulated finance client, cost is secondary to non-negotiable security and compliance — you can't trade regulatory adherence for savings. Correct as a general consideration, not the most important for finance.\n• C. Compute / D. Network / E. Storage / G. Performance — their bait: these are all real provisioning resource dimensions. But they're generic technical resources needed for any workload — they aren't industry-specific priorities for finance. The finance context specifically elevates security and compliance above generic capacity/performance concerns. Correct as standard provisioning components, not the finance-driven priorities.\nOBJECTIVE\n• Domain 4.0 — Security (19% of the exam), with Deployment crossover.\n• Objective 4.2 — Explain aspects of compliance and regulation (standards: PCI-DSS, SOC 2, GDPR; regulatory requirements) — with Objective 4.4 (security best practices) and Objective 2.5 (provision cloud resources) crossover.\n• Why it maps here: this tests recognizing that provisioning for a regulated industry (finance) prioritizes security (protecting sensitive financial data) and compliance (meeting mandatory regulations/standards) above generic resource dimensions — versus cost (general factor), or compute/network/storage/performance (standard technical resources, not finance-specific priorities). (Ties to compliance/governance questions Q51/Q119/Q127/Q140/Q157/Q184/Q204/Q216/Q221/Q228/Q267 and \"choose two\" Q220/Q254/Q255; the rule: regulated industries (finance/healthcare) — security + compliance are the top provisioning priorities.)"
  },
  {
   "number": 268,
